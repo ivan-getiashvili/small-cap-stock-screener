@@ -30,6 +30,7 @@ import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
 import { streamBars, getCost, MINUTE_DATASET, batches } from '../lib/sources/databento.ts';
 import { simulateSession, type Minute, type IntradayTrade, INTRADAY } from '../lib/intraday.ts';
 import { RULES, summarise } from '../lib/strategy.ts';
+import { etMinutes as etMin } from '../lib/ettime.ts';
 
 const DAILY = 'data/db/daily';
 const DRY = process.argv.includes('--dry');
@@ -73,10 +74,7 @@ function group(rows: { symbol: string; ts: number; open: number; high: number; l
   return m;
 }
 
-const etMin = (ts: number) => {
-  const et = new Date(new Date(ts).toLocaleString('en-US', { timeZone: 'America/New_York' }));
-  return et.getHours() * 60 + et.getMinutes();
-};
+
 
 /**
  * The causal signal: the first minute at which a live scanner could have seen

@@ -44,13 +44,46 @@ this screener as a profitable system. It is a candidate finder.
 npm run ingest        # scan the market -> data/screen.json
 npm run build         # bake into _site/index.html
 npm run build:site    # both
-npm run backtest      # needs history cached first
 npm run paper         # advance the paper account (run after the close)
-node --experimental-strip-types scripts/fetch-history.ts   # cache bars (~5 min)
+
+# daily-resolution backtest (free data, crude)
+node --experimental-strip-types scripts/fetch-history.ts     # ~5 min
+npm run backtest
+
+# minute-resolution backtest (Databento, survivorship-free) — the real one
+node --experimental-strip-types scripts/fetch-db-universe.ts     # ~$9.75, 20 min
+node --experimental-strip-types scripts/backtest-intraday.ts --dry   # price it
+node --experimental-strip-types scripts/backtest-intraday.ts         # ~$3.30
 ```
 
-`SEC_USER_AGENT` must be set — EDGAR returns 403 without a contact string.
-Put it in `.env.local` (gitignored).
+`.env.local` (gitignored, chmod 600) must define:
+- `SEC_USER_AGENT` — EDGAR returns 403 without a contact string
+- `DATABENTO_KEY` — minute bars and the survivorship-free universe
+
+Always run a `--dry` first: it prints the exact dollar cost before spending.
+
+## Databento — the dataset trap
+
+**Use `XNAS.BASIC` for minute bars. Nothing else.** Measured against FTFT's
+real 52,847,168-share session:
+
+| dataset | volume captured |
+|---|---|
+| `DBEQ.BASIC` | 0.1% |
+| `EQUS.MINI` | 1.2% |
+| `XNAS.ITCH` | 3.8% |
+| **`XNAS.BASIC`** | **76.6%** |
+| `EQUS.SUMMARY` | 100.8% — but daily bars only |
+
+Most small-cap volume prints off-exchange through the FINRA/Nasdaq TRF, and
+only `XNAS.BASIC` carries it. Relative volume and float rotation *are* the
+strategy, so the wrong dataset does not degrade the screener — it inverts it
+while looking perfectly healthy. Capture still varies 48–83% per stock, so
+minute volume should be calibrated against the true daily total from
+`EQUS.SUMMARY` before being trusted in absolute terms.
+
+Verified: **37 of 40 probed delisted tickers still return minute bars**, which
+is what makes the survivorship-free universe possible.
 
 ## Hard rules
 
@@ -64,9 +97,17 @@ Put it in `.env.local` (gitignored).
    the clock. A Saturday scan must not claim Saturday prices.
 5. **A wrong number is worse than a missing one.** This applies hardest to
    float: where the figure fails a plausibility check the UI says "unknown".
-6. **Never make the backtest look better than it is.** When a daily bar covers
-   both stop and target, always assume the stop hit first, and report what
-   share of results rest on that assumption.
+6. **Never make the backtest look better than it is.** When a bar covers both
+   stop and target, always assume the stop hit first, and report what share of
+   results rest on that assumption.
+7. **Select backtest days on the HIGH, never the close.** A day qualifies if it
+   reached +10% intraday, not if it closed there. Selecting on the close drops
+   every stock that spiked at 10am and died by the bell — exactly the losing
+   trade the strategy must be measured against.
+8. **The universe comes from historical instrument definitions, never from
+   today's listings.** Small caps delist constantly; building from what exists
+   today deletes most of the losers.
+9. **Check `--dry` cost before any Databento pull.**
 
 ## Data sources (all free, all keyless)
 
@@ -77,6 +118,9 @@ Put it in `.env.local` (gitignored).
 | SEC EDGAR `dei:EntityPublicFloat` | float | annual, in dollars; converted to shares, plausibility-gated |
 | SEC EDGAR submissions | 8-K filings as catalyst | authoritative but can lag intraday |
 | Nasdaq news by symbol | same-day catalyst | **must** verify the symbol — the API serves unrelated market news as a fallback |
+| Nasdaq per-symbol chart | 1-min intraday prices, 04:00–20:00 ET, free | price only, no volume, current day only |
+| Databento `XNAS.BASIC` | 1-min OHLCV incl. pre/after-hours, back to 2024-07 | paid per GB; see the dataset trap below |
+| Databento `EQUS.SUMMARY` | survivorship-free daily universe + true daily volume | daily bars only |
 
 Stooq was evaluated and rejected: it now sits behind a proof-of-work bot check.
 Yahoo Finance endpoints rate-limit shared IPs.

@@ -102,7 +102,10 @@
   <h2>Paper account <em>— the screener's own picks, traded forward with no hindsight</em></h2>
   <div id="paper"></div>
 
-  <h2>Backtest <em>— did this setup actually work?</em></h2>
+  <h2>Backtest, 1-minute resolution <em>— Cameron's actual entry, survivorship-free</em></h2>
+  <div id="intraday"></div>
+
+  <h2>Backtest, daily bars <em>— the crude version, kept for contrast</em></h2>
   <div id="backtest"></div>
 
   <footer id="foot"></footer>
@@ -112,6 +115,7 @@
 const DATA = /*__DATA__*/null;
 const BACKTEST = /*__BACKTEST__*/null;
 const PAPER = /*__PAPER__*/null;
+const INTRADAY = /*__INTRADAY__*/null;
 
 const fmt = {
   usd: n => '$' + n.toFixed(2),
@@ -300,7 +304,60 @@ function backtestPanel(){
     </div>`;
 }
 
-head(); staleness(); foot(); paperPanel(); backtestPanel();
+function intradayPanel(){
+  const el = document.getElementById('intraday');
+  if (!INTRADAY){ el.innerHTML = '<div class="empty">Not run yet — needs the Databento pull.</div>'; return; }
+  const I = INTRADAY, s = I.stats, d = I.diagnostics;
+  const good = s.returnPct >= 0;
+  const exits = Object.entries(I.byExitReason||{})
+    .sort((a,b)=>b[1]-a[1])
+    .map(([k,v])=>`<div class="crit"><span>${k.replace(/-/g,' ')}</span><span class="v">${v}</span></div>`).join('');
+
+  el.innerHTML = `
+    <div class="warn" style="${good
+        ? 'background:rgba(63,208,127,.08);border-color:rgba(63,208,127,.3);color:#8ee7b4'
+        : 'background:rgba(255,107,107,.08);border-color:rgba(255,107,107,.3);color:#ffa8a8'}">
+      <b>${s.trades.toLocaleString()} trades, ${I.window.from} → ${I.window.to}, entered on Cameron's pullback at 1-minute resolution.</b><br>
+      Equity $${I.rules.startingCash} → <b>$${s.endingEquity.toFixed(2)}</b>
+      (${s.returnPct>=0?'+':''}${s.returnPct.toFixed(1)}%),
+      accuracy ${s.accuracy.toFixed(1)}%, max drawdown ${s.maxDrawdownPct.toFixed(1)}%,
+      median hold ${I.medianHoldMinutes} min.
+      <br><br>This run is <b>survivorship-free</b> — the universe was built from historical instrument
+      definitions (${(I.candidateSymbolDays||0).toLocaleString()} candidate symbol-days across
+      ${I.daysPulled} sessions), so companies that delisted are still in the sample.
+    </div>
+    <div class="env" style="margin-bottom:14px">
+      <div><b>${s.trades}</b><small>trades</small></div>
+      <div><b>${s.accuracy.toFixed(0)}%</b><small>accuracy</small></div>
+      <div><b>${s.profitLossRatio?s.profitLossRatio.toFixed(2):'—'}</b><small>win/loss ratio</small></div>
+      <div><b>${I.medianHoldMinutes}m</b><small>median hold</small></div>
+      <div><b>${d.ambiguousPct.toFixed(0)}%</b><small>ambiguous bars</small></div>
+    </div>
+    <div class="panel" style="background:transparent;padding:0">
+      <div><h3>How trades ended</h3>${exits}</div>
+      <div><h3>Why most candidates were skipped</h3>
+        <div class="crit"><span>signal never fired intraday</span><span class="v">${d.noSignal.toLocaleString()}</span></div>
+        <div class="crit"><span>no valid pullback setup</span><span class="v">${d.noSetup.toLocaleString()}</span></div>
+        <div class="crit"><span>avg win</span><span class="v">$${s.avgWin.toFixed(2)}</span></div>
+        <div class="crit"><span>avg loss</span><span class="v">$${s.avgLoss.toFixed(2)}</span></div>
+      </div>
+      <div class="cat">
+        <b>What this run does that the daily one could not:</b> it finds the entry inside the
+        session — surge, a 1–3 candle pullback that holds above the 50% retrace, then the first
+        candle to make a new high — with the stop at the pullback low capped at 20¢, half off at
+        2:1, and a breakeven stop on the rest. Median hold is ${I.medianHoldMinutes} minutes, which
+        is the timeframe Cameron actually trades.
+        <br><br><b>Still assumed, not measured:</b> when a single minute contains both the stop and
+        the target, the order is unknowable and we always take the stop — that affects
+        ${d.ambiguous} of ${s.trades} trades (${d.ambiguousPct.toFixed(1)}%). Fills assume you can
+        take up to ${(I.rules.maxVolumeShare*100).toFixed(0)}% of a minute's volume. The day-selection
+        volume screen uses the full day's volume, which is not knowable at 10am, so it leans slightly
+        optimistic. No catalyst filter is applied historically.
+      </div>
+    </div>`;
+}
+
+head(); staleness(); foot(); paperPanel(); intradayPanel(); backtestPanel();
 const rows = DATA.rows;
 table(rows.filter(r => r.cameron.passed), 'full',
       'Nothing passed all five today. That is normal — Cameron says a full scan often leaves under ten names, and some days none.');

@@ -25,6 +25,8 @@
  * and always resolved against us.
  */
 
+import { etMinutes } from './ettime.ts';
+
 export type Minute = { ts: number; open: number; high: number; low: number; close: number; volume: number };
 
 export const INTRADAY = {
@@ -63,11 +65,7 @@ export type IntradayTrade = {
   ambiguous: boolean;
 };
 
-const etMinutes = (ts: number): number => {
-  const d = new Date(ts);
-  const et = new Date(d.toLocaleString('en-US', { timeZone: 'America/New_York' }));
-  return et.getHours() * 60 + et.getMinutes();
-};
+
 
 /**
  * Find the first Cameron-style pullback entry in a session and manage it.
