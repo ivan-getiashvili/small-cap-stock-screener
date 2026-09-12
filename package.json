@@ -1,0 +1,16 @@
+{
+  "name": "small-cap-stock-screener",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Intraday small-cap momentum screener built on the published criteria of Ross Cameron and Tim Sykes.",
+  "type": "module",
+  "engines": { "node": ">=22.6" },
+  "scripts": {
+    "ingest": "node --experimental-strip-types scripts/ingest.ts",
+    "build": "node --experimental-strip-types scripts/build-page.ts",
+    "build:site": "npm run ingest && npm run build",
+    "backtest": "node --experimental-strip-types scripts/backtest.ts",
+    "paper": "node --experimental-strip-types scripts/paper.ts",
+    "serve": "python3 -m http.server 4188 --directory _site"
+  }
+}

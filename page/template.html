@@ -1,0 +1,311 @@
+<title>Small Cap Screener</title>
+<style>
+  :root{
+    --bg:#0b0e13; --panel:#12161e; --panel-2:#171c26; --line:#232a36;
+    --ink:#e6eaf2; --ink-dim:#9aa5b8; --ink-faint:#6b7688;
+    --pass:#3fd07f; --pass-bg:rgba(63,208,127,.12);
+    --warn:#f0b849; --fail:#5b6474; --hot:#ff6b6b;
+    --accent:#63a2ff;
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 var(--sans);
+       -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1240px;margin:0 auto;padding:28px 20px 80px}
+
+  header{display:flex;flex-wrap:wrap;gap:16px;align-items:baseline;justify-content:space-between;
+         border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:22px}
+  h1{margin:0;font-size:22px;letter-spacing:-.02em;font-weight:650}
+  h1 span{color:var(--ink-faint);font-weight:400}
+  .meta{font:12px/1.6 var(--mono);color:var(--ink-dim);text-align:right}
+  .badge{display:inline-block;padding:2px 8px;border-radius:99px;font:11px/1.7 var(--mono);
+         text-transform:uppercase;letter-spacing:.06em}
+  .badge.open{background:var(--pass-bg);color:var(--pass)}
+  .badge.shut{background:#222835;color:var(--ink-faint)}
+
+  .env{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;
+       background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:24px}
+  .env div{background:var(--panel);padding:12px 14px}
+  .env b{display:block;font:600 20px/1.2 var(--mono);margin-bottom:3px}
+  .env small{color:var(--ink-faint);font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-dim);
+     margin:30px 0 10px;font-weight:600}
+  h2 em{font-style:normal;color:var(--ink-faint);text-transform:none;letter-spacing:0;font-weight:400}
+
+  table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+  thead th{font:11px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);
+           text-align:right;padding:8px 10px;border-bottom:1px solid var(--line);font-weight:600;white-space:nowrap}
+  thead th:nth-child(1),thead th:nth-child(2){text-align:left}
+  tbody td{padding:11px 10px;border-bottom:1px solid var(--line);text-align:right;font:13px/1.4 var(--mono)}
+  tbody td:nth-child(1),tbody td:nth-child(2){text-align:left}
+  tbody tr.row{cursor:pointer}
+  tbody tr.row:hover{background:var(--panel)}
+  tbody tr.pass td:nth-child(1){box-shadow:inset 3px 0 0 var(--pass)}
+  .sym{font-weight:650;font-size:14px;letter-spacing:.01em}
+  .nm{font:12px/1.3 var(--sans);color:var(--ink-faint);max-width:230px;overflow:hidden;
+      text-overflow:ellipsis;white-space:nowrap}
+  .up{color:var(--pass)} .big{color:var(--hot);font-weight:650}
+  .dim{color:var(--ink-faint)}
+  .score{display:inline-block;min-width:34px;padding:2px 7px;border-radius:5px;font-weight:650;
+         background:#222835;color:var(--ink-dim)}
+  .score.good{background:var(--pass-bg);color:var(--pass)}
+  .pills{display:inline-flex;gap:3px}
+  .pip{width:9px;height:9px;border-radius:2px;background:var(--fail);display:inline-block}
+  .pip.on{background:var(--pass)}
+
+  tr.detail>td{padding:0;border-bottom:1px solid var(--line);background:var(--panel-2)}
+  .panel{padding:18px 16px;display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  @media(max-width:760px){.panel{grid-template-columns:1fr}}
+  .panel h3{margin:0 0 10px;font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-dim)}
+  .crit{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-bottom:1px dashed var(--line);
+        font:12px/1.5 var(--sans)}
+  .crit:last-child{border-bottom:0}
+  .crit .v{font:12px/1.5 var(--mono);color:var(--ink-dim);white-space:nowrap}
+  .ok{color:var(--pass)} .no{color:var(--fail)}
+  .bar{height:4px;border-radius:2px;background:#222835;margin-top:4px;overflow:hidden}
+  .bar i{display:block;height:100%;background:var(--accent)}
+  .cat{margin-top:14px;padding:10px 12px;background:var(--panel);border-radius:8px;
+       font:12px/1.5 var(--sans);color:var(--ink-dim);grid-column:1/-1}
+  .cat b{color:var(--ink)}
+
+  footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);
+         font:12px/1.7 var(--sans);color:var(--ink-faint)}
+  footer h4{color:var(--ink-dim);font-size:11px;text-transform:uppercase;letter-spacing:.07em;margin:18px 0 6px}
+  footer code{font:11px var(--mono);background:var(--panel);padding:1px 5px;border-radius:4px}
+  .warn{background:rgba(240,184,73,.08);border:1px solid rgba(240,184,73,.25);border-radius:8px;
+        padding:12px 14px;color:#e8c37a;font-size:12.5px;line-height:1.6;margin:16px 0}
+  .empty{padding:26px;text-align:center;color:var(--ink-faint);background:var(--panel);border-radius:10px}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Small Cap Screener <span>— Cameron × Sykes</span></h1>
+      <div style="color:var(--ink-faint);font-size:12.5px;margin-top:4px">
+        US listed stocks filtered on Ross Cameron's five pillars, ranked by Tim Sykes' sliding scale.
+      </div>
+    </div>
+    <div class="meta" id="meta"></div>
+  </header>
+
+  <div class="env" id="env"></div>
+  <div id="staleness"></div>
+
+  <h2>Passes all five pillars <em id="c1"></em></h2>
+  <div id="full"></div>
+
+  <h2>Near misses <em>— four of five, shown so you can see what failed</em></h2>
+  <div id="near"></div>
+
+  <h2>Paper account <em>— the screener's own picks, traded forward with no hindsight</em></h2>
+  <div id="paper"></div>
+
+  <h2>Backtest <em>— did this setup actually work?</em></h2>
+  <div id="backtest"></div>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const DATA = /*__DATA__*/null;
+const BACKTEST = /*__BACKTEST__*/null;
+const PAPER = /*__PAPER__*/null;
+
+const fmt = {
+  usd: n => '$' + n.toFixed(2),
+  pct: n => (n >= 0 ? '+' : '') + n.toFixed(1) + '%',
+  mult: n => n === null || n === undefined ? '—' : n.toFixed(1) + '×',
+  sh: n => n === null || n === undefined ? '—'
+        : n >= 1e9 ? (n/1e9).toFixed(2)+'B' : n >= 1e6 ? (n/1e6).toFixed(1)+'M' : (n/1e3).toFixed(0)+'K',
+  when: iso => new Date(iso).toLocaleString(undefined,{dateStyle:'medium',timeStyle:'short'}),
+};
+
+function head(){
+  const open = DATA.marketOpen;
+  document.getElementById('meta').innerHTML =
+    `<span class="badge ${open?'open':'shut'}">${open?'market open':'market closed'}</span><br>` +
+    `data as of ${DATA.asOf}<br>generated ${fmt.when(DATA.generatedAt)}`;
+
+  const passing = DATA.rows.filter(r => r.cameron.passed).length;
+  document.getElementById('env').innerHTML = [
+    [DATA.universeSize.toLocaleString(), 'stocks scanned'],
+    [DATA.rows.length, 'met pre-filter'],
+    [passing, 'passed all five'],
+    [DATA.market.up20, 'up >20% today'],
+    [DATA.market.up100, 'up >100% today'],
+  ].map(([v,l]) => `<div><b>${v}</b><small>${l}</small></div>`).join('');
+}
+
+/** Sykes' time indicator is worth 20 of 100 and can only score high near the
+ *  open, so a weekend scan is structurally capped. Say so rather than let the
+ *  reader think every setup is weak. */
+function staleness(){
+  const el = document.getElementById('staleness');
+  if (DATA.marketOpen) { el.innerHTML = ''; return; }
+  el.innerHTML = `<div class="warn"><b>Market is closed.</b> These are the last session's closing numbers
+    (${DATA.asOf}). Sykes scores time-of-day out of 20 points and it can only score high near the open,
+    so every total below is roughly 15–19 points lower than the same setup would score live.
+    Treat this as tomorrow's watchlist, not a live trade list.</div>`;
+}
+
+function row(r){
+  const q = r.quote, hot = q.changePct >= 50;
+  const pips = r.cameron.pillars.map(p => `<span class="pip ${p.ok?'on':''}" title="${p.name}: ${p.detail}"></span>`).join('');
+  return `<tr class="row ${r.cameron.passed?'pass':''}" data-sym="${q.symbol}">
+    <td><span class="sym">${q.symbol}</span></td>
+    <td><div class="nm" title="${q.name.replace(/"/g,'&quot;')}">${q.name}</div></td>
+    <td>${fmt.usd(q.price)}</td>
+    <td class="${hot?'big':'up'}">${fmt.pct(q.changePct)}</td>
+    <td>${fmt.mult(r.relVolume)}</td>
+    <td>${fmt.sh(q.volume)}</td>
+    <td class="${r.float?'':'dim'}">${r.float ? fmt.sh(r.float.floatShares) : 'unknown'}</td>
+    <td>${fmt.mult(r.floatRotation)}</td>
+    <td>${r.gapPct===null?'—':fmt.pct(r.gapPct)}</td>
+    <td><span class="pills">${pips}</span></td>
+    <td><span class="score ${r.sykes.tradeable?'good':''}">${r.sykes.total}</span></td>
+  </tr>
+  <tr class="detail" id="d-${q.symbol}" hidden><td colspan="11">
+    <div class="panel">
+      <div>
+        <h3>Cameron — five pillars (pass/fail)</h3>
+        ${r.cameron.pillars.map(p => `<div class="crit">
+            <span class="${p.ok?'ok':'no'}">${p.ok?'✓':'✕'} ${p.name}</span>
+            <span class="v">${p.detail}</span></div>`).join('')}
+      </div>
+      <div>
+        <h3>Sykes — sliding scale (${r.sykes.total}/100, trade above 70)</h3>
+        ${r.sykes.parts.map(p => `<div class="crit" style="display:block">
+            <div style="display:flex;justify-content:space-between">
+              <span>${p.label}</span><span class="v">${p.points}/${p.max}</span></div>
+            <div class="v" style="color:var(--ink-faint);font-size:11.5px">${p.why}</div>
+            <div class="bar"><i style="width:${(p.points/p.max*100).toFixed(0)}%"></i></div>
+          </div>`).join('')}
+      </div>
+      <div class="cat">
+        ${r.catalyst && r.catalyst.found
+          ? `<b>Catalyst (${r.catalyst.kind}, ${r.catalyst.date}):</b> ${r.catalyst.headline}`
+          : '<b>No catalyst found.</b> Both traders treat this as disqualifying — Cameron: “what comes first is definitely the news catalyst.”'}
+        ${r.float ? `<br><b>Float basis:</b> ${r.float.basis === 'sec-public-float'
+            ? 'SEC public float, filed ' + r.float.asOf + ' — annual figure, can be stale after a raise'
+            : 'estimated from market cap ÷ price — this is shares outstanding, an upper bound on true float'}` : ''}
+        ${r.bestPriorSpikePct!==null ? `<br><b>Best prior day in the last year:</b> +${r.bestPriorSpikePct.toFixed(0)}%` : ''}
+        ${r.dayOfRun ? `<br><b>Day ${r.dayOfRun} of an up-run.</b> ${r.dayOfRun>1?'Sykes prefers day one — “I like day ones, not day two or day three.”':''}` : ''}
+      </div>
+    </div>
+  </td></tr>`;
+}
+
+function table(rows, mount, emptyMsg){
+  const el = document.getElementById(mount);
+  if (!rows.length){ el.innerHTML = `<div class="empty">${emptyMsg}</div>`; return; }
+  el.innerHTML = `<table><thead><tr>
+      <th>Ticker</th><th>Company</th><th>Price</th><th>Chg</th><th>RVol</th><th>Volume</th>
+      <th>Float</th><th>Rot</th><th>Gap</th><th>Pillars</th><th>Sykes</th>
+    </tr></thead><tbody>${rows.map(row).join('')}</tbody></table>`;
+  el.querySelectorAll('tr.row').forEach(tr => tr.addEventListener('click', () => {
+    const d = document.getElementById('d-' + tr.dataset.sym);
+    if (d) d.hidden = !d.hidden;
+  }));
+}
+
+function foot(){
+  const c = DATA.criteria;
+  document.getElementById('foot').innerHTML = `
+    <h4>What the filter is</h4>
+    Cameron's five pillars, as he states them: up ≥${c.cameron.minChangePct}% on the day,
+    relative volume ≥${c.cameron.minRelVolume}×, a news catalyst,
+    price $${c.cameron.priceMin}–$${c.cameron.priceMax},
+    and float under ${(c.cameron.maxFloat/1e6)}M shares. All five must pass.
+    Sykes' seven indicators are then scored out of 100 — pattern &amp; price 20, risk/reward 20,
+    time of day 20, ease of entry 10, history of spiking 10, catalyst 10, market environment 10 —
+    and he trades only above ${c.sykes.tradeThreshold}.
+    <h4>Where the numbers come from</h4>
+    Price, % change, volume and market cap: Nasdaq's public screener API.
+    Daily history for relative volume, gaps and spike history: Nasdaq per-symbol history.
+    Float: SEC EDGAR <code>dei:EntityPublicFloat</code>, converted to shares, falling back to
+    market cap ÷ price when EDGAR's figure fails a plausibility check.
+    Catalyst: symbol-verified Nasdaq headlines, then SEC 8-K filings.
+    <h4>Known limits — read these before trading</h4>
+    <b>Float is the weakest number here.</b> EDGAR reports it once a year in dollars; small caps
+    reverse-split and dilute constantly, so a stale float can be wrong by a wide margin. Where the
+    figure fails a sanity check the screener says “unknown” rather than guess.
+    <b>This data is end-of-day, not live.</b> Cameron's edge is between 7:00 and 11:30 ET and most of
+    his profit comes from trades held under ten minutes — nothing on this page is fast enough for that
+    yet. Use it to build a watchlist, not to time an entry.
+    <b>Neither man's published results are verified here.</b> Warrior Trading and Ross Cameron settled
+    with the FTC in 2022 over deceptive earnings claims; the FTC found most customers lost money.
+    A screener that reproduces their criteria reproduces their stock selection, which is not the same
+    thing as reproducing their returns.`;
+}
+
+function paperPanel(){
+  const el = document.getElementById('paper');
+  if (!PAPER){ el.innerHTML = '<div class="empty">Not run yet.</div>'; return; }
+  const s = PAPER.stats || {trades:0};
+  const pend = (PAPER.pending||[]).map(p=>p.symbol).join(', ') || 'none';
+  el.innerHTML = `<div class="env" style="margin-bottom:14px">
+      <div><b>${s.trades||0}</b><small>closed trades</small></div>
+      <div><b>${s.trades?s.accuracy.toFixed(0)+'%':'—'}</b><small>accuracy</small></div>
+      <div><b>$${(s.endingEquity??PAPER.startingCash).toFixed(0)}</b><small>equity from $${PAPER.startingCash}</small></div>
+      <div><b>${s.trades?(s.returnPct>=0?'+':'')+s.returnPct.toFixed(1)+'%':'—'}</b><small>return</small></div>
+      <div><b>${s.trades?s.maxDrawdownPct.toFixed(0)+'%':'—'}</b><small>max drawdown</small></div>
+    </div>
+    <div style="font-size:12.5px;color:var(--ink-dim)">
+      Queued for next open: <b style="color:var(--ink)">${pend}</b><br>
+      Started ${PAPER.startedAt.slice(0,10)}. Every pick is committed the evening before and scored
+      afterwards, so this record cannot be tuned after the fact — unlike the backtest below.
+    </div>
+    ${(PAPER.log||[]).slice(-6).reverse().map(l=>
+      `<div class="crit"><span class="v">${l.date}</span><span style="text-align:right">${l.note}</span></div>`).join('')}`;
+}
+
+function backtestPanel(){
+  const el = document.getElementById('backtest');
+  if (!BACKTEST){ el.innerHTML = '<div class="empty">Not run yet.</div>'; return; }
+  const B = BACKTEST, sb = B.setupBehaviour;
+  const rows = (B.variants||[]).map(v => `<tr>
+      <td style="text-align:left"><b>${v.label}</b><div class="nm" style="max-width:none;white-space:normal">${v.note}</div></td>
+      <td>${v.winRatePct.toFixed(1)}%</td>
+      <td class="${v.meanPct>=0?'up':'no'}" style="font-weight:650">${v.meanPct>=0?'+':''}${v.meanPct.toFixed(2)}%</td>
+      <td>${v.medianPct>=0?'+':''}${v.medianPct.toFixed(2)}%</td>
+      <td class="dim">${v.ambiguousPct>0?v.ambiguousPct.toFixed(0)+'%':'—'}</td>
+    </tr>`).join('');
+
+  el.innerHTML = `
+    <div class="warn" style="background:rgba(255,107,107,.08);border-color:rgba(255,107,107,.3);color:#ffa8a8">
+      <b>Every exit rule tested lost money.</b> Over ${B.signals.toLocaleString()} historical signals
+      (${B.window.from} → ${B.window.to}), buying the next open after a qualifying move was unprofitable
+      under all five rules below. Running Cameron's own stop and target, a $${B.rules.startingCash}
+      account risking $${B.rules.riskPerTrade} a trade was blown out
+      ${B.ruinedOn ? 'by ' + B.ruinedOn : 'entirely'}.
+      Survivorship bias makes this test <em>optimistic</em> — delisted collapses are missing — and it is
+      still negative.
+    </div>
+    <table><thead><tr>
+      <th style="text-align:left">Exit rule</th><th>Win rate</th><th>Mean</th><th>Median</th><th>Ambiguous</th>
+    </tr></thead><tbody>${rows}</tbody></table>
+    <div class="cat" style="margin-top:16px">
+      <b>What the setup actually does next session:</b>
+      open→close median <b>${sb.medianOpenToClosePct.toFixed(2)}%</b> — it fades.
+      But open→high median <b>+${sb.medianOpenToHighPct.toFixed(2)}%</b> (mean +${sb.meanOpenToHighPct.toFixed(2)}%)
+      — the spike is genuinely there, intraday, and then given back.
+      That is the whole strategy in two numbers: the move exists, and holding it does not work.
+      Both men say exactly this — Cameron's profit concentrates in trades held under ten minutes.
+      <br><br><b>“Ambiguous” matters:</b> that column is the share of days where the bar covered both the
+      stop and the target. Daily data cannot say which came first, so those results are an assumption
+      (we always assume the stop). At 24% for the tight-stop rule, a quarter of that row is assumption.
+      <br><br><b>Not tested:</b> ${B.caveats.map(c=>c.replace(/\.$/,'')).join('; ')}.
+    </div>`;
+}
+
+head(); staleness(); foot(); paperPanel(); backtestPanel();
+const rows = DATA.rows;
+table(rows.filter(r => r.cameron.passed), 'full',
+      'Nothing passed all five today. That is normal — Cameron says a full scan often leaves under ten names, and some days none.');
+table(rows.filter(r => !r.cameron.passed && r.cameron.passedCount === 4), 'near',
+      'No four-of-five names either.');
+document.getElementById('c1').textContent =
+  '— ' + rows.filter(r => r.cameron.passed).length + ' of ' + rows.length + ' analysed';
+</script>

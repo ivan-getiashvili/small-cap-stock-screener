@@ -1,0 +1,16 @@
+# secrets — never commit
+.env
+.env.local
+.env*.local
+
+node_modules/
+
+# build output + generated data
+_site/
+dist/
+data/*.json
+data/history/
+!data/.gitkeep
+
+.DS_Store
+*.log
