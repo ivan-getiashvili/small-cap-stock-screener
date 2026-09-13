@@ -62,6 +62,14 @@ jobs:
             console.log('watchlist:', d.watchlist.map(r=>r.symbol).join(', ')||'(none)');
           "
 
+      # Always keep the built page as a downloadable artifact, whatever the
+      # hosting situation is. This is the fallback that cannot fail.
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: _site
+          retention-days: 7
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
@@ -69,6 +77,11 @@ jobs:
   publish:
     needs: scan
     runs-on: ubuntu-latest
+    # GitHub Pages is unavailable for private repositories on the free plan, so
+    # a failure here must not red the whole run — the scan above is the part
+    # that matters, and its artifact is still produced. Once the repo is public
+    # (or Pages is otherwise enabled) this step starts succeeding on its own.
+    continue-on-error: true
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
