@@ -21,7 +21,7 @@ const head = `<!doctype html>
 <meta name="color-scheme" content="dark">
 <meta name="robots" content="noindex">
 <title>Pre-Market Shortlist — small cap momentum</title>
-<meta name="description" content="A daily pre-market shortlist of small-cap momentum candidates, screened on Ross Cameron's and Tim Sykes' published criteria.">
+<meta name="description" content="A daily pre-market shortlist of small-cap momentum candidates, screened on five momentum criteria.">
 </head>
 <body>
 `;

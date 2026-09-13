@@ -15,6 +15,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { loadCandidateDays } from '../lib/candidates.ts';
 import { etMinutes } from '../lib/ettime.ts';
 import { getTickerToCik, getFloat, makePriceLookup, getSharesOutstanding } from '../lib/sources/sec.ts';
+import { getCompanyProfile } from '../lib/sources/news.ts';
 
 const MIN = 'data/db/minutes';
 const SNAPSHOT_AT = 8 * 60 + 45;          // 08:45 ET — 45 minutes before the bell
@@ -74,7 +75,7 @@ async function main() {
     const rotation = float ? cum / float.shares : null;
     const floatPctOfShares = float && sharesOut ? (float.shares / sharesOut) * 100 : null;
 
-    // Biggest single-day gain in the prior year — Sykes' "history of spiking".
+    // Biggest single-day gain in the prior year — the scoring source's "history of spiking".
     let bestSpike: number | null = null;
     try {
       const daily: any[] = JSON.parse(await readFile(`data/db/daily/${s.symbol}.json`, 'utf8'));
@@ -90,6 +91,19 @@ async function main() {
       }
     } catch { /* fine */ }
 
+    const cik = cikMap.get(s.symbol) ?? null;
+    const profile = cik ? await getCompanyProfile(cik).catch(() => null) : null;
+
+    // Run length before today, from the daily bars.
+    let daysUp = 0, priorRun: number | null = null;
+    try {
+      const daily: any[] = JSON.parse(await readFile(`data/db/daily/${s.symbol}.json`, 'utf8'));
+      const before = daily.filter((b) => b.date < DATE).slice(-6).map((b) => b.close);
+      for (let i = before.length - 1; i > 0; i--) { if (before[i] > before[i - 1]) daysUp++; else break; }
+      if (before.length >= 2 && before[0] > 0) priorRun = ((before.at(-1)! - before[0]) / before[0]) * 100;
+    } catch { /* fine */ }
+    const extended = daysUp >= 2 || (priorRun !== null && priorRun >= 50);
+
     const checks = [
       { name: 'Up ≥10% pre-market', ok: chg >= GATE.minPreMarketChangePct, detail: `${chg.toFixed(1)}%` },
       { name: 'Pre-market volume ≥50k', ok: cum >= GATE.minPreMarketVolume, detail: cum.toLocaleString() },
@@ -100,14 +114,17 @@ async function main() {
     const passed = checks.filter((c) => c.ok).length;
 
     rows.push({
-      symbol: s.symbol, name: s.symbol, sector: null,
+      symbol: s.symbol, name: profile?.name ?? s.symbol, sector: null,
+      business: profile?.business ?? null, legalName: profile?.name ?? null,
+      daysUp, priorRunPct: priorRun, extended,
       preMarketPrice: last, preMarketChangePct: chg, prevClose: s.prevClose,
       preMarketVolume: cum, preMarketDollarVolume: pmDollar,
       preMarketHigh: hi === -Infinity ? null : hi, preMarketLow: lo === Infinity ? null : lo,
       relVolume: relVol, avgVolume50: s.avgVol50,
       float, sharesOutstanding: sharesOut, marketCap, floatPctOfShares,
       floatRotation: rotation, bestPriorSpikePct: bestSpike,
-      catalyst: { found: true, kind: 'news', date: DATE, headline: 'Catalyst not re-checked in this replay' },
+      catalyst: { found: true, kind: 'news', date: DATE, subject: null,
+                  headline: 'Catalyst not re-checked in this replay' },
       checks, passed,
       quality: passed === 5 && cum >= GATE.goodPreMarketVolume ? 'high' : passed >= 4 ? 'medium' : 'low',
     });

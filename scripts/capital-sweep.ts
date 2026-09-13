@@ -23,7 +23,7 @@ import { etMinutes } from '../lib/ettime.ts';
 const MINUTES = 'data/db/minutes';
 const CAPITALS = [2_000, 5_000, 10_000, 25_000, 50_000, 100_000];
 const SLIP = 0.01, COMM = 0.002;
-/** Risk 2% of equity per trade — inside Sykes' stated 1-3% band. */
+/** Risk 2% of equity per trade — inside the scoring source's stated 1-3% band. */
 const RISK_PCT = 0.02;
 
 function signalMinute(bars: Minute[], prevClose: number, avgVol50: number): number | null {

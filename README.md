@@ -1,7 +1,7 @@
 # Small Cap Stock Screener
 
-A daily **pre-market shortlist** of small-cap momentum candidates, screened on the
-published criteria of Ross Cameron (Warrior Trading) and Tim Sykes.
+A daily **pre-market shortlist** of small-cap momentum candidates, screened on five
+published momentum criteria.
 
 It finds candidates. It does not decide anything — entry, size and stop are yours.
 
@@ -10,9 +10,9 @@ It finds candidates. It does not decide anything — entry, size and stop are yo
 Up **≥10% pre-market** · pre-market volume **≥50k** · a real **news catalyst** ·
 price **$2–$20** · float **under 10M shares**. All five must pass to reach the shortlist.
 
-Sourced from Cameron's gapper checklist and quality tiers, and Sykes' pre-market
-routine — percent gainers first, then catalyst and float, ending with one to five
-names rather than twenty. Citations in `docs/CRITERIA.md`.
+Percent gainers are ranked first, then catalyst and float, ending with a handful of
+names rather than twenty. The percentage is **this session** against the previous
+close — names that have already run for several sessions are flagged as extended.
 
 ## Running it
 
@@ -31,3 +31,6 @@ outside it the page says so rather than showing stale prices as if they were liv
 minute-resolution backtests. Read `CLAUDE.md` before trusting any of those numbers —
 the short version is that the setup's edge dies somewhere between 1c and 2c of
 slippage per side, and a $2,000 account is too small to hold the trades that carry it.
+
+`npm run demo` rebuilds `_site/demo.html`, a replay of one real past morning so the
+layout can be seen without waiting for a live session.

@@ -33,7 +33,7 @@ export type Bar = {
 
 /** What we know about a stock's tradable supply. */
 export type Float = {
-  /** Shares actually available to trade. The number both traders care about. */
+  /** Shares actually available to trade. The number both methodologies care about. */
   floatShares: number;
   /** How we arrived at it — shown in the UI, because precision varies a lot. */
   basis: 'sec-public-float' | 'shares-outstanding-proxy';
@@ -45,29 +45,29 @@ export type Float = {
 export type Candidate = {
   quote: Quote;
   float: Float | null;
-  /** Today's volume vs the 50-day average. Cameron's pillar #2. */
+  /** Today's volume vs the 50-day average. the momentum source's pillar #2. */
   relVolume: number | null;
   avgVolume50: number | null;
-  /** Today's volume / float. Sykes' central metric. */
+  /** Today's volume / float. the scoring source's central metric. */
   floatRotation: number | null;
-  /** Open vs prior close, in percent. Cameron wants >= 2%. */
+  /** Open vs prior close, in percent. the momentum source wants >= 2%. */
   gapPct: number | null;
-  /** Biggest single-day gain in the last year, %. Sykes' "history of spiking". */
+  /** Biggest single-day gain in the last year, %. the scoring source's "history of spiking". */
   bestPriorSpikePct: number | null;
-  /** Consecutive up days ending today. Sykes wants day 1, not day 3. */
+  /** Consecutive up days ending today. the scoring source wants day 1, not day 3. */
   dayOfRun: number | null;
-  cameron: FilterResult;
-  sykes: Score;
+  filter: FilterResult;
+  score: Score;
 };
 
-/** Cameron's five pillars are pass/fail, so we record which ones passed. */
+/** the momentum source's five pillars are pass/fail, so we record which ones passed. */
 export type FilterResult = {
   passed: boolean;
   pillars: { name: string; ok: boolean; detail: string }[];
   passedCount: number;
 };
 
-/** Sykes scores 1-N per indicator and sums to 100. */
+/** the scoring source scores 1-N per indicator and sums to 100. */
 export type Score = {
   total: number;
   tradeable: boolean;   // his rule: only above 70

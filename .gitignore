@@ -12,6 +12,8 @@ data/*.json
 !data/stats.json
 !data/prevclose.json
 !data/demo.json
+!data/closes.json
+!data/closes.meta.json
 data/history/
 !data/.gitkeep
 
@@ -24,3 +26,4 @@ gtbp.json
 
 # Databento cache (large, regenerable)
 data/db/
+docs/

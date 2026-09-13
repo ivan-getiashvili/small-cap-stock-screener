@@ -15,7 +15,7 @@ import { writeFile, mkdir } from 'node:fs/promises';
 import { getUniverse, getBars } from '../lib/sources/nasdaq.ts';
 import { getTickerToCik, getFloat, makePriceLookup, floatFromSharesOutstanding } from '../lib/sources/sec.ts';
 import { findCatalyst } from '../lib/sources/news.ts';
-import { cameronFilter, sykesScore, relativeVolume, bestSpike, dayOfRun, CRITERIA } from '../lib/screen.ts';
+import { gapFilter, qualityScore, relativeVolume, bestSpike, dayOfRun, CRITERIA } from '../lib/screen.ts';
 import type { Candidate, Quote, Float } from '../lib/types.ts';
 
 /** Wide enough to show near-misses, tight enough to keep the scan cheap. */
@@ -90,7 +90,7 @@ async function main() {
   const { quotes: universe, asOf: reportedAsOf } = await getUniverse();
   console.log(`  universe: ${universe.length} listed stocks, priced as of ${reportedAsOf ?? 'date not stated'}`);
 
-  // Market environment — Sykes' seventh indicator, measured across everything.
+  // Market environment — the scoring source's seventh indicator, measured across everything.
   const market = {
     up20: universe.filter((q) => q.changePct >= 20).length,
     up100: universe.filter((q) => q.changePct >= 100).length,
@@ -135,8 +135,8 @@ async function main() {
       const catalyst = await findCatalyst(q.symbol, cik, asOf);
       const rotation = float ? q.volume / float.floatShares : null;
 
-      const cameron = cameronFilter(q, rv?.rel ?? null, float?.floatShares ?? null, catalyst.found);
-      const sykes = sykesScore({
+      const gate = gapFilter(q, rv?.rel ?? null, float?.floatShares ?? null, catalyst.found);
+      const score = qualityScore({
         quote: q,
         floatShares: float?.floatShares ?? null,
         floatRotation: rotation,
@@ -157,8 +157,8 @@ async function main() {
         gapPct,
         bestPriorSpikePct: bestSpike(prior.slice(-252)),
         dayOfRun: dayOfRun(bars),
-        cameron,
-        sykes,
+        filter,
+        score,
         // @ts-expect-error — carried for the UI, not part of the core type
         catalyst,
       };
@@ -177,9 +177,9 @@ async function main() {
 
   const rows = candidates.filter((c): c is Candidate => c !== null);
   rows.sort((a, b) => {
-    if (a.cameron.passed !== b.cameron.passed) return a.cameron.passed ? -1 : 1;
-    if (b.cameron.passedCount !== a.cameron.passedCount) return b.cameron.passedCount - a.cameron.passedCount;
-    return b.sykes.total - a.sykes.total;
+    if (a.filter.passed !== b.filter.passed) return a.filter.passed ? -1 : 1;
+    if (b.filter.passedCount !== a.filter.passedCount) return b.filter.passedCount - a.filter.passedCount;
+    return b.score.total - a.score.total;
   });
 
   const payload = {
@@ -196,16 +196,16 @@ async function main() {
   await mkdir('data', { recursive: true });
   await writeFile('data/screen.json', JSON.stringify(payload, null, 2));
 
-  const full = rows.filter((r) => r.cameron.passed);
-  console.log(`\n  ${rows.length} analysed — ${full.length} pass all five Cameron pillars`);
+  const full = rows.filter((r) => r.filter.passed);
+  console.log(`\n  ${rows.length} analysed — ${full.length} pass all five the momentum source pillars`);
   for (const r of rows.slice(0, 10)) {
     console.log(
-      `   ${r.cameron.passed ? '✓' : ' '} ${r.quote.symbol.padEnd(6)} ` +
+      `   ${r.filter.passed ? '✓' : ' '} ${r.quote.symbol.padEnd(6)} ` +
         `$${r.quote.price.toFixed(2).padStart(6)} ${(r.quote.changePct.toFixed(0) + '%').padStart(5)} ` +
         `rvol ${(r.relVolume?.toFixed(1) ?? '—').padStart(6)} ` +
         `float ${(r.float ? (r.float.floatShares / 1e6).toFixed(1) + 'M' : '—').padStart(7)} ` +
         `rot ${(r.floatRotation?.toFixed(1) ?? '—').padStart(6)} ` +
-        `| pillars ${r.cameron.passedCount}/5  sykes ${r.sykes.total}`,
+        `| pillars ${r.filter.passedCount}/5  score ${r.score.total}`,
     );
   }
   console.log('\nWrote data/screen.json');

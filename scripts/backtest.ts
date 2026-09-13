@@ -10,7 +10,7 @@
  *    with a float under the threshold — how did it trade the NEXT session?"
  *
  * That is the setup this screener actually hands you after the close, so it is
- * the one worth measuring. Entry is next open, managed by Cameron's stop and
+ * the one worth measuring. Entry is next open, managed by the momentum source's stop and
  * 2:1 target.
  *
  * WHAT IT CANNOT TEST, and why the numbers are not his numbers:
@@ -19,11 +19,11 @@
  *      collapsed and delisted are absent, and those are exactly the losers.
  *      This biases results optimistic, and there is no free fix.
  *   2. NO CATALYST FILTER. Historical per-day news is not available free, so
- *      the news pillar — which both men call decisive — is simply not applied.
+ *      the news pillar — which both methodologies call decisive — is simply not applied.
  *   3. FLOAT IS TODAY'S. Applied backwards to every historical day. After a
  *      reverse split or raise that is wrong, so float is left OUT of the
  *      historical filter rather than applied incorrectly.
- *   4. DAILY BARS, NOT INTRADAY. Cameron holds minutes and enters on a
+ *   4. DAILY BARS, NOT INTRADAY. the momentum source holds minutes and enters on a
  *      pullback; we enter at the open and exit by the close.
  *
  * So: this measures whether the volume-and-momentum core has an edge, with the
@@ -42,7 +42,7 @@ type Signal = { symbol: string; signalDate: string; changePct: number; relVolume
 
 function findSignals(symbol: string, bars: Bar[]): { signal: Signal; nextBar: Bar }[] {
   const out: { signal: Signal; nextBar: Bar }[] = [];
-  const c = CRITERIA.cameron;
+  const c = CRITERIA.gate;
 
   for (let i = 51; i < bars.length - 1; i++) {
     const day = bars[i], prev = bars[i - 1], next = bars[i + 1];
@@ -88,7 +88,7 @@ async function main() {
   console.log(`  ${all.length} historical signals found`);
   if (!all.length) { console.log('Nothing to test.'); return; }
 
-  // Cap positions per day the way Sykes does — the shortlist is short. Without
+  // Cap positions per day the way the scoring source does — the shortlist is short. Without
   // this, the backtest quietly assumes infinite capital on the busiest days.
   const byDay = new Map<string, typeof all>();
   for (const s of all) {
@@ -104,7 +104,7 @@ async function main() {
 
   for (const [date, day] of [...byDay.entries()].sort()) {
     if (equity <= 0) { ruinedOn ??= date; break; }   // a blown account stops trading
-    // Rank by relative volume: the pillar both men weight most heavily.
+    // Rank by relative volume: the pillar both methodologies weight most heavily.
     const picks = day.sort((a, b) => b.signal.relVolume - a.signal.relVolume).slice(0, RULES.maxPositions);
     for (const p of picks) {
       if (equity <= 0) break;
@@ -157,7 +157,7 @@ async function main() {
     tradesTaken: trades.length,
     ruinedOn,
     rules: RULES,
-    criteria: CRITERIA.cameron,
+    criteria: CRITERIA.gate,
     stats,
     setupBehaviour: {
       meanOpenToClosePct: mean(rawNextDay),

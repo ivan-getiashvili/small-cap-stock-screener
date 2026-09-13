@@ -65,7 +65,7 @@ async function main() {
       if (fired === null) { noSignal++; continue; }
 
       // Risk a fixed FRACTION of equity, not a fixed dollar amount. $100 on a
-      // $2,000 account is 5% a trade, well outside Sykes' stated 1-3% band, and
+      // $2,000 account is 5% a trade, well outside the scoring source's stated 1-3% band, and
       // it makes ruin a property of the sizing rather than of the strategy.
       const t = simulateSession(
         s.symbol, date, bars.filter((b) => b.ts >= fired),

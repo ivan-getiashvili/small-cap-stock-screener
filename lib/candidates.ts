@@ -21,7 +21,7 @@ import { readFile, readdir } from 'node:fs/promises';
 export const DAILY_DIR = 'data/db/daily';
 
 export const SELECT = {
-  minIntradayHighPct: 10,   // Cameron's "up at least 10%", measured at the HIGH
+  minIntradayHighPct: 10,   // the momentum source's "up at least 10%", measured at the HIGH
   minVolumeMultiple: 3,     // generous; the intraday signal does the real work
   priceMin: 2, priceMax: 20,
   minDollarVolume: 1_000_000,

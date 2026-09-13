@@ -85,7 +85,7 @@ export async function getUniverse(): Promise<{ quotes: Quote[]; asOf: string | n
     // A stock with no price or no volume cannot be screened on any criterion
     // either trader uses, so it is dropped here rather than checked everywhere.
     if (!symbol || price === null || price <= 0 || volume === null) continue;
-    // Skip warrants, units, rights and preferreds. Sykes calls these out
+    // Skip warrants, units, rights and preferreds. the scoring source calls these out
     // explicitly ("I don't like trading stocks with a W"), and they distort
     // float maths because they are claims on shares rather than shares.
     if (/[.^]|\/(W|U|R|P)/.test(symbol) || /\b(warrant|unit|right|preferred|depositary)\b/i.test(String(r.name ?? ''))) continue;

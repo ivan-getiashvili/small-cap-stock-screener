@@ -1,12 +1,12 @@
 /**
- * Cameron's actual strategy, simulated on 1-minute bars.
+ * the momentum source's actual strategy, simulated on 1-minute bars.
  *
  * The daily-bar backtest could only ask "buy the open, sell the close", which
  * is not remotely what he does. His profit is concentrated in trades held under
  * ten minutes, entered on a pullback, so the entry has to be found INSIDE the
  * session. That is what this file does.
  *
- * His rules, from warriortrading.com/momentum-day-trading-strategy and his own
+ * His rules, from the published methodology and the source's own
  * videos, in the order they fire:
  *
  *   1. A surge — the stock squeezes up on volume.
@@ -33,7 +33,7 @@ export const INTRADAY = {
   /** A surge is this much gain within the lookback, on above-average volume. */
   surgePct: 3,
   surgeLookback: 5,
-  /** Cameron's pullback is short — "2-3 red candles". */
+  /** the momentum source's pullback is short — "2-3 red candles". */
   maxPullbackBars: 3,
   /** "I don't want to see it go below more than 50%" of the surge. */
   maxRetrace: 0.5,
@@ -82,7 +82,7 @@ export type IntradayTrade = {
 
 
 /**
- * Find the first Cameron-style pullback entry in a session and manage it.
+ * Find the first the momentum source-style pullback entry in a session and manage it.
  * Returns null when no valid setup appeared — which is itself a result: he
  * says most days offer under ten names, and some none at all.
  */
@@ -190,7 +190,7 @@ export function simulateSession(
         effStop = entry;                                 // "adjust my stop to my entry price"
         continue;
       }
-      // Cameron, verbatim: "If I haven't already sold 1/2, the first candle to
+      // the momentum source, verbatim: "If I haven't already sold 1/2, the first candle to
       // close red is an exit indicator. If I've already sold 1/2, I'll hold
       // through red candles as long as my breakeven stop doesn't hit."
       // This was implemented inverted — exiting on red only AFTER taking half,

@@ -23,8 +23,8 @@ export type Variant = {
 
 export const VARIANTS: Variant[] = [
   {
-    key: 'cameron_2to1',
-    label: 'Cameron 4% stop, 2:1 target',
+    key: 'tight_stop_2to1',
+    label: 'the momentum source 4% stop, 2:1 target',
     note: 'His stated rules: ~20c stop on a $5 stock, target twice the risk. Entry at the open.',
     run: (bar) => {
       const e = bar.open; if (!(e > 0)) return null;
@@ -60,7 +60,7 @@ export const VARIANTS: Variant[] = [
   {
     key: 'scalp_5pct',
     label: 'Buy open, take +5%, else close',
-    note: 'Sells into strength the way both men describe, rather than holding for a big target.',
+    note: 'Sells into strength the way both methodologies describe, rather than holding for a big target.',
     run: (bar) => {
       const e = bar.open; if (!(e > 0)) return null;
       if (bar.high >= e * 1.05) return { pnlPct: 5, outcome: 'target', ambiguous: false };

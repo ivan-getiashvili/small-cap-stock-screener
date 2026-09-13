@@ -47,10 +47,14 @@
   .why{margin:11px 0 0;font-size:13px;color:var(--ink);background:rgba(63,208,127,.06);
        border:1px solid rgba(63,208,127,.18);border-radius:8px;padding:9px 12px}
   .why b{font-family:var(--mono);font-weight:650}
-  .nums b.go{color:var(--go)} .nums b.hot{color:var(--hot)}
+  .nums b.go{color:var(--go)} .nums b.hot{color:var(--hot)} .nums b.warn{color:var(--warn)}
   .checks{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
   .chk{font:11.5px/1.7 var(--sans);padding:2px 9px;border-radius:6px;background:#222835;color:var(--no)}
   .chk.ok{background:var(--go-bg);color:var(--go)}
+  .biz{color:var(--dim);font-size:12px;margin-top:2px}
+  .ext{margin-top:9px;font-size:12.5px;line-height:1.55;color:#e8c37a;
+       background:rgba(240,184,73,.07);border:1px solid rgba(240,184,73,.25);border-radius:8px;padding:9px 12px}
+  .ext b{color:#f0b849}
   .cat{margin-top:11px;font-size:13px;color:var(--dim);border-left:2px solid var(--line);padding-left:11px}
   .cat b{color:var(--ink)}
 
@@ -62,7 +66,7 @@
   <header>
     <div>
       <h1>Pre-Market Shortlist</h1>
-      <div class="sub">Ross Cameron's gapper checklist and Tim Sykes' pre-market routine, applied to live quotes.</div>
+      <div class="sub">Small-cap gappers screened on five momentum criteria, before the bell.</div>
     </div>
     <div class="status" id="status"></div>
   </header>
@@ -95,6 +99,7 @@ function card(r, top){
     [r.floatPctOfShares != null ? r.floatPctOfShares.toFixed(0) + '%' : '—', 'float / shares out', ''],
     [f.mult(r.floatRotation), 'float rotation', (r.floatRotation||0) >= 1 ? 'go' : ''],
     [r.marketCap ? '$' + f.sh(r.marketCap) : '—', 'market cap', ''],
+    [r.daysUp != null ? 'day ' + (r.daysUp + 1) : '—', 'of the run', r.extended ? 'warn' : 'go'],
   ].map(([v,l,c]) => `<div><b class="${c||''}">${v}</b><small>${l}</small></div>`).join('');
 
   // The one-line case for looking at this stock at all.
@@ -114,7 +119,8 @@ function card(r, top){
     <div class="row1">
       <div>
         <span class="tick">${r.symbol}</span>
-        <div class="co" title="${(r.name||'').replace(/"/g,'&quot;')}">${r.name||''}${r.sector?' · '+r.sector:''}</div>
+        <div class="co" title="${(r.legalName||r.name||'').replace(/"/g,'&quot;')}">${r.legalName||r.name||''}</div>
+        ${r.business ? `<div class="biz">${r.business}</div>` : ''}
       </div>
       <div style="text-align:right">
         <div class="chg ${r.preMarketChangePct>=50?'big':''}">${f.pct(r.preMarketChangePct)}</div>
@@ -123,6 +129,10 @@ function card(r, top){
     </div>
 
     ${why.length ? `<div class="why">Why it is here: ${why.join(' · ')}.</div>` : ''}
+    ${r.extended ? `<div class="ext"><b>Already extended.</b>
+      ${r.daysUp >= 2 ? `Day ${r.daysUp + 1} of an up-run` : 'Has run hard into today'}${
+        r.priorRunPct != null ? `, up ${r.priorRunPct >= 0 ? '+' : ''}${r.priorRunPct.toFixed(0)}% over the last few sessions before this morning` : ''
+      }. Multi-day runners are usually squeezes that have already happened — the fresh day-one move is the one worth having.</div>` : ''}
 
     <div class="nums">${nums}</div>
 
@@ -130,8 +140,13 @@ function card(r, top){
       `<span class="chk ${c.ok?'ok':''}">${c.ok?'✓':'✕'} ${c.name} · ${c.detail}</span>`).join('')}</div>
 
     ${r.catalyst && r.catalyst.found
-      ? `<div class="cat"><b>${r.catalyst.kind === '8-K' ? 'SEC 8-K' : 'News'} ${r.catalyst.date||''}:</b> ${r.catalyst.headline||''}</div>`
-      : `<div class="cat">No catalyst found. Both traders treat this as disqualifying.</div>`}
+      ? `<div class="cat">
+           <b>${r.catalyst.subject || (r.catalyst.kind === '8-K' ? 'SEC filing' : 'News')}</b>
+           <span style="color:var(--faint)">· ${r.catalyst.kind === '8-K' ? 'SEC 8-K' : 'headline'} ${r.catalyst.date||''}</span>
+           ${r.catalyst.headline && r.catalyst.headline !== r.catalyst.subject
+              ? `<div style="margin-top:3px">${r.catalyst.headline}</div>` : ''}
+         </div>`
+      : `<div class="cat">No catalyst found — the move has no visible reason behind it.</div>`}
     ${r.float && r.float.basis !== 'sec-public-float'
       ? `<div class="cat" style="border-color:rgba(240,184,73,.45)">Float shown is <b>shares outstanding</b>, an upper bound — the true tradable float is smaller, so rotation is understated.</div>`
       : r.float ? `<div class="cat" style="color:var(--faint)">Float filed with the SEC ${r.float.asOf}. Annual figure — check it before sizing.</div>` : ''}
@@ -179,7 +194,7 @@ function render(){
   } else if (!D.shortlist.length){
     b.innerHTML = `<div class="banner none"><b>Nothing cleared all five criteria today.</b>
       ${D.liveQuotes.toLocaleString()} stocks had live pre-market prices. That is a normal outcome —
-      Cameron says a full scan often leaves under ten names, and some mornings none.
+      A full scan usually leaves fewer than ten names, and some mornings none at all.
       Trading nothing is a position.</div>`;
   } else { b.innerHTML = ''; }
 
@@ -201,10 +216,14 @@ function foot(){
     a real news catalyst · price $${g.priceMin}–$${g.priceMax} ·
     float under ${g.floatIdeal/1e6}M shares. All five must pass to reach the shortlist.
     <br><br>
-    <b>Where these come from.</b> Cameron's gapper checklist and his stated quality tiers
-    (float under 20M with pre-market volume over 150k is high quality; under 50k pre-market volume is low),
-    and Sykes' pre-market routine — biggest percent gainers first, then catalyst and float, ending with
-    a list of one to five names rather than twenty.
+    <b>Quality tiers.</b> Float under 20M with pre-market volume over 150k is high quality;
+    pre-market volume under 50k is low. Percent gainers are ranked first, then catalyst and float,
+    ending with a handful of names rather than twenty.
+    <br><br>
+    <b>Fresh moves only.</b> The percentage is this session against the previous close, not a
+    multi-day total. A name that has already climbed for several sessions is marked
+    <b>extended</b> — a stock up 100% in one morning on new information is the setup; one up 100%
+    over three sessions is usually a squeeze that has already happened.
     <br><br>
     <b>What this is not.</b> It finds candidates; it does not decide anything. Entry, size and stop are
     yours. Float is the weakest number here — SEC files it once a year and small caps dilute constantly,

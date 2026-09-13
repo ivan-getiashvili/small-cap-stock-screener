@@ -18,7 +18,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { getBars } from '../lib/sources/nasdaq.ts';
 import { simulateDay, summarise, RULES, type Trade } from '../lib/strategy.ts';
 
-type Pending = { symbol: string; queuedOn: string; sykes: number; relVolume: number | null; price: number };
+type Pending = { symbol: string; queuedOn: string; score: number; relVolume: number | null; price: number };
 type State = {
   startedAt: string;
   startingCash: number;
@@ -75,8 +75,8 @@ async function main() {
   // ---- 2. Queue tonight's picks ------------------------------------------
   const already = new Set(state.pending.map((p) => p.symbol));
   const picks = (screen.rows as any[])
-    .filter((r) => r.cameron.passed)
-    .sort((a, b) => b.sykes.total - a.sykes.total)
+    .filter((r) => r.filter.passed)
+    .sort((a, b) => b.score.total - a.score.total)
     .filter((r) => !already.has(r.quote.symbol))
     .slice(0, RULES.maxPositions);
 
@@ -84,7 +84,7 @@ async function main() {
     state.pending.push({
       symbol: r.quote.symbol,
       queuedOn: asOf,
-      sykes: r.sykes.total,
+      score: r.score.total,
       relVolume: r.relVolume,
       price: r.quote.price,
     });

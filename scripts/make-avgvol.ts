@@ -24,7 +24,7 @@ for (const f of (await readdir(DIR).catch(() => []))) {
     const avg = w.reduce((a, b) => a + b.volume, 0) / w.length;
     if (!(avg > 0)) { skipped++; continue; }
 
-    // Sykes' "history of spiking": has this name run before?
+    // the scoring source's "history of spiking": has this name run before?
     // Anything over 300% in one session is a reverse split, not a run — these
     // bars are not split-adjusted, and a corporate action would otherwise put a
     // fictitious track record on the card.

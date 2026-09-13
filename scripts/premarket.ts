@@ -4,15 +4,15 @@
  * Run:  npm run premarket        (intended: ~08:45 ET, 45 min before the open)
  *
  * This is the whole product: a handful of tickers to look at before the bell.
- * No backtest, no simulation. It applies the two men's stated pre-market
+ * No backtest, no simulation. It applies the two methodologies' stated pre-market
  * criteria to live quotes and stops there — the trading decision is yours.
  *
- * Cameron's gapper checklist (warriortrading.com/gap-go):
+ * the momentum source's gapper checklist (the published methodology):
  *   scan gaps > 4% -> hunt the catalyst -> mark pre-market highs -> trade 9:30
  *   quality tiers: float < 20M and pre-market volume > 150k is high quality;
  *   price > $20 or pre-market volume < 50k is low quality.
  *
- * Sykes' pre-market routine (his "Pre-Market Checklist" video):
+ * the scoring source's pre-market routine (his "Pre-Market Checklist" video):
  *   biggest % gainers FIRST, not the news -> then catalyst and float ->
  *   float rotation is the tell -> a shortlist of one to five names, never 20.
  *
@@ -23,7 +23,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { getUniverse } from '../lib/sources/nasdaq.ts';
 import { getPreMarketQuotes, getMarketStatus } from '../lib/sources/premarket.ts';
 import { getTickerToCik, getFloat, makePriceLookup, floatFromSharesOutstanding, getSharesOutstanding } from '../lib/sources/sec.ts';
-import { findCatalyst } from '../lib/sources/news.ts';
+import { findCatalyst, getCompanyProfile } from '../lib/sources/news.ts';
 
 /**
  * Which names are even worth a pre-market lookup. Deliberately generous.
@@ -43,10 +43,10 @@ const UNIVERSE = { priceMin: 1, priceMax: 25, maxMarketCap: 2e9 };
 const INVESTIGATE = 30;
 /** The gate for appearing on the shortlist at all. */
 const GATE = {
-  minPreMarketChangePct: 10,   // Cameron: "up at least 10%"; Sykes: "10%+ pre-market"
-  minPreMarketVolume: 50_000,  // Cameron: under 50k pre-market is low quality
+  minPreMarketChangePct: 10,   // the momentum source: "up at least 10%"; the scoring source: "10%+ pre-market"
+  minPreMarketVolume: 50_000,  // the momentum source: under 50k pre-market is low quality
   goodPreMarketVolume: 150_000,// …over 150k is high quality
-  priceMin: 2, priceMax: 20,   // Cameron's stated sweet spot
+  priceMin: 2, priceMax: 20,   // the momentum source's stated sweet spot
   floatIdeal: 10_000_000,      // his "under 10 million shares"
   floatStretch: 20_000_000,
 };
@@ -59,6 +59,36 @@ const pct = (a: number, b: number) => ((a - b) / b) * 100;
  * This is what lets us measure a pre-market move ourselves rather than trusting
  * a vendor's percent-change field to have rolled over.
  */
+/**
+ * The last few closes per symbol, so we can tell a day-one move from a stock
+ * that has already run for three sessions. The sources are explicit that a
+ * day-three runner is usually a squeeze to leave alone, so this is not colour —
+ * it changes whether a name belongs on the list.
+ */
+async function closeHistory(): Promise<Map<string, number[]>> {
+  try {
+    const j: Record<string, number[]> = JSON.parse(await readFile('data/closes.json', 'utf8'));
+    return new Map(Object.entries(j));
+  } catch { return new Map(); }
+}
+
+/** Consecutive rising sessions ending at the latest close. */
+function runLength(closes: number[] | undefined): number {
+  if (!closes || closes.length < 2) return 0;
+  let n = 0;
+  for (let i = closes.length - 1; i > 0; i--) {
+    if (closes[i] > closes[i - 1]) n++; else break;
+  }
+  return n;
+}
+
+/** How far the stock has already travelled over the stored window, in percent. */
+function priorRunPct(closes: number[] | undefined): number | null {
+  if (!closes || closes.length < 2) return null;
+  const first = closes[0], last = closes[closes.length - 1];
+  return first > 0 ? ((last - first) / first) * 100 : null;
+}
+
 async function prevCloses(): Promise<Map<string, number>> {
   try {
     const j: Record<string, number> = JSON.parse(await readFile('data/prevclose.json', 'utf8'));
@@ -109,6 +139,7 @@ async function main() {
   const { quotes: universe, asOf } = await getUniverse();
   const avg = await avgVolumes();
   const prev = await prevCloses();
+  const closes = await closeHistory();
   console.log(`Universe ${universe.length}; ${avg.size} volume histories; ${prev.size} stored prior closes`);
 
   const watch = universe.filter(
@@ -200,6 +231,15 @@ async function main() {
 
     // Shares outstanding straight from EDGAR, in share units — no price
     // conversion to get wrong, unlike market cap / price.
+    const profile = cik ? await getCompanyProfile(cik).catch(() => null) : null;
+    const hist = closes.get(q.symbol);
+    const daysUp = runLength(hist);
+    const priorRun = priorRunPct(hist);
+    // Already up for several sessions before today: the sources call this
+    // overextended and prefer day ones, so it is surfaced as a warning rather
+    // than silently folded into the score.
+    const extended = daysUp >= 2 || (priorRun !== null && priorRun >= 50);
+
     const so = await getSharesOutstanding(q.symbol).catch(() => null);
     const sharesOut = so?.shares ?? base?.sharesOutstanding ?? null;
     const marketCap = sharesOut && price ? sharesOut * price : (base?.marketCap ?? null);
@@ -225,6 +265,9 @@ async function main() {
       preMarketPrice: price,
       preMarketChangePct: q.preMarketChangePct,
       prevClose: q.prevClose,
+      business: profile?.business ?? base?.industry ?? null,
+      legalName: profile?.name ?? base?.name ?? null,
+      daysUp, priorRunPct: priorRun, extended,
       preMarketVolume: pmVol,
       preMarketDollarVolume: pmVol && price ? pmVol * price : null,
       relVolume: relVol,

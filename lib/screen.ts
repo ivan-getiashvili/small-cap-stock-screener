@@ -1,23 +1,23 @@
 /**
  * The two decision systems, kept deliberately separate.
  *
- *   cameronFilter() — five pass/fail pillars. A stock either is or is not a
- *                     candidate. Source: his own video "Picking Stocks was HARD
+ *   gapFilter() — five pass/fail pillars. A stock either is or is not a
+ *                     candidate. Source: the source's own video "Picking Stocks was HARD
  *                     Until I Learned This 5 Step Trick" (22 Oct 2025), where
- *                     he derives each threshold from his own P&L.
+ *                     he derives each threshold from the source's own P&L.
  *
- *   sykesScore()    — seven weighted indicators summing to 100, trade above 70.
+ *   qualityScore()    — seven weighted indicators summing to 100, trade above 70.
  *                     Source: "How to Pick Stocks to Day Trade (with my 7-Step
  *                     Formula)" (9 Nov 2025), where he states the point weights.
  *
- * They are not blended. Cameron decides WHICH stocks are candidates; Sykes
+ * They are not blended. the momentum source decides WHICH stocks are candidates; the scoring source
  * decides HOW GOOD each candidate is. Every threshold lives in CRITERIA so it
  * can be tuned in one place without hunting through the logic.
  */
 import type { Candidate, FilterResult, Quote, Score, Float, Bar } from './types.ts';
 
 export const CRITERIA = {
-  cameron: {
+  filter: {
     minChangePct: 10,        // "up at least 10% on the day already"
     minRelVolume: 5,         // "5x higher relative volume"
     priceMin: 2,             // "$2 to $20 is going to be our sweet spot"
@@ -27,7 +27,7 @@ export const CRITERIA = {
     minGapPct: 2,            // "opening up at least 2% from the prior day's close"
     volumePotential: 25_000_000, // where his results cluster by end of day
   },
-  sykes: {
+  score: {
     priceSweetLow: 3,        // "my sweet spot is stocks between three and $5"
     priceSweetHigh: 5,
     floatIdealMax: 5_000_000,   // "500,000, a million, 5 million shares"
@@ -38,14 +38,14 @@ export const CRITERIA = {
   },
 } as const;
 
-/** Cameron's five pillars. `hasNews === null` means we could not check. */
-export function cameronFilter(
+/** the momentum source's five pillars. `hasNews === null` means we could not check. */
+export function gapFilter(
   q: Quote,
   relVolume: number | null,
   floatShares: number | null,
   hasNews: boolean | null,
 ): FilterResult {
-  const c = CRITERIA.cameron;
+  const c = CRITERIA.gate;
   const pillars = [
     {
       name: 'Up ≥10% today',
@@ -59,7 +59,7 @@ export function cameronFilter(
     },
     {
       name: 'News catalyst',
-      // Unknown is not a pass. Cameron is emphatic that the catalyst comes
+      // Unknown is not a pass. the momentum source is emphatic that the catalyst comes
       // first, so absent evidence we fail the pillar rather than assume one.
       ok: hasNews === true,
       detail: hasNews === null ? 'not checked' : hasNews ? 'headline found' : 'none found',
@@ -87,7 +87,7 @@ const clamp = (n: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, n
 const scale = (v: number, lo: number, hi: number, max: number) =>
   Math.round(clamp(1 + ((v - lo) / (hi - lo)) * (max - 1), 1, max));
 
-export type SykesInputs = {
+export type ScoreInputs = {
   quote: Quote;
   floatShares: number | null;
   floatRotation: number | null;
@@ -101,9 +101,9 @@ export type SykesInputs = {
   dollarVolume: number;
 };
 
-/** Sykes' seven indicators, with his own scoring anchors. */
-export function sykesScore(i: SykesInputs): Score {
-  const s = CRITERIA.sykes;
+/** the scoring source's seven indicators, with the source's own scoring anchors. */
+export function qualityScore(i: ScoreInputs): Score {
+  const s = CRITERIA.score;
   const parts: Score['parts'] = [];
 
   // P — Pattern and price (1-20). We can score price precisely; pattern needs
@@ -193,7 +193,7 @@ export function sykesScore(i: SykesInputs): Score {
   return { total, tradeable: total > s.tradeThreshold, parts };
 }
 
-/** Today's volume vs the 50-day average, excluding today. Cameron's pillar #2. */
+/** Today's volume vs the 50-day average, excluding today. the momentum source's pillar #2. */
 export function relativeVolume(todayVolume: number, priorBars: Bar[]): { rel: number; avg: number } | null {
   const window = priorBars.slice(-50);
   if (window.length < 10) return null;   // too little history to mean anything
@@ -202,7 +202,7 @@ export function relativeVolume(todayVolume: number, priorBars: Bar[]): { rel: nu
   return { rel: todayVolume / avg, avg };
 }
 
-/** Largest single-day % gain in the supplied bars. Sykes' "former runner" test. */
+/** Largest single-day % gain in the supplied bars. the scoring source's "former runner" test. */
 export function bestSpike(bars: Bar[]): number | null {
   let best: number | null = null;
   for (let k = 1; k < bars.length; k++) {
@@ -215,7 +215,7 @@ export function bestSpike(bars: Bar[]): number | null {
   return best;
 }
 
-/** Consecutive up-closes ending at the last bar. Sykes prefers day 1. */
+/** Consecutive up-closes ending at the last bar. the scoring source prefers day 1. */
 export function dayOfRun(bars: Bar[]): number {
   let n = 0;
   for (let k = bars.length - 1; k > 0; k--) {

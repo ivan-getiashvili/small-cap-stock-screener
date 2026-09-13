@@ -82,9 +82,9 @@
 <div class="wrap">
   <header>
     <div>
-      <h1>Small Cap Screener <span>— Cameron × Sykes</span></h1>
+      <h1>Small Cap Screener <span>— the momentum source × the scoring source</span></h1>
       <div style="color:var(--ink-faint);font-size:12.5px;margin-top:4px">
-        US listed stocks filtered on Ross Cameron's five pillars, ranked by Tim Sykes' sliding scale.
+        US listed stocks filtered on the momentum source's five pillars, ranked by the scoring source' sliding scale.
       </div>
     </div>
     <div class="meta" id="meta"></div>
@@ -102,7 +102,7 @@
   <h2>Paper account <em>— the screener's own picks, traded forward with no hindsight</em></h2>
   <div id="paper"></div>
 
-  <h2>Backtest, 1-minute resolution <em>— Cameron's actual entry, survivorship-free</em></h2>
+  <h2>Backtest, 1-minute resolution <em>— the momentum source's actual entry, survivorship-free</em></h2>
   <div id="intraday"></div>
 
   <h2>What actually kills it <em>— cost sensitivity and account size</em></h2>
@@ -137,7 +137,7 @@ function head(){
     `<span class="badge ${open?'open':'shut'}">${open?'market open':'market closed'}</span><br>` +
     `data as of ${DATA.asOf}<br>generated ${fmt.when(DATA.generatedAt)}`;
 
-  const passing = DATA.rows.filter(r => r.cameron.passed).length;
+  const passing = DATA.rows.filter(r => r.filter.passed).length;
   document.getElementById('env').innerHTML = [
     [DATA.universeSize.toLocaleString(), 'stocks scanned'],
     [DATA.rows.length, 'met pre-filter'],
@@ -147,22 +147,22 @@ function head(){
   ].map(([v,l]) => `<div><b>${v}</b><small>${l}</small></div>`).join('');
 }
 
-/** Sykes' time indicator is worth 20 of 100 and can only score high near the
+/** the scoring source's time indicator is worth 20 of 100 and can only score high near the
  *  open, so a weekend scan is structurally capped. Say so rather than let the
  *  reader think every setup is weak. */
 function staleness(){
   const el = document.getElementById('staleness');
   if (DATA.marketOpen) { el.innerHTML = ''; return; }
   el.innerHTML = `<div class="warn"><b>Market is closed.</b> These are the last session's closing numbers
-    (${DATA.asOf}). Sykes scores time-of-day out of 20 points and it can only score high near the open,
+    (${DATA.asOf}). the scoring source scores time-of-day out of 20 points and it can only score high near the open,
     so every total below is roughly 15–19 points lower than the same setup would score live.
     Treat this as tomorrow's watchlist, not a live trade list.</div>`;
 }
 
 function row(r){
   const q = r.quote, hot = q.changePct >= 50;
-  const pips = r.cameron.pillars.map(p => `<span class="pip ${p.ok?'on':''}" title="${p.name}: ${p.detail}"></span>`).join('');
-  return `<tr class="row ${r.cameron.passed?'pass':''}" data-sym="${q.symbol}">
+  const pips = r.filter.pillars.map(p => `<span class="pip ${p.ok?'on':''}" title="${p.name}: ${p.detail}"></span>`).join('');
+  return `<tr class="row ${r.filter.passed?'pass':''}" data-sym="${q.symbol}">
     <td><span class="sym">${q.symbol}</span></td>
     <td><div class="nm" title="${q.name.replace(/"/g,'&quot;')}">${q.name}</div></td>
     <td>${fmt.usd(q.price)}</td>
@@ -173,19 +173,19 @@ function row(r){
     <td>${fmt.mult(r.floatRotation)}</td>
     <td>${r.gapPct===null?'—':fmt.pct(r.gapPct)}</td>
     <td><span class="pills">${pips}</span></td>
-    <td><span class="score ${r.sykes.tradeable?'good':''}">${r.sykes.total}</span></td>
+    <td><span class="score ${r.score.tradeable?'good':''}">${r.score.total}</span></td>
   </tr>
   <tr class="detail" id="d-${q.symbol}" hidden><td colspan="11">
     <div class="panel">
       <div>
-        <h3>Cameron — five pillars (pass/fail)</h3>
-        ${r.cameron.pillars.map(p => `<div class="crit">
+        <h3>the momentum source — five pillars (pass/fail)</h3>
+        ${r.filter.pillars.map(p => `<div class="crit">
             <span class="${p.ok?'ok':'no'}">${p.ok?'✓':'✕'} ${p.name}</span>
             <span class="v">${p.detail}</span></div>`).join('')}
       </div>
       <div>
-        <h3>Sykes — sliding scale (${r.sykes.total}/100, trade above 70)</h3>
-        ${r.sykes.parts.map(p => `<div class="crit" style="display:block">
+        <h3>the scoring source — sliding scale (${r.score.total}/100, trade above 70)</h3>
+        ${r.score.parts.map(p => `<div class="crit" style="display:block">
             <div style="display:flex;justify-content:space-between">
               <span>${p.label}</span><span class="v">${p.points}/${p.max}</span></div>
             <div class="v" style="color:var(--ink-faint);font-size:11.5px">${p.why}</div>
@@ -195,12 +195,12 @@ function row(r){
       <div class="cat">
         ${r.catalyst && r.catalyst.found
           ? `<b>Catalyst (${r.catalyst.kind}, ${r.catalyst.date}):</b> ${r.catalyst.headline}`
-          : '<b>No catalyst found.</b> Both traders treat this as disqualifying — Cameron: “what comes first is definitely the news catalyst.”'}
+          : '<b>No catalyst found.</b> Both traders treat this as disqualifying — the momentum source: “what comes first is definitely the news catalyst.”'}
         ${r.float ? `<br><b>Float basis:</b> ${r.float.basis === 'sec-public-float'
             ? 'SEC public float, filed ' + r.float.asOf + ' — annual figure, can be stale after a raise'
             : 'estimated from market cap ÷ price — this is shares outstanding, an upper bound on true float'}` : ''}
         ${r.bestPriorSpikePct!==null ? `<br><b>Best prior day in the last year:</b> +${r.bestPriorSpikePct.toFixed(0)}%` : ''}
-        ${r.dayOfRun ? `<br><b>Day ${r.dayOfRun} of an up-run.</b> ${r.dayOfRun>1?'Sykes prefers day one — “I like day ones, not day two or day three.”':''}` : ''}
+        ${r.dayOfRun ? `<br><b>Day ${r.dayOfRun} of an up-run.</b> ${r.dayOfRun>1?'the scoring source prefers day one — “I like day ones, not day two or day three.”':''}` : ''}
       </div>
     </div>
   </td></tr>`;
@@ -211,7 +211,7 @@ function table(rows, mount, emptyMsg){
   if (!rows.length){ el.innerHTML = `<div class="empty">${emptyMsg}</div>`; return; }
   el.innerHTML = `<table><thead><tr>
       <th>Ticker</th><th>Company</th><th>Price</th><th>Chg</th><th>RVol</th><th>Volume</th>
-      <th>Float</th><th>Rot</th><th>Gap</th><th>Pillars</th><th>Sykes</th>
+      <th>Float</th><th>Rot</th><th>Gap</th><th>Pillars</th><th>the scoring source</th>
     </tr></thead><tbody>${rows.map(row).join('')}</tbody></table>`;
   el.querySelectorAll('tr.row').forEach(tr => tr.addEventListener('click', () => {
     const d = document.getElementById('d-' + tr.dataset.sym);
@@ -223,13 +223,13 @@ function foot(){
   const c = DATA.criteria;
   document.getElementById('foot').innerHTML = `
     <h4>What the filter is</h4>
-    Cameron's five pillars, as he states them: up ≥${c.cameron.minChangePct}% on the day,
-    relative volume ≥${c.cameron.minRelVolume}×, a news catalyst,
-    price $${c.cameron.priceMin}–$${c.cameron.priceMax},
-    and float under ${(c.cameron.maxFloat/1e6)}M shares. All five must pass.
-    Sykes' seven indicators are then scored out of 100 — pattern &amp; price 20, risk/reward 20,
+    the momentum source's five pillars, as he states them: up ≥${c.gate.minChangePct}% on the day,
+    relative volume ≥${c.gate.minRelVolume}×, a news catalyst,
+    price $${c.gate.priceMin}–$${c.gate.priceMax},
+    and float under ${(c.gate.maxFloat/1e6)}M shares. All five must pass.
+    the scoring source's seven indicators are then scored out of 100 — pattern &amp; price 20, risk/reward 20,
     time of day 20, ease of entry 10, history of spiking 10, catalyst 10, market environment 10 —
-    and he trades only above ${c.sykes.tradeThreshold}.
+    and he trades only above ${c.score.tradeThreshold}.
     <h4>Where the numbers come from</h4>
     Price, % change, volume and market cap: Nasdaq's public screener API.
     Daily history for relative volume, gaps and spike history: Nasdaq per-symbol history.
@@ -240,10 +240,10 @@ function foot(){
     <b>Float is the weakest number here.</b> EDGAR reports it once a year in dollars; small caps
     reverse-split and dilute constantly, so a stale float can be wrong by a wide margin. Where the
     figure fails a sanity check the screener says “unknown” rather than guess.
-    <b>This data is end-of-day, not live.</b> Cameron's edge is between 7:00 and 11:30 ET and most of
+    <b>This data is end-of-day, not live.</b> the momentum source's edge is between 7:00 and 11:30 ET and most of
     his profit comes from trades held under ten minutes — nothing on this page is fast enough for that
     yet. Use it to build a watchlist, not to time an entry.
-    <b>Neither man's published results are verified here.</b> Warrior Trading and Ross Cameron settled
+    <b>Neither man's published results are verified here.</b> the operator settled
     with the FTC in 2022 over deceptive earnings claims; the FTC found most customers lost money.
     A screener that reproduces their criteria reproduces their stock selection, which is not the same
     thing as reproducing their returns.`;
@@ -286,7 +286,7 @@ function backtestPanel(){
     <div class="warn" style="background:rgba(255,107,107,.08);border-color:rgba(255,107,107,.3);color:#ffa8a8">
       <b>Every exit rule tested lost money.</b> Over ${B.signals.toLocaleString()} historical signals
       (${B.window.from} → ${B.window.to}), buying the next open after a qualifying move was unprofitable
-      under all five rules below. Running Cameron's own stop and target, a $${B.rules.startingCash}
+      under all five rules below. Running the momentum source's own stop and target, a $${B.rules.startingCash}
       account risking $${B.rules.riskPerTrade} a trade was blown out
       ${B.ruinedOn ? 'by ' + B.ruinedOn : 'entirely'}.
       Survivorship bias makes this test <em>optimistic</em> — delisted collapses are missing — and it is
@@ -301,7 +301,7 @@ function backtestPanel(){
       But open→high median <b>+${sb.medianOpenToHighPct.toFixed(2)}%</b> (mean +${sb.meanOpenToHighPct.toFixed(2)}%)
       — the spike is genuinely there, intraday, and then given back.
       That is the whole strategy in two numbers: the move exists, and holding it does not work.
-      Both men say exactly this — Cameron's profit concentrates in trades held under ten minutes.
+      Both men say exactly this — the momentum source's profit concentrates in trades held under ten minutes.
       <br><br><b>“Ambiguous” matters:</b> that column is the share of days where the bar covered both the
       stop and the target. Daily data cannot say which came first, so those results are an assumption
       (we always assume the stop). At 24% for the tight-stop rule, a quarter of that row is assumption.
@@ -322,7 +322,7 @@ function intradayPanel(){
     <div class="warn" style="${good
         ? 'background:rgba(63,208,127,.08);border-color:rgba(63,208,127,.3);color:#8ee7b4'
         : 'background:rgba(255,107,107,.08);border-color:rgba(255,107,107,.3);color:#ffa8a8'}">
-      <b>${s.trades.toLocaleString()} trades, ${I.window.from} → ${I.window.to}, entered on Cameron's pullback at 1-minute resolution.</b><br>
+      <b>${s.trades.toLocaleString()} trades, ${I.window.from} → ${I.window.to}, entered on the momentum source's pullback at 1-minute resolution.</b><br>
       Equity $${I.rules.startingCash} → <b>$${s.endingEquity.toFixed(2)}</b>
       (${s.returnPct>=0?'+':''}${s.returnPct.toFixed(1)}%),
       accuracy ${s.accuracy.toFixed(1)}%, max drawdown ${s.maxDrawdownPct.toFixed(1)}%,
@@ -351,7 +351,7 @@ function intradayPanel(){
         session — surge, a 1–3 candle pullback that holds above the 50% retrace, then the first
         candle to make a new high — with the stop at the pullback low capped at 20¢, half off at
         2:1, and a breakeven stop on the rest. Median hold is ${I.medianHoldMinutes} minutes, which
-        is the timeframe Cameron actually trades.
+        is the timeframe the momentum source actually trades.
         <br><br><b>Still assumed, not measured:</b> when a single minute contains both the stop and
         the target, the order is unknowable and we always take the stop — that affects
         ${d.ambiguous} of ${s.trades} trades (${d.ambiguousPct.toFixed(1)}%). Fills assume you can
@@ -412,10 +412,10 @@ function whyPanel(){
 
 head(); staleness(); foot(); paperPanel(); intradayPanel(); whyPanel(); backtestPanel();
 const rows = DATA.rows;
-table(rows.filter(r => r.cameron.passed), 'full',
-      'Nothing passed all five today. That is normal — Cameron says a full scan often leaves under ten names, and some days none.');
-table(rows.filter(r => !r.cameron.passed && r.cameron.passedCount === 4), 'near',
+table(rows.filter(r => r.filter.passed), 'full',
+      'Nothing passed all five today. That is normal — the momentum source says a full scan often leaves under ten names, and some days none.');
+table(rows.filter(r => !r.filter.passed && r.filter.passedCount === 4), 'near',
       'No four-of-five names either.');
 document.getElementById('c1').textContent =
-  '— ' + rows.filter(r => r.cameron.passed).length + ' of ' + rows.length + ' analysed';
+  '— ' + rows.filter(r => r.filter.passed).length + ' of ' + rows.length + ' analysed';
 </script>

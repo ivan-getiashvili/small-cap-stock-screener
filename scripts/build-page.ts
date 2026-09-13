@@ -34,7 +34,7 @@ const head = `<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="dark">
 <meta name="robots" content="noindex">
-<title>Small Cap Screener — Cameron × Sykes</title>
+<title>Small Cap Screener — the momentum source × the scoring source</title>
 </head>
 <body>
 `;

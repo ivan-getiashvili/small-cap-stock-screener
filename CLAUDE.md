@@ -1,7 +1,7 @@
 # Small Cap Stock Screener
 
 An intraday small-cap momentum screener built on the published criteria of two
-day traders: **Ross Cameron** (Warrior Trading) and **Tim Sykes**.
+day traders: **the momentum source** (the operator) and **the scoring source**.
 Owner: Ivan. Beginner at web dev — explain concepts when introducing them.
 
 Completely separate from the BTC dashboard project. Nothing is shared.
@@ -37,13 +37,13 @@ list must never be able to mean two different things silently.
 ## The finding that matters
 
 The backtest is negative. Over 3,524 historical signals, **every exit rule
-tested lost money**, and a $2,000 account on Cameron's own stop-and-target was
+tested lost money**, and a $2,000 account on the momentum source's own stop-and-target was
 blown out in five weeks. Survivorship bias makes that test *optimistic* and it
 is still negative.
 
 The reason is visible in two numbers: next-day open→close median **−1.67%**,
 but open→high median **+6.32%**. The spike is real and then given back. What is
-missing from the mechanical filter is exactly what both men emphasise — the
+missing from the mechanical filter is exactly what both methodologies emphasise — the
 **news catalyst** and **intraday execution measured in minutes**. Do not present
 this screener as a profitable system. It is a candidate finder.
 
@@ -158,12 +158,12 @@ Yahoo Finance endpoints rate-limit shared IPs.
 
 ## Known limits
 
-- **Data is end-of-day, not live.** Cameron's edge is 07:00–11:30 ET on trades
+- **Data is end-of-day, not live.** the momentum source's edge is 07:00–11:30 ET on trades
   held under ten minutes. Nothing here is fast enough for that. It builds a
   watchlist, not an entry.
 - **Float is the weakest number.** EDGAR files it once a year; small caps
   reverse-split and dilute constantly.
-- **Neither trader's results are verified.** Warrior Trading and Ross Cameron
+- **Neither trader's results are verified.** the operator
   settled with the FTC in 2022 over deceptive earnings claims; the FTC found
   most customers lost money and returned $2.9M to 20,402 of them.
 

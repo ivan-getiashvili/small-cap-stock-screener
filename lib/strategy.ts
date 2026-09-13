@@ -1,7 +1,7 @@
 /**
- * Cameron's trade management, expressed so it can run over daily bars.
+ * the momentum source's trade management, expressed so it can run over daily bars.
  *
- * His actual rules, from warriortrading.com/momentum-day-trading-strategy:
+ * His actual rules, from the published methodology:
  *   - stop just below the first pullback; if that is more than 20c away, use 20c
  *   - "I always want to trade with a 2:1 profit loss ratio" — 20c risk, 40c target
  *   - position size = max risk / stop distance ($500 / $0.20 = 2,500 shares)
@@ -15,11 +15,11 @@
 import type { Bar } from './types.ts';
 
 export const RULES = {
-  stopPct: 0.04,        // ~20c on a $5 stock, his stated stop distance
-  rewardRatio: 2,       // his stated 2:1
+  stopPct: 0.04,        // ~20c on a $5 stock, the stated stop distance
+  rewardRatio: 2,       // the stated 2:1
   riskPerTrade: 100,    // dollars risked per position (fixed-size tests)
-  riskPct: 0.02,        // or 2% of equity — inside Sykes' stated 1-3% band
-  maxPositions: 3,      // Sykes: "one, two, three, four, or five" names, not 20
+  riskPct: 0.02,        // or 2% of equity — inside the scoring source's stated 1-3% band
+  maxPositions: 3,      // the scoring source: "one, two, three, four, or five" names, not 20
   startingCash: 2000,   // matches the size of account he demos
 } as const;
 
