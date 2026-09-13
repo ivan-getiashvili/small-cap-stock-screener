@@ -1,95 +1,97 @@
 /**
- * Push the shortlist to your phone -> ntfy.sh
+ * Post the shortlist as a comment on the tracking issue -> GitHub emails you.
  *
- * Run:  NTFY_TOPIC=... node --experimental-strip-types scripts/notify.ts
+ * Run:  GITHUB_TOKEN=... GITHUB_REPOSITORY=owner/repo NOTIFY_ISSUE=2 npm run notify
  *
- * ntfy needs no account: you subscribe to a topic in the app and anything
- * published to it arrives as a push. The topic name IS the credential, which is
- * why it lives in a GitHub secret and never in this repository — the repo is
- * public, and a topic in the clear would let anyone read or spam your alerts.
+ * Why an issue comment rather than a push service: it needs no app, no account
+ * and no subscription — you already receive GitHub email for issues you opened.
+ * The web is the whole delivery mechanism.
  *
- * Deliberately quiet. A notification for every scan would be a dozen a morning
- * and you would mute it within a week, so it only fires when something needs
- * your eyes: names on the shortlist, or a scan that could not trust its data.
+ * Deliberately quiet. A comment every twenty minutes would be a dozen emails a
+ * morning and you would filter them within a week, so it posts only when there
+ * is something to act on: names that cleared every criterion, or a scan that
+ * could not trust its own data. Quiet mornings send nothing.
  */
 import { readFile } from 'node:fs/promises';
 
-const TOPIC = process.env.NTFY_TOPIC;
-if (!TOPIC) { console.log('NTFY_TOPIC not set — skipping notification'); process.exit(0); }
+const TOKEN = process.env.GITHUB_TOKEN;
+const REPO = process.env.GITHUB_REPOSITORY;
+const ISSUE = process.env.NOTIFY_ISSUE ?? '2';
+const SITE = process.env.SITE_URL ?? '';
 
 const d = JSON.parse(await readFile('data/premarket.json', 'utf8'));
-const url = `https://ntfy.sh/${TOPIC}`;
 
-async function push(title: string, body: string, priority: string, tags: string, click?: string) {
-  const res = await fetch(url, {
+async function comment(body: string) {
+  if (!TOKEN || !REPO) { console.log('no GITHUB_TOKEN/REPOSITORY — printing instead:\n' + body); return; }
+  const res = await fetch(`https://api.github.com/repos/${REPO}/issues/${ISSUE}/comments`, {
     method: 'POST',
     headers: {
-      Title: title, Priority: priority, Tags: tags,
-      ...(click ? { Click: click } : {}),
+      Authorization: `Bearer ${TOKEN}`,
+      Accept: 'application/vnd.github+json',
+      'Content-Type': 'application/json',
     },
-    body,
+    body: JSON.stringify({ body }),
     signal: AbortSignal.timeout(20_000),
   });
-  console.log(res.ok ? `pushed: ${title}` : `push failed: HTTP ${res.status}`);
+  console.log(res.ok ? 'posted to the tracking issue' : `post failed: HTTP ${res.status} ${await res.text()}`);
 }
 
-const site = process.env.SITE_URL ?? '';
+const when = new Date(d.generatedAt).toLocaleString('en-US', {
+  timeZone: 'America/New_York', dateStyle: 'medium', timeStyle: 'short',
+});
+const link = SITE ? `\n\n[Open the full page](${SITE})` : '';
 
 // A scan that could not read its feed is more urgent than a quiet one: an empty
-// list would otherwise be silently mistaken for "no opportunities today".
-if (d.fetch && !d.fetch.reliable) {
-  await push(
-    'Scan unreliable',
-    `Only ${d.fetch.answerRatePct.toFixed(0)}% of quotes answered. Do not read the empty list as "nothing today".`,
-    'high', 'warning', site,
+// list would otherwise be mistaken for "no opportunities today".
+if (d.fetch && d.fetch.requested && !d.fetch.reliable) {
+  await comment(
+    `### ⚠️ Scan unreliable — ${when} ET\n\n` +
+    `Only **${d.fetch.answerRatePct.toFixed(0)}%** of quote lookups answered ` +
+    `(${d.fetch.answered} of ${d.fetch.requested}).\n\n` +
+    `Do not read the empty shortlist as "nothing today" — the data feed may have failed.${link}`,
   );
 } else if (d.shortlist?.length) {
-  const lines = d.shortlist.map((r: any) => {
-    const bits = [
+  const rows = d.shortlist.map((r: any) => {
+    const cells = [
+      `**${r.symbol}**`,
+      r.business ?? '—',
       `${r.preMarketChangePct >= 0 ? '+' : ''}${r.preMarketChangePct.toFixed(0)}%`,
       `$${r.preMarketPrice.toFixed(2)}`,
-      r.relVolume ? `${r.relVolume.toFixed(1)}x vol` : null,
-      r.float ? `${(r.float.shares / 1e6).toFixed(1)}M float` : null,
-      r.floatRotation ? `${r.floatRotation.toFixed(1)}x rot` : null,
-    ].filter(Boolean).join('  ');
-    return `${r.symbol}  ${bits}`;
+      r.relVolume ? `${r.relVolume.toFixed(1)}×` : '—',
+      r.float ? `${(r.float.shares / 1e6).toFixed(1)}M` : '—',
+      r.floatRotation ? `${r.floatRotation.toFixed(1)}×` : '—',
+      r.catalyst?.subject ?? r.catalyst?.headline?.slice(0, 60) ?? '—',
+      r.extended ? '⚠️ extended' : 'day 1',
+    ];
+    return `| ${cells.join(' | ')} |`;
   });
-  await push(
-    `${d.shortlist.length} on the shortlist`,
-    lines.join('\n') + (d.watchlist?.length ? `\n\nwatch: ${d.watchlist.map((r: any) => r.symbol).join(' ')}` : ''),
-    'high', 'chart_with_upwards_trend', site,
-  );
-} else if (d.watchlist?.length) {
-  await push(
-    'Nothing cleared all five',
-    `Watchlist (four of five): ${d.watchlist.map((r: any) => `${r.symbol} ${r.preMarketChangePct >= 0 ? '+' : ''}${r.preMarketChangePct.toFixed(0)}%`).join(', ')}`,
-    'default', 'eyes', site,
+  await comment(
+    `### ${d.shortlist.length} on the shortlist — ${when} ET\n\n` +
+    `| Ticker | Business | Move | Price | RVol | Float | Rot | Catalyst | Run |\n` +
+    `|---|---|---|---|---|---|---|---|---|\n${rows.join('\n')}\n\n` +
+    (d.watchlist?.length
+      ? `Watchlist (four of five): ${d.watchlist.map((r: any) => `\`${r.symbol}\``).join(' ')}\n\n` : '') +
+    `_Candidates only. Entry, size and stop are yours._${link}`,
   );
 } else {
-  console.log('nothing to report — staying quiet');
+  console.log('nothing cleared all five — staying quiet, no email sent');
 }
 
 /**
- * The post-test reminder.
- *
- * The repo was left public only so GitHub Pages could serve it while the data
- * source was unproven. Once a scan has actually read live pre-market quotes,
- * that reason expires — and the moment the result lands is the only moment this
- * reminder is genuinely useful, so it rides along with it rather than sitting
- * in a list nobody opens. It fires once, then marks itself done.
+ * One-shot reminder, riding along with the first scan that reads a live feed —
+ * the moment the reason for keeping this repo public expires.
  */
 if (d.feedIsLive && d.fetch?.reliable && d.liveQuotes > 0) {
   const { readFile: rf, writeFile } = await import('node:fs/promises');
   let done = false;
   try { done = JSON.parse(await rf('data/reminders.json', 'utf8')).liveFeedConfirmed === true; } catch {}
   if (!done) {
-    await push(
-      'Live feed confirmed — time to lock it down',
-      'The pre-market feed works. Two things now:\n' +
-      '1. Add CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID as repo secrets\n' +
-      '2. Then the repo can go private (this also hides the old commit history)\n' +
-      'Buying a domain makes sense from here.',
-      'high', 'lock', site,
+    await comment(
+      `### ✅ Live pre-market feed confirmed\n\n` +
+      `A scan has now read real live pre-market quotes, so the reason this repo is public has expired.\n\n` +
+      `1. Add \`CLOUDFLARE_API_TOKEN\` and \`CLOUDFLARE_ACCOUNT_ID\` as repository secrets — the deploy step activates on its own\n` +
+      `2. Then flip the repo **private**; Cloudflare serves from private repos and this also hides the old commit history\n` +
+      `3. A domain makes sense from here\n\nSee #1.`,
     );
     await writeFile('data/reminders.json', JSON.stringify({ liveFeedConfirmed: true, at: new Date().toISOString() }));
   }

@@ -21,6 +21,7 @@ on:
 
 permissions:
   contents: write        # the post-close job commits data/prevclose.json
+  issues: write          # the shortlist is delivered as an issue comment
   pages: write
   id-token: write
 
@@ -103,10 +104,14 @@ jobs:
             console.log('watchlist:', d.watchlist.map(r=>r.symbol).join(', ')||'(none)');
           "
 
-      - name: Push the shortlist to your phone
+      # Delivered as a comment on the tracking issue, which GitHub emails.
+      # No app, no subscription — the web is the whole channel.
+      - name: Post the shortlist to the tracking issue
         if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
         env:
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          NOTIFY_ISSUE: '2'
           SITE_URL: https://ivan-getiashvili.github.io/small-cap-stock-screener/
         run: npm run notify
 

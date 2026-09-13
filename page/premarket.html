@@ -280,4 +280,34 @@ function foot(){
     filings. Data may be delayed. Not investment advice.`;
 }
 render();
+
+/**
+ * Keep the page current on its own.
+ *
+ * With no app in the loop, an open tab is the live view — so it reloads itself
+ * every three minutes, but only while a scan could plausibly have produced
+ * something new. Reloading all evening would be pointless traffic, and worse,
+ * it would make a stale page look freshly checked.
+ */
+(function autoRefresh(){
+  const etNow = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' }));
+  const day = etNow.getDay();
+  const mins = etNow.getHours() * 60 + etNow.getMinutes();
+  const scanning = day >= 1 && day <= 5 && mins >= 4 * 60 && mins <= 11 * 60 + 30;
+  if (!scanning) return;
+  setTimeout(() => location.reload(), 180000);
+
+  // Show how old the figures are, counting up, so a frozen page is obvious.
+  const el = document.createElement('div');
+  el.style.cssText = 'position:fixed;bottom:12px;right:14px;font:11px/1 var(--mono);' +
+    'color:var(--faint);background:var(--panel);border:1px solid var(--line);' +
+    'padding:6px 10px;border-radius:99px';
+  document.body.appendChild(el);
+  const t0 = Date.parse(D && D.generatedAt ? D.generatedAt : Date.now());
+  (function tick(){
+    const age = Math.max(0, Math.round((Date.now() - t0) / 60000));
+    el.textContent = `scanned ${age} min ago · refreshing`;
+    setTimeout(tick, 20000);
+  })();
+})();
 </script>
