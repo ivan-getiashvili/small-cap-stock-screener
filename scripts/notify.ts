@@ -68,3 +68,29 @@ if (d.fetch && !d.fetch.reliable) {
 } else {
   console.log('nothing to report — staying quiet');
 }
+
+/**
+ * The post-test reminder.
+ *
+ * The repo was left public only so GitHub Pages could serve it while the data
+ * source was unproven. Once a scan has actually read live pre-market quotes,
+ * that reason expires — and the moment the result lands is the only moment this
+ * reminder is genuinely useful, so it rides along with it rather than sitting
+ * in a list nobody opens. It fires once, then marks itself done.
+ */
+if (d.feedIsLive && d.fetch?.reliable && d.liveQuotes > 0) {
+  const { readFile: rf, writeFile } = await import('node:fs/promises');
+  let done = false;
+  try { done = JSON.parse(await rf('data/reminders.json', 'utf8')).liveFeedConfirmed === true; } catch {}
+  if (!done) {
+    await push(
+      'Live feed confirmed — time to lock it down',
+      'The pre-market feed works. Two things now:\n' +
+      '1. Add CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID as repo secrets\n' +
+      '2. Then the repo can go private (this also hides the old commit history)\n' +
+      'Buying a domain makes sense from here.',
+      'high', 'lock', site,
+    );
+    await writeFile('data/reminders.json', JSON.stringify({ liveFeedConfirmed: true, at: new Date().toISOString() }));
+  }
+}

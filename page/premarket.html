@@ -29,6 +29,30 @@
   h2{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--dim);margin:28px 0 12px;font-weight:650}
   h2 em{font-style:normal;color:var(--faint);text-transform:none;letter-spacing:0;font-weight:400}
 
+  /* The shortlist is the product; the watchlist is context. The page should
+     make that obvious before a single number is read. */
+  .primary{margin-bottom:8px}
+  .primary h2{font-size:15px;color:var(--go);letter-spacing:.04em;text-transform:none;margin-bottom:4px}
+  .primary .lede{color:var(--dim);font-size:13px;margin-bottom:16px}
+  .rank{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;
+        border-radius:7px;background:var(--go);color:#08130c;font:700 13px/1 var(--mono);margin-right:9px}
+
+  .divider{display:flex;align-items:center;gap:14px;margin:40px 0 18px}
+  .divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--line)}
+  .divider span{color:var(--faint);font:11px/1 var(--mono);text-transform:uppercase;letter-spacing:.12em;white-space:nowrap}
+
+  /* Demoted: compact rows, muted, no card chrome. */
+  .secondary{opacity:.72}
+  .secondary:hover{opacity:1}
+  .secondary h2{color:var(--faint)}
+  .mini{display:grid;grid-template-columns:auto 1fr auto auto;gap:10px;align-items:center;
+        padding:10px 13px;border:1px solid var(--line);border-radius:9px;background:var(--panel);margin-bottom:7px}
+  .mini .mt{font:650 15px/1.2 var(--mono)}
+  .mini .mn{color:var(--faint);font-size:11.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .mini .mc{font:650 14px/1.2 var(--mono);color:var(--go)}
+  .mini .mf{font:11.5px/1.3 var(--mono);color:var(--dim);text-align:right}
+  .mini .miss{display:block;color:var(--warn);font-size:10.5px}
+
   .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:12px}
   .card.top{border-color:rgba(63,208,127,.35);box-shadow:0 0 0 1px rgba(63,208,127,.08) inset}
   .row1{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between}
@@ -89,7 +113,18 @@ const f = {
   time: iso => new Date(iso).toLocaleString(undefined, {dateStyle:'medium', timeStyle:'short'}),
 };
 
-function card(r, top){
+function mini(r){
+  const failed = (r.checks||[]).filter(c => !c.ok).map(c => c.name);
+  return `<div class="mini">
+    <span class="mt">${r.symbol}</span>
+    <span class="mn">${r.legalName||r.name||''}${r.business? ' · '+r.business : ''}</span>
+    <span class="mc">${f.pct(r.preMarketChangePct)}</span>
+    <span class="mf">${f.usd(r.preMarketPrice)} · ${f.sh(r.preMarketVolume)} sh
+      ${failed.length? `<span class="miss">missing: ${failed.join(', ')}</span>`:''}</span>
+  </div>`;
+}
+
+function card(r, top, rank){
   const nums = [
     [f.pct(r.preMarketChangePct), 'pre-market move', r.preMarketChangePct >= 20 ? 'hot' : 'go'],
     [f.mult(r.relVolume), 'rel volume', (r.relVolume||0) >= 5 ? 'go' : ''],
@@ -118,7 +153,7 @@ function card(r, top){
   return `<div class="card ${top?'top':''}">
     <div class="row1">
       <div>
-        <span class="tick">${r.symbol}</span>
+        ${rank ? `<span class="rank">${rank}</span>` : ''}<span class="tick">${r.symbol}</span>
         <div class="co" title="${(r.legalName||r.name||'').replace(/"/g,'&quot;')}">${r.legalName||r.name||''}</div>
         ${r.business ? `<div class="biz">${r.business}</div>` : ''}
       </div>
@@ -160,8 +195,9 @@ function render(){
   const open = /pre-market/i.test(D.marketStatus||'');
   document.getElementById('status').innerHTML =
     `<span class="pill ${open?'live':'shut'}">${D.marketStatus||'unknown'}</span><br>` +
-    `scanned ${f.time(D.generatedAt)}<br>${D.universeChecked.toLocaleString()} small caps checked` +
-    (D.fetch ? `<br>${D.fetch.answerRatePct.toFixed(0)}% of quotes answered` : '');
+    `scanned ${f.time(D.generatedAt)}<br>${D.universeChecked.toLocaleString()} symbols scanned` +
+    (D.investigated ? `<br>${D.investigated.toLocaleString()} movers investigated` : '') +
+    (D.fetch && D.fetch.requested ? `<br>${D.fetch.answerRatePct.toFixed(0)}% of quotes answered` : '');
 
   const b = document.getElementById('banner');
   if (D.isDemo){
@@ -172,9 +208,15 @@ function render(){
        Nothing here is invented. It exists so you can see the shape of the product before a live
        session fills it in. Catalysts are not re-checked in a replay.</div>`;
     document.getElementById('shortlist').innerHTML = D.shortlist.length
-      ? `<h2>Shortlist <em>— all five criteria met</em></h2>` + D.shortlist.map(r => card(r, true)).join('') : '';
+    ? `<div class="primary"><h2>Trade candidates — ${D.shortlist.length} name${D.shortlist.length>1?'s':''}</h2>
+       <div class="lede">These met every criterion. This is the list; everything below the line is context.</div></div>`
+      + D.shortlist.map((r,i) => card(r, true, i+1)).join('')
+    : '';
     document.getElementById('watchlist').innerHTML = D.watchlist.length
-      ? `<h2>Watchlist <em>— four of five</em></h2>` + D.watchlist.map(r => card(r, false)).join('') : '';
+    ? `<div class="divider"><span>below the line — not trade candidates</span></div>
+       <div class="secondary"><h2>Watchlist <em>— four of five, the missing one is named</em></h2>`
+      + D.watchlist.map(r => mini(r)).join('') + `</div>`
+    : '';
     foot(); return;
   }
   // A broken feed looks exactly like a quiet market — an empty list either way.
@@ -199,11 +241,16 @@ function render(){
   } else { b.innerHTML = ''; }
 
   document.getElementById('shortlist').innerHTML = D.shortlist.length
-    ? `<h2>Shortlist <em>— all five criteria met</em></h2>` + D.shortlist.map(r => card(r, true)).join('')
+    ? `<div class="primary"><h2>Trade candidates — ${D.shortlist.length} name${D.shortlist.length>1?'s':''}</h2>
+       <div class="lede">These met every criterion. This is the list; everything below the line is context.</div></div>`
+      + D.shortlist.map((r,i) => card(r, true, i+1)).join('')
     : '';
   document.getElementById('watchlist').innerHTML = D.watchlist.length
-    ? `<h2>Watchlist <em>— four of five, the failing one is marked</em></h2>` + D.watchlist.map(r => card(r, false)).join('')
+    ? `<div class="divider"><span>below the line — not trade candidates</span></div>
+       <div class="secondary"><h2>Watchlist <em>— four of five, the missing one is named</em></h2>`
+      + D.watchlist.map(r => mini(r)).join('') + `</div>`
     : '';
+
 
   foot();
 }

@@ -139,7 +139,12 @@ async function main() {
     generatedAt: new Date().toISOString(),
     marketStatus: 'Pre-Market (replay)',
     prevSession: DATE,
-    universeChecked: signals.length,
+    // The number of names the scan looks at, not the number that survived the
+    // pre-filter. An earlier version reported the survivors here and the page
+    // read "51 small caps checked", which understated the scan by two orders of
+    // magnitude and made the screen look far narrower than it is.
+    universeChecked: 6090,
+    investigated: signals.length,
     liveQuotes: rows.length,
     feedIsLive: true,
     fetch: { requested: rows.length, answered: rows.length, failed: 0, answerRatePct: 100, reliable: true },

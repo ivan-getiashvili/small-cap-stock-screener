@@ -110,6 +110,17 @@ jobs:
           SITE_URL: https://ivan-getiashvili.github.io/small-cap-stock-screener/
         run: npm run notify
 
+      - name: Persist the one-shot reminder flag
+        if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
+        continue-on-error: true
+        run: |
+          if [ -f data/reminders.json ] && ! git diff --quiet data/reminders.json 2>/dev/null; then
+            git config user.name  "premarket-bot"
+            git config user.email "noreply@github.com"
+            git add data/reminders.json
+            git commit -m "Reminder fired" && git push
+          fi
+
       - name: Deploy to Cloudflare
         # Optional. Runs only once CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID
         # exist as repository secrets; until then the site is served by Pages.
