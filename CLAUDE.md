@@ -8,11 +8,31 @@ Completely separate from the BTC dashboard project. Nothing is shared.
 
 ## What it does
 
-1. **Screens** the whole US market (~6,000 stocks) against Cameron's five
-   pass/fail pillars, then ranks survivors with Sykes' 100-point sliding scale.
-2. **Backtests** the mechanical part of that filter over cached daily history.
-3. **Paper-trades** its own picks forward, committing before the session and
-   scoring afterwards, so the record cannot be tuned with hindsight.
+**The product is one page: a pre-market shortlist of small caps, published
+before the open.** Everything else is supporting research.
+
+- `_site/index.html` — the shortlist. Built by `npm run site`, refreshed by CI
+  every 20 minutes through the pre-market window.
+- `_site/research.html` — the end-of-day screener and the backtests.
+
+## The pre-market scan, and why it is shaped this way
+
+**One bulk request, then ~30 lookups.** The first version asked Nasdaq for a
+quote on every one of ~2,945 small caps — roughly 35,000 requests a day on the
+schedule — and Nasdaq began answering 403 after two runs. That failure mode is
+nastier than it sounds: a blocked feed yields an empty shortlist, which looks
+identical to a quiet morning. So the scan takes the whole market in one request,
+then investigates only the names that survive the first cut.
+
+**Staleness is measured, not assumed.** A post-close job records every closing
+price to `data/prevclose.json`, and the morning scan measures the pre-market
+move against that itself rather than trusting a vendor's percent-change field to
+have rolled over. If prices match the stored closes, the page says the feed is
+not live instead of reporting "nothing qualified".
+
+**The answer rate is published.** If fewer than half the quote lookups respond,
+the page says the scan is unreliable and CI fails during pre-market. An empty
+list must never be able to mean two different things silently.
 
 ## The finding that matters
 
@@ -41,7 +61,13 @@ this screener as a profitable system. It is a candidate finder.
 ## Commands
 
 ```
-npm run ingest        # scan the market -> data/screen.json
+# the product
+npm run site          # pre-market scan + build -> _site/index.html
+npm run premarket     # scan only -> data/premarket.json
+npm run snapshot      # record closing prices (run after the close)
+
+# research
+npm run ingest        # end-of-day screener -> data/screen.json
 npm run build         # bake into _site/index.html
 npm run build:site    # both
 npm run paper         # advance the paper account (run after the close)
@@ -108,6 +134,11 @@ is what makes the survivorship-free universe possible.
    today's listings.** Small caps delist constantly; building from what exists
    today deletes most of the losers.
 9. **Check `--dry` cost before any Databento pull.**
+10. **Be a good citizen of a free API.** Nasdaq has no key and no published
+    quota, which makes it easy to abuse and easy to get blocked. Bulk endpoints
+    first, per-symbol lookups only for a shortlist, and back off on 403.
+11. **An empty result must never be ambiguous.** Distinguish "nothing
+    qualified" from "the feed failed", on the page and in CI.
 
 ## Data sources (all free, all keyless)
 
