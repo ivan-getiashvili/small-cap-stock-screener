@@ -11,6 +11,13 @@ on:
     - cron: '0,20,40 11-14 * * 1-5'   # pre-market sweep
     - cron: '10 21 * * 1-5'           # after the close: record today's closes
   workflow_dispatch:        # lets you trigger a scan by hand any time
+    inputs:
+      mode:
+        description: 'scan (default) or snapshot (record closing prices)'
+        required: false
+        default: scan
+        type: choice
+        options: [scan, snapshot]
 
 permissions:
   contents: write        # the post-close job commits data/prevclose.json
@@ -35,7 +42,7 @@ jobs:
       # After the close we only record closing prices; tomorrow's scan needs them
       # to measure a pre-market move rather than trust a vendor's change field.
       - name: Record today's closes
-        if: github.event.schedule == '10 21 * * 1-5'
+        if: github.event.schedule == '10 21 * * 1-5' || inputs.mode == 'snapshot'
         run: |
           npm run snapshot
           git config user.name  "premarket-bot"
@@ -45,18 +52,18 @@ jobs:
           git push
 
       - name: Scan the pre-market
-        if: github.event.schedule != '10 21 * * 1-5'
+        if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
         env:
           # EDGAR returns 403 without a contact string in the User-Agent.
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: npm run premarket
 
       - name: Build the page
-        if: github.event.schedule != '10 21 * * 1-5'
+        if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
         run: npm run build:premarket
 
       - name: Check the page is not empty
-        if: github.event.schedule != '10 21 * * 1-5'
+        if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
         # A green workflow is not evidence the page is good. If the build produced
         # a stub, fail here rather than publish a blank site over a working one.
         run: |
@@ -70,7 +77,7 @@ jobs:
           grep -q "Pre-Market Shortlist" _site/index.html
 
       - name: Show what was found
-        if: github.event.schedule != '10 21 * * 1-5'
+        if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
         run: |
           node -e "
             const d=require('./data/premarket.json');
