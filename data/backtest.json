@@ -1,0 +1,403 @@
+{
+  "generatedAt": "2026-09-12T11:30:59.156Z",
+  "variants": [
+    {
+      "key": "tight_stop_2to1",
+      "label": "the momentum source 4% stop, 2:1 target",
+      "note": "His stated rules: ~20c stop on a $5 stock, target twice the risk. Entry at the open.",
+      "trades": 3524,
+      "winRatePct": 23.29738933030647,
+      "meanPct": -1.4246259881802794,
+      "medianPct": -4,
+      "totalIfCompounded10Pct": -99.3669923963116,
+      "ambiguousBars": 848,
+      "ambiguousPct": 24.063564131668556
+    },
+    {
+      "key": "wide_stop",
+      "label": "10% stop, 2:1 target",
+      "note": "Same shape, wider stop. Tests whether 4% is simply inside these stocks’ daily noise.",
+      "trades": 3524,
+      "winRatePct": 37.42905788876277,
+      "meanPct": -1.167239981741613,
+      "medianPct": -3.703703703703707,
+      "totalIfCompounded10Pct": -98.62883427490249,
+      "ambiguousBars": 143,
+      "ambiguousPct": 4.05788876276958
+    },
+    {
+      "key": "open_to_close",
+      "label": "Buy open, sell close (no stop)",
+      "note": "The pure question: does the setup drift up or down over the session?",
+      "trades": 3524,
+      "winRatePct": 42.196367763904654,
+      "meanPct": -0.44135875211417636,
+      "medianPct": -1.6650958215519838,
+      "totalIfCompounded10Pct": -85.68832444713715,
+      "ambiguousBars": 0,
+      "ambiguousPct": 0
+    },
+    {
+      "key": "scalp_5pct",
+      "label": "Buy open, take +5%, else close",
+      "note": "Sells into strength the way both men describe, rather than holding for a big target.",
+      "trades": 3524,
+      "winRatePct": 61.18047673098751,
+      "meanPct": -0.48019644388288424,
+      "medianPct": 5,
+      "totalIfCompounded10Pct": -83.57389975159376,
+      "ambiguousBars": 0,
+      "ambiguousPct": 0
+    },
+    {
+      "key": "overnight",
+      "label": "Buy signal close, sell next open",
+      "note": "Captures only the overnight gap — no intraday exposure at all.",
+      "trades": 3524,
+      "winRatePct": 42.281498297389334,
+      "meanPct": -0.6246989754859131,
+      "medianPct": -0.5847953216374318,
+      "totalIfCompounded10Pct": -93.30241711741904,
+      "ambiguousBars": 0,
+      "ambiguousPct": 0
+    }
+  ],
+  "window": {
+    "from": "2025-05-22",
+    "to": "2026-09-10"
+  },
+  "symbolsTested": 3385,
+  "signals": 3524,
+  "tradesTaken": 70,
+  "ruinedOn": "2025-06-27",
+  "rules": {
+    "stopPct": 0.04,
+    "rewardRatio": 2,
+    "riskPerTrade": 100,
+    "maxPositions": 3,
+    "startingCash": 2000
+  },
+  "criteria": {
+    "minChangePct": 10,
+    "minRelVolume": 5,
+    "priceMin": 2,
+    "priceMax": 20,
+    "maxFloat": 10000000,
+    "floatStretch": 20000000,
+    "minGapPct": 2,
+    "volumePotential": 25000000
+  },
+  "stats": {
+    "trades": 70,
+    "wins": 16,
+    "accuracy": 22.857142857142858,
+    "grossPnl": -2000.874652000003,
+    "avgWin": 199.74765200000013,
+    "avgLoss": -96.23772377777786,
+    "profitLossRatio": 2.075565008802958,
+    "endingEquity": -0.8746520000027349,
+    "returnPct": -100.04373260000014,
+    "maxDrawdownPct": 100.03364604346893,
+    "byReason": {
+      "target": 16,
+      "stop": 54,
+      "close": 0
+    },
+    "curve": [
+      {
+        "date": "2025-05-23",
+        "equity": 1900.04
+      },
+      {
+        "date": "2025-05-23",
+        "equity": 1800.0855999999999
+      },
+      {
+        "date": "2025-05-23",
+        "equity": 1999.6696000000002
+      },
+      {
+        "date": "2025-05-27",
+        "equity": 2199.506272
+      },
+      {
+        "date": "2025-05-27",
+        "equity": 2100.430672
+      },
+      {
+        "date": "2025-05-27",
+        "equity": 2000.470672
+      },
+      {
+        "date": "2025-05-28",
+        "equity": 1900.5706719999998
+      },
+      {
+        "date": "2025-05-28",
+        "equity": 2100.4330720000003
+      },
+      {
+        "date": "2025-05-28",
+        "equity": 2300.1386720000005
+      },
+      {
+        "date": "2025-05-29",
+        "equity": 2200.1454720000006
+      },
+      {
+        "date": "2025-05-29",
+        "equity": 2399.8878720000002
+      },
+      {
+        "date": "2025-05-29",
+        "equity": 2299.9160960000004
+      },
+      {
+        "date": "2025-05-30",
+        "equity": 2200.0345760000005
+      },
+      {
+        "date": "2025-05-30",
+        "equity": 2100.082976
+      },
+      {
+        "date": "2025-05-30",
+        "equity": 2299.882976
+      },
+      {
+        "date": "2025-06-02",
+        "equity": 2499.802976
+      },
+      {
+        "date": "2025-06-02",
+        "equity": 2399.842976
+      },
+      {
+        "date": "2025-06-02",
+        "equity": 2299.8810559999997
+      },
+      {
+        "date": "2025-06-03",
+        "equity": 2199.9190559999997
+      },
+      {
+        "date": "2025-06-03",
+        "equity": 2399.6326559999998
+      },
+      {
+        "date": "2025-06-03",
+        "equity": 2599.568656
+      },
+      {
+        "date": "2025-06-04",
+        "equity": 2499.6254559999998
+      },
+      {
+        "date": "2025-06-04",
+        "equity": 2399.627056
+      },
+      {
+        "date": "2025-06-04",
+        "equity": 2299.6678559999996
+      },
+      {
+        "date": "2025-06-05",
+        "equity": 2200.1381879999994
+      },
+      {
+        "date": "2025-06-05",
+        "equity": 2399.9271479999993
+      },
+      {
+        "date": "2025-06-05",
+        "equity": 2300.1031479999992
+      },
+      {
+        "date": "2025-06-06",
+        "equity": 2200.263147999999
+      },
+      {
+        "date": "2025-06-06",
+        "equity": 2100.303147999999
+      },
+      {
+        "date": "2025-06-06",
+        "equity": 2000.458347999999
+      },
+      {
+        "date": "2025-06-09",
+        "equity": 1900.560747999999
+      },
+      {
+        "date": "2025-06-09",
+        "equity": 1800.7327479999988
+      },
+      {
+        "date": "2025-06-09",
+        "equity": 1700.9087479999985
+      },
+      {
+        "date": "2025-06-10",
+        "equity": 1600.9407479999984
+      },
+      {
+        "date": "2025-06-10",
+        "equity": 1500.9807479999984
+      },
+      {
+        "date": "2025-06-10",
+        "equity": 1401.1915479999982
+      },
+      {
+        "date": "2025-06-11",
+        "equity": 1301.3687479999983
+      },
+      {
+        "date": "2025-06-11",
+        "equity": 1501.3047479999984
+      },
+      {
+        "date": "2025-06-11",
+        "equity": 1700.8887479999987
+      },
+      {
+        "date": "2025-06-12",
+        "equity": 1601.0427479999985
+      },
+      {
+        "date": "2025-06-12",
+        "equity": 1800.905147999999
+      },
+      {
+        "date": "2025-06-12",
+        "equity": 1700.908747999999
+      },
+      {
+        "date": "2025-06-13",
+        "equity": 1900.495947999999
+      },
+      {
+        "date": "2025-06-13",
+        "equity": 1800.643147999999
+      },
+      {
+        "date": "2025-06-13",
+        "equity": 1700.8663279999987
+      },
+      {
+        "date": "2025-06-16",
+        "equity": 1600.9147279999986
+      },
+      {
+        "date": "2025-06-16",
+        "equity": 1500.9915279999984
+      },
+      {
+        "date": "2025-06-16",
+        "equity": 1401.0555279999983
+      },
+      {
+        "date": "2025-06-17",
+        "equity": 1301.0887279999981
+      },
+      {
+        "date": "2025-06-17",
+        "equity": 1201.229495999998
+      },
+      {
+        "date": "2025-06-17",
+        "equity": 1101.3718959999978
+      },
+      {
+        "date": "2025-06-18",
+        "equity": 1300.653495999998
+      },
+      {
+        "date": "2025-06-18",
+        "equity": 1200.8873959999978
+      },
+      {
+        "date": "2025-06-18",
+        "equity": 1400.708995999998
+      },
+      {
+        "date": "2025-06-20",
+        "equity": 1300.755395999998
+      },
+      {
+        "date": "2025-06-20",
+        "equity": 1201.225395999998
+      },
+      {
+        "date": "2025-06-20",
+        "equity": 1101.475395999998
+      },
+      {
+        "date": "2025-06-23",
+        "equity": 1001.515395999998
+      },
+      {
+        "date": "2025-06-23",
+        "equity": 901.5217959999978
+      },
+      {
+        "date": "2025-06-23",
+        "equity": 801.5217959999978
+      },
+      {
+        "date": "2025-06-24",
+        "equity": 701.648147999998
+      },
+      {
+        "date": "2025-06-24",
+        "equity": 602.2201479999978
+      },
+      {
+        "date": "2025-06-24",
+        "equity": 502.4641479999978
+      },
+      {
+        "date": "2025-06-25",
+        "equity": 402.49614799999773
+      },
+      {
+        "date": "2025-06-25",
+        "equity": 302.88054799999753
+      },
+      {
+        "date": "2025-06-25",
+        "equity": 202.9685479999975
+      },
+      {
+        "date": "2025-06-26",
+        "equity": 103.0085479999974
+      },
+      {
+        "date": "2025-06-26",
+        "equity": 3.0309479999972666
+      },
+      {
+        "date": "2025-06-26",
+        "equity": 0.0009479999972672459
+      },
+      {
+        "date": "2025-06-27",
+        "equity": -0.8746520000027349
+      }
+    ]
+  },
+  "setupBehaviour": {
+    "meanOpenToClosePct": -0.44135875211417636,
+    "medianOpenToClosePct": -1.6650958215519838,
+    "meanOpenToHighPct": 11.201172209508513,
+    "medianOpenToHighPct": 6.319148936170225,
+    "pctOfDaysGreen": 42.196367763904654
+  },
+  "caveats": [
+    "Survivorship bias: universe is stocks listed today; delisted losers are absent.",
+    "No catalyst filter — historical per-day news is not available free.",
+    "Float excluded from the historical filter; today's float cannot be applied backwards.",
+    "Daily bars only. Entry at next open, not on an intraday pullback.",
+    "When a bar hits both stop and target, the stop is always assumed to hit first."
+  ]
+}

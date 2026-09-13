@@ -1,0 +1,53 @@
+{
+  "startedAt": "2026-09-12T11:29:28.677Z",
+  "startingCash": 2000,
+  "cash": 2000,
+  "pending": [
+    {
+      "symbol": "AENT",
+      "queuedOn": "2026-09-11",
+      "score": 43,
+      "relVolume": 45.002219787493864,
+      "price": 6.42
+    },
+    {
+      "symbol": "JVA",
+      "queuedOn": "2026-09-11",
+      "score": 42,
+      "relVolume": 6.252463810262375,
+      "price": 3.855
+    },
+    {
+      "symbol": "XRTX",
+      "queuedOn": "2026-09-11",
+      "score": 38,
+      "relVolume": 23.24527211570437,
+      "price": 2.33
+    }
+  ],
+  "trades": [],
+  "log": [
+    {
+      "date": "2026-09-11",
+      "note": "queued AENT, JVA, XRTX for next open"
+    }
+  ],
+  "stats": {
+    "trades": 0,
+    "wins": 0,
+    "accuracy": 0,
+    "grossPnl": 0,
+    "avgWin": 0,
+    "avgLoss": 0,
+    "profitLossRatio": null,
+    "endingEquity": 2000,
+    "returnPct": 0,
+    "maxDrawdownPct": 0,
+    "byReason": {
+      "target": 0,
+      "stop": 0,
+      "close": 0
+    },
+    "curve": []
+  }
+}

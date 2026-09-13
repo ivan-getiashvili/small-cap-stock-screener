@@ -14,6 +14,13 @@ data/*.json
 !data/demo.json
 !data/closes.json
 !data/closes.meta.json
+# static research outputs — regenerated rarely, small enough to publish
+!data/screen.json
+!data/backtest.json
+!data/backtest-intraday.json
+!data/sensitivity.json
+!data/capital.json
+!data/paper.json
 data/history/
 !data/.gitkeep
 

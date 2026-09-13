@@ -1,0 +1,63 @@
+{
+  "generatedAt": "2026-09-13T03:02:35.141Z",
+  "note": "Position sizing removed (unlimited capital) to isolate per-trade expectancy.",
+  "riskPerTrade": 100,
+  "setups": 1461,
+  "results": [
+    {
+      "label": "no costs at all (fantasy)",
+      "slip": 0,
+      "comm": 0,
+      "trades": 728,
+      "winRate": 39.6978021978022,
+      "avgWin": 175.60586401384074,
+      "avgLoss": -61.73511002277904,
+      "expectancy": 32.48404038461534,
+      "total": 23648.38139999997
+    },
+    {
+      "label": "half a cent slippage",
+      "slip": 0.005,
+      "comm": 0.002,
+      "trades": 729,
+      "winRate": 35.66529492455419,
+      "avgWin": 178.56239153846136,
+      "avgLoss": -66.3995326226013,
+      "expectancy": 20.966860082304564,
+      "total": 15284.841000000026
+    },
+    {
+      "label": "one cent slippage",
+      "slip": 0.01,
+      "comm": 0.002,
+      "trades": 729,
+      "winRate": 32.510288065843625,
+      "avgWin": 172.5443016877637,
+      "avgLoss": -68.978457113821,
+      "expectancy": 9.541287517146836,
+      "total": 6955.598600000043
+    },
+    {
+      "label": "two cents slippage",
+      "slip": 0.02,
+      "comm": 0.002,
+      "trades": 729,
+      "winRate": 28.532235939643346,
+      "avgWin": 166.05369759615405,
+      "avgLoss": -74.68788445297507,
+      "expectancy": -5.998928257887436,
+      "total": -4373.218699999941
+    },
+    {
+      "label": "three cents slippage",
+      "slip": 0.03,
+      "comm": 0.002,
+      "trades": 729,
+      "winRate": 24.417009602194785,
+      "avgWin": 174.5411617977529,
+      "avgLoss": -80.71125916515429,
+      "expectancy": -18.386251028806573,
+      "total": -13403.576999999992
+    }
+  ]
+}

@@ -65,6 +65,9 @@ jobs:
           # The replay demo is static; rebuild it so the deployed site always
           # carries a worked example next to the live list.
           if [ -f data/demo.json ]; then npm run build:demo; fi
+          # The research page is static output; publish it alongside if its
+          # data is present, so the analysis is reachable from the same site.
+          if [ -f data/screen.json ]; then npm run build:research; fi
 
       - name: Check the page is not empty
         if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
