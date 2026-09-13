@@ -22,7 +22,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { getUniverse } from '../lib/sources/nasdaq.ts';
 import { getPreMarketQuotes, getMarketStatus } from '../lib/sources/premarket.ts';
-import { getTickerToCik, getFloat, makePriceLookup, floatFromSharesOutstanding } from '../lib/sources/sec.ts';
+import { getTickerToCik, getFloat, makePriceLookup, floatFromSharesOutstanding, getSharesOutstanding } from '../lib/sources/sec.ts';
 import { findCatalyst } from '../lib/sources/news.ts';
 
 /**
@@ -66,13 +66,21 @@ async function prevCloses(): Promise<Map<string, number>> {
   } catch { return new Map(); }
 }
 
+/** Best single-day gain in the last year, per symbol. From the digest. */
+let spikeCache: Map<string, number | null> = new Map();
+
 async function avgVolumes(): Promise<Map<string, number>> {
-  // 50-day average volume. Prefer the small committed digest, because CI has
-  // that but not the multi-hundred-megabyte bar cache. Fall back to the full
-  // cache when running locally with it present.
+  // 50-day average volume and spike history. Prefer the small committed digest,
+  // because CI has that but not the multi-hundred-megabyte bar cache.
   try {
-    const digest: Record<string, number> = JSON.parse(await readFile('data/avgvol.json', 'utf8'));
-    return new Map(Object.entries(digest));
+    const digest: Record<string, [number, number | null]> = JSON.parse(await readFile('data/stats.json', 'utf8'));
+    const avg = new Map<string, number>();
+    spikeCache = new Map();
+    for (const [sym, [a, spike]] of Object.entries(digest)) {
+      avg.set(sym, a);
+      spikeCache.set(sym, spike);
+    }
+    return avg;
   } catch { /* fall through */ }
 
   const map = new Map<string, number>();
@@ -190,6 +198,13 @@ async function main() {
     const relVol = pmVol && a50 ? pmVol / a50 : null;
     const rotation = pmVol && float ? pmVol / float.floatShares : null;
 
+    // Shares outstanding straight from EDGAR, in share units — no price
+    // conversion to get wrong, unlike market cap / price.
+    const so = await getSharesOutstanding(q.symbol).catch(() => null);
+    const sharesOut = so?.shares ?? base?.sharesOutstanding ?? null;
+    const marketCap = sharesOut && price ? sharesOut * price : (base?.marketCap ?? null);
+    const floatPctOfShares = float && sharesOut ? (float.floatShares / sharesOut) * 100 : null;
+
     const checks = [
       { name: `Up ≥${GATE.minPreMarketChangePct}% pre-market`, ok: (q.preMarketChangePct ?? 0) >= GATE.minPreMarketChangePct,
         detail: `${(q.preMarketChangePct ?? 0).toFixed(1)}%` },
@@ -211,7 +226,13 @@ async function main() {
       preMarketChangePct: q.preMarketChangePct,
       prevClose: q.prevClose,
       preMarketVolume: pmVol,
+      preMarketDollarVolume: pmVol && price ? pmVol * price : null,
       relVolume: relVol,
+      avgVolume50: a50,
+      sharesOutstanding: sharesOut,
+      marketCap,
+      floatPctOfShares,
+      bestPriorSpikePct: spikeCache.get(q.symbol) ?? null,
       float: float ? { shares: float.floatShares, basis: float.basis, asOf: float.asOf } : null,
       floatRotation: rotation,
       catalyst,

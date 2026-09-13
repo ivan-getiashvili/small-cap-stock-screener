@@ -1,0 +1,20 @@
+{
+  // Cloudflare Workers config. The site is static — no server code — so there
+  // is no "main" script, just a directory of assets Cloudflare serves directly.
+  // `npm run site` produces _site/ first.
+  //
+  // This is inert until CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID exist as
+  // repository secrets; the workflow skips the deploy step without them and
+  // GitHub Pages serves the site in the meantime.
+  "name": "smallcap-premarket",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./_site",
+    // Serve index.html at the root rather than a bare 404.
+    "not_found_handling": "single-page-application"
+  },
+  "workers_dev": true
+  // To attach a custom domain later, add it here so the config stays the record
+  // of where this is published and a redeploy re-asserts it:
+  // "routes": [{ "pattern": "premarket.example.com", "custom_domain": true }]
+}

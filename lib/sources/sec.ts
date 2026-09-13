@@ -120,3 +120,29 @@ export function makePriceLookup(
     return best && best.gap <= maxGapDays ? best.close : null;
   };
 }
+
+/**
+ * Shares outstanding straight from EDGAR, in SHARES.
+ *
+ * Better than deriving a share count from market cap ÷ price, which we saw go
+ * badly wrong: Nasdaq's market cap lags reverse splits, and TNON came out
+ * implying a 104x float rotation. This concept is reported in share units on
+ * every 10-Q and 10-K, so there is no price conversion to get wrong — only
+ * staleness, which is bounded by the quarterly filing cycle.
+ */
+export async function getSharesOutstanding(symbol: string): Promise<{ shares: number; asOf: string } | null> {
+  const cik = (await getTickerToCik()).get(symbol.toUpperCase());
+  if (!cik) return null;
+
+  const json = await secJson(
+    `https://data.sec.gov/api/xbrl/companyconcept/CIK${cik}/dei/EntityCommonStockSharesOutstanding.json`,
+  ).catch(() => null);
+  const units: any[] = json?.units?.shares ?? [];
+  if (!units.length) return null;
+
+  const latest = units
+    .filter((u) => u?.val > 0 && typeof u?.end === 'string')
+    .sort((a, b) => String(a.end).localeCompare(String(b.end)))
+    .pop();
+  return latest ? { shares: latest.val, asOf: latest.end } : null;
+}

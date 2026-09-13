@@ -24,6 +24,7 @@
   .banner{border-radius:10px;padding:14px 16px;margin-bottom:22px;font-size:13.5px;line-height:1.6}
   .banner.wait{background:rgba(240,184,73,.08);border:1px solid rgba(240,184,73,.25);color:#e8c37a}
   .banner.none{background:var(--panel);border:1px solid var(--line);color:var(--dim)}
+  .banner.demo{background:rgba(99,162,255,.08);border:1px solid rgba(99,162,255,.3);color:#a9c9ff}
 
   h2{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--dim);margin:28px 0 12px;font-weight:650}
   h2 em{font-style:normal;color:var(--faint);text-transform:none;letter-spacing:0;font-weight:400}
@@ -37,13 +38,17 @@
   .chg.big{color:var(--hot)}
   .px{font:13px/1.2 var(--mono);color:var(--dim)}
 
-  .nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:1px;background:var(--line);
+  .nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:1px;background:var(--line);
         border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:13px 0}
   .nums div{background:var(--panel2);padding:8px 10px}
   .nums b{display:block;font:600 15px/1.3 var(--mono)}
   .nums small{color:var(--faint);font-size:10.5px;text-transform:uppercase;letter-spacing:.05em}
 
-  .checks{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+  .why{margin:11px 0 0;font-size:13px;color:var(--ink);background:rgba(63,208,127,.06);
+       border:1px solid rgba(63,208,127,.18);border-radius:8px;padding:9px 12px}
+  .why b{font-family:var(--mono);font-weight:650}
+  .nums b.go{color:var(--go)} .nums b.hot{color:var(--hot)}
+  .checks{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
   .chk{font:11.5px/1.7 var(--sans);padding:2px 9px;border-radius:6px;background:#222835;color:var(--no)}
   .chk.ok{background:var(--go-bg);color:var(--go)}
   .cat{margin-top:11px;font-size:13px;color:var(--dim);border-left:2px solid var(--line);padding-left:11px}
@@ -82,32 +87,54 @@ const f = {
 
 function card(r, top){
   const nums = [
-    [f.sh(r.preMarketVolume), 'pre-mkt volume'],
-    [f.mult(r.relVolume), 'vs 50d avg'],
-    [r.float ? f.sh(r.float.shares) : '—', 'float'],
-    [f.mult(r.floatRotation), 'float rotation'],
-    [r.prevClose ? f.usd(r.prevClose) : '—', 'prev close'],
-  ].map(([v,l]) => `<div><b>${v}</b><small>${l}</small></div>`).join('');
+    [f.pct(r.preMarketChangePct), 'pre-market move', r.preMarketChangePct >= 20 ? 'hot' : 'go'],
+    [f.mult(r.relVolume), 'rel volume', (r.relVolume||0) >= 5 ? 'go' : ''],
+    [f.sh(r.preMarketVolume), 'pre-mkt shares', (r.preMarketVolume||0) >= 150000 ? 'go' : ''],
+    [r.preMarketDollarVolume ? '$' + f.sh(r.preMarketDollarVolume) : '—', 'pre-mkt $ traded', ''],
+    [r.float ? f.sh(r.float.shares) : '—', 'float', r.float && r.float.shares < 10e6 ? 'go' : ''],
+    [r.floatPctOfShares != null ? r.floatPctOfShares.toFixed(0) + '%' : '—', 'float / shares out', ''],
+    [f.mult(r.floatRotation), 'float rotation', (r.floatRotation||0) >= 1 ? 'go' : ''],
+    [r.marketCap ? '$' + f.sh(r.marketCap) : '—', 'market cap', ''],
+  ].map(([v,l,c]) => `<div><b class="${c||''}">${v}</b><small>${l}</small></div>`).join('');
+
+  // The one-line case for looking at this stock at all.
+  const why = [];
+  if (r.relVolume != null)
+    why.push(`trading <b>${f.mult(r.relVolume)}</b> a normal full day's volume before the open`);
+  if (r.floatRotation != null && r.floatRotation >= 0.5)
+    why.push(`already turned over <b>${f.mult(r.floatRotation)}</b> its float`);
+  else if (r.float)
+    why.push(`only <b>${f.sh(r.float.shares)}</b> shares available to trade`);
+  if (r.bestPriorSpikePct != null && r.bestPriorSpikePct >= 20)
+    why.push(`has run <b>+${r.bestPriorSpikePct.toFixed(0)}%</b> in a day before`);
+  if (r.preMarketHigh && r.preMarketLow)
+    why.push(`pre-market range <b>${f.usd(r.preMarketLow)}–${f.usd(r.preMarketHigh)}</b>`);
 
   return `<div class="card ${top?'top':''}">
     <div class="row1">
       <div>
         <span class="tick">${r.symbol}</span>
-        <div class="co" title="${(r.name||'').replace(/"/g,'&quot;')}">${r.name||''}</div>
+        <div class="co" title="${(r.name||'').replace(/"/g,'&quot;')}">${r.name||''}${r.sector?' · '+r.sector:''}</div>
       </div>
       <div style="text-align:right">
         <div class="chg ${r.preMarketChangePct>=50?'big':''}">${f.pct(r.preMarketChangePct)}</div>
-        <div class="px">${f.usd(r.preMarketPrice)} pre-market</div>
+        <div class="px">${f.usd(r.preMarketPrice)} &nbsp;<span style="color:var(--faint)">prev ${r.prevClose?f.usd(r.prevClose):'—'}</span></div>
       </div>
     </div>
+
+    ${why.length ? `<div class="why">Why it is here: ${why.join(' · ')}.</div>` : ''}
+
     <div class="nums">${nums}</div>
+
     <div class="checks">${r.checks.map(c =>
       `<span class="chk ${c.ok?'ok':''}">${c.ok?'✓':'✕'} ${c.name} · ${c.detail}</span>`).join('')}</div>
+
     ${r.catalyst && r.catalyst.found
-      ? `<div class="cat"><b>${r.catalyst.kind === '8-K' ? 'SEC 8-K' : 'News'} ${r.catalyst.date}:</b> ${r.catalyst.headline||''}</div>`
+      ? `<div class="cat"><b>${r.catalyst.kind === '8-K' ? 'SEC 8-K' : 'News'} ${r.catalyst.date||''}:</b> ${r.catalyst.headline||''}</div>`
       : `<div class="cat">No catalyst found. Both traders treat this as disqualifying.</div>`}
     ${r.float && r.float.basis !== 'sec-public-float'
-      ? `<div class="cat" style="border-color:rgba(240,184,73,.4)">Float is <b>estimated</b> from market cap ÷ price — an upper bound, not the real float.</div>` : ''}
+      ? `<div class="cat" style="border-color:rgba(240,184,73,.45)">Float shown is <b>shares outstanding</b>, an upper bound — the true tradable float is smaller, so rotation is understated.</div>`
+      : r.float ? `<div class="cat" style="color:var(--faint)">Float filed with the SEC ${r.float.asOf}. Annual figure — check it before sizing.</div>` : ''}
   </div>`;
 }
 
@@ -122,6 +149,19 @@ function render(){
     (D.fetch ? `<br>${D.fetch.answerRatePct.toFixed(0)}% of quotes answered` : '');
 
   const b = document.getElementById('banner');
+  if (D.isDemo){
+    document.getElementById('banner').innerHTML =
+      `<div class="banner demo"><b>This is a replay, not today's list.</b>
+       Every number below is the real pre-market state of a real stock on
+       <b>${D.demoDate}</b>, frozen at <b>${D.snapshotAtEt} ET</b> — the moment the live scan runs.
+       Nothing here is invented. It exists so you can see the shape of the product before a live
+       session fills it in. Catalysts are not re-checked in a replay.</div>`;
+    document.getElementById('shortlist').innerHTML = D.shortlist.length
+      ? `<h2>Shortlist <em>— all five criteria met</em></h2>` + D.shortlist.map(r => card(r, true)).join('') : '';
+    document.getElementById('watchlist').innerHTML = D.watchlist.length
+      ? `<h2>Watchlist <em>— four of five</em></h2>` + D.watchlist.map(r => card(r, false)).join('') : '';
+    foot(); return;
+  }
   // A broken feed looks exactly like a quiet market — an empty list either way.
   // Say which one it is rather than let silence imply "nothing qualified".
   if (D.fetch && !D.fetch.reliable){
@@ -150,6 +190,10 @@ function render(){
     ? `<h2>Watchlist <em>— four of five, the failing one is marked</em></h2>` + D.watchlist.map(r => card(r, false)).join('')
     : '';
 
+  foot();
+}
+
+function foot(){
   const g = D.gate;
   document.getElementById('foot').innerHTML = `
     <b>The five criteria.</b> Up ≥${g.minPreMarketChangePct}% pre-market ·
@@ -166,8 +210,8 @@ function render(){
     yours. Float is the weakest number here — SEC files it once a year and small caps dilute constantly,
     so anything marked estimated should be checked before you size a position.
     <br><br>
-    Sources: Nasdaq public quote and screener endpoints, SEC EDGAR for float and 8-K filings.
-    Data may be delayed. Not investment advice.`;
+    Sources: Nasdaq public quote and screener endpoints, SEC EDGAR for float, share count and 8-K
+    filings. Data may be delayed. Not investment advice.`;
 }
 render();
 </script>

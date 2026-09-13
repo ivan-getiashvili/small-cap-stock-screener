@@ -11,7 +11,8 @@
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 
 const DIR = 'data/db/daily';
-const out: Record<string, number> = {};
+/** [50-day average volume, best single-day gain in the last year] per symbol. */
+const out: Record<string, [number, number | null]> = {};
 let skipped = 0;
 
 for (const f of (await readdir(DIR).catch(() => []))) {
@@ -21,10 +22,23 @@ for (const f of (await readdir(DIR).catch(() => []))) {
     const w = bars.slice(-50);
     if (w.length < 10) { skipped++; continue; }
     const avg = w.reduce((a, b) => a + b.volume, 0) / w.length;
-    if (avg > 0) out[f.replace('.json', '')] = Math.round(avg);
+    if (!(avg > 0)) { skipped++; continue; }
+
+    // Sykes' "history of spiking": has this name run before?
+    // Anything over 300% in one session is a reverse split, not a run — these
+    // bars are not split-adjusted, and a corporate action would otherwise put a
+    // fictitious track record on the card.
+    let best: number | null = null;
+    const year = bars.slice(-252);
+    for (let i = 1; i < year.length; i++) {
+      const p = ((year[i].close - year[i - 1].close) / year[i - 1].close) * 100;
+      if (p > 300) continue;
+      if (best === null || p > best) best = p;
+    }
+    out[f.replace('.json', '')] = [Math.round(avg), best === null ? null : Math.round(best)];
   } catch { skipped++; }
 }
 
-await writeFile('data/avgvol.json', JSON.stringify(out));
+await writeFile('data/stats.json', JSON.stringify(out));
 const kb = (JSON.stringify(out).length / 1024).toFixed(0);
-console.log(`Wrote data/avgvol.json — ${Object.keys(out).length} symbols, ${kb} KB (${skipped} skipped)`);
+console.log(`Wrote data/stats.json — ${Object.keys(out).length} symbols, ${kb} KB (${skipped} skipped)`);
