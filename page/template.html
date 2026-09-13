@@ -105,6 +105,9 @@
   <h2>Backtest, 1-minute resolution <em>— Cameron's actual entry, survivorship-free</em></h2>
   <div id="intraday"></div>
 
+  <h2>What actually kills it <em>— cost sensitivity and account size</em></h2>
+  <div id="why"></div>
+
   <h2>Backtest, daily bars <em>— the crude version, kept for contrast</em></h2>
   <div id="backtest"></div>
 
@@ -116,6 +119,8 @@ const DATA = /*__DATA__*/null;
 const BACKTEST = /*__BACKTEST__*/null;
 const PAPER = /*__PAPER__*/null;
 const INTRADAY = /*__INTRADAY__*/null;
+const SENS = /*__SENS__*/null;
+const CAPITAL = /*__CAPITAL__*/null;
 
 const fmt = {
   usd: n => '$' + n.toFixed(2),
@@ -357,7 +362,55 @@ function intradayPanel(){
     </div>`;
 }
 
-head(); staleness(); foot(); paperPanel(); intradayPanel(); backtestPanel();
+function whyPanel(){
+  const el = document.getElementById('why');
+  if (!SENS && !CAPITAL){ el.innerHTML = '<div class="empty">Not run yet.</div>'; return; }
+  const srows = (SENS?.results||[]).map(r => `<tr>
+      <td style="text-align:left">${r.label}</td>
+      <td>${(r.slip*100).toFixed(1)}¢</td>
+      <td>${r.winRate.toFixed(1)}%</td>
+      <td class="${r.expectancy>=0?'up':'no'}" style="font-weight:650">${r.expectancy>=0?'+':''}$${r.expectancy.toFixed(2)}</td>
+    </tr>`).join('');
+  const crows = (CAPITAL?.results||[]).map(r => `<tr>
+      <td style="text-align:left">$${r.start.toLocaleString()}</td>
+      <td>${r.trades}</td>
+      <td>$${r.endingEquity.toFixed(0)}</td>
+      <td class="${r.returnPct>=0?'up':'no'}" style="font-weight:650">${r.returnPct>=0?'+':''}${r.returnPct.toFixed(0)}%</td>
+      <td class="dim">${r.maxDrawdownPct.toFixed(0)}%</td>
+    </tr>`).join('');
+
+  el.innerHTML = `
+    <div class="warn">
+      <b>The setup has a real edge. Execution costs eat it.</b> Replaying the same
+      ${SENS?SENS.setups.toLocaleString():'—'} setups across a sweep of slippage assumptions, break-even
+      lands between <b>1¢ and 2¢ per side</b>. Below that the edge survives; above it, nothing else matters.
+      That is not a footnote about friction — it <em>is</em> the strategy's viability.
+    </div>
+    <div class="panel" style="background:transparent;padding:0;grid-template-columns:1fr 1fr">
+      <div>
+        <h3>Expectancy vs slippage <span class="dim">(unlimited capital, $100 risk/trade)</span></h3>
+        <table><thead><tr><th style="text-align:left">Assumption</th><th>Slip</th><th>Win%</th><th>Per trade</th></tr></thead>
+        <tbody>${srows}</tbody></table>
+      </div>
+      <div>
+        <h3>Account size <span class="dim">(2% risk, 1¢ slippage, same 729 trades)</span></h3>
+        <table><thead><tr><th style="text-align:left">Start</th><th>Trades</th><th>End</th><th>Return</th><th>MaxDD</th></tr></thead>
+        <tbody>${crows}</tbody></table>
+      </div>
+      <div class="cat">
+        <b>Why a small account loses on the same trades.</b> Every row above takes the identical 729
+        setups at the identical 32.5% win rate — only position size differs. The setups with the
+        tightest stops imply the largest share counts, and those are exactly the ones a small account
+        cannot hold inside 4× margin. So a $2,000 account is systematically filtered into the worse
+        half of the distribution: it takes the full losses and only part of the wins.
+        <br><br><b>The drawdowns are the real obstacle</b>, not the returns. Even the profitable rows
+        sit through 44–72% peak-to-trough. A strategy that wins 3 trades in 10 produces losing streaks
+        most people close the laptop on, whatever the two-year number says.
+      </div>
+    </div>`;
+}
+
+head(); staleness(); foot(); paperPanel(); intradayPanel(); whyPanel(); backtestPanel();
 const rows = DATA.rows;
 table(rows.filter(r => r.cameron.passed), 'full',
       'Nothing passed all five today. That is normal — Cameron says a full scan often leaves under ten names, and some days none.');

@@ -17,6 +17,8 @@ async function optional(path: string): Promise<string> {
 const backtest = await optional('data/backtest.json');
 const paper = await optional('data/paper.json');
 const intraday = await optional('data/backtest-intraday.json');
+const sens = await optional('data/sensitivity.json');
+const capital = await optional('data/capital.json');
 
 const MARKER = '/*__DATA__*/null';
 if (!template.includes(MARKER)) throw new Error(`page/template.html is missing ${MARKER}`);
@@ -42,7 +44,9 @@ const html = head +
     .replace(MARKER, safe)
     .replace('/*__BACKTEST__*/null', esc(backtest))
     .replace('/*__PAPER__*/null', esc(paper))
-    .replace('/*__INTRADAY__*/null', esc(intraday)) +
+    .replace('/*__INTRADAY__*/null', esc(intraday))
+    .replace('/*__SENS__*/null', esc(sens))
+    .replace('/*__CAPITAL__*/null', esc(capital)) +
   '\n</body>\n</html>\n';
 
 await mkdir('_site', { recursive: true });

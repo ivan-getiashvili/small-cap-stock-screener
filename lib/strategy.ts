@@ -17,7 +17,8 @@ import type { Bar } from './types.ts';
 export const RULES = {
   stopPct: 0.04,        // ~20c on a $5 stock, his stated stop distance
   rewardRatio: 2,       // his stated 2:1
-  riskPerTrade: 100,    // dollars risked per position
+  riskPerTrade: 100,    // dollars risked per position (fixed-size tests)
+  riskPct: 0.02,        // or 2% of equity — inside Sykes' stated 1-3% band
   maxPositions: 3,      // Sykes: "one, two, three, four, or five" names, not 20
   startingCash: 2000,   // matches the size of account he demos
 } as const;

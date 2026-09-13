@@ -4,13 +4,18 @@
   "private": true,
   "description": "Intraday small-cap momentum screener built on the published criteria of Ross Cameron and Tim Sykes.",
   "type": "module",
-  "engines": { "node": ">=22.6" },
+  "engines": {
+    "node": ">=22.6"
+  },
   "scripts": {
     "ingest": "node --experimental-strip-types scripts/ingest.ts",
     "build": "node --experimental-strip-types scripts/build-page.ts",
     "build:site": "npm run ingest && npm run build",
     "backtest": "node --experimental-strip-types scripts/backtest.ts",
     "paper": "node --experimental-strip-types scripts/paper.ts",
-    "serve": "python3 -m http.server 4188 --directory _site"
+    "serve": "python3 -m http.server 4188 --directory _site",
+    "backtest:intraday": "node --experimental-strip-types scripts/backtest-intraday.ts",
+    "fetch:universe": "node --experimental-strip-types scripts/fetch-db-universe.ts",
+    "fetch:minutes": "node --experimental-strip-types scripts/fetch-db-minutes.ts"
   }
 }

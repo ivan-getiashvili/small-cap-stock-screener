@@ -46,7 +46,21 @@ export const INTRADAY = {
   /** No position may exceed this share of the minute's volume — a fill has to
    *  be plausible. Without it the simulator "buys" size that never existed. */
   maxVolumeShare: 0.10,
+  /** Pattern-day-trader margin. Position value cannot exceed equity x this.
+   *  Without it, a tight stop implies an enormous share count and the
+   *  simulator trades capital the account does not have — which on the first
+   *  run produced a median $3,946 position on a $2,000 account. */
+  leverage: 4,
+  /** Cents per share given up crossing the spread, each way. These are $2-$20
+   *  micro caps entered on a breakout; the spread is real money when the median
+   *  risk per share is 11c. This single number decides whether the strategy has
+   *  an edge, so it is a parameter, not a hidden constant. */
+  slippagePerShare: 0.01,
+  /** Per-share commission, each way (per-share brokers, e.g. DAS/Lightspeed). */
+  commissionPerShare: 0.002,
 };
+
+export type Costs = { slippagePerShare: number; commissionPerShare: number };
 
 export type IntradayTrade = {
   symbol: string;
@@ -77,10 +91,23 @@ export function simulateSession(
   date: string,
   bars: Minute[],
   riskDollars: number,
+  equity: number = Infinity,
+  costs: Costs = {
+    slippagePerShare: INTRADAY.slippagePerShare,
+    commissionPerShare: INTRADAY.commissionPerShare,
+  },
 ): IntradayTrade | null {
   if (bars.length < 10) return null;
   const sorted = [...bars].sort((a, b) => a.ts - b.ts);
-  const avgVol = sorted.reduce((a, b) => a + b.volume, 0) / sorted.length;
+  // Trailing average only. Averaging the whole session would let the surge test
+  // consult bars that had not happened yet — lookahead that quietly makes every
+  // entry smarter than it could have been in real time.
+  const trailingAvgVol = (upTo: number): number => {
+    const from = Math.max(0, upTo - 30);
+    let sum = 0;
+    for (let k = from; k < upTo; k++) sum += sorted[k].volume;
+    return upTo > from ? sum / (upTo - from) : 0;
+  };
 
   for (let i = INTRADAY.surgeLookback; i < sorted.length - 2; i++) {
     const minute = etMinutes(sorted[i].ts);
@@ -94,7 +121,7 @@ export function simulateSession(
     if (surgeLow <= 0) continue;
     const surgeMove = ((surgeHigh - surgeLow) / surgeLow) * 100;
     if (surgeMove < INTRADAY.surgePct) continue;
-    if (sorted[i].volume < avgVol) continue;            // "volume should be higher on green candles"
+    if (sorted[i].volume < trailingAvgVol(i)) continue; // "volume should be higher on green candles"
 
     // --- 2. pullback of 1-3 red candles, retracing under 50% --------------
     let j = i + 1, reds = 0;
@@ -113,7 +140,8 @@ export function simulateSession(
     const trigger = prior.high;
     const cross = sorted[j];
     if (cross.high < trigger) continue;                 // no new high made; not a valid entry
-    const entry = Math.max(trigger, cross.open);
+    // We pay up to get in: the fill is the trigger plus the spread we cross.
+    const entry = Math.max(trigger, cross.open) + costs.slippagePerShare;
 
     // --- 4. stop and size --------------------------------------------------
     const rawStop = Math.min(pullLow, prior.low);
@@ -124,11 +152,26 @@ export function simulateSession(
 
     let shares = Math.floor(riskDollars / risk);
     shares = Math.min(shares, Math.floor(cross.volume * INTRADAY.maxVolumeShare));
+    // The account has to be able to hold it. A 2c stop implies 5,000 shares on
+    // $100 of risk, which is a $25,000 position — impossible on a small account
+    // and the main reason the uncapped run looked spectacular.
+    if (Number.isFinite(equity)) {
+      shares = Math.min(shares, Math.floor((equity * INTRADAY.leverage) / entry));
+    }
     if (shares < 1) continue;                           // no plausible fill
 
     // --- 5/6. manage the position -----------------------------------------
+    //
+    // Management starts on the bar AFTER entry, and this is not a detail.
+    // We enter intrabar, the moment price crosses the prior high. That cross
+    // happens at some unknown point inside the entry candle, and the candle's
+    // low may well have printed BEFORE it. Testing the entry bar's own low
+    // against the stop therefore stops us out on a dip we were never in — it
+    // reported a median hold of zero minutes and a 70% stop-out rate that were
+    // both artefacts. The next bar is the first whose full range we can honestly
+    // claim to have been exposed to.
     let half = false, effStop = stop, realised = 0, remaining = shares;
-    for (let k = j; k < sorted.length; k++) {
+    for (let k = j + 1; k < sorted.length; k++) {
       const b = sorted[k];
       const hitStop = b.low <= effStop;
       const hitTarget = !half && b.high >= target;
@@ -147,9 +190,15 @@ export function simulateSession(
         effStop = entry;                                 // "adjust my stop to my entry price"
         continue;
       }
-      if (half && b.close < b.open) {                    // first red close after taking half
+      // Cameron, verbatim: "If I haven't already sold 1/2, the first candle to
+      // close red is an exit indicator. If I've already sold 1/2, I'll hold
+      // through red candles as long as my breakeven stop doesn't hit."
+      // This was implemented inverted — exiting on red only AFTER taking half,
+      // which is the opposite of his rule and cut the winners while riding the
+      // losers into their stops.
+      if (!half && b.close < b.open) {
         realised += (b.close - entry) * remaining;
-        return done(b, b.close, 'target-then-red', false);
+        return done(b, b.close, 'red-candle', false);
       }
       if (etMinutes(b.ts) >= INTRADAY.hardExitMinute) {
         realised += (b.close - entry) * remaining;
@@ -161,12 +210,18 @@ export function simulateSession(
     return done(last, last.close, 'time', false);
 
     function done(b: Minute, px: number, reason: IntradayTrade['exitReason'], amb: boolean): IntradayTrade {
+      // Selling also crosses the spread, and both sides pay commission. On a
+      // strategy whose median risk is 11c a share these costs are not a
+      // rounding error — they are most of the edge.
+      const exitSlip = costs.slippagePerShare * shares;
+      const commission = costs.commissionPerShare * shares * 2;
+      const net = realised - exitSlip - commission;
       return {
         symbol, date,
         entryTs: cross.ts, entry, stop, target, shares,
-        exitTs: b.ts, exit: px, exitReason: reason,
-        pnl: realised,
-        returnPct: (realised / (entry * shares)) * 100,
+        exitTs: b.ts, exit: px - costs.slippagePerShare, exitReason: reason,
+        pnl: net,
+        returnPct: (net / (entry * shares)) * 100,
         heldMinutes: Math.round((b.ts - cross.ts) / 60000),
         ambiguous: amb,
       };

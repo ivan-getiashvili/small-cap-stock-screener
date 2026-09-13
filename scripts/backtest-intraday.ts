@@ -1,219 +1,120 @@
 /**
- * Minute-resolution backtest -> data/backtest-intraday.json
+ * Minute-resolution backtest over cached bars -> data/backtest-intraday.json
  *
  * Run:  node --experimental-strip-types scripts/fetch-db-universe.ts   (once)
- *       node --experimental-strip-types scripts/backtest-intraday.ts [--dry] [--days=N]
+ *       node --experimental-strip-types scripts/fetch-db-minutes.ts    (once)
+ *       npm run backtest:intraday                                      (free, repeatable)
  *
- * HOW DAYS ARE SELECTED, and why it is done this way.
- *
- * We cannot afford minute bars for 15,000 symbols x 550 days, so daily bars
- * pick which symbol-days to buy. That selection is where a backtest is most
- * easily corrupted, so it is deliberately built to keep the losers in:
- *
- *   A day qualifies if its HIGH reached +10% over the prior close — NOT if it
- *   CLOSED up 10%.
- *
- * That distinction is the whole game. Selecting on the close would silently
- * drop every stock that spiked 12% at 10am and died at -5% by the bell — which
- * is precisely the losing trade this strategy needs to be measured against.
- * Selecting on the high keeps the fades in the sample.
- *
- * Remaining known bias, stated plainly: the volume screen uses the full day's
- * volume, which is not knowable at 10am. A stock reaching +10% intraday almost
- * always ends with elevated volume, so the effect is small — but it is not zero
- * and it points optimistic.
- *
- * The intraday signal itself is causal: it fires on the first minute where the
- * criteria are satisfied using only bars up to that minute.
+ * Reads only from disk, so the trading rules can be changed and re-tested
+ * without re-buying data. Day selection lives in lib/candidates.ts; the trade
+ * logic lives in lib/intraday.ts.
  */
 import { readFile, writeFile, readdir, mkdir } from 'node:fs/promises';
-import { streamBars, getCost, MINUTE_DATASET, batches } from '../lib/sources/databento.ts';
+import { loadCandidateDays, SELECT } from '../lib/candidates.ts';
 import { simulateSession, type Minute, type IntradayTrade, INTRADAY } from '../lib/intraday.ts';
 import { RULES, summarise } from '../lib/strategy.ts';
-import { etMinutes as etMin } from '../lib/ettime.ts';
+import { etMinutes } from '../lib/ettime.ts';
 
-const DAILY = 'data/db/daily';
-const DRY = process.argv.includes('--dry');
-const DAY_LIMIT = Number(process.argv.find((a) => a.startsWith('--days='))?.split('=')[1] ?? '0');
+const MINUTES = 'data/db/minutes';
 
-const SELECT = {
-  minIntradayHighPct: 10,   // Cameron's "up at least 10%", measured at the HIGH
-  minVolumeMultiple: 3,     // generous: let the intraday logic do the real filtering
-  priceMin: 2, priceMax: 20,
-  minDollarVolume: 1_000_000,
-};
-
-type Daily = { date: string; open: number; high: number; low: number; close: number; volume: number };
-type Signal = { symbol: string; date: string; prevClose: number; avgVol50: number; dayVolume: number };
-
-function findCandidateDays(symbol: string, bars: Daily[]): Signal[] {
-  const out: Signal[] = [];
-  for (let i = 51; i < bars.length; i++) {
-    const d = bars[i], prev = bars[i - 1];
-    if (!(prev.close >= SELECT.priceMin && prev.close <= SELECT.priceMax)) continue;
-    const highPct = ((d.high - prev.close) / prev.close) * 100;
-    if (highPct < SELECT.minIntradayHighPct) continue;
-
-    const window = bars.slice(i - 50, i);
-    const avg = window.reduce((a, b) => a + b.volume, 0) / window.length;
-    if (!(avg > 0) || d.volume < avg * SELECT.minVolumeMultiple) continue;
-    if (d.close * d.volume < SELECT.minDollarVolume) continue;
-
-    out.push({ symbol, date: d.date, prevClose: prev.close, avgVol50: avg, dayVolume: d.volume });
-  }
-  return out;
-}
-
-/** Group minute bars by symbol for one session. */
-function group(rows: { symbol: string; ts: number; open: number; high: number; low: number; close: number; volume: number }[]) {
-  const m = new Map<string, Minute[]>();
-  for (const r of rows) {
-    if (!m.has(r.symbol)) m.set(r.symbol, []);
-    m.get(r.symbol)!.push({ ts: r.ts, open: r.open, high: r.high, low: r.low, close: r.close, volume: r.volume });
-  }
-  return m;
-}
-
-
-
-/**
- * The causal signal: the first minute at which a live scanner could have seen
- * this stock. Uses only bars up to that minute — no end-of-day knowledge.
- */
+/** First minute a live scanner could have flagged this — causal, no hindsight. */
 function signalMinute(bars: Minute[], prevClose: number, avgVol50: number): number | null {
   let cum = 0;
   for (const b of bars) {
     cum += b.volume;
-    const m = etMin(b.ts);
-    if (m < 9 * 60 + 30) continue;                     // regular session only
+    if (etMinutes(b.ts) < 9 * 60 + 30) continue;
     const chg = ((b.close - prevClose) / prevClose) * 100;
-    // Cameron: up >=10%, and volume already far beyond a normal full day —
-    // his "5x relative volume", expressed with only what is known right now.
     if (chg >= 10 && cum >= avgVol50) return b.ts;
   }
   return null;
 }
 
 async function main() {
-  const files = (await readdir(DAILY).catch(() => [])).filter((f) => f.endsWith('.json'));
-  if (!files.length) { console.error(`No daily history in ${DAILY}/. Run fetch-db-universe.ts first.`); process.exit(1); }
-  console.log(`Scanning ${files.length} symbols of survivorship-free daily history…`);
-
-  const signals: Signal[] = [];
-  for (const f of files) {
-    try {
-      const bars: Daily[] = JSON.parse(await readFile(`${DAILY}/${f}`, 'utf8'));
-      signals.push(...findCandidateDays(f.replace('.json', ''), bars));
-    } catch { /* skip a corrupt cache entry */ }
-  }
-  console.log(`  ${signals.length.toLocaleString()} candidate symbol-days`);
-
-  const byDate = new Map<string, Signal[]>();
-  for (const s of signals) {
-    if (!byDate.has(s.date)) byDate.set(s.date, []);
-    byDate.get(s.date)!.push(s);
-  }
-  let dates = [...byDate.keys()].sort();
-  if (DAY_LIMIT > 0) dates = dates.slice(-DAY_LIMIT);
-  console.log(`  across ${dates.length} trading days`);
-
-  // Price the pull before spending anything.
-  let cost = 0;
-  for (const d of dates.slice(0, 8)) {
-    const syms = byDate.get(d)!.map((s) => s.symbol);
-    cost += await getCost({
-      dataset: MINUTE_DATASET, symbols: syms.join(','), schema: 'ohlcv-1m',
-      start: `${d}T00:00:00Z`, end: `${next(d)}T00:00:00Z`,
-    });
-  }
-  const est = (cost / Math.min(8, dates.length)) * dates.length;
-  console.log(`  estimated minute-data cost: $${est.toFixed(2)}`);
-  if (DRY) { console.log('\n--dry: stopping before any billable pull.'); return; }
+  const { byDate } = await loadCandidateDays();
+  const cached = (await readdir(MINUTES).catch(() => [])).filter((f) => f.endsWith('.json')).sort();
+  if (!cached.length) { console.error(`No minute cache in ${MINUTES}/. Run fetch-db-minutes.ts first.`); process.exit(1); }
+  console.log(`Simulating ${cached.length} cached sessions…`);
 
   const trades: IntradayTrade[] = [];
-  let noSignal = 0, noSetup = 0, pulled = 0, ambiguous = 0;
+  let noSignal = 0, noSetup = 0, noData = 0, ambiguous = 0;
+  let equity = RULES.startingCash;
+  let ruinedOn: string | null = null;
 
-  for (const [i, date] of dates.entries()) {
-    const daySignals = byDate.get(date)!;
-    const rows: any[] = [];
-    try {
-      for (const batch of batches(daySignals.map((s) => s.symbol))) {
-        for await (const b of streamBars({
-          dataset: MINUTE_DATASET, symbols: batch, schema: 'ohlcv-1m',
-          start: `${date}T00:00:00Z`, end: `${next(date)}T00:00:00Z`,
-        })) rows.push(b);
-      }
-    } catch (e) {
-      console.warn(`\n  ${date}: pull failed — ${(e as Error).message.slice(0, 100)}`);
-      continue;
-    }
-    pulled++;
-    const bySym = group(rows);
+  for (const file of cached) {
+    const date = file.replace('.json', '');
+    const signals = byDate.get(date);
+    if (!signals) continue;
+    if (equity <= 0) { ruinedOn ??= date; break; }   // a blown account stops trading
 
-    // Rank the day's names the way the screener does, then take the top few —
-    // no more positions than Cameron would actually hold at once.
-    const ranked = daySignals
+    const raw: Record<string, number[][]> = JSON.parse(await readFile(`${MINUTES}/${file}`, 'utf8'));
+
+    const ranked = signals
       .map((s) => ({ s, rel: s.dayVolume / s.avgVol50 }))
       .sort((a, b) => b.rel - a.rel);
 
     let taken = 0;
     for (const { s } of ranked) {
-      if (taken >= RULES.maxPositions) break;
-      const bars = bySym.get(s.symbol);
-      if (!bars || bars.length < 20) continue;
-      bars.sort((a, b) => a.ts - b.ts);
+      if (taken >= RULES.maxPositions || equity <= 0) break;
+      const rows = raw[s.symbol];
+      if (!rows || rows.length < 20) { noData++; continue; }
+      const bars: Minute[] = rows
+        .map(([ts, o, h, l, c, v]) => ({ ts, open: o, high: h, low: l, close: c, volume: v }))
+        .sort((a, b) => a.ts - b.ts);
 
       const fired = signalMinute(bars, s.prevClose, s.avgVol50);
       if (fired === null) { noSignal++; continue; }
 
-      // Only bars from the signal onward are tradable — anything earlier would
-      // be acting on information the scanner did not yet have.
-      const tradable = bars.filter((b) => b.ts >= fired);
-      const t = simulateSession(s.symbol, date, tradable, RULES.riskPerTrade);
+      // Risk a fixed FRACTION of equity, not a fixed dollar amount. $100 on a
+      // $2,000 account is 5% a trade, well outside Sykes' stated 1-3% band, and
+      // it makes ruin a property of the sizing rather than of the strategy.
+      const t = simulateSession(
+        s.symbol, date, bars.filter((b) => b.ts >= fired),
+        Math.max(1, equity * RULES.riskPct),
+        equity,
+      );
       if (!t) { noSetup++; continue; }
       if (t.ambiguous) ambiguous++;
-      trades.push(t); taken++;
+      trades.push(t); equity += t.pnl; taken++;
     }
-    if (i % 20 === 0) process.stdout.write(`\r  ${i + 1}/${dates.length} days, ${trades.length} trades   `);
   }
+  if (equity <= 0 && !ruinedOn) ruinedOn = trades.at(-1)?.date ?? null;
 
   const stats = summarise(trades as any, RULES.startingCash);
   const held = trades.map((t) => t.heldMinutes).sort((a, b) => a - b);
+  const rets = trades.map((t) => t.returnPct);
   const payload = {
     generatedAt: new Date().toISOString(),
     resolution: '1-minute',
-    dataset: MINUTE_DATASET,
-    window: { from: dates[0], to: dates.at(-1) },
     survivorshipFree: true,
-    daysPulled: pulled,
-    candidateSymbolDays: signals.length,
+    window: { from: cached[0].replace('.json',''), to: cached.at(-1)!.replace('.json','') },
+    daysPulled: cached.length,
+    candidateSymbolDays: [...byDate.values()].reduce((a, b) => a + b.length, 0),
     rules: { ...RULES, ...INTRADAY },
     selection: SELECT,
-    diagnostics: { noSignal, noSetup, ambiguous, ambiguousPct: trades.length ? (ambiguous / trades.length) * 100 : 0 },
+    ruinedOn,
+    diagnostics: { noSignal, noSetup, noData, ambiguous, ambiguousPct: trades.length ? (ambiguous / trades.length) * 100 : 0 },
     medianHoldMinutes: held.length ? held[Math.floor(held.length / 2)] : null,
+    meanReturnPct: rets.length ? rets.reduce((a, b) => a + b, 0) / rets.length : 0,
     byExitReason: trades.reduce((a, t) => { a[t.exitReason] = (a[t.exitReason] ?? 0) + 1; return a; }, {} as Record<string, number>),
     stats,
-    trades: trades.slice(0, 500),
+    trades: trades.slice(0, 400),
   };
 
   await mkdir('data', { recursive: true });
   await writeFile('data/backtest-intraday.json', JSON.stringify(payload, null, 2));
 
-  console.log(`\n\n  Window          ${dates[0]} → ${dates.at(-1)}  (${pulled} days pulled)`);
-  console.log(`  Candidate days  ${signals.length.toLocaleString()}  |  trades taken ${trades.length}`);
-  console.log(`  No signal fired ${noSignal}   no valid pullback setup ${noSetup}`);
+  console.log(`\n  Window          ${payload.window.from} → ${payload.window.to}`);
+  console.log(`  Trades          ${trades.length}   (no signal ${noSignal}, no setup ${noSetup}, no data ${noData})`);
   console.log(`  Accuracy        ${stats.accuracy.toFixed(1)}%`);
   console.log(`  Avg win / loss  $${stats.avgWin.toFixed(2)} / $${stats.avgLoss.toFixed(2)}   ratio ${stats.profitLossRatio?.toFixed(2) ?? '—'}`);
+  console.log(`  Mean return     ${payload.meanReturnPct.toFixed(2)}% per trade`);
   console.log(`  Equity          $${RULES.startingCash} → $${stats.endingEquity.toFixed(2)}  (${stats.returnPct >= 0 ? '+' : ''}${stats.returnPct.toFixed(1)}%)`);
   console.log(`  Max drawdown    ${stats.maxDrawdownPct.toFixed(1)}%`);
+  if (ruinedOn) console.log(`  ACCOUNT BLOWN   ${ruinedOn}`);
   console.log(`  Median hold     ${payload.medianHoldMinutes} min`);
   console.log(`  Exits           ${JSON.stringify(payload.byExitReason)}`);
-  console.log(`  Ambiguous       ${ambiguous} (${payload.diagnostics.ambiguousPct.toFixed(1)}% — resolved against us)`);
+  console.log(`  Ambiguous       ${ambiguous} (${payload.diagnostics.ambiguousPct.toFixed(1)}%, resolved against us)`);
   console.log('\nWrote data/backtest-intraday.json');
-}
-
-function next(d: string): string {
-  return new Date(Date.parse(d + 'T00:00:00Z') + 86_400_000).toISOString().slice(0, 10);
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });
