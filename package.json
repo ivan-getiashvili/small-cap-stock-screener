@@ -16,6 +16,11 @@
     "serve": "python3 -m http.server 4188 --directory _site",
     "backtest:intraday": "node --experimental-strip-types scripts/backtest-intraday.ts",
     "fetch:universe": "node --experimental-strip-types scripts/fetch-db-universe.ts",
-    "fetch:minutes": "node --experimental-strip-types scripts/fetch-db-minutes.ts"
+    "fetch:minutes": "node --experimental-strip-types scripts/fetch-db-minutes.ts",
+    "premarket": "node --experimental-strip-types scripts/premarket.ts",
+    "build:premarket": "node --experimental-strip-types scripts/build-premarket.ts",
+    "build:research": "node --experimental-strip-types scripts/build-page.ts",
+    "site": "npm run premarket && npm run build:premarket",
+    "avgvol": "node --experimental-strip-types scripts/make-avgvol.ts"
   }
 }

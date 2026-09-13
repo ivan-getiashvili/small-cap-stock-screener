@@ -1,0 +1,77 @@
+name: Pre-market shortlist
+
+# The scan is only meaningful while the pre-market session is running (04:00–09:30 ET).
+# GitHub cron is UTC and its schedules drift by several minutes under load, so rather
+# than aim at one exact moment we sweep the window every 20 minutes. That also covers
+# both halves of the year without editing anything: 11:00–14:59 UTC is 07:00–10:59 ET
+# in summer (EDT) and 06:00–09:59 ET in winter (EST). Each run overwrites the page, so
+# the site always shows the most recent scan.
+on:
+  schedule:
+    - cron: '0,20,40 11-14 * * 1-5'
+  workflow_dispatch:        # lets you trigger a scan by hand any time
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two scans publish at once; a later one is always the one we want.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+
+      - name: Scan the pre-market
+        env:
+          # EDGAR returns 403 without a contact string in the User-Agent.
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: npm run premarket
+
+      - name: Build the page
+        run: npm run build:premarket
+
+      - name: Check the page is not empty
+        # A green workflow is not evidence the page is good. If the build produced
+        # a stub, fail here rather than publish a blank site over a working one.
+        run: |
+          test -s _site/index.html
+          bytes=$(wc -c < _site/index.html)
+          echo "index.html is $bytes bytes"
+          if [ "$bytes" -lt 3000 ]; then
+            echo "::error::index.html is suspiciously small — refusing to publish"
+            exit 1
+          fi
+          grep -q "Pre-Market Shortlist" _site/index.html
+
+      - name: Show what was found
+        run: |
+          node -e "
+            const d=require('./data/premarket.json');
+            console.log('market:', d.marketStatus, '| live quotes:', d.liveQuotes);
+            console.log('shortlist:', d.shortlist.map(r=>r.symbol+' '+r.preMarketChangePct.toFixed(0)+'%').join(', ')||'(none)');
+            console.log('watchlist:', d.watchlist.map(r=>r.symbol).join(', ')||'(none)');
+          "
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  publish:
+    needs: scan
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

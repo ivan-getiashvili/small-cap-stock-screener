@@ -1,0 +1,164 @@
+<title>Pre-Market Shortlist</title>
+<style>
+  :root{
+    --bg:#0b0e13; --panel:#12161e; --panel2:#171c26; --line:#232a36;
+    --ink:#e9edf5; --dim:#98a3b6; --faint:#66718a;
+    --go:#3fd07f; --go-bg:rgba(63,208,127,.10); --warn:#f0b849; --no:#5b6474; --hot:#ff6b6b;
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:940px;margin:0 auto;padding:26px 18px 70px}
+  a{color:#7fb2ff}
+
+  header{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-start;justify-content:space-between;margin-bottom:20px}
+  h1{margin:0;font-size:23px;font-weight:650;letter-spacing:-.02em}
+  .sub{color:var(--faint);font-size:13px;margin-top:3px}
+  .status{text-align:right;font:12px/1.6 var(--mono);color:var(--dim)}
+  .pill{display:inline-block;padding:3px 10px;border-radius:99px;font:11px/1.6 var(--mono);
+        text-transform:uppercase;letter-spacing:.07em}
+  .pill.live{background:var(--go-bg);color:var(--go)}
+  .pill.shut{background:#222835;color:var(--faint)}
+
+  .banner{border-radius:10px;padding:14px 16px;margin-bottom:22px;font-size:13.5px;line-height:1.6}
+  .banner.wait{background:rgba(240,184,73,.08);border:1px solid rgba(240,184,73,.25);color:#e8c37a}
+  .banner.none{background:var(--panel);border:1px solid var(--line);color:var(--dim)}
+
+  h2{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--dim);margin:28px 0 12px;font-weight:650}
+  h2 em{font-style:normal;color:var(--faint);text-transform:none;letter-spacing:0;font-weight:400}
+
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:12px}
+  .card.top{border-color:rgba(63,208,127,.35);box-shadow:0 0 0 1px rgba(63,208,127,.08) inset}
+  .row1{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between}
+  .tick{font:650 21px/1.2 var(--mono);letter-spacing:.01em}
+  .co{color:var(--faint);font-size:12.5px;max-width:340px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .chg{font:650 21px/1.2 var(--mono);color:var(--go)}
+  .chg.big{color:var(--hot)}
+  .px{font:13px/1.2 var(--mono);color:var(--dim)}
+
+  .nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:1px;background:var(--line);
+        border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:13px 0}
+  .nums div{background:var(--panel2);padding:8px 10px}
+  .nums b{display:block;font:600 15px/1.3 var(--mono)}
+  .nums small{color:var(--faint);font-size:10.5px;text-transform:uppercase;letter-spacing:.05em}
+
+  .checks{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+  .chk{font:11.5px/1.7 var(--sans);padding:2px 9px;border-radius:6px;background:#222835;color:var(--no)}
+  .chk.ok{background:var(--go-bg);color:var(--go)}
+  .cat{margin-top:11px;font-size:13px;color:var(--dim);border-left:2px solid var(--line);padding-left:11px}
+  .cat b{color:var(--ink)}
+
+  footer{margin-top:38px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;line-height:1.7;color:var(--faint)}
+  footer b{color:var(--dim)}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Pre-Market Shortlist</h1>
+      <div class="sub">Ross Cameron's gapper checklist and Tim Sykes' pre-market routine, applied to live quotes.</div>
+    </div>
+    <div class="status" id="status"></div>
+  </header>
+
+  <div id="banner"></div>
+  <div id="shortlist"></div>
+  <div id="watchlist"></div>
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const D = /*__PREMARKET__*/null;
+
+const f = {
+  usd: n => '$' + Number(n).toFixed(2),
+  pct: n => (n >= 0 ? '+' : '') + Number(n).toFixed(1) + '%',
+  sh:  n => n == null ? '—' : n >= 1e9 ? (n/1e9).toFixed(2)+'B' : n >= 1e6 ? (n/1e6).toFixed(1)+'M'
+        : n >= 1e3 ? (n/1e3).toFixed(0)+'K' : String(n),
+  mult: n => n == null ? '—' : Number(n).toFixed(1) + '×',
+  time: iso => new Date(iso).toLocaleString(undefined, {dateStyle:'medium', timeStyle:'short'}),
+};
+
+function card(r, top){
+  const nums = [
+    [f.sh(r.preMarketVolume), 'pre-mkt volume'],
+    [f.mult(r.relVolume), 'vs 50d avg'],
+    [r.float ? f.sh(r.float.shares) : '—', 'float'],
+    [f.mult(r.floatRotation), 'float rotation'],
+    [r.prevClose ? f.usd(r.prevClose) : '—', 'prev close'],
+  ].map(([v,l]) => `<div><b>${v}</b><small>${l}</small></div>`).join('');
+
+  return `<div class="card ${top?'top':''}">
+    <div class="row1">
+      <div>
+        <span class="tick">${r.symbol}</span>
+        <div class="co" title="${(r.name||'').replace(/"/g,'&quot;')}">${r.name||''}</div>
+      </div>
+      <div style="text-align:right">
+        <div class="chg ${r.preMarketChangePct>=50?'big':''}">${f.pct(r.preMarketChangePct)}</div>
+        <div class="px">${f.usd(r.preMarketPrice)} pre-market</div>
+      </div>
+    </div>
+    <div class="nums">${nums}</div>
+    <div class="checks">${r.checks.map(c =>
+      `<span class="chk ${c.ok?'ok':''}">${c.ok?'✓':'✕'} ${c.name} · ${c.detail}</span>`).join('')}</div>
+    ${r.catalyst && r.catalyst.found
+      ? `<div class="cat"><b>${r.catalyst.kind === '8-K' ? 'SEC 8-K' : 'News'} ${r.catalyst.date}:</b> ${r.catalyst.headline||''}</div>`
+      : `<div class="cat">No catalyst found. Both traders treat this as disqualifying.</div>`}
+    ${r.float && r.float.basis !== 'sec-public-float'
+      ? `<div class="cat" style="border-color:rgba(240,184,73,.4)">Float is <b>estimated</b> from market cap ÷ price — an upper bound, not the real float.</div>` : ''}
+  </div>`;
+}
+
+function render(){
+  if (!D){ document.getElementById('banner').innerHTML =
+    '<div class="banner none">No scan has run yet.</div>'; return; }
+
+  const open = /pre-market/i.test(D.marketStatus||'');
+  document.getElementById('status').innerHTML =
+    `<span class="pill ${open?'live':'shut'}">${D.marketStatus||'unknown'}</span><br>` +
+    `scanned ${f.time(D.generatedAt)}<br>${D.universeChecked.toLocaleString()} small caps checked`;
+
+  const b = document.getElementById('banner');
+  if (D.liveQuotes === 0){
+    b.innerHTML = `<div class="banner wait"><b>No live pre-market quotes.</b>
+      Nasdaq reports the market as “${D.marketStatus||'unknown'}”, so there are no pre-market prices to read.
+      This page fills in once the pre-market session is running — it opens at 4:00 AM ET and this scan is
+      meant to run around 8:45. Prices below the fold, if any, are from the previous session
+      (${D.prevSession||'—'}).</div>`;
+  } else if (!D.shortlist.length){
+    b.innerHTML = `<div class="banner none"><b>Nothing cleared all five criteria today.</b>
+      ${D.liveQuotes.toLocaleString()} stocks had live pre-market prices. That is a normal outcome —
+      Cameron says a full scan often leaves under ten names, and some mornings none.
+      Trading nothing is a position.</div>`;
+  } else { b.innerHTML = ''; }
+
+  document.getElementById('shortlist').innerHTML = D.shortlist.length
+    ? `<h2>Shortlist <em>— all five criteria met</em></h2>` + D.shortlist.map(r => card(r, true)).join('')
+    : '';
+  document.getElementById('watchlist').innerHTML = D.watchlist.length
+    ? `<h2>Watchlist <em>— four of five, the failing one is marked</em></h2>` + D.watchlist.map(r => card(r, false)).join('')
+    : '';
+
+  const g = D.gate;
+  document.getElementById('foot').innerHTML = `
+    <b>The five criteria.</b> Up ≥${g.minPreMarketChangePct}% pre-market ·
+    pre-market volume ≥${(g.minPreMarketVolume/1000)}k ·
+    a real news catalyst · price $${g.priceMin}–$${g.priceMax} ·
+    float under ${g.floatIdeal/1e6}M shares. All five must pass to reach the shortlist.
+    <br><br>
+    <b>Where these come from.</b> Cameron's gapper checklist and his stated quality tiers
+    (float under 20M with pre-market volume over 150k is high quality; under 50k pre-market volume is low),
+    and Sykes' pre-market routine — biggest percent gainers first, then catalyst and float, ending with
+    a list of one to five names rather than twenty.
+    <br><br>
+    <b>What this is not.</b> It finds candidates; it does not decide anything. Entry, size and stop are
+    yours. Float is the weakest number here — SEC files it once a year and small caps dilute constantly,
+    so anything marked estimated should be checked before you size a position.
+    <br><br>
+    Sources: Nasdaq public quote and screener endpoints, SEC EDGAR for float and 8-K filings.
+    Data may be delayed. Not investment advice.`;
+}
+render();
+</script>

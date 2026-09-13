@@ -50,5 +50,5 @@ const html = head +
   '\n</body>\n</html>\n';
 
 await mkdir('_site', { recursive: true });
-await writeFile('_site/index.html', html);
-console.log(`Wrote _site/index.html (${(html.length / 1024).toFixed(0)} KB)`);
+await writeFile('_site/research.html', html);
+console.log(`Wrote _site/research.html (${(html.length / 1024).toFixed(0)} KB)`);
