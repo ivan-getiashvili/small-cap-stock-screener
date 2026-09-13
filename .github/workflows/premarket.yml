@@ -98,18 +98,22 @@ jobs:
 
       # Always keep the built page as a downloadable artifact, whatever the
       # hosting situation is. This is the fallback that cannot fail.
+      # Skipped in snapshot mode, where no page is built at all.
       - uses: actions/upload-artifact@v4
+        if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
         with:
           name: site
           path: _site
           retention-days: 7
 
       - uses: actions/upload-pages-artifact@v3
+        if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
         with:
           path: _site
 
   publish:
     needs: scan
+    if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
     runs-on: ubuntu-latest
     # GitHub Pages is unavailable for private repositories on the free plan, so
     # a failure here must not red the whole run — the scan above is the part
