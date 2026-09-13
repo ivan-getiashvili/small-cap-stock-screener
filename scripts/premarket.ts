@@ -292,7 +292,12 @@ async function main() {
     generatedAt: startedAt,
     marketStatus: status?.status ?? null,
     prevSession: asOf,
-    universeChecked: watch.length,
+    // The whole feed is read every scan; `watch` is the small-cap subset and
+    // `investigated` the handful that got individual lookups. Reporting the
+    // subset as "scanned" understated the screen by half.
+    universeChecked: universe.length,
+    smallCapsInBand: watch.length,
+    investigated: candidates.length,
     liveQuotes: live.length,
     feedIsLive,
     fetch: { ...stats, answerRatePct: answerRate, reliable: !stats.requested || answerRate >= 50 },

@@ -74,7 +74,77 @@ if (d.fetch && d.fetch.requested && !d.fetch.reliable) {
     `_Candidates only. Entry, size and stop are yours._${link}`,
   );
 } else {
-  console.log('nothing cleared all five — staying quiet, no email sent');
+  console.log('nothing cleared all five — no immediate alert');
+}
+
+/**
+ * The end-of-morning wrap-up.
+ *
+ * Silence is ambiguous: a quiet market and a dead pipeline look identical from
+ * the outside, and after a few empty mornings you would reasonably start to
+ * wonder whether anything was running at all. So the last scan of the window
+ * always reports, even when it found nothing — "the pipeline ran, here is what
+ * it saw, nothing qualified" is information.
+ *
+ * Once per day, not once per scan. Twelve heartbeats a morning is spam, and
+ * spam gets filtered, which puts us right back where we started.
+ */
+async function alreadySummarisedToday(marker: string): Promise<boolean> {
+  if (!TOKEN || !REPO) return false;
+  try {
+    const res = await fetch(
+      `https://api.github.com/repos/${REPO}/issues/${ISSUE}/comments?per_page=100&page=1`,
+      { headers: { Authorization: `Bearer ${TOKEN}`, Accept: 'application/vnd.github+json' },
+        signal: AbortSignal.timeout(20_000) },
+    );
+    if (!res.ok) return false;
+    const all: any[] = await res.json();
+    // Check the tail; a day's worth of comments is never more than a handful.
+    return all.slice(-40).some((c) => String(c.body ?? '').includes(marker));
+  } catch { return false; }
+}
+
+const nowUtc = new Date();
+const utcMins = nowUtc.getUTCHours() * 60 + nowUtc.getUTCMinutes();
+// Generous window, plus a dedicated 15:00 cron as a backstop. GitHub's
+// scheduler routinely drifts several minutes under load, and a wrap-up that
+// silently fails to fire recreates the exact ambiguity it exists to remove.
+// Posting twice is prevented by the marker check, so the window can be wide.
+const LAST_SLOT = 14 * 60 + 35;
+// FORCE_SUMMARY exists so the wrap-up can be exercised outside the window;
+// without it this path is only reachable for about an hour a day.
+const isFinalScan = process.env.FORCE_SUMMARY === '1'
+  || (utcMins >= LAST_SLOT && utcMins <= 17 * 60);
+
+if (isFinalScan) {
+  const today = nowUtc.toISOString().slice(0, 10);
+  const marker = `<!--daily-summary:${today}-->`;
+  if (await alreadySummarisedToday(marker)) {
+    console.log('daily summary already posted today — skipping');
+  } else {
+    const feed = d.feedIsLive ? 'live pre-market pricing' : 'showing the previous close';
+    const answered = d.fetch?.requested
+      ? `${d.fetch.answered}/${d.fetch.requested} quote lookups answered (${d.fetch.answerRatePct.toFixed(0)}%)`
+      : 'no individual lookups were needed';
+
+    const body = d.shortlist?.length
+      ? `${marker}\n### Wrap-up — ${d.shortlist.length} name${d.shortlist.length > 1 ? 's' : ''} today\n\n` +
+        `Shortlist: ${d.shortlist.map((r: any) => `**${r.symbol}**`).join(', ')}. Details in the alert above.\n\n` +
+        `Pipeline healthy — ${d.universeChecked.toLocaleString()} symbols scanned, feed ${feed}.${link}`
+      : `${marker}\n### Nothing to trade today\n\n` +
+        `**The pipeline ran and found no candidates.** That is a result, not a fault.\n\n` +
+        `- ${d.universeChecked.toLocaleString()} symbols scanned\n` +
+        `- ${(d.smallCapsInBand ?? 0).toLocaleString()} of them small caps in the price band\n` +
+        `- ${(d.investigated ?? 0).toLocaleString()} movers investigated individually\n` +
+        `- ${answered}\n` +
+        `- Nasdaq reported the market as **${d.marketStatus ?? 'unknown'}**, feed ${feed}\n` +
+        (d.watchlist?.length
+          ? `- Closest misses: ${d.watchlist.slice(0, 5).map((r: any) => `\`${r.symbol}\``).join(' ')}\n`
+          : `- Nothing even reached four of five criteria\n`) +
+        `\nA full scan usually leaves fewer than ten names, and some mornings none.${link}`;
+
+    await comment(body);
+  }
 }
 
 /**

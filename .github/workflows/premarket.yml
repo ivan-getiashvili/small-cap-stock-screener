@@ -9,6 +9,7 @@ name: Pre-market shortlist
 on:
   schedule:
     - cron: '0,20,40 11-14 * * 1-5'   # pre-market sweep
+    - cron: '0 15 * * 1-5'            # backstop: guarantees the daily wrap-up posts
     - cron: '10 21 * * 1-5'           # after the close: record today's closes
   workflow_dispatch:        # lets you trigger a scan by hand any time
     inputs:
