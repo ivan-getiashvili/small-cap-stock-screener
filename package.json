@@ -21,6 +21,7 @@
     "build:premarket": "node --experimental-strip-types scripts/build-premarket.ts",
     "build:research": "node --experimental-strip-types scripts/build-page.ts",
     "site": "npm run premarket && npm run build:premarket",
-    "avgvol": "node --experimental-strip-types scripts/make-avgvol.ts"
+    "avgvol": "node --experimental-strip-types scripts/make-avgvol.ts",
+    "snapshot": "node --experimental-strip-types scripts/snapshot-closes.ts"
   }
 }

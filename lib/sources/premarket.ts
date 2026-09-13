@@ -95,25 +95,36 @@ export async function getMarketStatus(): Promise<{ status: string; preMarketOpen
   } catch { return null; }
 }
 
-/** Fetch many symbols with bounded concurrency and a gentle failure mode. */
+export type FetchStats = { requested: number; answered: number; failed: number };
+
+/**
+ * Fetch many symbols with bounded concurrency, reporting how many actually
+ * answered.
+ *
+ * The success count is not a nicety. Every failure mode here — Nasdaq blocking
+ * the runner, a rate limit, a DNS problem — produces the same visible result as
+ * a genuinely quiet morning: an empty shortlist. Without this counter the two
+ * are indistinguishable, and the site would report "nothing qualified" every day
+ * while actually being broken.
+ */
 export async function getPreMarketQuotes(
   symbols: string[],
   concurrency = 8,
   onProgress?: (done: number, total: number) => void,
-): Promise<Map<string, PreMarketQuote>> {
+): Promise<{ quotes: Map<string, PreMarketQuote>; stats: FetchStats }> {
   const out = new Map<string, PreMarketQuote>();
-  let next = 0, done = 0;
+  let next = 0, done = 0, failed = 0;
   await Promise.all(
     Array.from({ length: Math.min(concurrency, symbols.length) }, async () => {
       while (true) {
         const i = next++;
         if (i >= symbols.length) return;
         const q = await getPreMarketQuote(symbols[i]);
-        if (q) out.set(q.symbol, q);
+        if (q) out.set(q.symbol, q); else failed++;
         done++;
         if (onProgress && done % 50 === 0) onProgress(done, symbols.length);
       }
     }),
   );
-  return out;
+  return { quotes: out, stats: { requested: symbols.length, answered: out.size, failed } };
 }

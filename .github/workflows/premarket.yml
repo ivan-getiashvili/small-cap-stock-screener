@@ -8,11 +8,12 @@ name: Pre-market shortlist
 # the site always shows the most recent scan.
 on:
   schedule:
-    - cron: '0,20,40 11-14 * * 1-5'
+    - cron: '0,20,40 11-14 * * 1-5'   # pre-market sweep
+    - cron: '10 21 * * 1-5'           # after the close: record today's closes
   workflow_dispatch:        # lets you trigger a scan by hand any time
 
 permissions:
-  contents: read
+  contents: write        # the post-close job commits data/prevclose.json
   pages: write
   id-token: write
 
@@ -31,16 +32,31 @@ jobs:
         with:
           node-version-file: .node-version
 
+      # After the close we only record closing prices; tomorrow's scan needs them
+      # to measure a pre-market move rather than trust a vendor's change field.
+      - name: Record today's closes
+        if: github.event.schedule == '10 21 * * 1-5'
+        run: |
+          npm run snapshot
+          git config user.name  "premarket-bot"
+          git config user.email "noreply@github.com"
+          git add data/prevclose.json
+          git commit -m "Record closes for $(date -u +%Y-%m-%d)" || echo "no change"
+          git push
+
       - name: Scan the pre-market
+        if: github.event.schedule != '10 21 * * 1-5'
         env:
           # EDGAR returns 403 without a contact string in the User-Agent.
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: npm run premarket
 
       - name: Build the page
+        if: github.event.schedule != '10 21 * * 1-5'
         run: npm run build:premarket
 
       - name: Check the page is not empty
+        if: github.event.schedule != '10 21 * * 1-5'
         # A green workflow is not evidence the page is good. If the build produced
         # a stub, fail here rather than publish a blank site over a working one.
         run: |
@@ -54,10 +70,21 @@ jobs:
           grep -q "Pre-Market Shortlist" _site/index.html
 
       - name: Show what was found
+        if: github.event.schedule != '10 21 * * 1-5'
         run: |
           node -e "
             const d=require('./data/premarket.json');
             console.log('market:', d.marketStatus, '| live quotes:', d.liveQuotes);
+            if (d.fetch) {
+              console.log('quotes answered:', d.fetch.answered + '/' + d.fetch.requested,
+                          '(' + d.fetch.answerRatePct.toFixed(0) + '%)');
+              // Fail loudly on a broken feed during pre-market. Silently
+              // publishing an empty list would look like a quiet morning.
+              if (!d.fetch.reliable && /pre-market/i.test(d.marketStatus||'')) {
+                console.log('::error::feed answered only ' + d.fetch.answerRatePct.toFixed(0) + '% during pre-market');
+                process.exit(1);
+              }
+            }
             console.log('shortlist:', d.shortlist.map(r=>r.symbol+' '+r.preMarketChangePct.toFixed(0)+'%').join(', ')||'(none)');
             console.log('watchlist:', d.watchlist.map(r=>r.symbol).join(', ')||'(none)');
           "

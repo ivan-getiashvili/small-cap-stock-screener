@@ -118,10 +118,19 @@ function render(){
   const open = /pre-market/i.test(D.marketStatus||'');
   document.getElementById('status').innerHTML =
     `<span class="pill ${open?'live':'shut'}">${D.marketStatus||'unknown'}</span><br>` +
-    `scanned ${f.time(D.generatedAt)}<br>${D.universeChecked.toLocaleString()} small caps checked`;
+    `scanned ${f.time(D.generatedAt)}<br>${D.universeChecked.toLocaleString()} small caps checked` +
+    (D.fetch ? `<br>${D.fetch.answerRatePct.toFixed(0)}% of quotes answered` : '');
 
   const b = document.getElementById('banner');
-  if (D.liveQuotes === 0){
+  // A broken feed looks exactly like a quiet market — an empty list either way.
+  // Say which one it is rather than let silence imply "nothing qualified".
+  if (D.fetch && !D.fetch.reliable){
+    b.innerHTML = `<div class="banner wait"><b>This scan is unreliable.</b>
+      Only ${D.fetch.answerRatePct.toFixed(0)}% of quote requests answered
+      (${D.fetch.answered.toLocaleString()} of ${D.fetch.requested.toLocaleString()}),
+      so an empty shortlist below may mean the data feed failed rather than that nothing qualified.
+      Do not read this as "no opportunities today".</div>`;
+  } else if (D.liveQuotes === 0){
     b.innerHTML = `<div class="banner wait"><b>No live pre-market quotes.</b>
       Nasdaq reports the market as “${D.marketStatus||'unknown'}”, so there are no pre-market prices to read.
       This page fills in once the pre-market session is running — it opens at 4:00 AM ET and this scan is

@@ -16,13 +16,33 @@ const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 ' +
   '(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
 
-async function getJson(url: string, timeoutMs = 45_000): Promise<any> {
-  const res = await fetch(url, {
-    headers: { 'User-Agent': UA, Accept: 'application/json', 'Accept-Language': 'en-US,en;q=0.9' },
-    signal: AbortSignal.timeout(timeoutMs),
-  });
-  if (!res.ok) throw new Error(`HTTP ${res.status} from api.nasdaq.com`);
-  return res.json();
+/**
+ * Nasdaq throttles aggressively and answers with 403 rather than 429 when it
+ * decides you have asked too often. That is recoverable if you wait, so back
+ * off and retry instead of failing the whole scan on one refusal.
+ */
+async function getJson(url: string, timeoutMs = 45_000, attempts = 3): Promise<any> {
+  let lastErr: Error | null = null;
+  for (let i = 0; i < attempts; i++) {
+    if (i > 0) await new Promise((r) => setTimeout(r, 2000 * 2 ** (i - 1)));  // 2s, 4s
+    try {
+      const res = await fetch(url, {
+        headers: { 'User-Agent': UA, Accept: 'application/json', 'Accept-Language': 'en-US,en;q=0.9' },
+        signal: AbortSignal.timeout(timeoutMs),
+      });
+      if (res.status === 403 || res.status === 429) {
+        lastErr = new Error(`HTTP ${res.status} from api.nasdaq.com (throttled)`);
+        continue;
+      }
+      if (!res.ok) throw new Error(`HTTP ${res.status} from api.nasdaq.com`);
+      return res.json();
+    } catch (e) {
+      lastErr = e as Error;
+      if ((e as Error).name === 'AbortError') continue;
+      if (i === attempts - 1) throw e;
+    }
+  }
+  throw lastErr ?? new Error('nasdaq request failed');
 }
 
 /** "$146.93" -> 146.93 ; "2.662%" -> 2.662 ; "50,716,870" -> 50716870 ; "N/A" -> null */

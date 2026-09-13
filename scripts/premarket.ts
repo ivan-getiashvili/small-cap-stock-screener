@@ -25,8 +25,22 @@ import { getPreMarketQuotes, getMarketStatus } from '../lib/sources/premarket.ts
 import { getTickerToCik, getFloat, makePriceLookup, floatFromSharesOutstanding } from '../lib/sources/sec.ts';
 import { findCatalyst } from '../lib/sources/news.ts';
 
-/** Which names are even worth a pre-market lookup. Deliberately generous. */
+/**
+ * Which names are even worth a pre-market lookup. Deliberately generous.
+ *
+ * NOTE ON REQUEST VOLUME — this is why the scan is shaped the way it is.
+ * The first version asked Nasdaq for a quote on every one of ~2,945 small caps.
+ * That is ~35,000 requests a day across a normal schedule, and Nasdaq started
+ * returning 403 after two runs. Getting blocked is not a rate-limit nuisance,
+ * it silently empties the shortlist and looks exactly like a quiet morning.
+ *
+ * So the scan is now: ONE bulk request for the whole market, then per-symbol
+ * lookups for only the handful of names that survive. Roughly 30 requests a
+ * scan instead of 2,945.
+ */
 const UNIVERSE = { priceMin: 1, priceMax: 25, maxMarketCap: 2e9 };
+/** How many movers get the expensive per-symbol treatment. */
+const INVESTIGATE = 30;
 /** The gate for appearing on the shortlist at all. */
 const GATE = {
   minPreMarketChangePct: 10,   // Cameron: "up at least 10%"; Sykes: "10%+ pre-market"
@@ -39,6 +53,18 @@ const GATE = {
 const SHORTLIST_MAX = 8;
 
 const pct = (a: number, b: number) => ((a - b) / b) * 100;
+
+/**
+ * The closing price of the previous session, written by the post-close snapshot.
+ * This is what lets us measure a pre-market move ourselves rather than trusting
+ * a vendor's percent-change field to have rolled over.
+ */
+async function prevCloses(): Promise<Map<string, number>> {
+  try {
+    const j: Record<string, number> = JSON.parse(await readFile('data/prevclose.json', 'utf8'));
+    return new Map(Object.entries(j));
+  } catch { return new Map(); }
+}
 
 async function avgVolumes(): Promise<Map<string, number>> {
   // 50-day average volume. Prefer the small committed digest, because CI has
@@ -71,31 +97,69 @@ async function main() {
   const status = await getMarketStatus();
   console.log(`Nasdaq says: ${status?.status ?? 'unknown'}`);
 
+  // --- Stage 1: ONE request for the entire market ---------------------------
   const { quotes: universe, asOf } = await getUniverse();
   const avg = await avgVolumes();
-  console.log(`Universe ${universe.length}; ${avg.size} symbols have a volume history`);
+  const prev = await prevCloses();
+  console.log(`Universe ${universe.length}; ${avg.size} volume histories; ${prev.size} stored prior closes`);
 
   const watch = universe.filter(
     (q) => q.price >= UNIVERSE.priceMin && q.price <= UNIVERSE.priceMax &&
            (q.marketCap === null || q.marketCap <= UNIVERSE.maxMarketCap),
   );
-  console.log(`Checking pre-market for ${watch.length} small caps…`);
 
-  const pm = await getPreMarketQuotes(
-    watch.map((q) => q.symbol), 8,
-    (d, t) => process.stdout.write(`\r  ${d}/${t}   `),
+  // Is the bulk feed showing live pre-market prices, or still yesterday's close?
+  // We can tell by comparing its price against the close we stored last session.
+  // Guessing would be the worst outcome: a stale feed silently reports every
+  // stock as unchanged and the shortlist is empty for the wrong reason.
+  let moved = 0, comparable = 0;
+  for (const q of watch) {
+    const pc = prev.get(q.symbol);
+    if (!pc) continue;
+    comparable++;
+    if (Math.abs(q.price - pc) / pc > 0.001) moved++;
+  }
+  const feedIsLive = comparable > 100 && moved / comparable > 0.05;
+  console.log(`Bulk feed: ${moved}/${comparable} prices differ from the stored close ` +
+              `-> ${feedIsLive ? 'LIVE pre-market pricing' : 'still showing the previous close'}`);
+
+  // Pre-market change: prefer measuring it ourselves against the stored close.
+  const candidates = watch
+    .map((q) => {
+      const pc = prev.get(q.symbol) ?? null;
+      const chg = pc && pc > 0 ? ((q.price - pc) / pc) * 100 : q.changePct;
+      return { q, prevClose: pc, chg };
+    })
+    .filter((c) => c.chg >= GATE.minPreMarketChangePct - 5)
+    .sort((a, b) => b.chg - a.chg)
+    .slice(0, INVESTIGATE);
+  console.log(`  ${candidates.length} movers to investigate individually`);
+
+  // --- Stage 2: per-symbol detail, for the shortlist only -------------------
+  const { quotes: pm, stats } = await getPreMarketQuotes(
+    candidates.map((c) => c.q.symbol), 4,
   );
-  console.log('');
+  const answerRate = stats.requested ? (stats.answered / stats.requested) * 100 : 0;
+  console.log(`  ${stats.answered}/${stats.requested} quote lookups answered (${answerRate.toFixed(0)}%)`);
+  if (stats.requested && answerRate < 50) {
+    console.warn(`  ! only ${answerRate.toFixed(0)}% answered — treat this scan as unreliable`);
+  }
 
   const live = [...pm.values()].filter((q) => !q.stale && q.preMarketChangePct !== null);
-  console.log(`  ${live.length} returned live pre-market prices`);
+  console.log(`  ${live.length} confirmed live pre-market prints`);
 
-  // Rank by pre-market move, then investigate only the plausible ones.
-  const movers = live
-    .filter((q) => (q.preMarketChangePct ?? 0) >= GATE.minPreMarketChangePct - 5)  // slack, to show near-misses
-    .sort((a, b) => (b.preMarketChangePct ?? 0) - (a.preMarketChangePct ?? 0))
-    .slice(0, 40);
-  console.log(`  ${movers.length} moving enough to investigate`);
+  // Use the confirmed per-symbol print where we have one, else the bulk figure.
+  const movers = candidates.map((c) => {
+    const detail = pm.get(c.q.symbol);
+    return {
+      symbol: c.q.symbol,
+      preMarketPrice: detail?.preMarketPrice ?? c.q.price,
+      preMarketChangePct: detail?.preMarketChangePct ?? c.chg,
+      prevClose: detail?.prevClose ?? c.prevClose,
+      volume: detail?.volume ?? c.q.volume,
+      confirmed: !!detail && !detail.stale,
+    };
+  });
 
   const cikMap = await getTickerToCik().catch(() => new Map<string, string>());
   const today = new Date().toISOString().slice(0, 10);
@@ -166,6 +230,8 @@ async function main() {
     prevSession: asOf,
     universeChecked: watch.length,
     liveQuotes: live.length,
+    feedIsLive,
+    fetch: { ...stats, answerRatePct: answerRate, reliable: !stats.requested || answerRate >= 50 },
     gate: GATE,
     shortlist: rows.filter((r) => r.passed === 5).slice(0, SHORTLIST_MAX),
     watchlist: rows.filter((r) => r.passed === 4).slice(0, SHORTLIST_MAX),
