@@ -29,4 +29,9 @@ const head = `<!doctype html>
 const html = head + template.replace(MARKER, data.replace(/<\//g, '<\\/')) + '\n</body>\n</html>\n';
 await mkdir('_site', { recursive: true });
 await writeFile('_site/index.html', html);
-console.log(`Wrote _site/index.html (${(html.length / 1024).toFixed(0)} KB)`);
+
+// Publish the raw scan as JSON too. A scheduled agent reading structured data
+// beats it scraping our own rendered page, and it costs nothing to emit.
+await writeFile('_site/premarket.json', data);
+
+console.log(`Wrote _site/index.html (${(html.length / 1024).toFixed(0)} KB) and _site/premarket.json`);
