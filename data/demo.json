@@ -1,0 +1,669 @@
+{
+  "isDemo": true,
+  "demoDate": "2026-05-28",
+  "snapshotAtEt": "08:45",
+  "generatedAt": "2026-09-13T04:11:36.206Z",
+  "marketStatus": "Pre-Market (replay)",
+  "prevSession": "2026-05-28",
+  "universeChecked": 51,
+  "liveQuotes": 25,
+  "feedIsLive": true,
+  "fetch": {
+    "requested": 25,
+    "answered": 25,
+    "failed": 0,
+    "answerRatePct": 100,
+    "reliable": true
+  },
+  "gate": {
+    "minPreMarketChangePct": 10,
+    "minPreMarketVolume": 50000,
+    "goodPreMarketVolume": 150000,
+    "priceMin": 2,
+    "priceMax": 20,
+    "floatIdeal": 10000000,
+    "floatStretch": 20000000
+  },
+  "shortlist": [
+    {
+      "symbol": "ATPC",
+      "name": "ATPC",
+      "sector": null,
+      "preMarketPrice": 5.9,
+      "preMarketChangePct": 107.01754385964912,
+      "prevClose": 2.85,
+      "preMarketVolume": 8869171,
+      "preMarketDollarVolume": 52328108.900000006,
+      "preMarketHigh": 7.47,
+      "preMarketLow": 4.5,
+      "relVolume": 6.321636286476292,
+      "avgVolume50": 1402986.6,
+      "float": {
+        "shares": 1000626,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-10"
+      },
+      "sharesOutstanding": 1000626,
+      "marketCap": 5903693.4,
+      "floatPctOfShares": 100,
+      "floatRotation": 8.86362237239488,
+      "bestPriorSpikePct": 164.55882352941177,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "date": "2026-05-28",
+        "headline": "Catalyst not re-checked in this replay"
+      },
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "107.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "8,869,171"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "replay — not re-checked"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.90"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "1.0M"
+        }
+      ],
+      "passed": 5,
+      "quality": "high"
+    },
+    {
+      "symbol": "SPRC",
+      "name": "SPRC",
+      "sector": null,
+      "preMarketPrice": 9.07,
+      "preMarketChangePct": 106.60592255125287,
+      "prevClose": 4.39,
+      "preMarketVolume": 934496,
+      "preMarketDollarVolume": 8475878.72,
+      "preMarketHigh": 10.35,
+      "preMarketLow": 4.38,
+      "relVolume": 2.2567622497917346,
+      "avgVolume50": 414087.04,
+      "float": {
+        "shares": 365444,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-12-31"
+      },
+      "sharesOutstanding": 365444,
+      "marketCap": 3314577.08,
+      "floatPctOfShares": 100,
+      "floatRotation": 2.5571523954422566,
+      "bestPriorSpikePct": 142.93478260869563,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "date": "2026-05-28",
+        "headline": "Catalyst not re-checked in this replay"
+      },
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "106.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "934,496"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "replay — not re-checked"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$9.07"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "0.4M"
+        }
+      ],
+      "passed": 5,
+      "quality": "high"
+    },
+    {
+      "symbol": "FATN",
+      "name": "FATN",
+      "sector": null,
+      "preMarketPrice": 5.6,
+      "preMarketChangePct": 16.18257261410787,
+      "prevClose": 4.82,
+      "preMarketVolume": 79387,
+      "preMarketDollarVolume": 444567.19999999995,
+      "preMarketHigh": 5.9498,
+      "preMarketLow": 4.85,
+      "relVolume": 0.058203512624913536,
+      "avgVolume50": 1363955.48,
+      "float": {
+        "shares": 6541471.048513303,
+        "basis": "sec-public-float",
+        "asOf": "2025-09-30"
+      },
+      "sharesOutstanding": 14128468,
+      "marketCap": 79119420.8,
+      "floatPctOfShares": 46.29993180090936,
+      "floatRotation": 0.012135955263157893,
+      "bestPriorSpikePct": 47.92013311148088,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "date": "2026-05-28",
+        "headline": "Catalyst not re-checked in this replay"
+      },
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "16.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "79,387"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "replay — not re-checked"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.60"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "6.5M"
+        }
+      ],
+      "passed": 5,
+      "quality": "medium"
+    }
+  ],
+  "watchlist": [
+    {
+      "symbol": "NCT",
+      "name": "NCT",
+      "sector": null,
+      "preMarketPrice": 5.68,
+      "preMarketChangePct": 131.83673469387753,
+      "prevClose": 2.45,
+      "preMarketVolume": 8418534,
+      "preMarketDollarVolume": 47817273.12,
+      "preMarketHigh": 8.23,
+      "preMarketLow": 2.2,
+      "relVolume": 2.782892352320729,
+      "avgVolume50": 3025102.28,
+      "float": {
+        "shares": 26675001,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-06-30"
+      },
+      "sharesOutstanding": 26675001,
+      "marketCap": 151514005.68,
+      "floatPctOfShares": 100,
+      "floatRotation": 0.31559638929348116,
+      "bestPriorSpikePct": 43.80952380952382,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "date": "2026-05-28",
+        "headline": "Catalyst not re-checked in this replay"
+      },
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "131.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "8,418,534"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "replay — not re-checked"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.68"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "26.7M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "ASTC",
+      "name": "ASTC",
+      "sector": null,
+      "preMarketPrice": 22.58,
+      "preMarketChangePct": 63.504706734250526,
+      "prevClose": 13.81,
+      "preMarketVolume": 4010213,
+      "preMarketDollarVolume": 90550609.53999999,
+      "preMarketHigh": 26,
+      "preMarketLow": 13.46,
+      "relVolume": 0.7339534802238247,
+      "avgVolume50": 5463851.74,
+      "float": {
+        "shares": 1500575.892857143,
+        "basis": "sec-public-float",
+        "asOf": "2024-12-31"
+      },
+      "sharesOutstanding": 1758953,
+      "marketCap": 39717158.739999995,
+      "floatPctOfShares": 85.31074411068079,
+      "floatRotation": 2.672449303689952,
+      "bestPriorSpikePct": 96.20253164556962,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "date": "2026-05-28",
+        "headline": "Catalyst not re-checked in this replay"
+      },
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "63.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "4,010,213"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "replay — not re-checked"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$22.58"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "1.5M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "IOTR",
+      "name": "IOTR",
+      "sector": null,
+      "preMarketPrice": 3.19,
+      "preMarketChangePct": 47.004608294930875,
+      "prevClose": 2.17,
+      "preMarketVolume": 1954402,
+      "preMarketDollarVolume": 6234542.38,
+      "preMarketHigh": 5.66,
+      "preMarketLow": 2.27,
+      "relVolume": 10.033864772350508,
+      "avgVolume50": 194780.58,
+      "float": {
+        "shares": 24000000,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-03-31"
+      },
+      "sharesOutstanding": 24000000,
+      "marketCap": 76560000,
+      "floatPctOfShares": 100,
+      "floatRotation": 0.08143341666666666,
+      "bestPriorSpikePct": 74.06143344709896,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "date": "2026-05-28",
+        "headline": "Catalyst not re-checked in this replay"
+      },
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "47.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "1,954,402"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "replay — not re-checked"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.19"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "24.0M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "RCAX",
+      "name": "RCAX",
+      "sector": null,
+      "preMarketPrice": 10.3996,
+      "preMarketChangePct": 37.74304635761589,
+      "prevClose": 7.55,
+      "preMarketVolume": 115929,
+      "preMarketDollarVolume": 1205615.2284,
+      "preMarketHigh": 10.54,
+      "preMarketLow": 9.03,
+      "relVolume": 0.32787724450638955,
+      "avgVolume50": 353574.4,
+      "float": null,
+      "sharesOutstanding": null,
+      "marketCap": null,
+      "floatPctOfShares": null,
+      "floatRotation": null,
+      "bestPriorSpikePct": 33.91406048270728,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "date": "2026-05-28",
+        "headline": "Catalyst not re-checked in this replay"
+      },
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "37.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "115,929"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "replay — not re-checked"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$10.40"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "unknown"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "CRSR",
+      "name": "CRSR",
+      "sector": null,
+      "preMarketPrice": 13.24,
+      "preMarketChangePct": 34.82688391038696,
+      "prevClose": 9.82,
+      "preMarketVolume": 726398,
+      "preMarketDollarVolume": 9617509.52,
+      "preMarketHigh": 13.3769,
+      "preMarketLow": 11.06,
+      "relVolume": 0.5152497536065206,
+      "avgVolume50": 1409797.86,
+      "float": {
+        "shares": 46156560.97560976,
+        "basis": "sec-public-float",
+        "asOf": "2025-06-30"
+      },
+      "sharesOutstanding": 108176959,
+      "marketCap": 1432262937.16,
+      "floatPctOfShares": 42.66764512728607,
+      "floatRotation": 0.01573769762404626,
+      "bestPriorSpikePct": 48.2532751091703,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "date": "2026-05-28",
+        "headline": "Catalyst not re-checked in this replay"
+      },
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "34.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "726,398"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "replay — not re-checked"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$13.24"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "46.2M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "KTUP",
+      "name": "KTUP",
+      "sector": null,
+      "preMarketPrice": 11.66,
+      "preMarketChangePct": 25.511302475780422,
+      "prevClose": 9.29,
+      "preMarketVolume": 56590,
+      "preMarketDollarVolume": 659839.4,
+      "preMarketHigh": 11.75,
+      "preMarketLow": 10.01,
+      "relVolume": 0.41615226745993716,
+      "avgVolume50": 135983.88,
+      "float": null,
+      "sharesOutstanding": null,
+      "marketCap": null,
+      "floatPctOfShares": null,
+      "floatRotation": null,
+      "bestPriorSpikePct": 27.851140456182478,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "date": "2026-05-28",
+        "headline": "Catalyst not re-checked in this replay"
+      },
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "25.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "56,590"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "replay — not re-checked"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$11.66"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "unknown"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "RCAT",
+      "name": "RCAT",
+      "sector": null,
+      "preMarketPrice": 12.7,
+      "preMarketChangePct": 19.025304592314896,
+      "prevClose": 10.67,
+      "preMarketVolume": 2222061,
+      "preMarketDollarVolume": 28220174.7,
+      "preMarketHigh": 12.78,
+      "preMarketLow": 11.7,
+      "relVolume": 0.1735801573536079,
+      "avgVolume50": 12801353.76,
+      "float": {
+        "shares": 85263115.7967033,
+        "basis": "sec-public-float",
+        "asOf": "2025-06-30"
+      },
+      "sharesOutstanding": 152714362,
+      "marketCap": 1939472397.3999999,
+      "floatPctOfShares": 55.83175981621381,
+      "floatRotation": 0.026061222126788804,
+      "bestPriorSpikePct": 29.10798122065728,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "date": "2026-05-28",
+        "headline": "Catalyst not re-checked in this replay"
+      },
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "19.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "2,222,061"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "replay — not re-checked"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$12.70"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "85.3M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "AVXX",
+      "name": "AVXX",
+      "sector": null,
+      "preMarketPrice": 11.14,
+      "preMarketChangePct": 18.510638297872344,
+      "prevClose": 9.4,
+      "preMarketVolume": 99711,
+      "preMarketDollarVolume": 1110780.54,
+      "preMarketHigh": 11.7045,
+      "preMarketLow": 10.29,
+      "relVolume": 0.4088820209025971,
+      "avgVolume50": 243862.52,
+      "float": null,
+      "sharesOutstanding": null,
+      "marketCap": null,
+      "floatPctOfShares": null,
+      "floatRotation": null,
+      "bestPriorSpikePct": 227.60290556900725,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "date": "2026-05-28",
+        "headline": "Catalyst not re-checked in this replay"
+      },
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "18.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "99,711"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "replay — not re-checked"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$11.14"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "unknown"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
+  "alsoRan": []
+}
