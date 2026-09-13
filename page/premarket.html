@@ -279,6 +279,72 @@ function foot(){
     Sources: Nasdaq public quote and screener endpoints, SEC EDGAR for float, share count and 8-K
     filings. Data may be delayed. Not investment advice.`;
 }
+/**
+ * Desktop push, straight from the page — no app, no account, no key.
+ *
+ * The browser's own Notification API fires a real OS notification. The one
+ * limitation is honest and unavoidable: it needs this page open in a tab,
+ * because a static site has no server to push from. Keep it pinned during
+ * pre-market and it behaves like any other alerting app.
+ *
+ * It only fires for names it has not already told you about — the page reloads
+ * every three minutes, and re-announcing the same three tickers twenty times a
+ * morning would be worse than silence.
+ */
+(function desktopPush(){
+  if (!('Notification' in window) || !D || D.isDemo) return;
+
+  const KEY = 'scs-announced';
+  const readSeen = () => { try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch { return {}; } };
+  const writeSeen = (v) => { try { localStorage.setItem(KEY, JSON.stringify(v)); } catch {} };
+
+  function announce(){
+    if (Notification.permission !== 'granted') return;
+    const today = (D.prevSession || new Date().toISOString().slice(0,10));
+    const seen = readSeen();
+    const already = seen.date === today ? (seen.symbols || []) : [];
+    const fresh = (D.shortlist || []).filter(r => !already.includes(r.symbol));
+    if (!fresh.length) return;
+
+    const line = fresh.map(r =>
+      `${r.symbol}  ${r.preMarketChangePct >= 0 ? '+' : ''}${r.preMarketChangePct.toFixed(0)}%` +
+      (r.relVolume ? `  ${r.relVolume.toFixed(1)}x vol` : '')).join('\n');
+    const n = new Notification(
+      fresh.length === 1 ? `${fresh[0].symbol} cleared all five` : `${fresh.length} on the shortlist`,
+      { body: line, tag: 'scs-shortlist', requireInteraction: true },
+    );
+    n.onclick = () => { window.focus(); n.close(); };
+    writeSeen({ date: today, symbols: [...already, ...fresh.map(r => r.symbol)] });
+  }
+
+  // A small, honest control rather than an unprompted permission popup.
+  const bar = document.createElement('div');
+  bar.style.cssText = 'position:fixed;bottom:12px;left:14px;font:11.5px/1.3 var(--sans);' +
+    'color:var(--dim);background:var(--panel);border:1px solid var(--line);' +
+    'padding:8px 12px;border-radius:10px;cursor:pointer;max-width:250px';
+  function paint(){
+    if (Notification.permission === 'granted'){
+      bar.innerHTML = '<b style="color:var(--go)">✓ Desktop alerts on</b><br>' +
+        '<span style="color:var(--faint)">Keep this tab open during pre-market.</span>';
+      bar.style.cursor = 'default';
+    } else if (Notification.permission === 'denied'){
+      bar.innerHTML = '<b style="color:var(--warn)">Alerts blocked</b><br>' +
+        '<span style="color:var(--faint)">Allow notifications for this site in your browser settings.</span>';
+      bar.style.cursor = 'default';
+    } else {
+      bar.innerHTML = '<b>Turn on desktop alerts</b><br>' +
+        '<span style="color:var(--faint)">Click here — no app, no signup.</span>';
+    }
+  }
+  bar.onclick = () => {
+    if (Notification.permission === 'default')
+      Notification.requestPermission().then(() => { paint(); announce(); });
+  };
+  paint();
+  document.body.appendChild(bar);
+  announce();
+})();
+
 render();
 
 /**

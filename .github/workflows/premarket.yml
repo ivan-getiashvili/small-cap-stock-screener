@@ -105,11 +105,15 @@ jobs:
             console.log('watchlist:', d.watchlist.map(r=>r.symbol).join(', ')||'(none)');
           "
 
-      # Delivered as a comment on the tracking issue, which GitHub emails.
-      # No app, no subscription — the web is the whole channel.
-      - name: Post the shortlist to the tracking issue
+      # Push goes to Telegram when configured. The GitHub comment is only the
+      # fallback, because its delivery mechanism is email.
+      - name: Send the shortlist (Telegram push, else GitHub comment)
         if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
         env:
+          # Telegram takes over as soon as these two secrets exist; until then
+          # the GitHub comment (and its email) is the fallback.
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           NOTIFY_ISSUE: '2'

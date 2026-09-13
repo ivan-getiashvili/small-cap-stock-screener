@@ -19,10 +19,58 @@ const REPO = process.env.GITHUB_REPOSITORY;
 const ISSUE = process.env.NOTIFY_ISSUE ?? '2';
 const SITE = process.env.SITE_URL ?? '';
 
+/**
+ * Telegram is the push channel: a real notification on the phone, with the
+ * browser closed, and no new app to install for anyone who already has it.
+ *
+ * When it is configured it becomes the only channel. GitHub issue comments are
+ * kept purely as the fallback, because their delivery mechanism is email and
+ * email is what we are moving away from.
+ */
+const TG_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+const TG_CHAT = process.env.TELEGRAM_CHAT_ID;
+const pushConfigured = Boolean(TG_TOKEN && TG_CHAT);
+
+async function telegram(markdown: string): Promise<boolean> {
+  if (!pushConfigured) return false;
+  try {
+    const res = await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: TG_CHAT,
+        text: markdown,
+        parse_mode: 'Markdown',
+        disable_web_page_preview: true,
+      }),
+      signal: AbortSignal.timeout(20_000),
+    });
+    if (!res.ok) { console.log(`telegram failed: HTTP ${res.status} ${await res.text()}`); return false; }
+    console.log('pushed to Telegram');
+    return true;
+  } catch (e) {
+    console.log(`telegram error: ${(e as Error).message}`);
+    return false;
+  }
+}
+
 const d = JSON.parse(await readFile('data/premarket.json', 'utf8'));
 
+/** Strip the HTML marker and heavy markdown for a phone notification. */
+function plain(body: string): string {
+  return body
+    .replace(/<!--.*?-->/gs, '')
+    .replace(/^\s*###\s*/gm, '')
+    .replace(/\|/g, ' ')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
 async function comment(body: string) {
-  if (!TOKEN || !REPO) { console.log('no GITHUB_TOKEN/REPOSITORY — printing instead:\n' + body); return; }
+  // Telegram is the channel when configured; the issue comment exists only so
+  // there is still a record if push is not set up yet.
+  if (await telegram(plain(body))) return;
+  if (!TOKEN || !REPO) { console.log('no push and no GITHUB_TOKEN — printing instead:\n' + body); return; }
   const res = await fetch(`https://api.github.com/repos/${REPO}/issues/${ISSUE}/comments`, {
     method: 'POST',
     headers: {
@@ -90,6 +138,14 @@ if (d.fetch && d.fetch.requested && !d.fetch.reliable) {
  * spam gets filtered, which puts us right back where we started.
  */
 async function alreadySummarisedToday(marker: string): Promise<boolean> {
+  // With Telegram as the channel there are no comments to inspect, so the
+  // once-a-day guarantee comes from a committed marker instead.
+  if (pushConfigured) {
+    try {
+      const rf = (await import('node:fs/promises')).readFile;
+      return JSON.parse(await rf('data/reminders.json', 'utf8')).lastSummary === marker;
+    } catch { return false; }
+  }
   if (!TOKEN || !REPO) return false;
   try {
     const res = await fetch(
@@ -144,6 +200,13 @@ if (isFinalScan) {
         `\nA full scan usually leaves fewer than ten names, and some mornings none.${link}`;
 
     await comment(body);
+    if (pushConfigured) {
+      const { readFile: rf, writeFile } = await import('node:fs/promises');
+      let state: any = {};
+      try { state = JSON.parse(await rf('data/reminders.json', 'utf8')); } catch {}
+      state.lastSummary = marker;
+      await writeFile('data/reminders.json', JSON.stringify(state));
+    }
   }
 }
 
