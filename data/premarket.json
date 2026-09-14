@@ -1,0 +1,406 @@
+{
+  "generatedAt": "2026-09-14T10:17:40.596Z",
+  "marketStatus": "Pre Market",
+  "prevSession": "2026-09-11",
+  "universeChecked": 6090,
+  "smallCapsInBand": 2945,
+  "investigated": 81,
+  "liveQuotes": 52,
+  "feedIsLive": true,
+  "discovery": {
+    "since": "2026-09-11T19:30:00.000Z",
+    "edgarOk": true,
+    "edgarFilings": 112,
+    "leads": {
+      "8-K": 51,
+      "PR Newswire": 3,
+      "GlobeNewswire": 3,
+      "prior-session gainer": 25
+    },
+    "feeds": [
+      {
+        "name": "PR Newswire",
+        "url": "https://www.prnewswire.com/rss/news-releases-list.rss",
+        "ok": false,
+        "items": 0,
+        "inWindow": 0
+      },
+      {
+        "name": "PR Newswire",
+        "url": "https://www.prnewswire.com/rss/financial-services-latest-news/financial-services-latest-news-list.rss",
+        "ok": true,
+        "items": 20,
+        "inWindow": 20
+      },
+      {
+        "name": "GlobeNewswire",
+        "url": "https://www.globenewswire.com/RssFeed/orgclass/1/feedTitle/GlobeNewswire%20-%20News%20about%20Public%20Companies",
+        "ok": true,
+        "items": 20,
+        "inWindow": 20
+      }
+    ]
+  },
+  "fetch": {
+    "requested": 81,
+    "answered": 81,
+    "failed": 0,
+    "answerRatePct": 100,
+    "reliable": true
+  },
+  "gate": {
+    "minPreMarketChangePct": 10,
+    "minPreMarketVolume": 50000,
+    "goodPreMarketVolume": 150000,
+    "priceMin": 2,
+    "priceMax": 20,
+    "floatIdeal": 10000000,
+    "floatStretch": 20000000
+  },
+  "shortlist": [],
+  "watchlist": [
+    {
+      "symbol": "BNC",
+      "name": "CEA Industries Inc.",
+      "legalName": "CEA Industries Inc.",
+      "business": "Agricultural Services",
+      "sector": "Consumer Staples",
+      "preMarketPrice": 5.66,
+      "preMarketChangePct": 17.916666666666675,
+      "prevClose": 4.8,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 14, 2026 6:17 AM ET",
+      "preMarketVolume": 500276.585805,
+      "preMarketDollarVolume": 2831565.4756563,
+      "relVolume": 0.26967270982009295,
+      "avgVolume50": 1855125,
+      "sharesOutstanding": 41173850,
+      "marketCap": 233043991,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 50,
+      "float": {
+        "shares": 41173850,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-04"
+      },
+      "floatRotation": 0.012150347509523641,
+      "daysUp": 0,
+      "priorRunPct": 45.8966565349544,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released",
+        "subject": "Earnings / results released",
+        "date": "2026-09-11"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "17.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "500,277"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.66"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "41.2M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
+  "alsoRan": [
+    {
+      "symbol": "ELMT",
+      "name": "The Elmet Group Co.",
+      "legalName": "Elmet Group Co.",
+      "business": "Miscellaneous Fabricated Metal Products",
+      "sector": "Industrials",
+      "preMarketPrice": 21.11,
+      "preMarketChangePct": 30.389129092032103,
+      "prevClose": 16.19,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 14, 2026 6:17 AM ET",
+      "preMarketVolume": 912522.589668,
+      "preMarketDollarVolume": 19263351.86789148,
+      "relVolume": 2.5491451556769804,
+      "avgVolume50": 357972,
+      "sharesOutstanding": 30459498,
+      "marketCap": 643000002.78,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 24,
+      "float": {
+        "shares": 30459498,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-10"
+      },
+      "floatRotation": 0.02995855643018148,
+      "daysUp": 1,
+      "priorRunPct": -1.0995723885155755,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "The Elmet Group to Deploy Strategic Capital to Strengthen U.S. and Allied Tungsten Supply Chain",
+        "subject": null,
+        "date": "2026-09-14"
+      },
+      "leads": [
+        "GlobeNewswire",
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "30.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "912,523"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$21.11"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "30.5M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "PMI",
+      "name": "Picard Medical Inc.",
+      "legalName": "Picard Medical, Inc.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 5.6481,
+      "preMarketChangePct": 5.968105065666046,
+      "prevClose": 5.33,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 14, 2026 6:15 AM ET",
+      "preMarketVolume": 69568,
+      "preMarketDollarVolume": 392927.0208,
+      "relVolume": 0.0046522956064134376,
+      "avgVolume50": 14953478,
+      "sharesOutstanding": 2338634,
+      "marketCap": 13208838.695400001,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 86,
+      "float": {
+        "shares": 2338634,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-18"
+      },
+      "floatRotation": 0.02974727982232363,
+      "daysUp": 1,
+      "priorRunPct": 18.708240534521153,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "69,568"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.65"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "2.3M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "VSME",
+      "name": "VS Media Holdings Limited Class A Ordinary Shares",
+      "legalName": "VS MEDIA Holdings Ltd",
+      "business": "Services-Advertising Agencies",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.26,
+      "preMarketChangePct": 24.75,
+      "prevClose": 1.0100200400801602,
+      "closeReconciled": true,
+      "lastTradeAt": "Sep 14, 2026 6:17 AM ET",
+      "preMarketVolume": 3924380,
+      "preMarketDollarVolume": 4944718.8,
+      "relVolume": 13.221547283342936,
+      "avgVolume50": 296817,
+      "sharesOutstanding": 55013689,
+      "marketCap": 69317248.14,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 149,
+      "float": {
+        "shares": 55013689,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-12-31"
+      },
+      "floatRotation": 0.07133460910065494,
+      "daysUp": 1,
+      "priorRunPct": 3.8737864077669943,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "24.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "3,924,380"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.26"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "55.0M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "NCRA",
+      "name": "Nocera Inc.",
+      "legalName": "NOCERA, INC.",
+      "business": "Agricultural Prod-Livestock & Animal Specialties",
+      "sector": "Consumer Staples",
+      "preMarketPrice": 2.37,
+      "preMarketChangePct": 6.278026905829602,
+      "prevClose": 2.23,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 14, 2026 6:11 AM ET",
+      "preMarketVolume": 17740,
+      "preMarketDollarVolume": 42043.8,
+      "relVolume": 0.0035170904027048686,
+      "avgVolume50": 5043942,
+      "sharesOutstanding": 2376148,
+      "marketCap": 5631470.760000001,
+      "floatPctOfShares": 55.2330591684201,
+      "bestPriorSpikePct": 118,
+      "float": {
+        "shares": 1312419.2307692308,
+        "basis": "sec-public-float",
+        "asOf": "2025-06-30"
+      },
+      "floatRotation": 0.013517022292946965,
+      "daysUp": 1,
+      "priorRunPct": 14.358974358974361,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "17,740"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.37"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "1.3M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    }
+  ]
+}

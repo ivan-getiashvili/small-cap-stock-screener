@@ -1,36 +1,46 @@
 /**
- * Live pre-market quotes from Nasdaq's own quote endpoint. Keyless.
+ * Live extended-hours quotes from Nasdaq's per-symbol quote endpoint. Keyless.
  *
- * During the pre-market session Nasdaq returns TWO price blocks per symbol:
- *   primaryData   — the previous session's close
- *   secondaryData — the current pre-market last sale and its % change
+ * Which block holds what — checked against the 1-minute chart on 2026-09-14,
+ * because the first version had it backwards:
  *
- * `secondaryData` is null when the market is shut, which is why this can only
- * be exercised against a live session. Everything here is written to degrade to
- * "no pre-market data" rather than to invent a number.
+ *   primaryData   — the LIVE print. During pre-market it is the latest trade,
+ *                   `isRealTime: true`, stamped today ("Sep 14, 2026 5:56 AM
+ *                   ET"), with the session's volume so far. AAPL read $331.2196
+ *                   here and on the chart at 5:56 AM.
+ *   secondaryData — not trustworthy. Usually the previous session's close
+ *                   ("Closed at Sep 11, 2026 4:00 PM ET"), but for SXTC it
+ *                   repeated the live price. Never read.
  *
- * Why not Databento: its historical API only serves data up to the END of the
- * previous day, so it cannot see this morning at any price. Live data there is
- * a separate paid subscription.
+ * Reading the blocks backwards turned Friday's regular-session change into
+ * "this morning's pre-market move" and still called the quote live. So a quote
+ * counts as live only when it is real-time AND stamped with today's New York
+ * date, and the caller measures the move against a close we stored ourselves.
+ *
+ * Why not the bulk screener: during pre-market every one of its 6,090 prices
+ * still equals the previous close, and Nasdaq's movers lists are stamped with
+ * the previous session too. Live pre-market data exists only per symbol, which
+ * is why lib/sources/discovery.ts decides which few symbols to ask about.
  */
 
 const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 ' +
   '(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
 
-export type PreMarketQuote = {
+export type LiveQuote = {
   symbol: string;
-  /** Pre-market last sale, or null if nothing has traded yet. */
-  preMarketPrice: number | null;
-  /** Percent change vs the previous close, per Nasdaq. */
-  preMarketChangePct: number | null;
-  /** Previous session's close. */
-  prevClose: number | null;
-  /** Nasdaq's own view of the session: "Pre-Market", "Open", "Closed"… */
-  marketStatus: string | null;
-  /** Volume Nasdaq reports — during pre-market this is the pre-market tally. */
+  /** Latest print in the current session, or null if nothing has traded. */
+  price: number | null;
+  /** Shares traded so far in the current session. */
   volume: number | null;
-  stale: boolean;
+  /** Nasdaq's own % change vs the previous close — used only as a cross-check. */
+  nasdaqChangePct: number | null;
+  /** Nasdaq's words for the session: "Pre-Market", "Open", "Closed"… */
+  marketStatus: string | null;
+  lastTradeAt: string | null;
+  isRealTime: boolean;
+  /** Real-time and stamped today in New York. The only quotes a scan may use. */
+  live: boolean;
 };
 
 function num(raw: unknown): number | null {
@@ -42,8 +52,15 @@ function num(raw: unknown): number | null {
   return Number.isFinite(n) ? n : null;
 }
 
-/** One symbol's pre-market state. Returns null on any failure — never a guess. */
-export async function getPreMarketQuote(symbol: string, timeoutMs = 12_000): Promise<PreMarketQuote | null> {
+/** Today's date as Nasdaq writes it in quote timestamps: "Sep 14, 2026". */
+export function nyDateLabel(d = new Date()): string {
+  return d.toLocaleDateString('en-US', {
+    timeZone: 'America/New_York', month: 'short', day: 'numeric', year: 'numeric',
+  });
+}
+
+/** One symbol's live state. Returns null on any failure — never a guess. */
+export async function getPreMarketQuote(symbol: string, timeoutMs = 12_000): Promise<LiveQuote | null> {
   const url = `https://api.nasdaq.com/api/quote/${encodeURIComponent(symbol)}/info?assetclass=stocks`;
   let res: Response;
   try {
@@ -59,23 +76,20 @@ export async function getPreMarketQuote(symbol: string, timeoutMs = 12_000): Pro
   const d = json?.data;
   if (!d) return null;
 
-  const primary = d.primaryData ?? {};
-  const secondary = d.secondaryData ?? null;
-  const status = d.marketStatus ?? null;
-
-  // In pre-market the live print is in secondaryData; primaryData holds the
-  // prior close. Outside pre-market there is no secondary block at all.
-  const preMarketPrice = secondary ? num(secondary.lastSalePrice) : null;
-  const preMarketChangePct = secondary ? num(secondary.percentageChange) : null;
+  const p = d.primaryData ?? {};
+  const lastTradeAt = typeof p.lastTradeTimestamp === 'string' ? p.lastTradeTimestamp : null;
+  const isRealTime = p.isRealTime === true;
+  const stampedToday = !!lastTradeAt && lastTradeAt.startsWith(nyDateLabel());
 
   return {
     symbol: symbol.toUpperCase(),
-    preMarketPrice,
-    preMarketChangePct,
-    prevClose: num(primary.lastSalePrice),
-    marketStatus: status,
-    volume: num(secondary?.volume ?? primary.volume),
-    stale: !secondary,
+    price: num(p.lastSalePrice),
+    volume: num(p.volume),
+    nasdaqChangePct: num(p.percentageChange),
+    marketStatus: d.marketStatus ?? null,
+    lastTradeAt,
+    isRealTime,
+    live: isRealTime && stampedToday,
   };
 }
 
@@ -98,22 +112,22 @@ export async function getMarketStatus(): Promise<{ status: string; preMarketOpen
 export type FetchStats = { requested: number; answered: number; failed: number };
 
 /**
- * Fetch many symbols with bounded concurrency, reporting how many actually
- * answered.
+ * Fetch many symbols with bounded concurrency and a small gap between requests,
+ * reporting how many actually answered.
  *
  * The success count is not a nicety. Every failure mode here — Nasdaq blocking
  * the runner, a rate limit, a DNS problem — produces the same visible result as
  * a genuinely quiet morning: an empty shortlist. Without this counter the two
- * are indistinguishable, and the site would report "nothing qualified" every day
- * while actually being broken.
+ * are indistinguishable. The pacing exists because this endpoint has blocked us
+ * before, after a few thousand requests in quick succession.
  */
 export async function getPreMarketQuotes(
   symbols: string[],
-  concurrency = 8,
-  onProgress?: (done: number, total: number) => void,
-): Promise<{ quotes: Map<string, PreMarketQuote>; stats: FetchStats }> {
-  const out = new Map<string, PreMarketQuote>();
-  let next = 0, done = 0, failed = 0;
+  concurrency = 3,
+  gapMs = 150,
+): Promise<{ quotes: Map<string, LiveQuote>; stats: FetchStats }> {
+  const out = new Map<string, LiveQuote>();
+  let next = 0, failed = 0;
   await Promise.all(
     Array.from({ length: Math.min(concurrency, symbols.length) }, async () => {
       while (true) {
@@ -121,8 +135,7 @@ export async function getPreMarketQuotes(
         if (i >= symbols.length) return;
         const q = await getPreMarketQuote(symbols[i]);
         if (q) out.set(q.symbol, q); else failed++;
-        done++;
-        if (onProgress && done % 50 === 0) onProgress(done, symbols.length);
+        if (gapMs) await new Promise((r) => setTimeout(r, gapMs));
       }
     }),
   );

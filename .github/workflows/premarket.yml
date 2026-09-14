@@ -45,13 +45,21 @@ jobs:
       # to measure a pre-market move rather than trust a vendor's change field.
       - name: Record today's closes
         if: github.event.schedule == '10 21 * * 1-5' || inputs.mode == 'snapshot'
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: |
           npm run snapshot
+          # Score today's shortlist on the session it was flagged for.
+          npm run history:fill
           git config user.name  "premarket-bot"
           git config user.email "noreply@github.com"
-          git add data/prevclose.json
-          git commit -m "Record closes for $(date -u +%Y-%m-%d)" || echo "no change"
-          git push
+          # closes.json is the rolling window behind the "already extended" flag.
+          # It used to be updated here and never committed, so it never rolled.
+          git add data/prevclose.json data/closes.json data/closes.meta.json data/history.json
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -m "Record closes and score history for $(date -u +%Y-%m-%d)"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          echo "::error::could not push closes and history"; exit 1
 
       - name: Scan the pre-market
         if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
@@ -59,6 +67,20 @@ jobs:
           # EDGAR returns 403 without a contact string in the User-Agent.
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: npm run premarket
+
+      # Each CI run starts from a clean checkout, so anything not committed is
+      # gone by the next one. The scan keeps this morning's list after the bell,
+      # and history accumulates across days, only because both are committed here.
+      - name: Save the scan and history
+        if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
+        run: |
+          git config user.name  "premarket-bot"
+          git config user.email "noreply@github.com"
+          git add data/premarket.json data/history.json
+          if git diff --cached --quiet; then echo "no change"; exit 0; fi
+          git commit -q -m "Scan $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          echo "::warning::could not push the scan state"
 
       - name: Build the pages
         if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'

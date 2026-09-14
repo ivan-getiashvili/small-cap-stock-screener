@@ -137,10 +137,24 @@ export async function secFilingCatalyst(
   return null;
 }
 
+/**
+ * "Sep 11, 2026" -> "2026-09-11", built from the text itself.
+ *
+ * Date.parse on that string yields LOCAL midnight, and toISOString then shifts
+ * it to UTC — on a machine east of UTC that lands on the previous day. That is
+ * how a Saturday run on the Mac reported Friday's prices as "as of 2026-09-10".
+ */
+function usDateToIso(raw: string): string | null {
+  const m = /([A-Z][a-z]{2})[a-z]*\.?\s+(\d{1,2}),\s*(\d{4})/.exec(raw);
+  if (!m) return null;
+  const mi = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'].indexOf(m[1]);
+  if (mi < 0) return null;
+  return `${m[3]}-${String(mi + 1).padStart(2, '0')}-${m[2].padStart(2, '0')}`;
+}
+
 /** "Sep 12, 2026" -> "2026-09-12" */
 function parseNasdaqDate(s: string): string | null {
-  const d = Date.parse(s);
-  return Number.isFinite(d) ? new Date(d).toISOString().slice(0, 10) : null;
+  return usDateToIso(s);
 }
 
 /** Symbol-verified Nasdaq news within `withinDays` of `asOf`. */
@@ -186,7 +200,7 @@ export async function nasdaqNewsCatalyst(
  * split" move a stock in opposite directions, and knowing which you are looking
  * at matters more than the elegance of the method.
  */
-function classify(title: string): string | null {
+export function classify(title: string): string | null {
   const t = title.toLowerCase();
   const rules: [RegExp, string][] = [
     [/fda|approval|phase\s*(1|2|3|i{1,3})\b|clinical|trial|nda|510\(k\)/, 'FDA / clinical'],
