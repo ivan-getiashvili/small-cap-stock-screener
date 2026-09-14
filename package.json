@@ -28,6 +28,11 @@
     "notify": "node --experimental-strip-types scripts/notify.ts",
     "history:fill": "node --experimental-strip-types scripts/fill-history.ts",
     "strategies": "node --experimental-strip-types scripts/session-strategies.ts",
-    "early": "node --experimental-strip-types scripts/early-flags.ts"
+    "early": "node --experimental-strip-types scripts/early-flags.ts",
+    "playbook": "node --experimental-strip-types scripts/playbook.ts",
+    "high-timing": "node --experimental-strip-types scripts/high-timing.ts",
+    "strict": "node --experimental-strip-types scripts/strict-shortlist.ts",
+    "target-sweep": "node --experimental-strip-types scripts/target-sweep.ts",
+    "options-pilot": "node --experimental-strip-types scripts/options-pilot.ts"
   }
 }

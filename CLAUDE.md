@@ -151,6 +151,30 @@ Sampling lessons, so nobody repeats them:
   repeated timestamps on read; the early-flags numbers above predate that guard,
   so that one session's volume gate was met a little early.
 
+## Where the edge is not (2026-09-14, the "last mile" tests)
+
+Ivan wanted to "crack it": the screener finds the movers, so where is the
+money? Five more tests, all on the 08:45-flagged sample (4,257 stock-days,
+530 sessions) with real bid/ask fills, all in the repo with their data:
+
+| test | script → result file | what it says |
+|---|---|---|
+| **When the high happens** | `npm run high-timing` → `data/high-timing.json` | Only **30%** of flagged names ever trade 20% above the flag price (median high after the flag +10%; the +46% "previous close → high" figure includes the gap that happened before the flag). Of those that do, the level is first reached before the open 28%, by 09:45 55%, by 11:00 80%, **by noon 85%**. 60% of all highs fall before 10:00; a third of the runners peak in the afternoon. |
+| **Ivan's hold: no stop, +20% target, out at noon/close** | same | 26% hit +20% by noon; the other 74% exit at noon at **−8.3% mean**; net −1.3%/trade (noon), −0.9% (close). +10% target → close wins 56% with a +5% median but the mean is −1.1% (uncapped losers, worst −72%). |
+| **The sweep** (target 3–30% × give-up 09:45–close × stop none/5/10/20% × entry flag/open) | `npm run target-sweep` → `data/target-sweep.json` | **576 settings, none positive in-sample, none positive out-of-sample, none with a 95% range above zero.** The whole grid sits at −0.9% to −3.1%; a 3% target wins 73% of trades and still loses 1%. Stops make it worse. The grid sits within ~1% of zero, which is the round-trip spread (median half-spread 0.48%): before costs these holds are a coin flip. |
+| **Their playbook, mechanically** (Gap and Go on the first candle's high / the pre-market high, first pullback 07:00–11:00; 20c-capped stops; 2:1 all-out or half-off-and-trail on red candle/MACD; up to 3 re-entries; $500 risk; liquidity-capped) | `npm run playbook` → `data/playbook.json`, 7,554 stock-days | First pullback **−0.94R** net (24% won; −0.17R before spread and commission); Gap and Go **−0.41R** (33% won; **+0.13R gross**). Costs are 0.3–0.6R per trade with 20c stops on $3–6 stocks. Wider stops (4%+ of price) still −0.3R. Negative every year. 9 trades recomputed independently: 8 exact, 1 rounding. |
+| **The strict shortlist** (catalyst = 8-K/6-K accepted prev 15:30 → 08:45, float = shares outstanding filed before the morning, rvol = pre-market shares ÷ 50-day avg, day one) | `npm run strict` → `data/strict-shortlist.json`, EDGAR cached under `data/db/edgar` | **Float < 10M raises the runner rate from 30% to 45%** (rvol ≥ 5× to 44%, strict + rvol to 50%) — their selection claim is real — but the misses fade harder, so the best subset (+20% target → close, float < 10M) is **+0.2% with a 95% range of −1.2% … +1.5%**: zero after costs. Catalyst-only: −0.4%. Strict (n = 209): −0.5%. Playbook on the strict subset: −0.6R. |
+
+The pattern across everything: **the selection finds volatility, not direction**.
+From any price you can buy at, the expected move is about zero; every rule then
+pays the spread (≈1% round trip) or the stop. The one positive number in all of
+it is +0.13R gross on the opening breakout — an edge for whoever pays no spread.
+
+Daily-bar side note (`gap ≥ 10% at the open`, all symbols): bigger stocks gap
+less often (2.4/session at $20–50, 1.5 at $50–200 vs 14 at $2–20), run less
+(6% and 3% reach +20% from the open vs 17%) and fade less (mean open → close
+−1.4%, −0.5%, +0.2% for $200+). The runner phenomenon is a micro-cap thing.
+
 ## The finding that matters
 
 The backtest is negative. Over 3,524 historical signals, **every exit rule
