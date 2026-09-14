@@ -27,6 +27,7 @@
     "build:demo": "node --experimental-strip-types scripts/build-demo.ts",
     "notify": "node --experimental-strip-types scripts/notify.ts",
     "history:fill": "node --experimental-strip-types scripts/fill-history.ts",
-    "strategies": "node --experimental-strip-types scripts/session-strategies.ts"
+    "strategies": "node --experimental-strip-types scripts/session-strategies.ts",
+    "early": "node --experimental-strip-types scripts/early-flags.ts"
   }
 }

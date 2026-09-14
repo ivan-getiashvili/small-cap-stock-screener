@@ -78,6 +78,13 @@ async function readJson<T>(path: string, fallback: T): Promise<T> {
   try { return JSON.parse(await readFile(path, 'utf8')); } catch { return fallback; }
 }
 
+/** Sorted by time, one bar per timestamp: Databento returned every bar twice for 2025-06-09. */
+function dedupe(bars: Minute[]): Minute[] {
+  const out: Minute[] = [];
+  for (const b of [...bars].sort((a, c) => a[0] - c[0])) if (!out.length || out[out.length - 1][0] !== b[0]) out.push(b);
+  return out;
+}
+
 /** The latest quote at or before t, if it is recent and two-sided. */
 function quoteAt(qs: Quote[] | undefined, t: number): { bid: number; ask: number } | null {
   if (!qs?.length) return null;
@@ -236,8 +243,8 @@ async function main() {
 
     const flagged: { symbol: string; prevClose: number; last: number; bars: Minute[] }[] = [];
     for (const [symbol, prevClose] of cands) {
-      const bars = cached[symbol] ?? pre[symbol];
-      if (!bars?.length) continue;
+      const bars = dedupe(cached[symbol] ?? pre[symbol] ?? []);
+      if (!bars.length) continue;
       let last = 0, volume = 0;
       for (const b of bars) {
         const m = nyMinute(b[0], off);
@@ -253,7 +260,7 @@ async function main() {
 
     // Step 2: the whole day and the quotes, only for flagged stocks.
     const full = await buyBars(`${BARS}/${date}.json`, flagged.filter((f) => !cached[f.symbol]).map((f) => f.symbol), iso(4, 0), iso(16, 0));
-    for (const f of flagged) f.bars = cached[f.symbol] ?? full[f.symbol] ?? [];
+    for (const f of flagged) f.bars = dedupe(cached[f.symbol] ?? full[f.symbol] ?? []);
 
     const quotesPath = `${QUOTES}/${date}.json`;
     const quotes = await readJson<Record<string, Quote[]>>(quotesPath, {});

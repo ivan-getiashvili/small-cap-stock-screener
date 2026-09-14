@@ -94,35 +94,62 @@ that stop it showing big moves by construction:
 
 Cost: ~$0.035 per session (~$0.71 for 20). Run `--dry` first.
 
-## Session strategies compared (2026-09-14, `npm run strategies`)
+## Session strategies compared (2026-09-14, `npm run strategies`, `npm run early`)
 
-Ivan asked whether the method is "buy pre-market, sell after the open" and how
-simple holds compare. `scripts/session-strategies.ts` answers on every stock the
-08:45 gate would have flagged (up 10%+, 50k+ shares, $2–$20, funds excluded):
-530 sessions Aug 2024 – Sep 2026, 4,834 stock-days, pre-market buys at the real
-ask and noon/stop sells at the real bid (`cbbo-1m`), ~$3 of Databento credit.
-Results in `data/strategies.json`; 20 trades recomputed independently match.
+Ivan asked whether the method is "buy pre-market, sell after the open", how
+simple holds compare, and then why not flag earlier (04:00–07:00), buy
+pre-market and sell 15 minutes after the bell. Two scripts answer, both on 530
+sessions Aug 2024 – Sep 2026 with the live gate (up 10%+ on the previous close,
+50k+ shares so far, $2–$20), buys at the real ask and timed sells at the real
+bid (`cbbo-1m`), funds and non-common tickers excluded, no position size. 20
+trades of each were recomputed by a separate script from the raw caches and match.
+
+**Holds from the 08:45 flag** (`scripts/session-strategies.ts` →
+`data/strategies.json`, 4,238 stock-days, ~$3 of Databento credit):
 
 | strategy | won | median | mean |
 |---|---|---|---|
-| pre-market (08:45) → open | 35% | −1.2% | −1.2% |
-| pre-market → close | 37% | −4.0% | −1.7% |
-| open → noon | 39% | −2.6% | −1.5% |
-| open → close | 41% | −2.5% | −0.6% |
-| open, 5 / 10 / 20% trailing stop | 33–40% | −2.2 to −3.0% | −0.7 to −0.8% |
+| pre-market (08:45) → open | 34% | −1.4% | −1.3% |
+| pre-market → close | 35% | −5.0% | −2.1% |
+| open → noon | 37% | −3.3% | −1.8% |
+| open → close | 39% | −3.2% | −0.9% |
+| open, 5 / 10 / 20% trailing stop | 32–38% | −2.4 to −3.6% | −1.0 to −1.1% |
 
-Every hold loses on average, in each of the three years. The move (median +46%
-previous close → high) happens before 08:45 and then fades. Neither trader holds
-across the open: the momentum source trades minutes-long bursts 07:00–11:00 ET,
-the scoring source buys morning spikes and panic dips in the session. This is the
-broad gate, not the strict shortlist (catalyst + float), which was not replayed.
+**Earlier flags** (`scripts/early-flags.ts` → `data/early-flags.json`; every
+small cap $1–$25 at the previous close replayed from its own pre-market bars, no
+preselection, $5.35). Mean return per trade; "→ 08:45" is the median move from
+the flag to 08:45:
 
-How the sample stays honest: candidates are preselected from daily bars (opened
-up 2%+, or traded 10% up, or 3× 20-day volume — the volume path catches names
-that spiked pre-market and died before the bell), and the run stops if that
-preselection drops any name the all-symbol replay flagged (71/71 kept). The
-earlier `data/db/minutes` cache selected on the day's HIGH and missed 25 of 71
-real gappers, mostly pre-open fades; never reuse it for pre-market questions.
+| flagged at | names/day | shares so far | ½ spread | → 08:45 | → open | → 09:45 | → close |
+|---|---|---|---|---|---|---|---|
+| first minute it qualifies (median 07:10) | 14.3 | 65k | 0.99% | −3.6% | −5.6% | −6.8% | −6.7% |
+| 06:00 | 3.8 | 473k | 0.45% | −4.0% | −4.2% | −5.1% | −4.5% |
+| 07:00 | 4.3 | 625k | 0.43% | −2.8% | −3.8% | −4.9% | −4.5% |
+| 08:00 | 6.6 | 988k | 0.51% | −1.3% | −2.4% | −3.3% | −3.5% |
+| 08:45 | 8.0 | 1.25M | 0.48% | — | −1.4% | −2.1% | −2.2% |
+
+Every hold loses on average, in each of the three years, won 25–35% of the
+time, and every 95% range sits below zero. **The earlier the flag, the worse:**
+a stock that is up 10% at 05:00 is usually already fading by 08:45. The move
+(median +46% previous close → high) is the gap itself, which exists before any
+scan can see it. Neither trader holds across the open: the momentum source
+trades minutes-long bursts 07:00–11:00 ET, the scoring source buys morning
+spikes and panic dips in the session. This is the broad gate, not the strict
+shortlist (catalyst + float), which was not replayed.
+
+Sampling lessons, so nobody repeats them:
+- The first strategies run forgot the fund list: 596 of 4,834 trades were
+  leveraged ETFs (TZA, UVIX, BITI…) and flattered every row by ~0.2–0.4 points.
+  `data/db/etfs.json` comes from Nasdaq's `nasdaqtraded.txt` (ETF = Y).
+- A daily-bar preselection (open up 2%+, or high 10%+, or 3× 20-day volume)
+  keeps every 08:45 flag (71/71) but loses 16 of 273 earlier qualifiers — all
+  pre-market spikes that collapsed before the bell, invisible in daily bars. For
+  anything before 08:45, replay the whole band (~$0.01 a session).
+- The older `data/db/minutes` cache selected on the day's HIGH and missed 25 of
+  71 real gappers; never reuse it for pre-market questions.
+- Databento returned every bar twice for 2025-06-09 only. Both scripts drop
+  repeated timestamps on read; the early-flags numbers above predate that guard,
+  so that one session's volume gate was met a little early.
 
 ## The finding that matters
 
