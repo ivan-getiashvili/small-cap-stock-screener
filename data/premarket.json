@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-14T10:40:14.304Z",
+  "generatedAt": "2026-09-14T10:46:22.601Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-11",
-  "universeChecked": 6090,
-  "smallCapsInBand": 2945,
+  "universeChecked": 6006,
+  "smallCapsInBand": 2915,
   "investigated": 83,
-  "liveQuotes": 59,
+  "liveQuotes": 58,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-11T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 116,
+    "edgarFilings": 118,
     "leads": {
       "8-K": 53,
-      "PR Newswire": 4,
+      "PR Newswire": 3,
       "GlobeNewswire": 3,
       "prior-session gainer": 25
     },
@@ -65,17 +65,17 @@
       "legalName": "CEA Industries Inc.",
       "business": "Agricultural Services",
       "sector": "Consumer Staples",
-      "preMarketPrice": 5.5044,
-      "preMarketChangePct": 14.675000000000013,
+      "preMarketPrice": 5.5389,
+      "preMarketChangePct": 15.393750000000002,
       "prevClose": 4.8,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 6:40 AM ET",
-      "preMarketVolume": 552149.23758,
-      "preMarketDollarVolume": 3039250.263335352,
-      "relVolume": 0.29763451928037193,
+      "lastTradeAt": "Sep 14, 2026 6:46 AM ET",
+      "preMarketVolume": 557587.23758,
+      "preMarketDollarVolume": 3088419.950231862,
+      "relVolume": 0.3005658581389394,
       "avgVolume50": 1855125,
       "sharesOutstanding": 41173850,
-      "marketCap": 226637339.94000003,
+      "marketCap": 228057837.765,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 50,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-09-04"
       },
-      "floatRotation": 0.01341019208988229,
+      "floatRotation": 0.013542266209742347,
       "daysUp": 0,
       "priorRunPct": 45.8966565349544,
       "extended": false,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "14.7%"
+          "detail": "15.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "552,149"
+          "detail": "557,587"
         },
         {
           "name": "News catalyst",
@@ -116,7 +116,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.50"
+          "detail": "$5.54"
         },
         {
           "name": "Float <10M",
@@ -126,145 +126,9 @@
       ],
       "passed": 4,
       "quality": "medium"
-    },
-    {
-      "symbol": "BMM",
-      "name": "Blue Moon Metals Inc. Common Shares",
-      "legalName": "Blue Moon Metals Inc.",
-      "business": "Metal Mining",
-      "sector": null,
-      "preMarketPrice": 6.1795,
-      "preMarketChangePct": 13.281393217231896,
-      "prevClose": 5.455,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 6:40 AM ET",
-      "preMarketVolume": 75022.543219,
-      "preMarketDollarVolume": 463601.8058218105,
-      "relVolume": 0.345156576794965,
-      "avgVolume50": 217358,
-      "sharesOutstanding": 104863000.91659029,
-      "marketCap": 648000914.1640697,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 22,
-      "float": {
-        "shares": 104863000.91659029,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-14"
-      },
-      "floatRotation": 0.0007154338762312756,
-      "daysUp": 0,
-      "priorRunPct": -10.426929392446631,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Blue Moon, The Elmet Group, and EQ Resources Announce a US$150-$175 Million Investment into the Springer Tungsten Complex, Nevada, to Strengthen the U.S. Tungsten Supply Chain",
-        "subject": null,
-        "date": "2026-09-14"
-      },
-      "leads": [
-        "PR Newswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "13.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "75,023"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.18"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "104.9M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
     }
   ],
   "alsoRan": [
-    {
-      "symbol": "ELMT",
-      "name": "The Elmet Group Co.",
-      "legalName": "Elmet Group Co.",
-      "business": "Miscellaneous Fabricated Metal Products",
-      "sector": "Industrials",
-      "preMarketPrice": 21.7,
-      "preMarketChangePct": 34.033353922174165,
-      "prevClose": 16.19,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 6:40 AM ET",
-      "preMarketVolume": 1018336.393597,
-      "preMarketDollarVolume": 22097899.7410549,
-      "relVolume": 2.8447375593538045,
-      "avgVolume50": 357972,
-      "sharesOutstanding": 30459498,
-      "marketCap": 660971106.6,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 24,
-      "float": {
-        "shares": 30459498,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-10"
-      },
-      "floatRotation": 0.03343247461258226,
-      "daysUp": 1,
-      "priorRunPct": -1.0995723885155755,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Blue Moon, The Elmet Group, and EQ Resources Announce a US$150-$175 Million Investment into the Springer Tungsten Complex, Nevada, to Strengthen the U.S. Tungsten Supply Chain",
-        "subject": null,
-        "date": "2026-09-14"
-      },
-      "leads": [
-        "PR Newswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "34.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "1,018,336"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$21.70"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "30.5M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
     {
       "symbol": "PMI",
       "name": "Picard Medical Inc.",
@@ -343,10 +207,10 @@
       "preMarketChangePct": 21.78,
       "prevClose": 1.0100180653637707,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 14, 2026 6:40 AM ET",
-      "preMarketVolume": 4033632,
-      "preMarketDollarVolume": 4961367.36,
-      "relVolume": 13.589625931129282,
+      "lastTradeAt": "Sep 14, 2026 6:46 AM ET",
+      "preMarketVolume": 4051894,
+      "preMarketDollarVolume": 4983829.62,
+      "relVolume": 13.651152056654437,
       "avgVolume50": 296817,
       "sharesOutstanding": 55013689,
       "marketCap": 67666837.47,
@@ -357,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.07332051482677339,
+      "floatRotation": 0.0736524685701408,
       "daysUp": 1,
       "priorRunPct": 3.8737864077669943,
       "extended": false,
@@ -380,7 +244,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "4,033,632"
+          "detail": "4,051,894"
         },
         {
           "name": "News catalyst",
