@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-14T12:42:18.915Z",
+  "generatedAt": "2026-09-14T13:02:07.335Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-11",
   "universeChecked": 6007,
   "smallCapsInBand": 2916,
-  "investigated": 114,
-  "liveQuotes": 97,
+  "investigated": 111,
+  "liveQuotes": 92,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-11T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 164,
+    "edgarFilings": 172,
     "leads": {
-      "8-K": 75,
-      "PR Newswire": 3,
-      "GlobeNewswire": 15,
+      "8-K": 81,
+      "PR Newswire": 0,
+      "GlobeNewswire": 6,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 114,
-    "answered": 114,
+    "requested": 111,
+    "answered": 111,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,90 +60,22 @@
   "shortlist": [],
   "watchlist": [
     {
-      "symbol": "BNC",
-      "name": "CEA Industries Inc.",
-      "legalName": "CEA Industries Inc.",
-      "business": "Agricultural Services",
-      "sector": "Consumer Staples",
-      "preMarketPrice": 5.38,
-      "preMarketChangePct": 12.083333333333336,
-      "prevClose": 4.8,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 8:42 AM ET",
-      "preMarketVolume": 1774332.092309,
-      "preMarketDollarVolume": 9545906.65662242,
-      "relVolume": 0.9564488065812277,
-      "avgVolume50": 1855125,
-      "sharesOutstanding": 41173850,
-      "marketCap": 221515313,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 50,
-      "float": {
-        "shares": 41173850,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-04"
-      },
-      "floatRotation": 0.04309366484574554,
-      "daysUp": 0,
-      "priorRunPct": 45.8966565349544,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released",
-        "subject": "Earnings / results released",
-        "date": "2026-09-11"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "12.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "1,774,332"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$5.38"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "41.2M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
       "symbol": "ARMP",
       "name": "Armata Pharmaceuticals Inc.",
       "legalName": "Armata Pharmaceuticals, Inc.",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 6,
-      "preMarketChangePct": 11.524163568773236,
+      "preMarketPrice": 6.1399,
+      "preMarketChangePct": 14.124535315985131,
       "prevClose": 5.38,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 8:42 AM ET",
-      "preMarketVolume": 1662272.123287,
-      "preMarketDollarVolume": 9973632.739722,
-      "relVolume": 12.969377332170806,
+      "lastTradeAt": "Sep 14, 2026 9:02 AM ET",
+      "preMarketVolume": 1789749.506782,
+      "preMarketDollarVolume": 10988882.996690802,
+      "relVolume": 13.963981202802549,
       "avgVolume50": 128169,
       "sharesOutstanding": 37181979,
-      "marketCap": 223091874,
+      "marketCap": 228293632.8621,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 103,
       "float": {
@@ -151,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-06"
       },
-      "floatRotation": 0.04470639185953496,
+      "floatRotation": 0.048134864117426346,
       "daysUp": 1,
       "priorRunPct": -2.5362318840579654,
       "extended": false,
@@ -169,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "11.5%"
+          "detail": "14.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,662,272"
+          "detail": "1,789,750"
         },
         {
           "name": "News catalyst",
@@ -184,12 +116,80 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.00"
+          "detail": "$6.14"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "37.2M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "BNC",
+      "name": "CEA Industries Inc.",
+      "legalName": "CEA Industries Inc.",
+      "business": "Agricultural Services",
+      "sector": "Consumer Staples",
+      "preMarketPrice": 5.4524,
+      "preMarketChangePct": 13.591666666666669,
+      "prevClose": 4.8,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 14, 2026 9:02 AM ET",
+      "preMarketVolume": 1942213.281032,
+      "preMarketDollarVolume": 10589723.693498876,
+      "relVolume": 1.046944697005323,
+      "avgVolume50": 1855125,
+      "sharesOutstanding": 41173850,
+      "marketCap": 224496299.74,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 50,
+      "float": {
+        "shares": 41173850,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-04"
+      },
+      "floatRotation": 0.047171038924754424,
+      "daysUp": 0,
+      "priorRunPct": 45.8966565349544,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released",
+        "subject": "Earnings / results released",
+        "date": "2026-09-11"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "13.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "1,942,213"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.45"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "41.2M"
         }
       ],
       "passed": 4,
@@ -203,17 +203,17 @@
       "legalName": "Picard Medical, Inc.",
       "business": "Surgical & Medical Instruments & Apparatus",
       "sector": "Health Care",
-      "preMarketPrice": 5.69,
-      "preMarketChangePct": 6.754221388367736,
+      "preMarketPrice": 5.7,
+      "preMarketChangePct": 6.941838649155724,
       "prevClose": 5.33,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 8:41 AM ET",
-      "preMarketVolume": 160862,
-      "preMarketDollarVolume": 915304.78,
-      "relVolume": 0.010757497352789766,
+      "lastTradeAt": "Sep 14, 2026 9:01 AM ET",
+      "preMarketVolume": 162679,
+      "preMarketDollarVolume": 927270.3,
+      "relVolume": 0.010879007545936804,
       "avgVolume50": 14953478,
       "sharesOutstanding": 2338634,
-      "marketCap": 13306827.46,
+      "marketCap": 13330213.8,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 86,
       "float": {
@@ -221,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-18"
       },
-      "floatRotation": 0.06878459818851518,
+      "floatRotation": 0.06956154746745322,
       "daysUp": 1,
       "priorRunPct": 18.708240534521153,
       "extended": false,
@@ -239,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.8%"
+          "detail": "6.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "160,862"
+          "detail": "162,679"
         },
         {
           "name": "News catalyst",
@@ -254,80 +254,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.69"
+          "detail": "$5.70"
         },
         {
           "name": "Float <10M",
           "ok": true,
           "detail": "2.3M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "NIKI",
-      "name": "Niki BioSolutions Inc.",
-      "legalName": "Niki BioSolutions, Inc.",
-      "business": "Measuring & Controlling Devices, NEC",
-      "sector": "Industrials",
-      "preMarketPrice": 6.08,
-      "preMarketChangePct": 6.479859894921193,
-      "prevClose": 5.71,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 8:41 AM ET",
-      "preMarketVolume": 42314,
-      "preMarketDollarVolume": 257269.12,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 2938625.043782837,
-      "marketCap": 17866840.266199652,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 2938625.043782837,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-14"
-      },
-      "floatRotation": 0.014399251136010866,
-      "daysUp": 0,
-      "priorRunPct": null,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Niki BioSolutions Accelerates Its Alzheimer’s Disease Testing Pipeline Through Strategic Bioinformatics and Statistical Analysis Partnership with Fios Genomics",
-        "subject": "Contract or partnership",
-        "date": "2026-09-14"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.5%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "42,314"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.08"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "2.9M"
         }
       ],
       "passed": 3,
@@ -402,22 +334,90 @@
       "quality": "low"
     },
     {
+      "symbol": "AXG",
+      "name": "Solowin Holdings Class A Ordinary Share",
+      "legalName": "Solowin Holdings, Ltd.",
+      "business": "Security Brokers, Dealers & Flotation Companies",
+      "sector": "Finance",
+      "preMarketPrice": 2.25,
+      "preMarketChangePct": 5.633802816901413,
+      "prevClose": 2.13,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 14, 2026 9:00 AM ET",
+      "preMarketVolume": 620239,
+      "preMarketDollarVolume": 1395537.75,
+      "relVolume": 3.8630695831983854,
+      "avgVolume50": 160556,
+      "sharesOutstanding": 15500000,
+      "marketCap": 34875000,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 18,
+      "float": {
+        "shares": 15500000,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2024-03-31"
+      },
+      "floatRotation": 0.04001541935483871,
+      "daysUp": 0,
+      "priorRunPct": -6.5789473684210495,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "SOLOWIN HOLDINGS (AXG) Targets 100+ MW AI Computing Capacity By 2028 With 1 GW+ Development Pipeline, Advances Quantum and Regulated Stablecoin Strategy",
+        "subject": "Hot-sector announcement",
+        "date": "2026-09-14"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "620,239"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.25"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "15.5M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "VSME",
       "name": "VS Media Holdings Limited Class A Ordinary Shares",
       "legalName": "VS MEDIA Holdings Ltd",
       "business": "Services-Advertising Agencies",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.27,
-      "preMarketChangePct": 25.74,
-      "prevClose": 1.010020677588675,
+      "preMarketPrice": 1.3,
+      "preMarketChangePct": 28.71,
+      "prevClose": 1.0100225312718514,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 14, 2026 8:42 AM ET",
-      "preMarketVolume": 5166902,
-      "preMarketDollarVolume": 6561965.54,
-      "relVolume": 17.407702389014105,
+      "lastTradeAt": "Sep 14, 2026 9:02 AM ET",
+      "preMarketVolume": 5491768,
+      "preMarketDollarVolume": 7139298.4,
+      "relVolume": 18.502201693299238,
       "avgVolume50": 296817,
       "sharesOutstanding": 55013689,
-      "marketCap": 69867385.03,
+      "marketCap": 71517795.7,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 149,
       "float": {
@@ -425,7 +425,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.09392029681921531,
+      "floatRotation": 0.09982548161785697,
       "daysUp": 1,
       "priorRunPct": 3.8737864077669943,
       "extended": false,
@@ -443,12 +443,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "25.7%"
+          "detail": "28.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "5,166,902"
+          "detail": "5,491,768"
         },
         {
           "name": "News catalyst",
@@ -458,7 +458,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.27"
+          "detail": "$1.30"
         },
         {
           "name": "Float <10M",
@@ -475,17 +475,17 @@
       "legalName": "Future FinTech Group Inc.",
       "business": "Services-Business Services, NEC",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.0897,
-      "preMarketChangePct": 7.281250000000009,
+      "preMarketPrice": 3.0603,
+      "preMarketChangePct": 6.260416666666664,
       "prevClose": 2.88,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 8:42 AM ET",
-      "preMarketVolume": 3905593,
-      "preMarketDollarVolume": 12067110.6921,
-      "relVolume": 0.8884145584146812,
+      "lastTradeAt": "Sep 14, 2026 9:02 AM ET",
+      "preMarketVolume": 4067614,
+      "preMarketDollarVolume": 12448119.1242,
+      "relVolume": 0.9252698618651188,
       "avgVolume50": 4396138,
       "sharesOutstanding": 32246443,
-      "marketCap": 99631834.93710001,
+      "marketCap": 98683789.5129,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 268,
       "float": {
@@ -493,7 +493,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-13"
       },
-      "floatRotation": 0.1211170174645309,
+      "floatRotation": 0.12614147861207514,
       "daysUp": 1,
       "priorRunPct": 74.54545454545455,
       "extended": true,
@@ -511,12 +511,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.3%"
+          "detail": "6.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "3,905,593"
+          "detail": "4,067,614"
         },
         {
           "name": "News catalyst",
@@ -526,7 +526,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.09"
+          "detail": "$3.06"
         },
         {
           "name": "Float <10M",
@@ -538,38 +538,38 @@
       "quality": "low"
     },
     {
-      "symbol": "GTEC",
-      "name": "Greenland Technologies Holding Corporation Class A Ordinary Shares",
-      "legalName": "Greenland Technologies Holding Corp.",
-      "business": "General Industrial Machinery & Equipment",
-      "sector": "Industrials",
-      "preMarketPrice": 1.11,
-      "preMarketChangePct": 5.714285714285719,
-      "prevClose": 1.05,
+      "symbol": "AIRE",
+      "name": "reAlpha Tech Corp.",
+      "legalName": "reAlpha Tech Corp.",
+      "business": "Real Estate",
+      "sector": "Finance",
+      "preMarketPrice": 1.5997,
+      "preMarketChangePct": 5.94039735099337,
+      "prevClose": 1.51,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 8:40 AM ET",
-      "preMarketVolume": 14405,
-      "preMarketDollarVolume": 15989.550000000001,
-      "relVolume": 0.028451229989828266,
-      "avgVolume50": 506305,
-      "sharesOutstanding": 20532482,
-      "marketCap": 22791055.020000003,
+      "lastTradeAt": "Sep 14, 2026 8:56 AM ET",
+      "preMarketVolume": 1210,
+      "preMarketDollarVolume": 1935.637,
+      "relVolume": 0.0089594455510059,
+      "avgVolume50": 135053,
+      "sharesOutstanding": 5884275,
+      "marketCap": 9413074.7175,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 32,
+      "bestPriorSpikePct": 61,
       "float": {
-        "shares": 20532482,
+        "shares": 5884275,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-05-13"
+        "asOf": "2026-08-12"
       },
-      "floatRotation": 0.0007015712956670313,
-      "daysUp": 0,
-      "priorRunPct": 11.69024571854058,
+      "floatRotation": 0.00020563280947950258,
+      "daysUp": 1,
+      "priorRunPct": -3.821656050955417,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "8-K",
-        "headline": "Delisting notice or listing-rule failure",
-        "subject": "Delisting notice or listing-rule failure",
+        "headline": "Executive or board change",
+        "subject": "Executive or board change",
         "date": "2026-09-11"
       },
       "leads": [
@@ -579,12 +579,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.7%"
+          "detail": "5.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "14,405"
+          "detail": "1,210"
         },
         {
           "name": "News catalyst",
@@ -594,83 +594,15 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.11"
+          "detail": "$1.60"
         },
         {
           "name": "Float <10M",
-          "ok": false,
-          "detail": "20.5M"
-        }
-      ],
-      "passed": 1,
-      "quality": "low"
-    },
-    {
-      "symbol": "NOMA",
-      "name": "NOMADAR Corp. Class A",
-      "legalName": "Nomadar Corp.",
-      "business": "Services-Amusement & Recreation Services",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.5289,
-      "preMarketChangePct": 5.441379310344826,
-      "prevClose": 1.45,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 8:17 AM ET",
-      "preMarketVolume": 10102,
-      "preMarketDollarVolume": 15444.9478,
-      "relVolume": 0.21944649606812355,
-      "avgVolume50": 46034,
-      "sharesOutstanding": 15283529,
-      "marketCap": 23366987.4881,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 26,
-      "float": {
-        "shares": 15283529,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-14"
-      },
-      "floatRotation": 0.0006609729991024979,
-      "daysUp": 0,
-      "priorRunPct": -30.28846153846154,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution) · Regulation FD disclosure (company announcement)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution) · Regulation FD disclosure (company announcement)",
-        "date": "2026-09-14"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.4%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "10,102"
-        },
-        {
-          "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.53"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "15.3M"
+          "detail": "5.9M"
         }
       ],
-      "passed": 1,
+      "passed": 2,
       "quality": "low"
     }
   ]
