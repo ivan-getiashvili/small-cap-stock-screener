@@ -102,13 +102,14 @@
   .keyrow i{display:inline-block;vertical-align:middle;margin-right:6px}
   .sw{width:14px;height:8px;border-radius:2px}
   .dotkey{width:10px;height:10px;border-radius:50%;background:var(--ink);box-shadow:0 0 0 2px var(--panel)}
+  .tickkey{width:2px;height:12px;background:var(--ink)}
   .hday{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:12px}
   .hday-h{display:flex;gap:10px;align-items:baseline;justify-content:space-between;margin-bottom:6px}
   .hday-h b{font:600 14px/1.3 var(--sans)}
   .hday-h span{color:var(--faint);font:11px/1.3 var(--mono)}
   .src{padding:1px 7px;border-radius:99px;font:10.5px/1.6 var(--mono);text-transform:uppercase;letter-spacing:.06em;
        background:#222835;color:var(--dim)}
-  .hrow{display:grid;grid-template-columns:minmax(120px,1.3fr) minmax(90px,.8fr) minmax(160px,2.2fr) repeat(3,minmax(62px,.55fr));
+  .hrow{display:grid;grid-template-columns:minmax(120px,1.3fr) minmax(90px,.8fr) minmax(160px,2.2fr) repeat(4,minmax(62px,.55fr));
         gap:10px;align-items:center;padding:8px 2px;border-top:1px solid var(--line);font-size:12.5px;outline:none}
   .hrow:first-of-type{border-top:0}
   .hrow.watch{opacity:.62}
@@ -128,6 +129,7 @@
   .rng .cl{position:absolute;top:4px;width:12px;height:12px;margin-left:-6px;border-radius:50%;
            box-shadow:0 0 0 2px var(--panel)}
   .hrow:hover .rng .cl{box-shadow:0 0 0 2px var(--panel2)}
+  .rng .op{position:absolute;top:2px;bottom:2px;width:2px;margin-left:-1px;background:var(--ink)}
   .rng .cap{position:absolute;top:3px;font:10px/1 var(--mono);color:var(--faint)}
   .pend{color:var(--faint);font-size:11.5px}
   .axis{position:relative;height:14px;color:var(--faint);font:10px/1 var(--mono)}
@@ -138,11 +140,11 @@
   .tip .r{display:flex;justify-content:space-between;gap:14px}
   .tip .r span:last-child{color:var(--ink);font-family:var(--mono)}
   /* Narrow screens: name, flag and range bar each take a full line, and the
-     three results sit in their own labelled columns. The first version squeezed
+     four results sit in a labelled 2×2 block. The first version squeezed
      six columns into two, and at 375px the numbers ran off the card and were
      clipped — a value cut off by its own layout is worse than no value. */
   @media(max-width:720px){
-    .hrow{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:6px;column-gap:8px;padding:10px 2px}
+    .hrow{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:6px;column-gap:8px;padding:10px 2px}
     .hrow>div:nth-child(1),.hrow>div:nth-child(2),.hrow .rngcell{grid-column:1/-1}
     .hrow .v{text-align:left}
     .hrow .v::before{content:attr(data-label);display:block;color:var(--faint);
@@ -434,8 +436,17 @@ function renderHistory(){
   const med = a => { if (!a.length) return null; const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
   const dayLabel = iso => new Date(iso + 'T12:00:00Z').toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric', timeZone: 'UTC' });
 
-  const shortScored = days.flatMap(d => d.names).filter(n => n.list === 'shortlist' && n.performance);
-  const allScored = days.flatMap(d => d.names).filter(n => n.performance);
+  // Everything is measured from the pre-market price the list showed at the
+  // time — the price a reader could have acted on — never from the open. A
+  // name flagged at $6.38 that opened at $7.77 made its move before the bell,
+  // and measuring from the open would hide exactly that.
+  const scored = n => n.performance && n.preMarketPrice > 0;
+  const from = (n, price) => (price / n.preMarketPrice - 1) * 100;
+  const moves = n => { const p = n.performance; return {
+    open: from(n, p.open), high: from(n, p.high), low: from(n, p.low), close: from(n, p.close),
+    noon: p.noon != null ? from(n, p.noon) : null }; };
+  const shortScored = days.flatMap(d => d.names).filter(n => n.list === 'shortlist' && scored(n));
+  const allScored = days.flatMap(d => d.names).filter(scored);
 
   // A shared scale for every row, so bars compare across days — set by where
   // most rows sit, not by the single most extreme one. The first version scaled
@@ -443,39 +454,43 @@ function renderHistory(){
   // to a few pixels. The 90th percentile sets it now; anything beyond is drawn
   // to the edge with an arrow, and its exact value stays in the columns.
   const q = (arr, p) => { if (!arr.length) return 0; const s = [...arr].sort((a, b) => a - b); return s[Math.min(s.length - 1, Math.floor(p * (s.length - 1)))]; };
-  const maxUp = Math.max(20, Math.ceil(q(allScored.map(n => n.performance.openToHighPct), 0.9) / 5) * 5);
-  const maxDn = Math.max(10, Math.ceil(q(allScored.map(n => -n.performance.openToLowPct), 0.9) / 5) * 5);
-  const beyondScale = allScored.filter(n => n.performance.openToHighPct > maxUp || -n.performance.openToLowPct > maxDn).length;
+  const maxUp = Math.max(20, Math.ceil(q(allScored.map(n => moves(n).high), 0.9) / 5) * 5);
+  const maxDn = Math.max(10, Math.ceil(q(allScored.map(n => Math.max(0, -moves(n).low)), 0.9) / 5) * 5);
+  const beyondScale = allScored.filter(n => { const m = moves(n); return m.high > maxUp || -m.low > maxDn; }).length;
   const span = maxUp + maxDn;
   const pos = v => ((Math.max(-maxDn, Math.min(maxUp, v)) + maxDn) / span) * 100;
 
   const sec = el('section', 'hist');
   sec.appendChild(el('h2', null, 'Track record'));
   sec.appendChild(el('div', 'lede',
-    'How every flagged name traded in the regular session it was flagged for, scored after the close. ' +
+    'How every flagged name traded after it was flagged: the open, noon, high, low and close of that session, ' +
+    'each measured from the pre-market price the list showed at the time. Scored after the close. ' +
     'Nothing is filtered out: names that faded are listed exactly like names that ran.'));
 
   // Headline numbers for trade candidates. Stat tiles, not a chart.
   if (shortScored.length){
-    const oh = shortScored.map(n => n.performance.openToHighPct);
-    const oc = shortScored.map(n => n.performance.openToClosePct);
+    const ms = shortScored.map(moves);
+    const noons = ms.map(m => m.noon).filter(v => v != null);
+    const closes = ms.map(m => m.close);
     const tiles = el('div', 'tiles');
     const tile = (value, label) => { const t = el('div'); t.appendChild(el('b', null, value)); t.appendChild(el('small', null, label)); tiles.appendChild(t); };
     tile(String(shortScored.length), `trade candidates scored, over ${new Set(shortScored.map(n => n.firstSeenAt.slice(0,10))).size} session${shortScored.length === 1 ? '' : 's'}`);
-    tile(sgn(med(oh)), 'median open → high');
-    tile(`${Math.round(100 * oh.filter(v => v >= 20).length / oh.length)}%`, `ran 20%+ above the open (${oh.filter(v => v >= 20).length} of ${oh.length})`);
-    tile(sgn(med(oc)), 'median open → close');
-    tile(`${Math.round(100 * oc.filter(v => v > 0).length / oc.length)}%`, `closed above the open (${oc.filter(v => v > 0).length} of ${oc.length})`);
+    tile(sgn(med(ms.map(m => m.open))), 'median flag price → open');
+    if (noons.length) tile(sgn(med(noons)), `median flag price → noon${noons.length < ms.length ? ` (${noons.length} of ${ms.length})` : ''}`);
+    tile(sgn(med(ms.map(m => m.high))), 'median flag price → high of the day');
+    tile(sgn(med(closes)), 'median flag price → close');
+    tile(`${Math.round(100 * closes.filter(v => v > 0).length / closes.length)}%`, `closed above the flag price (${closes.filter(v => v > 0).length} of ${closes.length})`);
     sec.appendChild(tiles);
   }
 
   // Legend: two colours on the page, so a legend is always present.
   const key = el('div', 'keyrow');
   const k = (swatchCls, style, label) => { const s = el('span'); const i = el('i', swatchCls); if (style) i.style.background = style; s.appendChild(i); s.appendChild(document.createTextNode(label)); key.appendChild(s); };
-  k('sw', '#3987e5', 'range above the open');
-  k('sw', '#e66767', 'range below the open');
+  k('sw', '#3987e5', 'session range above the flag price');
+  k('sw', '#e66767', 'session range below the flag price');
+  k('tickkey', null, 'where it opened');
   k('dotkey', null, 'where it closed');
-  k('', null, `scale −${maxDn}% to +${maxUp}% from the open${beyondScale ? ` · ${beyondScale} larger move${beyondScale > 1 ? 's' : ''} run off the edge (◂ ▸)` : ''}`);
+  k('', null, `scale −${maxDn}% to +${maxUp}% from the flag price${beyondScale ? ` · ${beyondScale} larger move${beyondScale > 1 ? 's' : ''} run off the edge (◂ ▸)` : ''}`);
   sec.appendChild(key);
 
   const tip = el('div', 'tip'); tip.hidden = true; document.body.appendChild(tip);
@@ -485,12 +500,15 @@ function renderHistory(){
     tip.appendChild(el('b', null, n.symbol));
     const r = (a, b) => { const row = el('div', 'r'); row.appendChild(el('span', null, a)); row.appendChild(el('span', null, b)); tip.appendChild(row); };
     r('flagged pre-market', `${sgn(n.preMarketChangePct)} at $${n.preMarketPrice.toFixed(2)}`);
-    if (p){
-      r('open', `$${p.open.toFixed(2)}${p.gapPct != null ? ` (gap ${sgn(p.gapPct)})` : ''}`);
-      r('high', `$${p.high.toFixed(2)}  ${sgn(p.openToHighPct)}`);
-      r('low', `$${p.low.toFixed(2)}  ${sgn(p.openToLowPct)}`);
-      r('close', `$${p.close.toFixed(2)}  ${sgn(p.openToClosePct)}`);
+    if (scored(n)){
+      const m = moves(n);
+      r('open', `$${p.open.toFixed(2)}  ${sgn(m.open)}`);
+      if (p.noon != null) r('noon', `$${p.noon.toFixed(2)}  ${sgn(m.noon)}`);
+      r('high', `$${p.high.toFixed(2)}  ${sgn(m.high)}`);
+      r('low', `$${p.low.toFixed(2)}  ${sgn(m.low)}`);
+      r('close', `$${p.close.toFixed(2)}  ${sgn(m.close)}`);
       if (p.volume) r('volume', Math.round(p.volume).toLocaleString());
+      r('', 'all from the flag price');
     } else r('session', 'scored after the close');
     if (n.catalyst) r('catalyst', n.catalyst);
     tip.hidden = false;
@@ -502,7 +520,7 @@ function renderHistory(){
   const cols = () => {
     const c = el('div', 'hrow hcols');
     ['name', 'flagged', 'session range'].forEach(t => c.appendChild(el('div', null, t)));
-    ['open→high', 'open→close', 'open→low'].forEach(t => c.appendChild(el('div', 'v', t)));
+    ['flag→open', 'flag→noon', 'flag→high', 'flag→close'].forEach(t => c.appendChild(el('div', 'v', t)));
     return c;
   };
 
@@ -510,9 +528,9 @@ function renderHistory(){
     const box = el('div', 'hday');
     const head = el('div', 'hday-h');
     const left = el('b', null, dayLabel(day.date));
-    const scored = day.names.filter(n => n.performance).length;
+    const scoredCount = day.names.filter(scored).length;
     head.appendChild(left);
-    const meta = el('span', null, `${day.names.filter(n => n.list === 'shortlist').length} candidate(s) · ${day.names.filter(n => n.list === 'watchlist').length} watchlist · ${scored}/${day.names.length} scored `);
+    const meta = el('span', null, `${day.names.filter(n => n.list === 'shortlist').length} candidate(s) · ${day.names.filter(n => n.list === 'watchlist').length} watchlist · ${scoredCount}/${day.names.length} scored `);
     const badge = el('span', 'src', day.source === 'replay' ? 'replay' : 'live');
     meta.appendChild(badge);
     head.appendChild(meta);
@@ -535,30 +553,36 @@ function renderHistory(){
       row.appendChild(el('div', 'fl', `${sgn(n.preMarketChangePct)} @ $${n.preMarketPrice.toFixed(2)}`));
 
       const rc = el('div', 'rngcell');
-      if (p){
+      const m = scored(n) ? moves(n) : null;
+      if (m){
         const rng = el('div', 'rng');
         rng.setAttribute('role', 'img');
-        rng.setAttribute('aria-label', `${n.symbol}: high ${sgn(p.openToHighPct)}, low ${sgn(p.openToLowPct)}, close ${sgn(p.openToClosePct)} from the open`);
+        rng.setAttribute('aria-label', `${n.symbol}: opened ${sgn(m.open)}, high ${sgn(m.high)}, low ${sgn(m.low)}, closed ${sgn(m.close)} from the flag price`);
         const z = pos(0);
         const zero = el('div', 'zero'); zero.style.left = z + '%'; rng.appendChild(zero);
-        if (p.openToHighPct > 0){
+        // The session's low-to-high range, split at the flag price so each side
+        // keeps its colour. A name that gapped up and never came back sits
+        // entirely to the right; one that faded before the bell, to the left.
+        if (m.high > 0){
           const up = el('div', 'up');
-          // 1px surface gap either side of the open line separates the two fills.
-          up.style.left = `calc(${z}% + 1px)`; up.style.width = `max(0px, calc(${pos(p.openToHighPct) - z}% - 1px))`;
+          const l = pos(Math.max(0, m.low));
+          // 1px surface gap either side of the flag line separates the two fills.
+          up.style.left = `calc(${l}% + 1px)`; up.style.width = `max(0px, calc(${pos(m.high) - l}% - 1px))`;
           rng.appendChild(up);
         }
-        if (p.openToLowPct < 0){
+        if (m.low < 0){
           const dn = el('div', 'dn');
-          const l = pos(p.openToLowPct);
-          dn.style.left = l + '%'; dn.style.width = `max(0px, calc(${z - l}% - 1px))`;
+          const l = pos(m.low), r = pos(Math.min(0, m.high));
+          dn.style.left = l + '%'; dn.style.width = `max(0px, calc(${r - l}% - 1px))`;
           rng.appendChild(dn);
         }
+        const op = el('div', 'op'); op.style.left = pos(m.open) + '%'; rng.appendChild(op);
         const cl = el('div', 'cl');
-        cl.style.left = pos(p.openToClosePct) + '%';
-        cl.style.background = p.openToClosePct >= 0 ? '#3987e5' : '#e66767';
+        cl.style.left = pos(m.close) + '%';
+        cl.style.background = m.close >= 0 ? '#3987e5' : '#e66767';
         rng.appendChild(cl);
-        if (p.openToHighPct > maxUp){ const cap = el('div', 'cap', '▸'); cap.style.right = '-11px'; rng.appendChild(cap); }
-        if (-p.openToLowPct > maxDn){ const cap = el('div', 'cap', '◂'); cap.style.left = '-11px'; rng.appendChild(cap); }
+        if (m.high > maxUp){ const cap = el('div', 'cap', '▸'); cap.style.right = '-11px'; rng.appendChild(cap); }
+        if (-m.low > maxDn){ const cap = el('div', 'cap', '◂'); cap.style.left = '-11px'; rng.appendChild(cap); }
         rc.appendChild(rng);
       } else {
         rc.appendChild(el('div', 'pend', day.source === 'live' ? 'scored after the close' : 'no session data'));
@@ -566,9 +590,10 @@ function renderHistory(){
       row.appendChild(rc);
 
       const val = (label, v, sub) => { const c = el('div', 'v', v == null ? '—' : sgn(v)); c.dataset.label = label; if (sub) c.appendChild(el('small', null, sub)); return c; };
-      row.appendChild(val('open→high', p ? p.openToHighPct : null, p ? `$${p.high.toFixed(2)}` : null));
-      row.appendChild(val('open→close', p ? p.openToClosePct : null, p ? `$${p.close.toFixed(2)}` : null));
-      row.appendChild(val('open→low', p ? p.openToLowPct : null, p ? `$${p.low.toFixed(2)}` : null));
+      row.appendChild(val('flag→open', m ? m.open : null, p ? `$${p.open.toFixed(2)}` : null));
+      row.appendChild(val('flag→noon', m ? m.noon : null, p && p.noon != null ? `$${p.noon.toFixed(2)}` : null));
+      row.appendChild(val('flag→high', m ? m.high : null, p ? `$${p.high.toFixed(2)}` : null));
+      row.appendChild(val('flag→close', m ? m.close : null, p ? `$${p.close.toFixed(2)}` : null));
 
       row.addEventListener('pointermove', e => showTip(n, e.clientX, e.clientY));
       row.addEventListener('pointerleave', () => { tip.hidden = true; });

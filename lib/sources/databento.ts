@@ -89,15 +89,52 @@ export async function* streamBars(params: {
   if (params.symbols.length > MAX_SYMBOLS) {
     throw new Error(`${params.symbols.length} symbols exceeds the ${MAX_SYMBOLS} limit — batch them`);
   }
-  const res = await call('timeseries.get_range', {
-    dataset: params.dataset,
-    symbols: params.symbols.join(','),
-    schema: params.schema,
-    start: params.start,
-    end: params.end,
-    encoding: 'csv',
-    map_symbols: 'true',
-  });
+  for await (const row of streamRows({ ...params, symbols: params.symbols.join(',') })) {
+    yield {
+      symbol: row.symbol,
+      ts: Number(row.ts_event) / 1e6,
+      open: Number(row.open) / PRICE_SCALE,
+      high: Number(row.high) / PRICE_SCALE,
+      low: Number(row.low) / PRICE_SCALE,
+      close: Number(row.close) / PRICE_SCALE,
+      volume: Number(row.volume),
+    };
+  }
+}
+
+export type DbQuote = {
+  symbol: string;
+  /** Sample time, epoch milliseconds UTC. */
+  ts: number;
+  /** NaN when that side had no quote. */
+  bid: number;
+  ask: number;
+};
+
+/**
+ * Best bid and offer, sampled once a minute (`cbbo-1m`).
+ *
+ * On XNAS.BASIC this is Nasdaq's own best quote. The national best can only be
+ * the same or tighter, so spreads measured from it err on the costly side.
+ */
+export async function* streamQuotes(params: {
+  dataset: string; symbols: string[]; start: string; end: string;
+}): AsyncGenerator<DbQuote> {
+  if (params.symbols.length > MAX_SYMBOLS) {
+    throw new Error(`${params.symbols.length} symbols exceeds the ${MAX_SYMBOLS} limit — batch them`);
+  }
+  // An empty side arrives as INT64_MAX, not as a blank.
+  const px = (raw: string) => { const v = Number(raw) / PRICE_SCALE; return v > 0 && v < 1e6 ? v : NaN; };
+  for await (const row of streamRows({ ...params, symbols: params.symbols.join(','), schema: 'cbbo-1m' })) {
+    yield { symbol: row.symbol, ts: Number(row.ts_recv) / 1e6, bid: px(row.bid_px_00), ask: px(row.ask_px_00) };
+  }
+}
+
+/** One CSV time-series query, yielded row by row with the symbol mapped. */
+async function* streamRows(params: {
+  dataset: string; symbols: string; schema: string; start: string; end: string;
+}): AsyncGenerator<Record<string, string>> {
+  const res = await call('timeseries.get_range', { ...params, encoding: 'csv', map_symbols: 'true' });
 
   const reader = res.body!.getReader();
   const decoder = new TextDecoder();
@@ -117,17 +154,9 @@ export async function* streamBars(params: {
       if (!header) { header = cells; continue; }
       const row: Record<string, string> = {};
       header.forEach((h, i) => (row[h] = cells[i]));
-      const symbol = (row.symbol ?? '').trim();
-      if (!symbol) continue;
-      yield {
-        symbol,
-        ts: Number(row.ts_event) / 1e6,
-        open: Number(row.open) / PRICE_SCALE,
-        high: Number(row.high) / PRICE_SCALE,
-        low: Number(row.low) / PRICE_SCALE,
-        close: Number(row.close) / PRICE_SCALE,
-        volume: Number(row.volume),
-      };
+      row.symbol = (row.symbol ?? '').trim();
+      if (!row.symbol) continue;
+      yield row;
     }
   }
 }

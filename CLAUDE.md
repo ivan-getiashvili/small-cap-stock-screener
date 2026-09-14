@@ -61,12 +61,22 @@ CI run starts from a clean checkout.
 ## Track record (`data/history.json`, `lib/history.ts`)
 
 Every name that reaches the shortlist or watchlist is recorded as it looked when
-first flagged, then scored after the close on that session: open→high,
-open→close, open→low, gap. Losers are recorded exactly like winners.
+first flagged, then scored after the close on that session: open, noon (last
+price at or before 12:00 ET), high, low, close. **The page measures all of them
+from the flag price** — the pre-market price the list showed — because that is
+what a reader could have acted on, and a name that runs between 08:45 and the
+open would otherwise hide its move (Ivan asked for exactly this on 2026-09-14).
+Losers are recorded exactly like winners.
 
 - A watchlist name that later clears all five is upgraded and re-snapshotted at
   that moment.
 - Scoring runs in the nightly job (`npm run history:fill`) and at each scan.
+- **The noon price needs intraday data.** Nasdaq's chart endpoint
+  (`getIntraday`) shows the current day only, so only the nightly job can fill it,
+  the same evening; if that run fails, the day's noon stays blank for good. Its
+  timestamps are New York wall-clock written as UTC — the adapter shifts them.
+  Replayed days get noon from the local Databento minute caches when
+  `DATABENTO_KEY` is set (`scripts/fill-history.ts`).
 - Up/down marks use blue `#3987e5` / red `#e66767`. The page's own green/red
   failed the colour-blind check (deuteranopia ΔE 4.4); blue/red passes (ΔE 19.2).
 
@@ -83,6 +93,36 @@ that stop it showing big moves by construction:
 5. Known leak: float uses today's filed share count.
 
 Cost: ~$0.035 per session (~$0.71 for 20). Run `--dry` first.
+
+## Session strategies compared (2026-09-14, `npm run strategies`)
+
+Ivan asked whether the method is "buy pre-market, sell after the open" and how
+simple holds compare. `scripts/session-strategies.ts` answers on every stock the
+08:45 gate would have flagged (up 10%+, 50k+ shares, $2–$20, funds excluded):
+530 sessions Aug 2024 – Sep 2026, 4,834 stock-days, pre-market buys at the real
+ask and noon/stop sells at the real bid (`cbbo-1m`), ~$3 of Databento credit.
+Results in `data/strategies.json`; 20 trades recomputed independently match.
+
+| strategy | won | median | mean |
+|---|---|---|---|
+| pre-market (08:45) → open | 35% | −1.2% | −1.2% |
+| pre-market → close | 37% | −4.0% | −1.7% |
+| open → noon | 39% | −2.6% | −1.5% |
+| open → close | 41% | −2.5% | −0.6% |
+| open, 5 / 10 / 20% trailing stop | 33–40% | −2.2 to −3.0% | −0.7 to −0.8% |
+
+Every hold loses on average, in each of the three years. The move (median +46%
+previous close → high) happens before 08:45 and then fades. Neither trader holds
+across the open: the momentum source trades minutes-long bursts 07:00–11:00 ET,
+the scoring source buys morning spikes and panic dips in the session. This is the
+broad gate, not the strict shortlist (catalyst + float), which was not replayed.
+
+How the sample stays honest: candidates are preselected from daily bars (opened
+up 2%+, or traded 10% up, or 3× 20-day volume — the volume path catches names
+that spiked pre-market and died before the bell), and the run stops if that
+preselection drops any name the all-symbol replay flagged (71/71 kept). The
+earlier `data/db/minutes` cache selected on the day's HIGH and missed 25 of 71
+real gappers, mostly pre-open fades; never reuse it for pre-market questions.
 
 ## The finding that matters
 

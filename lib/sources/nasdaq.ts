@@ -170,3 +170,35 @@ export async function getBars(symbol: string, days = 120): Promise<Bar[]> {
   bars.sort((a, b) => a.date.localeCompare(b.date));
   return bars;
 }
+
+/** Minutes to add to New York wall-clock time to get UTC, on this date. */
+function nyOffsetMinutes(date: string): number {
+  const h = Number(new Date(`${date}T16:00:00Z`).toLocaleString('en-US', { timeZone: 'America/New_York', hour: '2-digit', hour12: false }));
+  return (16 - h) * 60;
+}
+
+/**
+ * Today's 1-minute price trail for one symbol, 04:00–20:00 ET, oldest first,
+ * with `ts` in real UTC milliseconds.
+ *
+ * Price only, and the current day only: the chart resets every morning, so a
+ * session's midday price has to be read the same evening. `date` says which
+ * session the trail belongs to, so a caller never mistakes tomorrow's
+ * pre-market for today's session.
+ *
+ * Nasdaq stamps each point with New York wall-clock time written as if it were
+ * UTC — the point labelled "12:00 PM ET" carries x = 12:00Z — so the stamps are
+ * shifted to real UTC here, before anyone compares them with a clock.
+ */
+export async function getIntraday(symbol: string): Promise<{ date: string | null; points: { ts: number; price: number }[] }> {
+  const json = await getJson(`https://api.nasdaq.com/api/quote/${encodeURIComponent(symbol)}/chart?assetclass=stocks`);
+  const date = usDateToIso(String(json?.data?.timeAsOf ?? ''));
+  const shiftMs = date ? nyOffsetMinutes(date) * 60_000 : 0;
+  const points: { ts: number; price: number }[] = [];
+  for (const p of json?.data?.chart ?? []) {
+    const ts = Number(p?.x), price = num(p?.y);
+    if (Number.isFinite(ts) && price !== null && price > 0) points.push({ ts: ts + shiftMs, price });
+  }
+  points.sort((a, b) => a.ts - b.ts);
+  return { date, points };
+}

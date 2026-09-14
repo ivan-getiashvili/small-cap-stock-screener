@@ -3,10 +3,11 @@
  *
  * For each morning, each name is recorded as it looked when it first made the
  * list, and after the close it is scored on the regular session it was flagged
- * for: open to high, open to close, open to low, and the gap from the previous
- * close. Losers are recorded exactly like winners — the section exists to show
- * how these stocks actually behave, and a record that kept only the runners
- * would show whatever it was built to show.
+ * for: the open, the 12:00 ET price, the high, the low and the close. The page
+ * measures each of those from the pre-market price the list showed, which is
+ * the price a reader could have acted on. Losers are recorded exactly like
+ * winners — the section exists to show how these stocks actually behave, and a
+ * record that kept only the runners would show whatever it was built to show.
  *
  * Stored in data/history.json, committed by CI, so it accumulates across runs.
  */
@@ -26,8 +27,19 @@ export type Performance = {
   /** From the pre-market price at the moment the name was flagged. */
   alertToHighPct: number | null;
   alertToClosePct: number | null;
+  /**
+   * Last price at or before 12:00 ET, when an intraday source could supply it.
+   * Absent (not null) while no source has answered, so a later run can try.
+   */
+  noon?: number | null;
   filledAt: string;
 };
+
+/**
+ * Where a name traded at 12:00 ET. `undefined` means the source cannot answer
+ * right now (ask again later); `null` means there is no such price.
+ */
+export type NoonSource = (symbol: string, date: string) => Promise<number | null | undefined>;
 
 export type HistoryName = {
   symbol: string;
@@ -140,36 +152,44 @@ export async function fillPerformance(
   h: History,
   getBars: (symbol: string, days: number) => Promise<Bar[]>,
   maxSymbols = 80,
+  getNoon: NoonSource = async () => undefined,
 ): Promise<number> {
   const cache = new Map<string, Bar[]>();
   let filled = 0, asked = 0;
   for (const day of Object.values(h.days).sort((a, b) => a.date.localeCompare(b.date))) {
     if (!sessionComplete(day.date)) continue;
     for (const n of day.names) {
-      if (n.performance) continue;
-      if (!cache.has(n.symbol)) {
-        if (asked >= maxSymbols) return filled;
-        asked++;
-        cache.set(n.symbol, await getBars(n.symbol, 45).catch(() => []));
+      if (!n.performance) {
+        if (!cache.has(n.symbol)) {
+          if (asked >= maxSymbols) return filled;
+          asked++;
+          cache.set(n.symbol, await getBars(n.symbol, 45).catch(() => []));
+        }
+        const bars = cache.get(n.symbol)!;
+        const i = bars.findIndex((b) => b.date === day.date);
+        if (i < 0) continue;                              // not published yet; next run tries again
+        const b = bars[i];
+        if (!(b.open > 0)) continue;
+        const prevClose = i > 0 ? bars[i - 1].close : n.prevClose;
+        n.performance = {
+          open: b.open, high: b.high, low: b.low, close: b.close, volume: b.volume,
+          prevClose: prevClose ?? null,
+          gapPct: prevClose ? pct(b.open, prevClose) : null,
+          openToHighPct: pct(b.high, b.open),
+          openToClosePct: pct(b.close, b.open),
+          openToLowPct: pct(b.low, b.open),
+          alertToHighPct: n.preMarketPrice > 0 ? pct(b.high, n.preMarketPrice) : null,
+          alertToClosePct: n.preMarketPrice > 0 ? pct(b.close, n.preMarketPrice) : null,
+          filledAt: new Date().toISOString(),
+        };
+        filled++;
       }
-      const bars = cache.get(n.symbol)!;
-      const i = bars.findIndex((b) => b.date === day.date);
-      if (i < 0) continue;                                // not published yet; next run tries again
-      const b = bars[i];
-      if (!(b.open > 0)) continue;
-      const prevClose = i > 0 ? bars[i - 1].close : n.prevClose;
-      n.performance = {
-        open: b.open, high: b.high, low: b.low, close: b.close, volume: b.volume,
-        prevClose: prevClose ?? null,
-        gapPct: prevClose ? pct(b.open, prevClose) : null,
-        openToHighPct: pct(b.high, b.open),
-        openToClosePct: pct(b.close, b.open),
-        openToLowPct: pct(b.low, b.open),
-        alertToHighPct: n.preMarketPrice > 0 ? pct(b.high, n.preMarketPrice) : null,
-        alertToClosePct: n.preMarketPrice > 0 ? pct(b.close, n.preMarketPrice) : null,
-        filledAt: new Date().toISOString(),
-      };
-      filled++;
+      // The noon price comes from a separate, intraday source, so it is asked
+      // for whenever it is still missing — names scored earlier included.
+      if (n.performance.noon === undefined) {
+        const noon = await getNoon(n.symbol, day.date).catch(() => undefined);
+        if (noon !== undefined) n.performance.noon = noon;
+      }
     }
   }
   return filled;
