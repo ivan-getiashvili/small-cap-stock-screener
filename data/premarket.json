@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-14T12:22:35.678Z",
+  "generatedAt": "2026-09-14T12:42:18.915Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-11",
   "universeChecked": 6007,
   "smallCapsInBand": 2916,
-  "investigated": 107,
-  "liveQuotes": 90,
+  "investigated": 114,
+  "liveQuotes": 97,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-11T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 154,
+    "edgarFilings": 164,
     "leads": {
-      "8-K": 72,
-      "PR Newswire": 2,
-      "GlobeNewswire": 9,
+      "8-K": 75,
+      "PR Newswire": 3,
+      "GlobeNewswire": 15,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 107,
-    "answered": 107,
+    "requested": 114,
+    "answered": 114,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "CEA Industries Inc.",
       "business": "Agricultural Services",
       "sector": "Consumer Staples",
-      "preMarketPrice": 5.5527,
-      "preMarketChangePct": 15.681249999999999,
+      "preMarketPrice": 5.38,
+      "preMarketChangePct": 12.083333333333336,
       "prevClose": 4.8,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 8:22 AM ET",
-      "preMarketVolume": 1216937.343394,
-      "preMarketDollarVolume": 6757287.986663864,
-      "relVolume": 0.6559867089247355,
+      "lastTradeAt": "Sep 14, 2026 8:42 AM ET",
+      "preMarketVolume": 1774332.092309,
+      "preMarketDollarVolume": 9545906.65662242,
+      "relVolume": 0.9564488065812277,
       "avgVolume50": 1855125,
       "sharesOutstanding": 41173850,
-      "marketCap": 228626036.89499998,
+      "marketCap": 221515313,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 50,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-09-04"
       },
-      "floatRotation": 0.029556073658256396,
+      "floatRotation": 0.04309366484574554,
       "daysUp": 0,
       "priorRunPct": 45.8966565349544,
       "extended": false,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "15.7%"
+          "detail": "12.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,216,937"
+          "detail": "1,774,332"
         },
         {
           "name": "News catalyst",
@@ -116,7 +116,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.55"
+          "detail": "$5.38"
         },
         {
           "name": "Float <10M",
@@ -128,22 +128,92 @@
       "quality": "medium"
     },
     {
+      "symbol": "ARMP",
+      "name": "Armata Pharmaceuticals Inc.",
+      "legalName": "Armata Pharmaceuticals, Inc.",
+      "business": "Biological Products, (No Diagnostic Substances)",
+      "sector": "Health Care",
+      "preMarketPrice": 6,
+      "preMarketChangePct": 11.524163568773236,
+      "prevClose": 5.38,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 14, 2026 8:42 AM ET",
+      "preMarketVolume": 1662272.123287,
+      "preMarketDollarVolume": 9973632.739722,
+      "relVolume": 12.969377332170806,
+      "avgVolume50": 128169,
+      "sharesOutstanding": 37181979,
+      "marketCap": 223091874,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 103,
+      "float": {
+        "shares": 37181979,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-06"
+      },
+      "floatRotation": 0.04470639185953496,
+      "daysUp": 1,
+      "priorRunPct": -2.5362318840579654,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Armata Wins FDA Breakthrough Therapy Designation For AP-SA02 In Complicated SAB; Stock Up ",
+        "subject": "FDA / clinical",
+        "date": "2026-09-14"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "11.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "1,662,272"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$6.00"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "37.2M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
+  "alsoRan": [
+    {
       "symbol": "PMI",
       "name": "Picard Medical Inc.",
       "legalName": "Picard Medical, Inc.",
       "business": "Surgical & Medical Instruments & Apparatus",
       "sector": "Health Care",
-      "preMarketPrice": 5.89,
-      "preMarketChangePct": 10.506566604127572,
+      "preMarketPrice": 5.69,
+      "preMarketChangePct": 6.754221388367736,
       "prevClose": 5.33,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 8:22 AM ET",
-      "preMarketVolume": 155362,
-      "preMarketDollarVolume": 915082.1799999999,
-      "relVolume": 0.010389689943704067,
+      "lastTradeAt": "Sep 14, 2026 8:41 AM ET",
+      "preMarketVolume": 160862,
+      "preMarketDollarVolume": 915304.78,
+      "relVolume": 0.010757497352789766,
       "avgVolume50": 14953478,
       "sharesOutstanding": 2338634,
-      "marketCap": 13774554.26,
+      "marketCap": 13306827.46,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 86,
       "float": {
@@ -151,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-18"
       },
-      "floatRotation": 0.06643279794957227,
+      "floatRotation": 0.06878459818851518,
       "daysUp": 1,
       "priorRunPct": 18.708240534521153,
       "extended": false,
@@ -168,13 +238,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.5%"
+          "ok": false,
+          "detail": "6.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "155,362"
+          "detail": "160,862"
         },
         {
           "name": "News catalyst",
@@ -184,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.89"
+          "detail": "$5.69"
         },
         {
           "name": "Float <10M",
@@ -192,142 +262,72 @@
           "detail": "2.3M"
         }
       ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
-  "alsoRan": [
-    {
-      "symbol": "FTFT",
-      "name": "Future FinTech Group Inc.",
-      "legalName": "Future FinTech Group Inc.",
-      "business": "Services-Business Services, NEC",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.2298,
-      "preMarketChangePct": 12.145833333333337,
-      "prevClose": 2.88,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 8:22 AM ET",
-      "preMarketVolume": 3309927,
-      "preMarketDollarVolume": 10690402.2246,
-      "relVolume": 0.7529169921417389,
-      "avgVolume50": 4396138,
-      "sharesOutstanding": 32246443,
-      "marketCap": 104149561.6014,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 268,
-      "float": {
-        "shares": 32246443,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-13"
-      },
-      "floatRotation": 0.10264471650408077,
-      "daysUp": 1,
-      "priorRunPct": 74.54545454545455,
-      "extended": true,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "12.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "3,309,927"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.23"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "32.2M"
-        }
-      ],
       "passed": 3,
       "quality": "low"
     },
     {
-      "symbol": "ARMP",
-      "name": "Armata Pharmaceuticals Inc.",
-      "legalName": "Armata Pharmaceuticals, Inc.",
-      "business": "Biological Products, (No Diagnostic Substances)",
-      "sector": "Health Care",
-      "preMarketPrice": 5.89,
-      "preMarketChangePct": 9.479553903345721,
-      "prevClose": 5.38,
+      "symbol": "NIKI",
+      "name": "Niki BioSolutions Inc.",
+      "legalName": "Niki BioSolutions, Inc.",
+      "business": "Measuring & Controlling Devices, NEC",
+      "sector": "Industrials",
+      "preMarketPrice": 6.08,
+      "preMarketChangePct": 6.479859894921193,
+      "prevClose": 5.71,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 8:22 AM ET",
-      "preMarketVolume": 1486110.606221,
-      "preMarketDollarVolume": 8753191.47064169,
-      "relVolume": 11.59493017984848,
-      "avgVolume50": 128169,
-      "sharesOutstanding": 37181979,
-      "marketCap": 219001856.31,
+      "lastTradeAt": "Sep 14, 2026 8:41 AM ET",
+      "preMarketVolume": 42314,
+      "preMarketDollarVolume": 257269.12,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 2938625.043782837,
+      "marketCap": 17866840.266199652,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 103,
+      "bestPriorSpikePct": null,
       "float": {
-        "shares": 37181979,
+        "shares": 2938625.043782837,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-06"
+        "asOf": "2026-09-14"
       },
-      "floatRotation": 0.039968572039185975,
-      "daysUp": 1,
-      "priorRunPct": -2.5362318840579654,
+      "floatRotation": 0.014399251136010866,
+      "daysUp": 0,
+      "priorRunPct": null,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Regulation FD disclosure (company announcement)",
-        "subject": "Regulation FD disclosure (company announcement)",
+        "kind": "news",
+        "headline": "Niki BioSolutions Accelerates Its Alzheimer’s Disease Testing Pipeline Through Strategic Bioinformatics and Statistical Analysis Partnership with Fios Genomics",
+        "subject": "Contract or partnership",
         "date": "2026-09-14"
       },
       "leads": [
-        "8-K"
+        "GlobeNewswire"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.5%"
+          "detail": "6.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "1,486,111"
+          "ok": false,
+          "detail": "42,314"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.89"
+          "detail": "$6.08"
         },
         {
           "name": "Float <10M",
-          "ok": false,
-          "detail": "37.2M"
+          "ok": true,
+          "detail": "2.9M"
         }
       ],
       "passed": 3,
@@ -407,17 +407,17 @@
       "legalName": "VS MEDIA Holdings Ltd",
       "business": "Services-Advertising Agencies",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.24,
-      "preMarketChangePct": 22.77,
-      "prevClose": 1.0100187342184572,
+      "preMarketPrice": 1.27,
+      "preMarketChangePct": 25.74,
+      "prevClose": 1.010020677588675,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 14, 2026 8:22 AM ET",
-      "preMarketVolume": 4882372,
-      "preMarketDollarVolume": 6054141.28,
-      "relVolume": 16.449098265934904,
+      "lastTradeAt": "Sep 14, 2026 8:42 AM ET",
+      "preMarketVolume": 5166902,
+      "preMarketDollarVolume": 6561965.54,
+      "relVolume": 17.407702389014105,
       "avgVolume50": 296817,
       "sharesOutstanding": 55013689,
-      "marketCap": 68216974.36,
+      "marketCap": 69867385.03,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 149,
       "float": {
@@ -425,7 +425,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.08874831135210728,
+      "floatRotation": 0.09392029681921531,
       "daysUp": 1,
       "priorRunPct": 3.8737864077669943,
       "extended": false,
@@ -443,12 +443,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "22.8%"
+          "detail": "25.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "4,882,372"
+          "detail": "5,166,902"
         },
         {
           "name": "News catalyst",
@@ -458,7 +458,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.24"
+          "detail": "$1.27"
         },
         {
           "name": "Float <10M",
@@ -470,39 +470,107 @@
       "quality": "low"
     },
     {
-      "symbol": "THRY",
-      "name": "Thryv Holdings Inc.",
-      "legalName": "Thryv Holdings, Inc.",
-      "business": "Services-Advertising",
+      "symbol": "FTFT",
+      "name": "Future FinTech Group Inc.",
+      "legalName": "Future FinTech Group Inc.",
+      "business": "Services-Business Services, NEC",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.91,
-      "preMarketChangePct": 6.703910614525133,
-      "prevClose": 1.79,
+      "preMarketPrice": 3.0897,
+      "preMarketChangePct": 7.281250000000009,
+      "prevClose": 2.88,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 8:21 AM ET",
-      "preMarketVolume": 103625.930107,
-      "preMarketDollarVolume": 197925.52650436998,
-      "relVolume": 0.14101068216171347,
-      "avgVolume50": 734880,
-      "sharesOutstanding": 44439111,
-      "marketCap": 84878702.00999999,
+      "lastTradeAt": "Sep 14, 2026 8:42 AM ET",
+      "preMarketVolume": 3905593,
+      "preMarketDollarVolume": 12067110.6921,
+      "relVolume": 0.8884145584146812,
+      "avgVolume50": 4396138,
+      "sharesOutstanding": 32246443,
+      "marketCap": 99631834.93710001,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 15,
+      "bestPriorSpikePct": 268,
       "float": {
-        "shares": 44439111,
+        "shares": 32246443,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-31"
+        "asOf": "2026-08-13"
       },
-      "floatRotation": 0.0023318632568279773,
+      "floatRotation": 0.1211170174645309,
+      "daysUp": 1,
+      "priorRunPct": 74.54545454545455,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "3,905,593"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.09"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "32.2M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "GTEC",
+      "name": "Greenland Technologies Holding Corporation Class A Ordinary Shares",
+      "legalName": "Greenland Technologies Holding Corp.",
+      "business": "General Industrial Machinery & Equipment",
+      "sector": "Industrials",
+      "preMarketPrice": 1.11,
+      "preMarketChangePct": 5.714285714285719,
+      "prevClose": 1.05,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 14, 2026 8:40 AM ET",
+      "preMarketVolume": 14405,
+      "preMarketDollarVolume": 15989.550000000001,
+      "relVolume": 0.028451229989828266,
+      "avgVolume50": 506305,
+      "sharesOutstanding": 20532482,
+      "marketCap": 22791055.020000003,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 32,
+      "float": {
+        "shares": 20532482,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-05-13"
+      },
+      "floatRotation": 0.0007015712956670313,
       "daysUp": 0,
-      "priorRunPct": -6.770833333333329,
+      "priorRunPct": 11.69024571854058,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract)",
-        "subject": "Entered a material agreement (deal, partnership or contract)",
-        "date": "2026-09-14"
+        "headline": "Delisting notice or listing-rule failure",
+        "subject": "Delisting notice or listing-rule failure",
+        "date": "2026-09-11"
       },
       "leads": [
         "8-K"
@@ -511,12 +579,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.7%"
+          "detail": "5.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "103,626"
+          "ok": false,
+          "detail": "14,405"
         },
         {
           "name": "News catalyst",
@@ -526,80 +594,12 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.91"
+          "detail": "$1.11"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "44.4M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "BDMD",
-      "name": "Baird Medical Investment Holdings Ltd Ordinary Share",
-      "legalName": "Baird Medical Investment Holdings Ltd",
-      "business": "Surgical & Medical Instruments & Apparatus",
-      "sector": "Health Care",
-      "preMarketPrice": 1.16,
-      "preMarketChangePct": 5.454545454545439,
-      "prevClose": 1.1,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 8:00 AM ET",
-      "preMarketVolume": 84,
-      "preMarketDollarVolume": 97.44,
-      "relVolume": 0.0017624103059040745,
-      "avgVolume50": 47662,
-      "sharesOutstanding": 40979382,
-      "marketCap": 47536083.12,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 64,
-      "float": {
-        "shares": 40979382,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 0.000002049811292908224,
-      "daysUp": 1,
-      "priorRunPct": -5.98290598290597,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Baird Medical Highlights Participation at CIRSE 2026 and Showcases Microwave Ablation Technology",
-        "subject": null,
-        "date": "2026-09-14"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.5%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "84"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.16"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "41.0M"
+          "detail": "20.5M"
         }
       ],
       "passed": 1,
