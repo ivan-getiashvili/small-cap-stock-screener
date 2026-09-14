@@ -26,7 +26,14 @@ const head = `<!doctype html>
 <body>
 `;
 
-const html = head + template.replace(MARKER, data.replace(/<\//g, '<\\/')) + '\n</body>\n</html>\n';
+// The track record is optional: the page renders without it on a fresh clone.
+let history = 'null';
+try { history = await readFile('data/history.json', 'utf8'); } catch { /* none yet */ }
+
+const esc = (j: string) => j.replace(/<\//g, '<\\/');
+const html = head +
+  template.replace(MARKER, esc(data)).replace('/*__HISTORY__*/null', esc(history)) +
+  '\n</body>\n</html>\n';
 await mkdir('_site', { recursive: true });
 await writeFile('_site/index.html', html);
 

@@ -60,7 +60,7 @@ const EIGHT_K_ITEMS: Record<string, string> = {
 };
 
 /** Turn "1.01,9.01" into a readable subject, most meaningful item first. */
-function describeItems(raw: string | null | undefined): string | null {
+export function describeItems(raw: string | null | undefined): string | null {
   if (!raw) return null;
   const codes = String(raw).split(/[,;]/).map((c) => c.trim()).filter(Boolean);
   // 9.01 is boilerplate attached to almost every 8-K; it explains nothing.
@@ -77,7 +77,7 @@ const daysBetween = (a: string, b: string) =>
 /** EDGAR submissions, fetched once per company per process. */
 const submissionsCache = new Map<string, any>();
 
-async function getSubmissions(cik: string): Promise<any | null> {
+export async function getSubmissions(cik: string): Promise<any | null> {
   if (submissionsCache.has(cik)) return submissionsCache.get(cik);
   try {
     const res = await fetch(`https://data.sec.gov/submissions/CIK${cik}.json`, {

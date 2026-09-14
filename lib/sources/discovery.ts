@@ -37,11 +37,21 @@ export type Lead = {
   subject: string | null;
 };
 
-async function fetchText(url: string, headers: Record<string, string>, timeoutMs = 30_000): Promise<string | null> {
-  try {
-    const res = await fetch(url, { headers, signal: AbortSignal.timeout(timeoutMs) });
-    return res.ok ? await res.text() : null;
-  } catch { return null; }
+/**
+ * Fetch with a few retries. These feeds are flaky rather than blocked: PR
+ * Newswire's main feed answered 404, 200, 404 to three identical requests a few
+ * seconds apart on 2026-09-14. One failed attempt should not cost a morning's
+ * leads.
+ */
+async function fetchText(url: string, headers: Record<string, string>, timeoutMs = 30_000, attempts = 3): Promise<string | null> {
+  for (let i = 0; i < attempts; i++) {
+    if (i) await new Promise((r) => setTimeout(r, 1500 * i));
+    try {
+      const res = await fetch(url, { headers, signal: AbortSignal.timeout(timeoutMs) });
+      if (res.ok) return await res.text();
+    } catch { /* retry */ }
+  }
+  return null;
 }
 
 const decode = (s: string) => s

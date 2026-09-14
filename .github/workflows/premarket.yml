@@ -118,7 +118,7 @@ jobs:
                           '(' + d.fetch.answerRatePct.toFixed(0) + '%)');
               // Fail loudly on a broken feed during pre-market. Silently
               // publishing an empty list would look like a quiet morning.
-              if (!d.fetch.reliable && /pre-market/i.test(d.marketStatus||'')) {
+              if (!d.fetch.reliable && /pre[\s-]?market/i.test(d.marketStatus||'')) {
                 console.log('::error::feed answered only ' + d.fetch.answerRatePct.toFixed(0) + '% during pre-market');
                 process.exit(1);
               }

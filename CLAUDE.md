@@ -17,22 +17,72 @@ before the open.** Everything else is supporting research.
 
 ## The pre-market scan, and why it is shaped this way
 
-**One bulk request, then ~30 lookups.** The first version asked Nasdaq for a
-quote on every one of ~2,945 small caps — roughly 35,000 requests a day on the
-schedule — and Nasdaq began answering 403 after two runs. That failure mode is
-nastier than it sounds: a blocked feed yields an empty shortlist, which looks
-identical to a quiet morning. So the scan takes the whole market in one request,
-then investigates only the names that survive the first cut.
+**Verified live on 2026-09-14 — read before touching discovery.**
 
-**Staleness is measured, not assumed.** A post-close job records every closing
-price to `data/prevclose.json`, and the morning scan measures the pre-market
-move against that itself rather than trusting a vendor's percent-change field to
-have rolled over. If prices match the stored closes, the page says the feed is
-not live instead of reporting "nothing qualified".
+- **Nasdaq has no free live pre-market list.** During pre-market its bulk
+  screener still shows the previous close for all 6,090 stocks, and every movers
+  list (`api/marketmovers`) is stamped with the previous session. The
+  `exchangestatus=premarket` parameter is ignored everywhere.
+- **Live pre-market data exists only per symbol**, in `primaryData` of
+  `api/quote/{sym}/info`: real-time, stamped today ("Sep 14, 2026 5:56 AM ET"),
+  with the session's volume. It matched the 1-minute chart exactly.
+  `secondaryData` is NOT trustworthy — usually the previous close, but for SXTC it
+  repeated the live price. The first adapter read the two blocks backwards.
+- **A quote counts as live only if `isRealTime` and stamped with today's New York
+  date.** The move is measured against our own stored close; if Nasdaq's own
+  change disagrees by more than 2 points, Nasdaq's figure wins (stale close).
+- **Nasdaq's "as of" date label is unreliable** — one screener variant said
+  "Aug 19" while another said "Sep 11". The previous session comes from the last
+  completed AAPL daily bar.
+- **Nasdaq's status text is "Pre Market"** (space). Test with
+  `/pre[\s-]?market/i`, never `/pre-market/i`.
 
-**The answer rate is published.** If fewer than half the quote lookups respond,
-the page says the scan is unreliable and CI fails during pre-market. An empty
-list must never be able to mean two different things silently.
+**So discovery is catalyst-first** (`lib/sources/discovery.ts`). Asking about all
+~3,400 small caps got us 403'd after two runs; instead the scan quotes only
+symbols with a reason to move — ~80 lookups, all answered:
+
+| source | what it gives | caveat |
+|---|---|---|
+| SEC 8-K Atom feed | filings since 15:30 ET of the previous session → tickers | lags press releases |
+| PR Newswire RSS (2 feeds) | same-morning releases with `(NASDAQ: XXX)` tickers | 20 items per feed; main feed is flaky (404/200/404), so fetches retry |
+| GlobeNewswire RSS | same | 20 items; unreachable from the Mac once, fine from CI |
+| previous session's top gainers | yesterday's runners | flagged extended if already running |
+
+Not usable: Business Wire (no tickers in the feed, release pages 403) and
+Accesswire (bot challenge — do not try to get past it).
+
+**Known blind spot:** a microcap whose news breaks only on a wire we cannot read,
+before it files an 8-K. And busy mornings overflow the 20-item wire feeds.
+
+**After the bell** the morning's final pre-market list is kept, not re-scanned.
+Each scan commits `data/premarket.json` and `data/history.json`, because every
+CI run starts from a clean checkout.
+
+## Track record (`data/history.json`, `lib/history.ts`)
+
+Every name that reaches the shortlist or watchlist is recorded as it looked when
+first flagged, then scored after the close on that session: open→high,
+open→close, open→low, gap. Losers are recorded exactly like winners.
+
+- A watchlist name that later clears all five is upgraded and re-snapshotted at
+  that moment.
+- Scoring runs in the nightly job (`npm run history:fill`) and at each scan.
+- Up/down marks use blue `#3987e5` / red `#e66767`. The page's own green/red
+  failed the colour-blind check (deuteranopia ΔE 4.4); blue/red passes (ΔE 19.2).
+
+**Replay backfill** (`scripts/backfill-history.ts`, source `replay`) — the rules
+that stop it showing big moves by construction:
+
+1. Replays **every** symbol priced $1–$25 at the previous close — never days
+   pre-selected because they later moved.
+2. Pre-market from Databento `XNAS.BASIC` 1-minute bars up to 08:45 ET only.
+3. A catalyst counts only if its 8-K was **accepted** (EDGAR `acceptanceDateTime`)
+   between 15:30 ET the previous session and 08:45 ET that morning. Press releases
+   can't be replayed, so replayed lists are a subset of what live would find.
+4. `XNAS.BASIC` carries ~48–83% of volume, so the 50k gate runs on an undercount.
+5. Known leak: float uses today's filed share count.
+
+Cost: ~$0.035 per session (~$0.71 for 20). Run `--dry` first.
 
 ## The finding that matters
 
@@ -63,6 +113,7 @@ this screener as a profitable system. It is a candidate finder.
 ```
 # the product
 npm run site          # pre-market scan + build -> _site/index.html
+npm run history:fill  # score recorded names on closed sessions
 npm run premarket     # scan only -> data/premarket.json
 npm run snapshot      # record closing prices (run after the close)
 
