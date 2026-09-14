@@ -120,7 +120,7 @@
   .hrow .v small{display:block;color:var(--faint);font:10px/1.3 var(--sans)}
   .hcols{border-top:0;color:var(--faint);font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;padding-top:2px}
   .hcols .v{color:var(--faint);font:10.5px/1.2 var(--sans)}
-  .rng{position:relative;height:20px}
+  .rng{position:relative;height:20px;margin:0 12px}
   .rng .zero{position:absolute;top:1px;bottom:1px;width:1px;background:#3a4252}
   .rng .up,.rng .dn{position:absolute;top:6px;height:8px}
   .rng .up{background:#3987e5;border-radius:0 4px 4px 0}
@@ -137,10 +137,19 @@
   .tip b{color:var(--ink);font:600 13px/1.4 var(--mono)}
   .tip .r{display:flex;justify-content:space-between;gap:14px}
   .tip .r span:last-child{color:var(--ink);font-family:var(--mono)}
+  /* Narrow screens: name, flag and range bar each take a full line, and the
+     three results sit in their own labelled columns. The first version squeezed
+     six columns into two, and at 375px the numbers ran off the card and were
+     clipped — a value cut off by its own layout is worse than no value. */
   @media(max-width:720px){
-    .hrow{grid-template-columns:1fr 1fr;row-gap:6px}
-    .hrow .rngcell{grid-column:1/-1}
+    .hrow{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:6px;column-gap:8px;padding:10px 2px}
+    .hrow>div:nth-child(1),.hrow>div:nth-child(2),.hrow .rngcell{grid-column:1/-1}
+    .hrow .v{text-align:left}
+    .hrow .v::before{content:attr(data-label);display:block;color:var(--faint);
+                     font:10px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.04em}
     .hcols{display:none}
+    .hday-h{flex-wrap:wrap}
+    .floating-note{position:static!important;display:block;margin:10px 18px!important;max-width:none!important}
   }
 </style>
 
@@ -379,6 +388,7 @@ function foot(){
 
   // A small, honest control rather than an unprompted permission popup.
   const bar = document.createElement('div');
+  bar.className = 'floating-note';
   bar.style.cssText = 'position:fixed;bottom:12px;left:14px;font:11.5px/1.3 var(--sans);' +
     'color:var(--dim);background:var(--panel);border:1px solid var(--line);' +
     'padding:8px 12px;border-radius:10px;cursor:pointer;max-width:250px';
@@ -427,11 +437,15 @@ function renderHistory(){
   const shortScored = days.flatMap(d => d.names).filter(n => n.list === 'shortlist' && n.performance);
   const allScored = days.flatMap(d => d.names).filter(n => n.performance);
 
-  // A shared scale for every row, so bars compare across days. Capped so a
-  // single triple-digit runner does not flatten every other row into a sliver.
-  const UP_CAP = 300, DN_CAP = 80;
-  const maxUp = Math.min(UP_CAP, Math.max(10, ...allScored.map(n => n.performance.openToHighPct)));
-  const maxDn = Math.min(DN_CAP, Math.max(5, ...allScored.map(n => -n.performance.openToLowPct)));
+  // A shared scale for every row, so bars compare across days — set by where
+  // most rows sit, not by the single most extreme one. The first version scaled
+  // to the maximum: one +221% session set the axis and a normal ±15% day shrank
+  // to a few pixels. The 90th percentile sets it now; anything beyond is drawn
+  // to the edge with an arrow, and its exact value stays in the columns.
+  const q = (arr, p) => { if (!arr.length) return 0; const s = [...arr].sort((a, b) => a - b); return s[Math.min(s.length - 1, Math.floor(p * (s.length - 1)))]; };
+  const maxUp = Math.max(20, Math.ceil(q(allScored.map(n => n.performance.openToHighPct), 0.9) / 5) * 5);
+  const maxDn = Math.max(10, Math.ceil(q(allScored.map(n => -n.performance.openToLowPct), 0.9) / 5) * 5);
+  const beyondScale = allScored.filter(n => n.performance.openToHighPct > maxUp || -n.performance.openToLowPct > maxDn).length;
   const span = maxUp + maxDn;
   const pos = v => ((Math.max(-maxDn, Math.min(maxUp, v)) + maxDn) / span) * 100;
 
@@ -461,7 +475,7 @@ function renderHistory(){
   k('sw', '#3987e5', 'range above the open');
   k('sw', '#e66767', 'range below the open');
   k('dotkey', null, 'where it closed');
-  k('', null, `scale −${maxDn.toFixed(0)}% to +${maxUp.toFixed(0)}% from the open${maxUp >= UP_CAP ? ' (larger moves capped)' : ''}`);
+  k('', null, `scale −${maxDn}% to +${maxUp}% from the open${beyondScale ? ` · ${beyondScale} larger move${beyondScale > 1 ? 's' : ''} run off the edge (◂ ▸)` : ''}`);
   sec.appendChild(key);
 
   const tip = el('div', 'tip'); tip.hidden = true; document.body.appendChild(tip);
@@ -543,17 +557,18 @@ function renderHistory(){
         cl.style.left = pos(p.openToClosePct) + '%';
         cl.style.background = p.openToClosePct >= 0 ? '#3987e5' : '#e66767';
         rng.appendChild(cl);
-        if (p.openToHighPct > maxUp){ const cap = el('div', 'cap', '▸'); cap.style.right = '0'; rng.appendChild(cap); }
+        if (p.openToHighPct > maxUp){ const cap = el('div', 'cap', '▸'); cap.style.right = '-11px'; rng.appendChild(cap); }
+        if (-p.openToLowPct > maxDn){ const cap = el('div', 'cap', '◂'); cap.style.left = '-11px'; rng.appendChild(cap); }
         rc.appendChild(rng);
       } else {
         rc.appendChild(el('div', 'pend', day.source === 'live' ? 'scored after the close' : 'no session data'));
       }
       row.appendChild(rc);
 
-      const val = (v, sub) => { const c = el('div', 'v', v == null ? '—' : sgn(v)); if (sub) c.appendChild(el('small', null, sub)); return c; };
-      row.appendChild(val(p ? p.openToHighPct : null, p ? `$${p.high.toFixed(2)}` : null));
-      row.appendChild(val(p ? p.openToClosePct : null, p ? `$${p.close.toFixed(2)}` : null));
-      row.appendChild(val(p ? p.openToLowPct : null, p ? `$${p.low.toFixed(2)}` : null));
+      const val = (label, v, sub) => { const c = el('div', 'v', v == null ? '—' : sgn(v)); c.dataset.label = label; if (sub) c.appendChild(el('small', null, sub)); return c; };
+      row.appendChild(val('open→high', p ? p.openToHighPct : null, p ? `$${p.high.toFixed(2)}` : null));
+      row.appendChild(val('open→close', p ? p.openToClosePct : null, p ? `$${p.close.toFixed(2)}` : null));
+      row.appendChild(val('open→low', p ? p.openToLowPct : null, p ? `$${p.low.toFixed(2)}` : null));
 
       row.addEventListener('pointermove', e => showTip(n, e.clientX, e.clientY));
       row.addEventListener('pointerleave', () => { tip.hidden = true; });
@@ -587,6 +602,7 @@ renderHistory();
 
   // Show how old the figures are, counting up, so a frozen page is obvious.
   const el = document.createElement('div');
+  el.className = 'floating-note';
   el.style.cssText = 'position:fixed;bottom:12px;right:14px;font:11px/1 var(--mono);' +
     'color:var(--faint);background:var(--panel);border:1px solid var(--line);' +
     'padding:6px 10px;border-radius:99px';

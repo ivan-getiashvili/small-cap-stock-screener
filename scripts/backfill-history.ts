@@ -81,6 +81,12 @@ async function main() {
     // Rule 1: the whole band, by the previous close — never by what happened next.
     const band: string[] = [];
     for (const [sym, bars] of daily) {
+      // Same instruments as the live scan: ordinary shares only. Nasdaq's
+      // five-letter tickers mark the security type in the last letter — P
+      // preferred, W warrant, U unit, R right, Q bankruptcy. The live universe
+      // drops them by name; without this rule the replay included WVVIP, a
+      // preferred that fell 81% in one session, which live would never show.
+      if (sym.length === 5 && 'PWURQ'.includes(sym[4])) continue;
       const p = bars.find((b) => b.date === prev);
       if (p && p.close >= BAND.min && p.close <= BAND.max && bars.some((b) => b.date === date)) band.push(sym);
     }
