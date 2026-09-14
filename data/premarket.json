@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-14T10:17:40.596Z",
+  "generatedAt": "2026-09-14T10:21:22.880Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-11",
   "universeChecked": 6090,
   "smallCapsInBand": 2945,
-  "investigated": 81,
-  "liveQuotes": 52,
+  "investigated": 83,
+  "liveQuotes": 56,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-11T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 112,
+    "edgarFilings": 114,
     "leads": {
-      "8-K": 51,
-      "PR Newswire": 3,
+      "8-K": 53,
+      "PR Newswire": 5,
       "GlobeNewswire": 3,
       "prior-session gainer": 25
     },
@@ -21,9 +21,9 @@
       {
         "name": "PR Newswire",
         "url": "https://www.prnewswire.com/rss/news-releases-list.rss",
-        "ok": false,
-        "items": 0,
-        "inWindow": 0
+        "ok": true,
+        "items": 20,
+        "inWindow": 20
       },
       {
         "name": "PR Newswire",
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 81,
-    "answered": 81,
+    "requested": 83,
+    "answered": 83,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "CEA Industries Inc.",
       "business": "Agricultural Services",
       "sector": "Consumer Staples",
-      "preMarketPrice": 5.66,
-      "preMarketChangePct": 17.916666666666675,
+      "preMarketPrice": 5.5045,
+      "preMarketChangePct": 14.677083333333341,
       "prevClose": 4.8,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 6:17 AM ET",
-      "preMarketVolume": 500276.585805,
-      "preMarketDollarVolume": 2831565.4756563,
-      "relVolume": 0.26967270982009295,
+      "lastTradeAt": "Sep 14, 2026 6:21 AM ET",
+      "preMarketVolume": 527938.755805,
+      "preMarketDollarVolume": 2906038.8813286223,
+      "relVolume": 0.2845839260454147,
       "avgVolume50": 1855125,
       "sharesOutstanding": 41173850,
-      "marketCap": 233043991,
+      "marketCap": 226641457.32500002,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 50,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-09-04"
       },
-      "floatRotation": 0.012150347509523641,
+      "floatRotation": 0.012822185824376393,
       "daysUp": 0,
       "priorRunPct": 45.8966565349544,
       "extended": false,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "17.9%"
+          "detail": "14.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "500,277"
+          "detail": "527,939"
         },
         {
           "name": "News catalyst",
@@ -116,12 +116,80 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.66"
+          "detail": "$5.50"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "41.2M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "BMM",
+      "name": "Blue Moon Metals Inc. Common Shares",
+      "legalName": "Blue Moon Metals Inc.",
+      "business": "Metal Mining",
+      "sector": null,
+      "preMarketPrice": 6.2392,
+      "preMarketChangePct": 14.375802016498628,
+      "prevClose": 5.455,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 14, 2026 6:21 AM ET",
+      "preMarketVolume": 52390.580527,
+      "preMarketDollarVolume": 326875.3100240584,
+      "relVolume": 0.24103359677122535,
+      "avgVolume50": 217358,
+      "sharesOutstanding": 104863000.91659029,
+      "marketCap": 654261235.3187902,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 22,
+      "float": {
+        "shares": 104863000.91659029,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-14"
+      },
+      "floatRotation": 0.0004996097772242119,
+      "daysUp": 0,
+      "priorRunPct": -10.426929392446631,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Blue Moon, The Elmet Group, and EQ Resources Announce a US$150-$175 Million Investment into the Springer Tungsten Complex, Nevada, to Strengthen the U.S. Tungsten Supply Chain",
+        "subject": null,
+        "date": "2026-09-14"
+      },
+      "leads": [
+        "PR Newswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "14.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "52,391"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$6.24"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "104.9M"
         }
       ],
       "passed": 4,
@@ -135,17 +203,17 @@
       "legalName": "Elmet Group Co.",
       "business": "Miscellaneous Fabricated Metal Products",
       "sector": "Industrials",
-      "preMarketPrice": 21.11,
-      "preMarketChangePct": 30.389129092032103,
+      "preMarketPrice": 21.2758,
+      "preMarketChangePct": 31.413218035824574,
       "prevClose": 16.19,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 6:17 AM ET",
-      "preMarketVolume": 912522.589668,
-      "preMarketDollarVolume": 19263351.86789148,
-      "relVolume": 2.5491451556769804,
+      "lastTradeAt": "Sep 14, 2026 6:21 AM ET",
+      "preMarketVolume": 934619.635278,
+      "preMarketDollarVolume": 19884780.436247673,
+      "relVolume": 2.610873574687406,
       "avgVolume50": 357972,
       "sharesOutstanding": 30459498,
-      "marketCap": 643000002.78,
+      "marketCap": 648050187.5484,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 24,
       "float": {
@@ -153,18 +221,19 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.02995855643018148,
+      "floatRotation": 0.030684013087740318,
       "daysUp": 1,
       "priorRunPct": -1.0995723885155755,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "The Elmet Group to Deploy Strategic Capital to Strengthen U.S. and Allied Tungsten Supply Chain",
+        "headline": "Blue Moon, The Elmet Group, and EQ Resources Announce a US$150-$175 Million Investment into the Springer Tungsten Complex, Nevada, to Strengthen the U.S. Tungsten Supply Chain",
         "subject": null,
         "date": "2026-09-14"
       },
       "leads": [
+        "PR Newswire",
         "GlobeNewswire",
         "GlobeNewswire"
       ],
@@ -172,12 +241,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "30.4%"
+          "detail": "31.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "912,523"
+          "detail": "934,620"
         },
         {
           "name": "News catalyst",
@@ -187,7 +256,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$21.11"
+          "detail": "$21.28"
         },
         {
           "name": "Float <10M",
@@ -199,68 +268,69 @@
       "quality": "low"
     },
     {
-      "symbol": "PMI",
-      "name": "Picard Medical Inc.",
-      "legalName": "Picard Medical, Inc.",
-      "business": "Surgical & Medical Instruments & Apparatus",
+      "symbol": "CATX",
+      "name": "Perspective Therapeutics Inc.",
+      "legalName": "Perspective Therapeutics, Inc.",
+      "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 5.6481,
-      "preMarketChangePct": 5.968105065666046,
-      "prevClose": 5.33,
+      "preMarketPrice": 3.07,
+      "preMarketChangePct": 9.2526690391459,
+      "prevClose": 2.81,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 6:15 AM ET",
-      "preMarketVolume": 69568,
-      "preMarketDollarVolume": 392927.0208,
-      "relVolume": 0.0046522956064134376,
-      "avgVolume50": 14953478,
-      "sharesOutstanding": 2338634,
-      "marketCap": 13208838.695400001,
+      "lastTradeAt": "Sep 14, 2026 6:21 AM ET",
+      "preMarketVolume": 54005.693911,
+      "preMarketDollarVolume": 165797.48030677,
+      "relVolume": 0.04119188659620038,
+      "avgVolume50": 1311076,
+      "sharesOutstanding": 114151663,
+      "marketCap": 350445605.40999997,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 86,
+      "bestPriorSpikePct": 66,
       "float": {
-        "shares": 2338634,
+        "shares": 114151663,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-18"
+        "asOf": "2026-08-05"
       },
-      "floatRotation": 0.02974727982232363,
+      "floatRotation": 0.000473104749345614,
       "daysUp": 1,
-      "priorRunPct": 18.708240534521153,
+      "priorRunPct": -9.935897435897436,
       "extended": false,
       "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
+        "found": true,
+        "kind": "news",
+        "headline": "Perspective Therapeutics Announces Clinical Collaboration and Supply Agreement with Merck to Evaluate [212Pb]PSV359 in Combination with Keytruda® (Pembrolizumab) in FAP-α Positive Solid Tumors",
+        "subject": "FDA / clinical",
+        "date": "2026-09-14"
       },
       "leads": [
-        "prior-session gainer"
+        "GlobeNewswire",
+        "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.0%"
+          "detail": "9.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "69,568"
+          "detail": "54,006"
         },
         {
           "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
+          "ok": true,
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.65"
+          "detail": "$3.07"
         },
         {
           "name": "Float <10M",
-          "ok": true,
-          "detail": "2.3M"
+          "ok": false,
+          "detail": "114.2M"
         }
       ],
       "passed": 3,
@@ -272,17 +342,17 @@
       "legalName": "VS MEDIA Holdings Ltd",
       "business": "Services-Advertising Agencies",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.26,
-      "preMarketChangePct": 24.75,
-      "prevClose": 1.0100200400801602,
+      "preMarketPrice": 1.2402,
+      "preMarketChangePct": 22.79,
+      "prevClose": 1.0100171023698998,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 14, 2026 6:17 AM ET",
-      "preMarketVolume": 3924380,
-      "preMarketDollarVolume": 4944718.8,
-      "relVolume": 13.221547283342936,
+      "lastTradeAt": "Sep 14, 2026 6:21 AM ET",
+      "preMarketVolume": 3942762,
+      "preMarketDollarVolume": 4889813.4324,
+      "relVolume": 13.28347769837981,
       "avgVolume50": 296817,
       "sharesOutstanding": 55013689,
-      "marketCap": 69317248.14,
+      "marketCap": 68227977.0978,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 149,
       "float": {
@@ -290,7 +360,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.07133460910065494,
+      "floatRotation": 0.07166874411930456,
       "daysUp": 1,
       "priorRunPct": 3.8737864077669943,
       "extended": false,
@@ -308,12 +378,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "24.8%"
+          "detail": "22.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "3,924,380"
+          "detail": "3,942,762"
         },
         {
           "name": "News catalyst",
@@ -323,80 +393,12 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.26"
+          "detail": "$1.24"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "55.0M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "NCRA",
-      "name": "Nocera Inc.",
-      "legalName": "NOCERA, INC.",
-      "business": "Agricultural Prod-Livestock & Animal Specialties",
-      "sector": "Consumer Staples",
-      "preMarketPrice": 2.37,
-      "preMarketChangePct": 6.278026905829602,
-      "prevClose": 2.23,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 6:11 AM ET",
-      "preMarketVolume": 17740,
-      "preMarketDollarVolume": 42043.8,
-      "relVolume": 0.0035170904027048686,
-      "avgVolume50": 5043942,
-      "sharesOutstanding": 2376148,
-      "marketCap": 5631470.760000001,
-      "floatPctOfShares": 55.2330591684201,
-      "bestPriorSpikePct": 118,
-      "float": {
-        "shares": 1312419.2307692308,
-        "basis": "sec-public-float",
-        "asOf": "2025-06-30"
-      },
-      "floatRotation": 0.013517022292946965,
-      "daysUp": 1,
-      "priorRunPct": 14.358974358974361,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "17,740"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.37"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "1.3M"
         }
       ],
       "passed": 2,
