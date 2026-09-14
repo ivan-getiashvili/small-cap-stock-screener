@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-14T10:46:22.601Z",
+  "generatedAt": "2026-09-14T11:40:01.305Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-11",
-  "universeChecked": 6006,
-  "smallCapsInBand": 2915,
-  "investigated": 83,
-  "liveQuotes": 58,
+  "universeChecked": 6007,
+  "smallCapsInBand": 2916,
+  "investigated": 95,
+  "liveQuotes": 75,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-11T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 118,
+    "edgarFilings": 131,
     "leads": {
-      "8-K": 53,
+      "8-K": 62,
       "PR Newswire": 3,
-      "GlobeNewswire": 3,
+      "GlobeNewswire": 5,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 83,
-    "answered": 83,
+    "requested": 95,
+    "answered": 95,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,22 +60,226 @@
   "shortlist": [],
   "watchlist": [
     {
+      "symbol": "ARMP",
+      "name": "Armata Pharmaceuticals Inc.",
+      "legalName": "Armata Pharmaceuticals, Inc.",
+      "business": "Biological Products, (No Diagnostic Substances)",
+      "sector": "Health Care",
+      "preMarketPrice": 6.1373,
+      "preMarketChangePct": 14.076208178438659,
+      "prevClose": 5.38,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 14, 2026 7:40 AM ET",
+      "preMarketVolume": 67627,
+      "preMarketDollarVolume": 415047.1871,
+      "relVolume": 0.5276392887515702,
+      "avgVolume50": 128169,
+      "sharesOutstanding": 37181979,
+      "marketCap": 228196959.7167,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 103,
+      "float": {
+        "shares": 37181979,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-06"
+      },
+      "floatRotation": 0.0018188112042126644,
+      "daysUp": 1,
+      "priorRunPct": -2.5362318840579654,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-09-14"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "14.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "67,627"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$6.14"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "37.2M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "CRBP",
+      "name": "Corbus Pharmaceuticals Holdings Inc.",
+      "legalName": "Corbus Pharmaceuticals Holdings, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 9.07,
+      "preMarketChangePct": 11.699507389162576,
+      "prevClose": 8.12,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 14, 2026 7:40 AM ET",
+      "preMarketVolume": 3771519.867139,
+      "preMarketDollarVolume": 34207685.19495073,
+      "relVolume": 7.954460331546234,
+      "avgVolume50": 474139,
+      "sharesOutstanding": 19341293,
+      "marketCap": 175425527.51000002,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 19,
+      "float": {
+        "shares": 19341293,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-04"
+      },
+      "floatRotation": 0.19499833165957414,
+      "daysUp": 0,
+      "priorRunPct": -29.144851657940674,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
+        "subject": "Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
+        "date": "2026-09-14"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "11.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "3,771,520"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$9.07"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "19.3M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "PMI",
+      "name": "Picard Medical Inc.",
+      "legalName": "Picard Medical, Inc.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 5.9,
+      "preMarketChangePct": 10.694183864915576,
+      "prevClose": 5.33,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 14, 2026 7:39 AM ET",
+      "preMarketVolume": 141389,
+      "preMarketDollarVolume": 834195.1000000001,
+      "relVolume": 0.009455258502403254,
+      "avgVolume50": 14953478,
+      "sharesOutstanding": 2338634,
+      "marketCap": 13797940.600000001,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 86,
+      "float": {
+        "shares": 2338634,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-18"
+      },
+      "floatRotation": 0.06045794254252696,
+      "daysUp": 1,
+      "priorRunPct": 18.708240534521153,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "10.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "141,389"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.90"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "2.3M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
       "symbol": "BNC",
       "name": "CEA Industries Inc.",
       "legalName": "CEA Industries Inc.",
       "business": "Agricultural Services",
       "sector": "Consumer Staples",
-      "preMarketPrice": 5.5389,
-      "preMarketChangePct": 15.393750000000002,
+      "preMarketPrice": 5.3011,
+      "preMarketChangePct": 10.439583333333335,
       "prevClose": 4.8,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 6:46 AM ET",
-      "preMarketVolume": 557587.23758,
-      "preMarketDollarVolume": 3088419.950231862,
-      "relVolume": 0.3005658581389394,
+      "lastTradeAt": "Sep 14, 2026 7:39 AM ET",
+      "preMarketVolume": 726821.884199,
+      "preMarketDollarVolume": 3852955.4903273187,
+      "relVolume": 0.3917913262982279,
       "avgVolume50": 1855125,
       "sharesOutstanding": 41173850,
-      "marketCap": 228057837.765,
+      "marketCap": 218266696.23499998,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 50,
       "float": {
@@ -83,7 +287,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-09-04"
       },
-      "floatRotation": 0.013542266209742347,
+      "floatRotation": 0.017652512072565473,
       "daysUp": 0,
       "priorRunPct": 45.8966565349544,
       "extended": false,
@@ -101,12 +305,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "15.4%"
+          "detail": "10.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "557,587"
+          "detail": "726,822"
         },
         {
           "name": "News catalyst",
@@ -116,7 +320,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.54"
+          "detail": "$5.30"
         },
         {
           "name": "Float <10M",
@@ -130,68 +334,68 @@
   ],
   "alsoRan": [
     {
-      "symbol": "PMI",
-      "name": "Picard Medical Inc.",
-      "legalName": "Picard Medical, Inc.",
-      "business": "Surgical & Medical Instruments & Apparatus",
-      "sector": "Health Care",
-      "preMarketPrice": 5.6503,
-      "preMarketChangePct": 6.009380863039391,
-      "prevClose": 5.33,
+      "symbol": "GWAV",
+      "name": "Greenwave Technology Solutions Inc.",
+      "legalName": "Greenwave Technology Solutions, Inc.",
+      "business": "Wholesale-Metals Service Centers & of fices",
+      "sector": "Industrials",
+      "preMarketPrice": 4.02,
+      "preMarketChangePct": 5.78947368421052,
+      "prevClose": 3.8,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 6:39 AM ET",
-      "preMarketVolume": 96519,
-      "preMarketDollarVolume": 545361.3056999999,
-      "relVolume": 0.006454618785007742,
-      "avgVolume50": 14953478,
-      "sharesOutstanding": 2338634,
-      "marketCap": 13213983.6902,
+      "lastTradeAt": "Sep 14, 2026 7:38 AM ET",
+      "preMarketVolume": 4747,
+      "preMarketDollarVolume": 19082.94,
+      "relVolume": 0.03770123341090135,
+      "avgVolume50": 125911,
+      "sharesOutstanding": 829631,
+      "marketCap": 3335116.6199999996,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 86,
+      "bestPriorSpikePct": 106,
       "float": {
-        "shares": 2338634,
+        "shares": 829631,
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-18"
       },
-      "floatRotation": 0.04127152859318731,
-      "daysUp": 1,
-      "priorRunPct": 18.708240534521153,
+      "floatRotation": 0.005721820905920825,
+      "daysUp": 0,
+      "priorRunPct": -24.752475247524753,
       "extended": false,
       "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
+        "found": true,
+        "kind": "8-K",
+        "headline": "Sold unregistered shares (dilution) · Amended the charter or bylaws · Other material event (often FDA, clinical or contract news)",
+        "subject": "Sold unregistered shares (dilution) · Amended the charter or bylaws · Other material event (often FDA, clinical or contract news)",
+        "date": "2026-09-11"
       },
       "leads": [
-        "prior-session gainer"
+        "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.0%"
+          "detail": "5.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "96,519"
+          "ok": false,
+          "detail": "4,747"
         },
         {
           "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
+          "ok": true,
+          "detail": "8-K"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.65"
+          "detail": "$4.02"
         },
         {
           "name": "Float <10M",
           "ok": true,
-          "detail": "2.3M"
+          "detail": "0.8M"
         }
       ],
       "passed": 3,
@@ -207,10 +411,10 @@
       "preMarketChangePct": 21.78,
       "prevClose": 1.0100180653637707,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 14, 2026 6:46 AM ET",
-      "preMarketVolume": 4051894,
-      "preMarketDollarVolume": 4983829.62,
-      "relVolume": 13.651152056654437,
+      "lastTradeAt": "Sep 14, 2026 7:40 AM ET",
+      "preMarketVolume": 4439364,
+      "preMarketDollarVolume": 5460417.72,
+      "relVolume": 14.95656919920355,
       "avgVolume50": 296817,
       "sharesOutstanding": 55013689,
       "marketCap": 67666837.47,
@@ -221,7 +425,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.0736524685701408,
+      "floatRotation": 0.08069562468352195,
       "daysUp": 1,
       "priorRunPct": 3.8737864077669943,
       "extended": false,
@@ -244,7 +448,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "4,051,894"
+          "detail": "4,439,364"
         },
         {
           "name": "News catalyst",
@@ -263,142 +467,6 @@
         }
       ],
       "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "XHLD",
-      "name": "TEN Holdings Inc.",
-      "legalName": "TEN Holdings, Inc.",
-      "business": "Services-Business Services, NEC",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 13.24,
-      "preMarketChangePct": 5.666400638467685,
-      "prevClose": 12.53,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 6:37 AM ET",
-      "preMarketVolume": 2651,
-      "preMarketDollarVolume": 35099.24,
-      "relVolume": 0.0005643785385427325,
-      "avgVolume50": 4697202,
-      "sharesOutstanding": 11977443,
-      "marketCap": 158581345.32,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 253,
-      "float": {
-        "shares": 11977443,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-05"
-      },
-      "floatRotation": 0.0002213327168411488,
-      "daysUp": 5,
-      "priorRunPct": 35.75297941495123,
-      "extended": true,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "2,651"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$13.24"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "12.0M"
-        }
-      ],
-      "passed": 1,
-      "quality": "low"
-    },
-    {
-      "symbol": "OIO",
-      "name": "OIO Group Ordinary Shares",
-      "legalName": "OIO Group",
-      "business": "Refuse Systems",
-      "sector": "Utilities",
-      "preMarketPrice": 2.0899,
-      "preMarketChangePct": 5.020100502512568,
-      "prevClose": 1.99,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 14, 2026 6:22 AM ET",
-      "preMarketVolume": 1459,
-      "preMarketDollarVolume": 3049.1641,
-      "relVolume": 0.013199200267783638,
-      "avgVolume50": 110537,
-      "sharesOutstanding": 348022108,
-      "marketCap": 727331403.5092,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 25,
-      "float": {
-        "shares": 348022108,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 0.000004192262406502061,
-      "daysUp": 2,
-      "priorRunPct": 17.058823529411768,
-      "extended": true,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "1,459"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.09"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "348.0M"
-        }
-      ],
-      "passed": 1,
       "quality": "low"
     }
   ]
