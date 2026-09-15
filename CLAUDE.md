@@ -96,7 +96,13 @@ where:
   smallcapscreener.net for $11.86") is trustworthy. A wrong $5.30 was quoted
   once because of this.
 
-## Track record (`data/history.json`, `lib/history.ts`)
+## Track record (`data/history.json`, `lib/history.ts`) — on the page: "Historical performance"
+
+Page order since 2026-09-15 (Ivan's call): shortlist and watchlist first, then
+"How it screens" open underneath, then "Historical performance" at the bottom
+behind a button. One number per name: the run from the flag price to the high
+of the day. The "flagged at +x% @ $p" column was removed because a pre-market
+change next to an after-flag run read as two contradictory numbers.
 
 Every name that reaches the shortlist or watchlist is recorded as it looked when
 first flagged, then scored after the close on that session: open, noon (last
