@@ -28,8 +28,13 @@
   // Secret, added in the dashboard: GITHUB_DISPATCH_TOKEN.
 
   "workers_dev": true,
-  "observability": { "enabled": true }
-  // To attach a custom domain, add it here so the config stays the record of
-  // where this is published and a redeploy re-asserts it:
-  // "routes": [{ "pattern": "premarket.example.com", "custom_domain": true }]
+  "observability": { "enabled": true },
+
+  // smallcapscreener.net, registered through Cloudflare Registrar on
+  // 2026-09-15 ($11.86/year, auto-renew on). Kept here so the config stays the
+  // record of where this is published and every deploy re-asserts it.
+  "routes": [
+    { "pattern": "smallcapscreener.net", "custom_domain": true },
+    { "pattern": "www.smallcapscreener.net", "custom_domain": true }
+  ]
 }

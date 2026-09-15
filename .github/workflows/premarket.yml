@@ -134,7 +134,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           NOTIFY_ISSUE: '2'
-          SITE_URL: https://ivan-getiashvili.github.io/small-cap-stock-screener/
+          SITE_URL: https://smallcapscreener.net/
         run: npm run notify
 
       - name: Persist the one-shot reminder flag
