@@ -85,6 +85,16 @@ where:
   GitHub Pages keeps serving until the domain is on; once Cloudflare serves, the
   repo can go private and the Pages job comes out of the workflow.
 - `npm run build:pages` is the one build script for CI and Cloudflare.
+- **Domain: https://smallcapscreener.net** (+ www), bought 2026-09-15 through
+  Cloudflare Registrar with Ivan's go-ahead ($11.86/year, auto-renew on, WHOIS
+  privacy on; `.us` was rejected because it demands a US-nexus declaration and
+  public WHOIS). Attached as custom domains in `wrangler.jsonc`; verified with a
+  valid certificate the same day. Fallback: the workers.dev address. The
+  notifications (`SITE_URL`) and the Claude scheduled task point at the domain.
+- **Registrar search gotcha:** the keyword results page's text comes through
+  with prices shifted by one row; only the exact-name search ("Buy now:
+  smallcapscreener.net for $11.86") is trustworthy. A wrong $5.30 was quoted
+  once because of this.
 
 ## Track record (`data/history.json`, `lib/history.ts`)
 
