@@ -44,6 +44,10 @@
   .bar .spacer{flex:1}
 
   .panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:2px 0 14px}
+  #criteria{margin-top:36px}
+  .hist-sec{margin-top:28px}
+  .sec-h{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin:0 0 10px}
+  .sec-h .hint{color:var(--faint);font-size:12.5px}
   .panel h2{margin:0 0 4px;font-size:14px;font-weight:650;letter-spacing:.01em;color:var(--ink);text-transform:none}
   .panel .lede{color:var(--dim);font-size:13px;margin:0 0 12px}
   .crit{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:12px 0 6px}
@@ -129,13 +133,12 @@
   .tday-h b{color:var(--dim);font-weight:600}
   .src{padding:1px 7px;border-radius:99px;font:10.5px/1.6 var(--mono);text-transform:uppercase;letter-spacing:.06em;
        background:#1c222c;color:var(--dim);margin-left:6px}
-  .trow{display:grid;grid-template-columns:76px minmax(0,1fr) 124px minmax(120px,1.5fr) 64px;gap:10px;align-items:center;
+  .trow{display:grid;grid-template-columns:76px minmax(0,1fr) minmax(140px,1.6fr) 64px;gap:10px;align-items:center;
         padding:6px 2px;border-bottom:1px solid var(--line);font-size:12.5px}
   .trow:last-child{border-bottom:0}
   .trow .tk{font:650 13px/1.2 var(--mono)}
   .trow.watch .tk{color:var(--dim)}
   .trow .nm{color:var(--faint);font-size:11.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .trow .fl{color:var(--dim);font:11.5px/1.3 var(--mono);text-align:right;white-space:nowrap}
   .run{position:relative;height:14px}
   .run .zero{position:absolute;top:0;bottom:0;width:1px;background:#3a4252}
   .run .up{position:absolute;top:3px;height:8px;background:var(--blue);border-radius:0 4px 4px 0}
@@ -144,21 +147,15 @@
   .trow .v{font:600 12.5px/1.2 var(--mono);text-align:right;font-variant-numeric:tabular-nums}
   .trow .v.pos{color:var(--blue)} .trow .v.neg{color:var(--red)}
   .trow .pend{grid-column:3/-1;color:var(--faint);font-size:11.5px;text-align:right}
-  /* The flagged price and the bar share a wrapper that is invisible to the grid
-     on wide screens and becomes the second line on a phone. */
-  .trow .line2{display:contents}
   @media(max-width:640px){
     .status{text-align:left}
     .tday-h{flex-wrap:wrap;gap:2px 10px}
     .tday-h b{white-space:nowrap}
-    /* Two lines per name: ticker · company · run on the first; the flagged
-       price and the bar on the second. */
+    /* Two lines per name: ticker · company · run on the first, the bar on the second. */
     .trow{grid-template-columns:72px minmax(0,1fr) 60px;row-gap:5px}
     .trow .v{grid-column:3;grid-row:1}
-    .trow .line2{display:flex;grid-column:1/-1;grid-row:2;align-items:center;gap:10px}
-    .trow .fl{flex:none;text-align:left;font-size:11px}
-    .trow .run{flex:1}
-    .trow .pend{flex:1;text-align:left}
+    .trow .run{grid-column:1/-1;grid-row:2}
+    .trow .pend{grid-column:1/-1;grid-row:2;text-align:left}
   }
 </style>
 
@@ -171,19 +168,24 @@
     <div class="status" id="status"></div>
   </header>
 
-  <nav class="bar" aria-label="Sections">
-    <button class="tog" id="tog-criteria" aria-expanded="false" aria-controls="criteria">How it screens <span class="chev"></span></button>
-    <button class="tog" id="tog-history" aria-expanded="false" aria-controls="history">Track record <span class="n" id="history-n" hidden></span><span class="chev"></span></button>
-    <span class="spacer"></span>
+  <nav class="bar" aria-label="Alerts">
     <button class="tog" id="alerts" hidden></button>
   </nav>
-
-  <section id="criteria" class="panel" hidden></section>
-  <section id="history" class="panel" hidden></section>
 
   <div id="banner"></div>
   <div id="shortlist"></div>
   <div id="watchlist"></div>
+
+  <section id="criteria" class="panel"></section>
+
+  <section class="hist-sec" id="hist-sec">
+    <div class="sec-h">
+      <button class="tog" id="tog-history" aria-expanded="false" aria-controls="history">Historical performance <span class="n" id="history-n" hidden></span><span class="chev"></span></button>
+      <span class="hint" id="history-hint"></span>
+    </div>
+    <div id="history" class="panel" hidden></div>
+  </section>
+
   <footer id="foot"></footer>
 </div>
 
@@ -358,7 +360,7 @@ function criteria(){
 function foot(){
   document.getElementById('foot').innerHTML = `
     Sources: Nasdaq public quote and screener endpoints; SEC EDGAR for float, share count and 8-K filings.
-    Data may be delayed. <b>Not investment advice.</b> A candidate list, not a trading system — the track record shows what these names actually do.`;
+    Data may be delayed. <b>Not investment advice.</b> A candidate list, not a trading system — the historical performance below shows what these names actually do.`;
 }
 
 /** A panel that opens on its button and remembers the choice on this device. */
@@ -438,11 +440,11 @@ function panel(btnId, panelId, key){
  */
 function renderHistory(){
   const mount = document.getElementById('history');
-  const tog = document.getElementById('tog-history');
-  if (!mount || !H || !H.days || (D && D.isDemo)){ tog.hidden = true; return; }
+  const sec = document.getElementById('hist-sec');
+  if (!mount || !H || !H.days || (D && D.isDemo)){ sec.hidden = true; return; }
   const days = Object.values(H.days).filter(d => d.names && d.names.length)
     .sort((a, b) => b.date.localeCompare(a.date));
-  if (!days.length){ tog.hidden = true; return; }
+  if (!days.length){ sec.hidden = true; return; }
 
   const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
   const sgn = v => (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(Math.abs(v) >= 100 ? 0 : 1) + '%';
@@ -469,8 +471,9 @@ function renderHistory(){
   const pos = v => ((Math.max(-maxDn, Math.min(maxUp, v)) + maxDn) / span) * 100;
 
   mount.replaceChildren();
-  mount.appendChild(el('h2', null, 'Track record'));
   mount.appendChild(el('div', 'lede', 'How far every flagged name ran from the price the list showed to the high of that session. Scored after the close; nothing is filtered out.'));
+  const hint = document.getElementById('history-hint');
+  if (hint && runs.length) hint.textContent = `${allScored.length} names over ${new Set(allScored.map(x => x.firstSeenAt.slice(0,10))).size} sessions · median run to the high ${sgn(med(runs))}`;
 
   if (runs.length){
     const tiles = el('div', 'tiles');
@@ -501,27 +504,24 @@ function renderHistory(){
       const row = el('div', 'trow' + (x.list === 'watchlist' ? ' watch' : ''));
       row.appendChild(el('div', 'tk', x.symbol));
       row.appendChild(el('div', 'nm', [x.legalName, x.business].filter(Boolean).join(' · ')));
-      const line2 = el('div', 'line2');
-      line2.appendChild(el('div', 'fl', `${sgn(x.preMarketChangePct)} @ $${x.preMarketPrice.toFixed(2)}`));
       if (scored(x)){
         const v = run(x);
         const bar = el('div', 'run');
         bar.setAttribute('role', 'img');
-        bar.setAttribute('aria-label', `${x.symbol}: high of the day ${sgn(v)} from the flag price`);
+        bar.setAttribute('aria-label', `${x.symbol}: high of the day ${sgn(v)} from the price shown when flagged, $${x.preMarketPrice.toFixed(2)}`);
+        bar.title = `flagged at $${x.preMarketPrice.toFixed(2)} · high $${x.performance.high.toFixed(2)}`;
         const z = pos(0);
         const zero = el('div', 'zero'); zero.style.left = z + '%'; bar.appendChild(zero);
         if (v >= 0){ const up = el('div', 'up'); up.style.left = `calc(${z}% + 1px)`; up.style.width = `max(2px, calc(${pos(v) - z}% - 1px))`; bar.appendChild(up); }
         else { const dn = el('div', 'dn'); const l = pos(v); dn.style.left = l + '%'; dn.style.width = `max(2px, calc(${z - l}% - 1px))`; bar.appendChild(dn); }
         if (v > maxUp){ const cap = el('div', 'cap', '▸'); cap.style.right = '-11px'; bar.appendChild(cap); }
         if (-v > maxDn){ const cap = el('div', 'cap', '◂'); cap.style.left = '-11px'; bar.appendChild(cap); }
-        line2.appendChild(bar);
-        row.appendChild(line2);
+        row.appendChild(bar);
         const val = el('div', 'v ' + (v >= 0 ? 'pos' : 'neg'), sgn(v));
-        val.title = `high $${x.performance.high.toFixed(2)}`;
+        val.title = `flagged at $${x.preMarketPrice.toFixed(2)} · high $${x.performance.high.toFixed(2)}`;
         row.appendChild(val);
       } else {
-        line2.appendChild(el('div', 'pend', day.source === 'live' ? 'scored after the close' : 'no session data'));
-        row.appendChild(line2);
+        row.appendChild(el('div', 'pend', day.source === 'live' ? 'scored after the close' : 'no session data'));
       }
       mount.appendChild(row);
     }
@@ -530,8 +530,7 @@ function renderHistory(){
 
 render();
 renderHistory();
-if (D) panel('tog-criteria', 'criteria', 'scs-panel-criteria');
-if (!document.getElementById('tog-history').hidden) panel('tog-history', 'history', 'scs-panel-history');
+if (!document.getElementById('hist-sec').hidden) panel('tog-history', 'history', 'scs-panel-history');
 
 /**
  * Keep the page current on its own.
