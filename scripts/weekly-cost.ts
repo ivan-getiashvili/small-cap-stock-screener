@@ -126,7 +126,8 @@ async function main() {
         const exp = expiries.find((e) => dte(e) >= minDays && (kind !== 'same day' || dte(e) === 0));
         if (!exp) continue;
         const c = contracts.filter((x) => x.expiry === exp).sort((a, b) => a.strike - b.strike)[0];
-        const qs = byContract.get(c.sym)!.filter((q) => q.ts <= nyMs(p.date, 601) && q.bid > 0 && q.ask >= q.bid).sort((a, b) => a.ts - b.ts);
+        // The 10:00 sample is stamped 10:00:00; the next one, 10:01:00, is not "at 10:00".
+        const qs = byContract.get(c.sym)!.filter((q) => q.ts < nyMs(p.date, 601) && q.bid > 0 && q.ask >= q.bid).sort((a, b) => a.ts - b.ts);
         const q = qs.at(-1);
         if (!q) { noQuote++; continue; }
         const expBar = [...bars].filter((b) => b.date <= exp).at(-1);
