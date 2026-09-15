@@ -1,173 +1,189 @@
-<title>Pre-Market Shortlist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=JetBrains+Mono:wght@400..700&display=swap">
 <style>
   :root{
-    --bg:#0b0e13; --panel:#12161e; --panel2:#171c26; --line:#232a36;
-    --ink:#e9edf5; --dim:#98a3b6; --faint:#66718a;
+    --bg:#0a0d12; --panel:#11151c; --panel2:#161b24; --line:#212834; --line2:#2c3544;
+    --ink:#e8ecf4; --dim:#98a3b7; --faint:#6b768c;
     --go:#3fd07f; --go-bg:rgba(63,208,127,.10); --warn:#f0b849; --no:#5b6474; --hot:#ff6b6b;
-    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
-    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;
+    --blue:#3987e5; --red:#e66767;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+    --sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
-  .wrap{max-width:940px;margin:0 auto;padding:26px 18px 70px}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 var(--sans);-webkit-font-smoothing:antialiased;
+       font-feature-settings:"tnum" 1,"cv11" 1}
+  .wrap{max-width:920px;margin:0 auto;padding:22px 18px 60px}
   a{color:#7fb2ff}
+  button{font-family:inherit}
 
-  header{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-start;justify-content:space-between;margin-bottom:20px}
-  h1{margin:0;font-size:23px;font-weight:650;letter-spacing:-.02em}
-  .sub{color:var(--faint);font-size:13px;margin-top:3px}
-  .status{text-align:right;font:12px/1.6 var(--mono);color:var(--dim)}
-  .pill{display:inline-block;padding:3px 10px;border-radius:99px;font:11px/1.6 var(--mono);
-        text-transform:uppercase;letter-spacing:.07em}
+  /* ---- Header + toolbar ---------------------------------------------------- */
+  header.top{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:flex-end;justify-content:space-between;
+             padding-bottom:16px;border-bottom:1px solid var(--line)}
+  h1{margin:0;font-size:22px;font-weight:650;letter-spacing:-.02em}
+  .sub{color:var(--faint);font-size:13px;margin-top:4px}
+  .status{text-align:right;font:12px/1.75 var(--mono);color:var(--dim)}
+  .pill{display:inline-block;padding:3px 10px;border-radius:99px;font:600 11px/1.6 var(--mono);
+        text-transform:uppercase;letter-spacing:.07em;vertical-align:middle}
   .pill.live{background:var(--go-bg);color:var(--go)}
-  .pill.shut{background:#222835;color:var(--faint)}
+  .pill.shut{background:#1c222c;color:var(--faint)}
+  #age{color:var(--faint)}
 
-  .banner{border-radius:10px;padding:14px 16px;margin-bottom:22px;font-size:13.5px;line-height:1.6}
+  nav.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:12px 0 10px}
+  .tog{appearance:none;border:1px solid var(--line2);background:var(--panel);color:var(--dim);
+       font:500 12.5px/1 var(--sans);padding:8px 12px;border-radius:99px;cursor:pointer;
+       display:inline-flex;align-items:center;gap:7px;transition:border-color .12s,color .12s,background .12s}
+  .tog:hover{color:var(--ink);border-color:#3d495c}
+  .tog[aria-expanded="true"]{background:var(--panel2);color:var(--ink);border-color:#3d495c}
+  .tog .chev{display:inline-block;width:8px;height:8px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;
+             transform:rotate(45deg) translateY(-2px);transition:transform .15s;opacity:.7}
+  .tog[aria-expanded="true"] .chev{transform:rotate(225deg) translateY(-2px)}
+  .tog .n{font:600 11px/1 var(--mono);color:var(--faint);background:#1c222c;padding:3px 6px;border-radius:99px}
+  .tog.on{color:var(--go);border-color:rgba(63,208,127,.35)}
+  .tog.blocked{color:var(--warn)}
+  .bar .spacer{flex:1}
+
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:2px 0 14px}
+  .panel h2{margin:0 0 4px;font-size:14px;font-weight:650;letter-spacing:.01em;color:var(--ink);text-transform:none}
+  .panel .lede{color:var(--dim);font-size:13px;margin:0 0 12px}
+  .crit{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:12px 0 6px}
+  .crit div{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+  .crit b{display:block;font:600 14px/1.35 var(--mono);color:var(--go)}
+  .crit small{color:var(--faint);font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+  .panel p{margin:10px 0 0;color:var(--dim);font-size:13px;line-height:1.6}
+  .panel p b{color:var(--ink);font-weight:600}
+
+  /* ---- Banner + lists ------------------------------------------------------ */
+  .banner{border-radius:12px;padding:14px 16px;margin:6px 0 18px;font-size:13.5px;line-height:1.6}
   .banner.wait{background:rgba(240,184,73,.08);border:1px solid rgba(240,184,73,.25);color:#e8c37a}
   .banner.none{background:var(--panel);border:1px solid var(--line);color:var(--dim)}
   .banner.demo{background:rgba(99,162,255,.08);border:1px solid rgba(99,162,255,.3);color:#a9c9ff}
 
-  h2{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--dim);margin:28px 0 12px;font-weight:650}
+  h2{font-size:12px;text-transform:uppercase;letter-spacing:.09em;color:var(--dim);margin:26px 0 12px;font-weight:650}
   h2 em{font-style:normal;color:var(--faint);text-transform:none;letter-spacing:0;font-weight:400}
 
-  /* The shortlist is the product; the watchlist is context. The page should
-     make that obvious before a single number is read. */
-  .primary{margin-bottom:8px}
-  .primary h2{font-size:15px;color:var(--go);letter-spacing:.04em;text-transform:none;margin-bottom:4px}
-  .primary .lede{color:var(--dim);font-size:13px;margin-bottom:16px}
+  .primary{margin:8px 0 6px}
+  .primary h2{font-size:15px;color:var(--go);letter-spacing:.02em;text-transform:none;margin:10px 0 3px}
+  .primary .lede{color:var(--dim);font-size:13px;margin-bottom:14px}
   .rank{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;
-        border-radius:7px;background:var(--go);color:#08130c;font:700 13px/1 var(--mono);margin-right:9px}
+        border-radius:7px;background:var(--go);color:#08130c;font:700 12.5px/1 var(--mono);margin-right:9px;vertical-align:3px}
 
-  .divider{display:flex;align-items:center;gap:14px;margin:40px 0 18px}
+  .divider{display:flex;align-items:center;gap:14px;margin:36px 0 16px}
   .divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--line)}
   .divider span{color:var(--faint);font:11px/1 var(--mono);text-transform:uppercase;letter-spacing:.12em;white-space:nowrap}
 
-  /* Demoted: compact rows, muted, no card chrome. */
-  .secondary{opacity:.72}
+  .secondary{opacity:.75}
   .secondary:hover{opacity:1}
-  .secondary h2{color:var(--faint)}
-  .mini{display:grid;grid-template-columns:auto 1fr auto auto;gap:10px;align-items:center;
-        padding:10px 13px;border:1px solid var(--line);border-radius:9px;background:var(--panel);margin-bottom:7px}
-  .mini .mt{font:650 15px/1.2 var(--mono)}
+  .secondary h2{color:var(--faint);margin-top:0}
+  .mini{display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;gap:12px;align-items:center;
+        padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel);margin-bottom:7px}
+  .mini .mt{font:650 14.5px/1.2 var(--mono)}
   .mini .mn{color:var(--faint);font-size:11.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .mini .mc{font:650 14px/1.2 var(--mono);color:var(--go)}
-  .mini .mf{font:11.5px/1.3 var(--mono);color:var(--dim);text-align:right}
+  .mini .mc{font:600 14px/1.2 var(--mono);color:var(--go)}
+  .mini .mf{font:11.5px/1.35 var(--mono);color:var(--dim);text-align:right}
   .mini .miss{display:block;color:var(--warn);font-size:10.5px}
 
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:12px}
-  .card.top{border-color:rgba(63,208,127,.35);box-shadow:0 0 0 1px rgba(63,208,127,.08) inset}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:12px}
+  .card.top{border-color:rgba(63,208,127,.35);box-shadow:0 0 0 1px rgba(63,208,127,.08) inset,0 12px 40px -24px rgba(63,208,127,.35)}
   .row1{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;justify-content:space-between}
   .tick{font:650 21px/1.2 var(--mono);letter-spacing:.01em}
-  .co{color:var(--faint);font-size:12.5px;max-width:340px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .chg{font:650 21px/1.2 var(--mono);color:var(--go)}
+  .co{color:var(--faint);font-size:12.5px;max-width:360px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .biz{color:var(--dim);font-size:12px;margin-top:2px}
+  .chg{font:650 22px/1.2 var(--mono);color:var(--go)}
   .chg.big{color:var(--hot)}
-  .px{font:13px/1.2 var(--mono);color:var(--dim)}
-
+  .px{font:12.5px/1.2 var(--mono);color:var(--dim)}
   .nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:1px;background:var(--line);
-        border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:13px 0}
-  .nums div{background:var(--panel2);padding:8px 10px}
+        border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:13px 0}
+  .nums div{background:var(--panel2);padding:9px 11px}
   .nums b{display:block;font:600 15px/1.3 var(--mono)}
   .nums small{color:var(--faint);font-size:10.5px;text-transform:uppercase;letter-spacing:.05em}
-
-  .why{margin:11px 0 0;font-size:13px;color:var(--ink);background:rgba(63,208,127,.06);
-       border:1px solid rgba(63,208,127,.18);border-radius:8px;padding:9px 12px}
-  .why b{font-family:var(--mono);font-weight:650}
   .nums b.go{color:var(--go)} .nums b.hot{color:var(--hot)} .nums b.warn{color:var(--warn)}
+  .why{margin:11px 0 0;font-size:13px;color:var(--ink);background:rgba(63,208,127,.06);
+       border:1px solid rgba(63,208,127,.18);border-radius:10px;padding:9px 12px}
+  .why b{font-family:var(--mono);font-weight:600}
   .checks{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
-  .chk{font:11.5px/1.7 var(--sans);padding:2px 9px;border-radius:6px;background:#222835;color:var(--no)}
+  .chk{font:11.5px/1.7 var(--sans);padding:2px 9px;border-radius:6px;background:#1c222c;color:var(--no)}
   .chk.ok{background:var(--go-bg);color:var(--go)}
-  .biz{color:var(--dim);font-size:12px;margin-top:2px}
   .ext{margin-top:9px;font-size:12.5px;line-height:1.55;color:#e8c37a;
-       background:rgba(240,184,73,.07);border:1px solid rgba(240,184,73,.25);border-radius:8px;padding:9px 12px}
-  .ext b{color:#f0b849}
-  .cat{margin-top:11px;font-size:13px;color:var(--dim);border-left:2px solid var(--line);padding-left:11px}
+       background:rgba(240,184,73,.07);border:1px solid rgba(240,184,73,.25);border-radius:10px;padding:9px 12px}
+  .ext b{color:var(--warn)}
+  .cat{margin-top:11px;font-size:13px;color:var(--dim);border-left:2px solid var(--line2);padding-left:11px}
   .cat b{color:var(--ink)}
 
-  footer{margin-top:38px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;line-height:1.7;color:var(--faint)}
+  footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;line-height:1.7;color:var(--faint)}
   footer b{color:var(--dim)}
 
-  /* ---- Track record ---------------------------------------------------------
-     Up/down marks use the validated diverging pair (blue/red dark steps, CVD
-     dE 19.2). The page's own green/red failed deuteranopia at dE 4.4, so they
-     are not used for marks here; position on the axis and signed numbers carry
-     the direction as well, so colour is never the only channel. */
-  .hist{margin-top:44px}
-  .hist h2{font-size:15px;color:var(--ink);letter-spacing:.02em;text-transform:none;margin-bottom:4px}
-  .hist .lede{color:var(--dim);font-size:13px;margin-bottom:16px}
-  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--line);
-         border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:18px}
-  .tiles div{background:var(--panel);padding:12px 14px}
-  .tiles b{display:block;font:600 22px/1.2 var(--sans)}
-  .tiles small{color:var(--faint);font-size:11px}
-  .keyrow{display:flex;flex-wrap:wrap;gap:16px;align-items:center;color:var(--dim);font-size:12px;margin:0 0 12px}
-  .keyrow i{display:inline-block;vertical-align:middle;margin-right:6px}
-  .sw{width:14px;height:8px;border-radius:2px}
-  .dotkey{width:10px;height:10px;border-radius:50%;background:var(--ink);box-shadow:0 0 0 2px var(--panel)}
-  .tickkey{width:2px;height:12px;background:var(--ink)}
-  .hday{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:12px}
-  .hday-h{display:flex;gap:10px;align-items:baseline;justify-content:space-between;margin-bottom:6px}
-  .hday-h b{font:600 14px/1.3 var(--sans)}
-  .hday-h span{color:var(--faint);font:11px/1.3 var(--mono)}
+  /* ---- Track record (compact) ----------------------------------------------
+     One number per name: the run from the flag price to the high of the day.
+     Marks use the validated diverging pair (blue/red, CVD dE 19.2); the signed
+     number sits next to every bar, so colour is never the only channel. */
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);
+         border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:12px 0 14px}
+  .tiles div{background:var(--panel2);padding:12px 14px}
+  .tiles b{display:block;font:600 24px/1.2 var(--mono)}
+  .tiles small{color:var(--faint);font-size:11.5px}
+  .keyrow{display:flex;flex-wrap:wrap;gap:14px;align-items:center;color:var(--faint);font-size:11.5px;margin:0 0 4px}
+  .keyrow i{display:inline-block;vertical-align:middle;margin-right:6px;width:14px;height:8px;border-radius:2px}
+  .tday-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font:12px/1.4 var(--mono);color:var(--faint);
+          padding:14px 2px 4px;border-bottom:1px solid var(--line)}
+  .tday-h b{color:var(--dim);font-weight:600}
   .src{padding:1px 7px;border-radius:99px;font:10.5px/1.6 var(--mono);text-transform:uppercase;letter-spacing:.06em;
-       background:#222835;color:var(--dim)}
-  .hrow{display:grid;grid-template-columns:minmax(120px,1.3fr) minmax(90px,.8fr) minmax(160px,2.2fr) repeat(4,minmax(80px,.55fr));
-        gap:10px;align-items:center;padding:8px 2px;border-top:1px solid var(--line);font-size:12.5px;outline:none}
-  .hrow:first-of-type{border-top:0}
-  .hrow.watch{opacity:.62}
-  .hrow:hover,.hrow:focus-visible{background:var(--panel2);opacity:1}
-  .hrow .tk{font:650 14px/1.2 var(--mono)}
-  .hrow .bz{color:var(--faint);font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .hrow .fl{color:var(--dim);font:12px/1.3 var(--mono)}
-  .hrow .v{font:12.5px/1.2 var(--mono);text-align:right;font-variant-numeric:tabular-nums;color:var(--ink)}
-  .hrow .v small{display:block;color:var(--faint);font:10px/1.3 var(--sans)}
-  .hcols{border-top:0;color:var(--faint);font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;padding-top:2px}
-  .hcols .v{color:var(--faint);font:10.5px/1.2 var(--sans)}
-  .rng{position:relative;height:20px;margin:0 12px}
-  .rng .zero{position:absolute;top:1px;bottom:1px;width:1px;background:#3a4252}
-  .rng .up,.rng .dn{position:absolute;top:6px;height:8px}
-  .rng .up{background:#3987e5;border-radius:0 4px 4px 0}
-  .rng .dn{background:#e66767;border-radius:4px 0 0 4px}
-  .rng .cl{position:absolute;top:4px;width:12px;height:12px;margin-left:-6px;border-radius:50%;
-           box-shadow:0 0 0 2px var(--panel)}
-  .hrow:hover .rng .cl{box-shadow:0 0 0 2px var(--panel2)}
-  .rng .op{position:absolute;top:2px;bottom:2px;width:2px;margin-left:-1px;background:var(--ink)}
-  .rng .cap{position:absolute;top:3px;font:10px/1 var(--mono);color:var(--faint)}
-  .pend{color:var(--faint);font-size:11.5px}
-  .axis{position:relative;height:14px;color:var(--faint);font:10px/1 var(--mono)}
-  .axis span{position:absolute;transform:translateX(-50%);white-space:nowrap}
-  .tip{position:fixed;z-index:20;pointer-events:none;background:#1b212c;border:1px solid var(--line);border-radius:8px;
-       padding:9px 11px;font:12px/1.5 var(--sans);color:var(--dim);box-shadow:0 6px 24px rgba(0,0,0,.45);max-width:260px}
-  .tip b{color:var(--ink);font:600 13px/1.4 var(--mono)}
-  .tip .r{display:flex;justify-content:space-between;gap:14px}
-  .tip .r span:last-child{color:var(--ink);font-family:var(--mono)}
-  /* Narrow screens: name, flag and range bar each take a full line, and the
-     four results sit in a labelled 2×2 block. The first version squeezed
-     six columns into two, and at 375px the numbers ran off the card and were
-     clipped — a value cut off by its own layout is worse than no value. */
-  @media(max-width:720px){
-    .hrow{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:6px;column-gap:8px;padding:10px 2px}
-    .hrow>div:nth-child(1),.hrow>div:nth-child(2),.hrow .rngcell{grid-column:1/-1}
-    .hrow .v{text-align:left}
-    .hrow .v::before{content:attr(data-label);display:block;color:var(--faint);
-                     font:10px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.04em}
-    .hcols{display:none}
-    .hday-h{flex-wrap:wrap}
-    .floating-note{position:static!important;display:block;margin:10px 18px!important;max-width:none!important}
+       background:#1c222c;color:var(--dim);margin-left:6px}
+  .trow{display:grid;grid-template-columns:76px minmax(0,1fr) 124px minmax(120px,1.5fr) 64px;gap:10px;align-items:center;
+        padding:6px 2px;border-bottom:1px solid var(--line);font-size:12.5px}
+  .trow:last-child{border-bottom:0}
+  .trow .tk{font:650 13px/1.2 var(--mono)}
+  .trow.watch .tk{color:var(--dim)}
+  .trow .nm{color:var(--faint);font-size:11.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .trow .fl{color:var(--dim);font:11.5px/1.3 var(--mono);text-align:right;white-space:nowrap}
+  .run{position:relative;height:14px}
+  .run .zero{position:absolute;top:0;bottom:0;width:1px;background:#3a4252}
+  .run .up{position:absolute;top:3px;height:8px;background:var(--blue);border-radius:0 4px 4px 0}
+  .run .dn{position:absolute;top:3px;height:8px;background:var(--red);border-radius:4px 0 0 4px}
+  .run .cap{position:absolute;top:0;font:10px/14px var(--mono);color:var(--faint)}
+  .trow .v{font:600 12.5px/1.2 var(--mono);text-align:right;font-variant-numeric:tabular-nums}
+  .trow .v.pos{color:var(--blue)} .trow .v.neg{color:var(--red)}
+  .trow .pend{grid-column:3/-1;color:var(--faint);font-size:11.5px;text-align:right}
+  /* The flagged price and the bar share a wrapper that is invisible to the grid
+     on wide screens and becomes the second line on a phone. */
+  .trow .line2{display:contents}
+  @media(max-width:640px){
+    .status{text-align:left}
+    .tday-h{flex-wrap:wrap;gap:2px 10px}
+    .tday-h b{white-space:nowrap}
+    /* Two lines per name: ticker · company · run on the first; the flagged
+       price and the bar on the second. */
+    .trow{grid-template-columns:72px minmax(0,1fr) 60px;row-gap:5px}
+    .trow .v{grid-column:3;grid-row:1}
+    .trow .line2{display:flex;grid-column:1/-1;grid-row:2;align-items:center;gap:10px}
+    .trow .fl{flex:none;text-align:left;font-size:11px}
+    .trow .run{flex:1}
+    .trow .pend{flex:1;text-align:left}
   }
 </style>
 
 <div class="wrap">
-  <header>
+  <header class="top">
     <div>
       <h1>Pre-Market Shortlist</h1>
-      <div class="sub">Small-cap gappers screened on five momentum criteria, before the bell.</div>
+      <div class="sub">Small-cap momentum candidates, screened before the bell.</div>
     </div>
     <div class="status" id="status"></div>
   </header>
 
+  <nav class="bar" aria-label="Sections">
+    <button class="tog" id="tog-criteria" aria-expanded="false" aria-controls="criteria">How it screens <span class="chev"></span></button>
+    <button class="tog" id="tog-history" aria-expanded="false" aria-controls="history">Track record <span class="n" id="history-n" hidden></span><span class="chev"></span></button>
+    <span class="spacer"></span>
+    <button class="tog" id="alerts" hidden></button>
+  </nav>
+
+  <section id="criteria" class="panel" hidden></section>
+  <section id="history" class="panel" hidden></section>
+
   <div id="banner"></div>
   <div id="shortlist"></div>
   <div id="watchlist"></div>
-  <div id="history"></div>
   <footer id="foot"></footer>
 </div>
 
@@ -183,15 +199,17 @@ const f = {
   mult: n => n == null ? '—' : Number(n).toFixed(1) + '×',
   time: iso => new Date(iso).toLocaleString(undefined, {dateStyle:'medium', timeStyle:'short'}),
 };
+// Company names, business lines and headlines come from outside sources.
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
 function mini(r){
   const failed = (r.checks||[]).filter(c => !c.ok).map(c => c.name);
   return `<div class="mini">
-    <span class="mt">${r.symbol}</span>
-    <span class="mn">${r.legalName||r.name||''}${r.business? ' · '+r.business : ''}</span>
+    <span class="mt">${esc(r.symbol)}</span>
+    <span class="mn">${esc(r.legalName||r.name||'')}${r.business? ' · '+esc(r.business) : ''}</span>
     <span class="mc">${f.pct(r.preMarketChangePct)}</span>
     <span class="mf">${f.usd(r.preMarketPrice)} · ${f.sh(r.preMarketVolume)} sh
-      ${failed.length? `<span class="miss">missing: ${failed.join(', ')}</span>`:''}</span>
+      ${failed.length? `<span class="miss">missing: ${esc(failed.join(', '))}</span>`:''}</span>
   </div>`;
 }
 
@@ -221,12 +239,13 @@ function card(r, top, rank){
   if (r.preMarketHigh && r.preMarketLow)
     why.push(`pre-market range <b>${f.usd(r.preMarketLow)}–${f.usd(r.preMarketHigh)}</b>`);
 
+  const name = esc(r.legalName||r.name||'');
   return `<div class="card ${top?'top':''}">
     <div class="row1">
       <div>
-        ${rank ? `<span class="rank">${rank}</span>` : ''}<span class="tick">${r.symbol}</span>
-        <div class="co" title="${(r.legalName||r.name||'').replace(/"/g,'&quot;')}">${r.legalName||r.name||''}</div>
-        ${r.business ? `<div class="biz">${r.business}</div>` : ''}
+        ${rank ? `<span class="rank">${rank}</span>` : ''}<span class="tick">${esc(r.symbol)}</span>
+        <div class="co" title="${name}">${name}</div>
+        ${r.business ? `<div class="biz">${esc(r.business)}</div>` : ''}
       </div>
       <div style="text-align:right">
         <div class="chg ${r.preMarketChangePct>=50?'big':''}">${f.pct(r.preMarketChangePct)}</div>
@@ -243,20 +262,33 @@ function card(r, top, rank){
     <div class="nums">${nums}</div>
 
     <div class="checks">${r.checks.map(c =>
-      `<span class="chk ${c.ok?'ok':''}">${c.ok?'✓':'✕'} ${c.name} · ${c.detail}</span>`).join('')}</div>
+      `<span class="chk ${c.ok?'ok':''}">${c.ok?'✓':'✕'} ${esc(c.name)} · ${esc(c.detail)}</span>`).join('')}</div>
 
     ${r.catalyst && r.catalyst.found
       ? `<div class="cat">
-           <b>${r.catalyst.subject || (r.catalyst.kind === '8-K' ? 'SEC filing' : 'News')}</b>
-           <span style="color:var(--faint)">· ${r.catalyst.kind === '8-K' ? 'SEC 8-K' : 'headline'} ${r.catalyst.date||''}</span>
+           <b>${esc(r.catalyst.subject || (r.catalyst.kind === '8-K' ? 'SEC filing' : 'News'))}</b>
+           <span style="color:var(--faint)">· ${r.catalyst.kind === '8-K' ? 'SEC 8-K' : 'headline'} ${esc(r.catalyst.date||'')}</span>
            ${r.catalyst.headline && r.catalyst.headline !== r.catalyst.subject
-              ? `<div style="margin-top:3px">${r.catalyst.headline}</div>` : ''}
+              ? `<div style="margin-top:3px">${esc(r.catalyst.headline)}</div>` : ''}
          </div>`
       : `<div class="cat">No catalyst found — the move has no visible reason behind it.</div>`}
     ${r.float && r.float.basis !== 'sec-public-float'
       ? `<div class="cat" style="border-color:rgba(240,184,73,.45)">Float shown is <b>shares outstanding</b>, an upper bound — the true tradable float is smaller, so rotation is understated.</div>`
-      : r.float ? `<div class="cat" style="color:var(--faint)">Float filed with the SEC ${r.float.asOf}. Annual figure — check it before sizing.</div>` : ''}
+      : r.float ? `<div class="cat" style="color:var(--faint)">Float filed with the SEC ${esc(r.float.asOf)}. Annual figure — check it before sizing.</div>` : ''}
   </div>`;
+}
+
+function lists(){
+  document.getElementById('shortlist').innerHTML = D.shortlist.length
+    ? `<div class="primary"><h2>Trade candidates — ${D.shortlist.length} name${D.shortlist.length>1?'s':''}</h2>
+       <div class="lede">These met every criterion. This is the list; everything below the line is context.</div></div>`
+      + D.shortlist.map((r,i) => card(r, true, i+1)).join('')
+    : '';
+  document.getElementById('watchlist').innerHTML = D.watchlist.length
+    ? `<div class="divider"><span>below the line — not trade candidates</span></div>
+       <div class="secondary"><h2>Watchlist <em>— four of five, the missing one is named</em></h2>`
+      + D.watchlist.map(r => mini(r)).join('') + `</div>`
+    : '';
 }
 
 function render(){
@@ -265,30 +297,21 @@ function render(){
 
   const open = /pre[\s-]?market/i.test(D.marketStatus||'');
   document.getElementById('status').innerHTML =
-    `<span class="pill ${open?'live':'shut'}">${D.marketStatus||'unknown'}</span><br>` +
-    `scanned ${f.time(D.generatedAt)}<br>${D.universeChecked.toLocaleString()} symbols scanned` +
-    (D.investigated ? `<br>${D.investigated.toLocaleString()} movers investigated` : '') +
-    (D.fetch && D.fetch.requested ? `<br>${D.fetch.answerRatePct.toFixed(0)}% of quotes answered` : '');
+    `<span class="pill ${open?'live':'shut'}">${esc(D.marketStatus||'unknown')}</span> <span id="age"></span><br>` +
+    `scanned ${f.time(D.generatedAt)}<br>${D.universeChecked.toLocaleString()} symbols` +
+    (D.investigated ? ` · ${D.investigated.toLocaleString()} investigated` : '') +
+    (D.fetch && D.fetch.requested ? ` · ${D.fetch.answerRatePct.toFixed(0)}% of quotes answered` : '');
 
+  criteria();
   const b = document.getElementById('banner');
   if (D.isDemo){
-    document.getElementById('banner').innerHTML =
+    b.innerHTML =
       `<div class="banner demo"><b>This is a replay, not today's list.</b>
        Every number below is the real pre-market state of a real stock on
-       <b>${D.demoDate}</b>, frozen at <b>${D.snapshotAtEt} ET</b> — the moment the live scan runs.
+       <b>${esc(D.demoDate)}</b>, frozen at <b>${esc(D.snapshotAtEt)} ET</b> — the moment the live scan runs.
        Nothing here is invented. It exists so you can see the shape of the product before a live
        session fills it in. Catalysts are not re-checked in a replay.</div>`;
-    document.getElementById('shortlist').innerHTML = D.shortlist.length
-    ? `<div class="primary"><h2>Trade candidates — ${D.shortlist.length} name${D.shortlist.length>1?'s':''}</h2>
-       <div class="lede">These met every criterion. This is the list; everything below the line is context.</div></div>`
-      + D.shortlist.map((r,i) => card(r, true, i+1)).join('')
-    : '';
-    document.getElementById('watchlist').innerHTML = D.watchlist.length
-    ? `<div class="divider"><span>below the line — not trade candidates</span></div>
-       <div class="secondary"><h2>Watchlist <em>— four of five, the missing one is named</em></h2>`
-      + D.watchlist.map(r => mini(r)).join('') + `</div>`
-    : '';
-    foot(); return;
+    lists(); foot(); return;
   }
   // A broken feed looks exactly like a quiet market — an empty list either way.
   // Say which one it is rather than let silence imply "nothing qualified".
@@ -300,56 +323,53 @@ function render(){
       Do not read this as "no opportunities today".</div>`;
   } else if (D.liveQuotes === 0){
     b.innerHTML = `<div class="banner wait"><b>No live pre-market quotes.</b>
-      Nasdaq reports the market as “${D.marketStatus||'unknown'}”, so there are no pre-market prices to read.
+      Nasdaq reports the market as “${esc(D.marketStatus||'unknown')}”, so there are no pre-market prices to read.
       This page fills in once the pre-market session is running — it opens at 4:00 AM ET and this scan is
       meant to run around 8:45. Prices below the fold, if any, are from the previous session
-      (${D.prevSession||'—'}).</div>`;
+      (${esc(D.prevSession||'—')}).</div>`;
   } else if (!D.shortlist.length){
     b.innerHTML = `<div class="banner none"><b>Nothing cleared all five criteria today.</b>
       ${D.liveQuotes.toLocaleString()} stocks had live pre-market prices. That is a normal outcome —
-      A full scan usually leaves fewer than ten names, and some mornings none at all.
+      a full scan usually leaves fewer than ten names, and some mornings none at all.
       Trading nothing is a position.</div>`;
   } else { b.innerHTML = ''; }
-
-  document.getElementById('shortlist').innerHTML = D.shortlist.length
-    ? `<div class="primary"><h2>Trade candidates — ${D.shortlist.length} name${D.shortlist.length>1?'s':''}</h2>
-       <div class="lede">These met every criterion. This is the list; everything below the line is context.</div></div>`
-      + D.shortlist.map((r,i) => card(r, true, i+1)).join('')
-    : '';
-  document.getElementById('watchlist').innerHTML = D.watchlist.length
-    ? `<div class="divider"><span>below the line — not trade candidates</span></div>
-       <div class="secondary"><h2>Watchlist <em>— four of five, the missing one is named</em></h2>`
-      + D.watchlist.map(r => mini(r)).join('') + `</div>`
-    : '';
-
-
+  lists();
   foot();
 }
 
-function foot(){
+/** The five criteria and the reading rules, in the collapsible panel at the top. */
+function criteria(){
   const g = D.gate;
-  document.getElementById('foot').innerHTML = `
-    <b>The five criteria.</b> Up ≥${g.minPreMarketChangePct}% pre-market ·
-    pre-market volume ≥${(g.minPreMarketVolume/1000)}k ·
-    a real news catalyst · price $${g.priceMin}–$${g.priceMax} ·
-    float under ${g.floatIdeal/1e6}M shares. All five must pass to reach the shortlist.
-    <br><br>
-    <b>Quality tiers.</b> Float under 20M with pre-market volume over 150k is high quality;
-    pre-market volume under 50k is low. Percent gainers are ranked first, then catalyst and float,
-    ending with a handful of names rather than twenty.
-    <br><br>
-    <b>Fresh moves only.</b> The percentage is this session against the previous close, not a
-    multi-day total. A name that has already climbed for several sessions is marked
-    <b>extended</b> — a stock up 100% in one morning on new information is the setup; one up 100%
-    over three sessions is usually a squeeze that has already happened.
-    <br><br>
-    <b>What this is not.</b> It finds candidates; it does not decide anything. Entry, size and stop are
-    yours. Float is the weakest number here — SEC files it once a year and small caps dilute constantly,
-    so anything marked estimated should be checked before you size a position.
-    <br><br>
-    Sources: Nasdaq public quote and screener endpoints, SEC EDGAR for float, share count and 8-K
-    filings. Data may be delayed. Not investment advice.`;
+  document.getElementById('criteria').innerHTML = `
+    <h2>How it screens</h2>
+    <div class="lede">Five criteria, all of which must pass to reach the shortlist. Four of five puts a name on the watchlist, with the missing one named.</div>
+    <div class="crit">
+      <div><b>≥ ${g.minPreMarketChangePct}%</b><small>up pre-market vs previous close</small></div>
+      <div><b>≥ ${(g.minPreMarketVolume/1000)}k shares</b><small>pre-market volume</small></div>
+      <div><b>News catalyst</b><small>a filing or release behind the move</small></div>
+      <div><b>$${g.priceMin} – $${g.priceMax}</b><small>price</small></div>
+      <div><b>&lt; ${g.floatIdeal/1e6}M shares</b><small>float</small></div>
+    </div>
+    <p><b>Quality.</b> Float under ${g.floatStretch/1e6}M with pre-market volume over ${g.goodPreMarketVolume/1000}k is high quality; volume under ${g.minPreMarketVolume/1000}k is low. Percent gainers rank first, then catalyst and float, so the list ends with a handful of names rather than twenty.</p>
+    <p><b>Fresh moves only.</b> The percentage is this session against the previous close. A name that has already climbed for several sessions is marked <b>extended</b>: a stock up 100% in one morning on new information is the setup; one up 100% over three sessions is usually a squeeze that has already happened.</p>
+    <p><b>What this is not.</b> It finds candidates; it decides nothing. Entry, size and stop are yours. Float is the weakest number here — the SEC files it once a year and small caps dilute constantly — so anything marked estimated should be checked before sizing a position.</p>`;
 }
+
+function foot(){
+  document.getElementById('foot').innerHTML = `
+    Sources: Nasdaq public quote and screener endpoints; SEC EDGAR for float, share count and 8-K filings.
+    Data may be delayed. <b>Not investment advice.</b> A candidate list, not a trading system — the track record shows what these names actually do.`;
+}
+
+/** A panel that opens on its button and remembers the choice on this device. */
+function panel(btnId, panelId, key){
+  const b = document.getElementById(btnId), p = document.getElementById(panelId);
+  const set = open => { p.hidden = !open; b.setAttribute('aria-expanded', String(open)); try { localStorage.setItem(key, open ? '1' : '0'); } catch {} };
+  b.addEventListener('click', () => set(p.hidden));
+  let saved = null; try { saved = localStorage.getItem(key); } catch {}
+  set(saved === '1');
+}
+
 /**
  * Desktop push, straight from the page — no app, no account, no key.
  *
@@ -388,230 +408,130 @@ function foot(){
     writeSeen({ date: today, symbols: [...already, ...fresh.map(r => r.symbol)] });
   }
 
-  // A small, honest control rather than an unprompted permission popup.
-  const bar = document.createElement('div');
-  bar.className = 'floating-note';
-  bar.style.cssText = 'position:fixed;bottom:12px;left:14px;font:11.5px/1.3 var(--sans);' +
-    'color:var(--dim);background:var(--panel);border:1px solid var(--line);' +
-    'padding:8px 12px;border-radius:10px;cursor:pointer;max-width:250px';
+  // A small, honest control in the toolbar rather than an unprompted permission popup.
+  const btn = document.getElementById('alerts');
+  btn.hidden = false;
   function paint(){
+    btn.classList.remove('on', 'blocked');
     if (Notification.permission === 'granted'){
-      bar.innerHTML = '<b style="color:var(--go)">✓ Desktop alerts on</b><br>' +
-        '<span style="color:var(--faint)">Keep this tab open during pre-market.</span>';
-      bar.style.cursor = 'default';
+      btn.classList.add('on'); btn.textContent = '✓ Desktop alerts on'; btn.title = 'Keep this tab open during pre-market.';
     } else if (Notification.permission === 'denied'){
-      bar.innerHTML = '<b style="color:var(--warn)">Alerts blocked</b><br>' +
-        '<span style="color:var(--faint)">Allow notifications for this site in your browser settings.</span>';
-      bar.style.cursor = 'default';
+      btn.classList.add('blocked'); btn.textContent = 'Alerts blocked'; btn.title = 'Allow notifications for this site in your browser settings.';
     } else {
-      bar.innerHTML = '<b>Turn on desktop alerts</b><br>' +
-        '<span style="color:var(--faint)">Click here — no app, no signup.</span>';
+      btn.textContent = 'Turn on desktop alerts'; btn.title = 'No app, no signup — a browser notification when a name clears all five.';
     }
   }
-  bar.onclick = () => {
+  btn.onclick = () => {
     if (Notification.permission === 'default')
       Notification.requestPermission().then(() => { paint(); announce(); });
   };
   paint();
-  document.body.appendChild(bar);
   announce();
 })();
 
 /**
- * Track record: what every flagged name actually did in the session it was
- * flagged for. Losers are shown exactly like winners.
+ * Track record: how far every flagged name ran from the price the list showed
+ * to the high of that session. One number per name; losers shown like winners.
  *
- * Built with createElement/textContent throughout: company names and business
- * descriptions come from outside sources and must never be parsed as HTML.
+ * Built with createElement/textContent throughout: company names come from
+ * outside sources and must never be parsed as HTML.
  */
 function renderHistory(){
   const mount = document.getElementById('history');
-  if (!mount || !H || !H.days || (D && D.isDemo)) return;
+  const tog = document.getElementById('tog-history');
+  if (!mount || !H || !H.days || (D && D.isDemo)){ tog.hidden = true; return; }
   const days = Object.values(H.days).filter(d => d.names && d.names.length)
     .sort((a, b) => b.date.localeCompare(a.date));
-  if (!days.length) return;
+  if (!days.length){ tog.hidden = true; return; }
 
   const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
   const sgn = v => (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(Math.abs(v) >= 100 ? 0 : 1) + '%';
-  const med = a => { if (!a.length) return null; const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
+  const med = a => { const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
+  const avg = a => a.reduce((x, y) => x + y, 0) / a.length;
   const dayLabel = iso => new Date(iso + 'T12:00:00Z').toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric', timeZone: 'UTC' });
 
-  // Everything is measured from the pre-market price the list showed at the
-  // time — the price a reader could have acted on — never from the open. A
-  // name flagged at $6.38 that opened at $7.77 made its move before the bell,
-  // and measuring from the open would hide exactly that.
+  // Measured from the pre-market price the list showed at the time — the
+  // price a reader could have acted on — never from the open.
   const scored = n => n.performance && n.preMarketPrice > 0;
-  const from = (n, price) => (price / n.preMarketPrice - 1) * 100;
-  const moves = n => { const p = n.performance; return {
-    open: from(n, p.open), high: from(n, p.high), low: from(n, p.low), close: from(n, p.close),
-    noon: p.noon != null ? from(n, p.noon) : null }; };
-  const shortScored = days.flatMap(d => d.names).filter(n => n.list === 'shortlist' && scored(n));
+  const run = n => (n.performance.high / n.preMarketPrice - 1) * 100;
   const allScored = days.flatMap(d => d.names).filter(scored);
+  const runs = allScored.map(run);
+  const n = document.getElementById('history-n');
+  n.textContent = String(allScored.length); n.hidden = !allScored.length;
 
-  // A shared scale for every row, so bars compare across days — set by where
-  // most rows sit, not by the single most extreme one. The first version scaled
-  // to the maximum: one +221% session set the axis and a normal ±15% day shrank
-  // to a few pixels. The 90th percentile sets it now; anything beyond is drawn
-  // to the edge with an arrow, and its exact value stays in the columns.
+  // A shared scale for every bar, set by where most rows sit (90th percentile),
+  // not by the single most extreme one; anything beyond runs to the edge with
+  // an arrow and its exact value stays in the number.
   const q = (arr, p) => { if (!arr.length) return 0; const s = [...arr].sort((a, b) => a - b); return s[Math.min(s.length - 1, Math.floor(p * (s.length - 1)))]; };
-  const maxUp = Math.max(20, Math.ceil(q(allScored.map(n => moves(n).high), 0.9) / 5) * 5);
-  const maxDn = Math.max(10, Math.ceil(q(allScored.map(n => Math.max(0, -moves(n).low)), 0.9) / 5) * 5);
-  const beyondScale = allScored.filter(n => { const m = moves(n); return m.high > maxUp || -m.low > maxDn; }).length;
+  const maxUp = Math.max(20, Math.ceil(q(runs, 0.9) / 5) * 5);
+  const maxDn = Math.max(10, Math.ceil(q(runs.map(v => Math.max(0, -v)), 0.9) / 5) * 5);
   const span = maxUp + maxDn;
   const pos = v => ((Math.max(-maxDn, Math.min(maxUp, v)) + maxDn) / span) * 100;
 
-  const sec = el('section', 'hist');
-  sec.appendChild(el('h2', null, 'Track record'));
-  sec.appendChild(el('div', 'lede',
-    'How far every flagged name ran after it was flagged: from the pre-market price the list showed to the high of that ' +
-    'session, with where it opened, stood at noon and closed. Scored after the close. ' +
-    'Nothing is filtered out: names that faded are listed exactly like names that ran.'));
+  mount.replaceChildren();
+  mount.appendChild(el('h2', null, 'Track record'));
+  mount.appendChild(el('div', 'lede', 'How far every flagged name ran from the price the list showed to the high of that session. Scored after the close; nothing is filtered out.'));
 
-  // Headline numbers: how far the names ran from the flag price. Stat tiles,
-  // not a chart. The high of the day leads because that is the move the list
-  // exists to find; the close sits next to it because that is what a hold got.
-  if (allScored.length){
-    const ms = allScored.map(moves);
-    const highs = ms.map(m => m.high), closes = ms.map(m => m.close);
+  if (runs.length){
     const tiles = el('div', 'tiles');
     const tile = (value, label) => { const t = el('div'); t.appendChild(el('b', null, value)); t.appendChild(el('small', null, label)); tiles.appendChild(t); };
-    tile(String(allScored.length), `flagged names scored, over ${new Set(allScored.map(n => n.firstSeenAt.slice(0,10))).size} session${allScored.length === 1 ? '' : 's'}`);
-    tile(sgn(med(highs)), 'median run from the flag price to the high of the day');
-    tile(`${Math.round(100 * highs.filter(v => v >= 20).length / highs.length)}%`, `ran 20%+ above the flag price (${highs.filter(v => v >= 20).length} of ${highs.length})`);
-    tile(sgn(med(closes)), 'median flag price → close');
-    tile(`${Math.round(100 * closes.filter(v => v > 0).length / closes.length)}%`, `closed above the flag price (${closes.filter(v => v > 0).length} of ${closes.length})`);
-    sec.appendChild(tiles);
-    if (shortScored.length){
-      const sm = shortScored.map(moves);
-      sec.appendChild(el('div', 'lede', `Trade candidates only (all five criteria, ${shortScored.length} scored): median run to the high ${sgn(med(sm.map(m => m.high)))}, median close ${sgn(med(sm.map(m => m.close)))} from the flag price.`));
-    }
+    tile(String(allScored.length), `flagged names scored, over ${new Set(allScored.map(x => x.firstSeenAt.slice(0,10))).size} sessions`);
+    tile(sgn(avg(runs)), 'average run from the flag price to the high of the day');
+    tile(sgn(med(runs)), 'median run from the flag price to the high of the day');
+    mount.appendChild(tiles);
+    const key = el('div', 'keyrow');
+    const k = (color, label) => { const s = el('span'); const i = el('i'); i.style.background = color; s.appendChild(i); s.appendChild(document.createTextNode(label)); key.appendChild(s); };
+    k('#3987e5', 'ran above the flag price'); k('#e66767', 'never got back above it');
+    key.appendChild(el('span', null, `scale −${maxDn}% to +${maxUp}%`));
+    mount.appendChild(key);
   }
 
-  // Legend: two colours on the page, so a legend is always present.
-  const key = el('div', 'keyrow');
-  const k = (swatchCls, style, label) => { const s = el('span'); const i = el('i', swatchCls); if (style) i.style.background = style; s.appendChild(i); s.appendChild(document.createTextNode(label)); key.appendChild(s); };
-  k('sw', '#3987e5', 'session range above the flag price');
-  k('sw', '#e66767', 'session range below the flag price');
-  k('tickkey', null, 'where it opened');
-  k('dotkey', null, 'where it closed');
-  k('', null, `scale −${maxDn}% to +${maxUp}% from the flag price${beyondScale ? ` · ${beyondScale} larger move${beyondScale > 1 ? 's' : ''} run off the edge (◂ ▸)` : ''}`);
-  sec.appendChild(key);
-
-  const tip = el('div', 'tip'); tip.hidden = true; document.body.appendChild(tip);
-  const showTip = (n, x, y) => {
-    const p = n.performance;
-    tip.replaceChildren();
-    tip.appendChild(el('b', null, n.symbol));
-    const r = (a, b) => { const row = el('div', 'r'); row.appendChild(el('span', null, a)); row.appendChild(el('span', null, b)); tip.appendChild(row); };
-    r('flagged pre-market', `${sgn(n.preMarketChangePct)} at $${n.preMarketPrice.toFixed(2)}`);
-    if (scored(n)){
-      const m = moves(n);
-      r('open', `$${p.open.toFixed(2)}  ${sgn(m.open)}`);
-      if (p.noon != null) r('noon', `$${p.noon.toFixed(2)}  ${sgn(m.noon)}`);
-      r('high', `$${p.high.toFixed(2)}  ${sgn(m.high)}`);
-      r('low', `$${p.low.toFixed(2)}  ${sgn(m.low)}`);
-      r('close', `$${p.close.toFixed(2)}  ${sgn(m.close)}`);
-      if (p.volume) r('volume', Math.round(p.volume).toLocaleString());
-      r('', 'all from the flag price');
-    } else r('session', 'scored after the close');
-    if (n.catalyst) r('catalyst', n.catalyst);
-    tip.hidden = false;
-    const w = tip.offsetWidth, hgt = tip.offsetHeight;
-    tip.style.left = Math.min(window.innerWidth - w - 10, x + 14) + 'px';
-    tip.style.top = Math.min(window.innerHeight - hgt - 10, y + 14) + 'px';
-  };
-
-  const cols = () => {
-    const c = el('div', 'hrow hcols');
-    ['name', 'flagged', 'session range'].forEach(t => c.appendChild(el('div', null, t)));
-    ['flag→high', 'flag→open', 'flag→noon', 'flag→close'].forEach(t => c.appendChild(el('div', 'v', t)));
-    return c;
-  };
-
   for (const day of days){
-    const box = el('div', 'hday');
-    const head = el('div', 'hday-h');
-    const left = el('b', null, dayLabel(day.date));
-    const scoredCount = day.names.filter(scored).length;
-    head.appendChild(left);
-    const meta = el('span', null, `${day.names.filter(n => n.list === 'shortlist').length} candidate(s) · ${day.names.filter(n => n.list === 'watchlist').length} watchlist · ${scoredCount}/${day.names.length} scored `);
-    const badge = el('span', 'src', day.source === 'replay' ? 'replay' : 'live');
-    meta.appendChild(badge);
+    const head = el('div', 'tday-h');
+    head.appendChild(el('b', null, dayLabel(day.date)));
+    const nc = day.names.filter(x => x.list === 'shortlist').length, nw = day.names.filter(x => x.list === 'watchlist').length;
+    const meta = el('span', null, `${nc} candidate${nc === 1 ? '' : 's'} · ${nw} watchlist`);
+    meta.appendChild(el('span', 'src', day.source === 'replay' ? 'replay' : 'live'));
     head.appendChild(meta);
-    box.appendChild(head);
-    box.appendChild(cols());
+    mount.appendChild(head);
 
     const ordered = [...day.names].sort((a, b) =>
       (a.list === b.list ? 0 : a.list === 'shortlist' ? -1 : 1) || b.preMarketChangePct - a.preMarketChangePct);
-
-    for (const n of ordered){
-      const p = n.performance;
-      const row = el('div', 'hrow' + (n.list === 'watchlist' ? ' watch' : ''));
-      row.tabIndex = 0;
-
-      const nameCell = el('div');
-      nameCell.appendChild(el('div', 'tk', n.symbol + (n.list === 'watchlist' ? '  · 4/5' : '')));
-      nameCell.appendChild(el('div', 'bz', [n.legalName, n.business].filter(Boolean).join(' · ')));
-      row.appendChild(nameCell);
-
-      row.appendChild(el('div', 'fl', `${sgn(n.preMarketChangePct)} @ $${n.preMarketPrice.toFixed(2)}`));
-
-      const rc = el('div', 'rngcell');
-      const m = scored(n) ? moves(n) : null;
-      if (m){
-        const rng = el('div', 'rng');
-        rng.setAttribute('role', 'img');
-        rng.setAttribute('aria-label', `${n.symbol}: opened ${sgn(m.open)}, high ${sgn(m.high)}, low ${sgn(m.low)}, closed ${sgn(m.close)} from the flag price`);
+    for (const x of ordered){
+      const row = el('div', 'trow' + (x.list === 'watchlist' ? ' watch' : ''));
+      row.appendChild(el('div', 'tk', x.symbol));
+      row.appendChild(el('div', 'nm', [x.legalName, x.business].filter(Boolean).join(' · ')));
+      const line2 = el('div', 'line2');
+      line2.appendChild(el('div', 'fl', `${sgn(x.preMarketChangePct)} @ $${x.preMarketPrice.toFixed(2)}`));
+      if (scored(x)){
+        const v = run(x);
+        const bar = el('div', 'run');
+        bar.setAttribute('role', 'img');
+        bar.setAttribute('aria-label', `${x.symbol}: high of the day ${sgn(v)} from the flag price`);
         const z = pos(0);
-        const zero = el('div', 'zero'); zero.style.left = z + '%'; rng.appendChild(zero);
-        // The session's low-to-high range, split at the flag price so each side
-        // keeps its colour. A name that gapped up and never came back sits
-        // entirely to the right; one that faded before the bell, to the left.
-        if (m.high > 0){
-          const up = el('div', 'up');
-          const l = pos(Math.max(0, m.low));
-          // 1px surface gap either side of the flag line separates the two fills.
-          up.style.left = `calc(${l}% + 1px)`; up.style.width = `max(0px, calc(${pos(m.high) - l}% - 1px))`;
-          rng.appendChild(up);
-        }
-        if (m.low < 0){
-          const dn = el('div', 'dn');
-          const l = pos(m.low), r = pos(Math.min(0, m.high));
-          dn.style.left = l + '%'; dn.style.width = `max(0px, calc(${r - l}% - 1px))`;
-          rng.appendChild(dn);
-        }
-        const op = el('div', 'op'); op.style.left = pos(m.open) + '%'; rng.appendChild(op);
-        const cl = el('div', 'cl');
-        cl.style.left = pos(m.close) + '%';
-        cl.style.background = m.close >= 0 ? '#3987e5' : '#e66767';
-        rng.appendChild(cl);
-        if (m.high > maxUp){ const cap = el('div', 'cap', '▸'); cap.style.right = '-11px'; rng.appendChild(cap); }
-        if (-m.low > maxDn){ const cap = el('div', 'cap', '◂'); cap.style.left = '-11px'; rng.appendChild(cap); }
-        rc.appendChild(rng);
+        const zero = el('div', 'zero'); zero.style.left = z + '%'; bar.appendChild(zero);
+        if (v >= 0){ const up = el('div', 'up'); up.style.left = `calc(${z}% + 1px)`; up.style.width = `max(2px, calc(${pos(v) - z}% - 1px))`; bar.appendChild(up); }
+        else { const dn = el('div', 'dn'); const l = pos(v); dn.style.left = l + '%'; dn.style.width = `max(2px, calc(${z - l}% - 1px))`; bar.appendChild(dn); }
+        if (v > maxUp){ const cap = el('div', 'cap', '▸'); cap.style.right = '-11px'; bar.appendChild(cap); }
+        if (-v > maxDn){ const cap = el('div', 'cap', '◂'); cap.style.left = '-11px'; bar.appendChild(cap); }
+        line2.appendChild(bar);
+        row.appendChild(line2);
+        const val = el('div', 'v ' + (v >= 0 ? 'pos' : 'neg'), sgn(v));
+        val.title = `high $${x.performance.high.toFixed(2)}`;
+        row.appendChild(val);
       } else {
-        rc.appendChild(el('div', 'pend', day.source === 'live' ? 'scored after the close' : 'no session data'));
+        line2.appendChild(el('div', 'pend', day.source === 'live' ? 'scored after the close' : 'no session data'));
+        row.appendChild(line2);
       }
-      row.appendChild(rc);
-
-      const val = (label, v, sub) => { const c = el('div', 'v', v == null ? '—' : sgn(v)); c.dataset.label = label; if (sub) c.appendChild(el('small', null, sub)); return c; };
-      row.appendChild(val('flag→high', m ? m.high : null, p ? `$${p.high.toFixed(2)}` : null));
-      row.appendChild(val('flag→open', m ? m.open : null, p ? `$${p.open.toFixed(2)}` : null));
-      row.appendChild(val('flag→noon', m ? m.noon : null, p && p.noon != null ? `$${p.noon.toFixed(2)}` : null));
-      row.appendChild(val('flag→close', m ? m.close : null, p ? `$${p.close.toFixed(2)}` : null));
-
-      row.addEventListener('pointermove', e => showTip(n, e.clientX, e.clientY));
-      row.addEventListener('pointerleave', () => { tip.hidden = true; });
-      row.addEventListener('focus', () => { const b = row.getBoundingClientRect(); showTip(n, b.left + b.width / 2, b.bottom); });
-      row.addEventListener('blur', () => { tip.hidden = true; });
-      box.appendChild(row);
+      mount.appendChild(row);
     }
-    sec.appendChild(box);
   }
-  mount.replaceChildren(sec);
 }
 
 render();
 renderHistory();
+if (D) panel('tog-criteria', 'criteria', 'scs-panel-criteria');
+if (!document.getElementById('tog-history').hidden) panel('tog-history', 'history', 'scs-panel-history');
 
 /**
  * Keep the page current on its own.
@@ -630,16 +550,12 @@ renderHistory();
   setTimeout(() => location.reload(), 180000);
 
   // Show how old the figures are, counting up, so a frozen page is obvious.
-  const el = document.createElement('div');
-  el.className = 'floating-note';
-  el.style.cssText = 'position:fixed;bottom:12px;right:14px;font:11px/1 var(--mono);' +
-    'color:var(--faint);background:var(--panel);border:1px solid var(--line);' +
-    'padding:6px 10px;border-radius:99px';
-  document.body.appendChild(el);
+  const age = document.getElementById('age');
+  if (!age) return;
   const t0 = Date.parse(D && D.generatedAt ? D.generatedAt : Date.now());
   (function tick(){
-    const age = Math.max(0, Math.round((Date.now() - t0) / 60000));
-    el.textContent = `scanned ${age} min ago · refreshing`;
+    const m = Math.max(0, Math.round((Date.now() - t0) / 60000));
+    age.textContent = `· ${m} min ago · refreshing`;
     setTimeout(tick, 20000);
   })();
 })();
