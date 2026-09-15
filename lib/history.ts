@@ -60,6 +60,13 @@ export type HistoryName = {
   /** Criteria it failed; empty for shortlist names. */
   missing: string[];
   performance: Performance | null;
+  /**
+   * Intraday facts captured the same evening, before the daily bar exists.
+   * Nasdaq publishes the day's bar hours after the close but its intraday chart
+   * resets overnight, so the noon price has to be kept here as soon as it can be
+   * read, and copied into `performance` when the bar arrives.
+   */
+  intraday?: { noon?: number | null };
 };
 
 export type HistoryDay = { date: string; source: 'live' | 'replay'; names: HistoryName[] };
@@ -159,6 +166,14 @@ export async function fillPerformance(
   for (const day of Object.values(h.days).sort((a, b) => a.date.localeCompare(b.date))) {
     if (!sessionComplete(day.date)) continue;
     for (const n of day.names) {
+      // The noon price comes from a separate, intraday source that may only
+      // answer on the evening of the session — before the daily bar exists —
+      // so it is asked for first, whenever it is still missing, and kept on the
+      // name until the bar arrives.
+      if (n.performance?.noon === undefined && n.intraday?.noon === undefined) {
+        const noon = await getNoon(n.symbol, day.date).catch(() => undefined);
+        if (noon !== undefined) (n.intraday ??= {}).noon = noon;
+      }
       if (!n.performance) {
         if (!cache.has(n.symbol)) {
           if (asked >= maxSymbols) return filled;
@@ -184,12 +199,7 @@ export async function fillPerformance(
         };
         filled++;
       }
-      // The noon price comes from a separate, intraday source, so it is asked
-      // for whenever it is still missing — names scored earlier included.
-      if (n.performance.noon === undefined) {
-        const noon = await getNoon(n.symbol, day.date).catch(() => undefined);
-        if (noon !== undefined) n.performance.noon = noon;
-      }
+      if (n.performance.noon === undefined && n.intraday?.noon !== undefined) n.performance.noon = n.intraday.noon;
     }
   }
   return filled;
