@@ -175,6 +175,36 @@ less often (2.4/session at $20–50, 1.5 at $50–200 vs 14 at $2–20), run les
 (6% and 3% reach +20% from the open vs 17%) and fade less (mean open → close
 −1.4%, −0.5%, +0.2% for $200+). The runner phenomenon is a micro-cap thing.
 
+### Options (2026-09-14/15): the call is priced for the move
+
+Ivan's idea: buy a call instead of holding the stock, so a fade costs premium
+and a run is kept. Real OPRA quotes via Databento (`OPRA.PILLAR`, parent
+symbology `XXXX.OPT`; a 422 means no listed options; ~$0.04 per stock-day for a
+whole chain, ~$0.001 for a five-minute window). Same-day expiries exist on a
+few of these names; nothing trades pre-market.
+
+- **On the flagged small caps** (`npm run options-pilot` → `data/options-pilot.json`):
+  39% have options at all. The weekly call at the strike above the open,
+  bought at 09:31, costs **9.0% of the stock price** with a **36% bid-ask spread
+  on the premium**; monthly 15.5% and 45%. Held to the close or sold the minute
+  the stock is +10% / +20%: −23% to −33% of premium; as a share of stock
+  exposure −3.8% to −7.8%, against −0.1% to −0.8% for the stock itself.
+- **Smallest weekly-optionable stocks** (`npm run optionable-universe`,
+  `npm run weekly-cost` → `data/weekly-cost.json`): Cboe's weeklys directory ×
+  Nasdaq caps, ETFs out → 550 stocks; bottom decile = 55 names, $40M–$1.2B,
+  median price $3.63 (BYND, TLRY, SPCE, HTZ, RILY, INO, CAPR…). They move:
+  median |day| 3.1%, a third of days 5%+, 62% of weeks 5%+ (29% up 5%+). But on
+  a random day the nearest weekly ATM call (median 4 days) costs **4.6% of the
+  stock, with a 42% spread**, and pays back −31% of premium at expiry; the
+  monthly (11.9%) −24%. On days the stock opened 5%+ up the weekly costs 6.3%
+  and loses 25% of premium, the monthly 14.5% and loses 63%. Same-day expiries
+  (n = 16) cost 2.6% and came out flat. Nothing near the 1% Ivan hoped for:
+  the premium is the volatility; a stock that moves 5% a week cannot have a 1%
+  weekly option.
+
+Where the reference files live: `data/reference/` (Cboe weeklys CSV, Nasdaq
+universe with caps, the bottom-decile list), dated.
+
 ## The finding that matters
 
 The backtest is negative. Over 3,524 historical signals, **every exit rule
