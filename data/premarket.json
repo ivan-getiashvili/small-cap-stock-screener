@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-15T12:00:46.728Z",
+  "generatedAt": "2026-09-15T12:20:30.815Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-14",
   "universeChecked": 6021,
   "smallCapsInBand": 2926,
-  "investigated": 81,
-  "liveQuotes": 61,
+  "investigated": 89,
+  "liveQuotes": 71,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-14T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 162,
+    "edgarFilings": 176,
     "leads": {
-      "8-K": 60,
-      "PR Newswire": 2,
-      "GlobeNewswire": 5,
+      "8-K": 67,
+      "PR Newswire": 1,
+      "GlobeNewswire": 4,
       "prior-session gainer": 18
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 81,
-    "answered": 81,
+    "requested": 89,
+    "answered": 89,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,22 +60,90 @@
   "shortlist": [],
   "watchlist": [
     {
+      "symbol": "VRA",
+      "name": "Vera Bradley Inc.",
+      "legalName": "Vera Bradley, Inc.",
+      "business": "Leather & Leather Products",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 3.64,
+      "preMarketChangePct": 19.73684210526316,
+      "prevClose": 3.04,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 15, 2026 8:20 AM ET",
+      "preMarketVolume": 262278.869467,
+      "preMarketDollarVolume": 954695.08485988,
+      "relVolume": 2.481023038263617,
+      "avgVolume50": 105714,
+      "sharesOutstanding": 28438252,
+      "marketCap": 103515237.28,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 36,
+      "float": {
+        "shares": 28438252,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-06-04"
+      },
+      "floatRotation": 0.009222749326048591,
+      "daysUp": 0,
+      "priorRunPct": -9.253731343283583,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released",
+        "subject": "Earnings / results released",
+        "date": "2026-09-15"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "19.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "262,279"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.64"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "28.4M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
       "symbol": "RLGT",
       "name": "Radiant Logistics Inc.",
       "legalName": "RADIANT LOGISTICS, INC",
       "business": "Arrangement of  Transportation of  Freight & Cargo",
       "sector": "Industrials",
-      "preMarketPrice": 9.3119,
-      "preMarketChangePct": 13.42143727161996,
+      "preMarketPrice": 9.36,
+      "preMarketChangePct": 14.00730816077952,
       "prevClose": 8.21,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 8:00 AM ET",
-      "preMarketVolume": 159191.428932,
-      "preMarketDollarVolume": 1482374.6670718908,
-      "relVolume": 1.3126808243617654,
+      "lastTradeAt": "Sep 15, 2026 8:19 AM ET",
+      "preMarketVolume": 161527.428932,
+      "preMarketDollarVolume": 1511896.73480352,
+      "relVolume": 1.331943308694505,
       "avgVolume50": 121272,
       "sharesOutstanding": 46894270,
-      "marketCap": 436674752.81299996,
+      "marketCap": 438930367.2,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 16,
       "float": {
@@ -83,7 +151,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-09-08"
       },
-      "floatRotation": 0.003394688283493911,
+      "floatRotation": 0.0034445024718798268,
       "daysUp": 1,
       "priorRunPct": -2.7251184834123063,
       "extended": false,
@@ -101,12 +169,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "13.4%"
+          "detail": "14.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "159,191"
+          "detail": "161,527"
         },
         {
           "name": "News catalyst",
@@ -116,7 +184,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$9.31"
+          "detail": "$9.36"
         },
         {
           "name": "Float <10M",
@@ -135,17 +203,17 @@
       "legalName": "VEEA INC.",
       "business": "Services-Computer Integrated Systems Design",
       "sector": "Technology",
-      "preMarketPrice": 4.0887,
-      "preMarketChangePct": 78.54585152838429,
+      "preMarketPrice": 3.949,
+      "preMarketChangePct": 72.44541484716156,
       "prevClose": 2.29,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 8:00 AM ET",
-      "preMarketVolume": 26024819,
-      "preMarketDollarVolume": 106407677.44530001,
-      "relVolume": 13.853150262878994,
+      "lastTradeAt": "Sep 15, 2026 8:20 AM ET",
+      "preMarketVolume": 29142606,
+      "preMarketDollarVolume": 115084151.094,
+      "relVolume": 15.512764948331782,
       "avgVolume50": 1878621,
       "sharesOutstanding": 62214156,
-      "marketCap": 254375019.63720003,
+      "marketCap": 245683702.044,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 17,
       "float": {
@@ -153,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.4183102475905966,
+      "floatRotation": 0.4684240351986773,
       "daysUp": 1,
       "priorRunPct": 34.70588235294118,
       "extended": false,
@@ -171,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "78.5%"
+          "detail": "72.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "26,024,819"
+          "detail": "29,142,606"
         },
         {
           "name": "News catalyst",
@@ -186,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.09"
+          "detail": "$3.95"
         },
         {
           "name": "Float <10M",
@@ -198,22 +266,90 @@
       "quality": "low"
     },
     {
+      "symbol": "BBLGW",
+      "name": "Bone Biologics Corp Warrants",
+      "legalName": "Bone Biologics Corp",
+      "business": "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
+      "sector": "Health Care",
+      "preMarketPrice": 9.03,
+      "preMarketChangePct": 61.24999999999999,
+      "prevClose": 5.6,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 15, 2026 8:07 AM ET",
+      "preMarketVolume": null,
+      "preMarketDollarVolume": null,
+      "relVolume": null,
+      "avgVolume50": 1620,
+      "sharesOutstanding": 2756057,
+      "marketCap": 24887194.709999997,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 173,
+      "float": {
+        "shares": 2756057,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-14"
+      },
+      "floatRotation": null,
+      "daysUp": 1,
+      "priorRunPct": -26.797385620915044,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "61.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "unknown"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$9.03"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "2.8M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "RCKT",
       "name": "Rocket Pharmaceuticals Inc.",
       "legalName": "ROCKET PHARMACEUTICALS, INC.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 3.66,
-      "preMarketChangePct": 6.705539358600582,
+      "preMarketPrice": 3.77,
+      "preMarketChangePct": 9.912536443148683,
       "prevClose": 3.43,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 8:00 AM ET",
-      "preMarketVolume": 159434,
-      "preMarketDollarVolume": 583528.4400000001,
-      "relVolume": 0.10020199531652427,
+      "lastTradeAt": "Sep 15, 2026 8:19 AM ET",
+      "preMarketVolume": 170138,
+      "preMarketDollarVolume": 641420.26,
+      "relVolume": 0.10692930666710242,
       "avgVolume50": 1591126,
       "sharesOutstanding": 109774597,
-      "marketCap": 401775025.02000004,
+      "marketCap": 413850230.69,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 23,
       "float": {
@@ -221,7 +357,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-31"
       },
-      "floatRotation": 0.0014523760902533762,
+      "floatRotation": 0.0015498849884185864,
       "daysUp": 1,
       "priorRunPct": -11.139896373056986,
       "extended": false,
@@ -239,12 +375,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.7%"
+          "detail": "9.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "159,434"
+          "detail": "170,138"
         },
         {
           "name": "News catalyst",
@@ -254,7 +390,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.66"
+          "detail": "$3.77"
         },
         {
           "name": "Float <10M",
@@ -271,17 +407,17 @@
       "legalName": "QUANTUM X LABS INC.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 4.7,
-      "preMarketChangePct": 9.302325581395356,
+      "preMarketPrice": 4.6707,
+      "preMarketChangePct": 8.620930232558145,
       "prevClose": 4.3,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 7:54 AM ET",
-      "preMarketVolume": 1701,
-      "preMarketDollarVolume": 7994.700000000001,
-      "relVolume": 0.02944791648633208,
+      "lastTradeAt": "Sep 15, 2026 8:12 AM ET",
+      "preMarketVolume": 2008,
+      "preMarketDollarVolume": 9378.7656,
+      "relVolume": 0.03476273739244845,
       "avgVolume50": 57763,
       "sharesOutstanding": 21567826,
-      "marketCap": 101368782.2,
+      "marketCap": 100736844.8982,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 14,
       "float": {
@@ -289,41 +425,40 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-13"
       },
-      "floatRotation": 0.0000788674760265592,
+      "floatRotation": 0.00009310164130589703,
       "daysUp": 0,
       "priorRunPct": -3.9106145251396613,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "news",
-        "headline": "Former Mossad Chief, Yossi Cohen, Strategic Advisor to SoftBank, Joins Quantum X Labs as President of Scientific Advisory Board",
-        "subject": "Hot-sector announcement",
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
+        "subject": "Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
         "date": "2026-09-15"
       },
       "leads": [
-        "GlobeNewswire",
         "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.3%"
+          "detail": "8.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "1,701"
+          "detail": "2,008"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "news"
+          "detail": "8-K"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.70"
+          "detail": "$4.67"
         },
         {
           "name": "Float <10M",
@@ -335,158 +470,22 @@
       "quality": "low"
     },
     {
-      "symbol": "SPPL",
-      "name": "SIMPPLE LTD. Ordinary Shares",
-      "legalName": "SIMPPLE LTD.",
-      "business": "Services-Facilities Support Management Services",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.27,
-      "preMarketChangePct": 5.336426914153143,
-      "prevClose": 2.155,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 5:25 AM ET",
-      "preMarketVolume": 20,
-      "preMarketDollarVolume": 45.4,
-      "relVolume": 0.00021163349311662064,
-      "avgVolume50": 94503,
-      "sharesOutstanding": 5786184,
-      "marketCap": 13134637.68,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 35,
-      "float": {
-        "shares": 5786184,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 0.0000034565095060924437,
-      "daysUp": 2,
-      "priorRunPct": 19.060773480662967,
-      "extended": true,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "20"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.27"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "5.8M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "BLSM",
-      "name": "BlossomHill Therapeutics Inc.",
-      "legalName": "BlossomHill Therapeutics, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 23.18,
-      "preMarketChangePct": 6.623735050597983,
-      "prevClose": 21.74,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 4:01 AM ET",
-      "preMarketVolume": 2,
-      "preMarketDollarVolume": 46.36,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 30253035.004599817,
-      "marketCap": 701265351.4066237,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 30253035.004599817,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-15"
-      },
-      "floatRotation": 6.610906970807756e-8,
-      "daysUp": 0,
-      "priorRunPct": null,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "BlossomHill To Present Updated SOLARA Data On BH-30643 In EGFR-Mutant Lung Cancer Today; Stock Up ",
-        "subject": null,
-        "date": "2026-09-15"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "2"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$23.18"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "30.3M"
-        }
-      ],
-      "passed": 1,
-      "quality": "low"
-    },
-    {
       "symbol": "PMTS",
       "name": "CPI Card Group Inc.",
       "legalName": "CPI Card Group Inc.",
       "business": "Commercial Printing",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 25.69,
-      "preMarketChangePct": 5.894476504534211,
+      "preMarketPrice": 25.75,
+      "preMarketChangePct": 6.141797197032145,
       "prevClose": 24.26,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 7:59 AM ET",
-      "preMarketVolume": 4195.354004,
-      "preMarketDollarVolume": 107778.64436276,
-      "relVolume": 0.0383848962368592,
+      "lastTradeAt": "Sep 15, 2026 8:19 AM ET",
+      "preMarketVolume": 5855.354004,
+      "preMarketDollarVolume": 150775.36560299998,
+      "relVolume": 0.05357287028921196,
       "avgVolume50": 109297,
       "sharesOutstanding": 11530669,
-      "marketCap": 296222886.61,
+      "marketCap": 296914726.75,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 41,
       "float": {
@@ -494,7 +493,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-28"
       },
-      "floatRotation": 0.0003638430696432271,
+      "floatRotation": 0.0005078069628050202,
       "daysUp": 1,
       "priorRunPct": -14.093484419263447,
       "extended": false,
@@ -512,12 +511,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.9%"
+          "detail": "6.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "4,195"
+          "detail": "5,855"
         },
         {
           "name": "News catalyst",
@@ -527,7 +526,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$25.69"
+          "detail": "$25.75"
         },
         {
           "name": "Float <10M",
@@ -536,142 +535,6 @@
         }
       ],
       "passed": 1,
-      "quality": "low"
-    },
-    {
-      "symbol": "BURU",
-      "name": "Nuburu Inc.",
-      "legalName": "Nuburu, Inc.",
-      "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
-      "sector": "Miscellaneous",
-      "preMarketPrice": 1.4295,
-      "preMarketChangePct": 5.888888888888881,
-      "prevClose": 1.35,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 8:00 AM ET",
-      "preMarketVolume": 2992418,
-      "preMarketDollarVolume": 4277661.531,
-      "relVolume": 0.11271060558459536,
-      "avgVolume50": 26549569,
-      "sharesOutstanding": 370493812,
-      "marketCap": 529620904.254,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 193,
-      "float": {
-        "shares": 370493812,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-12"
-      },
-      "floatRotation": 0.008076836651727938,
-      "daysUp": 1,
-      "priorRunPct": 1022.1945137157106,
-      "extended": true,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "2,992,418"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.43"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "370.5M"
-        }
-      ],
-      "passed": 1,
-      "quality": "low"
-    },
-    {
-      "symbol": "MATH",
-      "name": "Metalpha Technology Holding Limited Ordinary Shares",
-      "legalName": "Metalpha Technology Holding Ltd",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 1.07,
-      "preMarketChangePct": 5.940594059405946,
-      "prevClose": 1.01,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 7:38 AM ET",
-      "preMarketVolume": 9722,
-      "preMarketDollarVolume": 10402.54,
-      "relVolume": 0.2714353519278555,
-      "avgVolume50": 35817,
-      "sharesOutstanding": 47113236,
-      "marketCap": 50411162.52,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 24,
-      "float": {
-        "shares": 47113236,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-03-31"
-      },
-      "floatRotation": 0.0002063539002075765,
-      "daysUp": 1,
-      "priorRunPct": 3.632259388467062,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "9,722"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.07"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "47.1M"
-        }
-      ],
-      "passed": 0,
       "quality": "low"
     }
   ]
