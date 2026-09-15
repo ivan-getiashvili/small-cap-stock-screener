@@ -77,11 +77,13 @@ where:
   read/write on this repo), which Ivan adds. Tested locally with
   `npm run worker:dev` and `.dev.vars` containing `DRY_RUN=1`, then
   `curl "localhost:8787/__scheduled?cron=10+21+*+*+1-5"`.
-- **Deploy path:** Workers Builds from `main` (build `npm ci && npm run
-  build:pages`, deploy `npx wrangler deploy`, NODE_VERSION=24), which Ivan
-  connects in the Cloudflare dashboard. Every scan commit then republishes.
-  GitHub Pages keeps serving until then; once Cloudflare serves, the repo can go
-  private and the Pages job comes out of the workflow.
+- **Deploy path:** Workers Builds from `main` (build `npm run build:pages` —
+  NOT `npm ci`, the project has no dependencies and no lockfile, so `npm ci`
+  exits with EUSAGE; deploy `npx wrangler deploy`; NODE_VERSION=24; build token
+  "cyclebasis build token"). Connected in the Cloudflare dashboard on
+  2026-09-15 as Worker `smallcap-premarket`. Every scan commit then republishes.
+  GitHub Pages keeps serving until the domain is on; once Cloudflare serves, the
+  repo can go private and the Pages job comes out of the workflow.
 - `npm run build:pages` is the one build script for CI and Cloudflare.
 
 ## Track record (`data/history.json`, `lib/history.ts`)

@@ -2,7 +2,7 @@
   // Cloudflare Workers config: the site and its clock. See worker/index.ts.
   //
   // Deployed by Workers Builds from GitHub `main`: build command
-  // `npm ci && npm run build:pages`, deploy command `npx wrangler deploy`,
+  // `npm run build:pages`, deploy command `npx wrangler deploy`,
   // NODE_VERSION=24 — the same arrangement as cryptospread. Every scan commit
   // then republishes the page. Until the repository is connected in the
   // Cloudflare dashboard, GitHub Pages serves the site and this file is inert.

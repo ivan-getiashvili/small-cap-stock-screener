@@ -47,7 +47,7 @@ outside it the page says so rather than showing stale prices as if they were liv
 - **The site** is served by the same Worker from `_site/`, built by
   `npm run build:pages` from the committed JSON. Connect the repository in the
   Cloudflare dashboard (Workers & Pages → Create → import from GitHub) with build
-  command `npm ci && npm run build:pages`, deploy command `npx wrangler deploy`
+  command `npm run build:pages`, deploy command `npx wrangler deploy`
   and `NODE_VERSION=24`; every scan commit then republishes the page. GitHub
   Pages serves it until then, at
   https://ivan-getiashvili.github.io/small-cap-stock-screener/.
