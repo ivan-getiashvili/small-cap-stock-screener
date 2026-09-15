@@ -103,14 +103,16 @@ async function main() {
   const results: Result[] = [];
   let checked = 0, optionable = 0, noQuoteAtOpen = 0;
 
-  for (const t of order) {
-    if (optionable >= N) break;
+  // Each optionable name means downloading its whole chain for the day, tens
+  // of megabytes, so a few run at once.
+  let next = 0;
+  const handle = async (t: any) => {
     checked++;
     const quotes = await chainQuotes(t.symbol, t.date, spend).catch((e) => { console.warn(`${t.date} ${t.symbol}: ${(e as Error).message}`); return undefined; });
-    if (quotes === undefined || quotes === null) continue;
+    if (quotes === undefined || quotes === null) return;
     optionable++;
-    if (DRY) continue;
-    if (checked % 25 === 0) console.log(`  checked ${checked}, with options ${optionable}, $${spend.usd.toFixed(2)}`);
+    if (DRY) return;
+    if (optionable % 10 === 0) console.log(`  checked ${checked}, with options ${optionable}, $${spend.usd.toFixed(2)}`);
 
     const off = nyOffsetMin(t.date);
     const full: Record<string, Bar[]> = {};
@@ -118,7 +120,7 @@ async function main() {
     const bars = dedupe(full[t.symbol] ?? []);
     const minutes = bars.map((b) => nyMinute(b[0], off));
     const openIdx = minutes.findIndex((m) => m >= 570);
-    if (openIdx < 0 || minutes[openIdx] !== 570) continue;
+    if (openIdx < 0 || minutes[openIdx] !== 570) return;
     const open = bars[openIdx][1];
     const entryTs = nyMs(t.date, 571);
 
@@ -154,7 +156,8 @@ async function main() {
       void exits;
       results.push({ date: t.date, symbol: t.symbol, open, expiryKind: kind, contract: c.symbol, daysToExpiry: Math.round(dte(exp)), strike: c.strike, premium, premiumPctOfStock: premium / open, spreadPctOfPremium: (q0.ask - q0.bid) / q0.ask, stock, option });
     }
-  }
+  };
+  await Promise.all(Array.from({ length: 4 }, async () => { while (next < order.length && optionable < N) await handle(order[next++]); }));
   console.log(`checked ${checked} flagged stock-days: ${optionable} had listed options (${(100 * optionable / checked).toFixed(0)}%); ${noQuoteAtOpen} contracts had no usable quote at 09:31; OPRA spend $${spend.usd.toFixed(2)}`);
   if (DRY) return;
 
