@@ -463,24 +463,28 @@ function renderHistory(){
   const sec = el('section', 'hist');
   sec.appendChild(el('h2', null, 'Track record'));
   sec.appendChild(el('div', 'lede',
-    'How every flagged name traded after it was flagged: the open, noon, high, low and close of that session, ' +
-    'each measured from the pre-market price the list showed at the time. Scored after the close. ' +
+    'How far every flagged name ran after it was flagged: from the pre-market price the list showed to the high of that ' +
+    'session, with where it opened, stood at noon and closed. Scored after the close. ' +
     'Nothing is filtered out: names that faded are listed exactly like names that ran.'));
 
-  // Headline numbers for trade candidates. Stat tiles, not a chart.
-  if (shortScored.length){
-    const ms = shortScored.map(moves);
-    const noons = ms.map(m => m.noon).filter(v => v != null);
-    const closes = ms.map(m => m.close);
+  // Headline numbers: how far the names ran from the flag price. Stat tiles,
+  // not a chart. The high of the day leads because that is the move the list
+  // exists to find; the close sits next to it because that is what a hold got.
+  if (allScored.length){
+    const ms = allScored.map(moves);
+    const highs = ms.map(m => m.high), closes = ms.map(m => m.close);
     const tiles = el('div', 'tiles');
     const tile = (value, label) => { const t = el('div'); t.appendChild(el('b', null, value)); t.appendChild(el('small', null, label)); tiles.appendChild(t); };
-    tile(String(shortScored.length), `trade candidates scored, over ${new Set(shortScored.map(n => n.firstSeenAt.slice(0,10))).size} session${shortScored.length === 1 ? '' : 's'}`);
-    tile(sgn(med(ms.map(m => m.open))), 'median flag price → open');
-    if (noons.length) tile(sgn(med(noons)), `median flag price → noon${noons.length < ms.length ? ` (${noons.length} of ${ms.length})` : ''}`);
-    tile(sgn(med(ms.map(m => m.high))), 'median flag price → high of the day');
+    tile(String(allScored.length), `flagged names scored, over ${new Set(allScored.map(n => n.firstSeenAt.slice(0,10))).size} session${allScored.length === 1 ? '' : 's'}`);
+    tile(sgn(med(highs)), 'median run from the flag price to the high of the day');
+    tile(`${Math.round(100 * highs.filter(v => v >= 20).length / highs.length)}%`, `ran 20%+ above the flag price (${highs.filter(v => v >= 20).length} of ${highs.length})`);
     tile(sgn(med(closes)), 'median flag price → close');
     tile(`${Math.round(100 * closes.filter(v => v > 0).length / closes.length)}%`, `closed above the flag price (${closes.filter(v => v > 0).length} of ${closes.length})`);
     sec.appendChild(tiles);
+    if (shortScored.length){
+      const sm = shortScored.map(moves);
+      sec.appendChild(el('div', 'lede', `Trade candidates only (all five criteria, ${shortScored.length} scored): median run to the high ${sgn(med(sm.map(m => m.high)))}, median close ${sgn(med(sm.map(m => m.close)))} from the flag price.`));
+    }
   }
 
   // Legend: two colours on the page, so a legend is always present.
@@ -520,7 +524,7 @@ function renderHistory(){
   const cols = () => {
     const c = el('div', 'hrow hcols');
     ['name', 'flagged', 'session range'].forEach(t => c.appendChild(el('div', null, t)));
-    ['flag→open', 'flag→noon', 'flag→high', 'flag→close'].forEach(t => c.appendChild(el('div', 'v', t)));
+    ['flag→high', 'flag→open', 'flag→noon', 'flag→close'].forEach(t => c.appendChild(el('div', 'v', t)));
     return c;
   };
 
@@ -590,9 +594,9 @@ function renderHistory(){
       row.appendChild(rc);
 
       const val = (label, v, sub) => { const c = el('div', 'v', v == null ? '—' : sgn(v)); c.dataset.label = label; if (sub) c.appendChild(el('small', null, sub)); return c; };
+      row.appendChild(val('flag→high', m ? m.high : null, p ? `$${p.high.toFixed(2)}` : null));
       row.appendChild(val('flag→open', m ? m.open : null, p ? `$${p.open.toFixed(2)}` : null));
       row.appendChild(val('flag→noon', m ? m.noon : null, p && p.noon != null ? `$${p.noon.toFixed(2)}` : null));
-      row.appendChild(val('flag→high', m ? m.high : null, p ? `$${p.high.toFixed(2)}` : null));
       row.appendChild(val('flag→close', m ? m.close : null, p ? `$${p.close.toFixed(2)}` : null));
 
       row.addEventListener('pointermove', e => showTip(n, e.clientX, e.clientY));

@@ -1,20 +1,35 @@
 {
-  // Cloudflare Workers config. The site is static — no server code — so there
-  // is no "main" script, just a directory of assets Cloudflare serves directly.
-  // `npm run site` produces _site/ first.
+  // Cloudflare Workers config: the site and its clock. See worker/index.ts.
   //
-  // This is inert until CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID exist as
-  // repository secrets; the workflow skips the deploy step without them and
-  // GitHub Pages serves the site in the meantime.
+  // Deployed by Workers Builds from GitHub `main`: build command
+  // `npm ci && npm run build:pages`, deploy command `npx wrangler deploy`,
+  // NODE_VERSION=24 — the same arrangement as cryptospread. Every scan commit
+  // then republishes the page. Until the repository is connected in the
+  // Cloudflare dashboard, GitHub Pages serves the site and this file is inert.
   "name": "smallcap-premarket",
+  "main": "worker/index.ts",
   "compatibility_date": "2026-09-01",
+
+  // The page is static; _site/ is produced by `npm run build:pages`.
   "assets": {
     "directory": "./_site",
+    "binding": "ASSETS",
     // Serve index.html at the root rather than a bare 404.
     "not_found_handling": "single-page-application"
   },
-  "workers_dev": true
-  // To attach a custom domain later, add it here so the config stays the record
-  // of where this is published and a redeploy re-asserts it:
+
+  // Cron times are UTC. 11:00–14:40 UTC is 07:00–10:40 ET in summer and
+  // 06:00–09:40 ET in winter, so the sweep covers pre-market in both halves of
+  // the year; 15:00 is the backstop for the daily wrap-up; 21:10 records the
+  // closes and scores the track record. Same lines as .github/workflows/premarket.yml.
+  "triggers": { "crons": ["0,20,40 11-14 * * 1-5", "0 15 * * 1-5", "10 21 * * 1-5"] },
+
+  "vars": { "GITHUB_REPO": "ivan-getiashvili/small-cap-stock-screener" },
+  // Secret, added in the dashboard: GITHUB_DISPATCH_TOKEN.
+
+  "workers_dev": true,
+  "observability": { "enabled": true }
+  // To attach a custom domain, add it here so the config stays the record of
+  // where this is published and a redeploy re-asserts it:
   // "routes": [{ "pattern": "premarket.example.com", "custom_domain": true }]
 }

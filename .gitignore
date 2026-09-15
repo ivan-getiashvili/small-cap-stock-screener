@@ -45,3 +45,6 @@ gtbp.json
 # Databento cache (large, regenerable)
 data/db/
 docs/
+
+# local Worker secrets for `npm run worker:dev`
+.dev.vars

@@ -35,6 +35,8 @@
     "target-sweep": "node --experimental-strip-types scripts/target-sweep.ts",
     "options-pilot": "node --experimental-strip-types scripts/options-pilot.ts",
     "optionable-universe": "node --experimental-strip-types scripts/optionable-universe.ts",
-    "weekly-cost": "node --experimental-strip-types scripts/weekly-cost.ts"
+    "weekly-cost": "node --experimental-strip-types scripts/weekly-cost.ts",
+    "build:pages": "node --experimental-strip-types scripts/build-pages.ts",
+    "worker:dev": "npx --yes wrangler@latest dev --test-scheduled"
   }
 }

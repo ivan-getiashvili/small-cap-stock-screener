@@ -58,6 +58,32 @@ before it files an 8-K. And busy mornings overflow the 20-item wire feeds.
 Each scan commits `data/premarket.json` and `data/history.json`, because every
 CI run starts from a clean checkout.
 
+## Launch (2026-09-15): hosting and the clock
+
+Ivan launched it as a screener only ("let it just be the screener"). What runs
+where:
+
+- **Scans** stay in GitHub Actions (`premarket.yml`), which has the SEC contact
+  string and commits the data. `workflow_dispatch` takes `mode`: `scan`,
+  `snapshot` (closes + scoring) or `publish` (rebuild and publish the page from
+  the committed JSON, no scan — use it after a page change).
+- **GitHub's schedule is not a clock.** It started 2 of 14 runs on 2026-09-14
+  and fired twice at random times. Until the Worker below is live, the scans on
+  a live day come from a `gh workflow run` loop on the Mac (see the session
+  history); do not assume a scan happened because the cron line exists.
+- **The Worker** (`worker/index.ts`, `wrangler.jsonc`) serves `_site/` and, on
+  the same cron lines as the workflow, starts the workflow through GitHub's API.
+  Needs the Worker secret `GITHUB_DISPATCH_TOKEN` (fine-grained, Actions
+  read/write on this repo), which Ivan adds. Tested locally with
+  `npm run worker:dev` and `.dev.vars` containing `DRY_RUN=1`, then
+  `curl "localhost:8787/__scheduled?cron=10+21+*+*+1-5"`.
+- **Deploy path:** Workers Builds from `main` (build `npm ci && npm run
+  build:pages`, deploy `npx wrangler deploy`, NODE_VERSION=24), which Ivan
+  connects in the Cloudflare dashboard. Every scan commit then republishes.
+  GitHub Pages keeps serving until then; once Cloudflare serves, the repo can go
+  private and the Pages job comes out of the workflow.
+- `npm run build:pages` is the one build script for CI and Cloudflare.
+
 ## Track record (`data/history.json`, `lib/history.ts`)
 
 Every name that reaches the shortlist or watchlist is recorded as it looked when

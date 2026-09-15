@@ -14,11 +14,11 @@ on:
   workflow_dispatch:        # lets you trigger a scan by hand any time
     inputs:
       mode:
-        description: 'scan (default) or snapshot (record closing prices)'
+        description: 'scan (default), snapshot (record closing prices) or publish (rebuild the page, no scan)'
         required: false
         default: scan
         type: choice
-        options: [scan, snapshot]
+        options: [scan, snapshot, publish]
 
 permissions:
   contents: write        # the post-close job commits data/prevclose.json
@@ -62,7 +62,7 @@ jobs:
           echo "::error::could not push closes and history"; exit 1
 
       - name: Scan the pre-market
-        if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
+        if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot' && inputs.mode != 'publish'
         env:
           # EDGAR returns 403 without a contact string in the User-Agent.
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
@@ -72,7 +72,7 @@ jobs:
       # gone by the next one. The scan keeps this morning's list after the bell,
       # and history accumulates across days, only because both are committed here.
       - name: Save the scan and history
-        if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
+        if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot' && inputs.mode != 'publish'
         run: |
           git config user.name  "premarket-bot"
           git config user.email "noreply@github.com"
@@ -84,14 +84,9 @@ jobs:
 
       - name: Build the pages
         if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
-        run: |
-          npm run build:premarket
-          # The replay demo is static; rebuild it so the deployed site always
-          # carries a worked example next to the live list.
-          if [ -f data/demo.json ]; then npm run build:demo; fi
-          # The research page is static output; publish it alongside if its
-          # data is present, so the analysis is reachable from the same site.
-          if [ -f data/screen.json ]; then npm run build:research; fi
+        # One script for CI and for Cloudflare Workers Builds, so both publish
+        # the same site from the same committed JSON.
+        run: npm run build:pages
 
       - name: Check the page is not empty
         if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
@@ -130,7 +125,7 @@ jobs:
       # Push goes to Telegram when configured. The GitHub comment is only the
       # fallback, because its delivery mechanism is email.
       - name: Send the shortlist (Telegram push, else GitHub comment)
-        if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
+        if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot' && inputs.mode != 'publish'
         env:
           # Telegram takes over as soon as these two secrets exist; until then
           # the GitHub comment (and its email) is the fallback.
@@ -143,7 +138,7 @@ jobs:
         run: npm run notify
 
       - name: Persist the one-shot reminder flag
-        if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot'
+        if: github.event.schedule != '10 21 * * 1-5' && inputs.mode != 'snapshot' && inputs.mode != 'publish'
         continue-on-error: true
         run: |
           if [ -f data/reminders.json ] && ! git diff --quiet data/reminders.json 2>/dev/null; then
