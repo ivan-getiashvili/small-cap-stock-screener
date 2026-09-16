@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-16T13:01:07.125Z",
+  "generatedAt": "2026-09-16T13:20:35.303Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-15",
   "universeChecked": 6020,
   "smallCapsInBand": 2935,
-  "investigated": 97,
-  "liveQuotes": 76,
+  "investigated": 96,
+  "liveQuotes": 77,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-15T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 148,
+    "edgarFilings": 152,
     "leads": {
-      "8-K": 63,
+      "8-K": 64,
       "PR Newswire": 2,
-      "GlobeNewswire": 8,
+      "GlobeNewswire": 6,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 97,
-    "answered": 97,
+    "requested": 96,
+    "answered": 96,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "DataMeds AI, Inc.",
       "business": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
       "sector": "Health Care",
-      "preMarketPrice": 4.39,
-      "preMarketChangePct": 170.98765432098762,
+      "preMarketPrice": 4.2,
+      "preMarketChangePct": 159.25925925925927,
       "prevClose": 1.62,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 16, 2026 9:01 AM ET",
-      "preMarketVolume": 50841093,
-      "preMarketDollarVolume": 223192398.26999998,
-      "relVolume": 156.69593505456808,
+      "lastTradeAt": "Sep 16, 2026 9:20 AM ET",
+      "preMarketVolume": 57488195,
+      "preMarketDollarVolume": 241450419,
+      "relVolume": 177.18278539220913,
       "avgVolume50": 324457,
       "sharesOutstanding": 3061919,
-      "marketCap": 13441824.409999998,
+      "marketCap": 12860059.8,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 30,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-17"
       },
-      "floatRotation": 16.60432330182477,
+      "floatRotation": 18.775217437169303,
       "daysUp": 1,
       "priorRunPct": 85.97175984387557,
       "extended": true,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "171.0%"
+          "detail": "159.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "50,841,093"
+          "detail": "57,488,195"
         },
         {
           "name": "News catalyst",
@@ -116,7 +116,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.39"
+          "detail": "$4.20"
         },
         {
           "name": "Float <10M",
@@ -135,17 +135,17 @@
       "legalName": "ReTo Eco-Solutions, Inc.",
       "business": "Abrasive, Asbestos & Misc Nonmetallic Mineral Prods",
       "sector": "Industrials",
-      "preMarketPrice": 3.8599,
-      "preMarketChangePct": 37.85357142857144,
+      "preMarketPrice": 3.78,
+      "preMarketChangePct": 35,
       "prevClose": 2.8,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 16, 2026 9:01 AM ET",
-      "preMarketVolume": 20138538,
-      "preMarketDollarVolume": 77732742.82620001,
-      "relVolume": 37.34227214739216,
+      "lastTradeAt": "Sep 16, 2026 9:20 AM ET",
+      "preMarketVolume": 21616832,
+      "preMarketDollarVolume": 81711624.96,
+      "relVolume": 40.083427282976324,
       "avgVolume50": 539296,
       "sharesOutstanding": 43398885,
-      "marketCap": 167515356.21150002,
+      "marketCap": 164047785.29999998,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 282,
       "float": {
@@ -153,7 +153,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2022-12-31"
       },
-      "floatRotation": 0.46403353450209606,
+      "floatRotation": 0.49809648335435347,
       "daysUp": 1,
       "priorRunPct": 422.09584187954505,
       "extended": true,
@@ -171,12 +171,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "37.9%"
+          "detail": "35.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "20,138,538"
+          "detail": "21,616,832"
         },
         {
           "name": "News catalyst",
@@ -186,7 +186,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.86"
+          "detail": "$3.78"
         },
         {
           "name": "Float <10M",
@@ -198,39 +198,39 @@
       "quality": "low"
     },
     {
-      "symbol": "NTHI",
-      "name": "NeOnc Technologies Holdings Inc.",
-      "legalName": "NEONC TECHNOLOGIES HOLDINGS, INC.",
-      "business": "Pharmaceutical Preparations",
+      "symbol": "NRXS",
+      "name": "Neuraxis Inc.",
+      "legalName": "Neuraxis, INC",
+      "business": "Electromedical & Electrotherapeutic Apparatus",
       "sector": "Health Care",
-      "preMarketPrice": 3.7,
-      "preMarketChangePct": 11.78247734138973,
-      "prevClose": 3.31,
+      "preMarketPrice": 6.14,
+      "preMarketChangePct": 7.719298245614025,
+      "prevClose": 5.7,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 16, 2026 8:55 AM ET",
-      "preMarketVolume": 346,
-      "preMarketDollarVolume": 1280.2,
-      "relVolume": 0.001960151146915028,
-      "avgVolume50": 176517,
-      "sharesOutstanding": 25936365,
-      "marketCap": 95964550.5,
+      "lastTradeAt": "Sep 16, 2026 9:18 AM ET",
+      "preMarketVolume": 30570,
+      "preMarketDollarVolume": 187699.8,
+      "relVolume": 0.3979018066329984,
+      "avgVolume50": 76828,
+      "sharesOutstanding": 12557765,
+      "marketCap": 77104677.1,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 31,
+      "bestPriorSpikePct": 25,
       "float": {
-        "shares": 25936365,
+        "shares": 12557765,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-10"
+        "asOf": "2026-08-06"
       },
-      "floatRotation": 0.0000133403427966872,
+      "floatRotation": 0.002434350380023834,
       "daysUp": 0,
-      "priorRunPct": -18.673218673218678,
+      "priorRunPct": -3.5532994923857864,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "NeOnc’s $629K Insider Buying Spree Follows Breakthrough Data and Now All Eyes Turn to the FDA",
-        "subject": "FDA / clinical",
-        "date": "2026-09-16"
+        "headline": "Neuraxis Gains Nearly 137% in a Year: What's Driving the Stock?",
+        "subject": null,
+        "date": "2026-09-15"
       },
       "leads": [
         "GlobeNewswire"
@@ -238,13 +238,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "11.8%"
+          "ok": false,
+          "detail": "7.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "346"
+          "detail": "30,570"
         },
         {
           "name": "News catalyst",
@@ -254,15 +254,15 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.70"
+          "detail": "$6.14"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "25.9M"
+          "detail": "12.6M"
         }
       ],
-      "passed": 3,
+      "passed": 2,
       "quality": "low"
     },
     {
