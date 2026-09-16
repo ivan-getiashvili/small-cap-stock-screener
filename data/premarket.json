@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-16T11:00:35.239Z",
+  "generatedAt": "2026-09-16T11:20:19.393Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-15",
-  "universeChecked": 6019,
+  "universeChecked": 6020,
   "smallCapsInBand": 2935,
-  "investigated": 77,
-  "liveQuotes": 56,
+  "investigated": 84,
+  "liveQuotes": 59,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-15T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 127,
+    "edgarFilings": 128,
     "leads": {
-      "8-K": 52,
+      "8-K": 53,
       "PR Newswire": 0,
-      "GlobeNewswire": 1,
+      "GlobeNewswire": 7,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 77,
-    "answered": 77,
+    "requested": 84,
+    "answered": 84,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "DataMeds AI, Inc.",
       "business": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
       "sector": "Health Care",
-      "preMarketPrice": 3.9,
-      "preMarketChangePct": 140.74074074074073,
+      "preMarketPrice": 3.91,
+      "preMarketChangePct": 141.358024691358,
       "prevClose": 1.62,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 16, 2026 7:00 AM ET",
-      "preMarketVolume": 28561464,
-      "preMarketDollarVolume": 111389709.6,
-      "relVolume": 88.02850300656173,
+      "lastTradeAt": "Sep 16, 2026 7:20 AM ET",
+      "preMarketVolume": 35828524,
+      "preMarketDollarVolume": 140089528.84,
+      "relVolume": 110.42610885263687,
       "avgVolume50": 324457,
       "sharesOutstanding": 3061919,
-      "marketCap": 11941484.1,
+      "marketCap": 11972103.290000001,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 30,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-17"
       },
-      "floatRotation": 9.327961974173713,
+      "floatRotation": 11.701329786973464,
       "daysUp": 1,
       "priorRunPct": 85.97175984387557,
       "extended": true,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "140.7%"
+          "detail": "141.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "28,561,464"
+          "detail": "35,828,524"
         },
         {
           "name": "News catalyst",
@@ -116,12 +116,80 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.90"
+          "detail": "$3.91"
         },
         {
           "name": "Float <10M",
           "ok": true,
           "detail": "3.1M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "JZXN",
+      "name": "Jiuzi Holdings Inc. Ordinary Shares",
+      "legalName": "Jiuzi Holdings, Inc.",
+      "business": "Retail-Auto Dealers & Gasoline Stations",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.32,
+      "preMarketChangePct": 23.364485981308412,
+      "prevClose": 1.07,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 16, 2026 7:20 AM ET",
+      "preMarketVolume": 2632021,
+      "preMarketDollarVolume": 3474267.72,
+      "relVolume": 0.6215054763829804,
+      "avgVolume50": 4234912,
+      "sharesOutstanding": 1255785,
+      "marketCap": 1657636.2000000002,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 90,
+      "float": {
+        "shares": 1255785,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-10-31"
+      },
+      "floatRotation": 2.0959168966025237,
+      "daysUp": 0,
+      "priorRunPct": -6.956521739130422,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Jiuzi Holdings Announces New Progress in AI Intelligent Imaging Platform as System Validation and Commercial Deployment Preparations Advance",
+        "subject": "Hot-sector announcement",
+        "date": "2026-09-16"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "23.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "2,632,021"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.32"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "1.3M"
         }
       ],
       "passed": 4,
@@ -135,17 +203,17 @@
       "legalName": "ReTo Eco-Solutions, Inc.",
       "business": "Abrasive, Asbestos & Misc Nonmetallic Mineral Prods",
       "sector": "Industrials",
-      "preMarketPrice": 3.8594,
-      "preMarketChangePct": 37.835714285714296,
+      "preMarketPrice": 3.62,
+      "preMarketChangePct": 29.2857142857143,
       "prevClose": 2.8,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 16, 2026 7:00 AM ET",
-      "preMarketVolume": 14992030,
-      "preMarketDollarVolume": 57860240.582,
-      "relVolume": 27.7992605174153,
+      "lastTradeAt": "Sep 16, 2026 7:20 AM ET",
+      "preMarketVolume": 16310913,
+      "preMarketDollarVolume": 59045505.06,
+      "relVolume": 30.24482473446864,
       "avgVolume50": 539296,
       "sharesOutstanding": 43398885,
-      "marketCap": 167493656.769,
+      "marketCap": 157103963.70000002,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 282,
       "float": {
@@ -153,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2022-12-31"
       },
-      "floatRotation": 0.3454473542350224,
+      "floatRotation": 0.37583714420312875,
       "daysUp": 1,
       "priorRunPct": 422.09584187954505,
       "extended": true,
@@ -171,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "37.8%"
+          "detail": "29.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "14,992,030"
+          "detail": "16,310,913"
         },
         {
           "name": "News catalyst",
@@ -186,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.86"
+          "detail": "$3.62"
         },
         {
           "name": "Float <10M",
@@ -195,74 +263,6 @@
         }
       ],
       "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "NFE",
-      "name": "New Fortress Energy Inc. Class A",
-      "legalName": "New Fortress Energy Inc.",
-      "business": "Natural Gas Distribution",
-      "sector": "Utilities",
-      "preMarketPrice": 13.63,
-      "preMarketChangePct": 6.734534064213009,
-      "prevClose": 12.77,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 16, 2026 6:33 AM ET",
-      "preMarketVolume": 2272,
-      "preMarketDollarVolume": 30967.36,
-      "relVolume": 0.0009316358861878829,
-      "avgVolume50": 2438721,
-      "sharesOutstanding": 285634650,
-      "marketCap": 3893200279.5,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 45,
-      "float": {
-        "shares": 285634650,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-31"
-      },
-      "floatRotation": 0.000007954217039144236,
-      "daysUp": 0,
-      "priorRunPct": 4557.1845368344275,
-      "extended": true,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "2,272"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$13.63"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "285.6M"
-        }
-      ],
-      "passed": 1,
       "quality": "low"
     }
   ]
