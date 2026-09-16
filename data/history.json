@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-09-15T23:30:50.768Z",
+ "updatedAt": "2026-09-16T11:00:45.802Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -3214,7 +3214,22 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 9.45,
+      "high": 10.2,
+      "low": 9.16,
+      "close": 9.81,
+      "volume": 3185068,
+      "prevClose": 8.21,
+      "gapPct": 15.103532277710089,
+      "openToHighPct": 7.936507936507938,
+      "openToClosePct": 3.809523809523822,
+      "openToLowPct": -3.06878306878306,
+      "alertToHighPct": 9.406843290786215,
+      "alertToClosePct": 5.223640459079696,
+      "filledAt": "2026-09-16T11:00:45.684Z",
+      "noon": 9.73
+     },
      "intraday": {
       "noon": 9.73
      }
@@ -3238,10 +3253,52 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 3.61,
+      "high": 4.15,
+      "low": 3.24,
+      "close": 4.09,
+      "volume": 11566180,
+      "prevClose": 3.04,
+      "gapPct": 18.749999999999993,
+      "openToHighPct": 14.958448753462616,
+      "openToClosePct": 13.29639889196676,
+      "openToLowPct": -10.249307479224367,
+      "alertToHighPct": 14.010989010989016,
+      "alertToClosePct": 12.362637362637354,
+      "filledAt": "2026-09-16T11:00:45.801Z",
+      "noon": 3.8347
+     },
      "intraday": {
       "noon": 3.8347
      }
+    }
+   ]
+  },
+  "2026-09-16": {
+   "date": "2026-09-16",
+   "source": "live",
+   "names": [
+    {
+     "symbol": "MEDS",
+     "legalName": "DataMeds AI, Inc.",
+     "business": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
+     "list": "watchlist",
+     "firstSeenAt": "2026-09-16T11:00:35.239Z",
+     "lastSeenAt": "2026-09-16T11:00:35.239Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 3.9,
+     "preMarketChangePct": 140.74074074074073,
+     "prevClose": 1.62,
+     "preMarketVolume": 28561464,
+     "relVolume": 88.02850300656173,
+     "floatShares": 3061919,
+     "catalyst": null,
+     "extended": true,
+     "missing": [
+      "News catalyst"
+     ],
+     "performance": null
     }
    ]
   }

@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-09-15T13:20:36.476Z",
-  "marketStatus": "Market Open",
-  "prevSession": "2026-09-14",
-  "universeChecked": 6021,
-  "smallCapsInBand": 2926,
-  "investigated": 96,
-  "liveQuotes": 80,
+  "generatedAt": "2026-09-16T11:00:35.239Z",
+  "marketStatus": "Pre Market",
+  "prevSession": "2026-09-15",
+  "universeChecked": 6019,
+  "smallCapsInBand": 2935,
+  "investigated": 77,
+  "liveQuotes": 56,
   "feedIsLive": true,
   "discovery": {
-    "since": "2026-09-14T19:30:00.000Z",
+    "since": "2026-09-15T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 202,
+    "edgarFilings": 127,
     "leads": {
-      "8-K": 74,
-      "PR Newswire": 2,
-      "GlobeNewswire": 5,
-      "prior-session gainer": 18
+      "8-K": 52,
+      "PR Newswire": 0,
+      "GlobeNewswire": 1,
+      "prior-session gainer": 25
     },
     "feeds": [
       {
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 96,
-    "answered": 96,
+    "requested": 77,
+    "answered": 77,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,171 +60,33 @@
   "shortlist": [],
   "watchlist": [
     {
-      "symbol": "VRA",
-      "name": "Vera Bradley Inc.",
-      "legalName": "Vera Bradley, Inc.",
-      "business": "Leather & Leather Products",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.5,
-      "preMarketChangePct": 15.131578947368421,
-      "prevClose": 3.04,
+      "symbol": "MEDS",
+      "name": "DataMeds AI Inc.",
+      "legalName": "DataMeds AI, Inc.",
+      "business": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
+      "sector": "Health Care",
+      "preMarketPrice": 3.9,
+      "preMarketChangePct": 140.74074074074073,
+      "prevClose": 1.62,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 9:20 AM ET",
-      "preMarketVolume": 3749970.120095,
-      "preMarketDollarVolume": 13124895.4203325,
-      "relVolume": 35.472786197618106,
-      "avgVolume50": 105714,
-      "sharesOutstanding": 28438252,
-      "marketCap": 99533882,
+      "lastTradeAt": "Sep 16, 2026 7:00 AM ET",
+      "preMarketVolume": 28561464,
+      "preMarketDollarVolume": 111389709.6,
+      "relVolume": 88.02850300656173,
+      "avgVolume50": 324457,
+      "sharesOutstanding": 3061919,
+      "marketCap": 11941484.1,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 36,
+      "bestPriorSpikePct": 30,
       "float": {
-        "shares": 28438252,
+        "shares": 3061919,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-06-04"
+        "asOf": "2026-08-17"
       },
-      "floatRotation": 0.13186359415111026,
-      "daysUp": 0,
-      "priorRunPct": -9.253731343283583,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Vera Bradley Reports Q2 Net Profit As Expenses Drop, Revenue Improves; Stock Up Over 19% ",
-        "subject": "Earnings or guidance",
-        "date": "2026-09-15"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "15.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "3,749,970"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.50"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "28.4M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
-      "symbol": "RLGT",
-      "name": "Radiant Logistics Inc.",
-      "legalName": "RADIANT LOGISTICS, INC",
-      "business": "Arrangement of  Transportation of  Freight & Cargo",
-      "sector": "Industrials",
-      "preMarketPrice": 9.329,
-      "preMarketChangePct": 13.62971985383678,
-      "prevClose": 8.21,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 9:17 AM ET",
-      "preMarketVolume": 177120.207019,
-      "preMarketDollarVolume": 1652354.411280251,
-      "relVolume": 1.4605202109225541,
-      "avgVolume50": 121272,
-      "sharesOutstanding": 46894270,
-      "marketCap": 437476644.83000004,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 16,
-      "float": {
-        "shares": 46894270,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-08"
-      },
-      "floatRotation": 0.003777011712070579,
+      "floatRotation": 9.327961974173713,
       "daysUp": 1,
-      "priorRunPct": -2.7251184834123063,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released",
-        "subject": "Earnings / results released",
-        "date": "2026-09-14"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "13.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "177,120"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$9.33"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "46.9M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
-  "alsoRan": [
-    {
-      "symbol": "VEEA",
-      "name": "Veea Inc.",
-      "legalName": "VEEA INC.",
-      "business": "Services-Computer Integrated Systems Design",
-      "sector": "Technology",
-      "preMarketPrice": 4.2594,
-      "preMarketChangePct": 86.00000000000001,
-      "prevClose": 2.29,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 9:20 AM ET",
-      "preMarketVolume": 41804756,
-      "preMarketDollarVolume": 178063177.7064,
-      "relVolume": 22.252895075696483,
-      "avgVolume50": 1878621,
-      "sharesOutstanding": 62214156,
-      "marketCap": 264994976.06640002,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 17,
-      "float": {
-        "shares": 62214156,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-10"
-      },
-      "floatRotation": 0.6719492586221052,
-      "daysUp": 1,
-      "priorRunPct": 34.70588235294118,
-      "extended": false,
+      "priorRunPct": 85.97175984387557,
+      "extended": true,
       "catalyst": {
         "found": false,
         "kind": null,
@@ -239,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "86.0%"
+          "detail": "140.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "41,804,756"
+          "detail": "28,561,464"
         },
         {
           "name": "News catalyst",
@@ -254,324 +116,121 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.26"
+          "detail": "$3.90"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "3.1M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
+  "alsoRan": [
+    {
+      "symbol": "RETO",
+      "name": "ReTo Eco-Solutions Inc. Class A Shares",
+      "legalName": "ReTo Eco-Solutions, Inc.",
+      "business": "Abrasive, Asbestos & Misc Nonmetallic Mineral Prods",
+      "sector": "Industrials",
+      "preMarketPrice": 3.8594,
+      "preMarketChangePct": 37.835714285714296,
+      "prevClose": 2.8,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 16, 2026 7:00 AM ET",
+      "preMarketVolume": 14992030,
+      "preMarketDollarVolume": 57860240.582,
+      "relVolume": 27.7992605174153,
+      "avgVolume50": 539296,
+      "sharesOutstanding": 43398885,
+      "marketCap": 167493656.769,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 282,
+      "float": {
+        "shares": 43398885,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2022-12-31"
+      },
+      "floatRotation": 0.3454473542350224,
+      "daysUp": 1,
+      "priorRunPct": 422.09584187954505,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "37.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "14,992,030"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.86"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "62.2M"
+          "detail": "43.4M"
         }
       ],
       "passed": 3,
       "quality": "low"
     },
     {
-      "symbol": "RCKT",
-      "name": "Rocket Pharmaceuticals Inc.",
-      "legalName": "ROCKET PHARMACEUTICALS, INC.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 3.71,
-      "preMarketChangePct": 8.163265306122442,
-      "prevClose": 3.43,
+      "symbol": "NFE",
+      "name": "New Fortress Energy Inc. Class A",
+      "legalName": "New Fortress Energy Inc.",
+      "business": "Natural Gas Distribution",
+      "sector": "Utilities",
+      "preMarketPrice": 13.63,
+      "preMarketChangePct": 6.734534064213009,
+      "prevClose": 12.77,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 9:20 AM ET",
-      "preMarketVolume": 227338.402789,
-      "preMarketDollarVolume": 843425.47434719,
-      "relVolume": 0.14287894408676624,
-      "avgVolume50": 1591126,
-      "sharesOutstanding": 109774597,
-      "marketCap": 407263754.87,
+      "lastTradeAt": "Sep 16, 2026 6:33 AM ET",
+      "preMarketVolume": 2272,
+      "preMarketDollarVolume": 30967.36,
+      "relVolume": 0.0009316358861878829,
+      "avgVolume50": 2438721,
+      "sharesOutstanding": 285634650,
+      "marketCap": 3893200279.5,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 23,
+      "bestPriorSpikePct": 45,
       "float": {
-        "shares": 109774597,
+        "shares": 285634650,
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-31"
       },
-      "floatRotation": 0.002070956387013655,
-      "daysUp": 1,
-      "priorRunPct": -11.139896373056986,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Rocket Gets FDA Nod To Advance RP-A501 Phase 2 Trial In Danon Disease; Stock Up ",
-        "subject": "FDA / clinical",
-        "date": "2026-09-15"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "8.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "227,338"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.71"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "109.8M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "QXL",
-      "name": "Quantum X Labs Inc.",
-      "legalName": "QUANTUM X LABS INC.",
-      "business": "Services-Prepackaged Software",
-      "sector": "Technology",
-      "preMarketPrice": 4.69,
-      "preMarketChangePct": 9.069767441860478,
-      "prevClose": 4.3,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 8:32 AM ET",
-      "preMarketVolume": 2517,
-      "preMarketDollarVolume": 11804.730000000001,
-      "relVolume": 0.043574606582068104,
-      "avgVolume50": 57763,
-      "sharesOutstanding": 21567826,
-      "marketCap": 101153103.94000001,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 14,
-      "float": {
-        "shares": 21567826,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-13"
-      },
-      "floatRotation": 0.00011670160914688389,
+      "floatRotation": 0.000007954217039144236,
       "daysUp": 0,
-      "priorRunPct": -3.9106145251396613,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
-        "subject": "Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
-        "date": "2026-09-15"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "2,517"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.69"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "21.6M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "BBNX",
-      "name": "Beta Bionics Inc.",
-      "legalName": "Beta Bionics, Inc.",
-      "business": "Surgical & Medical Instruments & Apparatus",
-      "sector": "Health Care",
-      "preMarketPrice": 17.73,
-      "preMarketChangePct": 5.977286312014345,
-      "prevClose": 16.73,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 9:20 AM ET",
-      "preMarketVolume": 11267,
-      "preMarketDollarVolume": 199763.91,
-      "relVolume": 0.009838164078258242,
-      "avgVolume50": 1145234,
-      "sharesOutstanding": 44989688,
-      "marketCap": 797667168.24,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 20,
-      "float": {
-        "shares": 44989688,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-27"
-      },
-      "floatRotation": 0.00025043516638746194,
-      "daysUp": 1,
-      "priorRunPct": -13.851699279093724,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Beta Bionics: FDA Clearance Of Mint Sets Stage For 2027 Patch Pump Launch ",
-        "subject": "FDA / clinical",
-        "date": "2026-09-14"
-      },
-      "leads": [
-        "PR Newswire",
-        "PR Newswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "11,267"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$17.73"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "45.0M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "NXXT",
-      "name": "NextNRG Inc.",
-      "legalName": "NEXTNRG, INC.",
-      "business": "Retail-Auto Dealers & Gasoline Stations",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.46,
-      "preMarketChangePct": 5.035971223021588,
-      "prevClose": 1.39,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 9:19 AM ET",
-      "preMarketVolume": 110287,
-      "preMarketDollarVolume": 161019.02,
-      "relVolume": 0.023573249522654896,
-      "avgVolume50": 4678481,
-      "sharesOutstanding": 168221739,
-      "marketCap": 245603738.94,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 100,
-      "float": {
-        "shares": 168221739,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-13"
-      },
-      "floatRotation": 0.000655604921549408,
-      "daysUp": 1,
-      "priorRunPct": 529.8142274580878,
+      "priorRunPct": 4557.1845368344275,
       "extended": true,
       "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Changed the rights of shareholders · Amended the charter or bylaws · Other material event (often FDA, clinical or contract news)",
-        "subject": "Changed the rights of shareholders · Amended the charter or bylaws · Other material event (often FDA, clinical or contract news)",
-        "date": "2026-09-14"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "110,287"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.46"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "168.2M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "BLSM",
-      "name": "BlossomHill Therapeutics Inc.",
-      "legalName": "BlossomHill Therapeutics, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 23.14,
-      "preMarketChangePct": 6.439742410303598,
-      "prevClose": 21.74,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 9:08 AM ET",
-      "preMarketVolume": 389,
-      "preMarketDollarVolume": 9001.460000000001,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 30253035.004599817,
-      "marketCap": 700055230.0064398,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 30253035.004599817,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-15"
-      },
-      "floatRotation": 0.000012858214058221086,
-      "daysUp": 0,
-      "priorRunPct": null,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "BlossomHill's BH-30643 Shows 45% Response In EGFR C797S NSCLC; Stock Up ",
+        "found": false,
+        "kind": null,
+        "headline": null,
         "subject": null,
-        "date": "2026-09-15"
+        "date": null
       },
       "leads": [
         "8-K"
@@ -580,100 +239,31 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.4%"
+          "detail": "6.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "389"
+          "detail": "2,272"
         },
         {
           "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
+          "ok": false,
+          "detail": "none found"
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$23.14"
+          "ok": true,
+          "detail": "$13.63"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "30.3M"
-        }
-      ],
-      "passed": 1,
-      "quality": "low"
-    },
-    {
-      "symbol": "AZIO",
-      "name": "Azio AI Holdings Inc.",
-      "legalName": "AZIO AI HOLDINGS, INC.",
-      "business": "Motor Vehicle Parts & Accessories",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.2144,
-      "preMarketChangePct": 5.600000000000001,
-      "prevClose": 1.15,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 15, 2026 9:17 AM ET",
-      "preMarketVolume": 1231,
-      "preMarketDollarVolume": 1494.9263999999998,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 16467848,
-      "marketCap": 19998554.611199997,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 16467848,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-12"
-      },
-      "floatRotation": 0.00007475172226510714,
-      "daysUp": 0,
-      "priorRunPct": null,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Executive or board change",
-        "subject": "Executive or board change",
-        "date": "2026-09-14"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "1,231"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.21"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "16.5M"
+          "detail": "285.6M"
         }
       ],
       "passed": 1,
       "quality": "low"
     }
-  ],
-  "frozenAfterPreMarket": true
+  ]
 }
