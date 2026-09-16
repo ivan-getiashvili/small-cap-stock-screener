@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-16T12:00:21.415Z",
+  "generatedAt": "2026-09-16T12:20:37.890Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-15",
   "universeChecked": 6020,
   "smallCapsInBand": 2935,
-  "investigated": 88,
-  "liveQuotes": 65,
+  "investigated": 91,
+  "liveQuotes": 68,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-15T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 130,
+    "edgarFilings": 137,
     "leads": {
-      "8-K": 55,
-      "PR Newswire": 0,
-      "GlobeNewswire": 9,
+      "8-K": 59,
+      "PR Newswire": 3,
+      "GlobeNewswire": 7,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 88,
-    "answered": 88,
+    "requested": 91,
+    "answered": 91,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "DataMeds AI, Inc.",
       "business": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
       "sector": "Health Care",
-      "preMarketPrice": 3.71,
-      "preMarketChangePct": 129.01234567901233,
+      "preMarketPrice": 3.5908,
+      "preMarketChangePct": 121.65432098765432,
       "prevClose": 1.62,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 16, 2026 8:00 AM ET",
-      "preMarketVolume": 40318783,
-      "preMarketDollarVolume": 149582684.93,
-      "relVolume": 124.26541267409857,
+      "lastTradeAt": "Sep 16, 2026 8:20 AM ET",
+      "preMarketVolume": 41901030,
+      "preMarketDollarVolume": 150458218.52400002,
+      "relVolume": 129.1420126549897,
       "avgVolume50": 324457,
       "sharesOutstanding": 3061919,
-      "marketCap": 11359719.49,
+      "marketCap": 10994738.7452,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 30,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-17"
       },
-      "floatRotation": 13.16781502058023,
+      "floatRotation": 13.68456513709213,
       "daysUp": 1,
       "priorRunPct": 85.97175984387557,
       "extended": true,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "129.0%"
+          "detail": "121.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "40,318,783"
+          "detail": "41,901,030"
         },
         {
           "name": "News catalyst",
@@ -116,80 +116,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.71"
+          "detail": "$3.59"
         },
         {
           "name": "Float <10M",
           "ok": true,
           "detail": "3.1M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
-      "symbol": "JZXN",
-      "name": "Jiuzi Holdings Inc. Ordinary Shares",
-      "legalName": "Jiuzi Holdings, Inc.",
-      "business": "Retail-Auto Dealers & Gasoline Stations",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.27,
-      "preMarketChangePct": 18.691588785046722,
-      "prevClose": 1.07,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 16, 2026 8:00 AM ET",
-      "preMarketVolume": 16737951,
-      "preMarketDollarVolume": 21257197.77,
-      "relVolume": 3.952372800190417,
-      "avgVolume50": 4234912,
-      "sharesOutstanding": 1255785,
-      "marketCap": 1594846.95,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 90,
-      "float": {
-        "shares": 1255785,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-10-31"
-      },
-      "floatRotation": 13.328675688911716,
-      "daysUp": 0,
-      "priorRunPct": -6.956521739130422,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Jiuzi Holdings Announces New Progress in AI Intelligent Imaging Platform as System Validation and Commercial Deployment Preparations Advance",
-        "subject": "Hot-sector announcement",
-        "date": "2026-09-16"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "18.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "16,737,951"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.27"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "1.3M"
         }
       ],
       "passed": 4,
@@ -203,17 +135,17 @@
       "legalName": "ReTo Eco-Solutions, Inc.",
       "business": "Abrasive, Asbestos & Misc Nonmetallic Mineral Prods",
       "sector": "Industrials",
-      "preMarketPrice": 3.35,
-      "preMarketChangePct": 19.642857142857153,
+      "preMarketPrice": 3.3999,
+      "preMarketChangePct": 21.425000000000015,
       "prevClose": 2.8,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 16, 2026 8:00 AM ET",
-      "preMarketVolume": 17944399,
-      "preMarketDollarVolume": 60113736.65,
-      "relVolume": 33.27374762653533,
+      "lastTradeAt": "Sep 16, 2026 8:20 AM ET",
+      "preMarketVolume": 18623183,
+      "preMarketDollarVolume": 63316959.8817,
+      "relVolume": 34.53239593840859,
       "avgVolume50": 539296,
       "sharesOutstanding": 43398885,
-      "marketCap": 145386264.75,
+      "marketCap": 147551869.1115,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 282,
       "float": {
@@ -221,7 +153,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2022-12-31"
       },
-      "floatRotation": 0.4134760374604094,
+      "floatRotation": 0.4291166236183257,
       "daysUp": 1,
       "priorRunPct": 422.09584187954505,
       "extended": true,
@@ -239,12 +171,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "19.6%"
+          "detail": "21.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "17,944,399"
+          "detail": "18,623,183"
         },
         {
           "name": "News catalyst",
@@ -254,7 +186,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.35"
+          "detail": "$3.40"
         },
         {
           "name": "Float <10M",
@@ -263,6 +195,74 @@
         }
       ],
       "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "CTGO",
+      "name": "Contango Silver & Gold Inc.",
+      "legalName": "Contango Silver & Gold Inc.",
+      "business": "Gold and Silver Ores",
+      "sector": "Basic Materials",
+      "preMarketPrice": 20,
+      "preMarketChangePct": 5.097214923804513,
+      "prevClose": 19.03,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 16, 2026 8:20 AM ET",
+      "preMarketVolume": 290,
+      "preMarketDollarVolume": 5800,
+      "relVolume": 0.000771697334983169,
+      "avgVolume50": 375795,
+      "sharesOutstanding": 33440691,
+      "marketCap": 668813820,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 12,
+      "float": {
+        "shares": 33440691,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-13"
+      },
+      "floatRotation": 0.00000867206960526025,
+      "daysUp": 2,
+      "priorRunPct": -4.849999999999994,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-09-15"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "290"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$20.00"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "33.4M"
+        }
+      ],
+      "passed": 2,
       "quality": "low"
     }
   ]
