@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-16T12:20:37.890Z",
+  "generatedAt": "2026-09-16T12:40:36.141Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-15",
   "universeChecked": 6020,
   "smallCapsInBand": 2935,
-  "investigated": 91,
-  "liveQuotes": 68,
+  "investigated": 96,
+  "liveQuotes": 73,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-15T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 137,
+    "edgarFilings": 141,
     "leads": {
-      "8-K": 59,
-      "PR Newswire": 3,
-      "GlobeNewswire": 7,
+      "8-K": 61,
+      "PR Newswire": 1,
+      "GlobeNewswire": 11,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 91,
-    "answered": 91,
+    "requested": 96,
+    "answered": 96,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "DataMeds AI, Inc.",
       "business": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
       "sector": "Health Care",
-      "preMarketPrice": 3.5908,
-      "preMarketChangePct": 121.65432098765432,
+      "preMarketPrice": 3.65,
+      "preMarketChangePct": 125.30864197530862,
       "prevClose": 1.62,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 16, 2026 8:20 AM ET",
-      "preMarketVolume": 41901030,
-      "preMarketDollarVolume": 150458218.52400002,
-      "relVolume": 129.1420126549897,
+      "lastTradeAt": "Sep 16, 2026 8:40 AM ET",
+      "preMarketVolume": 43512085,
+      "preMarketDollarVolume": 158819110.25,
+      "relVolume": 134.10740098071548,
       "avgVolume50": 324457,
       "sharesOutstanding": 3061919,
-      "marketCap": 10994738.7452,
+      "marketCap": 11176004.35,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 30,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-17"
       },
-      "floatRotation": 13.68456513709213,
+      "floatRotation": 14.210723732404418,
       "daysUp": 1,
       "priorRunPct": 85.97175984387557,
       "extended": true,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "121.7%"
+          "detail": "125.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "41,901,030"
+          "detail": "43,512,085"
         },
         {
           "name": "News catalyst",
@@ -116,7 +116,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.59"
+          "detail": "$3.65"
         },
         {
           "name": "Float <10M",
@@ -135,17 +135,17 @@
       "legalName": "ReTo Eco-Solutions, Inc.",
       "business": "Abrasive, Asbestos & Misc Nonmetallic Mineral Prods",
       "sector": "Industrials",
-      "preMarketPrice": 3.3999,
-      "preMarketChangePct": 21.425000000000015,
+      "preMarketPrice": 3.58,
+      "preMarketChangePct": 27.85714285714287,
       "prevClose": 2.8,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 16, 2026 8:20 AM ET",
-      "preMarketVolume": 18623183,
-      "preMarketDollarVolume": 63316959.8817,
-      "relVolume": 34.53239593840859,
+      "lastTradeAt": "Sep 16, 2026 8:40 AM ET",
+      "preMarketVolume": 19072825,
+      "preMarketDollarVolume": 68280713.5,
+      "relVolume": 35.3661532813149,
       "avgVolume50": 539296,
       "sharesOutstanding": 43398885,
-      "marketCap": 147551869.1115,
+      "marketCap": 155368008.3,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 282,
       "float": {
@@ -153,7 +153,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2022-12-31"
       },
-      "floatRotation": 0.4291166236183257,
+      "floatRotation": 0.4394773045436536,
       "daysUp": 1,
       "priorRunPct": 422.09584187954505,
       "extended": true,
@@ -171,12 +171,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "21.4%"
+          "detail": "27.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "18,623,183"
+          "detail": "19,072,825"
         },
         {
           "name": "News catalyst",
@@ -186,7 +186,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.40"
+          "detail": "$3.58"
         },
         {
           "name": "Float <10M",
@@ -195,6 +195,142 @@
         }
       ],
       "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "VRA",
+      "name": "Vera Bradley Inc.",
+      "legalName": "Vera Bradley, Inc.",
+      "business": "Leather & Leather Products",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 4.38,
+      "preMarketChangePct": 7.0904645476772625,
+      "prevClose": 4.09,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 16, 2026 8:39 AM ET",
+      "preMarketVolume": 103422.209482,
+      "preMarketDollarVolume": 452989.27753116004,
+      "relVolume": 0.9783208419130863,
+      "avgVolume50": 105714,
+      "sharesOutstanding": 28688664,
+      "marketCap": 125656348.32,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 36,
+      "float": {
+        "shares": 28688664,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-08"
+      },
+      "floatRotation": 0.0036049852123472884,
+      "daysUp": 1,
+      "priorRunPct": 21.36498516320474,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Vera Bradley (VRA) Q2 2027 Earnings Call Transcript",
+        "subject": "Earnings or guidance",
+        "date": "2026-09-15"
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "103,422"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.38"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "28.7M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "SABR",
+      "name": "Sabre Corporation",
+      "legalName": "Sabre Corp",
+      "business": "Services-Computer Programming, Data Processing, Etc.",
+      "sector": "Technology",
+      "preMarketPrice": 2.22,
+      "preMarketChangePct": 6.220095693779921,
+      "prevClose": 2.09,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 16, 2026 8:28 AM ET",
+      "preMarketVolume": 202,
+      "preMarketDollarVolume": 448.44000000000005,
+      "relVolume": 0.00005235999727313281,
+      "avgVolume50": 3857907,
+      "sharesOutstanding": 403583214,
+      "marketCap": 895954735.08,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 36,
+      "float": {
+        "shares": 403583214,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-30"
+      },
+      "floatRotation": 5.005163569563129e-7,
+      "daysUp": 0,
+      "priorRunPct": -7.522123893805308,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-09-15"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "202"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.22"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "403.6M"
+        }
+      ],
+      "passed": 2,
       "quality": "low"
     },
     {
