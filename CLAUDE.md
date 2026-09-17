@@ -96,6 +96,35 @@ where:
   smallcapscreener.net for $11.86") is trustworthy. A wrong $5.30 was quoted
   once because of this.
 
+## Readable by machines (2026-09-17) — do not regress
+
+Ivan will list the site on a platform where AIs match and read it, so an AI
+given the link must get everything a person sees. Tested on 2026-09-17 before
+the fix: a fetch returned **142 characters** (title + subtitle) and an AI
+reader reported every list "not present", because the lists were drawn only by
+JavaScript; the head said `noindex`; `/robots.txt`, `/sitemap.xml`, `/llms.txt`
+and any wrong path returned the homepage with HTTP 200.
+
+What keeps it readable now (`lib/prerender.ts`, `scripts/build-premarket.ts`):
+- The build writes the whole content into the HTML — status line, every stock
+  with all its numbers, the five criteria, and the full history table — inside
+  the same containers the page's script then redraws. `#history` is NOT
+  `hidden` in the markup (Readability-style readers drop hidden nodes); the
+  script collapses it at load. The build fails if a container is missing.
+- `/llms.txt` (the page as Markdown), `/history.json`, `/premarket.json`,
+  `/robots.txt` (allow all, AI agents named), `/sitemap.xml`, `/404.html` with
+  `not_found_handling: "404-page"` so wrong URLs answer 404.
+- Head: `index, follow`, canonical to the domain, Open Graph, JSON-LD
+  (`WebSite` + `Dataset` with the three downloads), `rel=alternate` links.
+- Cloudflare does not block AI user-agents on this zone (all 200 on 2026-09-17:
+  GPTBot, ChatGPT-User, OAI-SearchBot, ClaudeBot, Claude-User, PerplexityBot,
+  Googlebot, bingbot, CCBot, Bytespider, meta-externalagent). If "Block AI
+  bots" / AI Crawl Control is ever switched on in the dashboard, this breaks.
+- **How to re-test:** strip `<script>`/`<style>` from the fetched HTML and
+  check the tickers, criteria and history stats are in the remaining text; then
+  fetch the URL with an AI reader and ask it to list the stocks.
+- Any new block on the page needs its twin in `lib/prerender.ts`.
+
 ## Track record (`data/history.json`, `lib/history.ts`) — on the page: "Historical performance"
 
 Page order since 2026-09-15 (Ivan's call): shortlist and watchlist first, then
