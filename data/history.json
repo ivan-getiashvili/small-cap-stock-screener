@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-09-16T23:37:59.949Z",
+ "updatedAt": "2026-09-17T11:01:48.344Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -3298,7 +3298,22 @@
      "missing": [
       "News catalyst"
      ],
-     "performance": null,
+     "performance": {
+      "open": 4.035,
+      "high": 12.31,
+      "low": 4.0001,
+      "close": 6.07,
+      "volume": 188778900,
+      "prevClose": 1.62,
+      "gapPct": 149.07407407407408,
+      "openToHighPct": 205.08054522924414,
+      "openToClosePct": 50.43370508054523,
+      "openToLowPct": -0.864931846344495,
+      "alertToHighPct": 215.64102564102564,
+      "alertToClosePct": 55.64102564102566,
+      "filledAt": "2026-09-17T11:01:48.184Z",
+      "noon": 9.7301
+     },
      "intraday": {
       "noon": 9.7301
      }
@@ -3322,10 +3337,134 @@
      "missing": [
       "Price $2–$20"
      ],
-     "performance": null,
+     "performance": {
+      "open": 1.33,
+      "high": 1.94,
+      "low": 1.1204,
+      "close": 1.29,
+      "volume": 47827240,
+      "prevClose": 1.07,
+      "gapPct": 24.299065420560748,
+      "openToHighPct": 45.864661654135325,
+      "openToClosePct": -3.0075187969924837,
+      "openToLowPct": -15.759398496240602,
+      "alertToHighPct": 46.96969696969696,
+      "alertToClosePct": -2.2727272727272747,
+      "filledAt": "2026-09-17T11:01:48.343Z",
+      "noon": 1.7502
+     },
      "intraday": {
       "noon": 1.7502
      }
+    }
+   ]
+  },
+  "2026-09-17": {
+   "date": "2026-09-17",
+   "source": "live",
+   "names": [
+    {
+     "symbol": "TNON",
+     "legalName": "Tenon Medical, Inc.",
+     "business": "Surgical & Medical Instruments & Apparatus",
+     "list": "shortlist",
+     "firstSeenAt": "2026-09-17T11:01:07.761Z",
+     "lastSeenAt": "2026-09-17T11:01:07.761Z",
+     "shortlistedAt": "2026-09-17T11:01:07.761Z",
+     "preMarketPrice": 4.3298,
+     "preMarketChangePct": 10.736572890025563,
+     "prevClose": 3.91,
+     "preMarketVolume": 130535,
+     "relVolume": 0.015299416023745828,
+     "floatShares": 667047,
+     "catalyst": "Share offering (dilution)",
+     "extended": true,
+     "missing": [],
+     "performance": null
+    },
+    {
+     "symbol": "DAIC",
+     "legalName": "CID Holdco, Inc.",
+     "business": "Services-Computer Integrated Systems Design",
+     "list": "watchlist",
+     "firstSeenAt": "2026-09-17T11:01:07.761Z",
+     "lastSeenAt": "2026-09-17T11:01:07.761Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 4.3307,
+     "preMarketChangePct": 115.45771144278609,
+     "prevClose": 2.01,
+     "preMarketVolume": 16685429,
+     "relVolume": 2.2937819966456794,
+     "floatShares": 30259579,
+     "catalyst": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution) · Other material event (often FDA, clinical or contract news)",
+     "extended": false,
+     "missing": [
+      "Float <10M"
+     ],
+     "performance": null
+    },
+    {
+     "symbol": "AEHL",
+     "legalName": "Antelope Enterprise Holdings Ltd",
+     "business": "Communications Services, NEC",
+     "list": "watchlist",
+     "firstSeenAt": "2026-09-17T11:01:07.761Z",
+     "lastSeenAt": "2026-09-17T11:01:07.761Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 12.46,
+     "preMarketChangePct": 35.140997830802604,
+     "prevClose": 9.22,
+     "preMarketVolume": 240171,
+     "relVolume": 0.04008400967272845,
+     "floatShares": 4580547,
+     "catalyst": null,
+     "extended": false,
+     "missing": [
+      "News catalyst"
+     ],
+     "performance": null
+    },
+    {
+     "symbol": "VEEA",
+     "legalName": "VEEA INC.",
+     "business": "Services-Computer Integrated Systems Design",
+     "list": "watchlist",
+     "firstSeenAt": "2026-09-17T11:01:07.761Z",
+     "lastSeenAt": "2026-09-17T11:01:07.761Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 6.71,
+     "preMarketChangePct": 10.000000000000005,
+     "prevClose": 6.1,
+     "preMarketVolume": 465271,
+     "relVolume": 0.24766624029008513,
+     "floatShares": 62214156,
+     "catalyst": "Other material event (often FDA, clinical or contract news)",
+     "extended": true,
+     "missing": [
+      "Float <10M"
+     ],
+     "performance": null
+    },
+    {
+     "symbol": "MEDS",
+     "legalName": "DataMeds AI, Inc.",
+     "business": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
+     "list": "watchlist",
+     "firstSeenAt": "2026-09-17T11:01:07.761Z",
+     "lastSeenAt": "2026-09-17T11:01:07.761Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 6.6,
+     "preMarketChangePct": 8.731466227347601,
+     "prevClose": 6.07,
+     "preMarketVolume": 1927108,
+     "relVolume": 5.939486588361477,
+     "floatShares": 3061919,
+     "catalyst": "Biotech Stocks See Fresh Catalysts: Tempest, DataMEDS, NeurAxis & MAIA ",
+     "extended": true,
+     "missing": [
+      "Up ≥10% pre-market"
+     ],
+     "performance": null
     }
    ]
   }
