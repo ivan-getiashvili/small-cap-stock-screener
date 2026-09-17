@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-17T12:20:49.423Z",
+  "generatedAt": "2026-09-17T12:40:51.094Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-16",
   "universeChecked": 6009,
   "smallCapsInBand": 2938,
-  "investigated": 93,
-  "liveQuotes": 70,
+  "investigated": 98,
+  "liveQuotes": 77,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-16T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 165,
+    "edgarFilings": 171,
     "leads": {
-      "8-K": 70,
-      "PR Newswire": 2,
-      "GlobeNewswire": 6,
+      "8-K": 73,
+      "PR Newswire": 4,
+      "GlobeNewswire": 7,
       "prior-session gainer": 21
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 93,
-    "answered": 93,
+    "requested": 98,
+    "answered": 98,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "AETHLON MEDICAL INC",
       "business": "Surgical & Medical Instruments & Apparatus",
       "sector": "Health Care",
-      "preMarketPrice": 7.47,
-      "preMarketChangePct": 422.3776223776224,
+      "preMarketPrice": 7.5,
+      "preMarketChangePct": 424.4755244755245,
       "prevClose": 1.43,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 17, 2026 8:20 AM ET",
-      "preMarketVolume": 34117770,
-      "preMarketDollarVolume": 254859741.9,
-      "relVolume": 24.744377212507317,
+      "lastTradeAt": "Sep 17, 2026 8:41 AM ET",
+      "preMarketVolume": 37041329,
+      "preMarketDollarVolume": 277809967.5,
+      "relVolume": 26.86472818207598,
       "avgVolume50": 1378809,
       "sharesOutstanding": 711136,
-      "marketCap": 5312185.92,
+      "marketCap": 5333520,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 25,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 47.97643488727895,
+      "floatRotation": 52.08754584214552,
       "daysUp": 0,
       "priorRunPct": -15.384615384615385,
       "extended": false,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "422.4%"
+          "detail": "424.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "34,117,770"
+          "detail": "37,041,329"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$7.47"
+          "detail": "$7.50"
         },
         {
           "name": "Float <10M",
@@ -127,22 +127,90 @@
       "quality": "high"
     },
     {
+      "symbol": "BIAF",
+      "name": "bioAffinity Technologies Inc.",
+      "legalName": "bioAffinity Technologies, Inc.",
+      "business": "Services-Commercial Physical & Biological Research",
+      "sector": "Health Care",
+      "preMarketPrice": 6.56,
+      "preMarketChangePct": 22.616822429906545,
+      "prevClose": 5.35,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 17, 2026 8:41 AM ET",
+      "preMarketVolume": 2169663,
+      "preMarketDollarVolume": 14232989.28,
+      "relVolume": 0.32122150048842135,
+      "avgVolume50": 6754414,
+      "sharesOutstanding": 8101725,
+      "marketCap": 53147316,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 98,
+      "float": {
+        "shares": 8101725,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-03"
+      },
+      "floatRotation": 0.2678025975949566,
+      "daysUp": 0,
+      "priorRunPct": -49.04761904761905,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-09-17"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "22.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "2,169,663"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$6.56"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "8.1M"
+        }
+      ],
+      "passed": 5,
+      "quality": "high"
+    },
+    {
       "symbol": "MEDS",
       "name": "DataMeds AI Inc.",
       "legalName": "DataMeds AI, Inc.",
       "business": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
       "sector": "Health Care",
-      "preMarketPrice": 7.03,
-      "preMarketChangePct": 15.815485996705107,
+      "preMarketPrice": 6.8495,
+      "preMarketChangePct": 12.841845140032943,
       "prevClose": 6.07,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 17, 2026 8:20 AM ET",
-      "preMarketVolume": 2541077,
-      "preMarketDollarVolume": 17863771.310000002,
-      "relVolume": 7.83178356454014,
+      "lastTradeAt": "Sep 17, 2026 8:41 AM ET",
+      "preMarketVolume": 2666945,
+      "preMarketDollarVolume": 18267239.7775,
+      "relVolume": 8.21971786708254,
       "avgVolume50": 324457,
       "sharesOutstanding": 3061919,
-      "marketCap": 21525290.57,
+      "marketCap": 20972614.1905,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 30,
       "float": {
@@ -150,7 +218,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-17"
       },
-      "floatRotation": 0.8298968718636908,
+      "floatRotation": 0.8710044256559367,
       "daysUp": 2,
       "priorRunPct": 613.2784958871916,
       "extended": true,
@@ -169,12 +237,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "15.8%"
+          "detail": "12.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "2,541,077"
+          "detail": "2,666,945"
         },
         {
           "name": "News catalyst",
@@ -184,7 +252,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$7.03"
+          "detail": "$6.85"
         },
         {
           "name": "Float <10M",
@@ -203,17 +271,17 @@
       "legalName": "CID Holdco, Inc.",
       "business": "Services-Computer Integrated Systems Design",
       "sector": "Technology",
-      "preMarketPrice": 3.9492,
-      "preMarketChangePct": 96.47761194029853,
+      "preMarketPrice": 3.8712,
+      "preMarketChangePct": 92.59701492537316,
       "prevClose": 2.01,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 17, 2026 8:20 AM ET",
-      "preMarketVolume": 23324505,
-      "preMarketDollarVolume": 92113135.146,
-      "relVolume": 3.2064701272992218,
+      "lastTradeAt": "Sep 17, 2026 8:41 AM ET",
+      "preMarketVolume": 23796888,
+      "preMarketDollarVolume": 92122512.8256,
+      "relVolume": 3.2714096395479917,
       "avgVolume50": 7274200,
       "sharesOutstanding": 30259579,
-      "marketCap": 119501129.38679999,
+      "marketCap": 117140882.2248,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 124,
       "float": {
@@ -221,7 +289,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-05-11"
       },
-      "floatRotation": 0.7708139296980966,
+      "floatRotation": 0.7864249532354697,
       "daysUp": 0,
       "priorRunPct": -30.927835051546403,
       "extended": false,
@@ -239,12 +307,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "96.5%"
+          "detail": "92.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "23,324,505"
+          "detail": "23,796,888"
         },
         {
           "name": "News catalyst",
@@ -254,7 +322,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.95"
+          "detail": "$3.87"
         },
         {
           "name": "Float <10M",
@@ -266,90 +334,22 @@
       "quality": "medium"
     },
     {
-      "symbol": "VEEA",
-      "name": "Veea Inc.",
-      "legalName": "VEEA INC.",
-      "business": "Services-Computer Integrated Systems Design",
-      "sector": "Technology",
-      "preMarketPrice": 7.9333,
-      "preMarketChangePct": 30.054098360655747,
-      "prevClose": 6.1,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 17, 2026 8:20 AM ET",
-      "preMarketVolume": 5016548,
-      "preMarketDollarVolume": 39797780.2484,
-      "relVolume": 2.6703353151061338,
-      "avgVolume50": 1878621,
-      "sharesOutstanding": 62214156,
-      "marketCap": 493563563.7948,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 17,
-      "float": {
-        "shares": 62214156,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-10"
-      },
-      "floatRotation": 0.0806335458444538,
-      "daysUp": 3,
-      "priorRunPct": 252.60115606936412,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-09-16"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "30.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "5,016,548"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$7.93"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "62.2M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
       "symbol": "AEHL",
       "name": "Antelope Enterprise Holdings Limited Class A Ordinary Shares",
       "legalName": "Antelope Enterprise Holdings Ltd",
       "business": "Communications Services, NEC",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 11.69,
-      "preMarketChangePct": 26.789587852494563,
+      "preMarketPrice": 11.85,
+      "preMarketChangePct": 28.524945770065063,
       "prevClose": 9.22,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 17, 2026 8:20 AM ET",
-      "preMarketVolume": 996743,
-      "preMarketDollarVolume": 11651925.67,
-      "relVolume": 0.16635420618319602,
+      "lastTradeAt": "Sep 17, 2026 8:40 AM ET",
+      "preMarketVolume": 1016540,
+      "preMarketDollarVolume": 12045999,
+      "relVolume": 0.16965828177721448,
       "avgVolume50": 5991691,
       "sharesOutstanding": 4580547,
-      "marketCap": 53546594.43,
+      "marketCap": 54279481.949999996,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 135,
       "float": {
@@ -357,7 +357,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-09-30"
       },
-      "floatRotation": 0.21760348709444527,
+      "floatRotation": 0.22192545999418847,
       "daysUp": 1,
       "priorRunPct": 15.829145728643223,
       "extended": false,
@@ -375,12 +375,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "26.8%"
+          "detail": "28.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "996,743"
+          "detail": "1,016,540"
         },
         {
           "name": "News catalyst",
@@ -390,7 +390,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$11.69"
+          "detail": "$11.85"
         },
         {
           "name": "Float <10M",
@@ -402,22 +402,90 @@
       "quality": "medium"
     },
     {
+      "symbol": "VEEA",
+      "name": "Veea Inc.",
+      "legalName": "VEEA INC.",
+      "business": "Services-Computer Integrated Systems Design",
+      "sector": "Technology",
+      "preMarketPrice": 7.48,
+      "preMarketChangePct": 22.622950819672145,
+      "prevClose": 6.1,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 17, 2026 8:41 AM ET",
+      "preMarketVolume": 5513727,
+      "preMarketDollarVolume": 41242677.96,
+      "relVolume": 2.9349863543524743,
+      "avgVolume50": 1878621,
+      "sharesOutstanding": 62214156,
+      "marketCap": 465361886.88000005,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 17,
+      "float": {
+        "shares": 62214156,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-10"
+      },
+      "floatRotation": 0.08862495860266914,
+      "daysUp": 3,
+      "priorRunPct": 252.60115606936412,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-09-16"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "22.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "5,513,727"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$7.48"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "62.2M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
       "symbol": "TNON",
       "name": "Tenon Medical Inc.",
       "legalName": "Tenon Medical, Inc.",
       "business": "Surgical & Medical Instruments & Apparatus",
       "sector": "Health Care",
-      "preMarketPrice": 4.1348,
-      "preMarketChangePct": 5.749360613810745,
+      "preMarketPrice": 4.17,
+      "preMarketChangePct": 6.649616368286439,
       "prevClose": 3.91,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 17, 2026 8:20 AM ET",
-      "preMarketVolume": 212037,
-      "preMarketDollarVolume": 876730.5876000001,
-      "relVolume": 0.024851896237997426,
+      "lastTradeAt": "Sep 17, 2026 8:40 AM ET",
+      "preMarketVolume": 218251,
+      "preMarketDollarVolume": 910106.67,
+      "relVolume": 0.025580211028448697,
       "avgVolume50": 8532025,
       "sharesOutstanding": 667047,
-      "marketCap": 2758105.9356,
+      "marketCap": 2781585.9899999998,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 117,
       "float": {
@@ -425,7 +493,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-13"
       },
-      "floatRotation": 0.31787415279583,
+      "floatRotation": 0.32718983819730846,
       "daysUp": 0,
       "priorRunPct": 60.24590163934427,
       "extended": true,
@@ -443,12 +511,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.7%"
+          "detail": "6.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "212,037"
+          "detail": "218,251"
         },
         {
           "name": "News catalyst",
@@ -458,7 +526,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.13"
+          "detail": "$4.17"
         },
         {
           "name": "Float <10M",
@@ -472,90 +540,22 @@
   ],
   "alsoRan": [
     {
-      "symbol": "MKDW",
-      "name": "MKDWELL Tech Inc. Ordinary Share",
-      "legalName": "MKDWELL Tech Inc.",
-      "business": "Electronic & Other Electrical Equipment (No Computer Equip)",
-      "sector": "Technology",
-      "preMarketPrice": 9.4011,
-      "preMarketChangePct": 20.68164313222079,
-      "prevClose": 7.79,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 17, 2026 8:20 AM ET",
-      "preMarketVolume": 637436,
-      "preMarketDollarVolume": 5992599.5796,
-      "relVolume": 15.408915103461613,
-      "avgVolume50": 41368,
-      "sharesOutstanding": 141039933,
-      "marketCap": 1325930514.1262999,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 70,
-      "float": {
-        "shares": 141039933,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 0.004519542702845725,
-      "daysUp": 1,
-      "priorRunPct": -21.39253279515641,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "20.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "637,436"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$9.40"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "141.0M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "RTB",
       "name": "RTB Digital Inc.",
       "legalName": "RTB Digital, Inc.",
       "business": "Services-Management Consulting Services",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 10.4413,
-      "preMarketChangePct": 17.449943757030365,
+      "preMarketPrice": 11.418,
+      "preMarketChangePct": 28.436445444319443,
       "prevClose": 8.89,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 17, 2026 8:18 AM ET",
-      "preMarketVolume": 27893,
-      "preMarketDollarVolume": 291239.1809,
-      "relVolume": 0.29606317599482024,
+      "lastTradeAt": "Sep 17, 2026 8:40 AM ET",
+      "preMarketVolume": 44251,
+      "preMarketDollarVolume": 505257.91799999995,
+      "relVolume": 0.4696910192860858,
       "avgVolume50": 94213,
       "sharesOutstanding": 14008209,
-      "marketCap": 146263912.6317,
+      "marketCap": 159945730.362,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 43,
       "float": {
@@ -563,7 +563,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-13"
       },
-      "floatRotation": 0.0019911895946155573,
+      "floatRotation": 0.003158933451092856,
       "daysUp": 2,
       "priorRunPct": 8.348567946374168,
       "extended": true,
@@ -583,12 +583,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "17.4%"
+          "detail": "28.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "27,893"
+          "detail": "44,251"
         },
         {
           "name": "News catalyst",
@@ -598,7 +598,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$10.44"
+          "detail": "$11.42"
         },
         {
           "name": "Float <10M",
@@ -610,22 +610,90 @@
       "quality": "low"
     },
     {
+      "symbol": "MKDW",
+      "name": "MKDWELL Tech Inc. Ordinary Share",
+      "legalName": "MKDWELL Tech Inc.",
+      "business": "Electronic & Other Electrical Equipment (No Computer Equip)",
+      "sector": "Technology",
+      "preMarketPrice": 9.2987,
+      "preMarketChangePct": 19.367137355584084,
+      "prevClose": 7.79,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 17, 2026 8:40 AM ET",
+      "preMarketVolume": 679820,
+      "preMarketDollarVolume": 6321442.234,
+      "relVolume": 16.433475149874297,
+      "avgVolume50": 41368,
+      "sharesOutstanding": 141039933,
+      "marketCap": 1311488024.9871001,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 70,
+      "float": {
+        "shares": 141039933,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-12-31"
+      },
+      "floatRotation": 0.00482005333907809,
+      "daysUp": 1,
+      "priorRunPct": -21.39253279515641,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "19.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "679,820"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$9.30"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "141.0M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "GLOO",
       "name": "Gloo Holdings Inc. Class A",
       "legalName": "Gloo Holdings, Inc.",
       "business": "Services-Computer Processing & Data Preparation",
       "sector": "Technology",
-      "preMarketPrice": 4.65,
-      "preMarketChangePct": 14.250614250614252,
+      "preMarketPrice": 4.73,
+      "preMarketChangePct": 16.21621621621622,
       "prevClose": 4.07,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 17, 2026 8:19 AM ET",
-      "preMarketVolume": 210708,
-      "preMarketDollarVolume": 979792.2000000001,
-      "relVolume": 0.6891692996055497,
+      "lastTradeAt": "Sep 17, 2026 8:41 AM ET",
+      "preMarketVolume": 239894,
+      "preMarketDollarVolume": 1134698.62,
+      "relVolume": 0.784628870093085,
       "avgVolume50": 305742,
       "sharesOutstanding": 91531041.03194103,
-      "marketCap": 425619340.7985258,
+      "marketCap": 432941824.0810811,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 21,
       "float": {
@@ -633,7 +701,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-09-17"
       },
-      "floatRotation": 0.0023020387141283634,
+      "floatRotation": 0.0026209032181365188,
       "daysUp": 1,
       "priorRunPct": 29.20634920634922,
       "extended": false,
@@ -651,12 +719,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "14.3%"
+          "detail": "16.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "210,708"
+          "detail": "239,894"
         },
         {
           "name": "News catalyst",
@@ -666,7 +734,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.65"
+          "detail": "$4.73"
         },
         {
           "name": "Float <10M",
@@ -746,22 +814,90 @@
       "quality": "low"
     },
     {
+      "symbol": "MNOV",
+      "name": "Medicinova Inc",
+      "legalName": "MEDICINOVA INC",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 2.73,
+      "preMarketChangePct": 8.333333333333332,
+      "prevClose": 2.52,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 17, 2026 8:38 AM ET",
+      "preMarketVolume": 50992,
+      "preMarketDollarVolume": 139208.16,
+      "relVolume": 1.1532998597729227,
+      "avgVolume50": 44214,
+      "sharesOutstanding": 49221246,
+      "marketCap": 134374001.58,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 39,
+      "float": {
+        "shares": 49221246,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-11"
+      },
+      "floatRotation": 0.0010359753997288082,
+      "daysUp": 4,
+      "priorRunPct": 40.782122905027926,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Can MediciNova's Upcoming MN-166 And MN-001 Readouts Change The Investment Narrative? ",
+        "subject": null,
+        "date": "2026-09-16"
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "50,992"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.73"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "49.2M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "USDE",
       "name": "StablecoinX Inc. Class A",
       "legalName": "StableCoinX Inc.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 6.66,
-      "preMarketChangePct": 7.419354838709677,
+      "preMarketPrice": 6.5487,
+      "preMarketChangePct": 5.6241935483870975,
       "prevClose": 6.2,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 17, 2026 8:20 AM ET",
-      "preMarketVolume": 274266,
-      "preMarketDollarVolume": 1826611.56,
+      "lastTradeAt": "Sep 17, 2026 8:40 AM ET",
+      "preMarketVolume": 319381,
+      "preMarketDollarVolume": 2091530.3547,
       "relVolume": null,
       "avgVolume50": null,
       "sharesOutstanding": 27187129.032258064,
-      "marketCap": 181066279.3548387,
+      "marketCap": 178040351.8935484,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": null,
       "float": {
@@ -769,7 +905,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-09-17"
       },
-      "floatRotation": 0.010088082477358238,
+      "floatRotation": 0.011747507418714501,
       "daysUp": 1,
       "priorRunPct": -16.666666666666668,
       "extended": false,
@@ -787,12 +923,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.4%"
+          "detail": "5.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "274,266"
+          "detail": "319,381"
         },
         {
           "name": "News catalyst",
@@ -802,81 +938,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.66"
+          "detail": "$6.55"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "27.2M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "ERNA",
-      "name": "Ernexa Therapeutics Inc.",
-      "legalName": "Ernexa Therapeutics Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 4.18,
-      "preMarketChangePct": 6.9053708439897585,
-      "prevClose": 3.91,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 17, 2026 8:15 AM ET",
-      "preMarketVolume": 173,
-      "preMarketDollarVolume": 723.14,
-      "relVolume": 0.0003017827861703241,
-      "avgVolume50": 573260,
-      "sharesOutstanding": 1632411,
-      "marketCap": 6823477.9799999995,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 67,
-      "float": {
-        "shares": 1632411,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-06"
-      },
-      "floatRotation": 0.00010597821259474484,
-      "daysUp": 0,
-      "priorRunPct": -2.736318407960185,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Ernexa Reports Positive ERNA-201 Preclinical Data; Advances ERNA-101 Toward Q4 2026 IND ",
-        "subject": "FDA / clinical",
-        "date": "2026-09-15"
-      },
-      "leads": [
-        "8-K",
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "173"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.18"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "1.6M"
         }
       ],
       "passed": 3,
@@ -951,90 +1018,22 @@
       "quality": "low"
     },
     {
-      "symbol": "MNOV",
-      "name": "Medicinova Inc",
-      "legalName": "MEDICINOVA INC",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 2.75,
-      "preMarketChangePct": 9.126984126984127,
-      "prevClose": 2.52,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 17, 2026 8:20 AM ET",
-      "preMarketVolume": 47658,
-      "preMarketDollarVolume": 131059.5,
-      "relVolume": 1.0778938797665898,
-      "avgVolume50": 44214,
-      "sharesOutstanding": 49221246,
-      "marketCap": 135358426.5,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 39,
-      "float": {
-        "shares": 49221246,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-11"
-      },
-      "floatRotation": 0.0009682404220323882,
-      "daysUp": 4,
-      "priorRunPct": 40.782122905027926,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Can MediciNova's Upcoming MN-166 And MN-001 Readouts Change The Investment Narrative? ",
-        "subject": null,
-        "date": "2026-09-16"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "47,658"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.75"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "49.2M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
       "symbol": "BNAI",
       "name": "Brand Engagement Network Inc.",
       "legalName": "Brand Engagement Network Inc.",
       "business": "Services-Computer Integrated Systems Design",
       "sector": "Technology",
-      "preMarketPrice": 7.33,
-      "preMarketChangePct": 7.163742690058483,
+      "preMarketPrice": 7.37,
+      "preMarketChangePct": 7.74853801169591,
       "prevClose": 6.84,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 17, 2026 8:18 AM ET",
-      "preMarketVolume": 42679,
-      "preMarketDollarVolume": 312837.07,
-      "relVolume": 0.28852173090053607,
+      "lastTradeAt": "Sep 17, 2026 8:28 AM ET",
+      "preMarketVolume": 42996,
+      "preMarketDollarVolume": 316880.52,
+      "relVolume": 0.29066473773517304,
       "avgVolume50": 147923,
       "sharesOutstanding": 7488046,
-      "marketCap": 54887377.18,
+      "marketCap": 55186899.02,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 277,
       "float": {
@@ -1042,7 +1041,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-14"
       },
-      "floatRotation": 0.005699617764100274,
+      "floatRotation": 0.005741951905744168,
       "daysUp": 0,
       "priorRunPct": -33.268292682926834,
       "extended": false,
@@ -1060,12 +1059,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.2%"
+          "detail": "7.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "42,679"
+          "detail": "42,996"
         },
         {
           "name": "News catalyst",
@@ -1075,7 +1074,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$7.33"
+          "detail": "$7.37"
         },
         {
           "name": "Float <10M",
@@ -1149,6 +1148,74 @@
           "name": "Float <10M",
           "ok": true,
           "detail": "2.5M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "SNOA",
+      "name": "Sonoma Pharmaceuticals Inc.",
+      "legalName": "Sonoma Pharmaceuticals, Inc.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 1.3,
+      "preMarketChangePct": 5.691056910569111,
+      "prevClose": 1.23,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 17, 2026 8:15 AM ET",
+      "preMarketVolume": 792,
+      "preMarketDollarVolume": 1029.6000000000001,
+      "relVolume": 0.006058102712377805,
+      "avgVolume50": 130734,
+      "sharesOutstanding": 4788425,
+      "marketCap": 6224952.5,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 15,
+      "float": {
+        "shares": 4788425,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-06"
+      },
+      "floatRotation": 0.00016539885244104273,
+      "daysUp": 0,
+      "priorRunPct": -5.3846153846153895,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Shareholder vote results",
+        "subject": "Shareholder vote results",
+        "date": "2026-09-17"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "792"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.30"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "4.8M"
         }
       ],
       "passed": 2,
