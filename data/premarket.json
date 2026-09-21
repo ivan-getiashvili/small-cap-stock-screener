@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-20T11:00:23.980Z",
-  "marketStatus": "Market Closed",
+  "generatedAt": "2026-09-21T11:01:26.400Z",
+  "marketStatus": "Pre Market",
   "prevSession": "2026-09-18",
-  "universeChecked": 6092,
-  "smallCapsInBand": 2988,
-  "investigated": 69,
-  "liveQuotes": 0,
-  "feedIsLive": false,
+  "universeChecked": 6029,
+  "smallCapsInBand": 2952,
+  "investigated": 78,
+  "liveQuotes": 56,
+  "feedIsLive": true,
   "discovery": {
     "since": "2026-09-18T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 99,
+    "edgarFilings": 112,
     "leads": {
-      "8-K": 43,
+      "8-K": 49,
       "PR Newswire": 1,
-      "GlobeNewswire": 0,
+      "GlobeNewswire": 3,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -30,7 +30,7 @@
         "url": "https://www.prnewswire.com/rss/financial-services-latest-news/financial-services-latest-news-list.rss",
         "ok": true,
         "items": 20,
-        "inWindow": 15
+        "inWindow": 20
       },
       {
         "name": "GlobeNewswire",
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 69,
-    "answered": 69,
+    "requested": 78,
+    "answered": 78,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -59,6 +59,686 @@
   },
   "shortlist": [],
   "watchlist": [],
-  "alsoRan": [],
-  "frozenAfterPreMarket": true
+  "alsoRan": [
+    {
+      "symbol": "USDE",
+      "name": "StablecoinX Inc. Class A",
+      "legalName": "StableCoinX Inc.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 11.8,
+      "preMarketChangePct": 15.799803729146234,
+      "prevClose": 10.19,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 21, 2026 7:01 AM ET",
+      "preMarketVolume": 879628,
+      "preMarketDollarVolume": 10379610.4,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 27187129.04808636,
+      "marketCap": 320808122.76741904,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 27187129.04808636,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-21"
+      },
+      "floatRotation": 0.032354574785891745,
+      "daysUp": 3,
+      "priorRunPct": 36.962365591397834,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "15.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "879,628"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$11.80"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "27.2M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "DFDV",
+      "name": "DeFi Development Corp.",
+      "legalName": "DeFi Development Corp.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 6.72,
+      "preMarketChangePct": 10.891089108910894,
+      "prevClose": 6.06,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 21, 2026 7:01 AM ET",
+      "preMarketVolume": 222146,
+      "preMarketDollarVolume": 1492821.1199999999,
+      "relVolume": 0.1860919812723509,
+      "avgVolume50": 1193743,
+      "sharesOutstanding": 30997790,
+      "marketCap": 208305148.79999998,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 24,
+      "float": {
+        "shares": 30997790,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-13"
+      },
+      "floatRotation": 0.007166510902874044,
+      "daysUp": 2,
+      "priorRunPct": 19.291338582677156,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "10.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "222,146"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$6.72"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "31.0M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "UTSI",
+      "name": "UTStarcom Holdings Corp. Ordinary Shares",
+      "legalName": "UTSTARCOM HOLDINGS CORP.",
+      "business": "Communications Equipment, NEC",
+      "sector": "Telecommunications",
+      "preMarketPrice": 2.2,
+      "preMarketChangePct": 7.32,
+      "prevClose": 2.049944092433843,
+      "closeReconciled": true,
+      "lastTradeAt": "Sep 21, 2026 6:28 AM ET",
+      "preMarketVolume": 235,
+      "preMarketDollarVolume": 517,
+      "relVolume": 0.017910220257602315,
+      "avgVolume50": 13121,
+      "sharesOutstanding": 9186976,
+      "marketCap": 20211347.200000003,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 16,
+      "float": {
+        "shares": 9186976,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-12-31"
+      },
+      "floatRotation": 0.000025579690204916177,
+      "daysUp": 0,
+      "priorRunPct": -9.051724137931034,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "UTStarcom Unveils Optical Circuit Switching (OCS) Solution for AI Data Centers at CIOE 2026",
+        "subject": "Hot-sector announcement",
+        "date": "2026-09-21"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "235"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.20"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "9.2M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "AVAT",
+      "name": "Avalanche Treasury Corporation Class A",
+      "legalName": "Avalanche Treasury Corp",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 1.33,
+      "preMarketChangePct": 23.148148148148145,
+      "prevClose": 1.08,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 21, 2026 7:01 AM ET",
+      "preMarketVolume": 498981,
+      "preMarketDollarVolume": 663644.73,
+      "relVolume": 0.9610685023324614,
+      "avgVolume50": 519194,
+      "sharesOutstanding": 43720444.44444444,
+      "marketCap": 58148191.11111111,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 16,
+      "float": {
+        "shares": 43720444.44444444,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-21"
+      },
+      "floatRotation": 0.01141299010887355,
+      "daysUp": 1,
+      "priorRunPct": 8.000000000000007,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "23.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "498,981"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.33"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "43.7M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "SVRN",
+      "name": "SVRN Inc.",
+      "legalName": "OceanPal Inc.",
+      "business": "Deep Sea Foreign Transportation of  Freight",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 24,
+      "preMarketChangePct": 18.11023622047244,
+      "prevClose": 20.32,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 21, 2026 7:01 AM ET",
+      "preMarketVolume": 14585.672871,
+      "preMarketDollarVolume": 350056.148904,
+      "relVolume": 0.3651804629578629,
+      "avgVolume50": 39941,
+      "sharesOutstanding": 7504982,
+      "marketCap": 180119568,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 50,
+      "float": {
+        "shares": 7504982,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2024-12-31"
+      },
+      "floatRotation": 0.0019434654035146255,
+      "daysUp": 3,
+      "priorRunPct": 70.0418410041841,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "18.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "14,586"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$24.00"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "7.5M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "FWDI",
+      "name": "Forward Industries Inc.",
+      "legalName": "Forward Industries, Inc.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 8.4494,
+      "preMarketChangePct": 9.732467532467538,
+      "prevClose": 7.7,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 21, 2026 7:01 AM ET",
+      "preMarketVolume": 192893.944124,
+      "preMarketDollarVolume": 1629838.0914813257,
+      "relVolume": 0.13381724397473974,
+      "avgVolume50": 1441473,
+      "sharesOutstanding": 73846883,
+      "marketCap": 623961853.2202001,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 17,
+      "float": {
+        "shares": 73846883,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-03"
+      },
+      "floatRotation": 0.0026120797017796945,
+      "daysUp": 2,
+      "priorRunPct": 17.557251908396953,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "9.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "192,894"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$8.45"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "73.8M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "SECZ",
+      "name": "Securitize Corp.",
+      "legalName": "Securitize Corp.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 11.73,
+      "preMarketChangePct": 8.011049723756916,
+      "prevClose": 10.86,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 21, 2026 7:01 AM ET",
+      "preMarketVolume": 191246.44291,
+      "preMarketDollarVolume": 2243320.7753343,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 163265685,
+      "marketCap": 1915106485.05,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 163265685,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-13"
+      },
+      "floatRotation": 0.0011713817444859893,
+      "daysUp": 2,
+      "priorRunPct": 32.27771010962239,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "191,246"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$11.73"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "163.3M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "TMQ",
+      "name": "Trilogy Metals Inc.",
+      "legalName": "Trilogy Metals Inc.",
+      "business": "Gold and Silver Ores",
+      "sector": "Basic Materials",
+      "preMarketPrice": 3.4799,
+      "preMarketChangePct": 6.745398773006149,
+      "prevClose": 3.26,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 21, 2026 7:01 AM ET",
+      "preMarketVolume": 42884,
+      "preMarketDollarVolume": 149232.03160000002,
+      "relVolume": 0.030752064527417557,
+      "avgVolume50": 1394508,
+      "sharesOutstanding": 172745639,
+      "marketCap": 601137549.1561,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 211,
+      "float": {
+        "shares": 172745639,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-08"
+      },
+      "floatRotation": 0.00024824939285442686,
+      "daysUp": 2,
+      "priorRunPct": -0.3058103975535239,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Trilogy Metals Announces Publication of Notice of Intent by U.S. Army Corps of Engineers for Alaska's High-Grade Arctic Copper-Zinc-Lead-Gold-Silver Project",
+        "subject": null,
+        "date": "2026-09-21"
+      },
+      "leads": [
+        "PR Newswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "42,884"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.48"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "172.7M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "INM",
+      "name": "InMed Pharmaceuticals Inc. Common Shares",
+      "legalName": "InMed Pharmaceuticals Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 1.4487,
+      "preMarketChangePct": 6.522058823529411,
+      "prevClose": 1.36,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 21, 2026 4:00 AM ET",
+      "preMarketVolume": 544,
+      "preMarketDollarVolume": 788.0928,
+      "relVolume": 0.00047247896860620444,
+      "avgVolume50": 1151374,
+      "sharesOutstanding": 5493735,
+      "marketCap": 7958773.8945,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 135,
+      "float": {
+        "shares": 5493735,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-02"
+      },
+      "floatRotation": 0.00009902188583905121,
+      "daysUp": 0,
+      "priorRunPct": 5.426356589147292,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Delisting notice or listing-rule failure · Other material event (often FDA, clinical or contract news)",
+        "subject": "Delisting notice or listing-rule failure · Other material event (often FDA, clinical or contract news)",
+        "date": "2026-09-18"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "544"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.45"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "5.5M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "HSDT",
+      "name": "Solana Company Class A Common Stock (DE)",
+      "legalName": "Solana Co",
+      "business": "Finance Services",
+      "sector": "Health Care",
+      "preMarketPrice": 2.9217,
+      "preMarketChangePct": 5.858695652173919,
+      "prevClose": 2.76,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 21, 2026 7:00 AM ET",
+      "preMarketVolume": 86133.536924,
+      "preMarketDollarVolume": 251656.3548308508,
+      "relVolume": 0.36507625861579346,
+      "avgVolume50": 235933,
+      "sharesOutstanding": 60458703,
+      "marketCap": 176642192.5551,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 142,
+      "float": {
+        "shares": 60458703,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-12"
+      },
+      "floatRotation": 0.0014246672960218812,
+      "daysUp": 1,
+      "priorRunPct": 24.324324324324305,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "86,134"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.92"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "60.5M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    }
+  ]
 }
