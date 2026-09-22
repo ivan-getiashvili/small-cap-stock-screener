@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-22T11:40:13.963Z",
+  "generatedAt": "2026-09-22T12:00:22.615Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-21",
   "universeChecked": 6013,
   "smallCapsInBand": 2926,
-  "investigated": 81,
-  "liveQuotes": 60,
+  "investigated": 80,
+  "liveQuotes": 59,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-21T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 133,
+    "edgarFilings": 135,
     "leads": {
-      "8-K": 49,
-      "PR Newswire": 2,
+      "8-K": 50,
+      "PR Newswire": 0,
       "GlobeNewswire": 6,
       "prior-session gainer": 25
     },
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 81,
-    "answered": 81,
+    "requested": 80,
+    "answered": 80,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -57,76 +57,7 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [
-    {
-      "symbol": "DCOY",
-      "name": "Decoy Therapeutics Inc.",
-      "legalName": "Decoy Therapeutics Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 3.7423,
-      "preMarketChangePct": 46.18359375,
-      "prevClose": 2.56,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 22, 2026 7:40 AM ET",
-      "preMarketVolume": 5742927,
-      "preMarketDollarVolume": 21491755.7121,
-      "relVolume": 116.74514148642055,
-      "avgVolume50": 49192,
-      "sharesOutstanding": 655185,
-      "marketCap": 2451898.8255000003,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 74,
-      "float": {
-        "shares": 655185,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-12"
-      },
-      "floatRotation": 8.765351770873876,
-      "daysUp": 0,
-      "priorRunPct": -5.535055350553502,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Decoy Therapeutics Exploring Pan-Filovirus Program via FDA Animal Rule Pathway and Non-Dilutive Funding",
-        "subject": "FDA / clinical",
-        "date": "2026-09-22"
-      },
-      "leads": [
-        "PR Newswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "46.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "5,742,927"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.74"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "0.7M"
-        }
-      ],
-      "passed": 5,
-      "quality": "high"
-    }
-  ],
+  "shortlist": [],
   "watchlist": [],
   "alsoRan": [
     {
@@ -135,17 +66,17 @@
       "legalName": "Greenland Mines Ltd",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 13.6,
-      "preMarketChangePct": 44.373673036093415,
+      "preMarketPrice": 12.9191,
+      "preMarketChangePct": 37.14543524416136,
       "prevClose": 9.42,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 22, 2026 7:40 AM ET",
-      "preMarketVolume": 16496226.864635,
-      "preMarketDollarVolume": 224348685.359036,
-      "relVolume": 2.4791693671449653,
+      "lastTradeAt": "Sep 22, 2026 8:00 AM ET",
+      "preMarketVolume": 18203790.672203,
+      "preMarketDollarVolume": 235176592.0732578,
+      "relVolume": 2.735794104359482,
       "avgVolume50": 6653933,
       "sharesOutstanding": 158850637,
-      "marketCap": 2160368663.2,
+      "marketCap": 2052207264.4667,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -153,7 +84,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-17"
       },
-      "floatRotation": 0.10384740770435186,
+      "floatRotation": 0.1145969006860388,
       "daysUp": 1,
       "priorRunPct": 188.95705521472394,
       "extended": true,
@@ -171,12 +102,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "44.4%"
+          "detail": "37.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "16,496,227"
+          "detail": "18,203,791"
         },
         {
           "name": "News catalyst",
@@ -186,7 +117,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$13.60"
+          "detail": "$12.92"
         },
         {
           "name": "Float <10M",
@@ -203,17 +134,17 @@
       "legalName": "TOMI Environmental Solutions, Inc.",
       "business": "Industrial Organic Chemicals",
       "sector": "Industrials",
-      "preMarketPrice": 1.55,
-      "preMarketChangePct": 8.391608391608399,
+      "preMarketPrice": 1.511,
+      "preMarketChangePct": 5.6643356643356615,
       "prevClose": 1.43,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 22, 2026 7:36 AM ET",
-      "preMarketVolume": 85758,
-      "preMarketDollarVolume": 132924.9,
-      "relVolume": 1.656839258114374,
+      "lastTradeAt": "Sep 22, 2026 7:59 AM ET",
+      "preMarketVolume": 90188,
+      "preMarketDollarVolume": 136274.068,
+      "relVolume": 1.7424265842349305,
       "avgVolume50": 51760,
       "sharesOutstanding": 8142577,
-      "marketCap": 12620994.35,
+      "marketCap": 12303433.847,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 166,
       "float": {
@@ -221,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-11"
       },
-      "floatRotation": 0.010532046549882181,
+      "floatRotation": 0.011076100354961335,
       "daysUp": 0,
       "priorRunPct": -9.493670886075957,
       "extended": false,
@@ -239,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.4%"
+          "detail": "5.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "85,758"
+          "detail": "90,188"
         },
         {
           "name": "News catalyst",
@@ -254,7 +185,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.55"
+          "detail": "$1.51"
         },
         {
           "name": "Float <10M",
@@ -271,17 +202,17 @@
       "legalName": "Lexeo Therapeutics, Inc.",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 4.36,
-      "preMarketChangePct": 6.8627450980392215,
+      "preMarketPrice": 4.3,
+      "preMarketChangePct": 5.392156862745092,
       "prevClose": 4.08,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 22, 2026 7:40 AM ET",
-      "preMarketVolume": 141631,
-      "preMarketDollarVolume": 617511.16,
-      "relVolume": 0.1646165773057839,
+      "lastTradeAt": "Sep 22, 2026 7:59 AM ET",
+      "preMarketVolume": 146713,
+      "preMarketDollarVolume": 630865.9,
+      "relVolume": 0.17052334521583182,
       "avgVolume50": 860369,
       "sharesOutstanding": 82046255,
-      "marketCap": 357721671.8,
+      "marketCap": 352798896.5,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 29,
       "float": {
@@ -289,7 +220,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.0017262335739760455,
+      "floatRotation": 0.0017881742439066841,
       "daysUp": 0,
       "priorRunPct": -3.087885985748216,
       "extended": false,
@@ -307,12 +238,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.9%"
+          "detail": "5.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "141,631"
+          "detail": "146,713"
         },
         {
           "name": "News catalyst",
@@ -322,7 +253,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.36"
+          "detail": "$4.30"
         },
         {
           "name": "Float <10M",
@@ -399,6 +330,142 @@
         }
       ],
       "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "USGO",
+      "name": "U.S. GoldMining Inc.",
+      "legalName": "U.S. GoldMining Inc.",
+      "business": "Gold and Silver Ores",
+      "sector": "Basic Materials",
+      "preMarketPrice": 7.49,
+      "preMarketChangePct": 5.196629213483147,
+      "prevClose": 7.12,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 22, 2026 7:49 AM ET",
+      "preMarketVolume": 46,
+      "preMarketDollarVolume": 344.54,
+      "relVolume": 0.0006134069421663933,
+      "avgVolume50": 74991,
+      "sharesOutstanding": 14035736,
+      "marketCap": 105127662.64,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 28,
+      "float": {
+        "shares": 14035736,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-12"
+      },
+      "floatRotation": 0.000003277348619267276,
+      "daysUp": 0,
+      "priorRunPct": -11.771995043370511,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-09-22"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "46"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$7.49"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "14.0M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "LHAI",
+      "name": "Linkhome Holdings Inc.",
+      "legalName": "Linkhome Holdings Inc.",
+      "business": "Real Estate Agents & Managers (For Others)",
+      "sector": "Finance",
+      "preMarketPrice": 1.1697,
+      "preMarketChangePct": 6.336363636363624,
+      "prevClose": 1.1,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 22, 2026 7:47 AM ET",
+      "preMarketVolume": 8055,
+      "preMarketDollarVolume": 9421.9335,
+      "relVolume": 0.001508998633752075,
+      "avgVolume50": 5337977,
+      "sharesOutstanding": 16530000,
+      "marketCap": 19335141,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 34,
+      "float": {
+        "shares": 16530000,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-12"
+      },
+      "floatRotation": 0.00048729582577132486,
+      "daysUp": 0,
+      "priorRunPct": 1.8518518518518534,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Delisting notice or listing-rule failure",
+        "subject": "Delisting notice or listing-rule failure",
+        "date": "2026-09-21"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "8,055"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.17"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "16.5M"
+        }
+      ],
+      "passed": 1,
       "quality": "low"
     },
     {
