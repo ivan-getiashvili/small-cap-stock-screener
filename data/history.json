@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-09-22T18:29:51.116Z",
+ "updatedAt": "2026-09-22T21:11:09.897Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -3930,7 +3930,10 @@
      "catalyst": "FDA / clinical",
      "extended": false,
      "missing": [],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 5.4
+     }
     },
     {
      "symbol": "BIAF",
@@ -3951,7 +3954,10 @@
      "missing": [
       "Up ≥10% pre-market"
      ],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 8.47
+     }
     }
    ]
   }
