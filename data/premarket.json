@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-22T12:00:22.615Z",
+  "generatedAt": "2026-09-22T12:21:09.920Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-21",
   "universeChecked": 6013,
   "smallCapsInBand": 2926,
-  "investigated": 80,
-  "liveQuotes": 59,
+  "investigated": 83,
+  "liveQuotes": 65,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-21T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 135,
+    "edgarFilings": 147,
     "leads": {
-      "8-K": 50,
+      "8-K": 55,
       "PR Newswire": 0,
-      "GlobeNewswire": 6,
+      "GlobeNewswire": 7,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 80,
-    "answered": 80,
+    "requested": 83,
+    "answered": 83,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -66,17 +66,17 @@
       "legalName": "Greenland Mines Ltd",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 12.9191,
-      "preMarketChangePct": 37.14543524416136,
+      "preMarketPrice": 13.64,
+      "preMarketChangePct": 44.798301486199584,
       "prevClose": 9.42,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 22, 2026 8:00 AM ET",
-      "preMarketVolume": 18203790.672203,
-      "preMarketDollarVolume": 235176592.0732578,
-      "relVolume": 2.735794104359482,
+      "lastTradeAt": "Sep 22, 2026 8:22 AM ET",
+      "preMarketVolume": 19644982.768911,
+      "preMarketDollarVolume": 267957564.96794605,
+      "relVolume": 2.9523866214028605,
       "avgVolume50": 6653933,
       "sharesOutstanding": 158850637,
-      "marketCap": 2052207264.4667,
+      "marketCap": 2166722688.6800003,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -84,7 +84,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-17"
       },
-      "floatRotation": 0.1145969006860388,
+      "floatRotation": 0.12366952465485549,
       "daysUp": 1,
       "priorRunPct": 188.95705521472394,
       "extended": true,
@@ -102,12 +102,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "37.1%"
+          "detail": "44.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "18,203,791"
+          "detail": "19,644,983"
         },
         {
           "name": "News catalyst",
@@ -117,7 +117,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$12.92"
+          "detail": "$13.64"
         },
         {
           "name": "Float <10M",
@@ -129,90 +129,22 @@
       "quality": "low"
     },
     {
-      "symbol": "TOMZ",
-      "name": "TOMI Environmental Solutions Inc.",
-      "legalName": "TOMI Environmental Solutions, Inc.",
-      "business": "Industrial Organic Chemicals",
-      "sector": "Industrials",
-      "preMarketPrice": 1.511,
-      "preMarketChangePct": 5.6643356643356615,
-      "prevClose": 1.43,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 22, 2026 7:59 AM ET",
-      "preMarketVolume": 90188,
-      "preMarketDollarVolume": 136274.068,
-      "relVolume": 1.7424265842349305,
-      "avgVolume50": 51760,
-      "sharesOutstanding": 8142577,
-      "marketCap": 12303433.847,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 166,
-      "float": {
-        "shares": 8142577,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-11"
-      },
-      "floatRotation": 0.011076100354961335,
-      "daysUp": 0,
-      "priorRunPct": -9.493670886075957,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Terminated a material agreement · Regulation FD disclosure (company announcement)",
-        "subject": "Terminated a material agreement · Regulation FD disclosure (company announcement)",
-        "date": "2026-09-21"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "90,188"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.51"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "8.1M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "LXEO",
       "name": "Lexeo Therapeutics Inc.",
       "legalName": "Lexeo Therapeutics, Inc.",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 4.3,
-      "preMarketChangePct": 5.392156862745092,
+      "preMarketPrice": 4.34,
+      "preMarketChangePct": 6.372549019607837,
       "prevClose": 4.08,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 22, 2026 7:59 AM ET",
-      "preMarketVolume": 146713,
-      "preMarketDollarVolume": 630865.9,
-      "relVolume": 0.17052334521583182,
+      "lastTradeAt": "Sep 22, 2026 8:21 AM ET",
+      "preMarketVolume": 148985,
+      "preMarketDollarVolume": 646594.9,
+      "relVolume": 0.17316407262465291,
       "avgVolume50": 860369,
       "sharesOutstanding": 82046255,
-      "marketCap": 352798896.5,
+      "marketCap": 356080746.7,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 29,
       "float": {
@@ -220,15 +152,15 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.0017881742439066841,
+      "floatRotation": 0.0018158659404990515,
       "daysUp": 0,
       "priorRunPct": -3.087885985748216,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Other material event (often FDA, clinical or contract news)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Other material event (often FDA, clinical or contract news)",
+        "kind": "news",
+        "headline": "Lexeo Therapeutics Signs Series Of Strategic Transactions To Expand Presence In Friedreich Ataxia ",
+        "subject": null,
         "date": "2026-09-22"
       },
       "leads": [
@@ -238,22 +170,22 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.4%"
+          "detail": "6.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "146,713"
+          "detail": "148,985"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.30"
+          "detail": "$4.34"
         },
         {
           "name": "Float <10M",
@@ -265,22 +197,91 @@
       "quality": "low"
     },
     {
+      "symbol": "HOST",
+      "name": "Host Digital Inc. Class A",
+      "legalName": "Host Digital Inc.",
+      "business": "Retail-Grocery Stores",
+      "sector": "Consumer Staples",
+      "preMarketPrice": 8.67,
+      "preMarketChangePct": 8.375,
+      "prevClose": 8,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 22, 2026 8:20 AM ET",
+      "preMarketVolume": 5933,
+      "preMarketDollarVolume": 51439.11,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 32457828,
+      "marketCap": 281409368.76,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 32457828,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-14"
+      },
+      "floatRotation": 0.0001827910358019027,
+      "daysUp": 0,
+      "priorRunPct": -1.1124845488257091,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
+        "date": "2026-09-21"
+      },
+      "leads": [
+        "8-K",
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "5,933"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$8.67"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "32.5M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
       "symbol": "NTHI",
       "name": "NeOnc Technologies Holdings Inc.",
       "legalName": "NEONC TECHNOLOGIES HOLDINGS, INC.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 3.54,
-      "preMarketChangePct": 6.306306306306306,
+      "preMarketPrice": 3.5599,
+      "preMarketChangePct": 6.903903903903896,
       "prevClose": 3.33,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 22, 2026 7:13 AM ET",
-      "preMarketVolume": 753,
-      "preMarketDollarVolume": 2665.62,
-      "relVolume": 0.00426587807406652,
+      "lastTradeAt": "Sep 22, 2026 8:13 AM ET",
+      "preMarketVolume": 769,
+      "preMarketDollarVolume": 2737.5631,
+      "relVolume": 0.004356520901669527,
       "avgVolume50": 176517,
       "sharesOutstanding": 25936365,
-      "marketCap": 91814732.1,
+      "marketCap": 92330865.76349999,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -288,7 +289,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.00002903259573961116,
+      "floatRotation": 0.000029649490204197852,
       "daysUp": 1,
       "priorRunPct": -11.904761904761898,
       "extended": false,
@@ -306,12 +307,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.3%"
+          "detail": "6.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "753"
+          "detail": "769"
         },
         {
           "name": "News catalyst",
@@ -321,12 +322,81 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.54"
+          "detail": "$3.56"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "25.9M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "RTB",
+      "name": "RTB Digital Inc.",
+      "legalName": "RTB Digital, Inc.",
+      "business": "Services-Management Consulting Services",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 8.9,
+      "preMarketChangePct": 5.450236966824655,
+      "prevClose": 8.44,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 22, 2026 8:13 AM ET",
+      "preMarketVolume": 1624,
+      "preMarketDollarVolume": 14453.6,
+      "relVolume": 0.01723753622111598,
+      "avgVolume50": 94213,
+      "sharesOutstanding": 14008209,
+      "marketCap": 124673060.10000001,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 43,
+      "float": {
+        "shares": 14008209,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-13"
+      },
+      "floatRotation": 0.00011593202243056197,
+      "daysUp": 1,
+      "priorRunPct": 18.706047819971857,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Roundtable Files 8-K: Projects $90-$100 Million in 2027 Revenue and Annualized Adjusted EBITDA-Positive Operations",
+        "subject": "Earnings or guidance",
+        "date": "2026-09-22"
+      },
+      "leads": [
+        "GlobeNewswire",
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "1,624"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$8.90"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "14.0M"
         }
       ],
       "passed": 2,
@@ -342,10 +412,10 @@
       "preMarketChangePct": 5.196629213483147,
       "prevClose": 7.12,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 22, 2026 7:49 AM ET",
-      "preMarketVolume": 46,
-      "preMarketDollarVolume": 344.54,
-      "relVolume": 0.0006134069421663933,
+      "lastTradeAt": "Sep 22, 2026 8:17 AM ET",
+      "preMarketVolume": 866,
+      "preMarketDollarVolume": 6486.34,
+      "relVolume": 0.011548052432958622,
       "avgVolume50": 74991,
       "sharesOutstanding": 14035736,
       "marketCap": 105127662.64,
@@ -356,7 +426,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-12"
       },
-      "floatRotation": 0.000003277348619267276,
+      "floatRotation": 0.0000616996500931622,
       "daysUp": 0,
       "priorRunPct": -11.771995043370511,
       "extended": false,
@@ -379,7 +449,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "46"
+          "detail": "866"
         },
         {
           "name": "News catalyst",
@@ -406,17 +476,17 @@
       "legalName": "Linkhome Holdings Inc.",
       "business": "Real Estate Agents & Managers (For Others)",
       "sector": "Finance",
-      "preMarketPrice": 1.1697,
-      "preMarketChangePct": 6.336363636363624,
+      "preMarketPrice": 1.1597,
+      "preMarketChangePct": 5.427272727272714,
       "prevClose": 1.1,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 22, 2026 7:47 AM ET",
-      "preMarketVolume": 8055,
-      "preMarketDollarVolume": 9421.9335,
-      "relVolume": 0.001508998633752075,
+      "lastTradeAt": "Sep 22, 2026 8:17 AM ET",
+      "preMarketVolume": 9237,
+      "preMarketDollarVolume": 10712.1489,
+      "relVolume": 0.001730430835501914,
       "avgVolume50": 5337977,
       "sharesOutstanding": 16530000,
-      "marketCap": 19335141,
+      "marketCap": 19169841,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 34,
       "float": {
@@ -424,7 +494,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-12"
       },
-      "floatRotation": 0.00048729582577132486,
+      "floatRotation": 0.0005588021778584392,
       "daysUp": 0,
       "priorRunPct": 1.8518518518518534,
       "extended": false,
@@ -442,12 +512,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.3%"
+          "detail": "5.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "8,055"
+          "detail": "9,237"
         },
         {
           "name": "News catalyst",
@@ -457,7 +527,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.17"
+          "detail": "$1.16"
         },
         {
           "name": "Float <10M",
