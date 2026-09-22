@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-22T12:21:09.920Z",
+  "generatedAt": "2026-09-22T12:41:20.583Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-21",
   "universeChecked": 6013,
   "smallCapsInBand": 2926,
-  "investigated": 83,
-  "liveQuotes": 65,
+  "investigated": 92,
+  "liveQuotes": 71,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-21T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 147,
+    "edgarFilings": 157,
     "leads": {
-      "8-K": 55,
-      "PR Newswire": 0,
-      "GlobeNewswire": 7,
+      "8-K": 61,
+      "PR Newswire": 1,
+      "GlobeNewswire": 8,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 83,
-    "answered": 83,
+    "requested": 92,
+    "answered": 92,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -58,7 +58,76 @@
     "floatStretch": 20000000
   },
   "shortlist": [],
-  "watchlist": [],
+  "watchlist": [
+    {
+      "symbol": "BIAF",
+      "name": "bioAffinity Technologies Inc.",
+      "legalName": "bioAffinity Technologies, Inc.",
+      "business": "Services-Commercial Physical & Biological Research",
+      "sector": "Health Care",
+      "preMarketPrice": 8.4197,
+      "preMarketChangePct": 9.346753246753252,
+      "prevClose": 7.7,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 22, 2026 8:41 AM ET",
+      "preMarketVolume": 179531,
+      "preMarketDollarVolume": 1511597.1607000001,
+      "relVolume": 0.02657980396226823,
+      "avgVolume50": 6754414,
+      "sharesOutstanding": 8101725,
+      "marketCap": 68214093.9825,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 98,
+      "float": {
+        "shares": 8101725,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-03"
+      },
+      "floatRotation": 0.022159601813194103,
+      "daysUp": 0,
+      "priorRunPct": -2.90037831021437,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-09-22"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "9.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "179,531"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$8.42"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "8.1M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
   "alsoRan": [
     {
       "symbol": "GRML",
@@ -66,17 +135,17 @@
       "legalName": "Greenland Mines Ltd",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 13.64,
-      "preMarketChangePct": 44.798301486199584,
+      "preMarketPrice": 13.32,
+      "preMarketChangePct": 41.40127388535032,
       "prevClose": 9.42,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 22, 2026 8:22 AM ET",
-      "preMarketVolume": 19644982.768911,
-      "preMarketDollarVolume": 267957564.96794605,
-      "relVolume": 2.9523866214028605,
+      "lastTradeAt": "Sep 22, 2026 8:41 AM ET",
+      "preMarketVolume": 20552696.704545,
+      "preMarketDollarVolume": 273761920.1045394,
+      "relVolume": 3.088804276289677,
       "avgVolume50": 6653933,
       "sharesOutstanding": 158850637,
-      "marketCap": 2166722688.6800003,
+      "marketCap": 2115890484.8400002,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -84,7 +153,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-17"
       },
-      "floatRotation": 0.12366952465485549,
+      "floatRotation": 0.12938378525070063,
       "daysUp": 1,
       "priorRunPct": 188.95705521472394,
       "extended": true,
@@ -102,12 +171,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "44.8%"
+          "detail": "41.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "19,644,983"
+          "detail": "20,552,697"
         },
         {
           "name": "News catalyst",
@@ -117,7 +186,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$13.64"
+          "detail": "$13.32"
         },
         {
           "name": "Float <10M",
@@ -134,17 +203,17 @@
       "legalName": "Lexeo Therapeutics, Inc.",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 4.34,
-      "preMarketChangePct": 6.372549019607837,
+      "preMarketPrice": 4.3392,
+      "preMarketChangePct": 6.352941176470585,
       "prevClose": 4.08,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 22, 2026 8:21 AM ET",
-      "preMarketVolume": 148985,
-      "preMarketDollarVolume": 646594.9,
-      "relVolume": 0.17316407262465291,
+      "lastTradeAt": "Sep 22, 2026 8:37 AM ET",
+      "preMarketVolume": 149235,
+      "preMarketDollarVolume": 647560.512,
+      "relVolume": 0.17345464562298268,
       "avgVolume50": 860369,
       "sharesOutstanding": 82046255,
-      "marketCap": 356080746.7,
+      "marketCap": 356015109.696,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 29,
       "float": {
@@ -152,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.0018158659404990515,
+      "floatRotation": 0.001818913002183951,
       "daysUp": 0,
       "priorRunPct": -3.087885985748216,
       "extended": false,
@@ -175,7 +244,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "148,985"
+          "detail": "149,235"
         },
         {
           "name": "News catalyst",
@@ -197,69 +266,136 @@
       "quality": "low"
     },
     {
-      "symbol": "HOST",
-      "name": "Host Digital Inc. Class A",
-      "legalName": "Host Digital Inc.",
-      "business": "Retail-Grocery Stores",
-      "sector": "Consumer Staples",
-      "preMarketPrice": 8.67,
-      "preMarketChangePct": 8.375,
-      "prevClose": 8,
+      "symbol": "PLRZ",
+      "name": "Polyrizon Ltd. Ordinary Shares",
+      "legalName": "Polyrizon Ltd.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 11.48,
+      "preMarketChangePct": 5.321100917431193,
+      "prevClose": 10.9,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 22, 2026 8:20 AM ET",
-      "preMarketVolume": 5933,
-      "preMarketDollarVolume": 51439.11,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 32457828,
-      "marketCap": 281409368.76,
+      "lastTradeAt": "Sep 22, 2026 8:33 AM ET",
+      "preMarketVolume": 168,
+      "preMarketDollarVolume": 1928.64,
+      "relVolume": 0.002261864692022888,
+      "avgVolume50": 74275,
+      "sharesOutstanding": 1608266,
+      "marketCap": 18462893.68,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
+      "bestPriorSpikePct": 132,
       "float": {
-        "shares": 32457828,
+        "shares": 1608266,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-14"
+        "asOf": "2025-12-31"
       },
-      "floatRotation": 0.0001827910358019027,
+      "floatRotation": 0.00010446033181078254,
       "daysUp": 0,
-      "priorRunPct": -1.1124845488257091,
+      "priorRunPct": -3.710247349823321,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
-        "date": "2026-09-21"
+        "kind": "news",
+        "headline": "Polyrizon Enrolls First Patient in U.S. Clinical Study of NASARIX (PL-14) Allergy Blocker",
+        "subject": "FDA / clinical",
+        "date": "2026-09-22"
       },
       "leads": [
-        "8-K",
-        "8-K"
+        "GlobeNewswire"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.4%"
+          "detail": "5.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "5,933"
+          "detail": "168"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.67"
+          "detail": "$11.48"
         },
         {
           "name": "Float <10M",
+          "ok": true,
+          "detail": "1.6M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "TGL",
+      "name": "Treasure Global Inc.",
+      "legalName": "TREASURE GLOBAL INC",
+      "business": "Services-Business Services, NEC",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 3.17,
+      "preMarketChangePct": 7.094594594594593,
+      "prevClose": 2.96,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 22, 2026 8:40 AM ET",
+      "preMarketVolume": 38600,
+      "preMarketDollarVolume": 122362,
+      "relVolume": 0.13948009337216613,
+      "avgVolume50": 276742,
+      "sharesOutstanding": 1675725,
+      "marketCap": 5312048.25,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 36,
+      "float": {
+        "shares": 1675725,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-05-20"
+      },
+      "floatRotation": 0.02303480583031225,
+      "daysUp": 2,
+      "priorRunPct": -3.2679738562091534,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "32.5M"
+          "detail": "7.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "38,600"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.17"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "1.7M"
         }
       ],
       "passed": 2,
@@ -271,17 +407,17 @@
       "legalName": "NEONC TECHNOLOGIES HOLDINGS, INC.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 3.5599,
-      "preMarketChangePct": 6.903903903903896,
+      "preMarketPrice": 3.5244,
+      "preMarketChangePct": 5.837837837837835,
       "prevClose": 3.33,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 22, 2026 8:13 AM ET",
-      "preMarketVolume": 769,
-      "preMarketDollarVolume": 2737.5631,
-      "relVolume": 0.004356520901669527,
+      "lastTradeAt": "Sep 22, 2026 8:28 AM ET",
+      "preMarketVolume": 830,
+      "preMarketDollarVolume": 2925.252,
+      "relVolume": 0.004702096681905992,
       "avgVolume50": 176517,
       "sharesOutstanding": 25936365,
-      "marketCap": 92330865.76349999,
+      "marketCap": 91410124.806,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -289,7 +425,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.000029649490204197852,
+      "floatRotation": 0.000032001400350434615,
       "daysUp": 1,
       "priorRunPct": -11.904761904761898,
       "extended": false,
@@ -307,12 +443,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.9%"
+          "detail": "5.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "769"
+          "detail": "830"
         },
         {
           "name": "News catalyst",
@@ -322,7 +458,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.56"
+          "detail": "$3.52"
         },
         {
           "name": "Float <10M",
@@ -363,13 +499,12 @@
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "news",
-        "headline": "Roundtable Files 8-K: Projects $90-$100 Million in 2027 Revenue and Annualized Adjusted EBITDA-Positive Operations",
-        "subject": "Earnings or guidance",
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
         "date": "2026-09-22"
       },
       "leads": [
-        "GlobeNewswire",
         "8-K"
       ],
       "checks": [
@@ -386,7 +521,7 @@
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "news"
+          "detail": "8-K"
         },
         {
           "name": "Price $2–$20",
@@ -397,6 +532,74 @@
           "name": "Float <10M",
           "ok": false,
           "detail": "14.0M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "PALI",
+      "name": "Palisade Bio Inc.",
+      "legalName": "PALISADE BIO, INC.",
+      "business": "Biological Products, (No Diagnostic Substances)",
+      "sector": "Health Care",
+      "preMarketPrice": 1.78,
+      "preMarketChangePct": 5.3254437869822535,
+      "prevClose": 1.69,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 22, 2026 8:41 AM ET",
+      "preMarketVolume": 393920,
+      "preMarketDollarVolume": 701177.6,
+      "relVolume": 0.17788278304911465,
+      "avgVolume50": 2214492,
+      "sharesOutstanding": 174270558,
+      "marketCap": 310201593.24,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 52,
+      "float": {
+        "shares": 174270558,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-06"
+      },
+      "floatRotation": 0.0022603932902997875,
+      "daysUp": 1,
+      "priorRunPct": -17.560975609756095,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Palisade Bio Receives FDA Clearance of IND for PALI-2108 in Crohn’s Disease, Expanding Phase 2 Development Across IBD",
+        "subject": "FDA / clinical",
+        "date": "2026-09-22"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "393,920"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.78"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "174.3M"
         }
       ],
       "passed": 2,
