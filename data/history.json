@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-09-22T00:02:52.954Z",
+ "updatedAt": "2026-09-22T11:01:20.587Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -3770,7 +3770,22 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 6.865,
+      "high": 7.94,
+      "low": 6.75,
+      "close": 7.65,
+      "volume": 25515750,
+      "prevClose": 5.86,
+      "gapPct": 17.15017064846416,
+      "openToHighPct": 15.659140568099057,
+      "openToClosePct": 11.434814275309543,
+      "openToLowPct": -1.6751638747268784,
+      "alertToHighPct": 13.266761768901578,
+      "alertToClosePct": 9.12981455064195,
+      "filledAt": "2026-09-22T11:01:20.187Z",
+      "noon": 7.7533
+     },
      "intraday": {
       "noon": 7.7533
      }
@@ -3794,7 +3809,22 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 3.47,
+      "high": 3.49,
+      "low": 3.09,
+      "close": 3.2,
+      "volume": 4473453,
+      "prevClose": 2.75,
+      "gapPct": 26.18181818181819,
+      "openToHighPct": 0.5763688760806921,
+      "openToClosePct": -7.780979827089338,
+      "openToLowPct": -10.95100864553315,
+      "alertToHighPct": 10.7620045066489,
+      "alertToClosePct": 1.5582849344631737,
+      "filledAt": "2026-09-22T11:01:20.335Z",
+      "noon": 3.19
+     },
      "intraday": {
       "noon": 3.19
      }
@@ -3818,7 +3848,22 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 7.785,
+      "high": 7.84,
+      "low": 7.76,
+      "close": 7.8,
+      "volume": 18689320,
+      "prevClose": 5.83,
+      "gapPct": 33.533447684391085,
+      "openToHighPct": 0.7064868336544601,
+      "openToClosePct": 0.19267822736030418,
+      "openToLowPct": -0.32113037893385166,
+      "alertToHighPct": 0.5128205128205132,
+      "alertToClosePct": 0,
+      "filledAt": "2026-09-22T11:01:20.447Z",
+      "noon": 7.765
+     },
      "intraday": {
       "noon": 7.765
      }
@@ -3842,12 +3887,32 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 6.51,
+      "high": 6.67,
+      "low": 6.19,
+      "close": 6.51,
+      "volume": 4477865,
+      "prevClose": 6.06,
+      "gapPct": 7.42574257425743,
+      "openToHighPct": 2.4577572964669763,
+      "openToClosePct": 0,
+      "openToLowPct": -4.915514592933938,
+      "alertToHighPct": -0.14970059880239203,
+      "alertToClosePct": -2.5449101796407176,
+      "filledAt": "2026-09-22T11:01:20.586Z",
+      "noon": 6.475
+     },
      "intraday": {
       "noon": 6.475
      }
     }
    ]
+  },
+  "2026-09-22": {
+   "date": "2026-09-22",
+   "source": "live",
+   "names": []
   }
  }
 }
