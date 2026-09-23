@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-23T12:20:48.048Z",
+  "generatedAt": "2026-09-23T12:40:46.874Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-22",
   "universeChecked": 6021,
   "smallCapsInBand": 2938,
-  "investigated": 85,
-  "liveQuotes": 60,
+  "investigated": 84,
+  "liveQuotes": 59,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-22T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 136,
+    "edgarFilings": 143,
     "leads": {
-      "8-K": 51,
-      "PR Newswire": 0,
-      "GlobeNewswire": 12,
+      "8-K": 54,
+      "PR Newswire": 1,
+      "GlobeNewswire": 9,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 85,
-    "answered": 85,
+    "requested": 84,
+    "answered": 84,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -59,90 +59,22 @@
   },
   "shortlist": [
     {
-      "symbol": "IMCC",
-      "name": "IM Cannabis Corp. Common Shares",
-      "legalName": "IM Cannabis Corp.",
-      "business": "Medicinal Chemicals & Botanical Products",
-      "sector": "Health Care",
-      "preMarketPrice": 7.4355,
-      "preMarketChangePct": 79.60144927536234,
-      "prevClose": 4.14,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 8:20 AM ET",
-      "preMarketVolume": 15428439.557773,
-      "preMarketDollarVolume": 114718162.33182114,
-      "relVolume": 5.349935956479435,
-      "avgVolume50": 2883855,
-      "sharesOutstanding": 5894812,
-      "marketCap": 43830874.626,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 34,
-      "float": {
-        "shares": 5894812,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 2.6172911973737243,
-      "daysUp": 1,
-      "priorRunPct": 153.98773006134968,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "IM Cannabis To Acquire 51% Of Space Defense Innovations, Stock Surges In Pre-Market ",
-        "subject": "Merger or acquisition",
-        "date": "2026-09-23"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "79.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "15,428,440"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$7.44"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "5.9M"
-        }
-      ],
-      "passed": 5,
-      "quality": "high"
-    },
-    {
       "symbol": "DCOY",
       "name": "Decoy Therapeutics Inc.",
       "legalName": "Decoy Therapeutics Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 4.2095,
-      "preMarketChangePct": 35.79032258064517,
+      "preMarketPrice": 4.2502,
+      "preMarketChangePct": 37.103225806451626,
       "prevClose": 3.1,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 8:20 AM ET",
-      "preMarketVolume": 13369871.277061,
-      "preMarketDollarVolume": 56280473.14078829,
-      "relVolume": 271.78954458165964,
+      "lastTradeAt": "Sep 23, 2026 8:40 AM ET",
+      "preMarketVolume": 13801668.277061,
+      "preMarketDollarVolume": 58659850.51116467,
+      "relVolume": 280.56733365305337,
       "avgVolume50": 49192,
       "sharesOutstanding": 655185,
-      "marketCap": 2758001.2575000003,
+      "marketCap": 2784667.2870000005,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 74,
       "float": {
@@ -150,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-12"
       },
-      "floatRotation": 20.40625361853675,
+      "floatRotation": 21.06529953686516,
       "daysUp": 1,
       "priorRunPct": 14.39114391143912,
       "extended": false,
@@ -168,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "35.8%"
+          "detail": "37.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "13,369,871"
+          "detail": "13,801,668"
         },
         {
           "name": "News catalyst",
@@ -183,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.21"
+          "detail": "$4.25"
         },
         {
           "name": "Float <10M",
@@ -202,17 +134,17 @@
       "legalName": "TriSalus Life Sciences, Inc.",
       "business": "Surgical & Medical Instruments & Apparatus",
       "sector": "Health Care",
-      "preMarketPrice": 5.6892,
-      "preMarketChangePct": 15.399594320486814,
+      "preMarketPrice": 5.8103,
+      "preMarketChangePct": 17.855983772819474,
       "prevClose": 4.93,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 8:20 AM ET",
-      "preMarketVolume": 347201.291208,
-      "preMarketDollarVolume": 1975297.5859405533,
-      "relVolume": 1.8344426485618275,
+      "lastTradeAt": "Sep 23, 2026 8:40 AM ET",
+      "preMarketVolume": 378583.430457,
+      "preMarketDollarVolume": 2199683.305984307,
+      "relVolume": 2.0002505994515714,
       "avgVolume50": 189268,
       "sharesOutstanding": 61574600,
-      "marketCap": 350310214.32,
+      "marketCap": 357766898.38,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 18,
       "float": {
@@ -220,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-04"
       },
-      "floatRotation": 0.005638709649888103,
+      "floatRotation": 0.006148370114576465,
       "daysUp": 0,
       "priorRunPct": 3.13807531380752,
       "extended": false,
@@ -238,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "15.4%"
+          "detail": "17.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "347,201"
+          "detail": "378,583"
         },
         {
           "name": "News catalyst",
@@ -253,7 +185,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.69"
+          "detail": "$5.81"
         },
         {
           "name": "Float <10M",
@@ -263,26 +195,24 @@
       ],
       "passed": 4,
       "quality": "medium"
-    }
-  ],
-  "alsoRan": [
+    },
     {
       "symbol": "GRML",
       "name": "Greenland Mines Ltd.",
       "legalName": "Greenland Mines Ltd",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 17.9447,
-      "preMarketChangePct": 26.817667844522973,
+      "preMarketPrice": 16.6202,
+      "preMarketChangePct": 17.457243816254415,
       "prevClose": 14.15,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 8:20 AM ET",
-      "preMarketVolume": 10372633.440684,
-      "preMarketDollarVolume": 186133795.30304217,
-      "relVolume": 1.5588725405987707,
+      "lastTradeAt": "Sep 23, 2026 8:40 AM ET",
+      "preMarketVolume": 11194859.890152,
+      "preMarketDollarVolume": 186060810.34630427,
+      "relVolume": 1.6824425328827326,
       "avgVolume50": 6653933,
       "sharesOutstanding": 158850637,
-      "marketCap": 2850527025.7739,
+      "marketCap": 2640129357.0674,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -290,98 +220,31 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-17"
       },
-      "floatRotation": 0.06529802861718458,
+      "floatRotation": 0.0704741265227158,
       "daysUp": 2,
       "priorRunPct": 354.98392282958207,
       "extended": true,
       "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
+        "found": true,
+        "kind": "news",
+        "headline": "Greenland Mines Ltd. (NASDAQ: GRML) Applies to More than Double Mining Footprint in West Greenland",
         "subject": null,
-        "date": null
+        "date": "2026-09-23"
       },
       "leads": [
+        "GlobeNewswire",
         "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "26.8%"
+          "detail": "17.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "10,372,633"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$17.94"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "158.9M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "MYSE",
-      "name": "Myseum.AI Inc.",
-      "legalName": "Myseum.AI, Inc.",
-      "business": "Telegraph & Other Message Communications",
-      "sector": "Telecommunications",
-      "preMarketPrice": 1.9838,
-      "preMarketChangePct": 7.815217391304344,
-      "prevClose": 1.84,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 8:20 AM ET",
-      "preMarketVolume": 269150,
-      "preMarketDollarVolume": 533939.77,
-      "relVolume": 2.564872256687346,
-      "avgVolume50": 104937,
-      "sharesOutstanding": 5196430,
-      "marketCap": 10308677.834,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 129,
-      "float": {
-        "shares": 5196430,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-14"
-      },
-      "floatRotation": 0.05179517476421312,
-      "daysUp": 0,
-      "priorRunPct": -43.034055727554176,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Myseum.AI to Apply for Tokenization of Nasdaq-Listed Common Stock Following Landmark Expansion of U.S. Digital Securities Market",
-        "subject": "Hot-sector announcement",
-        "date": "2026-09-23"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.8%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "269,150"
+          "detail": "11,194,860"
         },
         {
           "name": "News catalyst",
@@ -390,35 +253,37 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.98"
+          "ok": true,
+          "detail": "$16.62"
         },
         {
           "name": "Float <10M",
-          "ok": true,
-          "detail": "5.2M"
+          "ok": false,
+          "detail": "158.9M"
         }
       ],
-      "passed": 3,
-      "quality": "low"
-    },
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
+  "alsoRan": [
     {
       "symbol": "NNBR",
       "name": "NN Inc.",
       "legalName": "NN INC",
       "business": "Metalworkg Machinery & Equipment",
       "sector": "Industrials",
-      "preMarketPrice": 3.69,
-      "preMarketChangePct": 9.495548961424326,
+      "preMarketPrice": 3.6962,
+      "preMarketChangePct": 9.679525222551929,
       "prevClose": 3.37,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 8:20 AM ET",
-      "preMarketVolume": 36050,
-      "preMarketDollarVolume": 133024.5,
-      "relVolume": 0.016196110866759247,
+      "lastTradeAt": "Sep 23, 2026 8:39 AM ET",
+      "preMarketVolume": 38309,
+      "preMarketDollarVolume": 141597.72580000001,
+      "relVolume": 0.017211007245344797,
       "avgVolume50": 2225843,
       "sharesOutstanding": 82580864,
-      "marketCap": 304723388.15999997,
+      "marketCap": 305235389.5168,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -426,7 +291,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-28"
       },
-      "floatRotation": 0.00043654181191419845,
+      "floatRotation": 0.0004638968175484335,
       "daysUp": 2,
       "priorRunPct": 2.4316109422492422,
       "extended": true,
@@ -444,12 +309,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.5%"
+          "detail": "9.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "36,050"
+          "detail": "38,309"
         },
         {
           "name": "News catalyst",
@@ -459,7 +324,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.69"
+          "detail": "$3.70"
         },
         {
           "name": "Float <10M",
@@ -476,17 +341,17 @@
       "legalName": "RTB Digital, Inc.",
       "business": "Services-Management Consulting Services",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 10.12,
-      "preMarketChangePct": 5.968586387434539,
+      "preMarketPrice": 10.428,
+      "preMarketChangePct": 9.193717277486911,
       "prevClose": 9.55,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 8:18 AM ET",
-      "preMarketVolume": 5515,
-      "preMarketDollarVolume": 55811.799999999996,
-      "relVolume": 0.05853756912527995,
+      "lastTradeAt": "Sep 23, 2026 8:33 AM ET",
+      "preMarketVolume": 6074,
+      "preMarketDollarVolume": 63339.672000000006,
+      "relVolume": 0.06447093288611976,
       "avgVolume50": 94213,
       "sharesOutstanding": 14008209,
-      "marketCap": 141763075.07999998,
+      "marketCap": 146077603.45200002,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 43,
       "float": {
@@ -494,7 +359,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-13"
       },
-      "floatRotation": 0.0003936977239560032,
+      "floatRotation": 0.0004336028967014984,
       "daysUp": 2,
       "priorRunPct": 31.54269972451792,
       "extended": true,
@@ -513,12 +378,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.0%"
+          "detail": "9.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "5,515"
+          "detail": "6,074"
         },
         {
           "name": "News catalyst",
@@ -528,12 +393,80 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$10.12"
+          "detail": "$10.43"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "14.0M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "ARMP",
+      "name": "Armata Pharmaceuticals Inc.",
+      "legalName": "Armata Pharmaceuticals, Inc.",
+      "business": "Biological Products, (No Diagnostic Substances)",
+      "sector": "Health Care",
+      "preMarketPrice": 4.4383,
+      "preMarketChangePct": 5.673809523809517,
+      "prevClose": 4.2,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 23, 2026 8:24 AM ET",
+      "preMarketVolume": 10158.378698,
+      "preMarketDollarVolume": 45085.9321753334,
+      "relVolume": 0.0792576886610647,
+      "avgVolume50": 128169,
+      "sharesOutstanding": 37181979,
+      "marketCap": 165024777.3957,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 103,
+      "float": {
+        "shares": 37181979,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-06"
+      },
+      "floatRotation": 0.00027320704737098585,
+      "daysUp": 0,
+      "priorRunPct": -4.545454545454549,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-09-23"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "10,158"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.44"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "37.2M"
         }
       ],
       "passed": 2,
@@ -602,74 +535,6 @@
           "name": "Float <10M",
           "ok": false,
           "detail": "21.6M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "HUHU",
-      "name": "HUHUTECH International Group Inc. Ordinary Shares",
-      "legalName": "HUHUTECH International Group Inc.",
-      "business": "Nonferrous Foundries (Castings)",
-      "sector": "Telecommunications",
-      "preMarketPrice": 6.4364,
-      "preMarketChangePct": 5.255928045789037,
-      "prevClose": 6.115,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 8:02 AM ET",
-      "preMarketVolume": 414,
-      "preMarketDollarVolume": 2664.6696,
-      "relVolume": 0.009267135246452075,
-      "avgVolume50": 44674,
-      "sharesOutstanding": 24103749,
-      "marketCap": 155141370.0636,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 20,
-      "float": {
-        "shares": 24103749,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 0.00001717575137378007,
-      "daysUp": 0,
-      "priorRunPct": 64.38172043010752,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "HUHUTECH Reports 8.6% Revenue Growth for First Half of 2026, with New U.S., Germany, and Singapore Operations Contributing $3.7 Million",
-        "subject": "Earnings or guidance",
-        "date": "2026-09-23"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "414"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.44"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "24.1M"
         }
       ],
       "passed": 2,
