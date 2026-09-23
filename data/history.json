@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-09-22T23:35:10.627Z",
+ "updatedAt": "2026-09-23T11:02:36.147Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -3930,7 +3930,22 @@
      "catalyst": "FDA / clinical",
      "extended": false,
      "missing": [],
-     "performance": null,
+     "performance": {
+      "open": 5.15,
+      "high": 7.61,
+      "low": 3,
+      "close": 3.1,
+      "volume": 105250200,
+      "prevClose": 2.56,
+      "gapPct": 101.171875,
+      "openToHighPct": 47.76699029126213,
+      "openToClosePct": -39.80582524271845,
+      "openToLowPct": -41.747572815533985,
+      "alertToHighPct": 103.35088047457445,
+      "alertToClosePct": -17.163241856612245,
+      "filledAt": "2026-09-23T11:02:36.019Z",
+      "noon": 5.4
+     },
      "intraday": {
       "noon": 5.4
      }
@@ -3954,10 +3969,71 @@
      "missing": [
       "Up ≥10% pre-market"
      ],
-     "performance": null,
+     "performance": {
+      "open": 8.28,
+      "high": 9.1399,
+      "low": 8.26,
+      "close": 8.555,
+      "volume": 874297,
+      "prevClose": 7.7,
+      "gapPct": 7.532467532467521,
+      "openToHighPct": 10.38526570048311,
+      "openToClosePct": 3.3212560386473475,
+      "openToLowPct": -0.24154589371980165,
+      "alertToHighPct": 8.55374894592444,
+      "alertToClosePct": 1.606945615639501,
+      "filledAt": "2026-09-23T11:02:36.146Z",
+      "noon": 8.47
+     },
      "intraday": {
       "noon": 8.47
      }
+    }
+   ]
+  },
+  "2026-09-23": {
+   "date": "2026-09-23",
+   "source": "live",
+   "names": [
+    {
+     "symbol": "DCOY",
+     "legalName": "Decoy Therapeutics Inc.",
+     "business": "Pharmaceutical Preparations",
+     "list": "shortlist",
+     "firstSeenAt": "2026-09-23T11:01:51.888Z",
+     "lastSeenAt": "2026-09-23T11:01:51.888Z",
+     "shortlistedAt": "2026-09-23T11:01:51.888Z",
+     "preMarketPrice": 4.78,
+     "preMarketChangePct": 54.19354838709678,
+     "prevClose": 3.1,
+     "preMarketVolume": 4692503.590829,
+     "relVolume": 95.39160007377215,
+     "floatShares": 655185,
+     "catalyst": "FDA / clinical",
+     "extended": false,
+     "missing": [],
+     "performance": null
+    },
+    {
+     "symbol": "TLSI",
+     "legalName": "TriSalus Life Sciences, Inc.",
+     "business": "Surgical & Medical Instruments & Apparatus",
+     "list": "watchlist",
+     "firstSeenAt": "2026-09-23T11:01:51.888Z",
+     "lastSeenAt": "2026-09-23T11:01:51.888Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 5.6098,
+     "preMarketChangePct": 13.789046653144021,
+     "prevClose": 4.93,
+     "preMarketVolume": 204875.707139,
+     "relVolume": 1.0824635286419257,
+     "floatShares": 61574600,
+     "catalyst": "FDA / clinical",
+     "extended": false,
+     "missing": [
+      "Float <10M"
+     ],
+     "performance": null
     }
    ]
   }
