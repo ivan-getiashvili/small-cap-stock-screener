@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-23T11:21:32.768Z",
+  "generatedAt": "2026-09-23T11:40:24.482Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-22",
   "universeChecked": 6021,
   "smallCapsInBand": 2938,
-  "investigated": 74,
-  "liveQuotes": 49,
+  "investigated": 76,
+  "liveQuotes": 53,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-22T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 117,
+    "edgarFilings": 122,
     "leads": {
-      "8-K": 42,
-      "PR Newswire": 2,
-      "GlobeNewswire": 6,
+      "8-K": 44,
+      "PR Newswire": 0,
+      "GlobeNewswire": 8,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 74,
-    "answered": 74,
+    "requested": 76,
+    "answered": 76,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Decoy Therapeutics Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 4.37,
-      "preMarketChangePct": 40.96774193548387,
+      "preMarketPrice": 4.45,
+      "preMarketChangePct": 43.54838709677419,
       "prevClose": 3.1,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 7:21 AM ET",
-      "preMarketVolume": 10429931.728697,
-      "preMarketDollarVolume": 45578801.65440589,
-      "relVolume": 212.02495789349894,
+      "lastTradeAt": "Sep 23, 2026 7:40 AM ET",
+      "preMarketVolume": 12116061.277061,
+      "preMarketDollarVolume": 53916472.682921454,
+      "relVolume": 246.3014570877582,
       "avgVolume50": 49192,
       "sharesOutstanding": 655185,
-      "marketCap": 2863158.45,
+      "marketCap": 2915573.25,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 74,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-12"
       },
-      "floatRotation": 15.91906366705129,
+      "floatRotation": 18.492580381206835,
       "daysUp": 1,
       "priorRunPct": 14.39114391143912,
       "extended": false,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "41.0%"
+          "detail": "43.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "10,429,932"
+          "detail": "12,116,061"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.37"
+          "detail": "$4.45"
         },
         {
           "name": "Float <10M",
@@ -129,22 +129,90 @@
   ],
   "watchlist": [
     {
+      "symbol": "IMCC",
+      "name": "IM Cannabis Corp. Common Shares",
+      "legalName": "IM Cannabis Corp.",
+      "business": "Medicinal Chemicals & Botanical Products",
+      "sector": "Health Care",
+      "preMarketPrice": 10.18,
+      "preMarketChangePct": 145.8937198067633,
+      "prevClose": 4.14,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 23, 2026 7:40 AM ET",
+      "preMarketVolume": 6719261.138039,
+      "preMarketDollarVolume": 68402078.38523702,
+      "relVolume": 2.3299580381257035,
+      "avgVolume50": 2883855,
+      "sharesOutstanding": 5894812,
+      "marketCap": 60009186.16,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 34,
+      "float": {
+        "shares": 5894812,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-12-31"
+      },
+      "floatRotation": 1.1398601241293191,
+      "daysUp": 1,
+      "priorRunPct": 153.98773006134968,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "145.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "6,719,261"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$10.18"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "5.9M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
       "symbol": "TLSI",
       "name": "TriSalus Life Sciences Inc.",
       "legalName": "TriSalus Life Sciences, Inc.",
       "business": "Surgical & Medical Instruments & Apparatus",
       "sector": "Health Care",
-      "preMarketPrice": 5.6,
-      "preMarketChangePct": 13.590263691683568,
+      "preMarketPrice": 5.5511,
+      "preMarketChangePct": 12.598377281947268,
       "prevClose": 4.93,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 7:21 AM ET",
-      "preMarketVolume": 254778.291208,
-      "preMarketDollarVolume": 1426758.4307648,
-      "relVolume": 1.3461244965234482,
+      "lastTradeAt": "Sep 23, 2026 7:40 AM ET",
+      "preMarketVolume": 288940.291208,
+      "preMarketDollarVolume": 1603936.4505247287,
+      "relVolume": 1.526619878732802,
       "avgVolume50": 189268,
       "sharesOutstanding": 61574600,
-      "marketCap": 344817760,
+      "marketCap": 341806762.06,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 18,
       "float": {
@@ -152,7 +220,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-04"
       },
-      "floatRotation": 0.004137717357611742,
+      "floatRotation": 0.004692524047383174,
       "daysUp": 0,
       "priorRunPct": 3.13807531380752,
       "extended": false,
@@ -170,12 +238,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "13.6%"
+          "detail": "12.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "254,778"
+          "detail": "288,940"
         },
         {
           "name": "News catalyst",
@@ -185,7 +253,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.60"
+          "detail": "$5.55"
         },
         {
           "name": "Float <10M",
@@ -204,17 +272,17 @@
       "legalName": "Greenland Mines Ltd",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 18.4549,
-      "preMarketChangePct": 30.423321554770304,
+      "preMarketPrice": 17.28,
+      "preMarketChangePct": 22.120141342756188,
       "prevClose": 14.15,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 7:21 AM ET",
-      "preMarketVolume": 7538231.385251,
-      "preMarketDollarVolume": 139117306.39166865,
-      "relVolume": 1.1328986007600317,
+      "lastTradeAt": "Sep 23, 2026 7:40 AM ET",
+      "preMarketVolume": 8480089.440684,
+      "preMarketDollarVolume": 146535945.53501952,
+      "relVolume": 1.2744476748840121,
       "avgVolume50": 6653933,
       "sharesOutstanding": 158850637,
-      "marketCap": 2931572620.7713,
+      "marketCap": 2744939007.36,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -222,7 +290,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-17"
       },
-      "floatRotation": 0.04745483888271093,
+      "floatRotation": 0.05338404428736411,
       "daysUp": 2,
       "priorRunPct": 354.98392282958207,
       "extended": true,
@@ -240,12 +308,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "30.4%"
+          "detail": "22.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "7,538,231"
+          "detail": "8,480,089"
         },
         {
           "name": "News catalyst",
@@ -255,7 +323,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$18.45"
+          "detail": "$17.28"
         },
         {
           "name": "Float <10M",
@@ -272,17 +340,17 @@
       "legalName": "NN INC",
       "business": "Metalworkg Machinery & Equipment",
       "sector": "Industrials",
-      "preMarketPrice": 3.7,
-      "preMarketChangePct": 9.792284866468846,
+      "preMarketPrice": 3.68,
+      "preMarketChangePct": 9.198813056379823,
       "prevClose": 3.37,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 7:20 AM ET",
-      "preMarketVolume": 20357,
-      "preMarketDollarVolume": 75320.90000000001,
-      "relVolume": 0.00914574837488538,
+      "lastTradeAt": "Sep 23, 2026 7:38 AM ET",
+      "preMarketVolume": 25963,
+      "preMarketDollarVolume": 95543.84000000001,
+      "relVolume": 0.011664344699963115,
       "avgVolume50": 2225843,
       "sharesOutstanding": 82580864,
-      "marketCap": 305549196.8,
+      "marketCap": 303897579.52000004,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -290,7 +358,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-28"
       },
-      "floatRotation": 0.0002465098936237819,
+      "floatRotation": 0.00031439486997859455,
       "daysUp": 2,
       "priorRunPct": 2.4316109422492422,
       "extended": true,
@@ -308,12 +376,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.8%"
+          "detail": "9.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "20,357"
+          "detail": "25,963"
         },
         {
           "name": "News catalyst",
@@ -323,7 +391,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.70"
+          "detail": "$3.68"
         },
         {
           "name": "Float <10M",
@@ -340,17 +408,17 @@
       "legalName": "QUANTUM X LABS INC.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 6.0405,
-      "preMarketChangePct": 6.346830985915494,
+      "preMarketPrice": 6.04,
+      "preMarketChangePct": 6.33802816901409,
       "prevClose": 5.68,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 6:55 AM ET",
-      "preMarketVolume": 2493,
-      "preMarketDollarVolume": 15058.966499999999,
-      "relVolume": 0.0431591156968994,
+      "lastTradeAt": "Sep 23, 2026 7:30 AM ET",
+      "preMarketVolume": 2494,
+      "preMarketDollarVolume": 15063.76,
+      "relVolume": 0.04317642781711476,
       "avgVolume50": 57763,
       "sharesOutstanding": 21567826,
-      "marketCap": 130280452.953,
+      "marketCap": 130269669.04,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 14,
       "float": {
@@ -358,7 +426,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-13"
       },
-      "floatRotation": 0.00011558884052569786,
+      "floatRotation": 0.00011563520588491395,
       "daysUp": 1,
       "priorRunPct": 16.393442622950815,
       "extended": false,
@@ -381,7 +449,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "2,493"
+          "detail": "2,494"
         },
         {
           "name": "News catalyst",
@@ -397,74 +465,6 @@
           "name": "Float <10M",
           "ok": false,
           "detail": "21.6M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "PSBD",
-      "name": "Palmer Square Capital BDC Inc.",
-      "legalName": "Palmer Square Capital BDC Inc.",
-      "business": null,
-      "sector": null,
-      "preMarketPrice": 11,
-      "preMarketChangePct": 5.26315789473685,
-      "prevClose": 10.45,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 5:47 AM ET",
-      "preMarketVolume": 1202,
-      "preMarketDollarVolume": 13222,
-      "relVolume": 0.00958005563127147,
-      "avgVolume50": 125469,
-      "sharesOutstanding": 30651221,
-      "marketCap": 337163431,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 6,
-      "float": {
-        "shares": 30651221,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-04"
-      },
-      "floatRotation": 0.00003921540352340287,
-      "daysUp": 2,
-      "priorRunPct": 2.6522593320235717,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-09-22"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "1,202"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$11.00"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "30.7M"
         }
       ],
       "passed": 2,
