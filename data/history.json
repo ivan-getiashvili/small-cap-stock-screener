@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-09-23T18:47:28.532Z",
+ "updatedAt": "2026-09-23T21:10:51.001Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -4012,7 +4012,10 @@
      "catalyst": "FDA / clinical",
      "extended": false,
      "missing": [],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 3.9968
+     }
     },
     {
      "symbol": "TLSI",
@@ -4033,7 +4036,10 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 5.41
+     }
     },
     {
      "symbol": "IMCC",
@@ -4052,7 +4058,10 @@
      "catalyst": "Merger or acquisition",
      "extended": true,
      "missing": [],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 2.83
+     }
     },
     {
      "symbol": "GRML",
@@ -4073,7 +4082,10 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 11.8214
+     }
     },
     {
      "symbol": "RBNE",
@@ -4094,7 +4106,10 @@
      "missing": [
       "Up ≥10% pre-market"
      ],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 2.48
+     }
     }
    ]
   }
