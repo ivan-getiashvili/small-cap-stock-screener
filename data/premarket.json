@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-09-23T13:00:49.214Z",
+  "generatedAt": "2026-09-23T13:21:23.852Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-22",
   "universeChecked": 6021,
   "smallCapsInBand": 2938,
   "investigated": 87,
-  "liveQuotes": 64,
+  "liveQuotes": 66,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-22T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 146,
+    "edgarFilings": 154,
     "leads": {
-      "8-K": 56,
-      "PR Newswire": 1,
-      "GlobeNewswire": 10,
+      "8-K": 58,
+      "PR Newswire": 0,
+      "GlobeNewswire": 6,
       "prior-session gainer": 25
     },
     "feeds": [
       {
         "name": "PR Newswire",
         "url": "https://www.prnewswire.com/rss/news-releases-list.rss",
-        "ok": true,
-        "items": 20,
-        "inWindow": 20
+        "ok": false,
+        "items": 0,
+        "inWindow": 0
       },
       {
         "name": "PR Newswire",
@@ -64,17 +64,17 @@
       "legalName": "Decoy Therapeutics Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 4.54,
-      "preMarketChangePct": 46.4516129032258,
+      "preMarketPrice": 4.4,
+      "preMarketChangePct": 41.93548387096775,
       "prevClose": 3.1,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 9:01 AM ET",
-      "preMarketVolume": 14833276.277061,
-      "preMarketDollarVolume": 67343074.29785694,
-      "relVolume": 301.5383858566637,
+      "lastTradeAt": "Sep 23, 2026 9:21 AM ET",
+      "preMarketVolume": 16022805.54137,
+      "preMarketDollarVolume": 70500344.38202801,
+      "relVolume": 325.71974185578955,
       "avgVolume50": 49192,
       "sharesOutstanding": 655185,
-      "marketCap": 2974539.9,
+      "marketCap": 2882814,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 74,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-12"
       },
-      "floatRotation": 22.639828868275373,
+      "floatRotation": 24.455391288521565,
       "daysUp": 1,
       "priorRunPct": 14.39114391143912,
       "extended": false,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "46.5%"
+          "detail": "41.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "14,833,276"
+          "detail": "16,022,806"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.54"
+          "detail": "$4.40"
         },
         {
           "name": "Float <10M",
@@ -134,17 +134,17 @@
       "legalName": "TriSalus Life Sciences, Inc.",
       "business": "Surgical & Medical Instruments & Apparatus",
       "sector": "Health Care",
-      "preMarketPrice": 5.8551,
-      "preMarketChangePct": 18.764705882352953,
+      "preMarketPrice": 5.77,
+      "preMarketChangePct": 17.038539553752532,
       "prevClose": 4.93,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 9:00 AM ET",
-      "preMarketVolume": 477154.573578,
-      "preMarketDollarVolume": 2793787.743756548,
-      "relVolume": 2.521052547593888,
+      "lastTradeAt": "Sep 23, 2026 9:21 AM ET",
+      "preMarketVolume": 560466.658069,
+      "preMarketDollarVolume": 3233892.6170581295,
+      "relVolume": 2.961233056137329,
       "avgVolume50": 189268,
       "sharesOutstanding": 61574600,
-      "marketCap": 360525440.46000004,
+      "marketCap": 355285442,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 18,
       "float": {
@@ -152,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-04"
       },
-      "floatRotation": 0.007749211096426124,
+      "floatRotation": 0.009102237904411885,
       "daysUp": 0,
       "priorRunPct": 3.13807531380752,
       "extended": false,
@@ -170,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "18.8%"
+          "detail": "17.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "477,155"
+          "detail": "560,467"
         },
         {
           "name": "News catalyst",
@@ -185,7 +185,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.86"
+          "detail": "$5.77"
         },
         {
           "name": "Float <10M",
@@ -197,54 +197,53 @@
       "quality": "medium"
     },
     {
-      "symbol": "GRML",
-      "name": "Greenland Mines Ltd.",
-      "legalName": "Greenland Mines Ltd",
-      "business": "Biological Products, (No Diagnostic Substances)",
-      "sector": "Health Care",
-      "preMarketPrice": 16.7756,
-      "preMarketChangePct": 18.555477031802123,
-      "prevClose": 14.15,
+      "symbol": "RBNE",
+      "name": "Robin Energy Ltd.",
+      "legalName": "Robin Energy Ltd.",
+      "business": "Deep Sea Foreign Transportation of  Freight",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 2.56,
+      "preMarketChangePct": 6.666666666666673,
+      "prevClose": 2.4,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 9:00 AM ET",
-      "preMarketVolume": 12096772.890152,
-      "preMarketDollarVolume": 202930623.2960339,
-      "relVolume": 1.8179883822322827,
-      "avgVolume50": 6653933,
-      "sharesOutstanding": 158850637,
-      "marketCap": 2664814746.0572,
+      "lastTradeAt": "Sep 23, 2026 9:20 AM ET",
+      "preMarketVolume": 51196,
+      "preMarketDollarVolume": 131061.76000000001,
+      "relVolume": 0.32441543628413916,
+      "avgVolume50": 157810,
+      "sharesOutstanding": 2774865,
+      "marketCap": 7103654.4,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 31,
+      "bestPriorSpikePct": 92,
       "float": {
-        "shares": 158850637,
+        "shares": 2774865,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-17"
+        "asOf": "2025-12-31"
       },
-      "floatRotation": 0.07615186894184126,
-      "daysUp": 2,
-      "priorRunPct": 354.98392282958207,
-      "extended": true,
+      "floatRotation": 0.01844990657203143,
+      "daysUp": 1,
+      "priorRunPct": -6.250000000000005,
+      "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Greenland Mines Ltd. (NASDAQ: GRML) Applies to More than Double Mining Footprint in West Greenland",
+        "headline": "Robin Energy Ltd. Reports Net Income of $5.6 Million for the Three Months Ended June 30, 2026, and $6.1 Million for the Six Months Ended June 30, 2026",
         "subject": null,
         "date": "2026-09-23"
       },
       "leads": [
-        "GlobeNewswire",
-        "prior-session gainer"
+        "GlobeNewswire"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "18.6%"
+          "ok": false,
+          "detail": "6.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "12,096,773"
+          "detail": "51,196"
         },
         {
           "name": "News catalyst",
@@ -254,12 +253,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$16.78"
+          "detail": "$2.56"
         },
         {
           "name": "Float <10M",
-          "ok": false,
-          "detail": "158.9M"
+          "ok": true,
+          "detail": "2.8M"
         }
       ],
       "passed": 4,
@@ -268,22 +267,158 @@
   ],
   "alsoRan": [
     {
+      "symbol": "GRML",
+      "name": "Greenland Mines Ltd.",
+      "legalName": "Greenland Mines Ltd",
+      "business": "Biological Products, (No Diagnostic Substances)",
+      "sector": "Health Care",
+      "preMarketPrice": 17.63,
+      "preMarketChangePct": 24.59363957597172,
+      "prevClose": 14.15,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 23, 2026 9:21 AM ET",
+      "preMarketVolume": 12731739.982319,
+      "preMarketDollarVolume": 224460575.88828394,
+      "relVolume": 1.9134157170381787,
+      "avgVolume50": 6653933,
+      "sharesOutstanding": 158850637,
+      "marketCap": 2800536730.31,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 31,
+      "float": {
+        "shares": 158850637,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-17"
+      },
+      "floatRotation": 0.08014912765076919,
+      "daysUp": 2,
+      "priorRunPct": 354.98392282958207,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "24.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "12,731,740"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$17.63"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "158.9M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "RTB",
+      "name": "RTB Digital Inc.",
+      "legalName": "RTB Digital, Inc.",
+      "business": "Services-Management Consulting Services",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 10.63,
+      "preMarketChangePct": 11.30890052356021,
+      "prevClose": 9.55,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 23, 2026 9:21 AM ET",
+      "preMarketVolume": 9304,
+      "preMarketDollarVolume": 98901.52,
+      "relVolume": 0.09875494889240338,
+      "avgVolume50": 94213,
+      "sharesOutstanding": 14008209,
+      "marketCap": 148907261.67000002,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 43,
+      "float": {
+        "shares": 14008209,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-13"
+      },
+      "floatRotation": 0.0006641819807228747,
+      "daysUp": 2,
+      "priorRunPct": 31.54269972451792,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution)",
+        "date": "2026-09-22"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "11.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "9,304"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$10.63"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "14.0M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "NNBR",
       "name": "NN Inc.",
       "legalName": "NN INC",
       "business": "Metalworkg Machinery & Equipment",
       "sector": "Industrials",
-      "preMarketPrice": 3.7,
-      "preMarketChangePct": 9.792284866468846,
+      "preMarketPrice": 3.65,
+      "preMarketChangePct": 8.308605341246285,
       "prevClose": 3.37,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 8:59 AM ET",
-      "preMarketVolume": 49668,
-      "preMarketDollarVolume": 183771.6,
-      "relVolume": 0.022314242289325888,
+      "lastTradeAt": "Sep 23, 2026 9:20 AM ET",
+      "preMarketVolume": 58683,
+      "preMarketDollarVolume": 214192.94999999998,
+      "relVolume": 0.026364393175978718,
       "avgVolume50": 2225843,
       "sharesOutstanding": 82580864,
-      "marketCap": 305549196.8,
+      "marketCap": 301420153.59999996,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -291,7 +426,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-28"
       },
-      "floatRotation": 0.0006014468436658643,
+      "floatRotation": 0.0007106125700016895,
       "daysUp": 2,
       "priorRunPct": 2.4316109422492422,
       "extended": true,
@@ -309,12 +444,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.8%"
+          "detail": "8.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "49,668"
+          "ok": true,
+          "detail": "58,683"
         },
         {
           "name": "News catalyst",
@@ -324,7 +459,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.70"
+          "detail": "$3.65"
         },
         {
           "name": "Float <10M",
@@ -332,143 +467,7 @@
           "detail": "82.6M"
         }
       ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "RTB",
-      "name": "RTB Digital Inc.",
-      "legalName": "RTB Digital, Inc.",
-      "business": "Services-Management Consulting Services",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 10.46,
-      "preMarketChangePct": 9.528795811518325,
-      "prevClose": 9.55,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 8:50 AM ET",
-      "preMarketVolume": 6887,
-      "preMarketDollarVolume": 72038.02,
-      "relVolume": 0.07310031524311932,
-      "avgVolume50": 94213,
-      "sharesOutstanding": 14008209,
-      "marketCap": 146525866.14000002,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 43,
-      "float": {
-        "shares": 14008209,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-13"
-      },
-      "floatRotation": 0.0004916402946300986,
-      "daysUp": 2,
-      "priorRunPct": 31.54269972451792,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution)",
-        "date": "2026-09-22"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.5%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "6,887"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$10.46"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "14.0M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "QXL",
-      "name": "Quantum X Labs Inc.",
-      "legalName": "QUANTUM X LABS INC.",
-      "business": "Services-Prepackaged Software",
-      "sector": "Technology",
-      "preMarketPrice": 5.9988,
-      "preMarketChangePct": 5.612676056338036,
-      "prevClose": 5.68,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 8:46 AM ET",
-      "preMarketVolume": 5379,
-      "preMarketDollarVolume": 32267.5452,
-      "relVolume": 0.09312189463843637,
-      "avgVolume50": 57763,
-      "sharesOutstanding": 21567826,
-      "marketCap": 129381074.60880001,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 14,
-      "float": {
-        "shares": 21567826,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-13"
-      },
-      "floatRotation": 0.0002493992672233168,
-      "daysUp": 1,
-      "priorRunPct": 16.393442622950815,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Executive or board change",
-        "subject": "Executive or board change",
-        "date": "2026-09-22"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "5,379"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.00"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "21.6M"
-        }
-      ],
-      "passed": 2,
+      "passed": 3,
       "quality": "low"
     },
     {
@@ -477,17 +476,17 @@
       "legalName": "Armata Pharmaceuticals, Inc.",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 4.43,
-      "preMarketChangePct": 5.476190476190465,
+      "preMarketPrice": 4.44,
+      "preMarketChangePct": 5.714285714285719,
       "prevClose": 4.2,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 8:59 AM ET",
-      "preMarketVolume": 12873.378698,
-      "preMarketDollarVolume": 57029.067632139995,
-      "relVolume": 0.10044065802183055,
+      "lastTradeAt": "Sep 23, 2026 9:01 AM ET",
+      "preMarketVolume": 13108.378698,
+      "preMarketDollarVolume": 58201.20141912001,
+      "relVolume": 0.1022741747068324,
       "avgVolume50": 128169,
       "sharesOutstanding": 37181979,
-      "marketCap": 164716166.97,
+      "marketCap": 165087986.76000002,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 103,
       "float": {
@@ -495,7 +494,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-06"
       },
-      "floatRotation": 0.00034622629145156583,
+      "floatRotation": 0.00035254655751378917,
       "daysUp": 0,
       "priorRunPct": -4.545454545454549,
       "extended": false,
@@ -513,12 +512,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.5%"
+          "detail": "5.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "12,873"
+          "detail": "13,108"
         },
         {
           "name": "News catalyst",
@@ -528,12 +527,80 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.43"
+          "detail": "$4.44"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "37.2M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "QXL",
+      "name": "Quantum X Labs Inc.",
+      "legalName": "QUANTUM X LABS INC.",
+      "business": "Services-Prepackaged Software",
+      "sector": "Technology",
+      "preMarketPrice": 5.99,
+      "preMarketChangePct": 5.457746478873248,
+      "prevClose": 5.68,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 23, 2026 9:09 AM ET",
+      "preMarketVolume": 5560,
+      "preMarketDollarVolume": 33304.4,
+      "relVolume": 0.09625538839741703,
+      "avgVolume50": 57763,
+      "sharesOutstanding": 21567826,
+      "marketCap": 129191277.74000001,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 14,
+      "float": {
+        "shares": 21567826,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-13"
+      },
+      "floatRotation": 0.00025779139724142806,
+      "daysUp": 1,
+      "priorRunPct": 16.393442622950815,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Executive or board change",
+        "subject": "Executive or board change",
+        "date": "2026-09-22"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "5,560"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.99"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "21.6M"
         }
       ],
       "passed": 2,
