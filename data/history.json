@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-09-23T23:38:33.268Z",
+ "updatedAt": "2026-09-24T11:01:48.640Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -4012,7 +4012,22 @@
      "catalyst": "FDA / clinical",
      "extended": false,
      "missing": [],
-     "performance": null,
+     "performance": {
+      "open": 4.4,
+      "high": 4.71,
+      "low": 3.75,
+      "close": 3.85,
+      "volume": 26772480,
+      "prevClose": 3.1,
+      "gapPct": 41.93548387096775,
+      "openToHighPct": 7.045454545454535,
+      "openToClosePct": -12.500000000000005,
+      "openToLowPct": -14.772727272727279,
+      "alertToHighPct": -1.4644351464435206,
+      "alertToClosePct": -19.456066945606697,
+      "filledAt": "2026-09-24T11:01:47.874Z",
+      "noon": 3.9968
+     },
      "intraday": {
       "noon": 3.9968
      }
@@ -4036,7 +4051,22 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 5.78,
+      "high": 5.83,
+      "low": 4.92,
+      "close": 5,
+      "volume": 2602835,
+      "prevClose": 4.93,
+      "gapPct": 17.24137931034484,
+      "openToHighPct": 0.8650519031141838,
+      "openToClosePct": -13.494809688581318,
+      "openToLowPct": -14.878892733564019,
+      "alertToHighPct": 3.9252736282933474,
+      "alertToClosePct": -10.870262754465399,
+      "filledAt": "2026-09-24T11:01:48.081Z",
+      "noon": 5.41
+     },
      "intraday": {
       "noon": 5.41
      }
@@ -4058,7 +4088,22 @@
      "catalyst": "Merger or acquisition",
      "extended": true,
      "missing": [],
-     "performance": null,
+     "performance": {
+      "open": 3.18,
+      "high": 3.44,
+      "low": 2.61,
+      "close": 2.91,
+      "volume": 29555220,
+      "prevClose": 4.14,
+      "gapPct": -23.18840579710144,
+      "openToHighPct": 8.17610062893081,
+      "openToClosePct": -8.49056603773585,
+      "openToLowPct": -17.9245283018868,
+      "alertToHighPct": -57.00000000000001,
+      "alertToClosePct": -63.625,
+      "filledAt": "2026-09-24T11:01:48.282Z",
+      "noon": 2.83
+     },
      "intraday": {
       "noon": 2.83
      }
@@ -4082,7 +4127,22 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 17.335,
+      "high": 17.99,
+      "low": 10.29,
+      "close": 11.19,
+      "volume": 53794520,
+      "prevClose": 14.15,
+      "gapPct": 22.508833922261488,
+      "openToHighPct": 3.7784828381886215,
+      "openToClosePct": -35.44851456590713,
+      "openToLowPct": -40.64032304586098,
+      "alertToHighPct": 8.241778077279442,
+      "alertToClosePct": -32.67229034548321,
+      "filledAt": "2026-09-24T11:01:48.505Z",
+      "noon": 11.8214
+     },
      "intraday": {
       "noon": 11.8214
      }
@@ -4106,10 +4166,52 @@
      "missing": [
       "Up ≥10% pre-market"
      ],
-     "performance": null,
+     "performance": {
+      "open": 2.55,
+      "high": 2.614,
+      "low": 2.3346,
+      "close": 2.37,
+      "volume": 105743,
+      "prevClose": 2.4,
+      "gapPct": 6.2499999999999964,
+      "openToHighPct": 2.5098039215686296,
+      "openToClosePct": -7.058823529411754,
+      "openToLowPct": -8.447058823529405,
+      "alertToHighPct": 2.1093749999999933,
+      "alertToClosePct": -7.421874999999997,
+      "filledAt": "2026-09-24T11:01:48.639Z",
+      "noon": 2.48
+     },
      "intraday": {
       "noon": 2.48
      }
+    }
+   ]
+  },
+  "2026-09-24": {
+   "date": "2026-09-24",
+   "source": "live",
+   "names": [
+    {
+     "symbol": "GRML",
+     "legalName": "Greenland Mines Ltd",
+     "business": "Biological Products, (No Diagnostic Substances)",
+     "list": "watchlist",
+     "firstSeenAt": "2026-09-24T11:01:15.632Z",
+     "lastSeenAt": "2026-09-24T11:01:15.632Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 13.2041,
+     "preMarketChangePct": 17.999106344950857,
+     "prevClose": 11.19,
+     "preMarketVolume": 3630467.713359,
+     "relVolume": 0.5456123037846939,
+     "floatShares": 158850637,
+     "catalyst": "Entered a material agreement (deal, partnership or contract)",
+     "extended": true,
+     "missing": [
+      "Float <10M"
+     ],
+     "performance": null
     }
    ]
   }

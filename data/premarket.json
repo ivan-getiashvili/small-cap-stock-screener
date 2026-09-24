@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-09-23T13:21:23.852Z",
-  "marketStatus": "Market Open",
-  "prevSession": "2026-09-22",
-  "universeChecked": 6021,
-  "smallCapsInBand": 2938,
-  "investigated": 87,
-  "liveQuotes": 66,
+  "generatedAt": "2026-09-24T11:01:15.632Z",
+  "marketStatus": "Pre Market",
+  "prevSession": "2026-09-23",
+  "universeChecked": 6013,
+  "smallCapsInBand": 2958,
+  "investigated": 72,
+  "liveQuotes": 47,
   "feedIsLive": true,
   "discovery": {
-    "since": "2026-09-22T19:30:00.000Z",
+    "since": "2026-09-23T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 154,
+    "edgarFilings": 110,
     "leads": {
-      "8-K": 58,
-      "PR Newswire": 0,
-      "GlobeNewswire": 6,
-      "prior-session gainer": 25
+      "8-K": 44,
+      "PR Newswire": 1,
+      "GlobeNewswire": 4,
+      "prior-session gainer": 24
     },
     "feeds": [
       {
         "name": "PR Newswire",
         "url": "https://www.prnewswire.com/rss/news-releases-list.rss",
-        "ok": false,
-        "items": 0,
-        "inWindow": 0
+        "ok": true,
+        "items": 20,
+        "inWindow": 20
       },
       {
         "name": "PR Newswire",
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 87,
-    "answered": 87,
+    "requested": 72,
+    "answered": 72,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -57,111 +57,42 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [
-    {
-      "symbol": "DCOY",
-      "name": "Decoy Therapeutics Inc.",
-      "legalName": "Decoy Therapeutics Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 4.4,
-      "preMarketChangePct": 41.93548387096775,
-      "prevClose": 3.1,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 9:21 AM ET",
-      "preMarketVolume": 16022805.54137,
-      "preMarketDollarVolume": 70500344.38202801,
-      "relVolume": 325.71974185578955,
-      "avgVolume50": 49192,
-      "sharesOutstanding": 655185,
-      "marketCap": 2882814,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 74,
-      "float": {
-        "shares": 655185,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-12"
-      },
-      "floatRotation": 24.455391288521565,
-      "daysUp": 1,
-      "priorRunPct": 14.39114391143912,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Decoy Expands Pan-Filovirus Efforts Through FDA Pathway; Stock Up ",
-        "subject": "FDA / clinical",
-        "date": "2026-09-22"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "41.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "16,022,806"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.40"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "0.7M"
-        }
-      ],
-      "passed": 5,
-      "quality": "high"
-    }
-  ],
+  "shortlist": [],
   "watchlist": [
     {
-      "symbol": "TLSI",
-      "name": "TriSalus Life Sciences Inc.",
-      "legalName": "TriSalus Life Sciences, Inc.",
-      "business": "Surgical & Medical Instruments & Apparatus",
+      "symbol": "GRML",
+      "name": "Greenland Mines Ltd.",
+      "legalName": "Greenland Mines Ltd",
+      "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 5.77,
-      "preMarketChangePct": 17.038539553752532,
-      "prevClose": 4.93,
+      "preMarketPrice": 13.2041,
+      "preMarketChangePct": 17.999106344950857,
+      "prevClose": 11.19,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 9:21 AM ET",
-      "preMarketVolume": 560466.658069,
-      "preMarketDollarVolume": 3233892.6170581295,
-      "relVolume": 2.961233056137329,
-      "avgVolume50": 189268,
-      "sharesOutstanding": 61574600,
-      "marketCap": 355285442,
+      "lastTradeAt": "Sep 24, 2026 7:01 AM ET",
+      "preMarketVolume": 3630467.713359,
+      "preMarketDollarVolume": 47937058.73396358,
+      "relVolume": 0.5456123037846939,
+      "avgVolume50": 6653933,
+      "sharesOutstanding": 158850637,
+      "marketCap": 2097479696.0117002,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 18,
+      "bestPriorSpikePct": 31,
       "float": {
-        "shares": 61574600,
+        "shares": 158850637,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-04"
+        "asOf": "2026-08-17"
       },
-      "floatRotation": 0.009102237904411885,
+      "floatRotation": 0.02285459965362934,
       "daysUp": 0,
-      "priorRunPct": 3.13807531380752,
-      "extended": false,
+      "priorRunPct": 273.62270450751254,
+      "extended": true,
       "catalyst": {
         "found": true,
-        "kind": "news",
-        "headline": "TriSalus Gets FDA Clearance For TriNav Advance For Liver Embolization; Overnight Stock Up 17% ",
-        "subject": "FDA / clinical",
-        "date": "2026-09-22"
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract)",
+        "subject": "Entered a material agreement (deal, partnership or contract)",
+        "date": "2026-09-23"
       },
       "leads": [
         "8-K"
@@ -170,95 +101,27 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "17.0%"
+          "detail": "18.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "560,467"
+          "detail": "3,630,468"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "news"
+          "detail": "8-K"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.77"
+          "detail": "$13.20"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "61.6M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
-      "symbol": "RBNE",
-      "name": "Robin Energy Ltd.",
-      "legalName": "Robin Energy Ltd.",
-      "business": "Deep Sea Foreign Transportation of  Freight",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.56,
-      "preMarketChangePct": 6.666666666666673,
-      "prevClose": 2.4,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 9:20 AM ET",
-      "preMarketVolume": 51196,
-      "preMarketDollarVolume": 131061.76000000001,
-      "relVolume": 0.32441543628413916,
-      "avgVolume50": 157810,
-      "sharesOutstanding": 2774865,
-      "marketCap": 7103654.4,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 92,
-      "float": {
-        "shares": 2774865,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 0.01844990657203143,
-      "daysUp": 1,
-      "priorRunPct": -6.250000000000005,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Robin Energy Ltd. Reports Net Income of $5.6 Million for the Three Months Ended June 30, 2026, and $6.1 Million for the Six Months Ended June 30, 2026",
-        "subject": null,
-        "date": "2026-09-23"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "51,196"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.56"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "2.8M"
+          "detail": "158.9M"
         }
       ],
       "passed": 4,
@@ -267,33 +130,169 @@
   ],
   "alsoRan": [
     {
-      "symbol": "GRML",
-      "name": "Greenland Mines Ltd.",
-      "legalName": "Greenland Mines Ltd",
+      "symbol": "ARCT",
+      "name": "Arcturus Therapeutics Holdings Inc.",
+      "legalName": "Arcturus Therapeutics Holdings Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 14.22,
+      "preMarketChangePct": 6.917293233082705,
+      "prevClose": 13.3,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 24, 2026 7:01 AM ET",
+      "preMarketVolume": 6953.110018,
+      "preMarketDollarVolume": 98873.22445596001,
+      "relVolume": 0.0072047055401682145,
+      "avgVolume50": 965079,
+      "sharesOutstanding": 28423069,
+      "marketCap": 404176041.18,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 25,
+      "float": {
+        "shares": 28423069,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-04"
+      },
+      "floatRotation": 0.00024462910806711266,
+      "daysUp": 0,
+      "priorRunPct": -14.74358974358974,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-09-23"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "6,953"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$14.22"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "28.4M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "KYTX",
+      "name": "Kyverna Therapeutics Inc.",
+      "legalName": "Kyverna Therapeutics, Inc.",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 17.63,
-      "preMarketChangePct": 24.59363957597172,
-      "prevClose": 14.15,
+      "preMarketPrice": 7.5,
+      "preMarketChangePct": 6.0820367751060775,
+      "prevClose": 7.07,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 9:21 AM ET",
-      "preMarketVolume": 12731739.982319,
-      "preMarketDollarVolume": 224460575.88828394,
-      "relVolume": 1.9134157170381787,
-      "avgVolume50": 6653933,
-      "sharesOutstanding": 158850637,
-      "marketCap": 2800536730.31,
+      "lastTradeAt": "Sep 24, 2026 7:00 AM ET",
+      "preMarketVolume": 12202,
+      "preMarketDollarVolume": 91515,
+      "relVolume": 0.013719731587090275,
+      "avgVolume50": 889376,
+      "sharesOutstanding": 61843444,
+      "marketCap": 463825830,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 31,
+      "bestPriorSpikePct": 33,
       "float": {
-        "shares": 158850637,
+        "shares": 61843444,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-17"
+        "asOf": "2026-08-03"
       },
-      "floatRotation": 0.08014912765076919,
-      "daysUp": 2,
-      "priorRunPct": 354.98392282958207,
-      "extended": true,
+      "floatRotation": 0.00019730466498599268,
+      "daysUp": 0,
+      "priorRunPct": 2.4637681159420275,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-09-24"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "12,202"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$7.50"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "61.8M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "AIFU",
+      "name": "AIFU Inc. Class A Ordinary Share",
+      "legalName": "AIFU Inc.",
+      "business": "Insurance Agents, Brokers & Service",
+      "sector": "Finance",
+      "preMarketPrice": 11.18,
+      "preMarketChangePct": 9.931170108161256,
+      "prevClose": 10.17,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 24, 2026 6:46 AM ET",
+      "preMarketVolume": 1610,
+      "preMarketDollarVolume": 17999.8,
+      "relVolume": 0.05916507423195649,
+      "avgVolume50": 27212,
+      "sharesOutstanding": 1134236184,
+      "marketCap": 12680760537.119999,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 29,
+      "float": {
+        "shares": 1134236184,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2023-12-31"
+      },
+      "floatRotation": 0.0000014194574487318595,
+      "daysUp": 1,
+      "priorRunPct": -5.395348837209303,
+      "extended": false,
       "catalyst": {
         "found": false,
         "kind": null,
@@ -307,13 +306,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "24.6%"
+          "ok": false,
+          "detail": "9.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "12,731,740"
+          "ok": false,
+          "detail": "1,610"
         },
         {
           "name": "News catalyst",
@@ -323,186 +322,50 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$17.63"
+          "detail": "$11.18"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "158.9M"
+          "detail": "1134.2M"
         }
       ],
-      "passed": 3,
+      "passed": 1,
       "quality": "low"
     },
     {
-      "symbol": "RTB",
-      "name": "RTB Digital Inc.",
-      "legalName": "RTB Digital, Inc.",
-      "business": "Services-Management Consulting Services",
+      "symbol": "ENHA",
+      "name": "Enhanced Group Inc. Class A",
+      "legalName": "Enhanced Group Inc.",
+      "business": "Services-Miscellaneous Amusement & Recreation",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 10.63,
-      "preMarketChangePct": 11.30890052356021,
-      "prevClose": 9.55,
+      "preMarketPrice": 1.4994,
+      "preMarketChangePct": 7.100000000000012,
+      "prevClose": 1.4,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 9:21 AM ET",
-      "preMarketVolume": 9304,
-      "preMarketDollarVolume": 98901.52,
-      "relVolume": 0.09875494889240338,
-      "avgVolume50": 94213,
-      "sharesOutstanding": 14008209,
-      "marketCap": 148907261.67000002,
+      "lastTradeAt": "Sep 24, 2026 7:00 AM ET",
+      "preMarketVolume": 16277,
+      "preMarketDollarVolume": 24405.7338,
+      "relVolume": 0.01851232638651945,
+      "avgVolume50": 879252,
+      "sharesOutstanding": 395376062.1428572,
+      "marketCap": 592826867.5770001,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 43,
+      "bestPriorSpikePct": 40,
       "float": {
-        "shares": 14008209,
+        "shares": 395376062.1428572,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-13"
+        "asOf": "2026-09-24"
       },
-      "floatRotation": 0.0006641819807228747,
-      "daysUp": 2,
-      "priorRunPct": 31.54269972451792,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution)",
-        "date": "2026-09-22"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "11.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "9,304"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$10.63"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "14.0M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "NNBR",
-      "name": "NN Inc.",
-      "legalName": "NN INC",
-      "business": "Metalworkg Machinery & Equipment",
-      "sector": "Industrials",
-      "preMarketPrice": 3.65,
-      "preMarketChangePct": 8.308605341246285,
-      "prevClose": 3.37,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 9:20 AM ET",
-      "preMarketVolume": 58683,
-      "preMarketDollarVolume": 214192.94999999998,
-      "relVolume": 0.026364393175978718,
-      "avgVolume50": 2225843,
-      "sharesOutstanding": 82580864,
-      "marketCap": 301420153.59999996,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 31,
-      "float": {
-        "shares": 82580864,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-28"
-      },
-      "floatRotation": 0.0007106125700016895,
-      "daysUp": 2,
-      "priorRunPct": 2.4316109422492422,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Regulation FD disclosure (company announcement)",
-        "subject": "Regulation FD disclosure (company announcement)",
-        "date": "2026-09-22"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "8.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "58,683"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.65"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "82.6M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "ARMP",
-      "name": "Armata Pharmaceuticals Inc.",
-      "legalName": "Armata Pharmaceuticals, Inc.",
-      "business": "Biological Products, (No Diagnostic Substances)",
-      "sector": "Health Care",
-      "preMarketPrice": 4.44,
-      "preMarketChangePct": 5.714285714285719,
-      "prevClose": 4.2,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 9:01 AM ET",
-      "preMarketVolume": 13108.378698,
-      "preMarketDollarVolume": 58201.20141912001,
-      "relVolume": 0.1022741747068324,
-      "avgVolume50": 128169,
-      "sharesOutstanding": 37181979,
-      "marketCap": 165087986.76000002,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 103,
-      "float": {
-        "shares": 37181979,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-06"
-      },
-      "floatRotation": 0.00035254655751378917,
+      "floatRotation": 0.000041168400311799344,
       "daysUp": 0,
-      "priorRunPct": -4.545454545454549,
+      "priorRunPct": -2.0979020979020997,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
+        "headline": "Executive or board change · Regulation FD disclosure (company announcement)",
+        "subject": "Executive or board change · Regulation FD disclosure (company announcement)",
         "date": "2026-09-23"
       },
       "leads": [
@@ -512,12 +375,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.7%"
+          "detail": "7.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "13,108"
+          "detail": "16,277"
         },
         {
           "name": "News catalyst",
@@ -526,52 +389,52 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.44"
+          "ok": false,
+          "detail": "$1.50"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "37.2M"
+          "detail": "395.4M"
         }
       ],
-      "passed": 2,
+      "passed": 1,
       "quality": "low"
     },
     {
-      "symbol": "QXL",
-      "name": "Quantum X Labs Inc.",
-      "legalName": "QUANTUM X LABS INC.",
-      "business": "Services-Prepackaged Software",
+      "symbol": "WETH",
+      "name": "Wetouch Technology Inc.",
+      "legalName": "Wetouch Technology Inc.",
+      "business": "Computer Peripheral Equipment, NEC",
       "sector": "Technology",
-      "preMarketPrice": 5.99,
-      "preMarketChangePct": 5.457746478873248,
-      "prevClose": 5.68,
+      "preMarketPrice": 1.1,
+      "preMarketChangePct": 5.7692307692307745,
+      "prevClose": 1.04,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 23, 2026 9:09 AM ET",
-      "preMarketVolume": 5560,
-      "preMarketDollarVolume": 33304.4,
-      "relVolume": 0.09625538839741703,
-      "avgVolume50": 57763,
-      "sharesOutstanding": 21567826,
-      "marketCap": 129191277.74000001,
+      "lastTradeAt": "Sep 24, 2026 6:00 AM ET",
+      "preMarketVolume": 6409,
+      "preMarketDollarVolume": 7049.900000000001,
+      "relVolume": 0.06592875291890836,
+      "avgVolume50": 97211,
+      "sharesOutstanding": 13381534,
+      "marketCap": 14719687.4,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 14,
+      "bestPriorSpikePct": 29,
       "float": {
-        "shares": 21567826,
+        "shares": 13381534,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-13"
+        "asOf": "2026-08-14"
       },
-      "floatRotation": 0.00025779139724142806,
-      "daysUp": 1,
-      "priorRunPct": 16.393442622950815,
-      "extended": false,
+      "floatRotation": 0.0004789435949570505,
+      "daysUp": 2,
+      "priorRunPct": -9.170305676855893,
+      "extended": true,
       "catalyst": {
         "found": true,
         "kind": "8-K",
-        "headline": "Executive or board change",
-        "subject": "Executive or board change",
-        "date": "2026-09-22"
+        "headline": "Sold unregistered shares (dilution)",
+        "subject": "Sold unregistered shares (dilution)",
+        "date": "2026-09-23"
       },
       "leads": [
         "8-K"
@@ -580,12 +443,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.5%"
+          "detail": "5.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "5,560"
+          "detail": "6,409"
         },
         {
           "name": "News catalyst",
@@ -594,18 +457,85 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$5.99"
+          "ok": false,
+          "detail": "$1.10"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "21.6M"
+          "detail": "13.4M"
         }
       ],
-      "passed": 2,
+      "passed": 1,
+      "quality": "low"
+    },
+    {
+      "symbol": "TLSA",
+      "name": "Tiziana Life Sciences Ltd. Common Shares",
+      "legalName": "Tiziana Life Sciences Ltd",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 1.15,
+      "preMarketChangePct": 9.523809523809511,
+      "prevClose": 1.05,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 24, 2026 7:01 AM ET",
+      "preMarketVolume": 40586.404496,
+      "preMarketDollarVolume": 46674.3651704,
+      "relVolume": 0.06026818599705983,
+      "avgVolume50": 673430,
+      "sharesOutstanding": 120507401,
+      "marketCap": 138583511.14999998,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 17,
+      "float": {
+        "shares": 120507401,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-12-31"
+      },
+      "floatRotation": 0.0003367959491218303,
+      "daysUp": 1,
+      "priorRunPct": 36.34592910011688,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "9.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "40,586"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.15"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "120.5M"
+        }
+      ],
+      "passed": 0,
       "quality": "low"
     }
-  ],
-  "frozenAfterPreMarket": true
+  ]
 }
