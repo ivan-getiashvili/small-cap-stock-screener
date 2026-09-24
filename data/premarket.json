@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-24T11:20:26.356Z",
+  "generatedAt": "2026-09-24T11:40:26.721Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-23",
   "universeChecked": 6013,
   "smallCapsInBand": 2958,
-  "investigated": 69,
-  "liveQuotes": 49,
+  "investigated": 73,
+  "liveQuotes": 52,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-23T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 100,
+    "edgarFilings": 110,
     "leads": {
-      "8-K": 39,
-      "PR Newswire": 0,
-      "GlobeNewswire": 7,
+      "8-K": 44,
+      "PR Newswire": 1,
+      "GlobeNewswire": 6,
       "prior-session gainer": 24
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 69,
-    "answered": 69,
+    "requested": 73,
+    "answered": 73,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -57,7 +57,76 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [],
+  "shortlist": [
+    {
+      "symbol": "PFSA",
+      "name": "Profusa Inc.",
+      "legalName": "Profusa, Inc.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 2.99,
+      "preMarketChangePct": 45.85365853658539,
+      "prevClose": 2.05,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 24, 2026 7:40 AM ET",
+      "preMarketVolume": 9526095.061959,
+      "preMarketDollarVolume": 28483024.235257413,
+      "relVolume": 5.096817737326033,
+      "avgVolume50": 1869028,
+      "sharesOutstanding": 605647,
+      "marketCap": 1810884.53,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 144,
+      "float": {
+        "shares": 605647,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-18"
+      },
+      "floatRotation": 15.728790965626843,
+      "daysUp": 0,
+      "priorRunPct": 15.168539325842683,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Profusa Announces Significant Progress Towards Lumee® Oxygen Platform CE Mark with ISO 13485 Certification Expected in Early October",
+        "subject": null,
+        "date": "2026-09-24"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "45.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "9,526,095"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.99"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "0.6M"
+        }
+      ],
+      "passed": 5,
+      "quality": "high"
+    }
+  ],
   "watchlist": [
     {
       "symbol": "GRML",
@@ -65,17 +134,17 @@
       "legalName": "Greenland Mines Ltd",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 12.68,
-      "preMarketChangePct": 13.315460232350315,
+      "preMarketPrice": 12.52,
+      "preMarketChangePct": 11.885612153708669,
       "prevClose": 11.19,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 24, 2026 7:20 AM ET",
-      "preMarketVolume": 4407516.750832,
-      "preMarketDollarVolume": 55887312.400549755,
-      "relVolume": 0.6623927158316743,
+      "lastTradeAt": "Sep 24, 2026 7:40 AM ET",
+      "preMarketVolume": 4719642.750832,
+      "preMarketDollarVolume": 59089927.24041664,
+      "relVolume": 0.7093012134074689,
       "avgVolume50": 6653933,
       "sharesOutstanding": 158850637,
-      "marketCap": 2014226077.1599998,
+      "marketCap": 1988809975.24,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -83,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-17"
       },
-      "floatRotation": 0.02774629572830734,
+      "floatRotation": 0.029711198141635402,
       "daysUp": 0,
       "priorRunPct": 273.62270450751254,
       "extended": true,
@@ -101,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "13.3%"
+          "detail": "11.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "4,407,517"
+          "detail": "4,719,643"
         },
         {
           "name": "News catalyst",
@@ -116,7 +185,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$12.68"
+          "detail": "$12.52"
         },
         {
           "name": "Float <10M",
@@ -130,22 +199,91 @@
   ],
   "alsoRan": [
     {
+      "symbol": "GLND",
+      "name": "Greenland Energy Company",
+      "legalName": "Greenland Energy Co",
+      "business": "Drilling Oil & Gas Wells",
+      "sector": "Energy",
+      "preMarketPrice": 3.11,
+      "preMarketChangePct": 6.872852233676967,
+      "prevClose": 2.91,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 24, 2026 7:40 AM ET",
+      "preMarketVolume": 1311906.396512,
+      "preMarketDollarVolume": 4080028.8931523194,
+      "relVolume": 1.145774781996428,
+      "avgVolume50": 1144995,
+      "sharesOutstanding": 43730194,
+      "marketCap": 136000903.34,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 45,
+      "float": {
+        "shares": 43730194,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-13"
+      },
+      "floatRotation": 0.030000013183385372,
+      "daysUp": 1,
+      "priorRunPct": 142.50000000000003,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Pre-Market Most Active for Sep 23, 2026 :  IONQ, GRAB, SQQQ, TQQQ, GLND, NOK, NVDA, INTC, BMNR, BABA, HLN, BB",
+        "subject": null,
+        "date": "2026-09-23"
+      },
+      "leads": [
+        "PR Newswire",
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "1,311,906"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.11"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "43.7M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "AIFU",
       "name": "AIFU Inc. Class A Ordinary Share",
       "legalName": "AIFU Inc.",
       "business": "Insurance Agents, Brokers & Service",
       "sector": "Finance",
-      "preMarketPrice": 11.5,
-      "preMarketChangePct": 13.077679449360865,
+      "preMarketPrice": 11.55,
+      "preMarketChangePct": 13.569321533923311,
       "prevClose": 10.17,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 24, 2026 7:17 AM ET",
-      "preMarketVolume": 2775,
-      "preMarketDollarVolume": 31912.5,
-      "relVolume": 0.10197706894017346,
+      "lastTradeAt": "Sep 24, 2026 7:39 AM ET",
+      "preMarketVolume": 2830,
+      "preMarketDollarVolume": 32686.500000000004,
+      "relVolume": 0.10399823607232103,
       "avgVolume50": 27212,
       "sharesOutstanding": 1134236184,
-      "marketCap": 13043716116,
+      "marketCap": 13100427925.2,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 29,
       "float": {
@@ -153,7 +291,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2023-12-31"
       },
-      "floatRotation": 0.00000244658038523659,
+      "floatRotation": 0.000002495071167646685,
       "daysUp": 1,
       "priorRunPct": -5.395348837209303,
       "extended": false,
@@ -171,12 +309,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "13.1%"
+          "detail": "13.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "2,775"
+          "detail": "2,830"
         },
         {
           "name": "News catalyst",
@@ -186,7 +324,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$11.50"
+          "detail": "$11.55"
         },
         {
           "name": "Float <10M",
@@ -198,53 +336,53 @@
       "quality": "low"
     },
     {
-      "symbol": "ARCT",
-      "name": "Arcturus Therapeutics Holdings Inc.",
-      "legalName": "Arcturus Therapeutics Holdings Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 14.2175,
-      "preMarketChangePct": 6.898496240601492,
-      "prevClose": 13.3,
+      "symbol": "REBN",
+      "name": "Reborn Coffee Inc.",
+      "legalName": "Reborn Coffee, Inc.",
+      "business": "Retail-Eating  Places",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.1897,
+      "preMarketChangePct": 9.146788990825678,
+      "prevClose": 1.09,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 24, 2026 7:18 AM ET",
-      "preMarketVolume": 11498.110018,
-      "preMarketDollarVolume": 163474.37918091498,
-      "relVolume": 0.011914164558549092,
-      "avgVolume50": 965079,
-      "sharesOutstanding": 28423069,
-      "marketCap": 404104983.5075,
+      "lastTradeAt": "Sep 24, 2026 7:40 AM ET",
+      "preMarketVolume": 1263.485714,
+      "preMarketDollarVolume": 1503.1689539457998,
+      "relVolume": 0.008595725654806449,
+      "avgVolume50": 146990,
+      "sharesOutstanding": 8620122,
+      "marketCap": 10255359.1434,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 25,
       "float": {
-        "shares": 28423069,
+        "shares": 8620122,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-04"
+        "asOf": "2026-09-14"
       },
-      "floatRotation": 0.00040453443004342704,
-      "daysUp": 0,
-      "priorRunPct": -14.74358974358974,
-      "extended": false,
+      "floatRotation": 0.00014657399442838512,
+      "daysUp": 3,
+      "priorRunPct": 32.28155339805827,
+      "extended": true,
       "catalyst": {
         "found": true,
         "kind": "8-K",
-        "headline": "Regulation FD disclosure (company announcement)",
-        "subject": "Regulation FD disclosure (company announcement)",
-        "date": "2026-09-23"
+        "headline": "Delisting notice or listing-rule failure",
+        "subject": "Delisting notice or listing-rule failure",
+        "date": "2026-09-22"
       },
       "leads": [
-        "8-K"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.9%"
+          "detail": "9.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "11,498"
+          "detail": "1,263"
         },
         {
           "name": "News catalyst",
@@ -253,81 +391,13 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$14.22"
+          "ok": false,
+          "detail": "$1.19"
         },
         {
           "name": "Float <10M",
-          "ok": false,
-          "detail": "28.4M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "MSLE",
-      "name": "Satellos Bioscience Inc.",
-      "legalName": "Satellos Bioscience Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 8.94,
-      "preMarketChangePct": 6.302021403091549,
-      "prevClose": 8.41,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 24, 2026 7:18 AM ET",
-      "preMarketVolume": 1529,
-      "preMarketDollarVolume": 13669.259999999998,
-      "relVolume": 0.026885880077369438,
-      "avgVolume50": 56870,
-      "sharesOutstanding": 15458903,
-      "marketCap": 138202592.82,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 19,
-      "float": {
-        "shares": 15458903,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 0.00009890740630172788,
-      "daysUp": 0,
-      "priorRunPct": -9.569892473118285,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Satellos Announces FDA Clearance of IND Application for Forazapadin in Facioscapulohumeral Muscular Dystrophy (FSHD) and a Partnership with FSHD Canada Foundation Providing Non-Dilutive Financing to Support Clinical Development",
-        "subject": "FDA / clinical",
-        "date": "2026-09-24"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "1,529"
-        },
-        {
-          "name": "News catalyst",
           "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$8.94"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "15.5M"
+          "detail": "8.6M"
         }
       ],
       "passed": 2,
@@ -339,17 +409,17 @@
       "legalName": "Kyverna Therapeutics, Inc.",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 7.49,
-      "preMarketChangePct": 5.94059405940594,
+      "preMarketPrice": 7.68,
+      "preMarketChangePct": 8.62800565770862,
       "prevClose": 7.07,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 24, 2026 7:18 AM ET",
-      "preMarketVolume": 15107,
-      "preMarketDollarVolume": 113151.43000000001,
-      "relVolume": 0.016986066635483753,
+      "lastTradeAt": "Sep 24, 2026 7:39 AM ET",
+      "preMarketVolume": 42593.259114,
+      "preMarketDollarVolume": 327116.22999551997,
+      "relVolume": 0.04789117214091678,
       "avgVolume50": 889376,
       "sharesOutstanding": 61843444,
-      "marketCap": 463207395.56,
+      "marketCap": 474957649.91999996,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 33,
       "float": {
@@ -357,7 +427,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 0.00024427811620581803,
+      "floatRotation": 0.0006887271529379897,
       "daysUp": 0,
       "priorRunPct": 2.4637681159420275,
       "extended": false,
@@ -375,12 +445,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.9%"
+          "detail": "8.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "15,107"
+          "detail": "42,593"
         },
         {
           "name": "News catalyst",
@@ -390,7 +460,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$7.49"
+          "detail": "$7.68"
         },
         {
           "name": "Float <10M",
@@ -402,22 +472,226 @@
       "quality": "low"
     },
     {
+      "symbol": "ARCT",
+      "name": "Arcturus Therapeutics Holdings Inc.",
+      "legalName": "Arcturus Therapeutics Holdings Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 14.18,
+      "preMarketChangePct": 6.616541353383451,
+      "prevClose": 13.3,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 24, 2026 7:31 AM ET",
+      "preMarketVolume": 11640.110018,
+      "preMarketDollarVolume": 165056.76005523998,
+      "relVolume": 0.012061302772104666,
+      "avgVolume50": 965079,
+      "sharesOutstanding": 28423069,
+      "marketCap": 403039118.42,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 25,
+      "float": {
+        "shares": 28423069,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-04"
+      },
+      "floatRotation": 0.00040953037189615235,
+      "daysUp": 0,
+      "priorRunPct": -14.74358974358974,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-09-23"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "11,640"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$14.18"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "28.4M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "ZKIN",
+      "name": "ZK International Group Co. Ltd Ordinary Share",
+      "legalName": "ZK International Group Co., Ltd.",
+      "business": "Miscellaneous Fabricated Metal Products",
+      "sector": "Industrials",
+      "preMarketPrice": 1.87,
+      "preMarketChangePct": 7.47,
+      "prevClose": 1.7400204708290687,
+      "closeReconciled": true,
+      "lastTradeAt": "Sep 24, 2026 7:32 AM ET",
+      "preMarketVolume": 19391,
+      "preMarketDollarVolume": 36261.170000000006,
+      "relVolume": 1.2417392418032787,
+      "avgVolume50": 15616,
+      "sharesOutstanding": 6612308,
+      "marketCap": 12365015.96,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 25,
+      "float": {
+        "shares": 6612308,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-09-30"
+      },
+      "floatRotation": 0.002932561520122777,
+      "daysUp": 2,
+      "priorRunPct": 47.82608695652175,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "19,391"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.87"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "6.6M"
+        }
+      ],
+      "passed": 1,
+      "quality": "low"
+    },
+    {
+      "symbol": "WETH",
+      "name": "Wetouch Technology Inc.",
+      "legalName": "Wetouch Technology Inc.",
+      "business": "Computer Peripheral Equipment, NEC",
+      "sector": "Technology",
+      "preMarketPrice": 1.0996,
+      "preMarketChangePct": 5.730769230769218,
+      "prevClose": 1.04,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 24, 2026 7:39 AM ET",
+      "preMarketVolume": 15729,
+      "preMarketDollarVolume": 17295.608399999997,
+      "relVolume": 0.16180267665181924,
+      "avgVolume50": 97211,
+      "sharesOutstanding": 13381534,
+      "marketCap": 14714334.7864,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 29,
+      "float": {
+        "shares": 13381534,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-14"
+      },
+      "floatRotation": 0.0011754257770446946,
+      "daysUp": 2,
+      "priorRunPct": -9.170305676855893,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Sold unregistered shares (dilution)",
+        "subject": "Sold unregistered shares (dilution)",
+        "date": "2026-09-23"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "15,729"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.10"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "13.4M"
+        }
+      ],
+      "passed": 1,
+      "quality": "low"
+    },
+    {
       "symbol": "TLSA",
       "name": "Tiziana Life Sciences Ltd. Common Shares",
       "legalName": "Tiziana Life Sciences Ltd",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 1.139,
-      "preMarketChangePct": 8.476190476190473,
+      "preMarketPrice": 1.1116,
+      "preMarketChangePct": 5.866666666666655,
       "prevClose": 1.05,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 24, 2026 7:18 AM ET",
-      "preMarketVolume": 46733.808992,
-      "preMarketDollarVolume": 53229.808441887995,
-      "relVolume": 0.06939668412752624,
+      "lastTradeAt": "Sep 24, 2026 7:39 AM ET",
+      "preMarketVolume": 47755.808992,
+      "preMarketDollarVolume": 53085.357275507195,
+      "relVolume": 0.07091428803587603,
       "avgVolume50": 673430,
       "sharesOutstanding": 120507401,
-      "marketCap": 137257929.739,
+      "marketCap": 133956026.95159999,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 17,
       "float": {
@@ -425,7 +699,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.00038780862091615433,
+      "floatRotation": 0.00039628942783356515,
       "daysUp": 1,
       "priorRunPct": 36.34592910011688,
       "extended": false,
@@ -443,12 +717,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.5%"
+          "detail": "5.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "46,734"
+          "detail": "47,756"
         },
         {
           "name": "News catalyst",
@@ -458,7 +732,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.14"
+          "detail": "$1.11"
         },
         {
           "name": "Float <10M",
