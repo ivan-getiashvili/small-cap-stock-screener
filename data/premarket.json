@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-28T12:40:53.588Z",
+  "generatedAt": "2026-09-28T13:00:55.798Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-25",
   "universeChecked": 6018,
   "smallCapsInBand": 2978,
-  "investigated": 87,
-  "liveQuotes": 77,
+  "investigated": 93,
+  "liveQuotes": 81,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-25T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 167,
+    "edgarFilings": 178,
     "leads": {
-      "8-K": 53,
+      "8-K": 56,
       "PR Newswire": 2,
-      "GlobeNewswire": 8,
+      "GlobeNewswire": 12,
       "prior-session gainer": 24
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 87,
-    "answered": 87,
+    "requested": 93,
+    "answered": 93,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -57,24 +57,25 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [
+  "shortlist": [],
+  "watchlist": [
     {
       "symbol": "PMAX",
       "name": "Powell Max Limited Class A Ordinary Shares",
       "legalName": "Powell Max Ltd",
       "business": "Services-Miscellaneous Business Services",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.3901,
-      "preMarketChangePct": 47.54,
-      "prevClose": 1.6199674664497763,
+      "preMarketPrice": 1.858,
+      "preMarketChangePct": 14.69,
+      "prevClose": 1.6200191821431686,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 28, 2026 8:41 AM ET",
-      "preMarketVolume": 9126679,
-      "preMarketDollarVolume": 21813675.4779,
-      "relVolume": 19.27643553984155,
+      "lastTradeAt": "Sep 28, 2026 9:01 AM ET",
+      "preMarketVolume": 13294868,
+      "preMarketDollarVolume": 24701864.744000003,
+      "relVolume": 28.08005694214754,
       "avgVolume50": 473463,
       "sharesOutstanding": 1961964.8148148146,
-      "marketCap": 4689292.103888888,
+      "marketCap": 3645330.6259259256,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 95,
       "float": {
@@ -82,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-09-28"
       },
-      "floatRotation": 4.651805644568324,
+      "floatRotation": 6.7763029691512955,
       "daysUp": 1,
       "priorRunPct": 73.15563018155105,
       "extended": true,
@@ -100,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "47.5%"
+          "detail": "14.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "9,126,679"
+          "detail": "13,294,868"
         },
         {
           "name": "News catalyst",
@@ -114,8 +115,8 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.39"
+          "ok": false,
+          "detail": "$1.86"
         },
         {
           "name": "Float <10M",
@@ -123,28 +124,28 @@
           "detail": "2.0M"
         }
       ],
-      "passed": 5,
-      "quality": "high"
+      "passed": 4,
+      "quality": "medium"
     }
   ],
-  "watchlist": [
+  "alsoRan": [
     {
       "symbol": "AMPX",
       "name": "Amprius Technologies Inc.",
       "legalName": "Amprius Technologies, Inc.",
       "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
       "sector": "Miscellaneous",
-      "preMarketPrice": 10.8,
-      "preMarketChangePct": 11.45510835913314,
+      "preMarketPrice": 10.65,
+      "preMarketChangePct": 9.907120743034065,
       "prevClose": 9.69,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 28, 2026 8:41 AM ET",
-      "preMarketVolume": 1500028.005915,
-      "preMarketDollarVolume": 16200302.463882003,
-      "relVolume": 0.26364931041437517,
+      "lastTradeAt": "Sep 28, 2026 9:01 AM ET",
+      "preMarketVolume": 1582741.143413,
+      "preMarketDollarVolume": 16856193.17734845,
+      "relVolume": 0.27818721342522923,
       "avgVolume50": 5689482,
       "sharesOutstanding": 146080618,
-      "marketCap": 1577670674.4,
+      "marketCap": 1555758581.7,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 22,
       "float": {
@@ -152,14 +153,14 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-31"
       },
-      "floatRotation": 0.010268494386537987,
+      "floatRotation": 0.010834710073673155,
       "daysUp": 0,
       "priorRunPct": 1.572327044025161,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Amprius Wins $75 Mln U.S. Grant To Reconfigure EV Production Line To High Energy Density Cells ",
+        "headline": "Pre-Market Most Active for Sep 28, 2026 :  NOK, VWAV, NVDA, SQQQ, TQQQ, INTC, CONL, NIO, ZTO, AMPX, STLA, ORCL",
         "subject": null,
         "date": "2026-09-28"
       },
@@ -169,13 +170,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "11.5%"
+          "ok": false,
+          "detail": "9.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,500,028"
+          "detail": "1,582,741"
         },
         {
           "name": "News catalyst",
@@ -185,82 +186,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$10.80"
+          "detail": "$10.65"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "146.1M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
-  "alsoRan": [
-    {
-      "symbol": "SHMD",
-      "name": "SCHMID Group N.V. Class A Ordinary Shares",
-      "legalName": "SCHMID Group N.V.",
-      "business": "Misc Industrial & Commercial Machinery & Equipment",
-      "sector": "Technology",
-      "preMarketPrice": 4.81,
-      "preMarketChangePct": 10.07,
-      "prevClose": 4.3699463977468875,
-      "closeReconciled": true,
-      "lastTradeAt": "Sep 28, 2026 8:41 AM ET",
-      "preMarketVolume": 497608.273031,
-      "preMarketDollarVolume": 2393495.79327911,
-      "relVolume": 0.763590523764365,
-      "avgVolume50": 651669,
-      "sharesOutstanding": 43062427,
-      "marketCap": 207130273.86999997,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 31,
-      "float": {
-        "shares": 43062427,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 0.011555509238506227,
-      "daysUp": 0,
-      "priorRunPct": 2.25988700564972,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "497,608"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.81"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "43.1M"
         }
       ],
       "passed": 3,
@@ -272,17 +203,17 @@
       "legalName": "Burford Capital Ltd",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 3.87,
-      "preMarketChangePct": 6.61157024793389,
+      "preMarketPrice": 3.83,
+      "preMarketChangePct": 5.509641873278242,
       "prevClose": 3.63,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 28, 2026 8:40 AM ET",
-      "preMarketVolume": 143133.743833,
-      "preMarketDollarVolume": 553927.5886337099,
-      "relVolume": 0.08349700790263662,
+      "lastTradeAt": "Sep 28, 2026 9:00 AM ET",
+      "preMarketVolume": 145875.743833,
+      "preMarketDollarVolume": 558704.0988803899,
+      "relVolume": 0.08509655242329243,
       "avgVolume50": 1714238,
       "sharesOutstanding": 219584503,
-      "marketCap": 849792026.61,
+      "marketCap": 841008646.49,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 12,
       "float": {
@@ -290,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-30"
       },
-      "floatRotation": 0.000651839004472005,
+      "floatRotation": 0.0006643262244831549,
       "daysUp": 0,
       "priorRunPct": -9.022556390977451,
       "extended": false,
@@ -308,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.6%"
+          "detail": "5.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "143,134"
+          "detail": "145,876"
         },
         {
           "name": "News catalyst",
@@ -323,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.87"
+          "detail": "$3.83"
         },
         {
           "name": "Float <10M",
@@ -340,17 +271,17 @@
       "legalName": "Stablecoin Development Corp",
       "business": "Finance Services",
       "sector": "Health Care",
-      "preMarketPrice": 1.7603,
-      "preMarketChangePct": 18.14,
-      "prevClose": 1.4900118503470459,
+      "preMarketPrice": 1.73,
+      "preMarketChangePct": 16.11,
+      "prevClose": 1.4899664111618292,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 28, 2026 8:41 AM ET",
-      "preMarketVolume": 6609832.496232,
-      "preMarketDollarVolume": 11635288.14311719,
-      "relVolume": 6.163232353437231,
+      "lastTradeAt": "Sep 28, 2026 9:01 AM ET",
+      "preMarketVolume": 7049539.640009,
+      "preMarketDollarVolume": 12195703.57721557,
+      "relVolume": 6.573230231009584,
       "avgVolume50": 1072462,
       "sharesOutstanding": 50615437,
-      "marketCap": 89098353.7511,
+      "marketCap": 87564706.01,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -358,7 +289,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-27"
       },
-      "floatRotation": 0.1305892606682819,
+      "floatRotation": 0.13927647488273193,
       "daysUp": 1,
       "priorRunPct": 53.352353780313855,
       "extended": true,
@@ -376,12 +307,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "18.1%"
+          "detail": "16.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "6,609,832"
+          "detail": "7,049,540"
         },
         {
           "name": "News catalyst",
@@ -391,7 +322,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.76"
+          "detail": "$1.73"
         },
         {
           "name": "Float <10M",
@@ -403,32 +334,32 @@
       "quality": "low"
     },
     {
-      "symbol": "MSGY",
-      "name": "Masonglory Limited Class A Ordinary Shares",
-      "legalName": "Masonglory Ltd",
-      "business": "Construction - Special Trade Contractors",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 8.78,
-      "preMarketChangePct": 8.8,
-      "prevClose": 8.06985294117647,
+      "symbol": "SHMD",
+      "name": "SCHMID Group N.V. Class A Ordinary Shares",
+      "legalName": "SCHMID Group N.V.",
+      "business": "Misc Industrial & Commercial Machinery & Equipment",
+      "sector": "Technology",
+      "preMarketPrice": 4.8,
+      "preMarketChangePct": 9.84,
+      "prevClose": 4.369992716678805,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 28, 2026 8:41 AM ET",
-      "preMarketVolume": 2047984.732264,
-      "preMarketDollarVolume": 17981305.94927792,
-      "relVolume": 1.4876474454578472,
-      "avgVolume50": 1376660,
-      "sharesOutstanding": 16957000,
-      "marketCap": 148882460,
+      "lastTradeAt": "Sep 28, 2026 8:59 AM ET",
+      "preMarketVolume": 543552.273031,
+      "preMarketDollarVolume": 2609050.9105488,
+      "relVolume": 0.8340925731176411,
+      "avgVolume50": 651669,
+      "sharesOutstanding": 43062427,
+      "marketCap": 206699649.6,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 54,
+      "bestPriorSpikePct": 31,
       "float": {
-        "shares": 16957000,
+        "shares": 43062427,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-03-31"
+        "asOf": "2025-12-31"
       },
-      "floatRotation": 0.12077518029509937,
+      "floatRotation": 0.0126224254158039,
       "daysUp": 0,
-      "priorRunPct": -4.830917874396129,
+      "priorRunPct": 2.25988700564972,
       "extended": false,
       "catalyst": {
         "found": false,
@@ -444,12 +375,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.8%"
+          "detail": "9.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "2,047,985"
+          "detail": "543,552"
         },
         {
           "name": "News catalyst",
@@ -459,117 +390,49 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.78"
+          "detail": "$4.80"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "17.0M"
+          "detail": "43.1M"
         }
       ],
       "passed": 2,
       "quality": "low"
     },
     {
-      "symbol": "DLHC",
-      "name": "DLH Holdings Corp.",
-      "legalName": "DLH Holdings Corp.",
-      "business": "Services-Help Supply Services",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.8,
-      "preMarketChangePct": 7.04,
-      "prevClose": 3.5500747384155455,
+      "symbol": "LINK",
+      "name": "Interlink Electronics Inc.",
+      "legalName": "INTERLINK ELECTRONICS INC",
+      "business": "Computer Peripheral Equipment, NEC",
+      "sector": "Technology",
+      "preMarketPrice": 5.97,
+      "preMarketChangePct": 7.57,
+      "prevClose": 5.549874500325369,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 28, 2026 8:34 AM ET",
-      "preMarketVolume": 725,
-      "preMarketDollarVolume": 2755,
-      "relVolume": 0.04323711832061069,
-      "avgVolume50": 16768,
-      "sharesOutstanding": 14493035,
-      "marketCap": 55073533,
+      "lastTradeAt": "Sep 28, 2026 8:51 AM ET",
+      "preMarketVolume": 7357.704705,
+      "preMarketDollarVolume": 43925.497088849996,
+      "relVolume": 0.387839581730009,
+      "avgVolume50": 18971,
+      "sharesOutstanding": 15753409,
+      "marketCap": 94047851.72999999,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 9,
+      "bestPriorSpikePct": 23,
       "float": {
-        "shares": 14493035,
+        "shares": 15753409,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-28"
+        "asOf": "2026-08-13"
       },
-      "floatRotation": 0.00005002402878348117,
+      "floatRotation": 0.00046705476287703824,
       "daysUp": 0,
-      "priorRunPct": -2.8350515463917496,
+      "priorRunPct": 1.968503937007867,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "DLH Awarded New NIH Cybersecurity Operations Task Order Valued at Up to $19.1 Million",
-        "subject": "Contract or partnership",
-        "date": "2026-09-28"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "725"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.80"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "14.5M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "ALLR",
-      "name": "Allarity Therapeutics Inc.",
-      "legalName": "Allarity Therapeutics, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 1.1,
-      "preMarketChangePct": 6.8,
-      "prevClose": 1.0299625468164795,
-      "closeReconciled": true,
-      "lastTradeAt": "Sep 28, 2026 8:41 AM ET",
-      "preMarketVolume": 6254.091901,
-      "preMarketDollarVolume": 6879.5010911,
-      "relVolume": 0.06795562305502434,
-      "avgVolume50": 92032,
-      "sharesOutstanding": 15910724,
-      "marketCap": 17501796.400000002,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 22,
-      "float": {
-        "shares": 15910724,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-14"
-      },
-      "floatRotation": 0.0003930739984553814,
-      "daysUp": 1,
-      "priorRunPct": -6.034482758620676,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Allarity Therapeutics Expands Laboratory Capabilities to Include Proteomics and Cell Line Research",
+        "headline": "Interlink Electronics to Participate in the Lytham Partners Fall 2026 Investor Conference",
         "subject": null,
         "date": "2026-09-28"
       },
@@ -580,12 +443,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.8%"
+          "detail": "7.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "6,254"
+          "detail": "7,358"
         },
         {
           "name": "News catalyst",
@@ -594,16 +457,84 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.10"
+          "ok": true,
+          "detail": "$5.97"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "15.9M"
+          "detail": "15.8M"
         }
       ],
-      "passed": 1,
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "KROS",
+      "name": "Keros Therapeutics Inc.",
+      "legalName": "Keros Therapeutics, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 12.3363,
+      "preMarketChangePct": 6.807792207792198,
+      "prevClose": 11.55,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 28, 2026 8:54 AM ET",
+      "preMarketVolume": 416.570989,
+      "preMarketDollarVolume": 5138.9446916007,
+      "relVolume": 0.0020771531595769614,
+      "avgVolume50": 200549,
+      "sharesOutstanding": 19827188,
+      "marketCap": 244594139.32439998,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 12,
+      "float": {
+        "shares": 19827188,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-27"
+      },
+      "floatRotation": 0.000021010089226974598,
+      "daysUp": 0,
+      "priorRunPct": 1.6725352112676168,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-09-28"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "417"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$12.34"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "19.8M"
+        }
+      ],
+      "passed": 2,
       "quality": "low"
     },
     {
@@ -612,17 +543,17 @@
       "legalName": "FARADAY FUTURE INTELLIGENT ELECTRIC INC.",
       "business": "Motor Vehicles & Passenger Car Bodies",
       "sector": "Industrials",
-      "preMarketPrice": 1.7015,
-      "preMarketChangePct": 5.68,
-      "prevClose": 1.6100492051476154,
+      "preMarketPrice": 1.715,
+      "preMarketChangePct": 6.52,
+      "prevClose": 1.6100262861434473,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 28, 2026 8:41 AM ET",
-      "preMarketVolume": 993869.039479,
-      "preMarketDollarVolume": 1691068.1706735187,
-      "relVolume": 0.06763539849093302,
+      "lastTradeAt": "Sep 28, 2026 9:01 AM ET",
+      "preMarketVolume": 1007024.039479,
+      "preMarketDollarVolume": 1727046.2277064852,
+      "relVolume": 0.06853063079197605,
       "avgVolume50": 14694510,
       "sharesOutstanding": 29516511,
-      "marketCap": 50222343.4665,
+      "marketCap": 50620816.365,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 86,
       "float": {
@@ -630,7 +561,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2021-08-13"
       },
-      "floatRotation": 0.03367163007440141,
+      "floatRotation": 0.03411731283141832,
       "daysUp": 0,
       "priorRunPct": -25.98870056497175,
       "extended": false,
@@ -648,12 +579,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.7%"
+          "detail": "6.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "993,869"
+          "detail": "1,007,024"
         },
         {
           "name": "News catalyst",
@@ -663,7 +594,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.70"
+          "detail": "$1.72"
         },
         {
           "name": "Float <10M",
@@ -684,10 +615,10 @@
       "preMarketChangePct": 5.06,
       "prevClose": 5.73005901389682,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 28, 2026 8:40 AM ET",
-      "preMarketVolume": 19991,
-      "preMarketDollarVolume": 120345.81999999999,
-      "relVolume": 0.07675237367590541,
+      "lastTradeAt": "Sep 28, 2026 8:57 AM ET",
+      "preMarketVolume": 20194,
+      "preMarketDollarVolume": 121567.87999999999,
+      "relVolume": 0.07753176099300856,
       "avgVolume50": 260461,
       "sharesOutstanding": 70789261,
       "marketCap": 426151351.21999997,
@@ -698,7 +629,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.0002824015919589837,
+      "floatRotation": 0.00028526925856734114,
       "daysUp": 3,
       "priorRunPct": 47.2222222222222,
       "extended": true,
@@ -721,7 +652,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "19,991"
+          "detail": "20,194"
         },
         {
           "name": "News catalyst",
