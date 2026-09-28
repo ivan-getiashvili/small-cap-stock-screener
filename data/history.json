@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-09-28T21:01:33.563Z",
+ "updatedAt": "2026-09-28T21:10:57.264Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -4406,7 +4406,10 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 4.37
+     }
     },
     {
      "symbol": "MTEK",
@@ -4427,7 +4430,10 @@
      "missing": [
       "Price $2–$20"
      ],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 0.9898
+     }
     },
     {
      "symbol": "AMPX",
@@ -4448,7 +4454,10 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 9.7
+     }
     },
     {
      "symbol": "SCYX",
@@ -4467,7 +4476,10 @@
      "catalyst": "Contract or partnership",
      "extended": false,
      "missing": [],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 4.6
+     }
     },
     {
      "symbol": "PMAX",
@@ -4486,7 +4498,10 @@
      "catalyst": "Merger or acquisition",
      "extended": true,
      "missing": [],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 1.38
+     }
     }
    ]
   }
