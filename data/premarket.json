@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-28T11:20:18.330Z",
+  "generatedAt": "2026-09-28T11:40:18.661Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-25",
   "universeChecked": 6018,
   "smallCapsInBand": 2978,
-  "investigated": 68,
-  "liveQuotes": 59,
+  "investigated": 72,
+  "liveQuotes": 62,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-25T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 139,
+    "edgarFilings": 143,
     "leads": {
-      "8-K": 39,
-      "PR Newswire": 0,
-      "GlobeNewswire": 5,
+      "8-K": 42,
+      "PR Newswire": 2,
+      "GlobeNewswire": 6,
       "prior-session gainer": 24
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 68,
-    "answered": 68,
+    "requested": 72,
+    "answered": 72,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,38 +60,38 @@
   "shortlist": [],
   "watchlist": [
     {
-      "symbol": "VWAV",
-      "name": "VisionWave Holdings Inc.",
-      "legalName": "VisionWave Holdings, Inc.",
-      "business": "Services-Prepackaged Software",
-      "sector": "Technology",
-      "preMarketPrice": 6.8869,
-      "preMarketChangePct": 41.41,
-      "prevClose": 4.870164769111096,
+      "symbol": "MTEK",
+      "name": "Maris-Tech Ltd. Ordinary Shares",
+      "legalName": "Maris Tech Ltd.",
+      "business": "Communications Equipment, NEC",
+      "sector": "Telecommunications",
+      "preMarketPrice": 1.83,
+      "preMarketChangePct": 64.86,
+      "prevClose": 1.1100327550649036,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 28, 2026 7:20 AM ET",
-      "preMarketVolume": 4200088.578322,
-      "preMarketDollarVolume": 28925590.03004578,
-      "relVolume": 2.4269200885934272,
-      "avgVolume50": 1730625,
-      "sharesOutstanding": 28842069,
-      "marketCap": 198632444.9961,
+      "lastTradeAt": "Sep 28, 2026 7:42 AM ET",
+      "preMarketVolume": 7795144,
+      "preMarketDollarVolume": 14265113.520000001,
+      "relVolume": 136.94190397554593,
+      "avgVolume50": 56923,
+      "sharesOutstanding": 8073591,
+      "marketCap": 14774671.530000001,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 45,
+      "bestPriorSpikePct": 22,
       "float": {
-        "shares": 28842069,
+        "shares": 8073591,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-17"
+        "asOf": "2025-12-31"
       },
-      "floatRotation": 0.145623692194967,
+      "floatRotation": 0.9655113814905908,
       "daysUp": 1,
-      "priorRunPct": 1483.6980306345736,
-      "extended": true,
+      "priorRunPct": 1.980198019801982,
+      "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "VisionWave Highlights STRATUM Autonomous Ground Systems Platform for Multi-Mission Defense Operations",
-        "subject": null,
+        "headline": "Maris-Tech Receives Record US$10 Million Order - Its Largest-Ever Contract - for Advanced Video Systems on Next-Generation Airborne Defense Platforms",
+        "subject": "Contract or partnership",
         "date": "2026-09-28"
       },
       "leads": [
@@ -101,12 +101,80 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "41.4%"
+          "detail": "64.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "4,200,089"
+          "detail": "7,795,144"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.83"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "8.1M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "AMPX",
+      "name": "Amprius Technologies Inc.",
+      "legalName": "Amprius Technologies, Inc.",
+      "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
+      "sector": "Miscellaneous",
+      "preMarketPrice": 10.6715,
+      "preMarketChangePct": 10.128998968008261,
+      "prevClose": 9.69,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 28, 2026 7:41 AM ET",
+      "preMarketVolume": 745675.416439,
+      "preMarketDollarVolume": 7957475.206528789,
+      "relVolume": 0.13106209254884715,
+      "avgVolume50": 5689482,
+      "sharesOutstanding": 146080618,
+      "marketCap": 1558899314.987,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 22,
+      "float": {
+        "shares": 146080618,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-31"
+      },
+      "floatRotation": 0.005104547246911292,
+      "daysUp": 0,
+      "priorRunPct": 1.572327044025161,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Amprius Wins $75 Mln U.S. Grant To Reconfigure EV Production Line To High Energy Density Cells ",
+        "subject": null,
+        "date": "2026-09-28"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "10.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "745,675"
         },
         {
           "name": "News catalyst",
@@ -116,12 +184,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.89"
+          "detail": "$10.67"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "28.8M"
+          "detail": "146.1M"
         }
       ],
       "passed": 4,
@@ -135,17 +203,17 @@
       "legalName": "Burford Capital Ltd",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 3.93,
-      "preMarketChangePct": 8.264462809917363,
+      "preMarketPrice": 3.94,
+      "preMarketChangePct": 8.539944903581269,
       "prevClose": 3.63,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 28, 2026 7:20 AM ET",
-      "preMarketVolume": 97843.168219,
-      "preMarketDollarVolume": 384523.65110067,
-      "relVolume": 0.05707677009785106,
+      "lastTradeAt": "Sep 28, 2026 7:39 AM ET",
+      "preMarketVolume": 112923.168219,
+      "preMarketDollarVolume": 444917.28278286,
+      "relVolume": 0.0658736816118882,
       "avgVolume50": 1714238,
       "sharesOutstanding": 219584503,
-      "marketCap": 862967096.7900001,
+      "marketCap": 865162941.8199999,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 12,
       "float": {
@@ -153,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-30"
       },
-      "floatRotation": 0.0004455832123043765,
+      "floatRotation": 0.0005142583683102628,
       "daysUp": 0,
       "priorRunPct": -9.022556390977451,
       "extended": false,
@@ -171,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.3%"
+          "detail": "8.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "97,843"
+          "detail": "112,923"
         },
         {
           "name": "News catalyst",
@@ -186,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.93"
+          "detail": "$3.94"
         },
         {
           "name": "Float <10M",
@@ -198,158 +266,22 @@
       "quality": "low"
     },
     {
-      "symbol": "AMPX",
-      "name": "Amprius Technologies Inc.",
-      "legalName": "Amprius Technologies, Inc.",
-      "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
-      "sector": "Miscellaneous",
-      "preMarketPrice": 10.49,
-      "preMarketChangePct": 8.255933952528387,
-      "prevClose": 9.69,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 28, 2026 7:20 AM ET",
-      "preMarketVolume": 448774.422017,
-      "preMarketDollarVolume": 4707643.68695833,
-      "relVolume": 0.07887790523232167,
-      "avgVolume50": 5689482,
-      "sharesOutstanding": 146080618,
-      "marketCap": 1532385682.82,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 22,
-      "float": {
-        "shares": 146080618,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-31"
-      },
-      "floatRotation": 0.0030721010642014122,
-      "daysUp": 0,
-      "priorRunPct": 1.572327044025161,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Amprius Wins $75 Mln U.S. Grant To Reconfigure EV Production Line To High Energy Density Cells ",
-        "subject": null,
-        "date": "2026-09-28"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "8.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "448,774"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$10.49"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "146.1M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "PBM",
-      "name": "Psyence Biomedical Ltd. Common Shares",
-      "legalName": "PSYENCE BIOMEDICAL LTD.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 5.959,
-      "preMarketChangePct": 7.18,
-      "prevClose": 5.559805933942899,
-      "closeReconciled": true,
-      "lastTradeAt": "Sep 28, 2026 7:20 AM ET",
-      "preMarketVolume": 1161.525981,
-      "preMarketDollarVolume": 6921.533320779,
-      "relVolume": 0.013239630016755764,
-      "avgVolume50": 87731,
-      "sharesOutstanding": 2293277,
-      "marketCap": 13665637.643,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 104,
-      "float": {
-        "shares": 2293277,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-03-31"
-      },
-      "floatRotation": 0.0005064917936210933,
-      "daysUp": 0,
-      "priorRunPct": -7.278481012658227,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Psyence BioMed Announces Exclusive U.S. Ibogaine Licence for Texas Ibogaine Research Corporation",
-        "subject": null,
-        "date": "2026-09-28"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "1,162"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$5.96"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "2.3M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "SDEV",
       "name": "Stablecoin Development Corporation",
       "legalName": "Stablecoin Development Corp",
       "business": "Finance Services",
       "sector": "Health Care",
-      "preMarketPrice": 1.6694,
-      "preMarketChangePct": 12.04,
-      "prevClose": 1.4900035701535166,
+      "preMarketPrice": 1.6697,
+      "preMarketChangePct": 12.06,
+      "prevClose": 1.4900053542744958,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 28, 2026 7:20 AM ET",
-      "preMarketVolume": 5415166.267883,
-      "preMarketDollarVolume": 9040078.56760388,
-      "relVolume": 5.049284979685061,
+      "lastTradeAt": "Sep 28, 2026 7:41 AM ET",
+      "preMarketVolume": 5636851.267883,
+      "preMarketDollarVolume": 9411850.561984245,
+      "relVolume": 5.255991604255442,
       "avgVolume50": 1072462,
       "sharesOutstanding": 50615437,
-      "marketCap": 84497410.5278,
+      "marketCap": 84512595.1589,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -357,7 +289,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-27"
       },
-      "floatRotation": 0.1069864568764466,
+      "floatRotation": 0.11136624717639008,
       "daysUp": 1,
       "priorRunPct": 53.352353780313855,
       "extended": true,
@@ -375,12 +307,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "12.0%"
+          "detail": "12.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "5,415,166"
+          "detail": "5,636,851"
         },
         {
           "name": "News catalyst",
@@ -407,17 +339,17 @@
       "legalName": "SCHMID Group N.V.",
       "business": "Misc Industrial & Commercial Machinery & Equipment",
       "sector": "Technology",
-      "preMarketPrice": 4.6248,
-      "preMarketChangePct": 5.83,
-      "prevClose": 4.370027402437872,
+      "preMarketPrice": 4.72,
+      "preMarketChangePct": 8.01,
+      "prevClose": 4.3699657439126005,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 28, 2026 7:20 AM ET",
-      "preMarketVolume": 384588,
-      "preMarketDollarVolume": 1778642.5823999997,
-      "relVolume": 0.5901585007112506,
+      "lastTradeAt": "Sep 28, 2026 7:41 AM ET",
+      "preMarketVolume": 410187,
+      "preMarketDollarVolume": 1936082.64,
+      "relVolume": 0.6294407130000046,
       "avgVolume50": 651669,
       "sharesOutstanding": 43062427,
-      "marketCap": 199155112.38959998,
+      "marketCap": 203254655.44,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -425,7 +357,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.00893094111950541,
+      "floatRotation": 0.009525403665706068,
       "daysUp": 0,
       "priorRunPct": 2.25988700564972,
       "extended": false,
@@ -443,12 +375,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.8%"
+          "detail": "8.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "384,588"
+          "detail": "410,187"
         },
         {
           "name": "News catalyst",
@@ -458,7 +390,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.62"
+          "detail": "$4.72"
         },
         {
           "name": "Float <10M",
@@ -475,17 +407,17 @@
       "legalName": "FARADAY FUTURE INTELLIGENT ELECTRIC INC.",
       "business": "Motor Vehicles & Passenger Car Bodies",
       "sector": "Industrials",
-      "preMarketPrice": 1.7196,
-      "preMarketChangePct": 6.81,
-      "prevClose": 1.6099616140810784,
+      "preMarketPrice": 1.73,
+      "preMarketChangePct": 7.45,
+      "prevClose": 1.6100511865984177,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 28, 2026 7:20 AM ET",
-      "preMarketVolume": 783447.983017,
-      "preMarketDollarVolume": 1347217.1515960332,
-      "relVolume": 0.0533156929368179,
+      "lastTradeAt": "Sep 28, 2026 7:42 AM ET",
+      "preMarketVolume": 839391.039479,
+      "preMarketDollarVolume": 1452146.49829867,
+      "relVolume": 0.05712276486109438,
       "avgVolume50": 14694510,
       "sharesOutstanding": 29516511,
-      "marketCap": 50756592.3156,
+      "marketCap": 51063564.03,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 86,
       "float": {
@@ -493,7 +425,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2021-08-13"
       },
-      "floatRotation": 0.026542702930471694,
+      "floatRotation": 0.0284380169281864,
       "daysUp": 0,
       "priorRunPct": -25.98870056497175,
       "extended": false,
@@ -511,12 +443,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.8%"
+          "detail": "7.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "783,448"
+          "detail": "839,391"
         },
         {
           "name": "News catalyst",
@@ -526,7 +458,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.72"
+          "detail": "$1.73"
         },
         {
           "name": "Float <10M",
@@ -543,17 +475,17 @@
       "legalName": "YD Bio Ltd",
       "business": "Services-Medical Laboratories",
       "sector": "Health Care",
-      "preMarketPrice": 6.0295,
-      "preMarketChangePct": 5.23,
-      "prevClose": 5.729829896417371,
+      "preMarketPrice": 6.1,
+      "preMarketChangePct": 6.46,
+      "prevClose": 5.7298515874506855,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 28, 2026 7:16 AM ET",
-      "preMarketVolume": 16697,
-      "preMarketDollarVolume": 100674.5615,
-      "relVolume": 0.06410556666833038,
+      "lastTradeAt": "Sep 28, 2026 7:39 AM ET",
+      "preMarketVolume": 16744,
+      "preMarketDollarVolume": 102138.4,
+      "relVolume": 0.0642860159486449,
       "avgVolume50": 260461,
       "sharesOutstanding": 70789261,
-      "marketCap": 426823849.19949996,
+      "marketCap": 431814492.09999996,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 24,
       "float": {
@@ -561,7 +493,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.0002358691101465235,
+      "floatRotation": 0.00023653305266175897,
       "daysUp": 3,
       "priorRunPct": 47.2222222222222,
       "extended": true,
@@ -579,12 +511,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.2%"
+          "detail": "6.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "16,697"
+          "detail": "16,744"
         },
         {
           "name": "News catalyst",
@@ -594,7 +526,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.03"
+          "detail": "$6.10"
         },
         {
           "name": "Float <10M",
