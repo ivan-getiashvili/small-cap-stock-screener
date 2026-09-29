@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-29T11:41:08.537Z",
+  "generatedAt": "2026-09-29T12:01:01.444Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-28",
   "universeChecked": 6020,
   "smallCapsInBand": 2982,
-  "investigated": 70,
-  "liveQuotes": 56,
+  "investigated": 72,
+  "liveQuotes": 55,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-28T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 123,
+    "edgarFilings": 127,
     "leads": {
-      "8-K": 51,
+      "8-K": 53,
       "PR Newswire": 0,
-      "GlobeNewswire": 6,
+      "GlobeNewswire": 7,
       "prior-session gainer": 14
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 70,
-    "answered": 70,
+    "requested": 72,
+    "answered": 72,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "SOUNDTHINKING, INC.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 8.125,
-      "preMarketChangePct": 48.54,
-      "prevClose": 5.469907095731789,
+      "preMarketPrice": 8.26,
+      "preMarketChangePct": 51.01,
+      "prevClose": 5.4698364346732005,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 7:41 AM ET",
-      "preMarketVolume": 803673.893583,
-      "preMarketDollarVolume": 6529850.385361875,
-      "relVolume": 6.626489450891311,
+      "lastTradeAt": "Sep 29, 2026 8:01 AM ET",
+      "preMarketVolume": 1340884.722471,
+      "preMarketDollarVolume": 11075707.80761046,
+      "relVolume": 11.055925219496709,
       "avgVolume50": 121282,
       "sharesOutstanding": 13163790,
-      "marketCap": 106955793.75,
+      "marketCap": 108732905.39999999,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 9,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-05"
       },
-      "floatRotation": 0.061051862235951805,
+      "floatRotation": 0.10186160083615736,
       "daysUp": 1,
       "priorRunPct": 1.0752688172042941,
       "extended": false,
@@ -95,18 +95,19 @@
         "date": "2026-09-29"
       },
       "leads": [
-        "GlobeNewswire"
+        "GlobeNewswire",
+        "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "48.5%"
+          "detail": "51.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "803,674"
+          "detail": "1,340,885"
         },
         {
           "name": "News catalyst",
@@ -116,80 +117,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.13"
+          "detail": "$8.26"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "13.2M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
-      "symbol": "MEDS",
-      "name": "DataMeds AI Inc.",
-      "legalName": "DataMeds AI, Inc.",
-      "business": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
-      "sector": "Health Care",
-      "preMarketPrice": 4.0108,
-      "preMarketChangePct": 5.27,
-      "prevClose": 3.810012349197302,
-      "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 7:41 AM ET",
-      "preMarketVolume": 301891.04,
-      "preMarketDollarVolume": 1210824.5832319998,
-      "relVolume": 0.9304500750484656,
-      "avgVolume50": 324457,
-      "sharesOutstanding": 3061919,
-      "marketCap": 12280744.7252,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 30,
-      "float": {
-        "shares": 3061919,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-17"
-      },
-      "floatRotation": 0.0985953710728468,
-      "daysUp": 0,
-      "priorRunPct": -17.28723404255319,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "DataMeds AI Climbs Over 25% On Launch Of GLP-1-Focused Health Lives Here App ",
-        "subject": "Hot-sector announcement",
-        "date": "2026-09-28"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "301,891"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.01"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "3.1M"
         }
       ],
       "passed": 4,
@@ -203,17 +136,17 @@
       "legalName": "FARADAY FUTURE INTELLIGENT ELECTRIC INC.",
       "business": "Motor Vehicles & Passenger Car Bodies",
       "sector": "Industrials",
-      "preMarketPrice": 1.6199,
-      "preMarketChangePct": 14.89,
-      "prevClose": 1.4099573505091825,
+      "preMarketPrice": 1.59,
+      "preMarketChangePct": 12.77,
+      "prevClose": 1.4099494546421922,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 7:41 AM ET",
-      "preMarketVolume": 7343914.96414,
-      "preMarketDollarVolume": 11896407.850410385,
-      "relVolume": 0.4997727017872661,
+      "lastTradeAt": "Sep 29, 2026 8:00 AM ET",
+      "preMarketVolume": 7701477.96414,
+      "preMarketDollarVolume": 12245349.9629826,
+      "relVolume": 0.5241058030611432,
       "avgVolume50": 14694510,
       "sharesOutstanding": 29516511,
-      "marketCap": 47813796.1689,
+      "marketCap": 46931252.49,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 86,
       "float": {
@@ -221,7 +154,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2021-08-13"
       },
-      "floatRotation": 0.2488070139502599,
+      "floatRotation": 0.26092101346734375,
       "daysUp": 1,
       "priorRunPct": -8.522727272727268,
       "extended": false,
@@ -239,12 +172,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "14.9%"
+          "detail": "12.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "7,343,915"
+          "detail": "7,701,478"
         },
         {
           "name": "News catalyst",
@@ -254,7 +187,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.62"
+          "detail": "$1.59"
         },
         {
           "name": "Float <10M",
@@ -266,22 +199,90 @@
       "quality": "low"
     },
     {
+      "symbol": "SCYX",
+      "name": "SCYNEXIS Inc.",
+      "legalName": "SCYNEXIS INC",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 4.62,
+      "preMarketChangePct": 5.239179954441924,
+      "prevClose": 4.39,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 29, 2026 8:00 AM ET",
+      "preMarketVolume": 48699,
+      "preMarketDollarVolume": 224989.38,
+      "relVolume": 0.32540626503447906,
+      "avgVolume50": 149656,
+      "sharesOutstanding": 9949609,
+      "marketCap": 45967193.58,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 30,
+      "float": {
+        "shares": 9949609,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-01"
+      },
+      "floatRotation": 0.004894564198452422,
+      "daysUp": 0,
+      "priorRunPct": -1.5695067264574054,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
+        "date": "2026-09-28"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "48,699"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.62"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "9.9M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "TANH",
       "name": "Tantech Holdings Ltd. Class A Common Shares",
       "legalName": "TANTECH HOLDINGS LTD",
       "business": "Industrial Organic Chemicals",
       "sector": "Industrials",
-      "preMarketPrice": 19.5,
-      "preMarketChangePct": 11.43,
-      "prevClose": 17.499775643902,
+      "preMarketPrice": 19.18,
+      "preMarketChangePct": 9.6,
+      "prevClose": 17.5,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 7:35 AM ET",
-      "preMarketVolume": 1014,
-      "preMarketDollarVolume": 19773,
-      "relVolume": 0.0003405230487760648,
+      "lastTradeAt": "Sep 29, 2026 7:51 AM ET",
+      "preMarketVolume": 1156,
+      "preMarketDollarVolume": 22172.079999999998,
+      "relVolume": 0.0003882097084665985,
       "avgVolume50": 2977772,
       "sharesOutstanding": 6214872,
-      "marketCap": 121190004,
+      "marketCap": 119201244.96,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 67,
       "float": {
@@ -289,7 +290,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-04-30"
       },
-      "floatRotation": 0.00016315702077210922,
+      "floatRotation": 0.00018600543985459396,
       "daysUp": 0,
       "priorRunPct": 6.481481481481481,
       "extended": false,
@@ -306,13 +307,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "11.4%"
+          "ok": false,
+          "detail": "9.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "1,014"
+          "detail": "1,156"
         },
         {
           "name": "News catalyst",
@@ -322,7 +323,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$19.50"
+          "detail": "$19.18"
         },
         {
           "name": "Float <10M",
@@ -330,7 +331,7 @@
           "detail": "6.2M"
         }
       ],
-      "passed": 3,
+      "passed": 2,
       "quality": "low"
     },
     {
@@ -402,39 +403,39 @@
       "quality": "low"
     },
     {
-      "symbol": "UNCY",
-      "name": "Unicycive Therapeutics Inc.",
-      "legalName": "Unicycive Therapeutics, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 5.03,
-      "preMarketChangePct": 7.135250266240681,
-      "prevClose": 4.695,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 29, 2026 7:41 AM ET",
-      "preMarketVolume": 40510,
-      "preMarketDollarVolume": 203765.30000000002,
-      "relVolume": 0.04399143844727923,
-      "avgVolume50": 920861,
-      "sharesOutstanding": 27855257,
-      "marketCap": 140111942.71,
+      "symbol": "AVX",
+      "name": "Avax One Technology Ltd. Common Shares",
+      "legalName": "AVAX ONE TECHNOLOGY LTD.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 6.8489,
+      "preMarketChangePct": 8.37,
+      "prevClose": 6.31992248777337,
+      "closeReconciled": true,
+      "lastTradeAt": "Sep 29, 2026 7:58 AM ET",
+      "preMarketVolume": 11321.379763,
+      "preMarketDollarVolume": 77538.9978588107,
+      "relVolume": 0.26882060460643475,
+      "avgVolume50": 42115,
+      "sharesOutstanding": 7397383,
+      "marketCap": 50663936.4287,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 15,
+      "bestPriorSpikePct": 22,
       "float": {
-        "shares": 27855257,
+        "shares": 7397383,
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-12"
       },
-      "floatRotation": 0.0014543035808285668,
-      "daysUp": 0,
-      "priorRunPct": -2.1874999999999907,
-      "extended": false,
+      "floatRotation": 0.001530457428390554,
+      "daysUp": 2,
+      "priorRunPct": 55.26992287917737,
+      "extended": true,
       "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-09-28"
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
       },
       "leads": [
         "8-K"
@@ -443,27 +444,27 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.1%"
+          "detail": "8.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "40,510"
+          "detail": "11,321"
         },
         {
           "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
+          "ok": false,
+          "detail": "none found"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.03"
+          "detail": "$6.85"
         },
         {
           "name": "Float <10M",
-          "ok": false,
-          "detail": "27.9M"
+          "ok": true,
+          "detail": "7.4M"
         }
       ],
       "passed": 2,
@@ -538,22 +539,90 @@
       "quality": "low"
     },
     {
+      "symbol": "AIXC",
+      "name": "AIxCrypto Holdings Inc.",
+      "legalName": "AIxCrypto Holdings, Inc.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 1.7497,
+      "preMarketChangePct": 5.4,
+      "prevClose": 1.6600569259962048,
+      "closeReconciled": true,
+      "lastTradeAt": "Sep 29, 2026 7:59 AM ET",
+      "preMarketVolume": 67599,
+      "preMarketDollarVolume": 118277.9703,
+      "relVolume": 0.04298019956841138,
+      "avgVolume50": 1572794,
+      "sharesOutstanding": 20234993,
+      "marketCap": 35405167.2521,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 86,
+      "float": {
+        "shares": 20234993,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-07"
+      },
+      "floatRotation": 0.003340697968118892,
+      "daysUp": 1,
+      "priorRunPct": 58.71559633027522,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-09-29"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "67,599"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.75"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "20.2M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
       "symbol": "JELD",
       "name": "JELD-WEN Holding Inc.",
       "legalName": "JELD-WEN Holding, Inc.",
       "business": "Millwood, Veneer, Plywood, & Structural Wood Members",
       "sector": "Basic Materials",
-      "preMarketPrice": 1.8703,
-      "preMarketChangePct": 5.67,
-      "prevClose": 1.7699441657991863,
+      "preMarketPrice": 1.87,
+      "preMarketChangePct": 5.65,
+      "prevClose": 1.7699952673923334,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 7:39 AM ET",
-      "preMarketVolume": 9491.664893,
-      "preMarketDollarVolume": 17752.2608493779,
-      "relVolume": 0.00596648598090305,
+      "lastTradeAt": "Sep 29, 2026 7:58 AM ET",
+      "preMarketVolume": 10462.664893,
+      "preMarketDollarVolume": 19565.18334991,
+      "relVolume": 0.006576859182313635,
       "avgVolume50": 1590830,
       "sharesOutstanding": 86763382,
-      "marketCap": 162273553.3546,
+      "marketCap": 162247524.34,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 26,
       "float": {
@@ -561,7 +630,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-31"
       },
-      "floatRotation": 0.00010939712899849846,
+      "floatRotation": 0.00012058848620031893,
       "daysUp": 1,
       "priorRunPct": 4.545454545454549,
       "extended": false,
@@ -584,7 +653,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "9,492"
+          "detail": "10,463"
         },
         {
           "name": "News catalyst",
