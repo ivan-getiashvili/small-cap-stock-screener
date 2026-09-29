@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-29T13:01:05.139Z",
+  "generatedAt": "2026-09-29T13:20:55.257Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-28",
   "universeChecked": 6020,
   "smallCapsInBand": 2982,
-  "investigated": 80,
-  "liveQuotes": 68,
+  "investigated": 82,
+  "liveQuotes": 70,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-28T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 152,
+    "edgarFilings": 158,
     "leads": {
-      "8-K": 63,
-      "PR Newswire": 0,
-      "GlobeNewswire": 5,
+      "8-K": 64,
+      "PR Newswire": 2,
+      "GlobeNewswire": 4,
       "prior-session gainer": 14
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 80,
-    "answered": 80,
+    "requested": 82,
+    "answered": 82,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "SOUNDTHINKING, INC.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 8.2806,
-      "preMarketChangePct": 51.38,
-      "prevClose": 5.470075307173999,
+      "preMarketPrice": 8.3002,
+      "preMarketChangePct": 51.74,
+      "prevClose": 5.47001449848425,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 9:01 AM ET",
-      "preMarketVolume": 1701728.74092,
-      "preMarketDollarVolume": 14091335.012062151,
-      "relVolume": 14.031173141274056,
+      "lastTradeAt": "Sep 29, 2026 9:20 AM ET",
+      "preMarketVolume": 1781486.321244,
+      "preMarketDollarVolume": 14786692.76358945,
+      "relVolume": 14.68879406048713,
       "avgVolume50": 121282,
       "sharesOutstanding": 13163790,
-      "marketCap": 109004079.47399999,
+      "marketCap": 109262089.758,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 9,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-05"
       },
-      "floatRotation": 0.1292734646268286,
+      "floatRotation": 0.13533232611914958,
       "daysUp": 1,
       "priorRunPct": 1.0752688172042941,
       "extended": false,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "51.4%"
+          "detail": "51.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,701,729"
+          "detail": "1,781,486"
         },
         {
           "name": "News catalyst",
@@ -116,7 +116,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.28"
+          "detail": "$8.30"
         },
         {
           "name": "Float <10M",
@@ -133,17 +133,17 @@
       "legalName": "JELD-WEN Holding, Inc.",
       "business": "Millwood, Veneer, Plywood, & Structural Wood Members",
       "sector": "Basic Materials",
-      "preMarketPrice": 2.0048,
-      "preMarketChangePct": 13.27,
-      "prevClose": 1.7699302551425795,
+      "preMarketPrice": 2.05,
+      "preMarketChangePct": 15.82,
+      "prevClose": 1.7699879122776723,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 9:00 AM ET",
-      "preMarketVolume": 208514.664893,
-      "preMarketDollarVolume": 418030.2001774864,
-      "relVolume": 0.1310728769843415,
+      "lastTradeAt": "Sep 29, 2026 9:20 AM ET",
+      "preMarketVolume": 231689.664893,
+      "preMarketDollarVolume": 474963.81303064997,
+      "relVolume": 0.14564074407259103,
       "avgVolume50": 1590830,
       "sharesOutstanding": 86763382,
-      "marketCap": 173943228.2336,
+      "marketCap": 177864933.1,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 26,
       "float": {
@@ -151,7 +151,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-31"
       },
-      "floatRotation": 0.002403256536184816,
+      "floatRotation": 0.0026703623066814063,
       "daysUp": 1,
       "priorRunPct": 4.545454545454549,
       "extended": false,
@@ -169,12 +169,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "13.3%"
+          "detail": "15.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "208,515"
+          "detail": "231,690"
         },
         {
           "name": "News catalyst",
@@ -184,7 +184,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.00"
+          "detail": "$2.05"
         },
         {
           "name": "Float <10M",
@@ -266,87 +266,19 @@
   ],
   "alsoRan": [
     {
-      "symbol": "LFCR",
-      "name": "Lifecore Biomedical Inc.",
-      "legalName": "LIFECORE BIOMEDICAL, INC. \\DE\\",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 6.52,
-      "preMarketChangePct": 55.23809523809522,
-      "prevClose": 4.2,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 29, 2026 8:50 AM ET",
-      "preMarketVolume": 10139.843699,
-      "preMarketDollarVolume": 66111.78091747999,
-      "relVolume": 0.07096655771195812,
-      "avgVolume50": 142882,
-      "sharesOutstanding": 37853060,
-      "marketCap": 246801951.2,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 12,
-      "float": {
-        "shares": 37853060,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-29"
-      },
-      "floatRotation": 0.0002678738178366557,
-      "daysUp": 0,
-      "priorRunPct": -5.829596412556049,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Lifecore Agrees To $663.7 Million Buyout Deal With Webster Equity Partners; Stock Up ",
-        "subject": "Merger or acquisition",
-        "date": "2026-09-28"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "55.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "10,140"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.52"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "37.9M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "VACI",
       "name": "Viking Acquisition Corp. I Class A Ordinary Shares",
       "legalName": "Viking Acquisition Corp I",
       "business": "Communications Services, NEC",
       "sector": "Telecommunications",
-      "preMarketPrice": 7,
-      "preMarketChangePct": 11.82,
-      "prevClose": 6.260060812019316,
+      "preMarketPrice": 7.04,
+      "preMarketChangePct": 12.46,
+      "prevClose": 6.260003556820203,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 8:59 AM ET",
-      "preMarketVolume": 3457,
-      "preMarketDollarVolume": 24199,
-      "relVolume": 0.018518022530171468,
+      "lastTradeAt": "Sep 29, 2026 9:20 AM ET",
+      "preMarketVolume": 4401.42056,
+      "preMarketDollarVolume": 30986.000742399996,
+      "relVolume": 0.023576975728909433,
       "avgVolume50": 186683,
       "sharesOutstanding": null,
       "marketCap": null,
@@ -371,12 +303,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "11.8%"
+          "detail": "12.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "3,457"
+          "detail": "4,401"
         },
         {
           "name": "News catalyst",
@@ -386,7 +318,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$7.00"
+          "detail": "$7.04"
         },
         {
           "name": "Float <10M",
@@ -398,90 +330,22 @@
       "quality": "low"
     },
     {
-      "symbol": "AVX",
-      "name": "Avax One Technology Ltd. Common Shares",
-      "legalName": "AVAX ONE TECHNOLOGY LTD.",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 6.92,
-      "preMarketChangePct": 9.49,
-      "prevClose": 6.320211891496941,
-      "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 8:55 AM ET",
-      "preMarketVolume": 42254.630599,
-      "preMarketDollarVolume": 292402.04374507995,
-      "relVolume": 1.003315460026119,
-      "avgVolume50": 42115,
-      "sharesOutstanding": 7397383,
-      "marketCap": 51189890.36,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 22,
-      "float": {
-        "shares": 7397383,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-12"
-      },
-      "floatRotation": 0.005712105294399384,
-      "daysUp": 2,
-      "priorRunPct": 55.26992287917737,
-      "extended": true,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.5%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "42,255"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.92"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "7.4M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
       "symbol": "FFAI",
       "name": "Faraday Future Intelligent Electric Inc. Class A",
       "legalName": "FARADAY FUTURE INTELLIGENT ELECTRIC INC.",
       "business": "Motor Vehicles & Passenger Car Bodies",
       "sector": "Industrials",
-      "preMarketPrice": 1.5297,
-      "preMarketChangePct": 8.49,
-      "prevClose": 1.4099917043045442,
+      "preMarketPrice": 1.56,
+      "preMarketChangePct": 10.64,
+      "prevClose": 1.4099783080260304,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 9:00 AM ET",
-      "preMarketVolume": 8549338.96414,
-      "preMarketDollarVolume": 13077923.813444959,
-      "relVolume": 0.5818049709816795,
+      "lastTradeAt": "Sep 29, 2026 9:21 AM ET",
+      "preMarketVolume": 8679594.596178,
+      "preMarketDollarVolume": 13540167.570037682,
+      "relVolume": 0.590669208852694,
       "avgVolume50": 14694510,
       "sharesOutstanding": 29516511,
-      "marketCap": 45151406.8767,
+      "marketCap": 46045757.160000004,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 86,
       "float": {
@@ -489,7 +353,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2021-08-13"
       },
-      "floatRotation": 0.2896459870931222,
+      "floatRotation": 0.2940589623271531,
       "daysUp": 1,
       "priorRunPct": -8.522727272727268,
       "extended": false,
@@ -506,13 +370,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "8.5%"
+          "ok": true,
+          "detail": "10.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "8,549,339"
+          "detail": "8,679,595"
         },
         {
           "name": "News catalyst",
@@ -522,7 +386,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.53"
+          "detail": "$1.56"
         },
         {
           "name": "Float <10M",
@@ -530,111 +394,43 @@
           "detail": "29.5M"
         }
       ],
-      "passed": 2,
+      "passed": 3,
       "quality": "low"
     },
     {
-      "symbol": "AIXC",
-      "name": "AIxCrypto Holdings Inc.",
-      "legalName": "AIxCrypto Holdings, Inc.",
+      "symbol": "AVX",
+      "name": "Avax One Technology Ltd. Common Shares",
+      "legalName": "AVAX ONE TECHNOLOGY LTD.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 1.786,
-      "preMarketChangePct": 7.59,
-      "prevClose": 1.6600055767264614,
+      "preMarketPrice": 6.9586,
+      "preMarketChangePct": 10.1,
+      "prevClose": 6.320254314259763,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 8:58 AM ET",
-      "preMarketVolume": 76952,
-      "preMarketDollarVolume": 137436.272,
-      "relVolume": 0.04892694148121114,
-      "avgVolume50": 1572794,
-      "sharesOutstanding": 20234993,
-      "marketCap": 36139697.498,
+      "lastTradeAt": "Sep 29, 2026 9:10 AM ET",
+      "preMarketVolume": 42881.630599,
+      "preMarketDollarVolume": 298396.1146862014,
+      "relVolume": 1.018203267220705,
+      "avgVolume50": 42115,
+      "sharesOutstanding": 7397383,
+      "marketCap": 51475429.3438,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 86,
+      "bestPriorSpikePct": 22,
       "float": {
-        "shares": 20234993,
+        "shares": 7397383,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-07"
+        "asOf": "2026-08-12"
       },
-      "floatRotation": 0.0038029170556174645,
-      "daysUp": 1,
-      "priorRunPct": 58.71559633027522,
+      "floatRotation": 0.005796864999284206,
+      "daysUp": 2,
+      "priorRunPct": 55.26992287917737,
       "extended": true,
       "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-09-29"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "76,952"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.79"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "20.2M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "SRFM",
-      "name": "Surf Air Mobility Inc.",
-      "legalName": "SURF AIR MOBILITY INC.",
-      "business": "Air Transportation, Nonscheduled",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.19,
-      "preMarketChangePct": 7.207207207207193,
-      "prevClose": 1.11,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 29, 2026 9:01 AM ET",
-      "preMarketVolume": 341598,
-      "preMarketDollarVolume": 406501.62,
-      "relVolume": 0.11902522785136951,
-      "avgVolume50": 2869963,
-      "sharesOutstanding": 100396873,
-      "marketCap": 119472278.86999999,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 26,
-      "float": {
-        "shares": 100396873,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-05-08"
-      },
-      "floatRotation": 0.0034024764894818984,
-      "daysUp": 4,
-      "priorRunPct": 58.95746813690391,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Surf Air Mobility Names Jason Secore CFO ",
+        "found": false,
+        "kind": null,
+        "headline": null,
         "subject": null,
-        "date": "2026-09-28"
+        "date": null
       },
       "leads": [
         "8-K"
@@ -642,31 +438,31 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.2%"
+          "ok": true,
+          "detail": "10.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "341,598"
+          "ok": false,
+          "detail": "42,882"
         },
         {
           "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
+          "ok": false,
+          "detail": "none found"
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.19"
+          "ok": true,
+          "detail": "$6.96"
         },
         {
           "name": "Float <10M",
-          "ok": false,
-          "detail": "100.4M"
+          "ok": true,
+          "detail": "7.4M"
         }
       ],
-      "passed": 2,
+      "passed": 3,
       "quality": "low"
     },
     {
@@ -699,12 +495,13 @@
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Delisting notice or listing-rule failure",
-        "subject": "Delisting notice or listing-rule failure",
-        "date": "2026-09-28"
+        "kind": "news",
+        "headline": "Nexalin Technology Taps Neuromodulation Commercial Executive Robert DiTota to Advise on its Global Commercialization Strategy",
+        "subject": null,
+        "date": "2026-09-29"
       },
       "leads": [
+        "GlobeNewswire",
         "8-K"
       ],
       "checks": [
@@ -721,7 +518,7 @@
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
@@ -743,17 +540,17 @@
       "legalName": "Bloomin' Brands, Inc.",
       "business": "Retail-Eating  Places",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 8.36,
-      "preMarketChangePct": 6.158730158730152,
+      "preMarketPrice": 8.2855,
+      "preMarketChangePct": 5.212698412698423,
       "prevClose": 7.875,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 29, 2026 8:41 AM ET",
-      "preMarketVolume": 46667.937171,
-      "preMarketDollarVolume": 390143.95474956,
-      "relVolume": 0.023712756152276464,
+      "lastTradeAt": "Sep 29, 2026 9:20 AM ET",
+      "preMarketVolume": 48794.937171,
+      "preMarketDollarVolume": 404290.45193032053,
+      "relVolume": 0.0247935202784276,
       "avgVolume50": 1968052,
       "sharesOutstanding": 85620917,
-      "marketCap": 715790866.12,
+      "marketCap": 709412107.8035,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 41,
       "float": {
@@ -761,7 +558,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 0.0005450529941299273,
+      "floatRotation": 0.0005698950546278312,
       "daysUp": 0,
       "priorRunPct": -2.416356877323423,
       "extended": false,
@@ -779,12 +576,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.2%"
+          "detail": "5.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "46,668"
+          "detail": "48,795"
         },
         {
           "name": "News catalyst",
@@ -794,7 +591,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.36"
+          "detail": "$8.29"
         },
         {
           "name": "Float <10M",
