@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-29T11:00:27.720Z",
+  "generatedAt": "2026-09-29T11:21:08.317Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-28",
   "universeChecked": 6020,
   "smallCapsInBand": 2982,
-  "investigated": 60,
-  "liveQuotes": 45,
+  "investigated": 68,
+  "liveQuotes": 59,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-28T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 110,
+    "edgarFilings": 120,
     "leads": {
-      "8-K": 43,
-      "PR Newswire": 2,
-      "GlobeNewswire": 1,
+      "8-K": 49,
+      "PR Newswire": 1,
+      "GlobeNewswire": 7,
       "prior-session gainer": 14
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 60,
-    "answered": 60,
+    "requested": 68,
+    "answered": 68,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -66,17 +66,17 @@
       "legalName": "FARADAY FUTURE INTELLIGENT ELECTRIC INC.",
       "business": "Motor Vehicles & Passenger Car Bodies",
       "sector": "Industrials",
-      "preMarketPrice": 1.61,
-      "preMarketChangePct": 14.18,
-      "prevClose": 1.4100543002277108,
+      "preMarketPrice": 1.5803,
+      "preMarketChangePct": 12.08,
+      "prevClose": 1.4099750178443968,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 7:00 AM ET",
-      "preMarketVolume": 5351764,
-      "preMarketDollarVolume": 8616340.040000001,
-      "relVolume": 0.3642015963785114,
+      "lastTradeAt": "Sep 29, 2026 7:21 AM ET",
+      "preMarketVolume": 5623080,
+      "preMarketDollarVolume": 8886153.324000001,
+      "relVolume": 0.38266536277834373,
       "avgVolume50": 14694510,
       "sharesOutstanding": 29516511,
-      "marketCap": 47521582.71,
+      "marketCap": 46644942.3333,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 86,
       "float": {
@@ -84,7 +84,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2021-08-13"
       },
-      "floatRotation": 0.18131424815080618,
+      "floatRotation": 0.19050625597313992,
       "daysUp": 1,
       "priorRunPct": -8.522727272727268,
       "extended": false,
@@ -102,12 +102,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "14.2%"
+          "detail": "12.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "5,351,764"
+          "detail": "5,623,080"
         },
         {
           "name": "News catalyst",
@@ -117,7 +117,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.61"
+          "detail": "$1.58"
         },
         {
           "name": "Float <10M",
@@ -126,6 +126,143 @@
         }
       ],
       "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "IMMX",
+      "name": "Immix Biopharma Inc.",
+      "legalName": "Immix Biopharma, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 12.39,
+      "preMarketChangePct": 8.02,
+      "prevClose": 11.47009812997593,
+      "closeReconciled": true,
+      "lastTradeAt": "Sep 29, 2026 7:20 AM ET",
+      "preMarketVolume": 190750,
+      "preMarketDollarVolume": 2363392.5,
+      "relVolume": 0.1159461693695446,
+      "avgVolume50": 1645160,
+      "sharesOutstanding": 71539314,
+      "marketCap": 886372100.46,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 17,
+      "float": {
+        "shares": 71539314,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-03"
+      },
+      "floatRotation": 0.0026663660767001483,
+      "daysUp": 0,
+      "priorRunPct": -12.239999999999995,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Immix Biopharma Announces Pricing of $125 Million Underwritten Offering of Common Stock",
+        "subject": "Share offering (dilution)",
+        "date": "2026-09-29"
+      },
+      "leads": [
+        "GlobeNewswire",
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "190,750"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$12.39"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "71.5M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "JELD",
+      "name": "JELD-WEN Holding Inc.",
+      "legalName": "JELD-WEN Holding, Inc.",
+      "business": "Millwood, Veneer, Plywood, & Structural Wood Members",
+      "sector": "Basic Materials",
+      "preMarketPrice": 1.95,
+      "preMarketChangePct": 10.17,
+      "prevClose": 1.769991830806935,
+      "closeReconciled": true,
+      "lastTradeAt": "Sep 29, 2026 7:19 AM ET",
+      "preMarketVolume": 2746,
+      "preMarketDollarVolume": 5354.7,
+      "relVolume": 0.0017261429568212819,
+      "avgVolume50": 1590830,
+      "sharesOutstanding": 86763382,
+      "marketCap": 169188594.9,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 26,
+      "float": {
+        "shares": 86763382,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-31"
+      },
+      "floatRotation": 0.00003164929647394335,
+      "daysUp": 1,
+      "priorRunPct": 4.545454545454549,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
+        "date": "2026-09-29"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "10.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "2,746"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.95"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "86.8M"
+        }
+      ],
+      "passed": 2,
       "quality": "low"
     },
     {
@@ -197,39 +334,107 @@
       "quality": "low"
     },
     {
-      "symbol": "ALZN",
-      "name": "Alzamend Neuro Inc.",
-      "legalName": "Alzamend Neuro, Inc.",
+      "symbol": "TANH",
+      "name": "Tantech Holdings Ltd. Class A Common Shares",
+      "legalName": "TANTECH HOLDINGS LTD",
+      "business": "Industrial Organic Chemicals",
+      "sector": "Industrials",
+      "preMarketPrice": 18.76,
+      "preMarketChangePct": 7.2,
+      "prevClose": 17.5,
+      "closeReconciled": true,
+      "lastTradeAt": "Sep 29, 2026 7:13 AM ET",
+      "preMarketVolume": 919,
+      "preMarketDollarVolume": 17240.440000000002,
+      "relVolume": 0.0003086200018000035,
+      "avgVolume50": 2977772,
+      "sharesOutstanding": 6214872,
+      "marketCap": 116590998.72000001,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 67,
+      "float": {
+        "shares": 6214872,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-04-30"
+      },
+      "floatRotation": 0.00014787110659720748,
+      "daysUp": 0,
+      "priorRunPct": 6.481481481481481,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "919"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$18.76"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "6.2M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "GOSS",
+      "name": "Gossamer Bio Inc.",
+      "legalName": "Gossamer Bio, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 1.82,
-      "preMarketChangePct": 5.2,
-      "prevClose": 1.7300380228136882,
-      "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 6:52 AM ET",
-      "preMarketVolume": 3194,
-      "preMarketDollarVolume": 5813.08,
-      "relVolume": 0.035991165599927884,
-      "avgVolume50": 88744,
-      "sharesOutstanding": 4825723,
-      "marketCap": 8782815.86,
+      "preMarketPrice": 11.52,
+      "preMarketChangePct": 5.30164533820841,
+      "prevClose": 10.94,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 29, 2026 7:18 AM ET",
+      "preMarketVolume": 4197.0375,
+      "preMarketDollarVolume": 48349.872,
+      "relVolume": 0.00014138509124545745,
+      "avgVolume50": 29685149,
+      "sharesOutstanding": 488846722,
+      "marketCap": 5631514237.44,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 19,
+      "bestPriorSpikePct": 47,
       "float": {
-        "shares": 4825723,
+        "shares": 488846722,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-10"
+        "asOf": "2026-08-08"
       },
-      "floatRotation": 0.0006618697343382536,
+      "floatRotation": 0.000008585589942853295,
       "daysUp": 1,
-      "priorRunPct": -3.174603174603166,
+      "priorRunPct": 1.9571295433364313,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "8-K",
-        "headline": "Regulation FD disclosure (company announcement)",
-        "subject": "Regulation FD disclosure (company announcement)",
-        "date": "2026-09-29"
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-09-28"
       },
       "leads": [
         "8-K"
@@ -238,12 +443,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.2%"
+          "detail": "5.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "3,194"
+          "detail": "4,197"
         },
         {
           "name": "News catalyst",
@@ -252,81 +457,81 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.82"
+          "ok": true,
+          "detail": "$11.52"
         },
         {
           "name": "Float <10M",
-          "ok": true,
-          "detail": "4.8M"
+          "ok": false,
+          "detail": "488.8M"
         }
       ],
       "passed": 2,
       "quality": "low"
     },
     {
-      "symbol": "JAGU",
-      "name": "Jaguar Uranium Corp. Class A Common Shares",
-      "legalName": "Jaguar Uranium Corp.",
-      "business": "Metal Mining",
-      "sector": "Basic Materials",
-      "preMarketPrice": 1.48,
-      "preMarketChangePct": 5.71,
-      "prevClose": 1.4000567590577997,
+      "symbol": "ZSQR",
+      "name": "Z Squared Inc.",
+      "legalName": "Z Squared Inc.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 4.78,
+      "preMarketChangePct": 5.29,
+      "prevClose": 4.539842340203249,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 7:00 AM ET",
-      "preMarketVolume": 26075,
-      "preMarketDollarVolume": 38591,
-      "relVolume": 0.31102019394777963,
-      "avgVolume50": 83837,
-      "sharesOutstanding": 20193777,
-      "marketCap": 29886789.96,
+      "lastTradeAt": "Sep 29, 2026 7:20 AM ET",
+      "preMarketVolume": 5035,
+      "preMarketDollarVolume": 24067.300000000003,
+      "relVolume": 0.011318065745935836,
+      "avgVolume50": 444864,
+      "sharesOutstanding": 53000397,
+      "marketCap": 253341897.66000003,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 57,
+      "bestPriorSpikePct": 21,
       "float": {
-        "shares": 20193777,
+        "shares": 53000397,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-12"
+        "asOf": "2026-08-11"
       },
-      "floatRotation": 0.00129123937537787,
-      "daysUp": 0,
-      "priorRunPct": -11.11111111111112,
-      "extended": false,
+      "floatRotation": 0.0000949992884015567,
+      "daysUp": 4,
+      "priorRunPct": 41.04477611940297,
+      "extended": true,
       "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Jaguar Uranium Receives EIA Approval for the La Rosada Prospect at the Laguna Salada Project, Argentina",
-        "subject": "FDA / clinical",
-        "date": "2026-09-29"
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
       },
       "leads": [
-        "PR Newswire"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.7%"
+          "detail": "5.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "26,075"
+          "detail": "5,035"
         },
         {
           "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
+          "ok": false,
+          "detail": "none found"
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.48"
+          "ok": true,
+          "detail": "$4.78"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "20.2M"
+          "detail": "53.0M"
         }
       ],
       "passed": 1,
