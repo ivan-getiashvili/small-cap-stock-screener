@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-09-29T19:45:09.734Z",
+ "updatedAt": "2026-09-29T21:10:59.369Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -4603,7 +4603,10 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 8.25
+     }
     },
     {
      "symbol": "MEDS",
@@ -4624,7 +4627,10 @@
      "missing": [
       "Up ≥10% pre-market"
      ],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 3.74
+     }
     },
     {
      "symbol": "JELD",
@@ -4645,7 +4651,10 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 1.875
+     }
     },
     {
      "symbol": "ATOS",
@@ -4666,7 +4675,10 @@
      "missing": [
       "Pre-market volume ≥50k"
      ],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 2.115
+     }
     }
    ]
   }
