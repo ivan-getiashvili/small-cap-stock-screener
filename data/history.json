@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-09-29T00:57:22.869Z",
+ "updatedAt": "2026-09-29T11:00:38.468Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -4406,7 +4406,22 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 4.5,
+      "high": 4.64,
+      "low": 3.9,
+      "close": 4.57,
+      "volume": 7548589,
+      "prevClose": 4.87,
+      "gapPct": -7.5975359342915825,
+      "openToHighPct": 3.111111111111104,
+      "openToClosePct": 1.555555555555562,
+      "openToLowPct": -13.333333333333336,
+      "alertToHighPct": -32.62570968069814,
+      "alertToClosePct": -33.64213216396346,
+      "filledAt": "2026-09-29T11:00:37.746Z",
+      "noon": 4.37
+     },
      "intraday": {
       "noon": 4.37
      }
@@ -4430,7 +4445,22 @@
      "missing": [
       "Price $2–$20"
      ],
-     "performance": null,
+     "performance": {
+      "open": 1,
+      "high": 1.1,
+      "low": 0.93,
+      "close": 0.9706,
+      "volume": 47073500,
+      "prevClose": 1.095,
+      "gapPct": -8.675799086757989,
+      "openToHighPct": 10.000000000000009,
+      "openToClosePct": -2.939999999999998,
+      "openToLowPct": -6.999999999999995,
+      "alertToHighPct": -39.89071038251366,
+      "alertToClosePct": -46.961748633879786,
+      "filledAt": "2026-09-29T11:00:37.917Z",
+      "noon": 0.9898
+     },
      "intraday": {
       "noon": 0.9898
      }
@@ -4454,7 +4484,22 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 10.88,
+      "high": 11.23,
+      "low": 9.47,
+      "close": 9.6,
+      "volume": 15129890,
+      "prevClose": 9.75,
+      "gapPct": 11.589743589743598,
+      "openToHighPct": 3.2169117647058787,
+      "openToClosePct": -11.764705882352951,
+      "openToLowPct": -12.959558823529413,
+      "alertToHighPct": 5.233566040387953,
+      "alertToClosePct": -10.040762779365602,
+      "filledAt": "2026-09-29T11:00:38.091Z",
+      "noon": 9.7
+     },
      "intraday": {
       "noon": 9.7
      }
@@ -4476,7 +4521,22 @@
      "catalyst": "Contract or partnership",
      "extended": false,
      "missing": [],
-     "performance": null,
+     "performance": {
+      "open": 4.6,
+      "high": 5.14,
+      "low": 4.45,
+      "close": 4.62,
+      "volume": 7784229,
+      "prevClose": 4.39,
+      "gapPct": 4.783599088838268,
+      "openToHighPct": 11.739130434782611,
+      "openToClosePct": 0.43478260869566226,
+      "openToLowPct": -3.26086956521738,
+      "alertToHighPct": 4.471544715447149,
+      "alertToClosePct": -6.097560975609753,
+      "filledAt": "2026-09-29T11:00:38.294Z",
+      "noon": 4.6
+     },
      "intraday": {
       "noon": 4.6
      }
@@ -4498,12 +4558,32 @@
      "catalyst": "Merger or acquisition",
      "extended": true,
      "missing": [],
-     "performance": null,
+     "performance": {
+      "open": 1.77,
+      "high": 1.86,
+      "low": 1.21,
+      "close": 1.26,
+      "volume": 17279770,
+      "prevClose": 1.62,
+      "gapPct": 9.259259259259252,
+      "openToHighPct": 5.084745762711869,
+      "openToClosePct": -28.8135593220339,
+      "openToLowPct": -31.63841807909605,
+      "alertToHighPct": -22.17898832684824,
+      "alertToClosePct": -47.282540479477845,
+      "filledAt": "2026-09-29T11:00:38.468Z",
+      "noon": 1.38
+     },
      "intraday": {
       "noon": 1.38
      }
     }
    ]
+  },
+  "2026-09-29": {
+   "date": "2026-09-29",
+   "source": "live",
+   "names": []
   }
  }
 }
