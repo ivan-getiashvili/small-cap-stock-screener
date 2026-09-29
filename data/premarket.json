@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-09-29T12:20:58.407Z",
+  "generatedAt": "2026-09-29T12:40:53.744Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-28",
   "universeChecked": 6020,
   "smallCapsInBand": 2982,
-  "investigated": 78,
-  "liveQuotes": 65,
+  "investigated": 80,
+  "liveQuotes": 68,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-28T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 137,
+    "edgarFilings": 144,
     "leads": {
-      "8-K": 58,
+      "8-K": 61,
       "PR Newswire": 1,
       "GlobeNewswire": 6,
       "prior-session gainer": 14
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 78,
-    "answered": 78,
+    "requested": 80,
+    "answered": 80,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "SOUNDTHINKING, INC.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 8.25,
-      "preMarketChangePct": 50.82,
-      "prevClose": 5.470096804137382,
+      "preMarketPrice": 8.2801,
+      "preMarketChangePct": 51.37,
+      "prevClose": 5.470106361894694,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 8:20 AM ET",
-      "preMarketVolume": 1570850.451445,
-      "preMarketDollarVolume": 12959516.22442125,
-      "relVolume": 12.95204936796062,
+      "lastTradeAt": "Sep 29, 2026 8:40 AM ET",
+      "preMarketVolume": 1648580.361633,
+      "preMarketDollarVolume": 13650410.252357401,
+      "relVolume": 13.592951646847842,
       "avgVolume50": 121282,
       "sharesOutstanding": 13163790,
-      "marketCap": 108601267.5,
+      "marketCap": 108997497.57899998,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 9,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-05"
       },
-      "floatRotation": 0.11933116917278383,
+      "floatRotation": 0.12523599674812497,
       "daysUp": 1,
       "priorRunPct": 1.0752688172042941,
       "extended": false,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "50.8%"
+          "detail": "51.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,570,850"
+          "detail": "1,648,580"
         },
         {
           "name": "News catalyst",
@@ -116,7 +116,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.25"
+          "detail": "$8.28"
         },
         {
           "name": "Float <10M",
@@ -126,43 +126,41 @@
       ],
       "passed": 4,
       "quality": "medium"
-    }
-  ],
-  "alsoRan": [
+    },
     {
-      "symbol": "FFAI",
-      "name": "Faraday Future Intelligent Electric Inc. Class A",
-      "legalName": "FARADAY FUTURE INTELLIGENT ELECTRIC INC.",
-      "business": "Motor Vehicles & Passenger Car Bodies",
-      "sector": "Industrials",
-      "preMarketPrice": 1.59,
-      "preMarketChangePct": 12.77,
-      "prevClose": 1.4099494546421922,
+      "symbol": "JELD",
+      "name": "JELD-WEN Holding Inc.",
+      "legalName": "JELD-WEN Holding, Inc.",
+      "business": "Millwood, Veneer, Plywood, & Structural Wood Members",
+      "sector": "Basic Materials",
+      "preMarketPrice": 2.03,
+      "preMarketChangePct": 14.69,
+      "prevClose": 1.7699886650972183,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 8:20 AM ET",
-      "preMarketVolume": 7848993.96414,
-      "preMarketDollarVolume": 12479900.4029826,
-      "relVolume": 0.5341446543055876,
-      "avgVolume50": 14694510,
-      "sharesOutstanding": 29516511,
-      "marketCap": 46931252.49,
+      "lastTradeAt": "Sep 29, 2026 8:40 AM ET",
+      "preMarketVolume": 108851.664893,
+      "preMarketDollarVolume": 220968.87973278997,
+      "relVolume": 0.06842444817673793,
+      "avgVolume50": 1590830,
+      "sharesOutstanding": 86763382,
+      "marketCap": 176129665.45999998,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 86,
+      "bestPriorSpikePct": 26,
       "float": {
-        "shares": 29516511,
+        "shares": 86763382,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2021-08-13"
+        "asOf": "2026-07-31"
       },
-      "floatRotation": 0.2659187586276711,
+      "floatRotation": 0.001254580704253783,
       "daysUp": 1,
-      "priorRunPct": -8.522727272727268,
+      "priorRunPct": 4.545454545454549,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-09-28"
+        "headline": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
+        "date": "2026-09-29"
       },
       "leads": [
         "8-K"
@@ -171,12 +169,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "12.8%"
+          "detail": "14.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "7,848,994"
+          "detail": "108,852"
         },
         {
           "name": "News catalyst",
@@ -185,32 +183,34 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.59"
+          "ok": true,
+          "detail": "$2.03"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "29.5M"
+          "detail": "86.8M"
         }
       ],
-      "passed": 3,
-      "quality": "low"
-    },
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
+  "alsoRan": [
     {
       "symbol": "VACI",
       "name": "Viking Acquisition Corp. I Class A Ordinary Shares",
       "legalName": "Viking Acquisition Corp I",
       "business": "Communications Services, NEC",
       "sector": "Telecommunications",
-      "preMarketPrice": 7.04,
-      "preMarketChangePct": 12.46,
-      "prevClose": 6.260003556820203,
+      "preMarketPrice": 7.05,
+      "preMarketChangePct": 12.62,
+      "prevClose": 6.2599893446989885,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 8:19 AM ET",
-      "preMarketVolume": 288,
-      "preMarketDollarVolume": 2027.52,
-      "relVolume": 0.0015427221546686094,
+      "lastTradeAt": "Sep 29, 2026 8:40 AM ET",
+      "preMarketVolume": 2499,
+      "preMarketDollarVolume": 17617.95,
+      "relVolume": 0.01338632869623908,
       "avgVolume50": 186683,
       "sharesOutstanding": null,
       "marketCap": null,
@@ -235,12 +235,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "12.5%"
+          "detail": "12.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "288"
+          "detail": "2,499"
         },
         {
           "name": "News catalyst",
@@ -250,7 +250,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$7.04"
+          "detail": "$7.05"
         },
         {
           "name": "Float <10M",
@@ -262,33 +262,33 @@
       "quality": "low"
     },
     {
-      "symbol": "AVX",
-      "name": "Avax One Technology Ltd. Common Shares",
-      "legalName": "AVAX ONE TECHNOLOGY LTD.",
+      "symbol": "CANG",
+      "name": "Cango Inc. Class A Ordinary Shares",
+      "legalName": "Cango Inc.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 6.97,
-      "preMarketChangePct": 10.28,
-      "prevClose": 6.3202756619513965,
-      "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 8:20 AM ET",
-      "preMarketVolume": 32459.630599,
-      "preMarketDollarVolume": 226243.62527503,
-      "relVolume": 0.7707379935652381,
-      "avgVolume50": 42115,
-      "sharesOutstanding": 7397383,
-      "marketCap": 51559759.51,
+      "preMarketPrice": 2.29,
+      "preMarketChangePct": 19.89528795811519,
+      "prevClose": 1.91,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 29, 2026 8:39 AM ET",
+      "preMarketVolume": 12467,
+      "preMarketDollarVolume": 28549.43,
+      "relVolume": 0.02997819024740964,
+      "avgVolume50": 415869,
+      "sharesOutstanding": 41021966.81222707,
+      "marketCap": 93940303.99999999,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 22,
+      "bestPriorSpikePct": 32,
       "float": {
-        "shares": 7397383,
+        "shares": 41021966.81222707,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-12"
+        "asOf": "2026-09-29"
       },
-      "floatRotation": 0.004387988373591039,
-      "daysUp": 2,
-      "priorRunPct": 55.26992287917737,
-      "extended": true,
+      "floatRotation": 0.00030391034289180074,
+      "daysUp": 0,
+      "priorRunPct": -28.464419475655433,
+      "extended": false,
       "catalyst": {
         "found": false,
         "kind": null,
@@ -297,18 +297,18 @@
         "date": null
       },
       "leads": [
-        "8-K"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "10.3%"
+          "detail": "19.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "32,460"
+          "detail": "12,467"
         },
         {
           "name": "News catalyst",
@@ -318,15 +318,15 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.97"
+          "detail": "$2.29"
         },
         {
           "name": "Float <10M",
-          "ok": true,
-          "detail": "7.4M"
+          "ok": false,
+          "detail": "41.0M"
         }
       ],
-      "passed": 3,
+      "passed": 2,
       "quality": "low"
     },
     {
@@ -466,6 +466,74 @@
       "quality": "low"
     },
     {
+      "symbol": "AVX",
+      "name": "Avax One Technology Ltd. Common Shares",
+      "legalName": "AVAX ONE TECHNOLOGY LTD.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 6.92,
+      "preMarketChangePct": 9.49,
+      "prevClose": 6.320211891496941,
+      "closeReconciled": true,
+      "lastTradeAt": "Sep 29, 2026 8:40 AM ET",
+      "preMarketVolume": 42200.630599,
+      "preMarketDollarVolume": 292028.36374507996,
+      "relVolume": 1.002033256535676,
+      "avgVolume50": 42115,
+      "sharesOutstanding": 7397383,
+      "marketCap": 51189890.36,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 22,
+      "float": {
+        "shares": 7397383,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-12"
+      },
+      "floatRotation": 0.005704805415509782,
+      "daysUp": 2,
+      "priorRunPct": 55.26992287917737,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "9.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "42,201"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$6.92"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "7.4M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
       "symbol": "NXL",
       "name": "Nexalin Technology Inc.",
       "legalName": "Nexalin Technology, Inc.",
@@ -534,22 +602,90 @@
       "quality": "low"
     },
     {
+      "symbol": "FFAI",
+      "name": "Faraday Future Intelligent Electric Inc. Class A",
+      "legalName": "FARADAY FUTURE INTELLIGENT ELECTRIC INC.",
+      "business": "Motor Vehicles & Passenger Car Bodies",
+      "sector": "Industrials",
+      "preMarketPrice": 1.5197,
+      "preMarketChangePct": 7.78,
+      "prevClose": 1.4100018556318425,
+      "closeReconciled": true,
+      "lastTradeAt": "Sep 29, 2026 8:40 AM ET",
+      "preMarketVolume": 8362635.96414,
+      "preMarketDollarVolume": 12708697.874703558,
+      "relVolume": 0.5690993414642611,
+      "avgVolume50": 14694510,
+      "sharesOutstanding": 29516511,
+      "marketCap": 44856241.7667,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 86,
+      "float": {
+        "shares": 29516511,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2021-08-13"
+      },
+      "floatRotation": 0.283320612119095,
+      "daysUp": 1,
+      "priorRunPct": -8.522727272727268,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-09-28"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "8,362,636"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.52"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "29.5M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
       "symbol": "AIXC",
       "name": "AIxCrypto Holdings Inc.",
       "legalName": "AIxCrypto Holdings, Inc.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 1.7744,
-      "preMarketChangePct": 6.89,
-      "prevClose": 1.6600243240714754,
+      "preMarketPrice": 1.7836,
+      "preMarketChangePct": 7.45,
+      "prevClose": 1.6599348534201954,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 8:17 AM ET",
-      "preMarketVolume": 71496,
-      "preMarketDollarVolume": 126862.5024,
-      "relVolume": 0.04545795571448009,
+      "lastTradeAt": "Sep 29, 2026 8:39 AM ET",
+      "preMarketVolume": 73015,
+      "preMarketDollarVolume": 130229.554,
+      "relVolume": 0.04642375288817226,
       "avgVolume50": 1572794,
       "sharesOutstanding": 20234993,
-      "marketCap": 35904971.5792,
+      "marketCap": 36091133.514800005,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 86,
       "float": {
@@ -557,7 +693,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-07"
       },
-      "floatRotation": 0.0035332851362982927,
+      "floatRotation": 0.0036083531138360165,
       "daysUp": 1,
       "priorRunPct": 58.71559633027522,
       "extended": true,
@@ -575,12 +711,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.9%"
+          "detail": "7.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "71,496"
+          "detail": "73,015"
         },
         {
           "name": "News catalyst",
@@ -590,7 +726,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.77"
+          "detail": "$1.78"
         },
         {
           "name": "Float <10M",
@@ -607,17 +743,17 @@
       "legalName": "Bloomin' Brands, Inc.",
       "business": "Retail-Eating  Places",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 8.38,
-      "preMarketChangePct": 6.412698412698423,
+      "preMarketPrice": 8.36,
+      "preMarketChangePct": 6.158730158730152,
       "prevClose": 7.875,
       "closeReconciled": false,
-      "lastTradeAt": "Sep 29, 2026 8:18 AM ET",
-      "preMarketVolume": 45944.937171,
-      "preMarketDollarVolume": 385018.57349298004,
-      "relVolume": 0.023345387810383058,
+      "lastTradeAt": "Sep 29, 2026 8:40 AM ET",
+      "preMarketVolume": 46663.937171,
+      "preMarketDollarVolume": 390110.51474956,
+      "relVolume": 0.023710723685654647,
       "avgVolume50": 1968052,
       "sharesOutstanding": 85620917,
-      "marketCap": 717503284.46,
+      "marketCap": 715790866.12,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 41,
       "float": {
@@ -625,7 +761,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 0.0005366087958506681,
+      "floatRotation": 0.0005450062765737489,
       "daysUp": 0,
       "priorRunPct": -2.416356877323423,
       "extended": false,
@@ -643,12 +779,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.4%"
+          "detail": "6.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "45,945"
+          "detail": "46,664"
         },
         {
           "name": "News catalyst",
@@ -658,7 +794,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.38"
+          "detail": "$8.36"
         },
         {
           "name": "Float <10M",
@@ -667,74 +803,6 @@
         }
       ],
       "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "JELD",
-      "name": "JELD-WEN Holding Inc.",
-      "legalName": "JELD-WEN Holding, Inc.",
-      "business": "Millwood, Veneer, Plywood, & Structural Wood Members",
-      "sector": "Basic Materials",
-      "preMarketPrice": 1.87,
-      "preMarketChangePct": 5.65,
-      "prevClose": 1.7699952673923334,
-      "closeReconciled": true,
-      "lastTradeAt": "Sep 29, 2026 7:58 AM ET",
-      "preMarketVolume": 10462.664893,
-      "preMarketDollarVolume": 19565.18334991,
-      "relVolume": 0.006576859182313635,
-      "avgVolume50": 1590830,
-      "sharesOutstanding": 86763382,
-      "marketCap": 162247524.34,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 26,
-      "float": {
-        "shares": 86763382,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-31"
-      },
-      "floatRotation": 0.00012058848620031893,
-      "daysUp": 1,
-      "priorRunPct": 4.545454545454549,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
-        "date": "2026-09-29"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "10,463"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.87"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "86.8M"
-        }
-      ],
-      "passed": 1,
       "quality": "low"
     },
     {
