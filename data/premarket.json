@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-30T12:40:23.063Z",
+  "generatedAt": "2026-09-30T13:00:23.344Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-29",
   "universeChecked": 6025,
   "smallCapsInBand": 2994,
-  "investigated": 113,
-  "liveQuotes": 84,
+  "investigated": 111,
+  "liveQuotes": 83,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-29T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 175,
+    "edgarFilings": 181,
     "leads": {
-      "8-K": 80,
-      "PR Newswire": 0,
-      "GlobeNewswire": 13,
+      "8-K": 82,
+      "PR Newswire": 1,
+      "GlobeNewswire": 6,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 113,
-    "answered": 113,
+    "requested": 111,
+    "answered": 111,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,68 +60,68 @@
   "shortlist": [],
   "watchlist": [
     {
-      "symbol": "ATXG",
-      "name": "Addentax Group Corp.",
-      "legalName": "ADDENTAX GROUP CORP.",
-      "business": "Services-Mailing, Reproduction, Commercial Art & Photography",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.8997,
-      "preMarketChangePct": 14.360703812316716,
-      "prevClose": 3.41,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 30, 2026 8:27 AM ET",
-      "preMarketVolume": 14062,
-      "preMarketDollarVolume": 54837.5814,
-      "relVolume": 0.7819607406995496,
-      "avgVolume50": 17983,
-      "sharesOutstanding": 1177974,
-      "marketCap": 4593745.2078,
+      "symbol": "ERNA",
+      "name": "Ernexa Therapeutics Inc.",
+      "legalName": "Ernexa Therapeutics Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 3.53,
+      "preMarketChangePct": 13.5,
+      "prevClose": 3.110132158590308,
+      "closeReconciled": true,
+      "lastTradeAt": "Sep 30, 2026 9:00 AM ET",
+      "preMarketVolume": 3297,
+      "preMarketDollarVolume": 11638.41,
+      "relVolume": 0.005751317028922304,
+      "avgVolume50": 573260,
+      "sharesOutstanding": 1632411,
+      "marketCap": 5762410.83,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 31,
+      "bestPriorSpikePct": 67,
       "float": {
-        "shares": 1177974,
+        "shares": 1632411,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-14"
+        "asOf": "2026-08-06"
       },
-      "floatRotation": 0.011937445138857054,
-      "daysUp": 0,
-      "priorRunPct": -2.571428571428567,
+      "floatRotation": 0.0020197119475426225,
+      "daysUp": 1,
+      "priorRunPct": -12.373737373737367,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution)",
-        "date": "2026-09-30"
+        "kind": "news",
+        "headline": "Ernexa Selected For Emerging Track At 2026 Cell & Gene Meeting On The Mesa ",
+        "subject": null,
+        "date": "2026-09-29"
       },
       "leads": [
-        "8-K"
+        "GlobeNewswire"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "14.4%"
+          "detail": "13.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "14,062"
+          "detail": "3,297"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.90"
+          "detail": "$3.53"
         },
         {
           "name": "Float <10M",
           "ok": true,
-          "detail": "1.2M"
+          "detail": "1.6M"
         }
       ],
       "passed": 4,
@@ -133,17 +133,17 @@
       "legalName": "Sagimet Biosciences Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 10.4897,
-      "preMarketChangePct": 12.43,
-      "prevClose": 9.329983100595925,
+      "preMarketPrice": 10.47,
+      "preMarketChangePct": 12.22,
+      "prevClose": 9.329887720548921,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 30, 2026 8:40 AM ET",
-      "preMarketVolume": 324822.512432,
-      "preMarketDollarVolume": 3407290.70865795,
-      "relVolume": 0.2895240319773531,
+      "lastTradeAt": "Sep 30, 2026 9:00 AM ET",
+      "preMarketVolume": 366659.512432,
+      "preMarketDollarVolume": 3838925.0951630403,
+      "relVolume": 0.32681460286526925,
       "avgVolume50": 1121919,
       "sharesOutstanding": 30674855,
-      "marketCap": 321770026.4935,
+      "marketCap": 321165731.85,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 39,
       "float": {
@@ -151,7 +151,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2024-11-08"
       },
-      "floatRotation": 0.010589211014428593,
+      "floatRotation": 0.011953096842087762,
       "daysUp": 2,
       "priorRunPct": -7.9629629629629735,
       "extended": true,
@@ -169,12 +169,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "12.4%"
+          "detail": "12.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "324,823"
+          "detail": "366,660"
         },
         {
           "name": "News catalyst",
@@ -184,7 +184,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$10.49"
+          "detail": "$10.47"
         },
         {
           "name": "Float <10M",
@@ -203,17 +203,17 @@
       "legalName": "Connect Biopharma Holdings Ltd",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 1.7377,
-      "preMarketChangePct": 75.17,
-      "prevClose": 0.9920077638865102,
+      "preMarketPrice": 1.8999,
+      "preMarketChangePct": 91.52,
+      "prevClose": 0.9920112781954886,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 30, 2026 8:40 AM ET",
-      "preMarketVolume": 69443847.804005,
-      "preMarketDollarVolume": 120672574.32901949,
-      "relVolume": 101.182752391381,
+      "lastTradeAt": "Sep 30, 2026 9:00 AM ET",
+      "preMarketVolume": 84806777.804005,
+      "preMarketDollarVolume": 161124397.1498291,
+      "relVolume": 123.56721971789439,
       "avgVolume50": 686321,
       "sharesOutstanding": 62974309,
-      "marketCap": 109430456.7493,
+      "marketCap": 119644889.6691,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 26,
       "float": {
@@ -221,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-31"
       },
-      "floatRotation": 1.1027329859864758,
+      "floatRotation": 1.3466885012427052,
       "daysUp": 0,
       "priorRunPct": -18.18181818181818,
       "extended": false,
@@ -239,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "75.2%"
+          "detail": "91.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "69,443,848"
+          "detail": "84,806,778"
         },
         {
           "name": "News catalyst",
@@ -254,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.74"
+          "detail": "$1.90"
         },
         {
           "name": "Float <10M",
@@ -271,17 +271,17 @@
       "legalName": "Nautilus Biotechnology, Inc.",
       "business": "Laboratory Analytical Instruments",
       "sector": "Industrials",
-      "preMarketPrice": 1.63,
-      "preMarketChangePct": 19.41,
-      "prevClose": 1.3650448036177874,
+      "preMarketPrice": 1.59,
+      "preMarketChangePct": 16.48,
+      "prevClose": 1.3650412087912087,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 30, 2026 8:40 AM ET",
-      "preMarketVolume": 1713216.29038,
-      "preMarketDollarVolume": 2792542.5533193997,
-      "relVolume": 1.8987339939975219,
+      "lastTradeAt": "Sep 30, 2026 9:00 AM ET",
+      "preMarketVolume": 2856955.831477,
+      "preMarketDollarVolume": 4542559.7720484305,
+      "relVolume": 3.1663247583127005,
       "avgVolume50": 902294,
       "sharesOutstanding": 127255223,
-      "marketCap": 207426013.48999998,
+      "marketCap": 202335804.57000002,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 39,
       "float": {
@@ -289,7 +289,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-24"
       },
-      "floatRotation": 0.013462836730717135,
+      "floatRotation": 0.022450597815360396,
       "daysUp": 1,
       "priorRunPct": 16.266890122551597,
       "extended": false,
@@ -307,12 +307,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "19.4%"
+          "detail": "16.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,713,216"
+          "detail": "2,856,956"
         },
         {
           "name": "News catalyst",
@@ -322,12 +322,144 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.63"
+          "detail": "$1.59"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "127.3M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "XRPN",
+      "name": "Armada Acquisition Corp. II Class A Ordinary Shares",
+      "legalName": "Armada Acquisition Corp. II",
+      "business": "Blank Checks",
+      "sector": "Finance",
+      "preMarketPrice": 14.5565,
+      "preMarketChangePct": 12.84,
+      "prevClose": 12.900124069478908,
+      "closeReconciled": true,
+      "lastTradeAt": "Sep 30, 2026 9:00 AM ET",
+      "preMarketVolume": 201318.839886,
+      "preMarketDollarVolume": 2930497.692800559,
+      "relVolume": 3.8851890284269643,
+      "avgVolume50": 51817,
+      "sharesOutstanding": null,
+      "marketCap": null,
+      "floatPctOfShares": null,
+      "bestPriorSpikePct": 0,
+      "float": null,
+      "floatRotation": null,
+      "daysUp": 0,
+      "priorRunPct": 0.04730368968778624,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "12.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "201,319"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$14.56"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "unknown"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "AVAT",
+      "name": "Avalanche Treasury Corporation Class A",
+      "legalName": "Avalanche Treasury Corp",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 2.03,
+      "preMarketChangePct": 6.84,
+      "prevClose": 1.9000374391613626,
+      "closeReconciled": true,
+      "lastTradeAt": "Sep 30, 2026 9:00 AM ET",
+      "preMarketVolume": 61040.488665,
+      "preMarketDollarVolume": 123912.19198994998,
+      "relVolume": 0.11756778519204766,
+      "avgVolume50": 519194,
+      "sharesOutstanding": 43720444.21052632,
+      "marketCap": 88752501.74736841,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 16,
+      "float": {
+        "shares": 43720444.21052632,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-30"
+      },
+      "floatRotation": 0.0013961543567826704,
+      "daysUp": 0,
+      "priorRunPct": -10.69518716577541,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-09-29"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "61,040"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.03"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "43.7M"
         }
       ],
       "passed": 3,
@@ -538,29 +670,33 @@
       "quality": "low"
     },
     {
-      "symbol": "XRPN",
-      "name": "Armada Acquisition Corp. II Class A Ordinary Shares",
-      "legalName": "Armada Acquisition Corp. II",
-      "business": "Blank Checks",
-      "sector": "Finance",
-      "preMarketPrice": 13.86,
-      "preMarketChangePct": 7.44,
-      "prevClose": 12.900223380491436,
+      "symbol": "MSGY",
+      "name": "Masonglory Limited Class A Ordinary Shares",
+      "legalName": "Masonglory Ltd",
+      "business": "Construction - Special Trade Contractors",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 4.69,
+      "preMarketChangePct": 5.63,
+      "prevClose": 4.440026507620941,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 30, 2026 8:40 AM ET",
-      "preMarketVolume": 178004.682109,
-      "preMarketDollarVolume": 2467144.8940307396,
-      "relVolume": 3.435256423741243,
-      "avgVolume50": 51817,
-      "sharesOutstanding": null,
-      "marketCap": null,
-      "floatPctOfShares": null,
-      "bestPriorSpikePct": 0,
-      "float": null,
-      "floatRotation": null,
+      "lastTradeAt": "Sep 30, 2026 9:00 AM ET",
+      "preMarketVolume": 333704.998641,
+      "preMarketDollarVolume": 1565076.4436262902,
+      "relVolume": 0.24240189926416109,
+      "avgVolume50": 1376660,
+      "sharesOutstanding": 16957000,
+      "marketCap": 79528330,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 54,
+      "float": {
+        "shares": 16957000,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-03-31"
+      },
+      "floatRotation": 0.019679483319042283,
       "daysUp": 0,
-      "priorRunPct": 0.04730368968778624,
-      "extended": false,
+      "priorRunPct": 63.020833333333336,
+      "extended": true,
       "catalyst": {
         "found": false,
         "kind": null,
@@ -575,12 +711,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.4%"
+          "detail": "5.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "178,005"
+          "detail": "333,705"
         },
         {
           "name": "News catalyst",
@@ -590,65 +726,65 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$13.86"
+          "detail": "$4.69"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "unknown"
+          "detail": "17.0M"
         }
       ],
       "passed": 2,
       "quality": "low"
     },
     {
-      "symbol": "TOMZ",
-      "name": "TOMI Environmental Solutions Inc.",
-      "legalName": "TOMI Environmental Solutions, Inc.",
-      "business": "Industrial Organic Chemicals",
-      "sector": "Industrials",
-      "preMarketPrice": 1.4797,
-      "preMarketChangePct": 6.45,
-      "prevClose": 1.3900422733677784,
-      "closeReconciled": true,
-      "lastTradeAt": "Sep 30, 2026 6:18 AM ET",
-      "preMarketVolume": 2,
-      "preMarketDollarVolume": 2.9594,
-      "relVolume": 0.000038639876352395674,
-      "avgVolume50": 51760,
-      "sharesOutstanding": 8142577,
-      "marketCap": 12048571.186900001,
+      "symbol": "SRFM",
+      "name": "Surf Air Mobility Inc.",
+      "legalName": "SURF AIR MOBILITY INC.",
+      "business": "Air Transportation, Nonscheduled",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.25,
+      "preMarketChangePct": 5.042016806722694,
+      "prevClose": 1.19,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 30, 2026 9:00 AM ET",
+      "preMarketVolume": 1350707,
+      "preMarketDollarVolume": 1688383.75,
+      "relVolume": 0.4706356841534194,
+      "avgVolume50": 2869963,
+      "sharesOutstanding": 100396873,
+      "marketCap": 125496091.25,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 166,
+      "bestPriorSpikePct": 26,
       "float": {
-        "shares": 8142577,
+        "shares": 100396873,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-11"
+        "asOf": "2026-05-08"
       },
-      "floatRotation": 2.456224853630491e-7,
-      "daysUp": 0,
-      "priorRunPct": -4.895104895104884,
-      "extended": false,
+      "floatRotation": 0.013453675992478372,
+      "daysUp": 5,
+      "priorRunPct": 77.55893763055803,
+      "extended": true,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Project MEND Uses SteraMist to Safely Disinfect Medical Equipment for Reuse",
+        "headline": "Surf Air Mobility Names Jason Secore CFO ",
         "subject": null,
-        "date": "2026-09-30"
+        "date": "2026-09-28"
       },
       "leads": [
-        "GlobeNewswire"
+        "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.5%"
+          "detail": "5.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "2"
+          "ok": true,
+          "detail": "1,350,707"
         },
         {
           "name": "News catalyst",
@@ -658,149 +794,12 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.48"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "8.1M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "PWCM",
-      "name": "PowerCompute Inc.",
-      "legalName": "POWERCOMPUTE, INC.",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 1.04,
-      "preMarketChangePct": 5.38,
-      "prevClose": 0.9869045359650788,
-      "closeReconciled": true,
-      "lastTradeAt": "Sep 30, 2026 8:39 AM ET",
-      "preMarketVolume": 30847,
-      "preMarketDollarVolume": 32080.88,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 1794135,
-      "marketCap": 1865900.4000000001,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 1794135,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-07"
-      },
-      "floatRotation": 0.017193243540759195,
-      "daysUp": 0,
-      "priorRunPct": -1.9417475728155356,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "PowerCompute Repays Arch Bitcoin-Backed Facility, Releases All Bitcoin Collateral and Achieves Approximately 94% Reduction in Total Debt",
-        "subject": "Hot-sector announcement",
-        "date": "2026-09-30"
-      },
-      "leads": [
-        "GlobeNewswire",
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.4%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "30,847"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.04"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "1.8M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "AVAT",
-      "name": "Avalanche Treasury Corporation Class A",
-      "legalName": "Avalanche Treasury Corp",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 2,
-      "preMarketChangePct": 5.26,
-      "prevClose": 1.9000570017100513,
-      "closeReconciled": true,
-      "lastTradeAt": "Sep 30, 2026 8:40 AM ET",
-      "preMarketVolume": 43364.488665,
-      "preMarketDollarVolume": 86728.97733,
-      "relVolume": 0.08352270762951805,
-      "avgVolume50": 519194,
-      "sharesOutstanding": 43720444.21052632,
-      "marketCap": 87440888.42105263,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 16,
-      "float": {
-        "shares": 43720444.21052632,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-30"
-      },
-      "floatRotation": 0.000991858373080285,
-      "daysUp": 0,
-      "priorRunPct": -10.69518716577541,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-09-29"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "43,364"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.00"
+          "detail": "$1.25"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "43.7M"
+          "detail": "100.4M"
         }
       ],
       "passed": 2,
