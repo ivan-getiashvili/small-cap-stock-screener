@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-30T11:40:59.107Z",
+  "generatedAt": "2026-09-30T12:00:19.251Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-29",
   "universeChecked": 6025,
   "smallCapsInBand": 2994,
-  "investigated": 99,
-  "liveQuotes": 64,
+  "investigated": 100,
+  "liveQuotes": 69,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-29T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 153,
+    "edgarFilings": 156,
     "leads": {
       "8-K": 73,
       "PR Newswire": 1,
-      "GlobeNewswire": 4,
+      "GlobeNewswire": 5,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 99,
-    "answered": 99,
+    "requested": 100,
+    "answered": 100,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -58,7 +58,144 @@
     "floatStretch": 20000000
   },
   "shortlist": [],
-  "watchlist": [],
+  "watchlist": [
+    {
+      "symbol": "INKT",
+      "name": "MiNK Therapeutics Inc.",
+      "legalName": "MiNK Therapeutics, Inc.",
+      "business": "Biological Products, (No Diagnostic Substances)",
+      "sector": "Health Care",
+      "preMarketPrice": 13.69,
+      "preMarketChangePct": 13.047068538398019,
+      "prevClose": 12.11,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 30, 2026 7:59 AM ET",
+      "preMarketVolume": 3556.41,
+      "preMarketDollarVolume": 48687.2529,
+      "relVolume": 0.3186747311827957,
+      "avgVolume50": 11160,
+      "sharesOutstanding": 5103002,
+      "marketCap": 69860097.38,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 29,
+      "float": {
+        "shares": 5103002,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-11"
+      },
+      "floatRotation": 0.0006969250648931746,
+      "daysUp": 0,
+      "priorRunPct": -1.1428571428571475,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "MiNK Therapeutics Selected for ARPA-H-Funded Initiative to Advance Room-Temperature Cell Therapy",
+        "subject": null,
+        "date": "2026-09-30"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "13.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "3,556"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$13.69"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "5.1M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "SGMT",
+      "name": "Sagimet Biosciences Inc. Series A",
+      "legalName": "Sagimet Biosciences Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 10.5,
+      "preMarketChangePct": 12.54,
+      "prevClose": 9.330015994313133,
+      "closeReconciled": true,
+      "lastTradeAt": "Sep 30, 2026 7:59 AM ET",
+      "preMarketVolume": 237085.264659,
+      "preMarketDollarVolume": 2489395.2789195003,
+      "relVolume": 0.21132119578953562,
+      "avgVolume50": 1121919,
+      "sharesOutstanding": 30674855,
+      "marketCap": 322085977.5,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 39,
+      "float": {
+        "shares": 30674855,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2024-11-08"
+      },
+      "floatRotation": 0.007728977517872538,
+      "daysUp": 2,
+      "priorRunPct": -7.9629629629629735,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Sagimet Prices $115 Mln Stock Offering, Pre-market Shares Up ",
+        "subject": "Share offering (dilution)",
+        "date": "2026-09-30"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "12.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "237,085"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$10.50"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "30.7M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
   "alsoRan": [
     {
       "symbol": "CNTB",
@@ -66,17 +203,17 @@
       "legalName": "Connect Biopharma Holdings Ltd",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 1.5215,
-      "preMarketChangePct": 53.38,
-      "prevClose": 0.9919807015256227,
+      "preMarketPrice": 1.7975,
+      "preMarketChangePct": 81.2,
+      "prevClose": 0.9919977924944813,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 30, 2026 7:41 AM ET",
-      "preMarketVolume": 20960521,
-      "preMarketDollarVolume": 31891432.701500002,
-      "relVolume": 30.54040456287947,
+      "lastTradeAt": "Sep 30, 2026 8:00 AM ET",
+      "preMarketVolume": 41600629.492717,
+      "preMarketDollarVolume": 74777131.51315881,
+      "relVolume": 60.61395395553538,
       "avgVolume50": 686321,
       "sharesOutstanding": 62974309,
-      "marketCap": 95815411.1435,
+      "marketCap": 113196320.42750001,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 26,
       "float": {
@@ -84,14 +221,14 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-31"
       },
-      "floatRotation": 0.3328424135626482,
+      "floatRotation": 0.6605968394622163,
       "daysUp": 0,
       "priorRunPct": -18.18181818181818,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Connect Biopharma Advances Rademikibart Toward Phase 3 In COPD ",
+        "headline": "Connect Biopharma Reports Positive Phase 2 Rademikibart Data In Acute COPD ",
         "subject": "FDA / clinical",
         "date": "2026-09-30"
       },
@@ -102,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "53.4%"
+          "detail": "81.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "20,960,521"
+          "detail": "41,600,629"
         },
         {
           "name": "News catalyst",
@@ -117,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.52"
+          "detail": "$1.80"
         },
         {
           "name": "Float <10M",
@@ -129,90 +266,22 @@
       "quality": "low"
     },
     {
-      "symbol": "SANG",
-      "name": "Sangoma Technologies Corporation Common Shares",
-      "legalName": "Sangoma Technologies Corp",
-      "business": "Services-Computer Programming, Data Processing, Etc.",
-      "sector": "Technology",
-      "preMarketPrice": 4.93,
-      "preMarketChangePct": 37.325905292479106,
-      "prevClose": 3.59,
-      "closeReconciled": false,
-      "lastTradeAt": "Sep 30, 2026 7:40 AM ET",
-      "preMarketVolume": 6455,
-      "preMarketDollarVolume": 31823.149999999998,
-      "relVolume": 0.855306744401749,
-      "avgVolume50": 7547,
-      "sharesOutstanding": 33338932,
-      "marketCap": 164360934.76,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 13,
-      "float": {
-        "shares": 33338932,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-06-30"
-      },
-      "floatRotation": 0.00019361748000805784,
-      "daysUp": 1,
-      "priorRunPct": 3.160919540229881,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Tuesday Sector Leaders: Computers, Semiconductors  ",
-        "subject": null,
-        "date": "2026-09-29"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "37.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "6,455"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.93"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "33.3M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "NAUT",
       "name": "Nautilus Biotechnology Inc.",
       "legalName": "Nautilus Biotechnology, Inc.",
       "business": "Laboratory Analytical Instruments",
       "sector": "Industrials",
-      "preMarketPrice": 1.61,
-      "preMarketChangePct": 17.95,
-      "prevClose": 1.3649851632047478,
+      "preMarketPrice": 1.57,
+      "preMarketChangePct": 15.02,
+      "prevClose": 1.3649800034776562,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 30, 2026 7:41 AM ET",
-      "preMarketVolume": 1136549.459722,
-      "preMarketDollarVolume": 1829844.63015242,
-      "relVolume": 1.2596220962590907,
+      "lastTradeAt": "Sep 30, 2026 8:00 AM ET",
+      "preMarketVolume": 1329816.620403,
+      "preMarketDollarVolume": 2087812.09403271,
+      "relVolume": 1.4738174258091044,
       "avgVolume50": 902294,
       "sharesOutstanding": 127255223,
-      "marketCap": 204880909.03,
+      "marketCap": 199790700.11,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 39,
       "float": {
@@ -220,7 +289,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-24"
       },
-      "floatRotation": 0.008931259817304315,
+      "floatRotation": 0.010449996385633617,
       "daysUp": 1,
       "priorRunPct": 16.266890122551597,
       "extended": false,
@@ -238,12 +307,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "17.9%"
+          "detail": "15.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,136,549"
+          "detail": "1,329,817"
         },
         {
           "name": "News catalyst",
@@ -253,7 +322,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.61"
+          "detail": "$1.57"
         },
         {
           "name": "Float <10M",
@@ -265,158 +334,22 @@
       "quality": "low"
     },
     {
-      "symbol": "LONA",
-      "name": "LeonaBio Inc.",
-      "legalName": "LeonaBio, Inc.",
-      "business": "Biological Products, (No Diagnostic Substances)",
-      "sector": "Health Care",
-      "preMarketPrice": 3.89,
-      "preMarketChangePct": 10.83,
-      "prevClose": 3.5098799963908687,
-      "closeReconciled": true,
-      "lastTradeAt": "Sep 30, 2026 7:40 AM ET",
-      "preMarketVolume": 433.59163,
-      "preMarketDollarVolume": 1686.6714407000002,
-      "relVolume": 0.008932114414024679,
-      "avgVolume50": 48543,
-      "sharesOutstanding": 9421663,
-      "marketCap": 36650269.07,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 34,
-      "float": {
-        "shares": 9421663,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-04"
-      },
-      "floatRotation": 0.00004602071099337771,
-      "daysUp": 0,
-      "priorRunPct": -54.66034755134282,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.8%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "434"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.89"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "9.4M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "SGMT",
-      "name": "Sagimet Biosciences Inc. Series A",
-      "legalName": "Sagimet Biosciences Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 10.0345,
-      "preMarketChangePct": 7.55,
-      "prevClose": 9.330079033007904,
-      "closeReconciled": true,
-      "lastTradeAt": "Sep 30, 2026 7:39 AM ET",
-      "preMarketVolume": 156386.264659,
-      "preMarketDollarVolume": 1569257.9727207355,
-      "relVolume": 0.13939176059858155,
-      "avgVolume50": 1121919,
-      "sharesOutstanding": 30674855,
-      "marketCap": 307806832.4975,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 39,
-      "float": {
-        "shares": 30674855,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2024-11-08"
-      },
-      "floatRotation": 0.005098190836077302,
-      "daysUp": 2,
-      "priorRunPct": -7.9629629629629735,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Sagimet's Denifanstat Delivers Positive 52-Week Results In Acne Trial ",
-        "subject": "FDA / clinical",
-        "date": "2026-09-30"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.5%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "156,386"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$10.03"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "30.7M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "CNSY",
       "name": "Cerenome Inc. Common Stock",
       "legalName": "CERENOME, INC.",
       "business": "Surgical & Medical Instruments & Apparatus",
       "sector": "Health Care",
-      "preMarketPrice": 2,
-      "preMarketChangePct": 7.53,
-      "prevClose": 1.8599460615642147,
+      "preMarketPrice": 2.0076,
+      "preMarketChangePct": 7.94,
+      "prevClose": 1.8599221789883271,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 30, 2026 7:31 AM ET",
-      "preMarketVolume": 3410,
-      "preMarketDollarVolume": 6820,
+      "lastTradeAt": "Sep 30, 2026 7:59 AM ET",
+      "preMarketVolume": 5396,
+      "preMarketDollarVolume": 10833.0096,
       "relVolume": null,
       "avgVolume50": null,
       "sharesOutstanding": 7589625,
-      "marketCap": 15179250,
+      "marketCap": 15236931.15,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": null,
       "float": {
@@ -424,7 +357,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-05"
       },
-      "floatRotation": 0.0004492975608149283,
+      "floatRotation": 0.0007109705683745903,
       "daysUp": 2,
       "priorRunPct": 6.315789473684216,
       "extended": true,
@@ -442,12 +375,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.5%"
+          "detail": "7.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "3,410"
+          "detail": "5,396"
         },
         {
           "name": "News catalyst",
@@ -457,7 +390,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.00"
+          "detail": "$2.01"
         },
         {
           "name": "Float <10M",
@@ -469,19 +402,223 @@
       "quality": "low"
     },
     {
+      "symbol": "AIFU",
+      "name": "AIFU Inc. Class A Ordinary Share",
+      "legalName": "AIFU Inc.",
+      "business": "Insurance Agents, Brokers & Service",
+      "sector": "Finance",
+      "preMarketPrice": 10.83,
+      "preMarketChangePct": 22.928490351872867,
+      "prevClose": 8.81,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 30, 2026 8:00 AM ET",
+      "preMarketVolume": 30,
+      "preMarketDollarVolume": 324.9,
+      "relVolume": 0.0011024547993532265,
+      "avgVolume50": 27212,
+      "sharesOutstanding": 1134236184,
+      "marketCap": 12283777872.72,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 29,
+      "float": {
+        "shares": 1134236184,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2023-12-31"
+      },
+      "floatRotation": 2.6449517678233406e-8,
+      "daysUp": 0,
+      "priorRunPct": -19.690063810391976,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "22.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "30"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$10.83"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "1134.2M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "ITG",
+      "name": "ITG Inc. Class A",
+      "legalName": "ITG, Inc./DE/",
+      "business": "Water, Sewer, Pipeline, Comm & Power Line Construction",
+      "sector": "Industrials",
+      "preMarketPrice": 8.16,
+      "preMarketChangePct": 15.49893842887473,
+      "prevClose": 7.065,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 30, 2026 7:51 AM ET",
+      "preMarketVolume": 542,
+      "preMarketDollarVolume": 4422.72,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 124157218.99509804,
+      "marketCap": 1013122907,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 124157218.99509804,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-30"
+      },
+      "floatRotation": 0.000004365432830944765,
+      "daysUp": 0,
+      "priorRunPct": -39.4082332761578,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "15.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "542"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$8.16"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "124.2M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "AVAT",
+      "name": "Avalanche Treasury Corporation Class A",
+      "legalName": "Avalanche Treasury Corp",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 1.9,
+      "preMarketChangePct": 13.77245508982036,
+      "prevClose": 1.67,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 30, 2026 8:00 AM ET",
+      "preMarketVolume": 33504.488665,
+      "preMarketDollarVolume": 63658.52846349999,
+      "relVolume": 0.06453173315754804,
+      "avgVolume50": 519194,
+      "sharesOutstanding": 43720444.21052632,
+      "marketCap": 83068844,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 16,
+      "float": {
+        "shares": 43720444.21052632,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-30"
+      },
+      "floatRotation": 0.0007663345894581126,
+      "daysUp": 0,
+      "priorRunPct": -10.69518716577541,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-09-29"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "13.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "33,504"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.90"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "43.7M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
       "symbol": "XRPN",
       "name": "Armada Acquisition Corp. II Class A Ordinary Shares",
       "legalName": "Armada Acquisition Corp. II",
       "business": "Blank Checks",
       "sector": "Finance",
-      "preMarketPrice": 14.0485,
-      "preMarketChangePct": 8.9,
-      "prevClose": 12.90036730945822,
+      "preMarketPrice": 14.1,
+      "preMarketChangePct": 9.3,
+      "prevClose": 12.900274473924977,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 30, 2026 7:40 AM ET",
-      "preMarketVolume": 122536.079219,
-      "preMarketDollarVolume": 1721448.1089081217,
-      "relVolume": 2.3647852870486523,
+      "lastTradeAt": "Sep 30, 2026 7:58 AM ET",
+      "preMarketVolume": 136544.796668,
+      "preMarketDollarVolume": 1925281.6330187998,
+      "relVolume": 2.6351351229905244,
       "avgVolume50": 51817,
       "sharesOutstanding": null,
       "marketCap": null,
@@ -506,12 +643,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.9%"
+          "detail": "9.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "122,536"
+          "detail": "136,545"
         },
         {
           "name": "News catalyst",
@@ -521,7 +658,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$14.05"
+          "detail": "$14.10"
         },
         {
           "name": "Float <10M",
@@ -533,22 +670,90 @@
       "quality": "low"
     },
     {
+      "symbol": "WVE",
+      "name": "Wave Life Sciences Inc.",
+      "legalName": "Wave Life Sciences, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 3.86,
+      "preMarketChangePct": 5.177111716621252,
+      "prevClose": 3.67,
+      "closeReconciled": false,
+      "lastTradeAt": "Sep 30, 2026 7:59 AM ET",
+      "preMarketVolume": 16155,
+      "preMarketDollarVolume": 62358.299999999996,
+      "relVolume": 0.005360584325259883,
+      "avgVolume50": 3013664,
+      "sharesOutstanding": 197048175,
+      "marketCap": 760605955.5,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 147,
+      "float": {
+        "shares": 197048175,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-23"
+      },
+      "floatRotation": 0.00008198502726554051,
+      "daysUp": 0,
+      "priorRunPct": -13.748531139835487,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "4 RNA Therapeutics Stocks Leading the Next Wave of Innovation",
+        "subject": null,
+        "date": "2026-09-28"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "16,155"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.86"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "197.0M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
       "symbol": "NNVC",
       "name": "NanoViricides Inc.",
       "legalName": "NANOVIRICIDES, INC.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 1.4,
-      "preMarketChangePct": 7.69,
-      "prevClose": 1.3000278577398086,
+      "preMarketPrice": 1.38,
+      "preMarketChangePct": 6.15,
+      "prevClose": 1.3000471031559113,
       "closeReconciled": true,
-      "lastTradeAt": "Sep 30, 2026 7:35 AM ET",
-      "preMarketVolume": 8036,
-      "preMarketDollarVolume": 11250.4,
-      "relVolume": 0.02307040838297567,
+      "lastTradeAt": "Sep 30, 2026 7:53 AM ET",
+      "preMarketVolume": 11620,
+      "preMarketDollarVolume": 16035.599999999999,
+      "relVolume": 0.03335964975238642,
       "avgVolume50": 348325,
       "sharesOutstanding": 25525000,
-      "marketCap": 35735000,
+      "marketCap": 35224500,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 22,
       "float": {
@@ -556,7 +761,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-09-28"
       },
-      "floatRotation": 0.00031482859941234085,
+      "floatRotation": 0.00045523996082272284,
       "daysUp": 1,
       "priorRunPct": -11.242603550295856,
       "extended": false,
@@ -574,12 +779,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.7%"
+          "detail": "6.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "8,036"
+          "detail": "11,620"
         },
         {
           "name": "News catalyst",
@@ -589,7 +794,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.40"
+          "detail": "$1.38"
         },
         {
           "name": "Float <10M",
