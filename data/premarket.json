@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-01T11:20:38.180Z",
+  "generatedAt": "2026-10-01T11:40:35.720Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-09-30",
   "universeChecked": 6026,
   "smallCapsInBand": 2980,
-  "investigated": 82,
-  "liveQuotes": 60,
+  "investigated": 79,
+  "liveQuotes": 63,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-09-30T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 158,
+    "edgarFilings": 160,
     "leads": {
-      "8-K": 53,
+      "8-K": 54,
       "PR Newswire": 2,
-      "GlobeNewswire": 10,
+      "GlobeNewswire": 5,
       "prior-session gainer": 18
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 82,
-    "answered": 82,
+    "requested": 79,
+    "answered": 79,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,22 +60,158 @@
   "shortlist": [],
   "watchlist": [
     {
+      "symbol": "INSG",
+      "name": "Inseego Corp.",
+      "legalName": "INSEEGO CORP.",
+      "business": "Communications Equipment, NEC",
+      "sector": "Telecommunications",
+      "preMarketPrice": 4.13,
+      "preMarketChangePct": 12.84,
+      "prevClose": 3.660049627791563,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 1, 2026 7:37 AM ET",
+      "preMarketVolume": 60571.988573,
+      "preMarketDollarVolume": 250162.31280649,
+      "relVolume": 0.18106052661266217,
+      "avgVolume50": 334540,
+      "sharesOutstanding": 16420592,
+      "marketCap": 67817044.96,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 23,
+      "float": {
+        "shares": 16420592,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-29"
+      },
+      "floatRotation": 0.0036887822663762672,
+      "daysUp": 1,
+      "priorRunPct": -8.510638297872347,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Completed an acquisition or disposal of assets · Sold unregistered shares (dilution) · Regulation FD disclosure (company announcement)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Completed an acquisition or disposal of assets · Sold unregistered shares (dilution) · Regulation FD disclosure (company announcement)",
+        "date": "2026-10-01"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "12.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "60,572"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.13"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "16.4M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "GLUE",
+      "name": "Monte Rosa Therapeutics Inc.",
+      "legalName": "Monte Rosa Therapeutics, Inc.",
+      "business": "Biological Products, (No Diagnostic Substances)",
+      "sector": "Health Care",
+      "preMarketPrice": 13.2213,
+      "preMarketChangePct": 12.617546848381595,
+      "prevClose": 11.74,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 1, 2026 7:39 AM ET",
+      "preMarketVolume": 241745.844538,
+      "preMarketDollarVolume": 3196194.3343902593,
+      "relVolume": 0.1876435251493218,
+      "avgVolume50": 1288325,
+      "sharesOutstanding": 85313401,
+      "marketCap": 1127954068.6413,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 45,
+      "float": {
+        "shares": 85313401,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-31"
+      },
+      "floatRotation": 0.00283362099862834,
+      "daysUp": 1,
+      "priorRunPct": -6.825396825396821,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "HC Wainwright & Co. initiates coverage of Monte Rosa Therapeutics with a Buy rating",
+        "subject": null,
+        "date": "2026-10-01"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "12.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "241,746"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$13.22"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "85.3M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
       "symbol": "SDOT",
       "name": "Sadot Group Inc.",
       "legalName": "Sadot Group Inc.",
       "business": "Retail-Eating & Drinking Places",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 11.52,
-      "preMarketChangePct": 5.69,
-      "prevClose": 10.899801305705365,
+      "preMarketPrice": 11.98,
+      "preMarketChangePct": 9.91,
+      "prevClose": 10.899827131289237,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 1, 2026 7:20 AM ET",
-      "preMarketVolume": 241029,
-      "preMarketDollarVolume": 2776654.08,
-      "relVolume": 0.10919882623120454,
+      "lastTradeAt": "Oct 1, 2026 7:40 AM ET",
+      "preMarketVolume": 263644,
+      "preMarketDollarVolume": 3158455.12,
+      "relVolume": 0.11944461182222758,
       "avgVolume50": 2207249,
       "sharesOutstanding": 1320015,
-      "marketCap": 15206572.799999999,
+      "marketCap": 15813779.700000001,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 247,
       "float": {
@@ -83,7 +219,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.1825956523221327,
+      "floatRotation": 0.19972803339355993,
       "daysUp": 0,
       "priorRunPct": -12.393887945670622,
       "extended": false,
@@ -102,12 +238,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.7%"
+          "detail": "9.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "241,029"
+          "detail": "263,644"
         },
         {
           "name": "News catalyst",
@@ -117,7 +253,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$11.52"
+          "detail": "$11.98"
         },
         {
           "name": "Float <10M",
@@ -267,74 +403,6 @@
       "quality": "low"
     },
     {
-      "symbol": "INSG",
-      "name": "Inseego Corp.",
-      "legalName": "INSEEGO CORP.",
-      "business": "Communications Equipment, NEC",
-      "sector": "Telecommunications",
-      "preMarketPrice": 4.0079,
-      "preMarketChangePct": 9.51,
-      "prevClose": 3.6598484156698023,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 1, 2026 7:19 AM ET",
-      "preMarketVolume": 57746.988573,
-      "preMarketDollarVolume": 231444.15550172672,
-      "relVolume": 0.1726160954534585,
-      "avgVolume50": 334540,
-      "sharesOutstanding": 16420592,
-      "marketCap": 65812090.676800005,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 23,
-      "float": {
-        "shares": 16420592,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-29"
-      },
-      "floatRotation": 0.0035167421840211367,
-      "daysUp": 1,
-      "priorRunPct": -8.510638297872347,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Completed an acquisition or disposal of assets · Sold unregistered shares (dilution) · Regulation FD disclosure (company announcement)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Completed an acquisition or disposal of assets · Sold unregistered shares (dilution) · Regulation FD disclosure (company announcement)",
-        "date": "2026-10-01"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.5%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "57,747"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.01"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "16.4M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "BSET",
       "name": "Bassett Furniture Industries Incorporated",
       "legalName": "BASSETT FURNITURE INDUSTRIES INC",
@@ -403,106 +471,38 @@
       "quality": "low"
     },
     {
-      "symbol": "AIB",
-      "name": "AIB Data Centers Inc.",
-      "legalName": "AIB Data Centers Inc.",
-      "business": "Commodity Contracts Brokers & Dealers",
-      "sector": "Finance",
-      "preMarketPrice": 1.41,
-      "preMarketChangePct": 6.02,
-      "prevClose": 1.3299377475947933,
+      "symbol": "INGN",
+      "name": "Inogen Inc",
+      "legalName": "Inogen Inc",
+      "business": "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
+      "sector": "Health Care",
+      "preMarketPrice": 5.7798,
+      "preMarketChangePct": 9.67,
+      "prevClose": 5.270174158840157,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 1, 2026 7:20 AM ET",
-      "preMarketVolume": 534971,
-      "preMarketDollarVolume": 754309.11,
-      "relVolume": 0.5150196536377281,
-      "avgVolume50": 1038739,
-      "sharesOutstanding": 75979466,
-      "marketCap": 107131047.05999999,
+      "lastTradeAt": "Oct 1, 2026 7:28 AM ET",
+      "preMarketVolume": 1005,
+      "preMarketDollarVolume": 5808.699,
+      "relVolume": 0.004303165502742465,
+      "avgVolume50": 233549,
+      "sharesOutstanding": 26538337,
+      "marketCap": 153386280.19259998,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 28,
+      "bestPriorSpikePct": 8,
       "float": {
-        "shares": 75979466,
+        "shares": 26538337,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-13"
+        "asOf": "2026-08-01"
       },
-      "floatRotation": 0.00704099447079557,
-      "daysUp": 1,
-      "priorRunPct": 25.735294117647044,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Regulation FD disclosure (company announcement)",
-        "subject": "Regulation FD disclosure (company announcement)",
-        "date": "2026-09-30"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "534,971"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.41"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "76.0M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "CYCU",
-      "name": "Cycurion Inc.",
-      "legalName": "Cycurion, Inc.",
-      "business": "Services-Computer Programming Services",
-      "sector": "Technology",
-      "preMarketPrice": 2.79,
-      "preMarketChangePct": 5.283018867924533,
-      "prevClose": 2.65,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 1, 2026 7:19 AM ET",
-      "preMarketVolume": 11898.02214,
-      "preMarketDollarVolume": 33195.481770599996,
-      "relVolume": 0.0005311180039963676,
-      "avgVolume50": 22401843,
-      "sharesOutstanding": 25840335,
-      "marketCap": 72094534.65,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 68,
-      "float": {
-        "shares": 25840335,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-10"
-      },
-      "floatRotation": 0.00046044380384387427,
+      "floatRotation": 0.00003786974293076465,
       "daysUp": 0,
-      "priorRunPct": -17.956656346749227,
+      "priorRunPct": 2.6768642447418673,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "8-K",
-        "headline": "Executive or board change · Other material event (often FDA, clinical or contract news)",
-        "subject": "Executive or board change · Other material event (often FDA, clinical or contract news)",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
         "date": "2026-09-30"
       },
       "leads": [
@@ -512,12 +512,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.3%"
+          "detail": "9.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "11,898"
+          "detail": "1,005"
         },
         {
           "name": "News catalyst",
@@ -527,51 +527,51 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.79"
+          "detail": "$5.78"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "25.8M"
+          "detail": "26.5M"
         }
       ],
       "passed": 2,
       "quality": "low"
     },
     {
-      "symbol": "GENB",
-      "name": "Generate Biomedicines Inc.",
-      "legalName": "Generate Biomedicines, Inc.",
+      "symbol": "WVE",
+      "name": "Wave Life Sciences Inc.",
+      "legalName": "Wave Life Sciences, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 15.78,
-      "preMarketChangePct": 5.06,
-      "prevClose": 15.019988577955454,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 1, 2026 7:20 AM ET",
-      "preMarketVolume": 4094.682076,
-      "preMarketDollarVolume": 64614.083159279995,
-      "relVolume": 0.0043438818924033985,
-      "avgVolume50": 942632,
-      "sharesOutstanding": 128352436,
-      "marketCap": 2025401440.08,
+      "preMarketPrice": 3.8445,
+      "preMarketChangePct": 5.618131868131866,
+      "prevClose": 3.64,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 1, 2026 7:39 AM ET",
+      "preMarketVolume": 1548,
+      "preMarketDollarVolume": 5951.286,
+      "relVolume": 0.0005136604478800556,
+      "avgVolume50": 3013664,
+      "sharesOutstanding": 197048175,
+      "marketCap": 757551708.7875,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 15,
+      "bestPriorSpikePct": 147,
       "float": {
-        "shares": 128352436,
+        "shares": 197048175,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-29"
+        "asOf": "2026-07-23"
       },
-      "floatRotation": 0.00003190186492448028,
-      "daysUp": 1,
-      "priorRunPct": -11.683848797250864,
+      "floatRotation": 0.000007855946902324774,
+      "daysUp": 0,
+      "priorRunPct": -16.32183908045976,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Roswell Park, Generate Biomedicines Launch Exclusive Clinical Trial of ‘Armored’ CAR T Therapy for Ovarian Cancer",
-        "subject": "FDA / clinical",
-        "date": "2026-10-01"
+        "headline": "Wave Life Science Advance Liver-Focused SiRNA Program With GSK; Stock Up ",
+        "subject": null,
+        "date": "2026-09-30"
       },
       "leads": [
         "GlobeNewswire"
@@ -580,12 +580,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.1%"
+          "detail": "5.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "4,095"
+          "detail": "1,548"
         },
         {
           "name": "News catalyst",
@@ -595,12 +595,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$15.78"
+          "detail": "$3.84"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "128.4M"
+          "detail": "197.0M"
         }
       ],
       "passed": 2,
