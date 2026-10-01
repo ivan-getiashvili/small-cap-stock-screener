@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-10-01T00:31:09.887Z",
+ "updatedAt": "2026-10-01T11:00:44.306Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -4765,7 +4765,22 @@
      "missing": [
       "Pre-market volume ≥50k"
      ],
-     "performance": null,
+     "performance": {
+      "open": 12.62,
+      "high": 12.98,
+      "low": 12.19,
+      "close": 12.55,
+      "volume": 61135,
+      "prevClose": 12.26,
+      "gapPct": 2.9363784665579074,
+      "openToHighPct": 2.8526148969889165,
+      "openToClosePct": -0.5546751188589423,
+      "openToLowPct": -3.4072900158478587,
+      "alertToHighPct": -5.186267348429504,
+      "alertToClosePct": -8.327246165083995,
+      "filledAt": "2026-10-01T11:00:43.635Z",
+      "noon": 12.51
+     },
      "intraday": {
       "noon": 12.51
      }
@@ -4789,7 +4804,22 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 10.61,
+      "high": 10.93,
+      "low": 9.46,
+      "close": 9.88,
+      "volume": 5453770,
+      "prevClose": 9.33,
+      "gapPct": 13.719185423365483,
+      "openToHighPct": 3.016022620169654,
+      "openToClosePct": -6.880301602262004,
+      "openToLowPct": -10.838831291234671,
+      "alertToHighPct": 4.095238095238093,
+      "alertToClosePct": -5.904761904761897,
+      "filledAt": "2026-10-01T11:00:43.773Z",
+      "noon": 9.93
+     },
      "intraday": {
       "noon": 9.93
      }
@@ -4813,7 +4843,22 @@
      "missing": [
       "Pre-market volume ≥50k"
      ],
-     "performance": null,
+     "performance": {
+      "open": 3.55,
+      "high": 3.7366,
+      "low": 3.2905,
+      "close": 3.69,
+      "volume": 38015,
+      "prevClose": 3.42,
+      "gapPct": 3.801169590643272,
+      "openToHighPct": 5.256338028169023,
+      "openToClosePct": 3.9436619718309895,
+      "openToLowPct": -7.309859154929567,
+      "alertToHighPct": -4.678571428571423,
+      "alertToClosePct": -5.86734693877551,
+      "filledAt": "2026-10-01T11:00:44.050Z",
+      "noon": 3.35
+     },
      "intraday": {
       "noon": 3.35
      }
@@ -4837,12 +4882,32 @@
      "missing": [
       "Pre-market volume ≥50k"
      ],
-     "performance": null,
+     "performance": {
+      "open": 3.24,
+      "high": 3.47,
+      "low": 3.16,
+      "close": 3.2,
+      "volume": 42635,
+      "prevClose": 3.16,
+      "gapPct": 2.531645569620255,
+      "openToHighPct": 7.098765432098765,
+      "openToClosePct": -1.234567901234569,
+      "openToLowPct": -2.469135802469138,
+      "alertToHighPct": -1.699716713881009,
+      "alertToClosePct": -9.348441926345599,
+      "filledAt": "2026-10-01T11:00:44.306Z",
+      "noon": 3.23
+     },
      "intraday": {
       "noon": 3.23
      }
     }
    ]
+  },
+  "2026-10-01": {
+   "date": "2026-10-01",
+   "source": "live",
+   "names": []
   }
  }
 }
