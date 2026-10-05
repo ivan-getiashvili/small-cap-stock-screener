@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-05T11:40:55.368Z",
+  "generatedAt": "2026-10-05T12:00:53.980Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-02",
   "universeChecked": 6002,
   "smallCapsInBand": 2977,
-  "investigated": 81,
-  "liveQuotes": 64,
+  "investigated": 83,
+  "liveQuotes": 66,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-02T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 153,
+    "edgarFilings": 158,
     "leads": {
-      "8-K": 51,
-      "PR Newswire": 2,
+      "8-K": 52,
+      "PR Newswire": 3,
       "GlobeNewswire": 4,
       "prior-session gainer": 24
     },
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 81,
-    "answered": 81,
+    "requested": 83,
+    "answered": 83,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,90 +60,22 @@
   "shortlist": [],
   "watchlist": [
     {
-      "symbol": "VEEA",
-      "name": "Veea Inc.",
-      "legalName": "VEEA INC.",
-      "business": "Services-Computer Integrated Systems Design",
-      "sector": "Technology",
-      "preMarketPrice": 5.532,
-      "preMarketChangePct": 66.13,
-      "prevClose": 3.3299223499668935,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 5, 2026 7:40 AM ET",
-      "preMarketVolume": 23550253.509851,
-      "preMarketDollarVolume": 130280002.41649574,
-      "relVolume": 12.535925825300048,
-      "avgVolume50": 1878621,
-      "sharesOutstanding": 62214156,
-      "marketCap": 344168710.992,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 17,
-      "float": {
-        "shares": 62214156,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-10"
-      },
-      "floatRotation": 0.3785352888151533,
-      "daysUp": 1,
-      "priorRunPct": 14.144736842105269,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt)",
-        "date": "2026-10-02"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "66.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "23,550,254"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$5.53"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "62.2M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
       "symbol": "ALEC",
       "name": "Alector Inc.",
       "legalName": "Alector, Inc.",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 2.79,
-      "preMarketChangePct": 54.14,
-      "prevClose": 1.8100428182172053,
+      "preMarketPrice": 3.1385,
+      "preMarketChangePct": 73.4,
+      "prevClose": 1.8099769319492502,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 5, 2026 7:40 AM ET",
-      "preMarketVolume": 16801396.178109,
-      "preMarketDollarVolume": 46875895.33692411,
-      "relVolume": 14.458472931864947,
+      "lastTradeAt": "Oct 5, 2026 8:00 AM ET",
+      "preMarketVolume": 30807411.458093,
+      "preMarketDollarVolume": 96689060.86122487,
+      "relVolume": 26.511375599131703,
       "avgVolume50": 1162045,
       "sharesOutstanding": 111656919,
-      "marketCap": 311522804.01,
+      "marketCap": 350435240.2815,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 24,
       "float": {
@@ -151,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-31"
       },
-      "floatRotation": 0.1504733994864125,
+      "floatRotation": 0.27591135179086396,
       "daysUp": 1,
       "priorRunPct": -3.124999999999991,
       "extended": false,
@@ -169,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "54.1%"
+          "detail": "73.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "16,801,396"
+          "detail": "30,807,411"
         },
         {
           "name": "News catalyst",
@@ -184,12 +116,148 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.79"
+          "detail": "$3.14"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "111.7M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "VEEA",
+      "name": "Veea Inc.",
+      "legalName": "VEEA INC.",
+      "business": "Services-Computer Integrated Systems Design",
+      "sector": "Technology",
+      "preMarketPrice": 5.4101,
+      "preMarketChangePct": 62.47,
+      "prevClose": 3.3299070597648797,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 5, 2026 8:00 AM ET",
+      "preMarketVolume": 26606392.759545,
+      "preMarketDollarVolume": 143943245.4684144,
+      "relVolume": 14.162725083742275,
+      "avgVolume50": 1878621,
+      "sharesOutstanding": 62214156,
+      "marketCap": 336584805.3756,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 17,
+      "float": {
+        "shares": 62214156,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-10"
+      },
+      "floatRotation": 0.42765818055210775,
+      "daysUp": 1,
+      "priorRunPct": 14.144736842105269,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt)",
+        "date": "2026-10-02"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "62.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "26,606,393"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.41"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "62.2M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "PLRZ",
+      "name": "Polyrizon Ltd. Ordinary Shares",
+      "legalName": "Polyrizon Ltd.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 10.56,
+      "preMarketChangePct": 11.16,
+      "prevClose": 9.499820079165168,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 5, 2026 7:54 AM ET",
+      "preMarketVolume": 382,
+      "preMarketDollarVolume": 4033.92,
+      "relVolume": 0.005143049478290138,
+      "avgVolume50": 74275,
+      "sharesOutstanding": 1608266,
+      "marketCap": 16983288.96,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 132,
+      "float": {
+        "shares": 1608266,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-12-31"
+      },
+      "floatRotation": 0.0002375228973316603,
+      "daysUp": 0,
+      "priorRunPct": -1.8078020932445242,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Polyrizon Files for U.S. Patent Application to Expand IP Moat Around Intranasal Drug-Delivery Platform",
+        "subject": "Patent or licensing",
+        "date": "2026-10-05"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "11.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "382"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$10.56"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "1.6M"
         }
       ],
       "passed": 4,
@@ -203,17 +271,17 @@
       "legalName": "Stablecoin Development Corp",
       "business": "Finance Services",
       "sector": "Health Care",
-      "preMarketPrice": 11.23,
-      "preMarketChangePct": 50.13,
-      "prevClose": 7.480183840671418,
+      "preMarketPrice": 10.9,
+      "preMarketChangePct": 45.72,
+      "prevClose": 7.480098819654131,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 5, 2026 7:41 AM ET",
-      "preMarketVolume": 23473321.278191,
-      "preMarketDollarVolume": 263605397.95408493,
-      "relVolume": 21.88732214119568,
+      "lastTradeAt": "Oct 5, 2026 8:00 AM ET",
+      "preMarketVolume": 24677166.064102,
+      "preMarketDollarVolume": 268981110.09871185,
+      "relVolume": 23.0098279138114,
       "avgVolume50": 1072462,
       "sharesOutstanding": 50615437,
-      "marketCap": 568411357.51,
+      "marketCap": 551708263.3000001,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -221,7 +289,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-27"
       },
-      "floatRotation": 0.46375814710818364,
+      "floatRotation": 0.48754228999548105,
       "daysUp": 1,
       "priorRunPct": 183.72093023255815,
       "extended": true,
@@ -239,12 +307,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "50.1%"
+          "detail": "45.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "23,473,321"
+          "detail": "24,677,166"
         },
         {
           "name": "News catalyst",
@@ -254,7 +322,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$11.23"
+          "detail": "$10.90"
         },
         {
           "name": "Float <10M",
@@ -271,17 +339,17 @@
       "legalName": "Nautilus Biotechnology, Inc.",
       "business": "Laboratory Analytical Instruments",
       "sector": "Industrials",
-      "preMarketPrice": 2.1408,
-      "preMarketChangePct": 9.22,
-      "prevClose": 1.9600805713239333,
+      "preMarketPrice": 2.158,
+      "preMarketChangePct": 10.1,
+      "prevClose": 1.9600363306085375,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 5, 2026 7:40 AM ET",
-      "preMarketVolume": 1475691.569977,
-      "preMarketDollarVolume": 3159160.513006761,
-      "relVolume": 1.6354886211999635,
+      "lastTradeAt": "Oct 5, 2026 8:00 AM ET",
+      "preMarketVolume": 1579738.569977,
+      "preMarketDollarVolume": 3409075.8340103654,
+      "relVolume": 1.7508024767725374,
       "avgVolume50": 902294,
       "sharesOutstanding": 127255223,
-      "marketCap": 272427981.3984,
+      "marketCap": 274616771.23399997,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 39,
       "float": {
@@ -289,7 +357,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-24"
       },
-      "floatRotation": 0.011596314360920179,
+      "floatRotation": 0.01241393895460778,
       "daysUp": 4,
       "priorRunPct": 58.50580514891469,
       "extended": true,
@@ -306,13 +374,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.2%"
+          "ok": true,
+          "detail": "10.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,475,692"
+          "detail": "1,579,739"
         },
         {
           "name": "News catalyst",
@@ -322,7 +390,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.14"
+          "detail": "$2.16"
         },
         {
           "name": "Float <10M",
@@ -330,46 +398,116 @@
           "detail": "127.3M"
         }
       ],
-      "passed": 2,
+      "passed": 3,
       "quality": "low"
     },
     {
-      "symbol": "NXH",
-      "name": "Neighborhood Intelligence Inc.",
-      "legalName": "NEIGHBORHOOD INTELLIGENCE, INC.",
-      "business": "Retail-Catalog & Mail-Order Houses",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.9,
-      "preMarketChangePct": 5.07,
-      "prevClose": 2.7600647187589225,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 5, 2026 7:40 AM ET",
-      "preMarketVolume": 22655,
-      "preMarketDollarVolume": 65699.5,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 95330379,
-      "marketCap": 276458099.09999996,
+      "symbol": "CODX",
+      "name": "Co-Diagnostics Inc.",
+      "legalName": "Co-Diagnostics, Inc.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 1.1468,
+      "preMarketChangePct": 6.185185185185182,
+      "prevClose": 1.08,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 5, 2026 7:59 AM ET",
+      "preMarketVolume": 53321.777467,
+      "preMarketDollarVolume": 61149.414399155605,
+      "relVolume": 0.16496237259154303,
+      "avgVolume50": 323236,
+      "sharesOutstanding": 6252319,
+      "marketCap": 7170159.4292,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
+      "bestPriorSpikePct": 259,
       "float": {
-        "shares": 95330379,
+        "shares": 6252319,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-31"
+        "asOf": "2026-08-11"
       },
-      "floatRotation": 0.00023764722471102313,
-      "daysUp": 0,
-      "priorRunPct": -14.242424242424237,
+      "floatRotation": 0.008528320046849816,
+      "daysUp": 1,
+      "priorRunPct": -6.086956521739117,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "8-K",
-        "headline": "Terminated a material agreement · Earnings / results released · Regulation FD disclosure (company announcement)",
-        "subject": "Terminated a material agreement · Earnings / results released · Regulation FD disclosure (company announcement)",
+        "headline": "Shareholder vote results",
+        "subject": "Shareholder vote results",
         "date": "2026-10-05"
       },
       "leads": [
         "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "53,322"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.15"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "6.3M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "STI",
+      "name": "Solidion Technology Inc.",
+      "legalName": "Solidion Technology Inc.",
+      "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
+      "sector": "Miscellaneous",
+      "preMarketPrice": 5.58,
+      "preMarketChangePct": 5.08,
+      "prevClose": 5.3102398172820715,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 5, 2026 7:58 AM ET",
+      "preMarketVolume": 10108.95185,
+      "preMarketDollarVolume": 56407.951323,
+      "relVolume": 0.08593562957988336,
+      "avgVolume50": 117634,
+      "sharesOutstanding": 8512771,
+      "marketCap": 47501262.18,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 294,
+      "float": {
+        "shares": 8512771,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-05"
+      },
+      "floatRotation": 0.001187504262713046,
+      "daysUp": 0,
+      "priorRunPct": -6.948640483383685,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Solidion Technology (NASDAQ : STI) maintient sa position sur Flux Power (NASDAQ : FLUX) offre inférieure au cours du marché en réponse au rejet par le conseil d'administration de Flux",
+        "subject": null,
+        "date": "2026-10-05"
+      },
+      "leads": [
+        "PR Newswire",
+        "PR Newswire",
+        "PR Newswire"
       ],
       "checks": [
         {
@@ -380,25 +518,225 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "22,655"
+          "detail": "10,109"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.90"
+          "detail": "$5.58"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "8.5M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "RZLT",
+      "name": "Rezolute Inc. Common Stock (NV)",
+      "legalName": "Rezolute, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 4.31,
+      "preMarketChangePct": 5.89680589680588,
+      "prevClose": 4.07,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 5, 2026 7:34 AM ET",
+      "preMarketVolume": 28816,
+      "preMarketDollarVolume": 124196.95999999999,
+      "relVolume": 0.020689036232378312,
+      "avgVolume50": 1392815,
+      "sharesOutstanding": 96722333,
+      "marketCap": 416873255.22999996,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 29,
+      "float": {
+        "shares": 96722333,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-21"
+      },
+      "floatRotation": 0.0002979249890508741,
+      "daysUp": 0,
+      "priorRunPct": 3.2994923857868104,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "FDA Recommends Next Regulatory Step For Rezolute's Ersodetug;Stock Up ",
+        "subject": "FDA / clinical",
+        "date": "2026-10-05"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "28,816"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.31"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "95.3M"
+          "detail": "96.7M"
         }
       ],
       "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "XRPNU",
+      "name": "Armada Acquisition Corp. II Units",
+      "legalName": "Armada Acquisition Corp. II",
+      "business": "Blank Checks",
+      "sector": "Finance",
+      "preMarketPrice": 39.62,
+      "preMarketChangePct": 74.15384615384615,
+      "prevClose": 22.75,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 5, 2026 8:00 AM ET",
+      "preMarketVolume": null,
+      "preMarketDollarVolume": null,
+      "relVolume": null,
+      "avgVolume50": 8233,
+      "sharesOutstanding": null,
+      "marketCap": null,
+      "floatPctOfShares": null,
+      "bestPriorSpikePct": 12,
+      "float": null,
+      "floatRotation": null,
+      "daysUp": 4,
+      "priorRunPct": 100.26408450704227,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "74.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "unknown"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$39.62"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "unknown"
+        }
+      ],
+      "passed": 1,
+      "quality": "low"
+    },
+    {
+      "symbol": "TELA",
+      "name": "TELA Bio Inc.",
+      "legalName": "TELA Bio, Inc.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 1.2,
+      "preMarketChangePct": 5.26,
+      "prevClose": 1.1400342010260307,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 5, 2026 8:00 AM ET",
+      "preMarketVolume": 7802,
+      "preMarketDollarVolume": 9362.4,
+      "relVolume": 0.04192099381017882,
+      "avgVolume50": 186112,
+      "sharesOutstanding": 44894757,
+      "marketCap": 53873708.4,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 23,
+      "float": {
+        "shares": 44894757,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-05"
+      },
+      "floatRotation": 0.00017378421270884705,
+      "daysUp": 1,
+      "priorRunPct": -1.5748031496063006,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "TELA Bio Announces 510(k) Clearance for Liora™ Monofilament Scaffold for Soft Tissue Reinforcement",
+        "subject": "FDA / clinical",
+        "date": "2026-10-05"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "7,802"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.20"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "44.9M"
+        }
+      ],
+      "passed": 1,
       "quality": "low"
     }
   ]
