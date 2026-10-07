@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-10-07T00:38:23.260Z",
+ "updatedAt": "2026-10-07T11:00:49.944Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -5479,7 +5479,22 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 6.56,
+      "high": 7.27,
+      "low": 5.34,
+      "close": 5.62,
+      "volume": 27071690,
+      "prevClose": 4.73,
+      "gapPct": 38.68921775898518,
+      "openToHighPct": 10.823170731707316,
+      "openToClosePct": -14.32926829268292,
+      "openToLowPct": -18.597560975609753,
+      "alertToHighPct": 15.602340669126056,
+      "alertToClosePct": -10.634779290166646,
+      "filledAt": "2026-10-07T11:00:49.473Z",
+      "noon": 5.9
+     },
      "intraday": {
       "noon": 5.9
      }
@@ -5503,7 +5518,22 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 6.28,
+      "high": 6.78,
+      "low": 4.09,
+      "close": 4.61,
+      "volume": 70599440,
+      "prevClose": 3.1,
+      "gapPct": 102.58064516129033,
+      "openToHighPct": 7.961783439490445,
+      "openToClosePct": -26.59235668789809,
+      "openToLowPct": -34.87261146496816,
+      "alertToHighPct": 46.43628509719223,
+      "alertToClosePct": -0.43196544276456966,
+      "filledAt": "2026-10-07T11:00:49.653Z",
+      "noon": 4.29
+     },
      "intraday": {
       "noon": 4.29
      }
@@ -5527,7 +5557,22 @@
      "missing": [
       "News catalyst"
      ],
-     "performance": null,
+     "performance": {
+      "open": 6.705,
+      "high": 8.93,
+      "low": 6.705,
+      "close": 7.67,
+      "volume": 4761887,
+      "prevClose": 5.88,
+      "gapPct": 14.030612244897963,
+      "openToHighPct": 33.1841909023117,
+      "openToClosePct": 14.392244593586872,
+      "openToLowPct": 0,
+      "alertToHighPct": 37.38461538461538,
+      "alertToClosePct": 18,
+      "filledAt": "2026-10-07T11:00:49.799Z",
+      "noon": 8.0181
+     },
      "intraday": {
       "noon": 8.0181
      }
@@ -5551,10 +5596,50 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 15.605,
+      "high": 16.2458,
+      "low": 14.79,
+      "close": 15.17,
+      "volume": 5160003,
+      "prevClose": 14.33,
+      "gapPct": 8.897418004187022,
+      "openToHighPct": 4.106376161486694,
+      "openToClosePct": -2.7875680871515574,
+      "openToLowPct": -5.222685036847173,
+      "alertToHighPct": -1.1006538175885539,
+      "alertToClosePct": -7.649787539722161,
+      "filledAt": "2026-10-07T11:00:49.943Z",
+      "noon": 15.09
+     },
      "intraday": {
       "noon": 15.09
      }
+    }
+   ]
+  },
+  "2026-10-07": {
+   "date": "2026-10-07",
+   "source": "live",
+   "names": [
+    {
+     "symbol": "LPCN",
+     "legalName": "Lipocine Inc.",
+     "business": "Pharmaceutical Preparations",
+     "list": "shortlist",
+     "firstSeenAt": "2026-10-07T11:00:36.980Z",
+     "lastSeenAt": "2026-10-07T11:00:36.980Z",
+     "shortlistedAt": "2026-10-07T11:00:36.980Z",
+     "preMarketPrice": 3.32,
+     "preMarketChangePct": 58.1,
+     "prevClose": 2.0999367488931058,
+     "preMarketVolume": 10411084.184569,
+     "relVolume": 300.8809948722328,
+     "floatShares": 8244253,
+     "catalyst": "FDA / clinical",
+     "extended": false,
+     "missing": [],
+     "performance": null
     }
    ]
   }
