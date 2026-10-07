@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-07T12:40:58.312Z",
+  "generatedAt": "2026-10-07T13:01:33.058Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-06",
   "universeChecked": 5987,
   "smallCapsInBand": 2965,
-  "investigated": 105,
-  "liveQuotes": 77,
+  "investigated": 106,
+  "liveQuotes": 79,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-06T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 187,
+    "edgarFilings": 195,
     "leads": {
-      "8-K": 77,
+      "8-K": 80,
       "PR Newswire": 0,
-      "GlobeNewswire": 10,
+      "GlobeNewswire": 8,
       "prior-session gainer": 21
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 105,
-    "answered": 105,
+    "requested": 106,
+    "answered": 106,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Lipocine Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 2.9215,
-      "preMarketChangePct": 39.12,
-      "prevClose": 2.099985623921794,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 7, 2026 8:41 AM ET",
-      "preMarketVolume": 65943812.577266,
-      "preMarketDollarVolume": 192654848.44448262,
-      "relVolume": 1905.780376199815,
+      "preMarketPrice": 2.88,
+      "preMarketChangePct": 39.1304347826087,
+      "prevClose": 2.07,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 7, 2026 9:01 AM ET",
+      "preMarketVolume": 70302161.790023,
+      "preMarketDollarVolume": 202470225.95526624,
+      "relVolume": 2031.736945552945,
       "avgVolume50": 34602,
       "sharesOutstanding": 8244253,
-      "marketCap": 24085585.1395,
+      "marketCap": 23743448.64,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 22,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 7.998761388965865,
+      "floatRotation": 8.527414404922192,
       "daysUp": 1,
       "priorRunPct": -0.956937799043063,
       "extended": false,
@@ -105,7 +105,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "65,943,813"
+          "detail": "70,302,162"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.92"
+          "detail": "$2.88"
         },
         {
           "name": "Float <10M",
@@ -125,78 +125,78 @@
       ],
       "passed": 5,
       "quality": "high"
-    }
-  ],
-  "watchlist": [],
-  "alsoRan": [
+    },
     {
-      "symbol": "APUS",
-      "name": "Apimeds Pharmaceuticals US Inc.",
-      "legalName": "Apimeds Pharmaceuticals US, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 7.83,
-      "preMarketChangePct": 9.82,
-      "prevClose": 7.1298488435621925,
+      "symbol": "LGCL",
+      "name": "Lucas GC Limited Class A Ordinary Shares",
+      "legalName": "Lucas GC Ltd",
+      "business": "Services-Computer Programming, Data Processing, Etc.",
+      "sector": "Technology",
+      "preMarketPrice": 2.6981,
+      "preMarketChangePct": 19.38,
+      "prevClose": 2.2600938180599766,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 7, 2026 8:41 AM ET",
-      "preMarketVolume": 1998121.278237,
-      "preMarketDollarVolume": 15645289.60859571,
-      "relVolume": 15.866416362832913,
-      "avgVolume50": 125934,
-      "sharesOutstanding": 1509118,
-      "marketCap": 11816393.94,
+      "lastTradeAt": "Oct 7, 2026 9:01 AM ET",
+      "preMarketVolume": 329870,
+      "preMarketDollarVolume": 890022.2470000001,
+      "relVolume": 0.008362552536892756,
+      "avgVolume50": 39446090,
+      "sharesOutstanding": 2790404,
+      "marketCap": 7528789.032400001,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 60,
+      "bestPriorSpikePct": 117,
       "float": {
-        "shares": 1509118,
+        "shares": 2790404,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-12"
+        "asOf": "2025-12-31"
       },
-      "floatRotation": 1.3240324999350614,
-      "daysUp": 1,
-      "priorRunPct": -28.169014084507044,
+      "floatRotation": 0.11821585691534273,
+      "daysUp": 0,
+      "priorRunPct": -15.916955017301035,
       "extended": false,
       "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
+        "found": true,
+        "kind": "news",
+        "headline": "Lucas GC Limited Announces 1H 2026 Financial Results: Revenue at US$35.74 million with Increases in Gross Margin",
+        "subject": "Earnings or guidance",
+        "date": "2026-10-07"
       },
       "leads": [
-        "prior-session gainer"
+        "GlobeNewswire"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.8%"
+          "ok": true,
+          "detail": "19.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,998,121"
+          "detail": "329,870"
         },
         {
           "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
+          "ok": true,
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$7.83"
+          "detail": "$2.70"
         },
         {
           "name": "Float <10M",
           "ok": true,
-          "detail": "1.5M"
+          "detail": "2.8M"
         }
       ],
-      "passed": 3,
-      "quality": "low"
-    },
+      "passed": 5,
+      "quality": "high"
+    }
+  ],
+  "watchlist": [],
+  "alsoRan": [
     {
       "symbol": "SMXT",
       "name": "Solarmax Technology Inc.",
@@ -207,10 +207,10 @@
       "preMarketChangePct": 44.303797468354425,
       "prevClose": 2.37,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 7, 2026 8:38 AM ET",
-      "preMarketVolume": 18273,
-      "preMarketDollarVolume": 62493.659999999996,
-      "relVolume": 0.15217608554439616,
+      "lastTradeAt": "Oct 7, 2026 9:01 AM ET",
+      "preMarketVolume": 19332,
+      "preMarketDollarVolume": 66115.44,
+      "relVolume": 0.16099535302053666,
       "avgVolume50": 120078,
       "sharesOutstanding": 56906572,
       "marketCap": 194620476.24,
@@ -221,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-05-11"
       },
-      "floatRotation": 0.00032110526706827464,
+      "floatRotation": 0.000339714716957472,
       "daysUp": 2,
       "priorRunPct": 3.947368421052645,
       "extended": true,
@@ -244,7 +244,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "18,273"
+          "detail": "19,332"
         },
         {
           "name": "News catalyst",
@@ -334,39 +334,39 @@
       "quality": "low"
     },
     {
-      "symbol": "OPNW",
-      "name": "OpenWorld Inc.",
-      "legalName": "OpenWorld, Inc.",
-      "business": "Finance Services",
-      "sector": "Technology",
-      "preMarketPrice": 6.68,
-      "preMarketChangePct": 7.74,
-      "prevClose": 6.200111379246334,
+      "symbol": "BGLC",
+      "name": "BioNexus Gene Lab Corp",
+      "legalName": "BioNexus Gene Lab Corp",
+      "business": "Services-Medical Laboratories",
+      "sector": "Health Care",
+      "preMarketPrice": 1.34,
+      "preMarketChangePct": 8.06,
+      "prevClose": 1.2400518230612623,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 7, 2026 8:40 AM ET",
-      "preMarketVolume": 14124,
-      "preMarketDollarVolume": 94348.31999999999,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 13165196,
-      "marketCap": 87943509.28,
+      "lastTradeAt": "Oct 7, 2026 8:58 AM ET",
+      "preMarketVolume": 8117,
+      "preMarketDollarVolume": 10876.78,
+      "relVolume": 0.723569263683366,
+      "avgVolume50": 11218,
+      "sharesOutstanding": 2933442,
+      "marketCap": 3930812.2800000003,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
+      "bestPriorSpikePct": 26,
       "float": {
-        "shares": 13165196,
+        "shares": 2933442,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-07"
+        "asOf": "2026-08-14"
       },
-      "floatRotation": 0.001072828691650318,
-      "daysUp": 1,
-      "priorRunPct": 7.039711191335734,
-      "extended": false,
+      "floatRotation": 0.002767056584040182,
+      "daysUp": 2,
+      "priorRunPct": -1.5384615384615397,
+      "extended": true,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Regulation FD disclosure (company announcement)",
-        "subject": "Regulation FD disclosure (company announcement)",
-        "date": "2026-10-07"
+        "kind": "news",
+        "headline": "Ruanyun To License Cogni AI To BioNexus For Malaysian Healthcare Expansion ",
+        "subject": "Patent or licensing",
+        "date": "2026-10-06"
       },
       "leads": [
         "8-K"
@@ -375,27 +375,27 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.7%"
+          "detail": "8.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "14,124"
+          "detail": "8,117"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.68"
+          "ok": false,
+          "detail": "$1.34"
         },
         {
           "name": "Float <10M",
-          "ok": false,
-          "detail": "13.2M"
+          "ok": true,
+          "detail": "2.9M"
         }
       ],
       "passed": 2,
