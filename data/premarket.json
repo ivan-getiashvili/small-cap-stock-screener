@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-07T11:00:36.980Z",
+  "generatedAt": "2026-10-07T11:20:42.424Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-06",
-  "universeChecked": 5986,
-  "smallCapsInBand": 2964,
-  "investigated": 89,
-  "liveQuotes": 58,
+  "universeChecked": 5987,
+  "smallCapsInBand": 2965,
+  "investigated": 93,
+  "liveQuotes": 63,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-06T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 162,
+    "edgarFilings": 164,
     "leads": {
       "8-K": 65,
-      "PR Newswire": 1,
-      "GlobeNewswire": 3,
+      "PR Newswire": 2,
+      "GlobeNewswire": 6,
       "prior-session gainer": 21
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 89,
-    "answered": 89,
+    "requested": 93,
+    "answered": 93,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Lipocine Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 3.32,
-      "preMarketChangePct": 58.1,
-      "prevClose": 2.0999367488931058,
+      "preMarketPrice": 3.3315,
+      "preMarketChangePct": 58.64,
+      "prevClose": 2.1000378214826023,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 7, 2026 7:00 AM ET",
-      "preMarketVolume": 10411084.184569,
-      "preMarketDollarVolume": 34564799.49276908,
-      "relVolume": 300.8809948722328,
+      "lastTradeAt": "Oct 7, 2026 7:20 AM ET",
+      "preMarketVolume": 25256900.842557,
+      "preMarketDollarVolume": 84143365.15697865,
+      "relVolume": 729.9260401871858,
       "avgVolume50": 34602,
       "sharesOutstanding": 8244253,
-      "marketCap": 27370919.959999997,
+      "marketCap": 27465728.8695,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 22,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 1.2628292926683593,
+      "floatRotation": 3.0635766324198204,
       "daysUp": 1,
       "priorRunPct": -0.956937799043063,
       "extended": false,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "58.1%"
+          "detail": "58.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "10,411,084"
+          "detail": "25,256,901"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.32"
+          "detail": "$3.33"
         },
         {
           "name": "Float <10M",
@@ -127,7 +127,76 @@
       "quality": "high"
     }
   ],
-  "watchlist": [],
+  "watchlist": [
+    {
+      "symbol": "APUS",
+      "name": "Apimeds Pharmaceuticals US Inc.",
+      "legalName": "Apimeds Pharmaceuticals US, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 8.44,
+      "preMarketChangePct": 18.37,
+      "prevClose": 7.1301850130945335,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 7, 2026 7:20 AM ET",
+      "preMarketVolume": 1207216.278237,
+      "preMarketDollarVolume": 10188905.38832028,
+      "relVolume": 9.586102865286579,
+      "avgVolume50": 125934,
+      "sharesOutstanding": 1509118,
+      "marketCap": 12736955.92,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 60,
+      "float": {
+        "shares": 1509118,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-12"
+      },
+      "floatRotation": 0.7999482334959891,
+      "daysUp": 1,
+      "priorRunPct": -28.169014084507044,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "18.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "1,207,216"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$8.44"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "1.5M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
   "alsoRan": [
     {
       "symbol": "UUU",
@@ -135,17 +204,17 @@
       "legalName": "UNIVERSAL SAFETY PRODUCTS, INC.",
       "business": "Wholesale-Electronic Parts & Equipment, NEC",
       "sector": "Technology",
-      "preMarketPrice": 5.4,
-      "preMarketChangePct": 8.87,
-      "prevClose": 4.960044089280794,
+      "preMarketPrice": 5.23,
+      "preMarketChangePct": 5.44,
+      "prevClose": 4.960166919575114,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 7, 2026 6:43 AM ET",
-      "preMarketVolume": 2334,
-      "preMarketDollarVolume": 12603.6,
-      "relVolume": 0.07620726809677736,
+      "lastTradeAt": "Oct 7, 2026 7:11 AM ET",
+      "preMarketVolume": 2624,
+      "preMarketDollarVolume": 13723.52,
+      "relVolume": 0.0856760374832664,
       "avgVolume50": 30627,
       "sharesOutstanding": 3028463,
-      "marketCap": 16353700.200000001,
+      "marketCap": 15838861.490000002,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 38,
       "float": {
@@ -153,7 +222,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-14"
       },
-      "floatRotation": 0.0007706879694419248,
+      "floatRotation": 0.0008664461147453345,
       "daysUp": 0,
       "priorRunPct": -3.2786885245901667,
       "extended": false,
@@ -165,19 +234,18 @@
         "date": "2026-10-07"
       },
       "leads": [
-        "PR Newswire",
         "PR Newswire"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.9%"
+          "detail": "5.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "2,334"
+          "detail": "2,624"
         },
         {
           "name": "News catalyst",
@@ -187,7 +255,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.40"
+          "detail": "$5.23"
         },
         {
           "name": "Float <10M",
@@ -267,71 +335,71 @@
       "quality": "low"
     },
     {
-      "symbol": "MWYN",
-      "name": "Marwynn Holdings Inc.",
-      "legalName": "Marwynn Holdings, Inc.",
-      "business": "Wholesale-Groceries, General Line",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.47,
-      "preMarketChangePct": 16.666666666666664,
-      "prevClose": 1.26,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 7, 2026 6:35 AM ET",
-      "preMarketVolume": 18910,
-      "preMarketDollarVolume": 27797.7,
-      "relVolume": 0.07641916985585025,
-      "avgVolume50": 247451,
-      "sharesOutstanding": 20194804,
-      "marketCap": 29686361.88,
+      "symbol": "VRXA",
+      "name": "Veraxa Biotech AG Ordinary Shares",
+      "legalName": "Veraxa Biotech AG - Post de-SPAC",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 1.2,
+      "preMarketChangePct": 11.11,
+      "prevClose": 1.080010800108001,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 7, 2026 7:20 AM ET",
+      "preMarketVolume": 8833,
+      "preMarketDollarVolume": 10599.6,
+      "relVolume": 0.014945980930464725,
+      "avgVolume50": 590995,
+      "sharesOutstanding": 141407812.96296296,
+      "marketCap": 169689375.55555555,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 36,
+      "bestPriorSpikePct": 38,
       "float": {
-        "shares": 20194804,
+        "shares": 141407812.96296296,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-10"
+        "asOf": "2026-10-07"
       },
-      "floatRotation": 0.0009363794766218083,
-      "daysUp": 2,
-      "priorRunPct": 17.2093023255814,
-      "extended": true,
+      "floatRotation": 0.00006246472394218775,
+      "daysUp": 0,
+      "priorRunPct": -17.518248175182496,
+      "extended": false,
       "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
+        "found": true,
+        "kind": "news",
+        "headline": "VERAXA Biotech Provides Overview on Implementation of FDA-Aligned Human-Relevant Models into R&D Strategy",
+        "subject": "FDA / clinical",
+        "date": "2026-10-07"
       },
       "leads": [
-        "prior-session gainer"
+        "GlobeNewswire"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "16.7%"
+          "detail": "11.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "18,910"
+          "detail": "8,833"
         },
         {
           "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
+          "ok": true,
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.47"
+          "detail": "$1.20"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "20.2M"
+          "detail": "141.4M"
         }
       ],
-      "passed": 1,
+      "passed": 2,
       "quality": "low"
     },
     {
