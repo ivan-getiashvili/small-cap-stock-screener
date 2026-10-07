@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-07T11:40:45.105Z",
+  "generatedAt": "2026-10-07T12:00:48.843Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-06",
   "universeChecked": 5987,
   "smallCapsInBand": 2965,
-  "investigated": 96,
+  "investigated": 98,
   "liveQuotes": 67,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-06T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 166,
+    "edgarFilings": 169,
     "leads": {
-      "8-K": 66,
+      "8-K": 68,
       "PR Newswire": 2,
       "GlobeNewswire": 10,
       "prior-session gainer": 21
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 96,
-    "answered": 96,
+    "requested": 98,
+    "answered": 98,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Lipocine Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 3.6401,
-      "preMarketChangePct": 73.34,
-      "prevClose": 2.0999769239644626,
+      "preMarketPrice": 3.5388,
+      "preMarketChangePct": 68.51,
+      "prevClose": 2.100053409293217,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 7, 2026 7:40 AM ET",
-      "preMarketVolume": 41780851.891426,
-      "preMarketDollarVolume": 152086478.96997976,
-      "relVolume": 1207.4692760946186,
+      "lastTradeAt": "Oct 7, 2026 8:00 AM ET",
+      "preMarketVolume": 51152446.619847,
+      "preMarketDollarVolume": 181018278.09831458,
+      "relVolume": 1478.3089595932895,
       "avgVolume50": 34602,
       "sharesOutstanding": 8244253,
-      "marketCap": 30009905.3453,
+      "marketCap": 29174762.516400002,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 22,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 5.067875996943083,
+      "floatRotation": 6.204618734996003,
       "daysUp": 1,
       "priorRunPct": -0.956937799043063,
       "extended": false,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "73.3%"
+          "detail": "68.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "41,780,852"
+          "detail": "51,152,447"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.64"
+          "detail": "$3.54"
         },
         {
           "name": "Float <10M",
@@ -127,92 +127,25 @@
       "quality": "high"
     }
   ],
-  "watchlist": [
-    {
-      "symbol": "NXTS",
-      "name": "Nexentis Technologies Inc.",
-      "legalName": "Nexentis Technologies Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Industrials",
-      "preMarketPrice": 1.73,
-      "preMarketChangePct": 22.7,
-      "prevClose": 1.4099429502852487,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 7, 2026 7:40 AM ET",
-      "preMarketVolume": 3122492.396341,
-      "preMarketDollarVolume": 5401911.84566993,
-      "relVolume": 48.52735094165825,
-      "avgVolume50": 64345,
-      "sharesOutstanding": 1453333,
-      "marketCap": 2514266.09,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 156,
-      "float": {
-        "shares": 1453333,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-13"
-      },
-      "floatRotation": 2.1485044352127147,
-      "daysUp": 0,
-      "priorRunPct": -5.802047781569978,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Nexentis: MitoCareX Bio Deploys its Computational Drug Discovery Infrastructure on Google Cloud",
-        "subject": null,
-        "date": "2026-10-07"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "22.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "3,122,492"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.73"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "1.5M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
+  "watchlist": [],
+  "alsoRan": [
     {
       "symbol": "APUS",
       "name": "Apimeds Pharmaceuticals US Inc.",
       "legalName": "Apimeds Pharmaceuticals US, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 7.93,
-      "preMarketChangePct": 11.22,
-      "prevClose": 7.130012587664089,
+      "preMarketPrice": 7.6858,
+      "preMarketChangePct": 7.8,
+      "prevClose": 7.129684601113173,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 7, 2026 7:40 AM ET",
-      "preMarketVolume": 1643598.278237,
-      "preMarketDollarVolume": 13033734.34641941,
-      "relVolume": 13.051267157693713,
+      "lastTradeAt": "Oct 7, 2026 8:00 AM ET",
+      "preMarketVolume": 1796820.278237,
+      "preMarketDollarVolume": 13810001.294473937,
+      "relVolume": 14.267952087895248,
       "avgVolume50": 125934,
       "sharesOutstanding": 1509118,
-      "marketCap": 11967305.74,
+      "marketCap": 11598779.124400001,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 60,
       "float": {
@@ -220,7 +153,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-12"
       },
-      "floatRotation": 1.0891118376674322,
+      "floatRotation": 1.190642665607991,
       "daysUp": 1,
       "priorRunPct": -28.169014084507044,
       "extended": false,
@@ -237,13 +170,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "11.2%"
+          "ok": false,
+          "detail": "7.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,643,598"
+          "detail": "1,796,820"
         },
         {
           "name": "News catalyst",
@@ -253,7 +186,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$7.93"
+          "detail": "$7.69"
         },
         {
           "name": "Float <10M",
@@ -261,96 +194,26 @@
           "detail": "1.5M"
         }
       ],
-      "passed": 4,
-      "quality": "medium"
+      "passed": 3,
+      "quality": "low"
     },
-    {
-      "symbol": "ALIS",
-      "name": "Calisa Acquisition Corp Ordinary shares",
-      "legalName": "Calisa Acquisition Corp",
-      "business": "Services-Computer Processing & Data Preparation",
-      "sector": null,
-      "preMarketPrice": 11.47,
-      "preMarketChangePct": 11.03581800580833,
-      "prevClose": 10.33,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 7, 2026 7:35 AM ET",
-      "preMarketVolume": null,
-      "preMarketDollarVolume": null,
-      "relVolume": null,
-      "avgVolume50": 41281,
-      "sharesOutstanding": 8427500,
-      "marketCap": 96663425,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 1,
-      "float": {
-        "shares": 8427500,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-07"
-      },
-      "floatRotation": null,
-      "daysUp": 2,
-      "priorRunPct": 0,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Regulation FD disclosure (company announcement)",
-        "subject": "Regulation FD disclosure (company announcement)",
-        "date": "2026-10-06"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "11.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "unknown"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$11.47"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "8.4M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
-  "alsoRan": [
     {
       "symbol": "UUU",
       "name": "Universal Safety Products Inc.",
       "legalName": "UNIVERSAL SAFETY PRODUCTS, INC.",
       "business": "Wholesale-Electronic Parts & Equipment, NEC",
       "sector": "Technology",
-      "preMarketPrice": 5.43,
-      "preMarketChangePct": 9.48,
-      "prevClose": 4.959810010960906,
+      "preMarketPrice": 5.3,
+      "preMarketChangePct": 6.85,
+      "prevClose": 4.960224613944782,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 7, 2026 7:39 AM ET",
-      "preMarketVolume": 3706,
-      "preMarketDollarVolume": 20123.579999999998,
-      "relVolume": 0.12100434257354621,
+      "lastTradeAt": "Oct 7, 2026 7:58 AM ET",
+      "preMarketVolume": 3781,
+      "preMarketDollarVolume": 20039.3,
+      "relVolume": 0.1234531622424658,
       "avgVolume50": 30627,
       "sharesOutstanding": 3028463,
-      "marketCap": 16444554.09,
+      "marketCap": 16050853.9,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 38,
       "float": {
@@ -358,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-14"
       },
-      "floatRotation": 0.0012237230568773664,
+      "floatRotation": 0.0012484880944558345,
       "daysUp": 0,
       "priorRunPct": -3.2786885245901667,
       "extended": false,
@@ -376,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.5%"
+          "detail": "6.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "3,706"
+          "detail": "3,781"
         },
         {
           "name": "News catalyst",
@@ -391,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.43"
+          "detail": "$5.30"
         },
         {
           "name": "Float <10M",
@@ -533,74 +396,6 @@
           "name": "Float <10M",
           "ok": false,
           "detail": "44.9M"
-        }
-      ],
-      "passed": 1,
-      "quality": "low"
-    },
-    {
-      "symbol": "VRXA",
-      "name": "Veraxa Biotech AG Ordinary Shares",
-      "legalName": "Veraxa Biotech AG - Post de-SPAC",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 1.1456,
-      "preMarketChangePct": 6.07,
-      "prevClose": 1.080041482040162,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 7, 2026 7:37 AM ET",
-      "preMarketVolume": 19888,
-      "preMarketDollarVolume": 22783.6928,
-      "relVolume": 0.03365172294181846,
-      "avgVolume50": 590995,
-      "sharesOutstanding": 141407812.96296296,
-      "marketCap": 161996790.53037035,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 38,
-      "float": {
-        "shares": 141407812.96296296,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-07"
-      },
-      "floatRotation": 0.00014064286536422848,
-      "daysUp": 0,
-      "priorRunPct": -17.518248175182496,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "VERAXA Biotech Adopts FDA-Aligned Models To Support Oncology Development ",
-        "subject": "FDA / clinical",
-        "date": "2026-10-07"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "19,888"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.15"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "141.4M"
         }
       ],
       "passed": 1,
