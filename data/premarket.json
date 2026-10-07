@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-07T12:00:48.843Z",
+  "generatedAt": "2026-10-07T12:20:42.645Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-06",
   "universeChecked": 5987,
   "smallCapsInBand": 2965,
-  "investigated": 98,
-  "liveQuotes": 67,
+  "investigated": 97,
+  "liveQuotes": 68,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-06T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 169,
+    "edgarFilings": 176,
     "leads": {
-      "8-K": 68,
-      "PR Newswire": 2,
-      "GlobeNewswire": 10,
+      "8-K": 69,
+      "PR Newswire": 3,
+      "GlobeNewswire": 7,
       "prior-session gainer": 21
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 98,
-    "answered": 98,
+    "requested": 97,
+    "answered": 97,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Lipocine Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 3.5388,
-      "preMarketChangePct": 68.51,
-      "prevClose": 2.100053409293217,
+      "preMarketPrice": 2.9497,
+      "preMarketChangePct": 40.46,
+      "prevClose": 2.100028477858465,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 7, 2026 8:00 AM ET",
-      "preMarketVolume": 51152446.619847,
-      "preMarketDollarVolume": 181018278.09831458,
-      "relVolume": 1478.3089595932895,
+      "lastTradeAt": "Oct 7, 2026 8:20 AM ET",
+      "preMarketVolume": 59723220.174186,
+      "preMarketDollarVolume": 176165582.54779643,
+      "relVolume": 1726.004860244668,
       "avgVolume50": 34602,
       "sharesOutstanding": 8244253,
-      "marketCap": 29174762.516400002,
+      "marketCap": 24318073.0741,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 22,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 6.204618734996003,
+      "floatRotation": 7.244224573674049,
       "daysUp": 1,
       "priorRunPct": -0.956937799043063,
       "extended": false,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "68.5%"
+          "detail": "40.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "51,152,447"
+          "detail": "59,723,220"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.54"
+          "detail": "$2.95"
         },
         {
           "name": "Float <10M",
@@ -130,22 +130,159 @@
   "watchlist": [],
   "alsoRan": [
     {
+      "symbol": "CABO",
+      "name": "Cable One Inc.",
+      "legalName": "Cable One, Inc.",
+      "business": "Cable & Other Pay Television Services",
+      "sector": "Telecommunications",
+      "preMarketPrice": 12.97,
+      "preMarketChangePct": 15.288888888888893,
+      "prevClose": 11.25,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 7, 2026 8:14 AM ET",
+      "preMarketVolume": 130,
+      "preMarketDollarVolume": 1686.1000000000001,
+      "relVolume": 0.0005222729317991901,
+      "avgVolume50": 248912,
+      "sharesOutstanding": 5673925,
+      "marketCap": 73590807.25,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 30,
+      "float": {
+        "shares": 5673925,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-31"
+      },
+      "floatRotation": 0.000022911829113003786,
+      "daysUp": 0,
+      "priorRunPct": -10.501193317422436,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "15.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "130"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$12.97"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "5.7M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "SPAI",
+      "name": "Safe Pro Group Inc.",
+      "legalName": "Safe Pro Group Inc.",
+      "business": "Services-Prepackaged Software",
+      "sector": "Technology",
+      "preMarketPrice": 4.49,
+      "preMarketChangePct": 9.51,
+      "prevClose": 4.100082184275409,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 7, 2026 8:20 AM ET",
+      "preMarketVolume": 3660982.906794,
+      "preMarketDollarVolume": 16437813.25150506,
+      "relVolume": 13.611069248335323,
+      "avgVolume50": 268971,
+      "sharesOutstanding": 20362862,
+      "marketCap": 91429250.38000001,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 38,
+      "float": {
+        "shares": 20362862,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-14"
+      },
+      "floatRotation": 0.17978724733261955,
+      "daysUp": 0,
+      "priorRunPct": 8.955223880597025,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Safe Pro Expects Record 2,300% Revenue Growth in Q3 2026 Driven by Multiple Government Contracts for AI-Powered Threat Detection and Mapping",
+        "subject": "Earnings or guidance",
+        "date": "2026-10-07"
+      },
+      "leads": [
+        "GlobeNewswire",
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "9.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "3,660,983"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.49"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "20.4M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "APUS",
       "name": "Apimeds Pharmaceuticals US Inc.",
       "legalName": "Apimeds Pharmaceuticals US, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 7.6858,
-      "preMarketChangePct": 7.8,
-      "prevClose": 7.129684601113173,
+      "preMarketPrice": 7.6949,
+      "preMarketChangePct": 7.92,
+      "prevClose": 7.130189028910304,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 7, 2026 8:00 AM ET",
-      "preMarketVolume": 1796820.278237,
-      "preMarketDollarVolume": 13810001.294473937,
-      "relVolume": 14.267952087895248,
+      "lastTradeAt": "Oct 7, 2026 8:20 AM ET",
+      "preMarketVolume": 1897184.278237,
+      "preMarketDollarVolume": 14598643.302605892,
+      "relVolume": 15.06490922417298,
       "avgVolume50": 125934,
       "sharesOutstanding": 1509118,
-      "marketCap": 11598779.124400001,
+      "marketCap": 11612512.098199999,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 60,
       "float": {
@@ -153,7 +290,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-12"
       },
-      "floatRotation": 1.190642665607991,
+      "floatRotation": 1.2571477367820145,
       "daysUp": 1,
       "priorRunPct": -28.169014084507044,
       "extended": false,
@@ -171,12 +308,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.8%"
+          "detail": "7.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,796,820"
+          "detail": "1,897,184"
         },
         {
           "name": "News catalyst",
@@ -192,74 +329,6 @@
           "name": "Float <10M",
           "ok": true,
           "detail": "1.5M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "UUU",
-      "name": "Universal Safety Products Inc.",
-      "legalName": "UNIVERSAL SAFETY PRODUCTS, INC.",
-      "business": "Wholesale-Electronic Parts & Equipment, NEC",
-      "sector": "Technology",
-      "preMarketPrice": 5.3,
-      "preMarketChangePct": 6.85,
-      "prevClose": 4.960224613944782,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 7, 2026 7:58 AM ET",
-      "preMarketVolume": 3781,
-      "preMarketDollarVolume": 20039.3,
-      "relVolume": 0.1234531622424658,
-      "avgVolume50": 30627,
-      "sharesOutstanding": 3028463,
-      "marketCap": 16050853.9,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 38,
-      "float": {
-        "shares": 3028463,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-14"
-      },
-      "floatRotation": 0.0012484880944558345,
-      "daysUp": 0,
-      "priorRunPct": -3.2786885245901667,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "UNIVERSAL SAFETY PRODUCTS, INC. TO BECOME DEFI CAPITAL MARKETS, INC.",
-        "subject": null,
-        "date": "2026-10-07"
-      },
-      "leads": [
-        "PR Newswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.8%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "3,781"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$5.30"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "3.0M"
         }
       ],
       "passed": 3,
@@ -399,6 +468,74 @@
         }
       ],
       "passed": 1,
+      "quality": "low"
+    },
+    {
+      "symbol": "MWYN",
+      "name": "Marwynn Holdings Inc.",
+      "legalName": "Marwynn Holdings, Inc.",
+      "business": "Wholesale-Groceries, General Line",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.5472,
+      "preMarketChangePct": 5.25,
+      "prevClose": 1.4700237529691211,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 7, 2026 8:10 AM ET",
+      "preMarketVolume": 22900,
+      "preMarketDollarVolume": 35430.88,
+      "relVolume": 0.09254357428339348,
+      "avgVolume50": 247451,
+      "sharesOutstanding": 20194804,
+      "marketCap": 31245400.7488,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 36,
+      "float": {
+        "shares": 20194804,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-10"
+      },
+      "floatRotation": 0.0011339550510121317,
+      "daysUp": 2,
+      "priorRunPct": 17.2093023255814,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "22,900"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.55"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "20.2M"
+        }
+      ],
+      "passed": 0,
       "quality": "low"
     }
   ]
