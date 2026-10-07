@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-07T13:01:33.058Z",
+  "generatedAt": "2026-10-07T13:21:00.564Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-06",
   "universeChecked": 5987,
   "smallCapsInBand": 2965,
-  "investigated": 106,
-  "liveQuotes": 79,
+  "investigated": 108,
+  "liveQuotes": 81,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-06T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 195,
+    "edgarFilings": 199,
     "leads": {
-      "8-K": 80,
+      "8-K": 83,
       "PR Newswire": 0,
-      "GlobeNewswire": 8,
+      "GlobeNewswire": 7,
       "prior-session gainer": 21
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 106,
-    "answered": 106,
+    "requested": 108,
+    "answered": 108,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Lipocine Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 2.88,
-      "preMarketChangePct": 39.1304347826087,
+      "preMarketPrice": 2.8401,
+      "preMarketChangePct": 37.20289855072465,
       "prevClose": 2.07,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 7, 2026 9:01 AM ET",
-      "preMarketVolume": 70302161.790023,
-      "preMarketDollarVolume": 202470225.95526624,
-      "relVolume": 2031.736945552945,
+      "lastTradeAt": "Oct 7, 2026 9:21 AM ET",
+      "preMarketVolume": 74848094.492956,
+      "preMarketDollarVolume": 212576073.16944432,
+      "relVolume": 2163.1146896987457,
       "avgVolume50": 34602,
       "sharesOutstanding": 8244253,
-      "marketCap": 23743448.64,
+      "marketCap": 23414502.9453,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 22,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 8.527414404922192,
+      "floatRotation": 9.078820663673955,
       "daysUp": 1,
       "priorRunPct": -0.956937799043063,
       "extended": false,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "39.1%"
+          "detail": "37.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "70,302,162"
+          "detail": "74,848,094"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.88"
+          "detail": "$2.84"
         },
         {
           "name": "Float <10M",
@@ -132,17 +132,17 @@
       "legalName": "Lucas GC Ltd",
       "business": "Services-Computer Programming, Data Processing, Etc.",
       "sector": "Technology",
-      "preMarketPrice": 2.6981,
-      "preMarketChangePct": 19.38,
-      "prevClose": 2.2600938180599766,
+      "preMarketPrice": 2.6,
+      "preMarketChangePct": 15.04,
+      "prevClose": 2.260083449235049,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 7, 2026 9:01 AM ET",
-      "preMarketVolume": 329870,
-      "preMarketDollarVolume": 890022.2470000001,
-      "relVolume": 0.008362552536892756,
+      "lastTradeAt": "Oct 7, 2026 9:21 AM ET",
+      "preMarketVolume": 9788258.334054,
+      "preMarketDollarVolume": 25449471.668540403,
+      "relVolume": 0.24814267609423393,
       "avgVolume50": 39446090,
       "sharesOutstanding": 2790404,
-      "marketCap": 7528789.032400001,
+      "marketCap": 7255050.4,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 117,
       "float": {
@@ -150,7 +150,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.11821585691534273,
+      "floatRotation": 3.5078283768422067,
       "daysUp": 0,
       "priorRunPct": -15.916955017301035,
       "extended": false,
@@ -168,12 +168,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "19.4%"
+          "detail": "15.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "329,870"
+          "detail": "9,788,258"
         },
         {
           "name": "News catalyst",
@@ -183,7 +183,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.70"
+          "detail": "$2.60"
         },
         {
           "name": "Float <10M",
@@ -198,6 +198,142 @@
   "watchlist": [],
   "alsoRan": [
     {
+      "symbol": "MBAI",
+      "name": "MBody AI Ltd. Ordinary Share",
+      "legalName": "MBody AI Ltd.",
+      "business": "Services-Computer Integrated Systems Design",
+      "sector": "Health Care",
+      "preMarketPrice": 3.52,
+      "preMarketChangePct": 8.64,
+      "prevClose": 3.240058910162003,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 7, 2026 9:00 AM ET",
+      "preMarketVolume": 1078,
+      "preMarketDollarVolume": 3794.56,
+      "relVolume": 0.017838231400582473,
+      "avgVolume50": 60432,
+      "sharesOutstanding": 7020502,
+      "marketCap": 24712167.04,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 112,
+      "float": {
+        "shares": 7020502,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-12-31"
+      },
+      "floatRotation": 0.0001535502731855927,
+      "daysUp": 0,
+      "priorRunPct": -23.880597014925364,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "MBody AI Brings Physical AI Robotics Platform to ThinkEquity and Maxim Investors",
+        "subject": "Hot-sector announcement",
+        "date": "2026-10-07"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "1,078"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.52"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "7.0M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "APUS",
+      "name": "Apimeds Pharmaceuticals US Inc.",
+      "legalName": "Apimeds Pharmaceuticals US, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 7.7385,
+      "preMarketChangePct": 8.53,
+      "prevClose": 7.130286556712431,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 7, 2026 9:21 AM ET",
+      "preMarketVolume": 2218486.278237,
+      "preMarketDollarVolume": 17167756.064137027,
+      "relVolume": 17.616261519819908,
+      "avgVolume50": 125934,
+      "sharesOutstanding": 1509118,
+      "marketCap": 11678309.643000001,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 60,
+      "float": {
+        "shares": 1509118,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-12"
+      },
+      "floatRotation": 1.4700548785694691,
+      "daysUp": 1,
+      "priorRunPct": -28.169014084507044,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "2,218,486"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$7.74"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "1.5M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "SMXT",
       "name": "Solarmax Technology Inc.",
       "legalName": "SolarMax Technology, Inc.",
@@ -207,10 +343,10 @@
       "preMarketChangePct": 44.303797468354425,
       "prevClose": 2.37,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 7, 2026 9:01 AM ET",
-      "preMarketVolume": 19332,
-      "preMarketDollarVolume": 66115.44,
-      "relVolume": 0.16099535302053666,
+      "lastTradeAt": "Oct 7, 2026 9:21 AM ET",
+      "preMarketVolume": 21089,
+      "preMarketDollarVolume": 72124.38,
+      "relVolume": 0.1756275087859558,
       "avgVolume50": 120078,
       "sharesOutstanding": 56906572,
       "marketCap": 194620476.24,
@@ -221,7 +357,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-05-11"
       },
-      "floatRotation": 0.000339714716957472,
+      "floatRotation": 0.0003705898854705218,
       "daysUp": 2,
       "priorRunPct": 3.947368421052645,
       "extended": true,
@@ -244,7 +380,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "19,332"
+          "detail": "21,089"
         },
         {
           "name": "News catalyst",
@@ -334,68 +470,68 @@
       "quality": "low"
     },
     {
-      "symbol": "BGLC",
-      "name": "BioNexus Gene Lab Corp",
-      "legalName": "BioNexus Gene Lab Corp",
-      "business": "Services-Medical Laboratories",
-      "sector": "Health Care",
-      "preMarketPrice": 1.34,
-      "preMarketChangePct": 8.06,
-      "prevClose": 1.2400518230612623,
+      "symbol": "BESS",
+      "name": "Bimergen Energy Corporation",
+      "legalName": "Bimergen Energy Corp",
+      "business": "Electric Services",
+      "sector": "Utilities",
+      "preMarketPrice": 2.4762,
+      "preMarketChangePct": 9.08,
+      "prevClose": 2.27007700770077,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 7, 2026 8:58 AM ET",
-      "preMarketVolume": 8117,
-      "preMarketDollarVolume": 10876.78,
-      "relVolume": 0.723569263683366,
-      "avgVolume50": 11218,
-      "sharesOutstanding": 2933442,
-      "marketCap": 3930812.2800000003,
+      "lastTradeAt": "Oct 7, 2026 9:11 AM ET",
+      "preMarketVolume": 898.785714,
+      "preMarketDollarVolume": 2225.5731850068,
+      "relVolume": 0.010659729043123487,
+      "avgVolume50": 84316,
+      "sharesOutstanding": 7097573,
+      "marketCap": 17575010.2626,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 26,
+      "bestPriorSpikePct": 40,
       "float": {
-        "shares": 2933442,
+        "shares": 7097573,
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-14"
       },
-      "floatRotation": 0.002767056584040182,
-      "daysUp": 2,
-      "priorRunPct": -1.5384615384615397,
-      "extended": true,
+      "floatRotation": 0.00012663282420624628,
+      "daysUp": 0,
+      "priorRunPct": -29.27756653992395,
+      "extended": false,
       "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Ruanyun To License Cogni AI To BioNexus For Malaysian Healthcare Expansion ",
-        "subject": "Patent or licensing",
-        "date": "2026-10-06"
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
       },
       "leads": [
-        "8-K"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.1%"
+          "detail": "9.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "8,117"
+          "detail": "899"
         },
         {
           "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
+          "ok": false,
+          "detail": "none found"
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.34"
+          "ok": true,
+          "detail": "$2.48"
         },
         {
           "name": "Float <10M",
           "ok": true,
-          "detail": "2.9M"
+          "detail": "7.1M"
         }
       ],
       "passed": 2,
