@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-08T11:40:36.692Z",
+  "generatedAt": "2026-10-08T12:00:34.663Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-07",
   "universeChecked": 6003,
   "smallCapsInBand": 2975,
-  "investigated": 78,
-  "liveQuotes": 64,
+  "investigated": 77,
+  "liveQuotes": 62,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-07T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 101,
+    "edgarFilings": 103,
     "leads": {
       "8-K": 40,
-      "PR Newswire": 3,
-      "GlobeNewswire": 11,
+      "PR Newswire": 4,
+      "GlobeNewswire": 9,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 78,
-    "answered": 78,
+    "requested": 77,
+    "answered": 77,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "DarkIris Inc.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 4.2801,
-      "preMarketChangePct": 156.29,
-      "prevClose": 1.670022240430762,
+      "preMarketPrice": 4.27,
+      "preMarketChangePct": 155.69,
+      "prevClose": 1.669991004732293,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 8, 2026 7:40 AM ET",
-      "preMarketVolume": 41599858.680131,
-      "preMarketDollarVolume": 178051555.13682872,
-      "relVolume": 151.59027734603515,
+      "lastTradeAt": "Oct 8, 2026 8:00 AM ET",
+      "preMarketVolume": 45194795.654379,
+      "preMarketDollarVolume": 192981777.4441983,
+      "relVolume": 164.69026158295407,
       "avgVolume50": 274423,
       "sharesOutstanding": 2097586.8263473054,
-      "marketCap": 8977881.375449102,
+      "marketCap": 8956695.748502994,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 185,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-08"
       },
-      "floatRotation": 19.832246349759995,
+      "floatRotation": 21.546090529697068,
       "daysUp": 0,
       "priorRunPct": -46.666666666666664,
       "extended": false,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "156.3%"
+          "detail": "155.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "41,599,859"
+          "detail": "45,194,796"
         },
         {
           "name": "News catalyst",
@@ -116,7 +116,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.28"
+          "detail": "$4.27"
         },
         {
           "name": "Float <10M",
@@ -128,90 +128,22 @@
       "quality": "medium"
     },
     {
-      "symbol": "ALISU",
-      "name": "Calisa Acquisition Corp Units",
-      "legalName": "Calisa Acquisition Corp",
-      "business": "Services-Computer Processing & Data Preparation",
-      "sector": null,
-      "preMarketPrice": 16.65,
-      "preMarketChangePct": 54.02405180388528,
-      "prevClose": 10.81,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 8, 2026 7:34 AM ET",
-      "preMarketVolume": null,
-      "preMarketDollarVolume": null,
-      "relVolume": null,
-      "avgVolume50": 3981,
-      "sharesOutstanding": 8427500,
-      "marketCap": 140317875,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 6,
-      "float": {
-        "shares": 8427500,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-07"
-      },
-      "floatRotation": null,
-      "daysUp": 1,
-      "priorRunPct": 0.1853568118628485,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Regulation FD disclosure (company announcement)",
-        "subject": "Regulation FD disclosure (company announcement)",
-        "date": "2026-10-06"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "54.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "unknown"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$16.65"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "8.4M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
       "symbol": "PROF",
       "name": "Profound Medical Corp.",
       "legalName": "Profound Medical Corp.",
       "business": "Surgical & Medical Instruments & Apparatus",
       "sector": "Health Care",
-      "preMarketPrice": 6.79,
-      "preMarketChangePct": 19.54,
-      "prevClose": 5.680107077128994,
+      "preMarketPrice": 6.83,
+      "preMarketChangePct": 20.25,
+      "prevClose": 5.6798336798336795,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 8, 2026 7:40 AM ET",
-      "preMarketVolume": 590191.646281,
-      "preMarketDollarVolume": 4007401.27824799,
-      "relVolume": 4.928325717347919,
+      "lastTradeAt": "Oct 8, 2026 8:00 AM ET",
+      "preMarketVolume": 629806.620041,
+      "preMarketDollarVolume": 4301579.21488003,
+      "relVolume": 5.2591258823514675,
       "avgVolume50": 119755,
       "sharesOutstanding": 36532594,
-      "marketCap": 248056313.26,
+      "marketCap": 249517617.02,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 18,
       "float": {
@@ -219,7 +151,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-06"
       },
-      "floatRotation": 0.016155207765454597,
+      "floatRotation": 0.017239581181697636,
       "daysUp": 2,
       "priorRunPct": 6.2937062937062995,
       "extended": true,
@@ -237,12 +169,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "19.5%"
+          "detail": "20.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "590,192"
+          "detail": "629,807"
         },
         {
           "name": "News catalyst",
@@ -252,7 +184,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.79"
+          "detail": "$6.83"
         },
         {
           "name": "Float <10M",
@@ -266,90 +198,22 @@
   ],
   "alsoRan": [
     {
-      "symbol": "FVNNU",
-      "name": "Future Vision II Acquisition Corporation Units",
-      "legalName": "Future Vision II Acquisition Corp.",
-      "business": "Services-Computer Integrated Systems Design",
-      "sector": null,
-      "preMarketPrice": 19.4,
-      "preMarketChangePct": 19.384615384615376,
-      "prevClose": 16.25,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 8, 2026 7:27 AM ET",
-      "preMarketVolume": null,
-      "preMarketDollarVolume": null,
-      "relVolume": null,
-      "avgVolume50": 2184,
-      "sharesOutstanding": 7544000,
-      "marketCap": 146353600,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 44,
-      "float": {
-        "shares": 7544000,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-06-30"
-      },
-      "floatRotation": null,
-      "daysUp": 0,
-      "priorRunPct": 27.952755905511818,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "19.4%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "unknown"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$19.40"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "7.5M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "RNA",
       "name": "Atrium Therapeutics Inc.",
       "legalName": "Atrium Therapeutics, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 8.69,
-      "preMarketChangePct": 8.760951188986224,
+      "preMarketPrice": 8.5,
+      "preMarketChangePct": 6.382978723404252,
       "prevClose": 7.99,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 8, 2026 7:40 AM ET",
-      "preMarketVolume": 65511.091694,
-      "preMarketDollarVolume": 569291.38682086,
-      "relVolume": 0.31886945452863985,
+      "lastTradeAt": "Oct 8, 2026 8:00 AM ET",
+      "preMarketVolume": 71791.091694,
+      "preMarketDollarVolume": 610224.279399,
+      "relVolume": 0.34943680003699235,
       "avgVolume50": 205448,
       "sharesOutstanding": 17105643,
-      "marketCap": 148648037.67,
+      "marketCap": 145397965.5,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 42,
       "float": {
@@ -357,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 0.0038297941617277996,
+      "floatRotation": 0.004196924470714138,
       "daysUp": 2,
       "priorRunPct": -5.106888361045128,
       "extended": true,
@@ -375,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.8%"
+          "detail": "6.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "65,511"
+          "detail": "71,791"
         },
         {
           "name": "News catalyst",
@@ -390,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.69"
+          "detail": "$8.50"
         },
         {
           "name": "Float <10M",
@@ -402,64 +266,68 @@
       "quality": "low"
     },
     {
-      "symbol": "XRPN",
-      "name": "Armada Acquisition Corp. II Class A Ordinary Shares",
-      "legalName": "Armada Acquisition Corp. II",
-      "business": "Blank Checks",
-      "sector": "Finance",
-      "preMarketPrice": 26.5,
-      "preMarketChangePct": 5.96,
-      "prevClose": 25.009437523593807,
+      "symbol": "SWVL",
+      "name": "Swvl Holdings Corp Class A Common Shares",
+      "legalName": "Swvl Holdings Corp",
+      "business": "Services-Business Services, NEC",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 3.9,
+      "preMarketChangePct": 7.14,
+      "prevClose": 3.64009706925518,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 8, 2026 7:40 AM ET",
-      "preMarketVolume": 59075.775996,
-      "preMarketDollarVolume": 1565508.063894,
-      "relVolume": 1.140084836945404,
-      "avgVolume50": 51817,
-      "sharesOutstanding": null,
-      "marketCap": null,
-      "floatPctOfShares": null,
-      "bestPriorSpikePct": 0,
-      "float": null,
-      "floatRotation": null,
+      "lastTradeAt": "Oct 8, 2026 8:00 AM ET",
+      "preMarketVolume": 865,
+      "preMarketDollarVolume": 3373.5,
+      "relVolume": 0.00048052885950780513,
+      "avgVolume50": 1800100,
+      "sharesOutstanding": 29999771.978021976,
+      "marketCap": 116999110.7142857,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 50,
+      "float": {
+        "shares": 29999771.978021976,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-08"
+      },
+      "floatRotation": 0.00002883355248945574,
       "daysUp": 0,
-      "priorRunPct": 48.837209302325576,
+      "priorRunPct": -12.177985948477744,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Changed the rights of shareholders",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Changed the rights of shareholders",
-        "date": "2026-10-05"
+        "kind": "news",
+        "headline": "Swvl Announces H1 2026 Results; Revenue Up 59% to $16.2 Million; GCC Revenue Up 107%; Dollar-Pegged Revenue Up to 44% of Revenue; Net Dollar Retention of 123%",
+        "subject": "Earnings or guidance",
+        "date": "2026-10-08"
       },
       "leads": [
-        "prior-session gainer"
+        "GlobeNewswire"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.0%"
+          "detail": "7.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "59,076"
+          "ok": false,
+          "detail": "865"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$26.50"
+          "ok": true,
+          "detail": "$3.90"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "unknown"
+          "detail": "30.0M"
         }
       ],
       "passed": 2,
@@ -535,71 +403,71 @@
       "quality": "low"
     },
     {
-      "symbol": "SWVL",
-      "name": "Swvl Holdings Corp Class A Common Shares",
-      "legalName": "Swvl Holdings Corp",
-      "business": "Services-Business Services, NEC",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.84,
-      "preMarketChangePct": 5.49,
-      "prevClose": 3.6401554649729833,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 8, 2026 7:33 AM ET",
-      "preMarketVolume": 57,
-      "preMarketDollarVolume": 218.88,
-      "relVolume": 0.0000316649075051386,
-      "avgVolume50": 1800100,
-      "sharesOutstanding": 29999771.978021976,
-      "marketCap": 115199124.39560439,
+      "symbol": "FFR",
+      "name": "FF EAI Robotics Ecosystem Inc.",
+      "legalName": "FF EAI Robotics Ecosystem Inc.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 1.79,
+      "preMarketChangePct": 29.71014492753625,
+      "prevClose": 1.38,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 8, 2026 7:59 AM ET",
+      "preMarketVolume": 42134,
+      "preMarketDollarVolume": 75419.86,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 20234993,
+      "marketCap": 36220637.47,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 50,
+      "bestPriorSpikePct": null,
       "float": {
-        "shares": 29999771.978021976,
+        "shares": 20234993,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-08"
+        "asOf": "2026-08-07"
       },
-      "floatRotation": 0.0000019000144415017076,
-      "daysUp": 0,
-      "priorRunPct": -12.177985948477744,
+      "floatRotation": 0.002082234473715904,
+      "daysUp": 1,
+      "priorRunPct": 5.3435114503816665,
       "extended": false,
       "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Swvl Announces H1 2026 Results; Revenue Up 59% to $16.2 Million; GCC Revenue Up 107%; Dollar-Pegged Revenue Up to 44% of Revenue; Net Dollar Retention of 123%",
-        "subject": "Earnings or guidance",
-        "date": "2026-10-08"
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
       },
       "leads": [
-        "GlobeNewswire"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.5%"
+          "ok": true,
+          "detail": "29.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "57"
+          "detail": "42,134"
         },
         {
           "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
+          "ok": false,
+          "detail": "none found"
         },
         {
           "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.84"
+          "ok": false,
+          "detail": "$1.79"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "30.0M"
+          "detail": "20.2M"
         }
       ],
-      "passed": 2,
+      "passed": 1,
       "quality": "low"
     }
   ]
