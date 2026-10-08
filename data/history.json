@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-10-08T00:56:40.988Z",
+ "updatedAt": "2026-10-08T11:01:33.550Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -5639,7 +5639,22 @@
      "catalyst": "FDA / clinical",
      "extended": false,
      "missing": [],
-     "performance": null,
+     "performance": {
+      "open": 2.95,
+      "high": 3.15,
+      "low": 2.07,
+      "close": 2.2,
+      "volume": 105835900,
+      "prevClose": 2.1,
+      "gapPct": 40.476190476190474,
+      "openToHighPct": 6.7796610169491425,
+      "openToClosePct": -25.423728813559322,
+      "openToLowPct": -29.830508474576277,
+      "alertToHighPct": -5.120481927710842,
+      "alertToClosePct": -33.73493975903614,
+      "filledAt": "2026-10-08T11:01:32.803Z",
+      "noon": 2.225
+     },
      "intraday": {
       "noon": 2.225
      }
@@ -5663,7 +5678,22 @@
      "missing": [
       "News catalyst"
      ],
-     "performance": null,
+     "performance": {
+      "open": 8,
+      "high": 9.84,
+      "low": 6.86,
+      "close": 7.05,
+      "volume": 22395450,
+      "prevClose": 7.13,
+      "gapPct": 12.201963534361852,
+      "openToHighPct": 23,
+      "openToClosePct": -11.875000000000002,
+      "openToLowPct": -14.249999999999996,
+      "alertToHighPct": 16.58767772511849,
+      "alertToClosePct": -16.469194312796205,
+      "filledAt": "2026-10-08T11:01:33.011Z",
+      "noon": 8.43
+     },
      "intraday": {
       "noon": 8.43
      }
@@ -5687,7 +5717,22 @@
      "missing": [
       "Price $2–$20"
      ],
-     "performance": null,
+     "performance": {
+      "open": 1.12,
+      "high": 1.185,
+      "low": 0.94,
+      "close": 1.08,
+      "volume": 18422220,
+      "prevClose": 1.39,
+      "gapPct": -19.424460431654662,
+      "openToHighPct": 5.8035714285714235,
+      "openToClosePct": -3.571428571428574,
+      "openToLowPct": -16.071428571428584,
+      "alertToHighPct": -31.502890173410403,
+      "alertToClosePct": -37.57225433526011,
+      "filledAt": "2026-10-08T11:01:33.229Z",
+      "noon": 1.0797
+     },
      "intraday": {
       "noon": 1.0797
      }
@@ -5711,7 +5756,22 @@
      "missing": [
       "Pre-market volume ≥50k"
      ],
-     "performance": null,
+     "performance": {
+      "open": 12.45,
+      "high": 14.91,
+      "low": 11,
+      "close": 11.03,
+      "volume": 691031,
+      "prevClose": 11.25,
+      "gapPct": 10.66666666666666,
+      "openToHighPct": 19.75903614457832,
+      "openToClosePct": -11.405622489959839,
+      "openToLowPct": -11.646586345381522,
+      "alertToHighPct": 29.99128160418482,
+      "alertToClosePct": -3.8360941586748147,
+      "filledAt": "2026-10-08T11:01:33.395Z",
+      "noon": 13.385
+     },
      "intraday": {
       "noon": 13.385
      }
@@ -5733,10 +5793,94 @@
      "catalyst": "Earnings or guidance",
      "extended": false,
      "missing": [],
-     "performance": null,
+     "performance": {
+      "open": 2.49,
+      "high": 4.53,
+      "low": 2.41,
+      "close": 2.82,
+      "volume": 45644980,
+      "prevClose": 2.26,
+      "gapPct": 10.176991150442499,
+      "openToHighPct": 81.92771084337349,
+      "openToClosePct": 13.253012048192755,
+      "openToLowPct": -3.2128514056224926,
+      "alertToHighPct": 67.89592676327786,
+      "alertToClosePct": 4.517994144027266,
+      "filledAt": "2026-10-08T11:01:33.549Z",
+      "noon": 2.5999
+     },
      "intraday": {
       "noon": 2.5999
      }
+    }
+   ]
+  },
+  "2026-10-08": {
+   "date": "2026-10-08",
+   "source": "live",
+   "names": [
+    {
+     "symbol": "DKI",
+     "legalName": "DarkIris Inc.",
+     "business": "Services-Prepackaged Software",
+     "list": "watchlist",
+     "firstSeenAt": "2026-10-08T11:01:00.077Z",
+     "lastSeenAt": "2026-10-08T11:01:00.077Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 6.7343,
+     "preMarketChangePct": 303.25,
+     "prevClose": 1.670006199628022,
+     "preMarketVolume": 32720183.515696,
+     "relVolume": 119.23265730531332,
+     "floatShares": 2097586.8263473054,
+     "catalyst": null,
+     "extended": false,
+     "missing": [
+      "News catalyst"
+     ],
+     "performance": null
+    },
+    {
+     "symbol": "PROF",
+     "legalName": "Profound Medical Corp.",
+     "business": "Surgical & Medical Instruments & Apparatus",
+     "list": "watchlist",
+     "firstSeenAt": "2026-10-08T11:01:00.077Z",
+     "lastSeenAt": "2026-10-08T11:01:00.077Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 6.7,
+     "preMarketChangePct": 17.96,
+     "prevClose": 5.679891488640218,
+     "preMarketVolume": 447699.153788,
+     "relVolume": 3.7384589686276146,
+     "floatShares": 36532594,
+     "catalyst": "Earnings / results released",
+     "extended": true,
+     "missing": [
+      "Float <10M"
+     ],
+     "performance": null
+    },
+    {
+     "symbol": "JVA",
+     "legalName": "COFFEE HOLDING CO INC",
+     "business": "Miscellaneous Food Preparations & Kindred Products",
+     "list": "watchlist",
+     "firstSeenAt": "2026-10-08T11:01:00.077Z",
+     "lastSeenAt": "2026-10-08T11:01:00.077Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 4.65,
+     "preMarketChangePct": 16.54135338345865,
+     "prevClose": 3.99,
+     "preMarketVolume": 147,
+     "relVolume": 0.0029686774239150193,
+     "floatShares": 5708599,
+     "catalyst": "Other material event (often FDA, clinical or contract news)",
+     "extended": false,
+     "missing": [
+      "Pre-market volume ≥50k"
+     ],
+     "performance": null
     }
    ]
   }
