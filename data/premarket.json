@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-08T11:01:00.077Z",
+  "generatedAt": "2026-10-08T11:20:34.425Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-07",
   "universeChecked": 6003,
   "smallCapsInBand": 2975,
-  "investigated": 65,
-  "liveQuotes": 45,
+  "investigated": 76,
+  "liveQuotes": 57,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-07T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 93,
+    "edgarFilings": 99,
     "leads": {
-      "8-K": 36,
-      "PR Newswire": 2,
-      "GlobeNewswire": 4,
+      "8-K": 40,
+      "PR Newswire": 3,
+      "GlobeNewswire": 10,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 65,
-    "answered": 65,
+    "requested": 76,
+    "answered": 76,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "DarkIris Inc.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 6.7343,
-      "preMarketChangePct": 303.25,
-      "prevClose": 1.670006199628022,
+      "preMarketPrice": 5.04,
+      "preMarketChangePct": 201.8,
+      "prevClose": 1.669980119284294,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 8, 2026 7:01 AM ET",
-      "preMarketVolume": 32720183.515696,
-      "preMarketDollarVolume": 220347531.8497516,
-      "relVolume": 119.23265730531332,
+      "lastTradeAt": "Oct 8, 2026 7:20 AM ET",
+      "preMarketVolume": 38482929.680131,
+      "preMarketDollarVolume": 193953965.58786026,
+      "relVolume": 140.232158675224,
       "avgVolume50": 274423,
       "sharesOutstanding": 2097586.8263473054,
-      "marketCap": 14125778.96467066,
+      "marketCap": 10571837.60479042,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 185,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-08"
       },
-      "floatRotation": 15.59896501289258,
+      "floatRotation": 18.34628688393528,
       "daysUp": 0,
       "priorRunPct": -46.666666666666664,
       "extended": false,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "303.3%"
+          "detail": "201.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "32,720,184"
+          "detail": "38,482,930"
         },
         {
           "name": "News catalyst",
@@ -116,7 +116,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.73"
+          "detail": "$5.04"
         },
         {
           "name": "Float <10M",
@@ -133,17 +133,17 @@
       "legalName": "Profound Medical Corp.",
       "business": "Surgical & Medical Instruments & Apparatus",
       "sector": "Health Care",
-      "preMarketPrice": 6.7,
-      "preMarketChangePct": 17.96,
-      "prevClose": 5.679891488640218,
+      "preMarketPrice": 6.8,
+      "preMarketChangePct": 19.72,
+      "prevClose": 5.679919812896759,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 8, 2026 7:01 AM ET",
-      "preMarketVolume": 447699.153788,
-      "preMarketDollarVolume": 2999584.3303796,
-      "relVolume": 3.7384589686276146,
+      "lastTradeAt": "Oct 8, 2026 7:20 AM ET",
+      "preMarketVolume": 534799.444595,
+      "preMarketDollarVolume": 3636636.223246,
+      "relVolume": 4.465779671788234,
       "avgVolume50": 119755,
       "sharesOutstanding": 36532594,
-      "marketCap": 244768379.8,
+      "marketCap": 248421639.2,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 18,
       "float": {
@@ -151,7 +151,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-06"
       },
-      "floatRotation": 0.012254786883953546,
+      "floatRotation": 0.01463896718078656,
       "daysUp": 2,
       "priorRunPct": 6.2937062937062995,
       "extended": true,
@@ -169,12 +169,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "18.0%"
+          "detail": "19.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "447,699"
+          "detail": "534,799"
         },
         {
           "name": "News catalyst",
@@ -184,7 +184,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.70"
+          "detail": "$6.80"
         },
         {
           "name": "Float <10M",
@@ -271,17 +271,17 @@
       "legalName": "Atrium Therapeutics, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 8.39,
-      "preMarketChangePct": 5.006257822277852,
+      "preMarketPrice": 8.9489,
+      "preMarketChangePct": 12.001251564455567,
       "prevClose": 7.99,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 8, 2026 7:00 AM ET",
-      "preMarketVolume": 1837,
-      "preMarketDollarVolume": 15412.43,
-      "relVolume": 0.008941435302363614,
+      "lastTradeAt": "Oct 8, 2026 7:20 AM ET",
+      "preMarketVolume": 29659,
+      "preMarketDollarVolume": 265415.4251,
+      "relVolume": 0.14436256376309334,
       "avgVolume50": 205448,
       "sharesOutstanding": 17105643,
-      "marketCap": 143516344.77,
+      "marketCap": 153076688.6427,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 42,
       "float": {
@@ -289,7 +289,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 0.00010739146140253249,
+      "floatRotation": 0.0017338722665964676,
       "daysUp": 2,
       "priorRunPct": -5.106888361045128,
       "extended": true,
@@ -306,13 +306,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.0%"
+          "ok": true,
+          "detail": "12.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "1,837"
+          "detail": "29,659"
         },
         {
           "name": "News catalyst",
@@ -322,7 +322,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.39"
+          "detail": "$8.95"
         },
         {
           "name": "Float <10M",
@@ -330,75 +330,7 @@
           "detail": "17.1M"
         }
       ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "HOST",
-      "name": "Host Digital Inc. Class A",
-      "legalName": "Host Digital Inc.",
-      "business": "Retail-Grocery Stores",
-      "sector": "Consumer Staples",
-      "preMarketPrice": 3.3705,
-      "preMarketChangePct": 5,
-      "prevClose": 3.2099999999999995,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 8, 2026 7:00 AM ET",
-      "preMarketVolume": 78,
-      "preMarketDollarVolume": 262.899,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 32457828,
-      "marketCap": 109399109.27399999,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 32457828,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-14"
-      },
-      "floatRotation": 0.0000024031182862882876,
-      "daysUp": 1,
-      "priorRunPct": -29.79166666666666,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Executive or board change",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Executive or board change",
-        "date": "2026-10-07"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "78"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.37"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "32.5M"
-        }
-      ],
-      "passed": 2,
+      "passed": 3,
       "quality": "low"
     },
     {
@@ -407,14 +339,14 @@
       "legalName": "Armada Acquisition Corp. II",
       "business": "Blank Checks",
       "sector": "Finance",
-      "preMarketPrice": 26.63,
-      "preMarketChangePct": 6.48,
-      "prevClose": 25.00939143501127,
+      "preMarketPrice": 27.24,
+      "preMarketChangePct": 8.92,
+      "prevClose": 25.009181050312154,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 8, 2026 7:01 AM ET",
-      "preMarketVolume": 39623.676721,
-      "preMarketDollarVolume": 1055178.5110802301,
-      "relVolume": 0.7646848856745856,
+      "lastTradeAt": "Oct 8, 2026 7:20 AM ET",
+      "preMarketVolume": 50611.875236,
+      "preMarketDollarVolume": 1378667.48142864,
+      "relVolume": 0.9767426758785727,
       "avgVolume50": 51817,
       "sharesOutstanding": null,
       "marketCap": null,
@@ -439,12 +371,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.5%"
+          "detail": "8.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "39,624"
+          "ok": true,
+          "detail": "50,612"
         },
         {
           "name": "News catalyst",
@@ -454,7 +386,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$26.63"
+          "detail": "$27.24"
         },
         {
           "name": "Float <10M",
@@ -462,7 +394,76 @@
           "detail": "unknown"
         }
       ],
-      "passed": 1,
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "SI",
+      "name": "Shoulder Innovations Inc.",
+      "legalName": "SHOULDER INNOVATIONS, INC.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 19.77,
+      "preMarketChangePct": 5.67,
+      "prevClose": 18.70918898457462,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 8, 2026 7:06 AM ET",
+      "preMarketVolume": 2.529084,
+      "preMarketDollarVolume": 49.99999068,
+      "relVolume": 0.000023722320189096913,
+      "avgVolume50": 106612,
+      "sharesOutstanding": 20818957,
+      "marketCap": 411590779.89,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 32,
+      "float": {
+        "shares": 20818957,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-30"
+      },
+      "floatRotation": 1.2147986087871743e-7,
+      "daysUp": 0,
+      "priorRunPct": 1.862692921766905,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Shoulder Innovations Initiates Commercial Launch of the InSet® Go",
+        "subject": null,
+        "date": "2026-10-08"
+      },
+      "leads": [
+        "PR Newswire",
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "3"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$19.77"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "20.8M"
+        }
+      ],
+      "passed": 2,
       "quality": "low"
     }
   ]
