@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-08T13:20:33.268Z",
-  "marketStatus": "After Hours",
-  "prevSession": "2026-10-07",
-  "universeChecked": 6003,
-  "smallCapsInBand": 2975,
-  "investigated": 82,
-  "liveQuotes": 65,
-  "feedIsLive": true,
+  "generatedAt": "2026-10-09T17:24:20.762Z",
+  "marketStatus": "Market Open",
+  "prevSession": "2026-10-08",
+  "universeChecked": 6004,
+  "smallCapsInBand": 2981,
+  "investigated": 63,
+  "liveQuotes": 62,
+  "feedIsLive": false,
   "discovery": {
-    "since": "2026-10-07T19:30:00.000Z",
+    "since": "2026-10-08T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 122,
+    "edgarFilings": 129,
     "leads": {
-      "8-K": 52,
+      "8-K": 50,
       "PR Newswire": 1,
-      "GlobeNewswire": 4,
-      "prior-session gainer": 25
+      "GlobeNewswire": 2,
+      "prior-session gainer": 12
     },
     "feeds": [
       {
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 82,
-    "answered": 82,
+    "requested": 63,
+    "answered": 63,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -58,34 +58,307 @@
     "floatStretch": 20000000
   },
   "shortlist": [],
-  "watchlist": [
+  "watchlist": [],
+  "alsoRan": [
     {
-      "symbol": "DKI",
-      "name": "DarkIris Inc. Class A Ordinary Shares",
-      "legalName": "DarkIris Inc.",
-      "business": "Services-Prepackaged Software",
-      "sector": "Technology",
-      "preMarketPrice": 4.29,
-      "preMarketChangePct": 156.89,
-      "prevClose": 1.6699754758846197,
+      "symbol": "QSI",
+      "name": "Quantum-Si Incorporated Class A",
+      "legalName": "Quantum-Si Inc",
+      "business": "Measuring & Controlling Devices, NEC",
+      "sector": "Industrials",
+      "preMarketPrice": 1.6113,
+      "preMarketChangePct": 32.07,
+      "prevClose": 1.2200348300143864,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 8, 2026 9:20 AM ET",
-      "preMarketVolume": 54115104.534412,
-      "preMarketDollarVolume": 232153798.45262748,
-      "relVolume": 197.1959512665192,
-      "avgVolume50": 274423,
-      "sharesOutstanding": 2097586.8263473054,
-      "marketCap": 8998647.48502994,
+      "lastTradeAt": "Oct 9, 2026 1:24 PM ET",
+      "preMarketVolume": 28713089.004202,
+      "preMarketDollarVolume": 46265400.31247068,
+      "relVolume": 10.664313789098092,
+      "avgVolume50": 2692446,
+      "sharesOutstanding": 218883912.29508197,
+      "marketCap": 352687647.88106555,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 185,
+      "bestPriorSpikePct": 25,
       "float": {
-        "shares": 2097586.8263473054,
+        "shares": 218883912.29508197,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-08"
+        "asOf": "2026-10-09"
       },
-      "floatRotation": 25.798743515493435,
+      "floatRotation": 0.13117953120964543,
+      "daysUp": 1,
+      "priorRunPct": 19.62616822429906,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-10-08"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "32.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "28,713,089"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.61"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "218.9M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "ALIS",
+      "name": "Calisa Acquisition Corp Ordinary shares",
+      "legalName": "Calisa Acquisition Corp",
+      "business": "Services-Computer Processing & Data Preparation",
+      "sector": null,
+      "preMarketPrice": 10.48,
+      "preMarketChangePct": 8.38,
+      "prevClose": 9.669680752906439,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 9, 2026 1:24 PM ET",
+      "preMarketVolume": 10791.184885,
+      "preMarketDollarVolume": 113091.61759480002,
+      "relVolume": 0.2614080299653594,
+      "avgVolume50": 41281,
+      "sharesOutstanding": 8427500,
+      "marketCap": 88320200,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 1,
+      "float": {
+        "shares": 8427500,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-07"
+      },
+      "floatRotation": 0.0012804728430732722,
       "daysUp": 0,
-      "priorRunPct": -46.666666666666664,
+      "priorRunPct": 6.983511154219194,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Shareholder vote results",
+        "subject": "Shareholder vote results",
+        "date": "2026-10-08"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "10,791"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$10.48"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "8.4M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "FBLG",
+      "name": "FibroBiologics Inc.",
+      "legalName": "FibroBiologics, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 1.19,
+      "preMarketChangePct": 7.21,
+      "prevClose": 1.109971084786867,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 9, 2026 1:24 PM ET",
+      "preMarketVolume": 106759.0056,
+      "preMarketDollarVolume": 127043.21666399999,
+      "relVolume": 0.5018167552703942,
+      "avgVolume50": 212745,
+      "sharesOutstanding": 6658193,
+      "marketCap": 7923249.67,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 32,
+      "float": {
+        "shares": 6658193,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-31"
+      },
+      "floatRotation": 0.016034231149502576,
+      "daysUp": 1,
+      "priorRunPct": -12.307692307692317,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt) · Sold unregistered shares (dilution)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt) · Sold unregistered shares (dilution)",
+        "date": "2026-10-08"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "106,759"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.19"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "6.7M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "SSEA",
+      "name": "Starry Sea Acquisition Corp\tOrdinary Shares",
+      "legalName": "STARRY SEA ACQUISITION CORP",
+      "business": "Blank Checks",
+      "sector": "Finance",
+      "preMarketPrice": 10.99,
+      "preMarketChangePct": 6.183574879227058,
+      "prevClose": 10.35,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 9, 2026 1:24 PM ET",
+      "preMarketVolume": 10,
+      "preMarketDollarVolume": 109.9,
+      "relVolume": 0.0005922416345869114,
+      "avgVolume50": 16885,
+      "sharesOutstanding": 7635871,
+      "marketCap": 83918222.29,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 1,
+      "float": {
+        "shares": 7635871,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-13"
+      },
+      "floatRotation": 0.0000013096082948494022,
+      "daysUp": 0,
+      "priorRunPct": 0,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-10-09"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "10"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$10.99"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "7.6M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "FVNNU",
+      "name": "Future Vision II Acquisition Corporation Units",
+      "legalName": "Future Vision II Acquisition Corp.",
+      "business": "Services-Computer Integrated Systems Design",
+      "sector": null,
+      "preMarketPrice": 24.6,
+      "preMarketChangePct": 26.80412371134022,
+      "prevClose": 19.4,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 9, 2026 1:24 PM ET",
+      "preMarketVolume": 174.508928,
+      "preMarketDollarVolume": 4292.9196288,
+      "relVolume": 0.07990335531135531,
+      "avgVolume50": 2184,
+      "sharesOutstanding": 7544000,
+      "marketCap": 185582400,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 44,
+      "float": {
+        "shares": 7544000,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-06-30"
+      },
+      "floatRotation": 0.000023132148462354187,
+      "daysUp": 1,
+      "priorRunPct": 44.023756495916835,
       "extended": false,
       "catalyst": {
         "found": false,
@@ -101,12 +374,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "156.9%"
+          "detail": "26.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "54,115,105"
+          "ok": false,
+          "detail": "175"
         },
         {
           "name": "News catalyst",
@@ -115,632 +388,17 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.29"
+          "ok": false,
+          "detail": "$24.60"
         },
         {
           "name": "Float <10M",
           "ok": true,
-          "detail": "2.1M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
-      "symbol": "PROF",
-      "name": "Profound Medical Corp.",
-      "legalName": "Profound Medical Corp.",
-      "business": "Surgical & Medical Instruments & Apparatus",
-      "sector": "Health Care",
-      "preMarketPrice": 6.5505,
-      "preMarketChangePct": 15.33,
-      "prevClose": 5.679788433191711,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 8, 2026 9:20 AM ET",
-      "preMarketVolume": 794048.148536,
-      "preMarketDollarVolume": 5201412.396985069,
-      "relVolume": 6.630605390472215,
-      "avgVolume50": 119755,
-      "sharesOutstanding": 36532594,
-      "marketCap": 239306756.997,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 18,
-      "float": {
-        "shares": 36532594,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-06"
-      },
-      "floatRotation": 0.021735334439596597,
-      "daysUp": 2,
-      "priorRunPct": 6.2937062937062995,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released",
-        "subject": "Earnings / results released",
-        "date": "2026-10-07"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "15.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "794,048"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.55"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "36.5M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
-      "symbol": "BIAF",
-      "name": "bioAffinity Technologies Inc.",
-      "legalName": "bioAffinity Technologies, Inc.",
-      "business": "Services-Commercial Physical & Biological Research",
-      "sector": "Health Care",
-      "preMarketPrice": 6.4443,
-      "preMarketChangePct": 6.341584158415851,
-      "prevClose": 6.06,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 8, 2026 9:20 AM ET",
-      "preMarketVolume": 4765278.34321,
-      "preMarketDollarVolume": 30708883.2271482,
-      "relVolume": 0.7055058134147536,
-      "avgVolume50": 6754414,
-      "sharesOutstanding": 8101725,
-      "marketCap": 52209946.417500004,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 98,
-      "float": {
-        "shares": 8101725,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-03"
-      },
-      "floatRotation": 0.5881807075912845,
-      "daysUp": 0,
-      "priorRunPct": -11.918604651162795,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-10-08"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "4,765,278"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.44"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "8.1M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
-  "alsoRan": [
-    {
-      "symbol": "GRDX",
-      "name": "GridAI Technologies Corp.",
-      "legalName": "GridAI Technologies Corp.",
-      "business": "Electric & Other Services Combined",
-      "sector": "Health Care",
-      "preMarketPrice": 4.46,
-      "preMarketChangePct": 6.95443645083933,
-      "prevClose": 4.17,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 8, 2026 9:12 AM ET",
-      "preMarketVolume": 1177,
-      "preMarketDollarVolume": 5249.42,
-      "relVolume": 0.01154453522701637,
-      "avgVolume50": 101953,
-      "sharesOutstanding": 7131123,
-      "marketCap": 31804808.58,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 23,
-      "float": {
-        "shares": 7131123,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-21"
-      },
-      "floatRotation": 0.00016505114271623137,
-      "daysUp": 3,
-      "priorRunPct": 27.91411042944786,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract)",
-        "subject": "Entered a material agreement (deal, partnership or contract)",
-        "date": "2026-10-07"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "1,177"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.46"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "7.1M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "RNA",
-      "name": "Atrium Therapeutics Inc.",
-      "legalName": "Atrium Therapeutics, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 8.48,
-      "preMarketChangePct": 6.132665832290366,
-      "prevClose": 7.99,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 8, 2026 9:03 AM ET",
-      "preMarketVolume": 95743.3313,
-      "preMarketDollarVolume": 811903.4494240001,
-      "relVolume": 0.46602221145983413,
-      "avgVolume50": 205448,
-      "sharesOutstanding": 17105643,
-      "marketCap": 145055852.64000002,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 42,
-      "float": {
-        "shares": 17105643,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-03"
-      },
-      "floatRotation": 0.00559717815343159,
-      "daysUp": 2,
-      "priorRunPct": -5.106888361045128,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Atrium Therapeutics Secures $50M To Advance RNA-Based Heart Therapies ",
-        "subject": null,
-        "date": "2026-10-08"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "95,743"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$8.48"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "17.1M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "XAIR",
-      "name": "Beyond Air Inc.",
-      "legalName": "Beyond Air, Inc.",
-      "business": "Surgical & Medical Instruments & Apparatus",
-      "sector": "Health Care",
-      "preMarketPrice": 2.7,
-      "preMarketChangePct": 5.882352941176485,
-      "prevClose": 2.55,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 8, 2026 9:18 AM ET",
-      "preMarketVolume": 4382,
-      "preMarketDollarVolume": 11831.400000000001,
-      "relVolume": 0.01633161147014319,
-      "avgVolume50": 268314,
-      "sharesOutstanding": 957631,
-      "marketCap": 2585603.7,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 150,
-      "float": {
-        "shares": 957631,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-12"
-      },
-      "floatRotation": 0.004575875258841872,
-      "daysUp": 0,
-      "priorRunPct": -9.893992932862199,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released · Regulation FD disclosure (company announcement)",
-        "subject": "Earnings / results released · Regulation FD disclosure (company announcement)",
-        "date": "2026-10-08"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "4,382"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.70"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "1.0M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "AISP",
-      "name": "Airship AI Holdings Inc. Class A",
-      "legalName": "Airship AI Holdings, Inc.",
-      "business": "Services-Prepackaged Software",
-      "sector": "Technology",
-      "preMarketPrice": 2.22,
-      "preMarketChangePct": 5.213270142180111,
-      "prevClose": 2.11,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 8, 2026 9:19 AM ET",
-      "preMarketVolume": 85626.212296,
-      "preMarketDollarVolume": 190090.19129712,
-      "relVolume": 0.25641427064386396,
-      "avgVolume50": 333937,
-      "sharesOutstanding": 34439562,
-      "marketCap": 76455827.64,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 20,
-      "float": {
-        "shares": 34439562,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-06"
-      },
-      "floatRotation": 0.002486274717895657,
-      "daysUp": 1,
-      "priorRunPct": 15.30054644808742,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Airship AI’s $29 Million DHS Deal Could Change Everything",
-        "subject": null,
-        "date": "2026-10-06"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "85,626"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.22"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "34.4M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "HNRG",
-      "name": "Hallador Energy Company",
-      "legalName": "HALLADOR ENERGY CO",
-      "business": "Electric Services",
-      "sector": "Utilities",
-      "preMarketPrice": 14.5542,
-      "preMarketChangePct": 6.62,
-      "prevClose": 13.65053460889139,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 8, 2026 9:14 AM ET",
-      "preMarketVolume": 21162.274277,
-      "preMarketDollarVolume": 307999.9722823134,
-      "relVolume": 0.029117533967264183,
-      "avgVolume50": 726788,
-      "sharesOutstanding": 47143357,
-      "marketCap": 686133846.4494,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 19,
-      "float": {
-        "shares": 47143357,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-06"
-      },
-      "floatRotation": 0.0004488919674727449,
-      "daysUp": 2,
-      "priorRunPct": 5.110007097232084,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Wednesday Sector Laggards: Construction, Metals & Mining Stocks  ",
-        "subject": null,
-        "date": "2026-10-07"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "21,162"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$14.55"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "47.1M"
+          "detail": "7.5M"
         }
       ],
       "passed": 2,
       "quality": "low"
-    },
-    {
-      "symbol": "SI",
-      "name": "Shoulder Innovations Inc.",
-      "legalName": "SHOULDER INNOVATIONS, INC.",
-      "business": "Surgical & Medical Instruments & Apparatus",
-      "sector": "Health Care",
-      "preMarketPrice": 19.77,
-      "preMarketChangePct": 5.67,
-      "prevClose": 18.70918898457462,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 8, 2026 7:06 AM ET",
-      "preMarketVolume": 2.529084,
-      "preMarketDollarVolume": 49.99999068,
-      "relVolume": 0.000023722320189096913,
-      "avgVolume50": 106612,
-      "sharesOutstanding": 20818957,
-      "marketCap": 411590779.89,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 32,
-      "float": {
-        "shares": 20818957,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-30"
-      },
-      "floatRotation": 1.2147986087871743e-7,
-      "daysUp": 0,
-      "priorRunPct": 1.862692921766905,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Regulation FD disclosure (company announcement)",
-        "subject": "Regulation FD disclosure (company announcement)",
-        "date": "2026-10-08"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "3"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$19.77"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "20.8M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "TTEC",
-      "name": "TTEC Holdings Inc.",
-      "legalName": "TTEC Holdings, Inc.",
-      "business": "Services-Help Supply Services",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.46,
-      "preMarketChangePct": 8.14814814814814,
-      "prevClose": 1.35,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 8, 2026 8:49 AM ET",
-      "preMarketVolume": 2024,
-      "preMarketDollarVolume": 2955.04,
-      "relVolume": 0.00447836159229651,
-      "avgVolume50": 451951,
-      "sharesOutstanding": 49295940,
-      "marketCap": 71972072.39999999,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 18,
-      "float": {
-        "shares": 49295940,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-31"
-      },
-      "floatRotation": 0.00004105814799352644,
-      "daysUp": 0,
-      "priorRunPct": 8.870967741935491,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract)",
-        "subject": "Entered a material agreement (deal, partnership or contract)",
-        "date": "2026-10-07"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "8.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "2,024"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.46"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "49.3M"
-        }
-      ],
-      "passed": 1,
-      "quality": "low"
     }
-  ],
-  "frozenAfterPreMarket": true
+  ]
 }
