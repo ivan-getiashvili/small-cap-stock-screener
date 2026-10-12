@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-12T11:02:19.128Z",
+  "generatedAt": "2026-10-12T11:20:40.326Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-09",
   "universeChecked": 6015,
   "smallCapsInBand": 2975,
-  "investigated": 81,
-  "liveQuotes": 57,
+  "investigated": 83,
+  "liveQuotes": 62,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-09T19:30:00.000Z",
@@ -13,8 +13,8 @@
     "edgarFilings": 109,
     "leads": {
       "8-K": 58,
-      "PR Newswire": 2,
-      "GlobeNewswire": 7,
+      "PR Newswire": 3,
+      "GlobeNewswire": 8,
       "prior-session gainer": 16
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 81,
-    "answered": 81,
+    "requested": 83,
+    "answered": 83,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "EURO TECH HOLDINGS CO LTD",
       "business": "Wholesale-Professional & Commercial Equipment & Supplies",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.58,
-      "preMarketChangePct": 16.18,
-      "prevClose": 1.3599586847994491,
+      "preMarketPrice": 1.4973,
+      "preMarketChangePct": 10.1,
+      "prevClose": 1.3599455040871935,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 7:02 AM ET",
-      "preMarketVolume": 82296,
-      "preMarketDollarVolume": 130027.68000000001,
-      "relVolume": 2.022710514673352,
+      "lastTradeAt": "Oct 12, 2026 7:20 AM ET",
+      "preMarketVolume": 3223183,
+      "preMarketDollarVolume": 4826071.905900001,
+      "relVolume": 79.22093594848351,
       "avgVolume50": 40686,
       "sharesOutstanding": 7447012,
-      "marketCap": 11766278.96,
+      "marketCap": 11150411.0676,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.011050875169799646,
+      "floatRotation": 0.4328156044330263,
       "daysUp": 1,
       "priorRunPct": -2.2388059701492558,
       "extended": false,
@@ -102,12 +102,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "16.2%"
+          "detail": "10.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "82,296"
+          "detail": "3,223,183"
         },
         {
           "name": "News catalyst",
@@ -117,7 +117,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.58"
+          "detail": "$1.50"
         },
         {
           "name": "Float <10M",
@@ -130,6 +130,74 @@
     }
   ],
   "alsoRan": [
+    {
+      "symbol": "DCX",
+      "name": "Digital Currency X Technology Inc. Class A Ordinary Shares",
+      "legalName": "Digital Currency X Technology Inc.",
+      "business": "Motor Vehicles & Passenger Car Bodies",
+      "sector": "Industrials",
+      "preMarketPrice": 2.93,
+      "preMarketChangePct": 6.934306569343063,
+      "prevClose": 2.74,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 12, 2026 7:20 AM ET",
+      "preMarketVolume": 84062,
+      "preMarketDollarVolume": 246301.66,
+      "relVolume": 0.08675675145700606,
+      "avgVolume50": 968939,
+      "sharesOutstanding": 19560823,
+      "marketCap": 57313211.39,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 34,
+      "float": {
+        "shares": 19560823,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-12-31"
+      },
+      "floatRotation": 0.004297467442959839,
+      "daysUp": 0,
+      "priorRunPct": -26.7379679144385,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "DCX and Whales AI Sign Strategic Investment and Exclusive Commercialization Agreement to Advance AI-Powered STEM Education Robotics Platform in North America",
+        "subject": "Contract or partnership",
+        "date": "2026-10-12"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "84,062"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.93"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "19.6M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
     {
       "symbol": "BARK",
       "name": "BARK Inc. Class A",
@@ -267,74 +335,6 @@
       "quality": "low"
     },
     {
-      "symbol": "CTNT",
-      "name": "Cheetah Net Supply Chain Service Inc Class A",
-      "legalName": "CHEETAH NET SUPPLY CHAIN SERVICE INC.",
-      "business": "Wholesale-Motor Vehicles & Motor Vehicle Parts & Supplies",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.85,
-      "preMarketChangePct": 7.95,
-      "prevClose": 2.6401111625752667,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 7:01 AM ET",
-      "preMarketVolume": 9713,
-      "preMarketDollarVolume": 27682.05,
-      "relVolume": 0.017391849305257126,
-      "avgVolume50": 558480,
-      "sharesOutstanding": 36177712,
-      "marketCap": 103106479.2,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 28,
-      "float": {
-        "shares": 36177712,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-03-19"
-      },
-      "floatRotation": 0.0002684802178755804,
-      "daysUp": 1,
-      "priorRunPct": 15.102040816326515,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution)",
-        "date": "2026-10-09"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "8.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "9,713"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.85"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "36.2M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
       "symbol": "FAC",
       "name": "Factorial Energy Inc. Class A",
       "legalName": "Factorial Energy Inc.",
@@ -408,17 +408,17 @@
       "legalName": "Agroz Inc.",
       "business": "Agricultural Production-Crops",
       "sector": "Consumer Staples",
-      "preMarketPrice": 4.7,
-      "preMarketChangePct": 6.33,
-      "prevClose": 4.420201260227594,
+      "preMarketPrice": 4.85,
+      "preMarketChangePct": 9.73,
+      "prevClose": 4.419939852364895,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 6:53 AM ET",
-      "preMarketVolume": 11649.042389,
-      "preMarketDollarVolume": 54750.4992283,
-      "relVolume": 0.0013066983937057054,
+      "lastTradeAt": "Oct 12, 2026 7:20 AM ET",
+      "preMarketVolume": 13855.042389,
+      "preMarketDollarVolume": 67196.95558665,
+      "relVolume": 0.0015541502065033613,
       "avgVolume50": 8914867,
       "sharesOutstanding": 21853485,
-      "marketCap": 102711379.5,
+      "marketCap": 105989402.24999999,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 154,
       "float": {
@@ -426,7 +426,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.0005330519314882729,
+      "floatRotation": 0.0006339969295057516,
       "daysUp": 2,
       "priorRunPct": 12.074303405572758,
       "extended": true,
@@ -444,12 +444,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.3%"
+          "detail": "9.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "11,649"
+          "detail": "13,855"
         },
         {
           "name": "News catalyst",
@@ -459,7 +459,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.70"
+          "detail": "$4.85"
         },
         {
           "name": "Float <10M",
@@ -471,68 +471,68 @@
       "quality": "low"
     },
     {
-      "symbol": "FJET",
-      "name": "Starfighters Space Inc.",
-      "legalName": "Starfighters Space, Inc.",
-      "business": "Air Transportation, Scheduled",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.68,
-      "preMarketChangePct": 5,
-      "prevClose": 1.5999999999999999,
+      "symbol": "KLRA",
+      "name": "Kailera Therapeutics Inc.",
+      "legalName": "Kailera Therapeutics, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 12.2801,
+      "preMarketChangePct": 5.77,
+      "prevClose": 11.6101919258769,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 4:00 AM ET",
-      "preMarketVolume": 20,
-      "preMarketDollarVolume": 33.6,
-      "relVolume": 0.00002305685474527363,
-      "avgVolume50": 867421,
-      "sharesOutstanding": 54996019,
-      "marketCap": 92393311.92,
+      "lastTradeAt": "Oct 12, 2026 7:04 AM ET",
+      "preMarketVolume": 1408.58725,
+      "preMarketDollarVolume": 17297.592288724998,
+      "relVolume": 0.0022739247754466852,
+      "avgVolume50": 619452,
+      "sharesOutstanding": 129643676,
+      "marketCap": 1592037305.6476,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 40,
+      "bestPriorSpikePct": 15,
       "float": {
-        "shares": 54996019,
+        "shares": 129643676,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-14"
+        "asOf": "2026-08-06"
       },
-      "floatRotation": 3.636626862027959e-7,
-      "daysUp": 1,
-      "priorRunPct": -5.084745762711869,
+      "floatRotation": 0.000010865067186154149,
+      "daysUp": 0,
+      "priorRunPct": -9.338168631006342,
       "extended": false,
       "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Amended the charter or bylaws",
-        "subject": "Amended the charter or bylaws",
-        "date": "2026-10-09"
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
       },
       "leads": [
-        "8-K"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.0%"
+          "detail": "5.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "20"
+          "detail": "1,409"
         },
         {
           "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
+          "ok": false,
+          "detail": "none found"
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.68"
+          "ok": true,
+          "detail": "$12.28"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "55.0M"
+          "detail": "129.6M"
         }
       ],
       "passed": 1,
