@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-12T12:40:43.389Z",
+  "generatedAt": "2026-10-12T13:00:45.930Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-09",
   "universeChecked": 6015,
   "smallCapsInBand": 2975,
-  "investigated": 81,
-  "liveQuotes": 63,
+  "investigated": 79,
+  "liveQuotes": 61,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-09T19:30:00.000Z",
@@ -13,8 +13,8 @@
     "edgarFilings": 109,
     "leads": {
       "8-K": 58,
-      "PR Newswire": 2,
-      "GlobeNewswire": 7,
+      "PR Newswire": 1,
+      "GlobeNewswire": 5,
       "prior-session gainer": 16
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 81,
-    "answered": 81,
+    "requested": 79,
+    "answered": 79,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -57,78 +57,77 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [
+  "shortlist": [],
+  "watchlist": [],
+  "alsoRan": [
     {
-      "symbol": "CLWT",
-      "name": "Euro Tech Holdings Company Limited",
-      "legalName": "EURO TECH HOLDINGS CO LTD",
-      "business": "Wholesale-Professional & Commercial Equipment & Supplies",
+      "symbol": "WFF",
+      "name": "WF Holding Limited Ordinary Shares",
+      "legalName": "WF Holding Ltd",
+      "business": "Miscellaneous Manufacturing Industries",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.2515,
-      "preMarketChangePct": 65.55,
-      "prevClose": 1.3600120809423135,
+      "preMarketPrice": 13.1055,
+      "preMarketChangePct": 6.64,
+      "prevClose": 12.289478619654913,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 8:40 AM ET",
-      "preMarketVolume": 33271916,
-      "preMarketDollarVolume": 74911718.874,
-      "relVolume": 817.7730914810992,
-      "avgVolume50": 40686,
-      "sharesOutstanding": 7447012,
-      "marketCap": 16766947.518000001,
+      "lastTradeAt": "Oct 12, 2026 9:00 AM ET",
+      "preMarketVolume": 5875525.100394,
+      "preMarketDollarVolume": 77001694.20321357,
+      "relVolume": 1.7515812310455603,
+      "avgVolume50": 3354412,
+      "sharesOutstanding": 5038018,
+      "marketCap": 66025744.899,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 31,
+      "bestPriorSpikePct": 48,
       "float": {
-        "shares": 7447012,
+        "shares": 5038018,
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 4.467820919316365,
-      "daysUp": 1,
-      "priorRunPct": -2.2388059701492558,
+      "floatRotation": 1.1662374172529753,
+      "daysUp": 0,
+      "priorRunPct": -17.004048582995964,
       "extended": false,
       "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Euro Tech Holdings Company Limited Announces The Company has signed a 50/50 Joint Venture Agreement With Sea Clean AS In Norway",
-        "subject": "Contract or partnership",
-        "date": "2026-10-12"
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
       },
       "leads": [
-        "PR Newswire"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "65.5%"
+          "ok": false,
+          "detail": "6.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "33,271,916"
+          "detail": "5,875,525"
         },
         {
           "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
+          "ok": false,
+          "detail": "none found"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.25"
+          "detail": "$13.11"
         },
         {
           "name": "Float <10M",
           "ok": true,
-          "detail": "7.4M"
+          "detail": "5.0M"
         }
       ],
-      "passed": 5,
-      "quality": "high"
-    }
-  ],
-  "watchlist": [],
-  "alsoRan": [
+      "passed": 3,
+      "quality": "low"
+    },
     {
       "symbol": "BARK",
       "name": "BARK Inc. Class A",
@@ -266,6 +265,74 @@
       "quality": "low"
     },
     {
+      "symbol": "ACRE",
+      "name": "Ares Commercial Real Estate Corporation",
+      "legalName": "Ares Commercial Real Estate Corp",
+      "business": "Real Estate Investment Trusts",
+      "sector": "Real Estate",
+      "preMarketPrice": 3.8038,
+      "preMarketChangePct": 7.15,
+      "prevClose": 3.5499766682221185,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 12, 2026 8:57 AM ET",
+      "preMarketVolume": 7.520794,
+      "preMarketDollarVolume": 28.6075962172,
+      "relVolume": 0.000019278748449147416,
+      "avgVolume50": 390108,
+      "sharesOutstanding": 55481113,
+      "marketCap": 211039057.62939999,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 13,
+      "float": {
+        "shares": 55481113,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-30"
+      },
+      "floatRotation": 1.355559323404345e-7,
+      "daysUp": 1,
+      "priorRunPct": -5.426356589147286,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt)",
+        "date": "2026-10-09"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "8"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.80"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "55.5M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
       "symbol": "BRAI",
       "name": "Braiin Limited",
       "legalName": "Braiin Ltd",
@@ -331,74 +398,6 @@
         }
       ],
       "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "PDSB",
-      "name": "PDS Biotechnology Corporation",
-      "legalName": "PDS Biotechnology Corp",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 1.4699,
-      "preMarketChangePct": 6.51,
-      "prevClose": 1.380058210496667,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 8:40 AM ET",
-      "preMarketVolume": 580874.843411,
-      "preMarketDollarVolume": 853827.9323298289,
-      "relVolume": 0.04847913745386291,
-      "avgVolume50": 11981955,
-      "sharesOutstanding": 55971338,
-      "marketCap": 82272269.7262,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 36,
-      "float": {
-        "shares": 55971338,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-06"
-      },
-      "floatRotation": 0.010378076782995611,
-      "daysUp": 0,
-      "priorRunPct": 44.45545956663363,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.5%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "580,875"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.47"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "56.0M"
-        }
-      ],
-      "passed": 1,
       "quality": "low"
     }
   ]
