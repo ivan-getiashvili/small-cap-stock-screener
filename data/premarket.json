@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-12T11:20:40.326Z",
+  "generatedAt": "2026-10-12T11:40:39.161Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-09",
   "universeChecked": 6015,
   "smallCapsInBand": 2975,
   "investigated": 83,
-  "liveQuotes": 62,
+  "liveQuotes": 63,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-09T19:30:00.000Z",
@@ -57,7 +57,76 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [],
+  "shortlist": [
+    {
+      "symbol": "GIXI",
+      "name": "Gix Internet Ltd. Ordinary Shares",
+      "legalName": "Gix Internet Ltd.",
+      "business": "Services-Prepackaged Software",
+      "sector": "Technology",
+      "preMarketPrice": 8.31,
+      "preMarketChangePct": 109.85,
+      "prevClose": 3.959971408148678,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 12, 2026 7:40 AM ET",
+      "preMarketVolume": 2021481,
+      "preMarketDollarVolume": 16798507.11,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 2492350.8997429307,
+      "marketCap": 20711435.976863757,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 2492350.8997429307,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-12"
+      },
+      "floatRotation": 0.8110739945199941,
+      "daysUp": 0,
+      "priorRunPct": -14.117647058823533,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Gix Internet Brings Physical AI to Life-Saving Logistics as Robots Begin Delivering Blood and Bone Marrow at One of the World’s Top 10 Hospitals",
+        "subject": "Hot-sector announcement",
+        "date": "2026-10-12"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "109.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "2,021,481"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$8.31"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "2.5M"
+        }
+      ],
+      "passed": 5,
+      "quality": "high"
+    }
+  ],
   "watchlist": [
     {
       "symbol": "CLWT",
@@ -65,17 +134,17 @@
       "legalName": "EURO TECH HOLDINGS CO LTD",
       "business": "Wholesale-Professional & Commercial Equipment & Supplies",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.4973,
-      "preMarketChangePct": 10.1,
-      "prevClose": 1.3599455040871935,
+      "preMarketPrice": 1.7411,
+      "preMarketChangePct": 28.02,
+      "prevClose": 1.3600218715825654,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 7:20 AM ET",
-      "preMarketVolume": 3223183,
-      "preMarketDollarVolume": 4826071.905900001,
-      "relVolume": 79.22093594848351,
+      "lastTradeAt": "Oct 12, 2026 7:40 AM ET",
+      "preMarketVolume": 19587945,
+      "preMarketDollarVolume": 34104571.0395,
+      "relVolume": 481.4418964754461,
       "avgVolume50": 40686,
       "sharesOutstanding": 7447012,
-      "marketCap": 11150411.0676,
+      "marketCap": 12965992.5932,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -83,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.4328156044330263,
+      "floatRotation": 2.63030931063358,
       "daysUp": 1,
       "priorRunPct": -2.2388059701492558,
       "extended": false,
@@ -95,19 +164,18 @@
         "date": "2026-10-12"
       },
       "leads": [
-        "PR Newswire",
         "PR Newswire"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "10.1%"
+          "detail": "28.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "3,223,183"
+          "detail": "19,587,945"
         },
         {
           "name": "News catalyst",
@@ -117,7 +185,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.50"
+          "detail": "$1.74"
         },
         {
           "name": "Float <10M",
@@ -131,38 +199,38 @@
   ],
   "alsoRan": [
     {
-      "symbol": "DCX",
-      "name": "Digital Currency X Technology Inc. Class A Ordinary Shares",
-      "legalName": "Digital Currency X Technology Inc.",
-      "business": "Motor Vehicles & Passenger Car Bodies",
-      "sector": "Industrials",
-      "preMarketPrice": 2.93,
-      "preMarketChangePct": 6.934306569343063,
-      "prevClose": 2.74,
+      "symbol": "ENVX",
+      "name": "Enovix Corporation",
+      "legalName": "Enovix Corp",
+      "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
+      "sector": "Miscellaneous",
+      "preMarketPrice": 2.66,
+      "preMarketChangePct": 6.400000000000006,
+      "prevClose": 2.5,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 12, 2026 7:20 AM ET",
-      "preMarketVolume": 84062,
-      "preMarketDollarVolume": 246301.66,
-      "relVolume": 0.08675675145700606,
-      "avgVolume50": 968939,
-      "sharesOutstanding": 19560823,
-      "marketCap": 57313211.39,
+      "lastTradeAt": "Oct 12, 2026 7:40 AM ET",
+      "preMarketVolume": 127266.735592,
+      "preMarketDollarVolume": 338529.51667472,
+      "relVolume": 0.017841784800714192,
+      "avgVolume50": 7133072,
+      "sharesOutstanding": 219448535,
+      "marketCap": 583733103.1,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 34,
+      "bestPriorSpikePct": 15,
       "float": {
-        "shares": 19560823,
+        "shares": 219448535,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
+        "asOf": "2026-08-07"
       },
-      "floatRotation": 0.004297467442959839,
+      "floatRotation": 0.000579938870824542,
       "daysUp": 0,
-      "priorRunPct": -26.7379679144385,
+      "priorRunPct": -10.07194244604316,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "DCX and Whales AI Sign Strategic Investment and Exclusive Commercialization Agreement to Advance AI-Powered STEM Education Robotics Platform in North America",
-        "subject": "Contract or partnership",
+        "headline": "Q3’26 Revenue $11.0 Million Up 38% Year/Year",
+        "subject": "Earnings or guidance",
         "date": "2026-10-12"
       },
       "leads": [
@@ -172,12 +240,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.9%"
+          "detail": "6.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "84,062"
+          "detail": "127,267"
         },
         {
           "name": "News catalyst",
@@ -187,12 +255,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.93"
+          "detail": "$2.66"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "19.6M"
+          "detail": "219.4M"
         }
       ],
       "passed": 3,
@@ -335,90 +403,22 @@
       "quality": "low"
     },
     {
-      "symbol": "FAC",
-      "name": "Factorial Energy Inc. Class A",
-      "legalName": "Factorial Energy Inc.",
-      "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
-      "sector": "Miscellaneous",
-      "preMarketPrice": 5.379,
-      "preMarketChangePct": 5.885826771653533,
-      "prevClose": 5.08,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 12, 2026 6:52 AM ET",
-      "preMarketVolume": 204.185185,
-      "preMarketDollarVolume": 1098.3121101149998,
-      "relVolume": 0.0005512558990280777,
-      "avgVolume50": 370400,
-      "sharesOutstanding": 107023244.94163425,
-      "marketCap": 575678034.5410506,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 37,
-      "float": {
-        "shares": 107023244.94163425,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-12"
-      },
-      "floatRotation": 0.000001907858289209541,
-      "daysUp": 1,
-      "priorRunPct": -19.301032565528196,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-10-09"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "204"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$5.38"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "107.0M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
       "symbol": "AGRZ",
       "name": "Agroz Inc. Class A Ordinary Shares",
       "legalName": "Agroz Inc.",
       "business": "Agricultural Production-Crops",
       "sector": "Consumer Staples",
-      "preMarketPrice": 4.85,
-      "preMarketChangePct": 9.73,
-      "prevClose": 4.419939852364895,
+      "preMarketPrice": 4.75,
+      "preMarketChangePct": 7.47,
+      "prevClose": 4.419838094351912,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 7:20 AM ET",
-      "preMarketVolume": 13855.042389,
-      "preMarketDollarVolume": 67196.95558665,
-      "relVolume": 0.0015541502065033613,
+      "lastTradeAt": "Oct 12, 2026 7:40 AM ET",
+      "preMarketVolume": 26015.042389,
+      "preMarketDollarVolume": 123571.45134774999,
+      "relVolume": 0.002918163825551183,
       "avgVolume50": 8914867,
       "sharesOutstanding": 21853485,
-      "marketCap": 105989402.24999999,
+      "marketCap": 103804053.75,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 154,
       "float": {
@@ -426,7 +426,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.0006339969295057516,
+      "floatRotation": 0.0011904299194842379,
       "daysUp": 2,
       "priorRunPct": 12.074303405572758,
       "extended": true,
@@ -444,12 +444,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.7%"
+          "detail": "7.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "13,855"
+          "detail": "26,015"
         },
         {
           "name": "News catalyst",
@@ -459,7 +459,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.85"
+          "detail": "$4.75"
         },
         {
           "name": "Float <10M",
