@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-12T12:00:40.963Z",
+  "generatedAt": "2026-10-12T12:20:42.624Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-09",
   "universeChecked": 6015,
   "smallCapsInBand": 2975,
-  "investigated": 83,
-  "liveQuotes": 62,
+  "investigated": 86,
+  "liveQuotes": 65,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-09T19:30:00.000Z",
@@ -13,7 +13,7 @@
     "edgarFilings": 109,
     "leads": {
       "8-K": 58,
-      "PR Newswire": 1,
+      "PR Newswire": 3,
       "GlobeNewswire": 10,
       "prior-session gainer": 16
     },
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 83,
-    "answered": 83,
+    "requested": 86,
+    "answered": 86,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -57,76 +57,7 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [
-    {
-      "symbol": "GIXI",
-      "name": "Gix Internet Ltd. Ordinary Shares",
-      "legalName": "Gix Internet Ltd.",
-      "business": "Services-Prepackaged Software",
-      "sector": "Technology",
-      "preMarketPrice": 6.79,
-      "preMarketChangePct": 71.46,
-      "prevClose": 3.960107313659163,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 8:00 AM ET",
-      "preMarketVolume": 5121982,
-      "preMarketDollarVolume": 34778257.78,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 2492350.8997429307,
-      "marketCap": 16923062.609254498,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 2492350.8997429307,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-12"
-      },
-      "floatRotation": 2.0550806070398426,
-      "daysUp": 0,
-      "priorRunPct": -14.117647058823533,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Gix Internet Brings Physical AI to Life-Saving Logistics as Robots Begin Delivering Blood and Bone Marrow at One of the World’s Top 10 Hospitals",
-        "subject": "Hot-sector announcement",
-        "date": "2026-10-12"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "71.5%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "5,121,982"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.79"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "2.5M"
-        }
-      ],
-      "passed": 5,
-      "quality": "high"
-    }
-  ],
+  "shortlist": [],
   "watchlist": [
     {
       "symbol": "CLWT",
@@ -134,17 +65,17 @@
       "legalName": "EURO TECH HOLDINGS CO LTD",
       "business": "Wholesale-Professional & Commercial Equipment & Supplies",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.8003,
-      "preMarketChangePct": 32.38,
-      "prevClose": 1.3599486327239763,
+      "preMarketPrice": 1.9297,
+      "preMarketChangePct": 41.89,
+      "prevClose": 1.359997180914793,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 8:00 AM ET",
-      "preMarketVolume": 23637198,
-      "preMarketDollarVolume": 42554047.5594,
-      "relVolume": 580.9663766406135,
+      "lastTradeAt": "Oct 12, 2026 8:20 AM ET",
+      "preMarketVolume": 27805742,
+      "preMarketDollarVolume": 53656740.3374,
+      "relVolume": 683.4228481541562,
       "avgVolume50": 40686,
       "sharesOutstanding": 7447012,
-      "marketCap": 13406855.7036,
+      "marketCap": 14370499.0564,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -152,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 3.1740512839243444,
+      "floatRotation": 3.7338118966372016,
       "daysUp": 1,
       "priorRunPct": -2.2388059701492558,
       "extended": false,
@@ -170,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "32.4%"
+          "detail": "41.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "23,637,198"
+          "detail": "27,805,742"
         },
         {
           "name": "News catalyst",
@@ -185,7 +116,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.80"
+          "detail": "$1.93"
         },
         {
           "name": "Float <10M",
@@ -267,6 +198,74 @@
       "quality": "low"
     },
     {
+      "symbol": "QSI",
+      "name": "Quantum-Si Incorporated Class A",
+      "legalName": "Quantum-Si Inc",
+      "business": "Measuring & Controlling Devices, NEC",
+      "sector": "Industrials",
+      "preMarketPrice": 1.53,
+      "preMarketChangePct": 25.409836065573778,
+      "prevClose": 1.22,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 12, 2026 8:20 AM ET",
+      "preMarketVolume": 447067.83741,
+      "preMarketDollarVolume": 684013.7912373,
+      "relVolume": 0.16604523819976333,
+      "avgVolume50": 2692446,
+      "sharesOutstanding": 218883911.76470587,
+      "marketCap": 334892385,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 25,
+      "float": {
+        "shares": 218883911.76470587,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-12"
+      },
+      "floatRotation": 0.0020424883391639377,
+      "daysUp": 0,
+      "priorRunPct": -14.685314685314681,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "25.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "447,068"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.53"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "218.9M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
       "symbol": "YDES",
       "name": "YD Bio Limited Ordinary Shares",
       "legalName": "YD Bio Ltd",
@@ -332,6 +331,74 @@
         }
       ],
       "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "PDSB",
+      "name": "PDS Biotechnology Corporation",
+      "legalName": "PDS Biotechnology Corp",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 1.45,
+      "preMarketChangePct": 5.07,
+      "prevClose": 1.3800323593794612,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 12, 2026 8:20 AM ET",
+      "preMarketVolume": 484264.297633,
+      "preMarketDollarVolume": 702183.23156785,
+      "relVolume": 0.040416133897431594,
+      "avgVolume50": 11981955,
+      "sharesOutstanding": 55971338,
+      "marketCap": 81158440.1,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 36,
+      "float": {
+        "shares": 55971338,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-06"
+      },
+      "floatRotation": 0.00865200502501834,
+      "daysUp": 0,
+      "priorRunPct": 44.45545956663363,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "484,264"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.45"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "56.0M"
+        }
+      ],
+      "passed": 1,
       "quality": "low"
     }
   ]
