@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-12T12:20:42.624Z",
+  "generatedAt": "2026-10-12T12:40:43.389Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-09",
   "universeChecked": 6015,
   "smallCapsInBand": 2975,
-  "investigated": 86,
-  "liveQuotes": 65,
+  "investigated": 81,
+  "liveQuotes": 63,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-09T19:30:00.000Z",
@@ -13,8 +13,8 @@
     "edgarFilings": 109,
     "leads": {
       "8-K": 58,
-      "PR Newswire": 3,
-      "GlobeNewswire": 10,
+      "PR Newswire": 2,
+      "GlobeNewswire": 7,
       "prior-session gainer": 16
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 86,
-    "answered": 86,
+    "requested": 81,
+    "answered": 81,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -57,25 +57,24 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [],
-  "watchlist": [
+  "shortlist": [
     {
       "symbol": "CLWT",
       "name": "Euro Tech Holdings Company Limited",
       "legalName": "EURO TECH HOLDINGS CO LTD",
       "business": "Wholesale-Professional & Commercial Equipment & Supplies",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.9297,
-      "preMarketChangePct": 41.89,
-      "prevClose": 1.359997180914793,
+      "preMarketPrice": 2.2515,
+      "preMarketChangePct": 65.55,
+      "prevClose": 1.3600120809423135,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 8:20 AM ET",
-      "preMarketVolume": 27805742,
-      "preMarketDollarVolume": 53656740.3374,
-      "relVolume": 683.4228481541562,
+      "lastTradeAt": "Oct 12, 2026 8:40 AM ET",
+      "preMarketVolume": 33271916,
+      "preMarketDollarVolume": 74911718.874,
+      "relVolume": 817.7730914810992,
       "avgVolume50": 40686,
       "sharesOutstanding": 7447012,
-      "marketCap": 14370499.0564,
+      "marketCap": 16766947.518000001,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -83,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 3.7338118966372016,
+      "floatRotation": 4.467820919316365,
       "daysUp": 1,
       "priorRunPct": -2.2388059701492558,
       "extended": false,
@@ -101,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "41.9%"
+          "detail": "65.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "27,805,742"
+          "detail": "33,271,916"
         },
         {
           "name": "News catalyst",
@@ -115,8 +114,8 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.93"
+          "ok": true,
+          "detail": "$2.25"
         },
         {
           "name": "Float <10M",
@@ -124,10 +123,11 @@
           "detail": "7.4M"
         }
       ],
-      "passed": 4,
-      "quality": "medium"
+      "passed": 5,
+      "quality": "high"
     }
   ],
+  "watchlist": [],
   "alsoRan": [
     {
       "symbol": "BARK",
@@ -195,74 +195,6 @@
         }
       ],
       "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "QSI",
-      "name": "Quantum-Si Incorporated Class A",
-      "legalName": "Quantum-Si Inc",
-      "business": "Measuring & Controlling Devices, NEC",
-      "sector": "Industrials",
-      "preMarketPrice": 1.53,
-      "preMarketChangePct": 25.409836065573778,
-      "prevClose": 1.22,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 12, 2026 8:20 AM ET",
-      "preMarketVolume": 447067.83741,
-      "preMarketDollarVolume": 684013.7912373,
-      "relVolume": 0.16604523819976333,
-      "avgVolume50": 2692446,
-      "sharesOutstanding": 218883911.76470587,
-      "marketCap": 334892385,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 25,
-      "float": {
-        "shares": 218883911.76470587,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-12"
-      },
-      "floatRotation": 0.0020424883391639377,
-      "daysUp": 0,
-      "priorRunPct": -14.685314685314681,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "25.4%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "447,068"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.53"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "218.9M"
-        }
-      ],
-      "passed": 2,
       "quality": "low"
     },
     {
@@ -334,22 +266,90 @@
       "quality": "low"
     },
     {
+      "symbol": "BRAI",
+      "name": "Braiin Limited",
+      "legalName": "Braiin Ltd",
+      "business": "Services-Computer Processing & Data Preparation",
+      "sector": "Technology",
+      "preMarketPrice": 4.9,
+      "preMarketChangePct": 6.29,
+      "prevClose": 4.610029165490639,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 12, 2026 6:46 AM ET",
+      "preMarketVolume": 83,
+      "preMarketDollarVolume": 406.70000000000005,
+      "relVolume": 0.0003162398698463379,
+      "avgVolume50": 262459,
+      "sharesOutstanding": 206088227.9826464,
+      "marketCap": 1009832317.1149675,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 79,
+      "float": {
+        "shares": 206088227.9826464,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-12"
+      },
+      "floatRotation": 4.027401313139972e-7,
+      "daysUp": 0,
+      "priorRunPct": -18.267419962335214,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Braiin Ltd. to Participate in AI Panel at 2026 Maxim Growth Summit",
+        "subject": "Hot-sector announcement",
+        "date": "2026-10-12"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "83"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.90"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "206.1M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
       "symbol": "PDSB",
       "name": "PDS Biotechnology Corporation",
       "legalName": "PDS Biotechnology Corp",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 1.45,
-      "preMarketChangePct": 5.07,
-      "prevClose": 1.3800323593794612,
+      "preMarketPrice": 1.4699,
+      "preMarketChangePct": 6.51,
+      "prevClose": 1.380058210496667,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 8:20 AM ET",
-      "preMarketVolume": 484264.297633,
-      "preMarketDollarVolume": 702183.23156785,
-      "relVolume": 0.040416133897431594,
+      "lastTradeAt": "Oct 12, 2026 8:40 AM ET",
+      "preMarketVolume": 580874.843411,
+      "preMarketDollarVolume": 853827.9323298289,
+      "relVolume": 0.04847913745386291,
       "avgVolume50": 11981955,
       "sharesOutstanding": 55971338,
-      "marketCap": 81158440.1,
+      "marketCap": 82272269.7262,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 36,
       "float": {
@@ -357,7 +357,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-06"
       },
-      "floatRotation": 0.00865200502501834,
+      "floatRotation": 0.010378076782995611,
       "daysUp": 0,
       "priorRunPct": 44.45545956663363,
       "extended": false,
@@ -375,12 +375,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.1%"
+          "detail": "6.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "484,264"
+          "detail": "580,875"
         },
         {
           "name": "News catalyst",
@@ -390,7 +390,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.45"
+          "detail": "$1.47"
         },
         {
           "name": "Float <10M",
