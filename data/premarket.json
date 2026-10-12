@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-12T13:00:45.930Z",
+  "generatedAt": "2026-10-12T13:20:40.372Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-09",
   "universeChecked": 6015,
   "smallCapsInBand": 2975,
-  "investigated": 79,
-  "liveQuotes": 61,
+  "investigated": 80,
+  "liveQuotes": 64,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-09T19:30:00.000Z",
@@ -13,8 +13,8 @@
     "edgarFilings": 109,
     "leads": {
       "8-K": 58,
-      "PR Newswire": 1,
-      "GlobeNewswire": 5,
+      "PR Newswire": 4,
+      "GlobeNewswire": 3,
       "prior-session gainer": 16
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 79,
-    "answered": 79,
+    "requested": 80,
+    "answered": 80,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -58,7 +58,76 @@
     "floatStretch": 20000000
   },
   "shortlist": [],
-  "watchlist": [],
+  "watchlist": [
+    {
+      "symbol": "NCPL",
+      "name": "Netcapital Inc.",
+      "legalName": "Netcapital Inc.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 1.48,
+      "preMarketChangePct": 29.82,
+      "prevClose": 1.140040055461408,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 12, 2026 9:20 AM ET",
+      "preMarketVolume": 8947824.551699,
+      "preMarketDollarVolume": 13242780.33651452,
+      "relVolume": 0.513756817714726,
+      "avgVolume50": 17416459,
+      "sharesOutstanding": 7847899,
+      "marketCap": 11614890.52,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 127,
+      "float": {
+        "shares": 7847899,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-03-19"
+      },
+      "floatRotation": 1.1401554163348686,
+      "daysUp": 0,
+      "priorRunPct": -15.483870967741934,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "NCPL Stockholder Notice: Shareholder Rights Law Firm Robbins LLP Reminds Investors of the Securities Class Action Lawsuit Against Netcapital Inc.",
+        "subject": null,
+        "date": "2026-10-12"
+      },
+      "leads": [
+        "PR Newswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "29.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "8,947,825"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.48"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "7.8M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
   "alsoRan": [
     {
       "symbol": "WFF",
@@ -66,17 +135,17 @@
       "legalName": "WF Holding Ltd",
       "business": "Miscellaneous Manufacturing Industries",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 13.1055,
-      "preMarketChangePct": 6.64,
-      "prevClose": 12.289478619654913,
+      "preMarketPrice": 13.4,
+      "preMarketChangePct": 9.03,
+      "prevClose": 12.290195359075483,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 9:00 AM ET",
-      "preMarketVolume": 5875525.100394,
-      "preMarketDollarVolume": 77001694.20321357,
-      "relVolume": 1.7515812310455603,
+      "lastTradeAt": "Oct 12, 2026 9:20 AM ET",
+      "preMarketVolume": 7700104.486547,
+      "preMarketDollarVolume": 103181400.1197298,
+      "relVolume": 2.295515424624942,
       "avgVolume50": 3354412,
       "sharesOutstanding": 5038018,
-      "marketCap": 66025744.899,
+      "marketCap": 67509441.2,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 48,
       "float": {
@@ -84,7 +153,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 1.1662374172529753,
+      "floatRotation": 1.5283995584269447,
       "daysUp": 0,
       "priorRunPct": -17.004048582995964,
       "extended": false,
@@ -102,12 +171,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.6%"
+          "detail": "9.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "5,875,525"
+          "detail": "7,700,104"
         },
         {
           "name": "News catalyst",
@@ -117,7 +186,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$13.11"
+          "detail": "$13.40"
         },
         {
           "name": "Float <10M",
@@ -333,71 +402,71 @@
       "quality": "low"
     },
     {
-      "symbol": "BRAI",
-      "name": "Braiin Limited",
-      "legalName": "Braiin Ltd",
-      "business": "Services-Computer Processing & Data Preparation",
-      "sector": "Technology",
-      "preMarketPrice": 4.9,
-      "preMarketChangePct": 6.29,
-      "prevClose": 4.610029165490639,
+      "symbol": "PDSB",
+      "name": "PDS Biotechnology Corporation",
+      "legalName": "PDS Biotechnology Corp",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 1.4797,
+      "preMarketChangePct": 7.22,
+      "prevClose": 1.3800596903562767,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 6:46 AM ET",
-      "preMarketVolume": 83,
-      "preMarketDollarVolume": 406.70000000000005,
-      "relVolume": 0.0003162398698463379,
-      "avgVolume50": 262459,
-      "sharesOutstanding": 206088227.9826464,
-      "marketCap": 1009832317.1149675,
+      "lastTradeAt": "Oct 12, 2026 9:20 AM ET",
+      "preMarketVolume": 1109617.994962,
+      "preMarketDollarVolume": 1641901.7471452714,
+      "relVolume": 0.09260742466166832,
+      "avgVolume50": 11981955,
+      "sharesOutstanding": 55971338,
+      "marketCap": 82820788.8386,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 79,
+      "bestPriorSpikePct": 36,
       "float": {
-        "shares": 206088227.9826464,
+        "shares": 55971338,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-12"
+        "asOf": "2026-08-06"
       },
-      "floatRotation": 4.027401313139972e-7,
+      "floatRotation": 0.01982475378669704,
       "daysUp": 0,
-      "priorRunPct": -18.267419962335214,
+      "priorRunPct": 44.45545956663363,
       "extended": false,
       "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Braiin Ltd. to Participate in AI Panel at 2026 Maxim Growth Summit",
-        "subject": "Hot-sector announcement",
-        "date": "2026-10-12"
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
       },
       "leads": [
-        "GlobeNewswire"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.3%"
+          "detail": "7.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "83"
+          "ok": true,
+          "detail": "1,109,618"
         },
         {
           "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
+          "ok": false,
+          "detail": "none found"
         },
         {
           "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.90"
+          "ok": false,
+          "detail": "$1.48"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "206.1M"
+          "detail": "56.0M"
         }
       ],
-      "passed": 2,
+      "passed": 1,
       "quality": "low"
     }
   ]
