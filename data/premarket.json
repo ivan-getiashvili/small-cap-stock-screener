@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-12T13:20:40.372Z",
-  "marketStatus": "After Hours",
-  "prevSession": "2026-10-09",
-  "universeChecked": 6015,
-  "smallCapsInBand": 2975,
-  "investigated": 80,
-  "liveQuotes": 64,
+  "generatedAt": "2026-10-13T11:00:57.807Z",
+  "marketStatus": "Pre Market",
+  "prevSession": "2026-10-12",
+  "universeChecked": 6018,
+  "smallCapsInBand": 2990,
+  "investigated": 37,
+  "liveQuotes": 34,
   "feedIsLive": true,
   "discovery": {
-    "since": "2026-10-09T19:30:00.000Z",
+    "since": "2026-10-12T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 109,
+    "edgarFilings": 47,
     "leads": {
-      "8-K": 58,
+      "8-K": 13,
       "PR Newswire": 4,
       "GlobeNewswire": 3,
-      "prior-session gainer": 16
+      "prior-session gainer": 17
     },
     "feeds": [
       {
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 80,
-    "answered": 80,
+    "requested": 37,
+    "answered": 37,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -58,55 +58,192 @@
     "floatStretch": 20000000
   },
   "shortlist": [],
-  "watchlist": [
+  "watchlist": [],
+  "alsoRan": [
     {
-      "symbol": "NCPL",
-      "name": "Netcapital Inc.",
-      "legalName": "Netcapital Inc.",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 1.48,
-      "preMarketChangePct": 29.82,
-      "prevClose": 1.140040055461408,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 9:20 AM ET",
-      "preMarketVolume": 8947824.551699,
-      "preMarketDollarVolume": 13242780.33651452,
-      "relVolume": 0.513756817714726,
-      "avgVolume50": 17416459,
-      "sharesOutstanding": 7847899,
-      "marketCap": 11614890.52,
+      "symbol": "PASG",
+      "name": "Passage Bio Inc.",
+      "legalName": "Passage BIO, Inc.",
+      "business": "Biological Products, (No Diagnostic Substances)",
+      "sector": "Health Care",
+      "preMarketPrice": 4.55,
+      "preMarketChangePct": 23.30623306233062,
+      "prevClose": 3.69,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 13, 2026 6:54 AM ET",
+      "preMarketVolume": null,
+      "preMarketDollarVolume": null,
+      "relVolume": null,
+      "avgVolume50": 28766,
+      "sharesOutstanding": 3217810,
+      "marketCap": 14641035.5,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 127,
+      "bestPriorSpikePct": 38,
       "float": {
-        "shares": 7847899,
+        "shares": 3217810,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-03-19"
+        "asOf": "2026-08-05"
       },
-      "floatRotation": 1.1401554163348686,
+      "floatRotation": null,
       "daysUp": 0,
-      "priorRunPct": -15.483870967741934,
+      "priorRunPct": -10.436893203883498,
       "extended": false,
       "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "NCPL Stockholder Notice: Shareholder Rights Law Firm Robbins LLP Reminds Investors of the Securities Class Action Lawsuit Against Netcapital Inc.",
+        "found": false,
+        "kind": null,
+        "headline": null,
         "subject": null,
-        "date": "2026-10-12"
+        "date": null
       },
       "leads": [
-        "PR Newswire"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "29.8%"
+          "detail": "23.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "unknown"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
           "ok": true,
-          "detail": "8,947,825"
+          "detail": "$4.55"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "3.2M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "GURE",
+      "name": "Gulf Resources Inc. (NV)",
+      "legalName": "GULF RESOURCES, INC.",
+      "business": "Chemicals & Allied Products",
+      "sector": "Industrials",
+      "preMarketPrice": 3.21,
+      "preMarketChangePct": 10.69,
+      "prevClose": 2.899990965760231,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 13, 2026 6:11 AM ET",
+      "preMarketVolume": 177,
+      "preMarketDollarVolume": 568.17,
+      "relVolume": 0.022354129830765346,
+      "avgVolume50": 7918,
+      "sharesOutstanding": 1813531,
+      "marketCap": 5821434.51,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 118,
+      "float": {
+        "shares": 1813531,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-29"
+      },
+      "floatRotation": 0.00009759965503760344,
+      "daysUp": 0,
+      "priorRunPct": -9.452736318407965,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "10.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "177"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.21"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "1.8M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "ICCC",
+      "name": "ImmuCell Corporation",
+      "legalName": "IMMUCELL CORP /DE/",
+      "business": "In Vitro & In Vivo Diagnostic Substances",
+      "sector": "Health Care",
+      "preMarketPrice": 10.51,
+      "preMarketChangePct": 9.48,
+      "prevClose": 9.599926927292657,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 13, 2026 7:00 AM ET",
+      "preMarketVolume": 984,
+      "preMarketDollarVolume": 10341.84,
+      "relVolume": 0.035873131607728766,
+      "avgVolume50": 27430,
+      "sharesOutstanding": 9082197,
+      "marketCap": 95453890.47,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 13,
+      "float": {
+        "shares": 9082197,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-31"
+      },
+      "floatRotation": 0.00010834382914178144,
+      "daysUp": 2,
+      "priorRunPct": 0.5128205128205201,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "ImmuCell Reports Preliminary Q3 2026 Sales Growth Of 46%;Stock Up ",
+        "subject": null,
+        "date": "2026-10-13"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "9.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "984"
         },
         {
           "name": "News catalyst",
@@ -115,8 +252,76 @@
         },
         {
           "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$10.51"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "9.1M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "NCPL",
+      "name": "Netcapital Inc.",
+      "legalName": "Netcapital Inc.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 1.62,
+      "preMarketChangePct": 5.19,
+      "prevClose": 1.5400703488924803,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 13, 2026 7:00 AM ET",
+      "preMarketVolume": 287292,
+      "preMarketDollarVolume": 465413.04000000004,
+      "relVolume": 0.016495431132126225,
+      "avgVolume50": 17416459,
+      "sharesOutstanding": 7847899,
+      "marketCap": 12713596.38,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 127,
+      "float": {
+        "shares": 7847899,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-03-19"
+      },
+      "floatRotation": 0.03660750476019123,
+      "daysUp": 0,
+      "priorRunPct": -18.571428571428573,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "$1.48"
+          "detail": "5.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "287,292"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.62"
         },
         {
           "name": "Float <10M",
@@ -124,310 +329,36 @@
           "detail": "7.8M"
         }
       ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
-  "alsoRan": [
-    {
-      "symbol": "WFF",
-      "name": "WF Holding Limited Ordinary Shares",
-      "legalName": "WF Holding Ltd",
-      "business": "Miscellaneous Manufacturing Industries",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 13.4,
-      "preMarketChangePct": 9.03,
-      "prevClose": 12.290195359075483,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 9:20 AM ET",
-      "preMarketVolume": 7700104.486547,
-      "preMarketDollarVolume": 103181400.1197298,
-      "relVolume": 2.295515424624942,
-      "avgVolume50": 3354412,
-      "sharesOutstanding": 5038018,
-      "marketCap": 67509441.2,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 48,
-      "float": {
-        "shares": 5038018,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 1.5283995584269447,
-      "daysUp": 0,
-      "priorRunPct": -17.004048582995964,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "7,700,104"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$13.40"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "5.0M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "BARK",
-      "name": "BARK Inc. Class A",
-      "legalName": "Bark, Inc.",
-      "business": "Retail-Retail Stores, NEC",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 8.5,
-      "preMarketChangePct": 5.99,
-      "prevClose": 8.019624492876686,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 5:42 AM ET",
-      "preMarketVolume": 71,
-      "preMarketDollarVolume": 603.5,
-      "relVolume": 0.001420681927325116,
-      "avgVolume50": 49976,
-      "sharesOutstanding": 9033457,
-      "marketCap": 76784384.5,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 26,
-      "float": {
-        "shares": 9033457,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-03"
-      },
-      "floatRotation": 0.000007859670998599983,
-      "daysUp": 0,
-      "priorRunPct": -3.638497652582145,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Executive or board change",
-        "subject": "Executive or board change",
-        "date": "2026-10-09"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "71"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$8.50"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "9.0M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "YDES",
-      "name": "YD Bio Limited Ordinary Shares",
-      "legalName": "YD Bio Ltd",
-      "business": "Services-Medical Laboratories",
-      "sector": "Health Care",
-      "preMarketPrice": 6.73,
-      "preMarketChangePct": 16.234887737478417,
-      "prevClose": 5.79,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 12, 2026 6:19 AM ET",
-      "preMarketVolume": 107,
-      "preMarketDollarVolume": 720.11,
-      "relVolume": 0.0004108100636947566,
-      "avgVolume50": 260461,
-      "sharesOutstanding": 70789261,
-      "marketCap": 476411726.53000003,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 24,
-      "float": {
-        "shares": 70789261,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 0.0000015115287048977668,
-      "daysUp": 0,
-      "priorRunPct": -25.864276568501914,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "16.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "107"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.73"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "70.8M"
-        }
-      ],
       "passed": 2,
       "quality": "low"
     },
     {
-      "symbol": "ACRE",
-      "name": "Ares Commercial Real Estate Corporation",
-      "legalName": "Ares Commercial Real Estate Corp",
-      "business": "Real Estate Investment Trusts",
-      "sector": "Real Estate",
-      "preMarketPrice": 3.8038,
-      "preMarketChangePct": 7.15,
-      "prevClose": 3.5499766682221185,
+      "symbol": "ARL",
+      "name": "American Realty Investors Inc.",
+      "legalName": "AMERICAN REALTY INVESTORS INC",
+      "business": "Real Estate Operators (No Developers) & Lessors",
+      "sector": "Finance",
+      "preMarketPrice": 20.8,
+      "preMarketChangePct": 8.05,
+      "prevClose": 19.250347061545583,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 8:57 AM ET",
-      "preMarketVolume": 7.520794,
-      "preMarketDollarVolume": 28.6075962172,
-      "relVolume": 0.000019278748449147416,
-      "avgVolume50": 390108,
-      "sharesOutstanding": 55481113,
-      "marketCap": 211039057.62939999,
+      "lastTradeAt": "Oct 13, 2026 6:57 AM ET",
+      "preMarketVolume": 33.108653,
+      "preMarketDollarVolume": 688.6599824,
+      "relVolume": 0.003026385100548446,
+      "avgVolume50": 10940,
+      "sharesOutstanding": 16152043,
+      "marketCap": 335962494.40000004,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 13,
+      "bestPriorSpikePct": 34,
       "float": {
-        "shares": 55481113,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-30"
-      },
-      "floatRotation": 1.355559323404345e-7,
-      "daysUp": 1,
-      "priorRunPct": -5.426356589147286,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt)",
-        "date": "2026-10-09"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "8"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.80"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "55.5M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "PDSB",
-      "name": "PDS Biotechnology Corporation",
-      "legalName": "PDS Biotechnology Corp",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 1.4797,
-      "preMarketChangePct": 7.22,
-      "prevClose": 1.3800596903562767,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 12, 2026 9:20 AM ET",
-      "preMarketVolume": 1109617.994962,
-      "preMarketDollarVolume": 1641901.7471452714,
-      "relVolume": 0.09260742466166832,
-      "avgVolume50": 11981955,
-      "sharesOutstanding": 55971338,
-      "marketCap": 82820788.8386,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 36,
-      "float": {
-        "shares": 55971338,
+        "shares": 16152043,
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-06"
       },
-      "floatRotation": 0.01982475378669704,
-      "daysUp": 0,
-      "priorRunPct": 44.45545956663363,
+      "floatRotation": 0.000002049812088786539,
+      "daysUp": 1,
+      "priorRunPct": 2.5561097256857868,
       "extended": false,
       "catalyst": {
         "found": false,
@@ -443,12 +374,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.2%"
+          "detail": "8.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "1,109,618"
+          "ok": false,
+          "detail": "33"
         },
         {
           "name": "News catalyst",
@@ -458,17 +389,16 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.48"
+          "detail": "$20.80"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "56.0M"
+          "detail": "16.2M"
         }
       ],
-      "passed": 1,
+      "passed": 0,
       "quality": "low"
     }
-  ],
-  "frozenAfterPreMarket": true
+  ]
 }
