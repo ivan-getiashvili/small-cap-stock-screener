@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-10-13T20:28:57.502Z",
+ "updatedAt": "2026-10-13T21:10:56.501Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -6158,7 +6158,10 @@
      "missing": [
       "Pre-market volume ≥50k"
      ],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 10.5
+     }
     },
     {
      "symbol": "BMBL",
@@ -6179,7 +6182,10 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 5.94
+     }
     }
    ]
   }
