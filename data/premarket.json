@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-13T11:40:51.833Z",
+  "generatedAt": "2026-10-13T12:01:10.997Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-12",
   "universeChecked": 6018,
   "smallCapsInBand": 2990,
-  "investigated": 39,
-  "liveQuotes": 32,
+  "investigated": 43,
+  "liveQuotes": 35,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-12T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 59,
+    "edgarFilings": 76,
     "leads": {
-      "8-K": 15,
+      "8-K": 20,
       "PR Newswire": 0,
-      "GlobeNewswire": 7,
+      "GlobeNewswire": 6,
       "prior-session gainer": 17
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 39,
-    "answered": 39,
+    "requested": 43,
+    "answered": 43,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,74 +60,6 @@
   "shortlist": [],
   "watchlist": [],
   "alsoRan": [
-    {
-      "symbol": "NCPL",
-      "name": "Netcapital Inc.",
-      "legalName": "Netcapital Inc.",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 1.7297,
-      "preMarketChangePct": 12.32,
-      "prevClose": 1.5399750712250713,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 13, 2026 7:40 AM ET",
-      "preMarketVolume": 1028657,
-      "preMarketDollarVolume": 1779268.0129,
-      "relVolume": 0.059062350159696644,
-      "avgVolume50": 17416459,
-      "sharesOutstanding": 7847899,
-      "marketCap": 13574510.9003,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 127,
-      "float": {
-        "shares": 7847899,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-03-19"
-      },
-      "floatRotation": 0.13107418941043966,
-      "daysUp": 0,
-      "priorRunPct": -18.571428571428573,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "12.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "1,028,657"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.73"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "7.8M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
     {
       "symbol": "GURE",
       "name": "Gulf Resources Inc. (NV)",
@@ -202,17 +134,17 @@
       "legalName": "IMMUCELL CORP /DE/",
       "business": "In Vitro & In Vivo Diagnostic Substances",
       "sector": "Health Care",
-      "preMarketPrice": 10.51,
-      "preMarketChangePct": 9.48,
-      "prevClose": 9.599926927292657,
+      "preMarketPrice": 10.5,
+      "preMarketChangePct": 9.38,
+      "prevClose": 9.599561162918265,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 13, 2026 7:38 AM ET",
-      "preMarketVolume": 3849,
-      "preMarketDollarVolume": 40452.99,
-      "relVolume": 0.14032081662413415,
+      "lastTradeAt": "Oct 13, 2026 8:01 AM ET",
+      "preMarketVolume": 4235,
+      "preMarketDollarVolume": 44467.5,
+      "relVolume": 0.15439300036456435,
       "avgVolume50": 27430,
       "sharesOutstanding": 9082197,
-      "marketCap": 95453890.47,
+      "marketCap": 95363068.5,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 13,
       "float": {
@@ -220,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-31"
       },
-      "floatRotation": 0.00042379613655154144,
+      "floatRotation": 0.0004662968662758581,
       "daysUp": 2,
       "priorRunPct": 0.5128205128205201,
       "extended": true,
@@ -238,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.5%"
+          "detail": "9.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "3,849"
+          "detail": "4,235"
         },
         {
           "name": "News catalyst",
@@ -253,7 +185,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$10.51"
+          "detail": "$10.50"
         },
         {
           "name": "Float <10M",
@@ -262,6 +194,142 @@
         }
       ],
       "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "WFF",
+      "name": "WF Holding Limited Ordinary Shares",
+      "legalName": "WF Holding Ltd",
+      "business": "Miscellaneous Manufacturing Industries",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 18.26,
+      "preMarketChangePct": 5.67,
+      "prevClose": 17.280211980694617,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 13, 2026 8:01 AM ET",
+      "preMarketVolume": 4040416.103695,
+      "preMarketDollarVolume": 73777998.0534707,
+      "relVolume": 1.2045080042925556,
+      "avgVolume50": 3354412,
+      "sharesOutstanding": 5038018,
+      "marketCap": 91994208.68,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 48,
+      "float": {
+        "shares": 5038018,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-12-31"
+      },
+      "floatRotation": 0.8019852457246084,
+      "daysUp": 1,
+      "priorRunPct": 411.0187110187111,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "4,040,416"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$18.26"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "5.0M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "NCPL",
+      "name": "Netcapital Inc.",
+      "legalName": "Netcapital Inc.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 1.6432,
+      "preMarketChangePct": 6.7,
+      "prevClose": 1.5400187441424555,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 13, 2026 8:01 AM ET",
+      "preMarketVolume": 1300875,
+      "preMarketDollarVolume": 2137597.8,
+      "relVolume": 0.07469227814907727,
+      "avgVolume50": 17416459,
+      "sharesOutstanding": 7847899,
+      "marketCap": 12895667.6368,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 127,
+      "float": {
+        "shares": 7847899,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-03-19"
+      },
+      "floatRotation": 0.16576092531262188,
+      "daysUp": 0,
+      "priorRunPct": -18.571428571428573,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "1,300,875"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.64"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "7.8M"
+        }
+      ],
+      "passed": 2,
       "quality": "low"
     },
     {
