@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-13T12:20:52.975Z",
+  "generatedAt": "2026-10-13T12:40:58.775Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-12",
   "universeChecked": 6018,
   "smallCapsInBand": 2990,
-  "investigated": 46,
-  "liveQuotes": 37,
+  "investigated": 57,
+  "liveQuotes": 49,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-12T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 84,
+    "edgarFilings": 98,
     "leads": {
-      "8-K": 23,
-      "PR Newswire": 3,
-      "GlobeNewswire": 4,
+      "8-K": 30,
+      "PR Newswire": 0,
+      "GlobeNewswire": 14,
       "prior-session gainer": 17
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 46,
-    "answered": 46,
+    "requested": 57,
+    "answered": 57,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -58,76 +58,7 @@
     "floatStretch": 20000000
   },
   "shortlist": [],
-  "watchlist": [
-    {
-      "symbol": "ICCC",
-      "name": "ImmuCell Corporation",
-      "legalName": "IMMUCELL CORP /DE/",
-      "business": "In Vitro & In Vivo Diagnostic Substances",
-      "sector": "Health Care",
-      "preMarketPrice": 10.9,
-      "preMarketChangePct": 13.54,
-      "prevClose": 9.600140919499736,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 13, 2026 8:20 AM ET",
-      "preMarketVolume": 5567,
-      "preMarketDollarVolume": 60680.3,
-      "relVolume": 0.2029529711994167,
-      "avgVolume50": 27430,
-      "sharesOutstanding": 9082197,
-      "marketCap": 98995947.3,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 13,
-      "float": {
-        "shares": 9082197,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-31"
-      },
-      "floatRotation": 0.0006129574154799769,
-      "daysUp": 2,
-      "priorRunPct": 0.5128205128205201,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "ImmuCell Reports Preliminary Q3 2026 Sales Growth Of 46%;Stock Up ",
-        "subject": null,
-        "date": "2026-10-13"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "13.5%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "5,567"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$10.90"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "9.1M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
+  "watchlist": [],
   "alsoRan": [
     {
       "symbol": "GURE",
@@ -198,55 +129,53 @@
       "quality": "low"
     },
     {
-      "symbol": "SUNS",
-      "name": "Sunrise Realty Trust Inc.",
-      "legalName": "Sunrise Realty Trust, Inc.",
-      "business": "Real Estate Investment Trusts",
-      "sector": "Real Estate",
-      "preMarketPrice": 6.2913,
-      "preMarketChangePct": 7.543589743589744,
-      "prevClose": 5.85,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 13, 2026 8:20 AM ET",
-      "preMarketVolume": 9328,
-      "preMarketDollarVolume": 58685.246399999996,
-      "relVolume": 0.1395258395034029,
-      "avgVolume50": 66855,
-      "sharesOutstanding": 13515851,
-      "marketCap": 85032273.3963,
+      "symbol": "ICCC",
+      "name": "ImmuCell Corporation",
+      "legalName": "IMMUCELL CORP /DE/",
+      "business": "In Vitro & In Vivo Diagnostic Substances",
+      "sector": "Health Care",
+      "preMarketPrice": 10.5001,
+      "preMarketChangePct": 9.38,
+      "prevClose": 9.599652587310294,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 13, 2026 8:35 AM ET",
+      "preMarketVolume": 6100,
+      "preMarketDollarVolume": 64050.61,
+      "relVolume": 0.22238425082026977,
+      "avgVolume50": 27430,
+      "sharesOutstanding": 9082197,
+      "marketCap": 95363976.7197,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 9,
+      "bestPriorSpikePct": 13,
       "float": {
-        "shares": 13515851,
+        "shares": 9082197,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-03"
+        "asOf": "2026-07-31"
       },
-      "floatRotation": 0.0006901526215404417,
-      "daysUp": 0,
-      "priorRunPct": -5.645161290322589,
-      "extended": false,
+      "floatRotation": 0.0006716436562651085,
+      "daysUp": 2,
+      "priorRunPct": 0.5128205128205201,
+      "extended": true,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Sunrise Realty Trust Announces ISS and Glass Lewis Support for Merger-Related Proposals",
-        "subject": "Merger or acquisition",
+        "headline": "ImmuCell Reports Preliminary Q3 2026 Sales Growth Of 46%;Stock Up ",
+        "subject": null,
         "date": "2026-10-13"
       },
       "leads": [
-        "GlobeNewswire",
-        "GlobeNewswire",
         "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.5%"
+          "detail": "9.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "9,328"
+          "detail": "6,100"
         },
         {
           "name": "News catalyst",
@@ -256,151 +185,15 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.29"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "13.5M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "NCPL",
-      "name": "Netcapital Inc.",
-      "legalName": "Netcapital Inc.",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 1.6299,
-      "preMarketChangePct": 5.84,
-      "prevClose": 1.5399659863945576,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 13, 2026 8:20 AM ET",
-      "preMarketVolume": 1376179,
-      "preMarketDollarVolume": 2243034.1521,
-      "relVolume": 0.07901600434393696,
-      "avgVolume50": 17416459,
-      "sharesOutstanding": 7847899,
-      "marketCap": 12791290.5801,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 127,
-      "float": {
-        "shares": 7847899,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-03-19"
-      },
-      "floatRotation": 0.17535635970850288,
-      "daysUp": 0,
-      "priorRunPct": -18.571428571428573,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.8%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "1,376,179"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.63"
+          "detail": "$10.50"
         },
         {
           "name": "Float <10M",
           "ok": true,
-          "detail": "7.8M"
+          "detail": "9.1M"
         }
       ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "ICCM",
-      "name": "IceCure Medical Ltd. Ordinary Shares",
-      "legalName": "IceCure Medical Ltd.",
-      "business": "Surgical & Medical Instruments & Apparatus",
-      "sector": "Health Care",
-      "preMarketPrice": 1.1732,
-      "preMarketChangePct": 6.654545454545448,
-      "prevClose": 1.1,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 13, 2026 8:20 AM ET",
-      "preMarketVolume": 40970,
-      "preMarketDollarVolume": 48066.004,
-      "relVolume": 0.26037992462519144,
-      "avgVolume50": 157347,
-      "sharesOutstanding": 73122293,
-      "marketCap": 85787074.1476,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 200,
-      "float": {
-        "shares": 73122293,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 0.0005602942456960424,
-      "daysUp": 0,
-      "priorRunPct": -29.936305732484076,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "IceCure Highlights Clinical Data and Strong Physician Engagement for ProSense® Breast Cancer Cryoablation at EUSOBI 2026",
-        "subject": "FDA / clinical",
-        "date": "2026-10-13"
-      },
-      "leads": [
-        "PR Newswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "40,970"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.17"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "73.1M"
-        }
-      ],
-      "passed": 1,
+      "passed": 3,
       "quality": "low"
     },
     {
