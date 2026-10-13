@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-13T12:40:58.775Z",
+  "generatedAt": "2026-10-13T13:01:45.705Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-12",
   "universeChecked": 6018,
   "smallCapsInBand": 2990,
-  "investigated": 57,
-  "liveQuotes": 49,
+  "investigated": 59,
+  "liveQuotes": 23,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-12T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 98,
+    "edgarFilings": 108,
     "leads": {
-      "8-K": 30,
-      "PR Newswire": 0,
-      "GlobeNewswire": 14,
+      "8-K": 33,
+      "PR Newswire": 2,
+      "GlobeNewswire": 9,
       "prior-session gainer": 17
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 57,
-    "answered": 57,
+    "requested": 59,
+    "answered": 59,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -58,7 +58,77 @@
     "floatStretch": 20000000
   },
   "shortlist": [],
-  "watchlist": [],
+  "watchlist": [
+    {
+      "symbol": "BMBL",
+      "name": "Bumble Inc. Class A",
+      "legalName": "Bumble Inc.",
+      "business": "Services-Computer Programming, Data Processing, Etc.",
+      "sector": "Technology",
+      "preMarketPrice": 5.9695,
+      "preMarketChangePct": 57.09,
+      "prevClose": 3.800050926220638,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 13, 2026 9:01 AM ET",
+      "preMarketVolume": 13654590.664501,
+      "preMarketDollarVolume": 81511078.97173873,
+      "relVolume": 5.543161090795682,
+      "avgVolume50": 2463322,
+      "sharesOutstanding": 119799036,
+      "marketCap": 715140345.402,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 34,
+      "float": {
+        "shares": 119799036,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2021-07-31"
+      },
+      "floatRotation": 0.11397913639723278,
+      "daysUp": 0,
+      "priorRunPct": 0,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Bumble To Be Acquired By Ithaca For $1.3 Bln In Cash; BMBL Up Nearly 4% In Pre-Market ",
+        "subject": "Merger or acquisition",
+        "date": "2026-10-13"
+      },
+      "leads": [
+        "8-K",
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "57.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "13,654,591"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.97"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "119.8M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
   "alsoRan": [
     {
       "symbol": "GURE",
@@ -126,142 +196,6 @@
         }
       ],
       "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "ICCC",
-      "name": "ImmuCell Corporation",
-      "legalName": "IMMUCELL CORP /DE/",
-      "business": "In Vitro & In Vivo Diagnostic Substances",
-      "sector": "Health Care",
-      "preMarketPrice": 10.5001,
-      "preMarketChangePct": 9.38,
-      "prevClose": 9.599652587310294,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 13, 2026 8:35 AM ET",
-      "preMarketVolume": 6100,
-      "preMarketDollarVolume": 64050.61,
-      "relVolume": 0.22238425082026977,
-      "avgVolume50": 27430,
-      "sharesOutstanding": 9082197,
-      "marketCap": 95363976.7197,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 13,
-      "float": {
-        "shares": 9082197,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-31"
-      },
-      "floatRotation": 0.0006716436562651085,
-      "daysUp": 2,
-      "priorRunPct": 0.5128205128205201,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "ImmuCell Reports Preliminary Q3 2026 Sales Growth Of 46%;Stock Up ",
-        "subject": null,
-        "date": "2026-10-13"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.4%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "6,100"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$10.50"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "9.1M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "BHR",
-      "name": "Braemar Hotels & Resorts Inc.",
-      "legalName": "Braemar Hotels & Resorts Inc.",
-      "business": "Real Estate Investment Trusts",
-      "sector": "Real Estate",
-      "preMarketPrice": 1.31,
-      "preMarketChangePct": 5.65,
-      "prevClose": 1.2399432087079982,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 13, 2026 7:35 AM ET",
-      "preMarketVolume": 205,
-      "preMarketDollarVolume": 268.55,
-      "relVolume": 0.000472183769316347,
-      "avgVolume50": 434153,
-      "sharesOutstanding": 68679318,
-      "marketCap": 89969906.58,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 10,
-      "float": {
-        "shares": 68679318,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-04"
-      },
-      "floatRotation": 0.0000029848869495180483,
-      "daysUp": 0,
-      "priorRunPct": -27.10843373493976,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Regulation FD disclosure (company announcement)",
-        "subject": "Regulation FD disclosure (company announcement)",
-        "date": "2026-10-13"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "205"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.31"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "68.7M"
-        }
-      ],
-      "passed": 1,
       "quality": "low"
     }
   ]
