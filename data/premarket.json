@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-13T11:21:19.292Z",
+  "generatedAt": "2026-10-13T11:40:51.833Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-12",
   "universeChecked": 6018,
   "smallCapsInBand": 2990,
-  "investigated": 38,
+  "investigated": 39,
   "liveQuotes": 32,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-12T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 54,
+    "edgarFilings": 59,
     "leads": {
-      "8-K": 14,
-      "PR Newswire": 1,
-      "GlobeNewswire": 6,
+      "8-K": 15,
+      "PR Newswire": 0,
+      "GlobeNewswire": 7,
       "prior-session gainer": 17
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 38,
-    "answered": 38,
+    "requested": 39,
+    "answered": 39,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -58,76 +58,7 @@
     "floatStretch": 20000000
   },
   "shortlist": [],
-  "watchlist": [
-    {
-      "symbol": "ICCC",
-      "name": "ImmuCell Corporation",
-      "legalName": "IMMUCELL CORP /DE/",
-      "business": "In Vitro & In Vivo Diagnostic Substances",
-      "sector": "Health Care",
-      "preMarketPrice": 11.0283,
-      "preMarketChangePct": 14.88,
-      "prevClose": 9.59984331476323,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 13, 2026 7:21 AM ET",
-      "preMarketVolume": 1728,
-      "preMarketDollarVolume": 19056.9024,
-      "relVolume": 0.06299671892088954,
-      "avgVolume50": 27430,
-      "sharesOutstanding": 9082197,
-      "marketCap": 100161193.1751,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 13,
-      "float": {
-        "shares": 9082197,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-31"
-      },
-      "floatRotation": 0.0001902623341026406,
-      "daysUp": 2,
-      "priorRunPct": 0.5128205128205201,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "ImmuCell Reports Preliminary Q3 2026 Sales Growth Of 46%;Stock Up ",
-        "subject": null,
-        "date": "2026-10-13"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "14.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "1,728"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$11.03"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "9.1M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
+  "watchlist": [],
   "alsoRan": [
     {
       "symbol": "NCPL",
@@ -135,17 +66,17 @@
       "legalName": "Netcapital Inc.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 1.71,
-      "preMarketChangePct": 11.04,
-      "prevClose": 1.539985590778098,
+      "preMarketPrice": 1.7297,
+      "preMarketChangePct": 12.32,
+      "prevClose": 1.5399750712250713,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 13, 2026 7:21 AM ET",
-      "preMarketVolume": 436465,
-      "preMarketDollarVolume": 746355.15,
-      "relVolume": 0.02506049019493572,
+      "lastTradeAt": "Oct 13, 2026 7:40 AM ET",
+      "preMarketVolume": 1028657,
+      "preMarketDollarVolume": 1779268.0129,
+      "relVolume": 0.059062350159696644,
       "avgVolume50": 17416459,
       "sharesOutstanding": 7847899,
-      "marketCap": 13419907.29,
+      "marketCap": 13574510.9003,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 127,
       "float": {
@@ -153,7 +84,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-19"
       },
-      "floatRotation": 0.05561552206520497,
+      "floatRotation": 0.13107418941043966,
       "daysUp": 0,
       "priorRunPct": -18.571428571428573,
       "extended": false,
@@ -171,12 +102,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "11.0%"
+          "detail": "12.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "436,465"
+          "detail": "1,028,657"
         },
         {
           "name": "News catalyst",
@@ -186,7 +117,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.71"
+          "detail": "$1.73"
         },
         {
           "name": "Float <10M",
@@ -266,53 +197,53 @@
       "quality": "low"
     },
     {
-      "symbol": "PRLD",
-      "name": "Prelude Therapeutics Incorporated",
-      "legalName": "Prelude Therapeutics Inc",
-      "business": "Pharmaceutical Preparations",
+      "symbol": "ICCC",
+      "name": "ImmuCell Corporation",
+      "legalName": "IMMUCELL CORP /DE/",
+      "business": "In Vitro & In Vivo Diagnostic Substances",
       "sector": "Health Care",
-      "preMarketPrice": 4.06,
-      "preMarketChangePct": 8.56,
-      "prevClose": 3.739867354458364,
+      "preMarketPrice": 10.51,
+      "preMarketChangePct": 9.48,
+      "prevClose": 9.599926927292657,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 13, 2026 7:20 AM ET",
-      "preMarketVolume": 21882,
-      "preMarketDollarVolume": 88840.92,
-      "relVolume": 0.048939881910896404,
-      "avgVolume50": 447120,
-      "sharesOutstanding": 79803485,
-      "marketCap": 324002149.09999996,
+      "lastTradeAt": "Oct 13, 2026 7:38 AM ET",
+      "preMarketVolume": 3849,
+      "preMarketDollarVolume": 40452.99,
+      "relVolume": 0.14032081662413415,
+      "avgVolume50": 27430,
+      "sharesOutstanding": 9082197,
+      "marketCap": 95453890.47,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 150,
+      "bestPriorSpikePct": 13,
       "float": {
-        "shares": 79803485,
+        "shares": 9082197,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-06"
+        "asOf": "2026-07-31"
       },
-      "floatRotation": 0.0002741985516046072,
-      "daysUp": 5,
-      "priorRunPct": 5.994550408719351,
+      "floatRotation": 0.00042379613655154144,
+      "daysUp": 2,
+      "priorRunPct": 0.5128205128205201,
       "extended": true,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Prelude Announces Clinical Trial Collaboration and Supply Agreement with Lilly to Evaluate KAT6A Selective Degrader PRT13722 in Combination with Verzenio® and Inluriyo® in Patients with HR+/HER2- Breast Cancer",
-        "subject": "FDA / clinical",
+        "headline": "ImmuCell Reports Preliminary Q3 2026 Sales Growth Of 46%;Stock Up ",
+        "subject": null,
         "date": "2026-10-13"
       },
       "leads": [
-        "GlobeNewswire"
+        "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.6%"
+          "detail": "9.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "21,882"
+          "detail": "3,849"
         },
         {
           "name": "News catalyst",
@@ -322,15 +253,83 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.06"
+          "detail": "$10.51"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "9.1M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "BHR",
+      "name": "Braemar Hotels & Resorts Inc.",
+      "legalName": "Braemar Hotels & Resorts Inc.",
+      "business": "Real Estate Investment Trusts",
+      "sector": "Real Estate",
+      "preMarketPrice": 1.31,
+      "preMarketChangePct": 5.65,
+      "prevClose": 1.2399432087079982,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 13, 2026 7:35 AM ET",
+      "preMarketVolume": 205,
+      "preMarketDollarVolume": 268.55,
+      "relVolume": 0.000472183769316347,
+      "avgVolume50": 434153,
+      "sharesOutstanding": 68679318,
+      "marketCap": 89969906.58,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 10,
+      "float": {
+        "shares": 68679318,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-04"
+      },
+      "floatRotation": 0.0000029848869495180483,
+      "daysUp": 0,
+      "priorRunPct": -27.10843373493976,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-10-13"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "205"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.31"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "79.8M"
+          "detail": "68.7M"
         }
       ],
-      "passed": 2,
+      "passed": 1,
       "quality": "low"
     },
     {
