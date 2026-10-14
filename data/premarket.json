@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-14T11:40:27.417Z",
+  "generatedAt": "2026-10-14T12:00:30.082Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-13",
   "universeChecked": 6002,
   "smallCapsInBand": 2963,
-  "investigated": 93,
-  "liveQuotes": 60,
+  "investigated": 94,
+  "liveQuotes": 67,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-13T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 138,
+    "edgarFilings": 144,
     "leads": {
-      "8-K": 65,
-      "PR Newswire": 4,
-      "GlobeNewswire": 6,
+      "8-K": 66,
+      "PR Newswire": 5,
+      "GlobeNewswire": 5,
       "prior-session gainer": 21
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 93,
-    "answered": 93,
+    "requested": 94,
+    "answered": 94,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Alaunos Therapeutics, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 3.9398,
-      "preMarketChangePct": 30.03,
-      "prevClose": 3.029916173190802,
+      "preMarketPrice": 3.74,
+      "preMarketChangePct": 23.43,
+      "prevClose": 3.030057522482379,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 14, 2026 7:40 AM ET",
-      "preMarketVolume": 17573945.638601,
-      "preMarketDollarVolume": 69237831.02696022,
-      "relVolume": 1450.2348274138474,
+      "lastTradeAt": "Oct 14, 2026 8:00 AM ET",
+      "preMarketVolume": 20834764.638601,
+      "preMarketDollarVolume": 77922019.74836776,
+      "relVolume": 1719.323703466001,
       "avgVolume50": 12118,
       "sharesOutstanding": 2540480,
-      "marketCap": 10008983.104,
+      "marketCap": 9501395.200000001,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 23,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-14"
       },
-      "floatRotation": 6.917568978539883,
+      "floatRotation": 8.20111342683312,
       "daysUp": 2,
       "priorRunPct": 32.02565069784987,
       "extended": true,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "30.0%"
+          "detail": "23.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "17,573,946"
+          "detail": "20,834,765"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.94"
+          "detail": "$3.74"
         },
         {
           "name": "Float <10M",
@@ -127,24 +127,94 @@
       "quality": "high"
     }
   ],
-  "watchlist": [
+  "watchlist": [],
+  "alsoRan": [
+    {
+      "symbol": "FFAI",
+      "name": "Faraday Future Intelligent Electric Inc. Class A",
+      "legalName": "FARADAY FUTURE INTELLIGENT ELECTRIC INC.",
+      "business": "Motor Vehicles & Passenger Car Bodies",
+      "sector": "Industrials",
+      "preMarketPrice": 1.3578,
+      "preMarketChangePct": 22.32,
+      "prevClose": 1.1100392413342053,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 14, 2026 8:00 AM ET",
+      "preMarketVolume": 7032674.141195,
+      "preMarketDollarVolume": 9548964.94891457,
+      "relVolume": 0.4785919463251922,
+      "avgVolume50": 14694510,
+      "sharesOutstanding": 29516511,
+      "marketCap": 40077518.6358,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 86,
+      "float": {
+        "shares": 29516511,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2021-08-13"
+      },
+      "floatRotation": 0.2382623793576077,
+      "daysUp": 0,
+      "priorRunPct": -6.837606837606826,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "FF EAI Robotics Ecosystem Signs Definitive Agreements to Combine FFAI's Full Robotics Business at About $200 Million and $2.246 Per Share, an Approximate 50 Percent Premium; Becoming the First U.S.-Listed Humanoid and Bionic EAI Robotics Pure Play",
+        "subject": "Merger or acquisition",
+        "date": "2026-10-14"
+      },
+      "leads": [
+        "PR Newswire",
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "22.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "7,032,674"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.36"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "29.5M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
     {
       "symbol": "VSTM",
       "name": "Verastem Inc.",
       "legalName": "Verastem, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 8.5,
-      "preMarketChangePct": 14.09,
-      "prevClose": 7.450258567797353,
+      "preMarketPrice": 8.11,
+      "preMarketChangePct": 8.86,
+      "prevClose": 7.449935697225794,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 14, 2026 7:40 AM ET",
-      "preMarketVolume": 2029679.649652,
-      "preMarketDollarVolume": 17252277.022042,
-      "relVolume": 0.8783484311874159,
+      "lastTradeAt": "Oct 14, 2026 8:00 AM ET",
+      "preMarketVolume": 2262070.07858,
+      "preMarketDollarVolume": 18345388.337283798,
+      "relVolume": 0.9789159117289274,
       "avgVolume50": 2310791,
       "sharesOutstanding": 90563441,
-      "marketCap": 769789248.5,
+      "marketCap": 734469506.51,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 21,
       "float": {
@@ -152,7 +222,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 0.022411688726050063,
+      "floatRotation": 0.02497773995336595,
       "daysUp": 0,
       "priorRunPct": 3.125,
       "extended": false,
@@ -169,13 +239,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "14.1%"
+          "ok": false,
+          "detail": "8.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "2,029,680"
+          "detail": "2,262,070"
         },
         {
           "name": "News catalyst",
@@ -185,7 +255,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.50"
+          "detail": "$8.11"
         },
         {
           "name": "Float <10M",
@@ -193,106 +263,36 @@
           "detail": "90.6M"
         }
       ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
-  "alsoRan": [
-    {
-      "symbol": "FLYE",
-      "name": "Fly-E Group Inc.",
-      "legalName": "Fly-E Group, Inc.",
-      "business": "Motor Vehicles & Passenger Car Bodies",
-      "sector": "Industrials",
-      "preMarketPrice": 3.82,
-      "preMarketChangePct": 7.61,
-      "prevClose": 3.5498559613418825,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 14, 2026 7:40 AM ET",
-      "preMarketVolume": 2971351.690547,
-      "preMarketDollarVolume": 11350563.45788954,
-      "relVolume": 1.7241349102360644,
-      "avgVolume50": 1723387,
-      "sharesOutstanding": 1632386,
-      "marketCap": 6235714.52,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 252,
-      "float": {
-        "shares": 1632386,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-01"
-      },
-      "floatRotation": 1.8202506579614137,
-      "daysUp": 0,
-      "priorRunPct": 55.30303030303029,
-      "extended": true,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "2,971,352"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.82"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "1.6M"
-        }
-      ],
       "passed": 3,
       "quality": "low"
     },
     {
-      "symbol": "XERS",
-      "name": "Xeris Biopharma Holdings Inc.",
-      "legalName": "Xeris Biopharma Holdings, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 10.8,
-      "preMarketChangePct": 5.88,
-      "prevClose": 10.200226671703817,
+      "symbol": "BTLN",
+      "name": "Brightline Interactive Inc.",
+      "legalName": "Brightline Interactive, Inc./NV",
+      "business": "Services-Computer Programming Services",
+      "sector": "Technology",
+      "preMarketPrice": 5.6,
+      "preMarketChangePct": 6.16,
+      "prevClose": 5.275056518462697,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 14, 2026 7:15 AM ET",
-      "preMarketVolume": 446,
-      "preMarketDollarVolume": 4816.8,
-      "relVolume": 0.0002555876854873186,
-      "avgVolume50": 1744998,
-      "sharesOutstanding": 182320306,
-      "marketCap": 1969059304.8000002,
+      "lastTradeAt": "Oct 14, 2026 7:47 AM ET",
+      "preMarketVolume": 173,
+      "preMarketDollarVolume": 968.8,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 2712351,
+      "marketCap": 15189165.6,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 14,
+      "bestPriorSpikePct": null,
       "float": {
-        "shares": 182320306,
+        "shares": 2712351,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-31"
+        "asOf": "2026-09-28"
       },
-      "floatRotation": 0.0000024462442488441195,
+      "floatRotation": 0.00006378230546120321,
       "daysUp": 0,
-      "priorRunPct": 3.2576505429417577,
+      "priorRunPct": -4.068117313150423,
       "extended": false,
       "catalyst": {
         "found": true,
@@ -302,18 +302,19 @@
         "date": "2026-10-14"
       },
       "leads": [
+        "8-K",
         "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.9%"
+          "detail": "6.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "446"
+          "detail": "173"
         },
         {
           "name": "News catalyst",
@@ -323,83 +324,15 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$10.80"
+          "detail": "$5.60"
         },
         {
           "name": "Float <10M",
-          "ok": false,
-          "detail": "182.3M"
+          "ok": true,
+          "detail": "2.7M"
         }
       ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "CANG",
-      "name": "Cango Inc. Class A Ordinary Shares",
-      "legalName": "Cango Inc.",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 3.7,
-      "preMarketChangePct": 5.71,
-      "prevClose": 3.5001418976444993,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 14, 2026 7:32 AM ET",
-      "preMarketVolume": 36006.979179,
-      "preMarketDollarVolume": 133225.8229623,
-      "relVolume": 0.08658250357444292,
-      "avgVolume50": 415869,
-      "sharesOutstanding": 41021967.14285714,
-      "marketCap": 151781278.42857143,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 32,
-      "float": {
-        "shares": 41021967.14285714,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-14"
-      },
-      "floatRotation": 0.0008777487206697652,
-      "daysUp": 0,
-      "priorRunPct": 11.029411764705875,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "New Strong Sell Stocks for October 13th",
-        "subject": null,
-        "date": "2026-10-13"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "36,007"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.70"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "41.0M"
-        }
-      ],
-      "passed": 2,
+      "passed": 3,
       "quality": "low"
     },
     {
@@ -408,17 +341,17 @@
       "legalName": "Marwynn Holdings, Inc.",
       "business": "Wholesale-Groceries, General Line",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.6984,
-      "preMarketChangePct": 6.15,
-      "prevClose": 1.5999999999999996,
+      "preMarketPrice": 1.6816,
+      "preMarketChangePct": 5.1,
+      "prevClose": 1.6,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 14, 2026 7:40 AM ET",
-      "preMarketVolume": 26074,
-      "preMarketDollarVolume": 44284.0816,
-      "relVolume": 0.10537035615131884,
+      "lastTradeAt": "Oct 14, 2026 8:00 AM ET",
+      "preMarketVolume": 26420,
+      "preMarketDollarVolume": 44427.872,
+      "relVolume": 0.10676861277586269,
       "avgVolume50": 247451,
       "sharesOutstanding": 20194804,
-      "marketCap": 34298855.1136,
+      "marketCap": 33959582.4064,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 36,
       "float": {
@@ -426,7 +359,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-09-10"
       },
-      "floatRotation": 0.001291124192143682,
+      "floatRotation": 0.0013082573121284068,
       "daysUp": 1,
       "priorRunPct": 9.523809523809515,
       "extended": false,
@@ -445,12 +378,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.2%"
+          "detail": "5.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "26,074"
+          "detail": "26,420"
         },
         {
           "name": "News catalyst",
@@ -460,7 +393,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.70"
+          "detail": "$1.68"
         },
         {
           "name": "Float <10M",
