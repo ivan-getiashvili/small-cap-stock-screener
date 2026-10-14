@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-10-14T00:15:32.407Z",
+ "updatedAt": "2026-10-14T11:00:56.067Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -6158,7 +6158,22 @@
      "missing": [
       "Pre-market volume ≥50k"
      ],
-     "performance": null,
+     "performance": {
+      "open": 10.79,
+      "high": 10.8,
+      "low": 10.15,
+      "close": 10.79,
+      "volume": 51235,
+      "prevClose": 9.6,
+      "gapPct": 12.395833333333329,
+      "openToHighPct": 0.09267840593143248,
+      "openToClosePct": 0,
+      "openToLowPct": -5.93141797961074,
+      "alertToHighPct": -2.0701286689698235,
+      "alertToClosePct": -2.160804475757829,
+      "filledAt": "2026-10-14T11:00:55.925Z",
+      "noon": 10.5
+     },
      "intraday": {
       "noon": 10.5
      }
@@ -6182,10 +6197,71 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 5.98,
+      "high": 5.98,
+      "low": 5.92,
+      "close": 5.95,
+      "volume": 118220500,
+      "prevClose": 3.8,
+      "gapPct": 57.368421052631604,
+      "openToHighPct": 0,
+      "openToClosePct": -0.5016722408026797,
+      "openToLowPct": -1.0033444816053594,
+      "alertToHighPct": 0.1758941284864796,
+      "alertToClosePct": -0.32666052433201864,
+      "filledAt": "2026-10-14T11:00:56.067Z",
+      "noon": 5.94
+     },
      "intraday": {
       "noon": 5.94
      }
+    }
+   ]
+  },
+  "2026-10-14": {
+   "date": "2026-10-14",
+   "source": "live",
+   "names": [
+    {
+     "symbol": "TCRT",
+     "legalName": "Alaunos Therapeutics, Inc.",
+     "business": "Pharmaceutical Preparations",
+     "list": "shortlist",
+     "firstSeenAt": "2026-10-14T11:00:28.764Z",
+     "lastSeenAt": "2026-10-14T11:00:28.764Z",
+     "shortlistedAt": "2026-10-14T11:00:28.764Z",
+     "preMarketPrice": 3.74,
+     "preMarketChangePct": 23.43,
+     "prevClose": 3.030057522482379,
+     "preMarketVolume": 3846491.983047,
+     "relVolume": 317.41970482315566,
+     "floatShares": 2540480,
+     "catalyst": "Merger or acquisition",
+     "extended": true,
+     "missing": [],
+     "performance": null
+    },
+    {
+     "symbol": "VSTM",
+     "legalName": "Verastem, Inc.",
+     "business": "Pharmaceutical Preparations",
+     "list": "watchlist",
+     "firstSeenAt": "2026-10-14T11:00:28.764Z",
+     "lastSeenAt": "2026-10-14T11:00:28.764Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 8.75,
+     "preMarketChangePct": 17.45,
+     "prevClose": 7.44997871434653,
+     "preMarketVolume": 1007835.948992,
+     "relVolume": 0.4361432725815532,
+     "floatShares": 90563441,
+     "catalyst": "Does Verastem (VSTM) Have the Potential to Rally 79% as Wall Street Analysts Expect?",
+     "extended": false,
+     "missing": [
+      "Float <10M"
+     ],
+     "performance": null
     }
    ]
   }
