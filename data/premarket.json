@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-14T12:00:30.082Z",
+  "generatedAt": "2026-10-14T12:20:28.797Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-13",
   "universeChecked": 6002,
   "smallCapsInBand": 2963,
-  "investigated": 94,
-  "liveQuotes": 67,
+  "investigated": 98,
+  "liveQuotes": 69,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-13T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 144,
+    "edgarFilings": 152,
     "leads": {
-      "8-K": 66,
-      "PR Newswire": 5,
-      "GlobeNewswire": 5,
+      "8-K": 71,
+      "PR Newswire": 1,
+      "GlobeNewswire": 6,
       "prior-session gainer": 21
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 94,
-    "answered": 94,
+    "requested": 98,
+    "answered": 98,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Alaunos Therapeutics, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 3.74,
-      "preMarketChangePct": 23.43,
-      "prevClose": 3.030057522482379,
+      "preMarketPrice": 3.7394,
+      "preMarketChangePct": 23.41,
+      "prevClose": 3.030062393647192,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 14, 2026 8:00 AM ET",
-      "preMarketVolume": 20834764.638601,
-      "preMarketDollarVolume": 77922019.74836776,
-      "relVolume": 1719.323703466001,
+      "lastTradeAt": "Oct 14, 2026 8:20 AM ET",
+      "preMarketVolume": 22609547.638601,
+      "preMarketDollarVolume": 84546142.43978459,
+      "relVolume": 1865.7821124443803,
       "avgVolume50": 12118,
       "sharesOutstanding": 2540480,
-      "marketCap": 9501395.200000001,
+      "marketCap": 9499870.912,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 23,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-14"
       },
-      "floatRotation": 8.20111342683312,
+      "floatRotation": 8.899714872229264,
       "daysUp": 2,
       "priorRunPct": 32.02565069784987,
       "extended": true,
@@ -105,7 +105,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "20,834,765"
+          "detail": "22,609,548"
         },
         {
           "name": "News catalyst",
@@ -127,57 +127,55 @@
       "quality": "high"
     }
   ],
-  "watchlist": [],
-  "alsoRan": [
+  "watchlist": [
     {
-      "symbol": "FFAI",
-      "name": "Faraday Future Intelligent Electric Inc. Class A",
-      "legalName": "FARADAY FUTURE INTELLIGENT ELECTRIC INC.",
-      "business": "Motor Vehicles & Passenger Car Bodies",
-      "sector": "Industrials",
-      "preMarketPrice": 1.3578,
-      "preMarketChangePct": 22.32,
-      "prevClose": 1.1100392413342053,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 14, 2026 8:00 AM ET",
-      "preMarketVolume": 7032674.141195,
-      "preMarketDollarVolume": 9548964.94891457,
-      "relVolume": 0.4785919463251922,
-      "avgVolume50": 14694510,
-      "sharesOutstanding": 29516511,
-      "marketCap": 40077518.6358,
+      "symbol": "BMBL",
+      "name": "Bumble Inc. Class A",
+      "legalName": "Bumble Inc.",
+      "business": "Services-Computer Programming, Data Processing, Etc.",
+      "sector": "Technology",
+      "preMarketPrice": 5.95,
+      "preMarketChangePct": 56.57894736842106,
+      "prevClose": 3.8,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 14, 2026 8:20 AM ET",
+      "preMarketVolume": 76199.19522,
+      "preMarketDollarVolume": 453385.21155899996,
+      "relVolume": 0.030933509796932757,
+      "avgVolume50": 2463322,
+      "sharesOutstanding": 119799036,
+      "marketCap": 712804264.2,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 86,
+      "bestPriorSpikePct": 34,
       "float": {
-        "shares": 29516511,
+        "shares": 119799036,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2021-08-13"
+        "asOf": "2021-07-31"
       },
-      "floatRotation": 0.2382623793576077,
-      "daysUp": 0,
-      "priorRunPct": -6.837606837606826,
+      "floatRotation": 0.0006360585006710738,
+      "daysUp": 1,
+      "priorRunPct": 49.01960784313726,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "FF EAI Robotics Ecosystem Signs Definitive Agreements to Combine FFAI's Full Robotics Business at About $200 Million and $2.246 Per Share, an Approximate 50 Percent Premium; Becoming the First U.S.-Listed Humanoid and Bionic EAI Robotics Pure Play",
-        "subject": "Merger or acquisition",
-        "date": "2026-10-14"
+        "headline": "Why Bumble Stock Skyrocketed Today",
+        "subject": null,
+        "date": "2026-10-13"
       },
       "leads": [
-        "PR Newswire",
-        "8-K"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "22.3%"
+          "detail": "56.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "7,032,674"
+          "detail": "76,199"
         },
         {
           "name": "News catalyst",
@@ -186,8 +184,78 @@
         },
         {
           "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.95"
+        },
+        {
+          "name": "Float <10M",
           "ok": false,
-          "detail": "$1.36"
+          "detail": "119.8M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
+  "alsoRan": [
+    {
+      "symbol": "FFAI",
+      "name": "Faraday Future Intelligent Electric Inc. Class A",
+      "legalName": "FARADAY FUTURE INTELLIGENT ELECTRIC INC.",
+      "business": "Motor Vehicles & Passenger Car Bodies",
+      "sector": "Industrials",
+      "preMarketPrice": 1.39,
+      "preMarketChangePct": 25.23,
+      "prevClose": 1.1099576778727143,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 14, 2026 8:20 AM ET",
+      "preMarketVolume": 27784057.445038,
+      "preMarketDollarVolume": 38619839.84860282,
+      "relVolume": 1.8907780827695513,
+      "avgVolume50": 14694510,
+      "sharesOutstanding": 29516511,
+      "marketCap": 41027950.29,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 86,
+      "float": {
+        "shares": 29516511,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2021-08-13"
+      },
+      "floatRotation": 0.9413056117993756,
+      "daysUp": 0,
+      "priorRunPct": -6.837606837606826,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt) · Sold unregistered shares (dilution) · Regulation FD disclosure (company announcement)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt) · Sold unregistered shares (dilution) · Regulation FD disclosure (company announcement)",
+        "date": "2026-10-14"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "25.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "27,784,057"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.39"
         },
         {
           "name": "Float <10M",
@@ -199,53 +267,53 @@
       "quality": "low"
     },
     {
-      "symbol": "VSTM",
-      "name": "Verastem Inc.",
-      "legalName": "Verastem, Inc.",
+      "symbol": "NTHI",
+      "name": "NeOnc Technologies Holdings Inc.",
+      "legalName": "NEONC TECHNOLOGIES HOLDINGS, INC.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 8.11,
-      "preMarketChangePct": 8.86,
-      "prevClose": 7.449935697225794,
+      "preMarketPrice": 2.9,
+      "preMarketChangePct": 11.75,
+      "prevClose": 2.5950782997762865,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 14, 2026 8:00 AM ET",
-      "preMarketVolume": 2262070.07858,
-      "preMarketDollarVolume": 18345388.337283798,
-      "relVolume": 0.9789159117289274,
-      "avgVolume50": 2310791,
-      "sharesOutstanding": 90563441,
-      "marketCap": 734469506.51,
+      "lastTradeAt": "Oct 14, 2026 7:45 AM ET",
+      "preMarketVolume": 17,
+      "preMarketDollarVolume": 49.3,
+      "relVolume": 0.00009630800432819502,
+      "avgVolume50": 176517,
+      "sharesOutstanding": 25936365,
+      "marketCap": 75215458.5,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 21,
+      "bestPriorSpikePct": 31,
       "float": {
-        "shares": 90563441,
+        "shares": 25936365,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-03"
+        "asOf": "2026-08-10"
       },
-      "floatRotation": 0.02497773995336595,
+      "floatRotation": 6.554503686233595e-7,
       "daysUp": 0,
-      "priorRunPct": 3.125,
+      "priorRunPct": -6.506849315068491,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Verastem Oncology Prices $250 Mln Stock, Warrant Offering; Pre-market Shares Up ",
-        "subject": "Share offering (dilution)",
+        "headline": "NeOnc Technologies Appoints Ali Alabedin to Its Board of Directors",
+        "subject": null,
         "date": "2026-10-14"
       },
       "leads": [
-        "8-K"
+        "GlobeNewswire"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "8.9%"
+          "ok": true,
+          "detail": "11.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "2,262,070"
+          "ok": false,
+          "detail": "17"
         },
         {
           "name": "News catalyst",
@@ -255,12 +323,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.11"
+          "detail": "$2.90"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "90.6M"
+          "detail": "25.9M"
         }
       ],
       "passed": 3,
@@ -336,72 +404,139 @@
       "quality": "low"
     },
     {
-      "symbol": "MWYN",
-      "name": "Marwynn Holdings Inc.",
-      "legalName": "Marwynn Holdings, Inc.",
-      "business": "Wholesale-Groceries, General Line",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.6816,
-      "preMarketChangePct": 5.1,
-      "prevClose": 1.6,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 14, 2026 8:00 AM ET",
-      "preMarketVolume": 26420,
-      "preMarketDollarVolume": 44427.872,
-      "relVolume": 0.10676861277586269,
-      "avgVolume50": 247451,
-      "sharesOutstanding": 20194804,
-      "marketCap": 33959582.4064,
+      "symbol": "ONMD",
+      "name": "OneMedNet Corp Class A",
+      "legalName": "OneMedNet Corp",
+      "business": "Services-Commercial Physical & Biological Research",
+      "sector": "Health Care",
+      "preMarketPrice": 4.26,
+      "preMarketChangePct": 8.396946564885486,
+      "prevClose": 3.93,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 14, 2026 8:15 AM ET",
+      "preMarketVolume": 5217,
+      "preMarketDollarVolume": 22224.42,
+      "relVolume": 0.004294025074406722,
+      "avgVolume50": 1214944,
+      "sharesOutstanding": 59286450,
+      "marketCap": 252560277,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 36,
+      "bestPriorSpikePct": 149,
       "float": {
-        "shares": 20194804,
+        "shares": 59286450,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-10"
+        "asOf": "2026-08-11"
       },
-      "floatRotation": 0.0013082573121284068,
-      "daysUp": 1,
-      "priorRunPct": 9.523809523809515,
+      "floatRotation": 0.00008799649835670714,
+      "daysUp": 0,
+      "priorRunPct": -23.091976516634052,
       "extended": false,
       "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-10-14"
       },
       "leads": [
-        "8-K",
-        "prior-session gainer"
+        "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.1%"
+          "detail": "8.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "26,420"
+          "detail": "5,217"
         },
         {
           "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
+          "ok": true,
+          "detail": "8-K"
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.68"
+          "ok": true,
+          "detail": "$4.26"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "20.2M"
+          "detail": "59.3M"
         }
       ],
-      "passed": 0,
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "RWTQ",
+      "name": "Redwood Trust Inc. 9.500% Senior Notes Due 2030",
+      "legalName": "REDWOOD TRUST INC",
+      "business": "Real Estate Investment Trusts",
+      "sector": "Real Estate",
+      "preMarketPrice": 21,
+      "preMarketChangePct": 7.088220295767468,
+      "prevClose": 19.61,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 14, 2026 8:01 AM ET",
+      "preMarketVolume": 100,
+      "preMarketDollarVolume": 2100,
+      "relVolume": 0.004913522012578616,
+      "avgVolume50": 20352,
+      "sharesOutstanding": 125612432,
+      "marketCap": 2637861072,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 2,
+      "float": {
+        "shares": 125612432,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-05"
+      },
+      "floatRotation": 7.960995453061525e-7,
+      "daysUp": 0,
+      "priorRunPct": -6.351480420248337,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released · Regulation FD disclosure (company announcement)",
+        "subject": "Earnings / results released · Regulation FD disclosure (company announcement)",
+        "date": "2026-10-13"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "100"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$21.00"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "125.6M"
+        }
+      ],
+      "passed": 1,
       "quality": "low"
     }
   ]
