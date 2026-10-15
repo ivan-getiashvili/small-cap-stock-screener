@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-14T13:20:29.408Z",
-  "marketStatus": "Market Open",
-  "prevSession": "2026-10-13",
-  "universeChecked": 6002,
-  "smallCapsInBand": 2963,
-  "investigated": 108,
-  "liveQuotes": 83,
+  "generatedAt": "2026-10-15T11:00:51.794Z",
+  "marketStatus": "Pre Market",
+  "prevSession": "2026-10-14",
+  "universeChecked": 6012,
+  "smallCapsInBand": 2969,
+  "investigated": 57,
+  "liveQuotes": 35,
   "feedIsLive": true,
   "discovery": {
-    "since": "2026-10-13T19:30:00.000Z",
+    "since": "2026-10-14T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 175,
+    "edgarFilings": 106,
     "leads": {
-      "8-K": 85,
+      "8-K": 43,
       "PR Newswire": 0,
-      "GlobeNewswire": 3,
-      "prior-session gainer": 21
+      "GlobeNewswire": 1,
+      "prior-session gainer": 14
     },
     "feeds": [
       {
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 108,
-    "answered": 108,
+    "requested": 57,
+    "answered": 57,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -57,367 +57,95 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [
+  "shortlist": [],
+  "watchlist": [
     {
-      "symbol": "TCRT",
-      "name": "Alaunos Therapeutics Inc.",
-      "legalName": "Alaunos Therapeutics, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 3.8699,
-      "preMarketChangePct": 27.72,
-      "prevClose": 3.029987472596304,
+      "symbol": "NCPL",
+      "name": "Netcapital Inc.",
+      "legalName": "Netcapital Inc.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 1.9585,
+      "preMarketChangePct": 23.18,
+      "prevClose": 1.5899496671537587,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 14, 2026 9:20 AM ET",
-      "preMarketVolume": 26800000.331328,
-      "preMarketDollarVolume": 103713321.28220622,
-      "relVolume": 2211.5860976504373,
-      "avgVolume50": 12118,
-      "sharesOutstanding": 2540480,
-      "marketCap": 9831403.552,
+      "lastTradeAt": "Oct 15, 2026 7:00 AM ET",
+      "preMarketVolume": 1771143.587299,
+      "preMarketDollarVolume": 3468784.7157250913,
+      "relVolume": 0.10169366731199493,
+      "avgVolume50": 17416459,
+      "sharesOutstanding": 7847899,
+      "marketCap": 15370110.191499999,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 23,
+      "bestPriorSpikePct": 127,
       "float": {
-        "shares": 2540480,
+        "shares": 7847899,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-14"
+        "asOf": "2026-03-19"
       },
-      "floatRotation": 10.549187685527144,
-      "daysUp": 2,
-      "priorRunPct": 32.02565069784987,
-      "extended": true,
+      "floatRotation": 0.22568378967402614,
+      "daysUp": 0,
+      "priorRunPct": 27.522935779816493,
+      "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "news",
-        "headline": "Paragon Labs Adds Former Apogee Leaders As Alaunos Completes Velaris Acquisition; Stock Up ",
-        "subject": "Merger or acquisition",
-        "date": "2026-10-13"
+        "kind": "8-K",
+        "headline": "Delisting notice or listing-rule failure · Changed auditors",
+        "subject": "Delisting notice or listing-rule failure · Changed auditors",
+        "date": "2026-10-14"
       },
       "leads": [
-        "prior-session gainer"
+        "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "27.7%"
+          "detail": "23.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "26,800,000"
+          "detail": "1,771,144"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "news"
+          "detail": "8-K"
         },
         {
           "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.87"
+          "ok": false,
+          "detail": "$1.96"
         },
         {
           "name": "Float <10M",
           "ok": true,
-          "detail": "2.5M"
+          "detail": "7.8M"
         }
       ],
-      "passed": 5,
-      "quality": "high"
+      "passed": 4,
+      "quality": "medium"
     }
   ],
-  "watchlist": [],
   "alsoRan": [
-    {
-      "symbol": "FFAI",
-      "name": "Faraday Future Intelligent Electric Inc. Class A",
-      "legalName": "FARADAY FUTURE INTELLIGENT ELECTRIC INC.",
-      "business": "Motor Vehicles & Passenger Car Bodies",
-      "sector": "Industrials",
-      "preMarketPrice": 1.32,
-      "preMarketChangePct": 18.92,
-      "prevClose": 1.1099899091826437,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 14, 2026 9:20 AM ET",
-      "preMarketVolume": 42197273.952907,
-      "preMarketDollarVolume": 55700401.61783725,
-      "relVolume": 2.87163532182475,
-      "avgVolume50": 14694510,
-      "sharesOutstanding": 29516511,
-      "marketCap": 38961794.52,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 86,
-      "float": {
-        "shares": 29516511,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2021-08-13"
-      },
-      "floatRotation": 1.4296159174404794,
-      "daysUp": 0,
-      "priorRunPct": -6.837606837606826,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt) · Sold unregistered shares (dilution) · Regulation FD disclosure (company announcement)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt) · Sold unregistered shares (dilution) · Regulation FD disclosure (company announcement)",
-        "date": "2026-10-14"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "18.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "42,197,274"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.32"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "29.5M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "BKHAR",
-      "name": "Black Hawk Acquisition Corporation Rights",
-      "legalName": "Black Hawk Acquisition Corp",
-      "business": "Biological Products, (No Diagnostic Substances)",
-      "sector": "Health Care",
-      "preMarketPrice": 1.78,
-      "preMarketChangePct": 10.56,
-      "prevClose": 1.609985528219971,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 14, 2026 9:18 AM ET",
-      "preMarketVolume": 1171,
-      "preMarketDollarVolume": 2084.38,
-      "relVolume": 0.223772214790751,
-      "avgVolume50": 5233,
-      "sharesOutstanding": 4153577,
-      "marketCap": 7393367.0600000005,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 84,
-      "float": {
-        "shares": 4153577,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-06"
-      },
-      "floatRotation": 0.0002819256751469878,
-      "daysUp": 0,
-      "priorRunPct": -13.529411764705882,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Shareholder vote results",
-        "subject": "Shareholder vote results",
-        "date": "2026-10-13"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "1,171"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.78"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "4.2M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "ONMD",
-      "name": "OneMedNet Corp Class A",
-      "legalName": "OneMedNet Corp",
-      "business": "Services-Commercial Physical & Biological Research",
-      "sector": "Health Care",
-      "preMarketPrice": 4.34,
-      "preMarketChangePct": 10.4325699745547,
-      "prevClose": 3.93,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 14, 2026 9:14 AM ET",
-      "preMarketVolume": 6734,
-      "preMarketDollarVolume": 29225.559999999998,
-      "relVolume": 0.005542642294624279,
-      "avgVolume50": 1214944,
-      "sharesOutstanding": 59286450,
-      "marketCap": 257303193,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 149,
-      "float": {
-        "shares": 59286450,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-11"
-      },
-      "floatRotation": 0.00011358413263064326,
-      "daysUp": 0,
-      "priorRunPct": -23.091976516634052,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-10-14"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.4%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "6,734"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.34"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "59.3M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "ALIS",
-      "name": "Calisa Acquisition Corp Ordinary shares",
-      "legalName": "Calisa Acquisition Corp",
-      "business": "Services-Computer Processing & Data Preparation",
-      "sector": null,
-      "preMarketPrice": 8.5,
-      "preMarketChangePct": 7.59,
-      "prevClose": 7.900362487220002,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 14, 2026 9:17 AM ET",
-      "preMarketVolume": 1752,
-      "preMarketDollarVolume": 14892,
-      "relVolume": 0.04244083234417771,
-      "avgVolume50": 41281,
-      "sharesOutstanding": 8427500,
-      "marketCap": 71633750,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 1,
-      "float": {
-        "shares": 8427500,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-07"
-      },
-      "floatRotation": 0.0002078908335805399,
-      "daysUp": 2,
-      "priorRunPct": -0.2904162633107392,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract)",
-        "subject": "Entered a material agreement (deal, partnership or contract)",
-        "date": "2026-10-13"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "1,752"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$8.50"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "8.4M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
     {
       "symbol": "VSTM",
       "name": "Verastem Inc.",
       "legalName": "Verastem, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 7.96,
-      "preMarketChangePct": 6.85,
-      "prevClose": 7.449695835283107,
+      "preMarketPrice": 8.3179,
+      "preMarketChangePct": 7.88,
+      "prevClose": 7.710326288468669,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 14, 2026 9:20 AM ET",
-      "preMarketVolume": 4366008.246527,
-      "preMarketDollarVolume": 34753425.64235492,
-      "relVolume": 1.8893998836446049,
+      "lastTradeAt": "Oct 15, 2026 7:00 AM ET",
+      "preMarketVolume": 28731,
+      "preMarketDollarVolume": 238981.5849,
+      "relVolume": 0.012433404838429784,
       "avgVolume50": 2310791,
       "sharesOutstanding": 90563441,
-      "marketCap": 720884990.36,
+      "marketCap": 753297645.8939,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 21,
       "float": {
@@ -425,9 +153,9 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 0.048209389995759994,
+      "floatRotation": 0.00031724722120485683,
       "daysUp": 0,
-      "priorRunPct": 3.125,
+      "priorRunPct": -3.8709677419354813,
       "extended": false,
       "catalyst": {
         "found": true,
@@ -443,12 +171,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.8%"
+          "detail": "7.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "4,366,008"
+          "ok": false,
+          "detail": "28,731"
         },
         {
           "name": "News catalyst",
@@ -458,7 +186,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$7.96"
+          "detail": "$8.32"
         },
         {
           "name": "Float <10M",
@@ -466,146 +194,8 @@
           "detail": "90.6M"
         }
       ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "BTLN",
-      "name": "Brightline Interactive Inc.",
-      "legalName": "Brightline Interactive, Inc./NV",
-      "business": "Services-Computer Programming Services",
-      "sector": "Technology",
-      "preMarketPrice": 5.6,
-      "preMarketChangePct": 6.16,
-      "prevClose": 5.275056518462697,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 14, 2026 7:47 AM ET",
-      "preMarketVolume": 173,
-      "preMarketDollarVolume": 968.8,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 2712351,
-      "marketCap": 15189165.6,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 2712351,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-28"
-      },
-      "floatRotation": 0.00006378230546120321,
-      "daysUp": 0,
-      "priorRunPct": -4.068117313150423,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-10-14"
-      },
-      "leads": [
-        "8-K",
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "173"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$5.60"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "2.7M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "RWTQ",
-      "name": "Redwood Trust Inc. 9.500% Senior Notes Due 2030",
-      "legalName": "REDWOOD TRUST INC",
-      "business": "Real Estate Investment Trusts",
-      "sector": "Real Estate",
-      "preMarketPrice": 21,
-      "preMarketChangePct": 7.088220295767468,
-      "prevClose": 19.61,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 14, 2026 8:01 AM ET",
-      "preMarketVolume": 100,
-      "preMarketDollarVolume": 2100,
-      "relVolume": 0.004913522012578616,
-      "avgVolume50": 20352,
-      "sharesOutstanding": 125612432,
-      "marketCap": 2637861072,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 2,
-      "float": {
-        "shares": 125612432,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-05"
-      },
-      "floatRotation": 7.960995453061525e-7,
-      "daysUp": 0,
-      "priorRunPct": -6.351480420248337,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released · Regulation FD disclosure (company announcement)",
-        "subject": "Earnings / results released · Regulation FD disclosure (company announcement)",
-        "date": "2026-10-13"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "100"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$21.00"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "125.6M"
-        }
-      ],
-      "passed": 1,
+      "passed": 2,
       "quality": "low"
     }
-  ],
-  "frozenAfterPreMarket": true
+  ]
 }

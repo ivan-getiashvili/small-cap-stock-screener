@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-10-14T23:53:21.543Z",
+ "updatedAt": "2026-10-15T11:01:04.886Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -6240,7 +6240,22 @@
      "catalyst": "Merger or acquisition",
      "extended": true,
      "missing": [],
-     "performance": null,
+     "performance": {
+      "open": 3.68,
+      "high": 4.4,
+      "low": 1.8816,
+      "close": 2.07,
+      "volume": 68561250,
+      "prevClose": 3.03,
+      "gapPct": 21.452145214521465,
+      "openToHighPct": 19.56521739130435,
+      "openToClosePct": -43.75000000000001,
+      "openToLowPct": -48.86956521739131,
+      "alertToHighPct": 17.647058823529417,
+      "alertToClosePct": -44.6524064171123,
+      "filledAt": "2026-10-15T11:01:04.326Z",
+      "noon": 3.28
+     },
      "intraday": {
       "noon": 3.28
      }
@@ -6264,7 +6279,22 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 8,
+      "high": 8.955,
+      "low": 6.7,
+      "close": 7.71,
+      "volume": 33757760,
+      "prevClose": 7.45,
+      "gapPct": 7.382550335570468,
+      "openToHighPct": 11.9375,
+      "openToClosePct": -3.6250000000000004,
+      "openToLowPct": -16.249999999999996,
+      "alertToHighPct": 2.342857142857144,
+      "alertToClosePct": -11.885714285714286,
+      "filledAt": "2026-10-15T11:01:04.548Z",
+      "noon": 8.51
+     },
      "intraday": {
       "noon": 8.51
      }
@@ -6288,7 +6318,22 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 5.95,
+      "high": 5.98,
+      "low": 5.93,
+      "close": 5.97,
+      "volume": 39311080,
+      "prevClose": 5.95,
+      "gapPct": 0,
+      "openToHighPct": 0.5042016806722731,
+      "openToClosePct": 0.3361344537815054,
+      "openToLowPct": -0.33613445378152035,
+      "alertToHighPct": 0.5042016806722731,
+      "alertToClosePct": 0.3361344537815054,
+      "filledAt": "2026-10-15T11:01:04.742Z",
+      "noon": 5.935
+     },
      "intraday": {
       "noon": 5.935
      }
@@ -6312,10 +6357,52 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 10.95,
+      "high": 11.1115,
+      "low": 10.34,
+      "close": 10.41,
+      "volume": 2767514,
+      "prevClose": 10.61,
+      "gapPct": 3.2045240339302534,
+      "openToHighPct": 1.4748858447488604,
+      "openToClosePct": -4.931506849315061,
+      "openToLowPct": -5.570776255707758,
+      "alertToHighPct": -6.445230277005988,
+      "alertToClosePct": -12.35160394038899,
+      "filledAt": "2026-10-15T11:01:04.886Z",
+      "noon": 10.39
+     },
      "intraday": {
       "noon": 10.39
      }
+    }
+   ]
+  },
+  "2026-10-15": {
+   "date": "2026-10-15",
+   "source": "live",
+   "names": [
+    {
+     "symbol": "NCPL",
+     "legalName": "Netcapital Inc.",
+     "business": "Finance Services",
+     "list": "watchlist",
+     "firstSeenAt": "2026-10-15T11:00:51.794Z",
+     "lastSeenAt": "2026-10-15T11:00:51.794Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 1.9585,
+     "preMarketChangePct": 23.18,
+     "prevClose": 1.5899496671537587,
+     "preMarketVolume": 1771143.587299,
+     "relVolume": 0.10169366731199493,
+     "floatShares": 7847899,
+     "catalyst": "Delisting notice or listing-rule failure · Changed auditors",
+     "extended": false,
+     "missing": [
+      "Price $2–$20"
+     ],
+     "performance": null
     }
    ]
   }
