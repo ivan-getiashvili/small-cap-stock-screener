@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-15T12:20:35.428Z",
+  "generatedAt": "2026-10-15T12:40:38.656Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-14",
   "universeChecked": 6012,
   "smallCapsInBand": 2969,
-  "investigated": 73,
-  "liveQuotes": 58,
+  "investigated": 76,
+  "liveQuotes": 59,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-14T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 129,
+    "edgarFilings": 135,
     "leads": {
-      "8-K": 49,
+      "8-K": 53,
       "PR Newswire": 2,
       "GlobeNewswire": 9,
       "prior-session gainer": 14
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 73,
-    "answered": 73,
+    "requested": 76,
+    "answered": 76,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -57,25 +57,24 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [],
-  "watchlist": [
+  "shortlist": [
     {
       "symbol": "NCPL",
       "name": "Netcapital Inc.",
       "legalName": "Netcapital Inc.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 1.93,
-      "preMarketChangePct": 21.38,
-      "prevClose": 1.59004778381941,
+      "preMarketPrice": 2,
+      "preMarketChangePct": 25.79,
+      "prevClose": 1.5899515064790524,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 15, 2026 8:20 AM ET",
-      "preMarketVolume": 9176672.168782,
-      "preMarketDollarVolume": 17710977.285749257,
-      "relVolume": 0.5268965504860661,
+      "lastTradeAt": "Oct 15, 2026 8:40 AM ET",
+      "preMarketVolume": 9528482.168782,
+      "preMarketDollarVolume": 19056964.337564,
+      "relVolume": 0.5470964085628427,
       "avgVolume50": 17416459,
       "sharesOutstanding": 7847899,
-      "marketCap": 15146445.07,
+      "marketCap": 15695798,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 127,
       "float": {
@@ -83,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-19"
       },
-      "floatRotation": 1.1693157835978776,
+      "floatRotation": 1.214144342171325,
       "daysUp": 0,
       "priorRunPct": 27.522935779816493,
       "extended": false,
@@ -101,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "21.4%"
+          "detail": "25.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "9,176,672"
+          "detail": "9,528,482"
         },
         {
           "name": "News catalyst",
@@ -115,8 +114,8 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.93"
+          "ok": true,
+          "detail": "$2.00"
         },
         {
           "name": "Float <10M",
@@ -124,10 +123,11 @@
           "detail": "7.8M"
         }
       ],
-      "passed": 4,
-      "quality": "medium"
+      "passed": 5,
+      "quality": "high"
     }
   ],
+  "watchlist": [],
   "alsoRan": [
     {
       "symbol": "NRXS",
@@ -135,17 +135,17 @@
       "legalName": "Neuraxis, INC",
       "business": "Electromedical & Electrotherapeutic Apparatus",
       "sector": "Health Care",
-      "preMarketPrice": 7.28,
-      "preMarketChangePct": 12.000000000000004,
+      "preMarketPrice": 7.0087,
+      "preMarketChangePct": 7.826153846153848,
       "prevClose": 6.5,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 15, 2026 8:18 AM ET",
-      "preMarketVolume": 5436.49,
-      "preMarketDollarVolume": 39577.6472,
-      "relVolume": 0.07076183162388712,
+      "lastTradeAt": "Oct 15, 2026 8:37 AM ET",
+      "preMarketVolume": 14126.49,
+      "preMarketDollarVolume": 99008.330463,
+      "relVolume": 0.1838716353412818,
       "avgVolume50": 76828,
       "sharesOutstanding": 12557765,
-      "marketCap": 91420529.2,
+      "marketCap": 88013607.5555,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 25,
       "float": {
@@ -153,7 +153,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-06"
       },
-      "floatRotation": 0.00043291859658147765,
+      "floatRotation": 0.0011249207163854396,
       "daysUp": 0,
       "priorRunPct": -4.129793510324487,
       "extended": false,
@@ -170,13 +170,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "12.0%"
+          "ok": false,
+          "detail": "7.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "5,436"
+          "detail": "14,126"
         },
         {
           "name": "News catalyst",
@@ -186,7 +186,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$7.28"
+          "detail": "$7.01"
         },
         {
           "name": "Float <10M",
@@ -194,43 +194,43 @@
           "detail": "12.6M"
         }
       ],
-      "passed": 3,
+      "passed": 2,
       "quality": "low"
     },
     {
-      "symbol": "VSTM",
-      "name": "Verastem Inc.",
-      "legalName": "Verastem, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 8.2093,
-      "preMarketChangePct": 6.48,
-      "prevClose": 7.709710743801653,
+      "symbol": "OPNW",
+      "name": "OpenWorld Inc.",
+      "legalName": "OpenWorld, Inc.",
+      "business": "Finance Services",
+      "sector": "Technology",
+      "preMarketPrice": 3.25,
+      "preMarketChangePct": 6.56,
+      "prevClose": 3.0499249249249254,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 15, 2026 8:19 AM ET",
-      "preMarketVolume": 115318.66265,
-      "preMarketDollarVolume": 946685.497292645,
-      "relVolume": 0.049904410502723956,
-      "avgVolume50": 2310791,
-      "sharesOutstanding": 90563441,
-      "marketCap": 743462456.2013,
+      "lastTradeAt": "Oct 15, 2026 8:37 AM ET",
+      "preMarketVolume": 1843,
+      "preMarketDollarVolume": 5989.75,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 13165196,
+      "marketCap": 42786887,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 21,
+      "bestPriorSpikePct": null,
       "float": {
-        "shares": 90563441,
+        "shares": 13165196,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-03"
+        "asOf": "2026-08-07"
       },
-      "floatRotation": 0.0012733467431962971,
+      "floatRotation": 0.00013999031993143133,
       "daysUp": 0,
-      "priorRunPct": -3.8709677419354813,
+      "priorRunPct": -46.12903225806452,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "news",
-        "headline": "Verastem Surges Ahead With VS-7375 Cancer Data, $250M Offering And New CEO Appointment ",
-        "subject": "Share offering (dilution)",
-        "date": "2026-10-14"
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-10-15"
       },
       "leads": [
         "8-K"
@@ -239,30 +239,98 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.5%"
+          "detail": "6.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "115,319"
+          "ok": false,
+          "detail": "1,843"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "news"
+          "detail": "8-K"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.21"
+          "detail": "$3.25"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "90.6M"
+          "detail": "13.2M"
         }
       ],
-      "passed": 3,
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "MWYN",
+      "name": "Marwynn Holdings Inc.",
+      "legalName": "Marwynn Holdings, Inc.",
+      "business": "Wholesale-Groceries, General Line",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.92,
+      "preMarketChangePct": 19.99999999999999,
+      "prevClose": 1.6,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 15, 2026 8:37 AM ET",
+      "preMarketVolume": 29161,
+      "preMarketDollarVolume": 55989.119999999995,
+      "relVolume": 0.11784555326104966,
+      "avgVolume50": 247451,
+      "sharesOutstanding": 20194804,
+      "marketCap": 38774023.68,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 36,
+      "float": {
+        "shares": 20194804,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-10"
+      },
+      "floatRotation": 0.0014439852944351428,
+      "daysUp": 2,
+      "priorRunPct": 8.843537414965995,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "20.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "29,161"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.92"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "20.2M"
+        }
+      ],
+      "passed": 1,
       "quality": "low"
     }
   ]
