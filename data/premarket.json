@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-15T11:00:51.794Z",
+  "generatedAt": "2026-10-15T11:20:43.021Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-14",
   "universeChecked": 6012,
   "smallCapsInBand": 2969,
-  "investigated": 57,
-  "liveQuotes": 35,
+  "investigated": 67,
+  "liveQuotes": 45,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-14T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 106,
+    "edgarFilings": 113,
     "leads": {
-      "8-K": 43,
-      "PR Newswire": 0,
-      "GlobeNewswire": 1,
+      "8-K": 46,
+      "PR Newswire": 1,
+      "GlobeNewswire": 9,
       "prior-session gainer": 14
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 57,
-    "answered": 57,
+    "requested": 67,
+    "answered": 67,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -57,7 +57,76 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [],
+  "shortlist": [
+    {
+      "symbol": "SPRC",
+      "name": "SciSparc Ltd. Ordinary Shares",
+      "legalName": "SciSparc Ltd.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 4.68,
+      "preMarketChangePct": 27.17,
+      "prevClose": 3.680113234253361,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 15, 2026 7:20 AM ET",
+      "preMarketVolume": 3078515,
+      "preMarketDollarVolume": 14407450.2,
+      "relVolume": 13.61626513218129,
+      "avgVolume50": 226091,
+      "sharesOutstanding": 365444,
+      "marketCap": 1710277.92,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 143,
+      "float": {
+        "shares": 365444,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-12-31"
+      },
+      "floatRotation": 8.424040345442803,
+      "daysUp": 0,
+      "priorRunPct": -9.006928406466514,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "SciSparc Announces Transformation into Agentic AI-Powered Technologies, Including Cybersecurity and Finance Technologies",
+        "subject": null,
+        "date": "2026-10-15"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "27.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "3,078,515"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.68"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "0.4M"
+        }
+      ],
+      "passed": 5,
+      "quality": "high"
+    }
+  ],
   "watchlist": [
     {
       "symbol": "NCPL",
@@ -65,17 +134,17 @@
       "legalName": "Netcapital Inc.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 1.9585,
-      "preMarketChangePct": 23.18,
-      "prevClose": 1.5899496671537587,
+      "preMarketPrice": 1.96,
+      "preMarketChangePct": 23.27,
+      "prevClose": 1.5900056785917094,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 15, 2026 7:00 AM ET",
-      "preMarketVolume": 1771143.587299,
-      "preMarketDollarVolume": 3468784.7157250913,
-      "relVolume": 0.10169366731199493,
+      "lastTradeAt": "Oct 15, 2026 7:20 AM ET",
+      "preMarketVolume": 3059383.587299,
+      "preMarketDollarVolume": 5996391.83110604,
+      "relVolume": 0.17566048226559716,
       "avgVolume50": 17416459,
       "sharesOutstanding": 7847899,
-      "marketCap": 15370110.191499999,
+      "marketCap": 15381882.04,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 127,
       "float": {
@@ -83,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-19"
       },
-      "floatRotation": 0.22568378967402614,
+      "floatRotation": 0.38983472994479157,
       "daysUp": 0,
       "priorRunPct": 27.522935779816493,
       "extended": false,
@@ -101,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "23.2%"
+          "detail": "23.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,771,144"
+          "detail": "3,059,384"
         },
         {
           "name": "News catalyst",
@@ -135,17 +204,17 @@
       "legalName": "Verastem, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 8.3179,
-      "preMarketChangePct": 7.88,
-      "prevClose": 7.710326288468669,
+      "preMarketPrice": 8.2,
+      "preMarketChangePct": 6.36,
+      "prevClose": 7.709665287702142,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 15, 2026 7:00 AM ET",
-      "preMarketVolume": 28731,
-      "preMarketDollarVolume": 238981.5849,
-      "relVolume": 0.012433404838429784,
+      "lastTradeAt": "Oct 15, 2026 7:19 AM ET",
+      "preMarketVolume": 70788,
+      "preMarketDollarVolume": 580461.6,
+      "relVolume": 0.03063366613423715,
       "avgVolume50": 2310791,
       "sharesOutstanding": 90563441,
-      "marketCap": 753297645.8939,
+      "marketCap": 742620216.1999999,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 21,
       "float": {
@@ -153,7 +222,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 0.00031724722120485683,
+      "floatRotation": 0.0007816399114075182,
       "daysUp": 0,
       "priorRunPct": -3.8709677419354813,
       "extended": false,
@@ -171,12 +240,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.9%"
+          "detail": "6.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "28,731"
+          "ok": true,
+          "detail": "70,788"
         },
         {
           "name": "News catalyst",
@@ -186,7 +255,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.32"
+          "detail": "$8.20"
         },
         {
           "name": "Float <10M",
@@ -194,7 +263,7 @@
           "detail": "90.6M"
         }
       ],
-      "passed": 2,
+      "passed": 3,
       "quality": "low"
     }
   ]
