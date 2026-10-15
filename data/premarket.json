@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-15T12:40:38.656Z",
+  "generatedAt": "2026-10-15T13:00:39.752Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-14",
   "universeChecked": 6012,
   "smallCapsInBand": 2969,
-  "investigated": 76,
-  "liveQuotes": 59,
+  "investigated": 74,
+  "liveQuotes": 57,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-14T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 135,
+    "edgarFilings": 142,
     "leads": {
-      "8-K": 53,
-      "PR Newswire": 2,
-      "GlobeNewswire": 9,
+      "8-K": 56,
+      "PR Newswire": 0,
+      "GlobeNewswire": 6,
       "prior-session gainer": 14
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 76,
-    "answered": 76,
+    "requested": 74,
+    "answered": 74,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Netcapital Inc.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 2,
-      "preMarketChangePct": 25.79,
-      "prevClose": 1.5899515064790524,
+      "preMarketPrice": 2.01,
+      "preMarketChangePct": 26.42,
+      "prevClose": 1.5899383009017558,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 15, 2026 8:40 AM ET",
-      "preMarketVolume": 9528482.168782,
-      "preMarketDollarVolume": 19056964.337564,
-      "relVolume": 0.5470964085628427,
+      "lastTradeAt": "Oct 15, 2026 9:00 AM ET",
+      "preMarketVolume": 11109075.168782,
+      "preMarketDollarVolume": 22329241.089251816,
+      "relVolume": 0.637849241845429,
       "avgVolume50": 17416459,
       "sharesOutstanding": 7847899,
-      "marketCap": 15695798,
+      "marketCap": 15774276.989999998,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 127,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-19"
       },
-      "floatRotation": 1.214144342171325,
+      "floatRotation": 1.4155476731774963,
       "daysUp": 0,
       "priorRunPct": 27.522935779816493,
       "extended": false,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "25.8%"
+          "detail": "26.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "9,528,482"
+          "detail": "11,109,075"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.00"
+          "detail": "$2.01"
         },
         {
           "name": "Float <10M",
@@ -135,17 +135,17 @@
       "legalName": "Neuraxis, INC",
       "business": "Electromedical & Electrotherapeutic Apparatus",
       "sector": "Health Care",
-      "preMarketPrice": 7.0087,
-      "preMarketChangePct": 7.826153846153848,
+      "preMarketPrice": 7.23,
+      "preMarketChangePct": 11.230769230769237,
       "prevClose": 6.5,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 15, 2026 8:37 AM ET",
-      "preMarketVolume": 14126.49,
-      "preMarketDollarVolume": 99008.330463,
-      "relVolume": 0.1838716353412818,
+      "lastTradeAt": "Oct 15, 2026 9:00 AM ET",
+      "preMarketVolume": 19521.49,
+      "preMarketDollarVolume": 141140.3727,
+      "relVolume": 0.25409342947883584,
       "avgVolume50": 76828,
       "sharesOutstanding": 12557765,
-      "marketCap": 88013607.5555,
+      "marketCap": 90792640.95,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 25,
       "float": {
@@ -153,7 +153,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-06"
       },
-      "floatRotation": 0.0011249207163854396,
+      "floatRotation": 0.0015545353810968753,
       "daysUp": 0,
       "priorRunPct": -4.129793510324487,
       "extended": false,
@@ -170,13 +170,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.8%"
+          "ok": true,
+          "detail": "11.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "14,126"
+          "detail": "19,521"
         },
         {
           "name": "News catalyst",
@@ -186,7 +186,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$7.01"
+          "detail": "$7.23"
         },
         {
           "name": "Float <10M",
@@ -194,143 +194,75 @@
           "detail": "12.6M"
         }
       ],
-      "passed": 2,
+      "passed": 3,
       "quality": "low"
     },
     {
-      "symbol": "OPNW",
-      "name": "OpenWorld Inc.",
-      "legalName": "OpenWorld, Inc.",
-      "business": "Finance Services",
-      "sector": "Technology",
-      "preMarketPrice": 3.25,
-      "preMarketChangePct": 6.56,
-      "prevClose": 3.0499249249249254,
+      "symbol": "NTHI",
+      "name": "NeOnc Technologies Holdings Inc.",
+      "legalName": "NEONC TECHNOLOGIES HOLDINGS, INC.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 2.83,
+      "preMarketChangePct": 6.39,
+      "prevClose": 2.660024438387066,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 15, 2026 8:37 AM ET",
-      "preMarketVolume": 1843,
-      "preMarketDollarVolume": 5989.75,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 13165196,
-      "marketCap": 42786887,
+      "lastTradeAt": "Oct 15, 2026 8:20 AM ET",
+      "preMarketVolume": 158,
+      "preMarketDollarVolume": 447.14,
+      "relVolume": 0.0008950979225796949,
+      "avgVolume50": 176517,
+      "sharesOutstanding": 25936365,
+      "marketCap": 73399912.95,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
+      "bestPriorSpikePct": 31,
       "float": {
-        "shares": 13165196,
+        "shares": 25936365,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-07"
+        "asOf": "2026-08-10"
       },
-      "floatRotation": 0.00013999031993143133,
+      "floatRotation": 0.000006091832837793577,
       "daysUp": 0,
-      "priorRunPct": -46.12903225806452,
+      "priorRunPct": -13.210702341137123,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Regulation FD disclosure (company announcement)",
-        "subject": "Regulation FD disclosure (company announcement)",
+        "kind": "news",
+        "headline": "UAE Banking Heavyweight Joins NeOnc as Global Brain-Cancer Drug Development Advances",
+        "subject": null,
         "date": "2026-10-15"
       },
       "leads": [
-        "8-K"
+        "GlobeNewswire"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.6%"
+          "detail": "6.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "1,843"
+          "detail": "158"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.25"
+          "detail": "$2.83"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "13.2M"
+          "detail": "25.9M"
         }
       ],
       "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "MWYN",
-      "name": "Marwynn Holdings Inc.",
-      "legalName": "Marwynn Holdings, Inc.",
-      "business": "Wholesale-Groceries, General Line",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.92,
-      "preMarketChangePct": 19.99999999999999,
-      "prevClose": 1.6,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 15, 2026 8:37 AM ET",
-      "preMarketVolume": 29161,
-      "preMarketDollarVolume": 55989.119999999995,
-      "relVolume": 0.11784555326104966,
-      "avgVolume50": 247451,
-      "sharesOutstanding": 20194804,
-      "marketCap": 38774023.68,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 36,
-      "float": {
-        "shares": 20194804,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-10"
-      },
-      "floatRotation": 0.0014439852944351428,
-      "daysUp": 2,
-      "priorRunPct": 8.843537414965995,
-      "extended": true,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "20.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "29,161"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.92"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "20.2M"
-        }
-      ],
-      "passed": 1,
       "quality": "low"
     }
   ]
