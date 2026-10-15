@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-15T13:00:39.752Z",
+  "generatedAt": "2026-10-15T13:20:38.525Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-14",
   "universeChecked": 6012,
   "smallCapsInBand": 2969,
-  "investigated": 74,
-  "liveQuotes": 57,
+  "investigated": 79,
+  "liveQuotes": 62,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-14T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 142,
+    "edgarFilings": 150,
     "leads": {
-      "8-K": 56,
+      "8-K": 60,
       "PR Newswire": 0,
-      "GlobeNewswire": 6,
+      "GlobeNewswire": 10,
       "prior-session gainer": 14
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 74,
-    "answered": 74,
+    "requested": 79,
+    "answered": 79,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -57,24 +57,25 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [
+  "shortlist": [],
+  "watchlist": [
     {
       "symbol": "NCPL",
       "name": "Netcapital Inc.",
       "legalName": "Netcapital Inc.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 2.01,
-      "preMarketChangePct": 26.42,
-      "prevClose": 1.5899383009017558,
+      "preMarketPrice": 1.97,
+      "preMarketChangePct": 23.9,
+      "prevClose": 1.58999192897498,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 15, 2026 9:00 AM ET",
-      "preMarketVolume": 11109075.168782,
-      "preMarketDollarVolume": 22329241.089251816,
-      "relVolume": 0.637849241845429,
+      "lastTradeAt": "Oct 15, 2026 9:20 AM ET",
+      "preMarketVolume": 11872035.168782,
+      "preMarketDollarVolume": 23387909.28250054,
+      "relVolume": 0.6816560799633267,
       "avgVolume50": 17416459,
       "sharesOutstanding": 7847899,
-      "marketCap": 15774276.989999998,
+      "marketCap": 15460361.03,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 127,
       "float": {
@@ -82,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-19"
       },
-      "floatRotation": 1.4155476731774963,
+      "floatRotation": 1.5127660497136877,
       "daysUp": 0,
       "priorRunPct": 27.522935779816493,
       "extended": false,
@@ -100,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "26.4%"
+          "detail": "23.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "11,109,075"
+          "detail": "11,872,035"
         },
         {
           "name": "News catalyst",
@@ -114,8 +115,8 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.01"
+          "ok": false,
+          "detail": "$1.97"
         },
         {
           "name": "Float <10M",
@@ -123,11 +124,10 @@
           "detail": "7.8M"
         }
       ],
-      "passed": 5,
-      "quality": "high"
+      "passed": 4,
+      "quality": "medium"
     }
   ],
-  "watchlist": [],
   "alsoRan": [
     {
       "symbol": "NRXS",
@@ -135,17 +135,17 @@
       "legalName": "Neuraxis, INC",
       "business": "Electromedical & Electrotherapeutic Apparatus",
       "sector": "Health Care",
-      "preMarketPrice": 7.23,
-      "preMarketChangePct": 11.230769230769237,
+      "preMarketPrice": 7,
+      "preMarketChangePct": 7.6923076923076925,
       "prevClose": 6.5,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 15, 2026 9:00 AM ET",
-      "preMarketVolume": 19521.49,
-      "preMarketDollarVolume": 141140.3727,
-      "relVolume": 0.25409342947883584,
+      "lastTradeAt": "Oct 15, 2026 9:17 AM ET",
+      "preMarketVolume": 63464.49,
+      "preMarketDollarVolume": 444251.43,
+      "relVolume": 0.8260593793929296,
       "avgVolume50": 76828,
       "sharesOutstanding": 12557765,
-      "marketCap": 90792640.95,
+      "marketCap": 87904355,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 25,
       "float": {
@@ -153,40 +153,41 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-06"
       },
-      "floatRotation": 0.0015545353810968753,
+      "floatRotation": 0.005053804558374838,
       "daysUp": 0,
       "priorRunPct": -4.129793510324487,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-10-14"
+        "kind": "news",
+        "headline": "NeurAxis Announces Medical Policy Coverage Milestone, Expanding Access to 26 Million Additional Covered Lives",
+        "subject": null,
+        "date": "2026-10-15"
       },
       "leads": [
+        "GlobeNewswire",
         "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "11.2%"
+          "ok": false,
+          "detail": "7.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "19,521"
+          "ok": true,
+          "detail": "63,464"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$7.23"
+          "detail": "$7.00"
         },
         {
           "name": "Float <10M",
@@ -198,42 +199,43 @@
       "quality": "low"
     },
     {
-      "symbol": "NTHI",
-      "name": "NeOnc Technologies Holdings Inc.",
-      "legalName": "NEONC TECHNOLOGIES HOLDINGS, INC.",
+      "symbol": "EDSA",
+      "name": "Edesa Biotech Inc. Common Shares",
+      "legalName": "Edesa Biotech, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 2.83,
-      "preMarketChangePct": 6.39,
-      "prevClose": 2.660024438387066,
+      "preMarketPrice": 2.8186,
+      "preMarketChangePct": 6.36,
+      "prevClose": 2.6500564121850316,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 15, 2026 8:20 AM ET",
-      "preMarketVolume": 158,
-      "preMarketDollarVolume": 447.14,
-      "relVolume": 0.0008950979225796949,
-      "avgVolume50": 176517,
-      "sharesOutstanding": 25936365,
-      "marketCap": 73399912.95,
+      "lastTradeAt": "Oct 15, 2026 9:20 AM ET",
+      "preMarketVolume": 3266,
+      "preMarketDollarVolume": 9205.5476,
+      "relVolume": 0.046458036984352774,
+      "avgVolume50": 70300,
+      "sharesOutstanding": 9641031,
+      "marketCap": 27174209.9766,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 31,
+      "bestPriorSpikePct": 91,
       "float": {
-        "shares": 25936365,
+        "shares": 9641031,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-10"
+        "asOf": "2026-08-13"
       },
-      "floatRotation": 0.000006091832837793577,
+      "floatRotation": 0.00033876044999751583,
       "daysUp": 0,
-      "priorRunPct": -13.210702341137123,
+      "priorRunPct": -23.521505376344084,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "UAE Banking Heavyweight Joins NeOnc as Global Brain-Cancer Drug Development Advances",
-        "subject": null,
+        "headline": "Edesa Biotech Announces FDA IND Clearance for Phase 2 Vitiligo Study",
+        "subject": "FDA / clinical",
         "date": "2026-10-15"
       },
       "leads": [
-        "GlobeNewswire"
+        "GlobeNewswire",
+        "8-K"
       ],
       "checks": [
         {
@@ -244,7 +246,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "158"
+          "detail": "3,266"
         },
         {
           "name": "News catalyst",
@@ -254,12 +256,216 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.83"
+          "detail": "$2.82"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "9.6M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "ASPI",
+      "name": "ASP Isotopes Inc.",
+      "legalName": "ASP Isotopes Inc.",
+      "business": "Miscellaneous Chemical Products",
+      "sector": "Industrials",
+      "preMarketPrice": 2.19,
+      "preMarketChangePct": 5.8,
+      "prevClose": 2.0699432892249527,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 15, 2026 9:18 AM ET",
+      "preMarketVolume": 216822.282163,
+      "preMarketDollarVolume": 474840.79793696996,
+      "relVolume": 0.058978974894893295,
+      "avgVolume50": 3676264,
+      "sharesOutstanding": 153309380,
+      "marketCap": 335747542.2,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 31,
+      "float": {
+        "shares": 153309380,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-14"
+      },
+      "floatRotation": 0.0014142792969549548,
+      "daysUp": 0,
+      "priorRunPct": -20.00000000000001,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-10-15"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "216,822"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.19"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "25.9M"
+          "detail": "153.3M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "OPNW",
+      "name": "OpenWorld Inc.",
+      "legalName": "OpenWorld, Inc.",
+      "business": "Finance Services",
+      "sector": "Technology",
+      "preMarketPrice": 3.25,
+      "preMarketChangePct": 6.56,
+      "prevClose": 3.0499249249249254,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 15, 2026 9:16 AM ET",
+      "preMarketVolume": 2657,
+      "preMarketDollarVolume": 8635.25,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 13165196,
+      "marketCap": 42786887,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 13165196,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-07"
+      },
+      "floatRotation": 0.00020182001088324094,
+      "daysUp": 0,
+      "priorRunPct": -46.12903225806452,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-10-15"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "2,657"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.25"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "13.2M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "ONMD",
+      "name": "OneMedNet Corp Class A",
+      "legalName": "OneMedNet Corp",
+      "business": "Services-Commercial Physical & Biological Research",
+      "sector": "Health Care",
+      "preMarketPrice": 4.99,
+      "preMarketChangePct": 5.94,
+      "prevClose": 4.710213328299038,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 15, 2026 9:01 AM ET",
+      "preMarketVolume": 1725,
+      "preMarketDollarVolume": 8607.75,
+      "relVolume": 0.0014198185266152184,
+      "avgVolume50": 1214944,
+      "sharesOutstanding": 59286450,
+      "marketCap": 295839385.5,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 149,
+      "float": {
+        "shares": 59286450,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-11"
+      },
+      "floatRotation": 0.000029096024471021625,
+      "daysUp": 1,
+      "priorRunPct": -19.11468812877264,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-10-14"
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "1,725"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.99"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "59.3M"
         }
       ],
       "passed": 2,
