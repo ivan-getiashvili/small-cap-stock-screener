@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-10-19T12:40:53.298Z",
+ "updatedAt": "2026-10-19T13:00:55.492Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -6469,7 +6469,7 @@
      "business": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
      "list": "shortlist",
      "firstSeenAt": "2026-10-19T11:00:37.267Z",
-     "lastSeenAt": "2026-10-19T12:40:36.140Z",
+     "lastSeenAt": "2026-10-19T13:00:35.989Z",
      "shortlistedAt": "2026-10-19T11:00:37.267Z",
      "preMarketPrice": 3.05,
      "preMarketChangePct": 15.97,
@@ -6509,7 +6509,7 @@
      "business": "Services-Prepackaged Software",
      "list": "watchlist",
      "firstSeenAt": "2026-10-19T11:20:35.498Z",
-     "lastSeenAt": "2026-10-19T12:40:36.140Z",
+     "lastSeenAt": "2026-10-19T13:00:35.989Z",
      "shortlistedAt": null,
      "preMarketPrice": 3.72,
      "preMarketChangePct": 10.39,
@@ -6530,7 +6530,7 @@
      "business": "Pharmaceutical Preparations",
      "list": "watchlist",
      "firstSeenAt": "2026-10-19T11:40:34.499Z",
-     "lastSeenAt": "2026-10-19T12:40:36.140Z",
+     "lastSeenAt": "2026-10-19T13:00:35.989Z",
      "shortlistedAt": null,
      "preMarketPrice": 3.27,
      "preMarketChangePct": 24.33,
@@ -6549,21 +6549,19 @@
      "symbol": "SLE",
      "legalName": "Super League Enterprise, Inc.",
      "business": "Services-Computer Integrated Systems Design",
-     "list": "watchlist",
+     "list": "shortlist",
      "firstSeenAt": "2026-10-19T12:20:36.810Z",
-     "lastSeenAt": "2026-10-19T12:20:36.810Z",
-     "shortlistedAt": null,
-     "preMarketPrice": 4.97,
-     "preMarketChangePct": 10.69,
-     "prevClose": 4.49001716505556,
-     "preMarketVolume": 8068,
-     "relVolume": 0.004996491680048652,
+     "lastSeenAt": "2026-10-19T13:00:35.989Z",
+     "shortlistedAt": "2026-10-19T13:00:35.989Z",
+     "preMarketPrice": 4.99,
+     "preMarketChangePct": 11.14,
+     "prevClose": 4.489832643512687,
+     "preMarketVolume": 86272,
+     "relVolume": 0.05342802803931052,
      "floatShares": 1695120,
      "catalyst": "Shareholder vote results · Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
      "extended": false,
-     "missing": [
-      "Pre-market volume ≥50k"
-     ],
+     "missing": [],
      "performance": null
     },
     {
@@ -6593,7 +6591,7 @@
      "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
      "list": "watchlist",
      "firstSeenAt": "2026-10-19T12:40:36.140Z",
-     "lastSeenAt": "2026-10-19T12:40:36.140Z",
+     "lastSeenAt": "2026-10-19T13:00:35.989Z",
      "shortlistedAt": null,
      "preMarketPrice": 2.06,
      "preMarketChangePct": 13.19,
@@ -6605,6 +6603,48 @@
      "extended": false,
      "missing": [
       "Float <10M"
+     ],
+     "performance": null
+    },
+    {
+     "symbol": "SLN",
+     "legalName": "Silence Therapeutics plc",
+     "business": "Pharmaceutical Preparations",
+     "list": "watchlist",
+     "firstSeenAt": "2026-10-19T13:00:35.989Z",
+     "lastSeenAt": "2026-10-19T13:00:35.989Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 19.61,
+     "preMarketChangePct": 125.92,
+     "prevClose": 8.68006373937677,
+     "preMarketVolume": 13890977.328276,
+     "relVolume": 12.423000992943804,
+     "floatShares": 141740037,
+     "catalyst": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
+     "extended": true,
+     "missing": [
+      "Float <10M"
+     ],
+     "performance": null
+    },
+    {
+     "symbol": "PMI",
+     "legalName": "Picard Medical, Inc.",
+     "business": "Surgical & Medical Instruments & Apparatus",
+     "list": "watchlist",
+     "firstSeenAt": "2026-10-19T13:00:35.989Z",
+     "lastSeenAt": "2026-10-19T13:00:35.989Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 14.36,
+     "preMarketChangePct": 12.63,
+     "prevClose": 12.74971144455296,
+     "preMarketVolume": 56885.071751,
+     "relVolume": 0.003804136519343527,
+     "floatShares": 2338634,
+     "catalyst": null,
+     "extended": false,
+     "missing": [
+      "News catalyst"
      ],
      "performance": null
     }
