@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-19T11:00:37.267Z",
+  "generatedAt": "2026-10-19T11:20:35.498Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-16",
   "universeChecked": 5990,
   "smallCapsInBand": 2944,
-  "investigated": 68,
+  "investigated": 66,
   "liveQuotes": 50,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-16T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 123,
+    "edgarFilings": 129,
     "leads": {
-      "8-K": 52,
-      "PR Newswire": 5,
-      "GlobeNewswire": 1,
+      "8-K": 53,
+      "PR Newswire": 0,
+      "GlobeNewswire": 3,
       "prior-session gainer": 12
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 68,
-    "answered": 68,
+    "requested": 66,
+    "answered": 66,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "DataMeds AI, Inc.",
       "business": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
       "sector": "Health Care",
-      "preMarketPrice": 3.05,
-      "preMarketChangePct": 15.97,
-      "prevClose": 2.6299905147883074,
+      "preMarketPrice": 3.1002,
+      "preMarketChangePct": 17.88,
+      "prevClose": 2.6299626739056667,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 19, 2026 7:00 AM ET",
-      "preMarketVolume": 1487082.752492,
-      "preMarketDollarVolume": 4535602.3951006,
-      "relVolume": 4.583296869822504,
+      "lastTradeAt": "Oct 19, 2026 7:20 AM ET",
+      "preMarketVolume": 1755316.894892,
+      "preMarketDollarVolume": 5441833.437544178,
+      "relVolume": 5.410013946045239,
       "avgVolume50": 324457,
       "sharesOutstanding": 3061919,
-      "marketCap": 9338852.95,
+      "marketCap": 9492561.2838,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 30,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-17"
       },
-      "floatRotation": 0.4856701802013705,
+      "floatRotation": 0.5732734585376034,
       "daysUp": 0,
       "priorRunPct": -16.17647058823529,
       "extended": false,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "16.0%"
+          "detail": "17.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,487,083"
+          "detail": "1,755,317"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.05"
+          "detail": "$3.10"
         },
         {
           "name": "Float <10M",
@@ -129,229 +129,22 @@
   ],
   "watchlist": [
     {
-      "symbol": "OPNW",
-      "name": "OpenWorld Inc.",
-      "legalName": "OpenWorld, Inc.",
-      "business": "Finance Services",
-      "sector": "Technology",
-      "preMarketPrice": 2.95,
-      "preMarketChangePct": 10.9,
-      "prevClose": 2.660054102795311,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 19, 2026 6:56 AM ET",
-      "preMarketVolume": 51804,
-      "preMarketDollarVolume": 152821.80000000002,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 13165196,
-      "marketCap": 38837328.2,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 13165196,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-07"
-      },
-      "floatRotation": 0.003934920528338507,
-      "daysUp": 0,
-      "priorRunPct": -45.64393939393939,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "OpenWorld To Acquire Blocksight For Tokenization Programs Of Up To $1.13 Bln ",
-        "subject": "Merger or acquisition",
-        "date": "2026-10-19"
-      },
-      "leads": [
-        "8-K",
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "51,804"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.95"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "13.2M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
-  "alsoRan": [
-    {
-      "symbol": "AAME",
-      "name": "Atlantic American Corporation",
-      "legalName": "ATLANTIC AMERICAN CORP",
-      "business": "Life Insurance",
-      "sector": "Finance",
-      "preMarketPrice": 1.43,
-      "preMarketChangePct": 34.90566037735848,
-      "prevClose": 1.06,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 19, 2026 7:00 AM ET",
-      "preMarketVolume": 10725658.708641,
-      "preMarketDollarVolume": 15337691.95335663,
-      "relVolume": 143.53507806812982,
-      "avgVolume50": 74725,
-      "sharesOutstanding": 20397228,
-      "marketCap": 29168036.04,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 31,
-      "float": {
-        "shares": 20397228,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-01"
-      },
-      "floatRotation": 0.5258390360023921,
-      "daysUp": 0,
-      "priorRunPct": -12.396694214876026,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract)",
-        "subject": "Entered a material agreement (deal, partnership or contract)",
-        "date": "2026-10-16"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "34.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "10,725,659"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.43"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "20.4M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "XLAB",
-      "name": "Exascale Labs Holdings Inc. Class A",
-      "legalName": "Exascale Labs Holdings Inc.",
-      "business": "Services-Prepackaged Software",
-      "sector": "Technology",
-      "preMarketPrice": 2.74,
-      "preMarketChangePct": 16.6,
-      "prevClose": 2.34991423670669,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 19, 2026 7:00 AM ET",
-      "preMarketVolume": 14181164.742613,
-      "preMarketDollarVolume": 38856391.394759625,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 64334788.93617021,
-      "marketCap": 176277321.6851064,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 64334788.93617021,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-19"
-      },
-      "floatRotation": 0.22042762519486694,
-      "daysUp": 1,
-      "priorRunPct": 33.33333333333334,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "16.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "14,181,165"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.74"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "64.3M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "UPLD",
       "name": "Upland Software Inc.",
       "legalName": "Upland Software, Inc.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 3.86,
-      "preMarketChangePct": 14.54,
-      "prevClose": 3.370001746114894,
+      "preMarketPrice": 3.72,
+      "preMarketChangePct": 10.39,
+      "prevClose": 3.369870459280732,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 19, 2026 7:00 AM ET",
-      "preMarketVolume": 46296.132778,
-      "preMarketDollarVolume": 178703.07252308,
-      "relVolume": 1.7879787115436605,
+      "lastTradeAt": "Oct 19, 2026 7:20 AM ET",
+      "preMarketVolume": 89761.132778,
+      "preMarketDollarVolume": 333911.41393416,
+      "relVolume": 3.466617725949098,
       "avgVolume50": 25893,
       "sharesOutstanding": 2957191,
-      "marketCap": 11414757.26,
+      "marketCap": 11000750.520000001,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 29,
       "float": {
@@ -359,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.01565544220106175,
+      "floatRotation": 0.030353512092387673,
       "daysUp": 0,
       "priorRunPct": -20.845070422535205,
       "extended": false,
@@ -377,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "14.5%"
+          "detail": "10.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "46,296"
+          "ok": true,
+          "detail": "89,761"
         },
         {
           "name": "News catalyst",
@@ -392,12 +185,218 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.86"
+          "detail": "$3.72"
         },
         {
           "name": "Float <10M",
           "ok": true,
           "detail": "3.0M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
+  "alsoRan": [
+    {
+      "symbol": "AAME",
+      "name": "Atlantic American Corporation",
+      "legalName": "ATLANTIC AMERICAN CORP",
+      "business": "Life Insurance",
+      "sector": "Finance",
+      "preMarketPrice": 1.5803,
+      "preMarketChangePct": 49.08490566037735,
+      "prevClose": 1.06,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 19, 2026 7:20 AM ET",
+      "preMarketVolume": 20030789.188941,
+      "preMarketDollarVolume": 31654656.15528346,
+      "relVolume": 268.0600761316962,
+      "avgVolume50": 74725,
+      "sharesOutstanding": 20397228,
+      "marketCap": 32233739.4084,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 31,
+      "float": {
+        "shares": 20397228,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-01"
+      },
+      "floatRotation": 0.9820348720395241,
+      "daysUp": 0,
+      "priorRunPct": -12.396694214876026,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract)",
+        "subject": "Entered a material agreement (deal, partnership or contract)",
+        "date": "2026-10-16"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "49.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "20,030,789"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.58"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "20.4M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "XLAB",
+      "name": "Exascale Labs Holdings Inc. Class A",
+      "legalName": "Exascale Labs Holdings Inc.",
+      "business": "Services-Prepackaged Software",
+      "sector": "Technology",
+      "preMarketPrice": 2.75,
+      "preMarketChangePct": 17.02,
+      "prevClose": 2.350025636643309,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 19, 2026 7:20 AM ET",
+      "preMarketVolume": 16416734.679857,
+      "preMarketDollarVolume": 45146020.36960675,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 64334788.93617021,
+      "marketCap": 176920669.57446808,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 64334788.93617021,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-19"
+      },
+      "floatRotation": 0.2551766307362082,
+      "daysUp": 1,
+      "priorRunPct": 33.33333333333334,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "17.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "16,416,735"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.75"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "64.3M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "AVX",
+      "name": "Avax One Technology Ltd. Common Shares",
+      "legalName": "AVAX ONE TECHNOLOGY LTD.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 5,
+      "preMarketChangePct": 12.61,
+      "prevClose": 4.440103010389841,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 19, 2026 7:07 AM ET",
+      "preMarketVolume": 252,
+      "preMarketDollarVolume": 1260,
+      "relVolume": 0.005983616288733231,
+      "avgVolume50": 42115,
+      "sharesOutstanding": 7397383,
+      "marketCap": 36986915,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 22,
+      "float": {
+        "shares": 7397383,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-12"
+      },
+      "floatRotation": 0.00003406610148480889,
+      "daysUp": 1,
+      "priorRunPct": -3.4068136272545075,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "12.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "252"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.00"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "7.4M"
         }
       ],
       "passed": 3,
@@ -540,53 +539,54 @@
       "quality": "low"
     },
     {
-      "symbol": "IMUX",
-      "name": "Immunic Inc.",
-      "legalName": "IMMUNIC, INC.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 7.66,
-      "preMarketChangePct": 9.9,
-      "prevClose": 6.969972702456779,
+      "symbol": "OPNW",
+      "name": "OpenWorld Inc.",
+      "legalName": "OpenWorld, Inc.",
+      "business": "Finance Services",
+      "sector": "Technology",
+      "preMarketPrice": 2.89,
+      "preMarketChangePct": 8.65,
+      "prevClose": 2.659917165209388,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 19, 2026 6:38 AM ET",
-      "preMarketVolume": 203,
-      "preMarketDollarVolume": 1554.98,
-      "relVolume": 0.0009897755696085266,
-      "avgVolume50": 205097,
-      "sharesOutstanding": 13644467,
-      "marketCap": 104516617.22,
+      "lastTradeAt": "Oct 19, 2026 7:17 AM ET",
+      "preMarketVolume": 57134,
+      "preMarketDollarVolume": 165117.26,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 13165196,
+      "marketCap": 38047416.440000005,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 17,
+      "bestPriorSpikePct": null,
       "float": {
-        "shares": 13644467,
+        "shares": 13165196,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-31"
+        "asOf": "2026-08-07"
       },
-      "floatRotation": 0.000014877825568415388,
-      "daysUp": 1,
-      "priorRunPct": -6.084656084656085,
+      "floatRotation": 0.004339775875725664,
+      "daysUp": 0,
+      "priorRunPct": -45.64393939393939,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Immunic Appoints Jaa Roberson as Chief People Officer",
-        "subject": null,
+        "headline": "OpenWorld To Acquire Blocksight For Tokenization Programs Of Up To $1.13 Bln ",
+        "subject": "Merger or acquisition",
         "date": "2026-10-19"
       },
       "leads": [
-        "PR Newswire"
+        "8-K",
+        "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.9%"
+          "detail": "8.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "203"
+          "ok": true,
+          "detail": "57,134"
         },
         {
           "name": "News catalyst",
@@ -596,15 +596,15 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$7.66"
+          "detail": "$2.89"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "13.6M"
+          "detail": "13.2M"
         }
       ],
-      "passed": 2,
+      "passed": 3,
       "quality": "low"
     },
     {
@@ -681,17 +681,17 @@
       "legalName": "NRX Pharmaceuticals, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 2.75,
-      "preMarketChangePct": 5.77,
-      "prevClose": 2.5999810910466103,
+      "preMarketPrice": 2.79,
+      "preMarketChangePct": 7.31,
+      "prevClose": 2.599944087223931,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 19, 2026 7:00 AM ET",
-      "preMarketVolume": 18237,
-      "preMarketDollarVolume": 50151.75,
-      "relVolume": 0.019820994799393536,
+      "lastTradeAt": "Oct 19, 2026 7:19 AM ET",
+      "preMarketVolume": 19245,
+      "preMarketDollarVolume": 53693.55,
+      "relVolume": 0.02091654575392491,
       "avgVolume50": 920085,
       "sharesOutstanding": 43295767,
-      "marketCap": 119063359.25,
+      "marketCap": 120795189.93,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 34,
       "float": {
@@ -699,7 +699,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-14"
       },
-      "floatRotation": 0.0004212190073916464,
+      "floatRotation": 0.0004445007291359453,
       "daysUp": 1,
       "priorRunPct": -6.22837370242215,
       "extended": false,
@@ -717,12 +717,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.8%"
+          "detail": "7.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "18,237"
+          "detail": "19,245"
         },
         {
           "name": "News catalyst",
@@ -732,80 +732,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.75"
+          "detail": "$2.79"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "43.3M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "POAS",
-      "name": "Phaos Technology Holdings (Cayman) Limited Class A Ordinary Shares",
-      "legalName": "PHAOS TECHNOLOGY HOLDINGS (CAYMAN) Ltd",
-      "business": "Industrial Instruments For Measurement, Display, and Control",
-      "sector": "Industrials",
-      "preMarketPrice": 2.8,
-      "preMarketChangePct": 5.66,
-      "prevClose": 2.650009464319515,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 19, 2026 6:56 AM ET",
-      "preMarketVolume": 8415.799999,
-      "preMarketDollarVolume": 23564.239997200002,
-      "relVolume": 0.029899456421643517,
-      "avgVolume50": 281470,
-      "sharesOutstanding": 2104800,
-      "marketCap": 5893440,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 33,
-      "float": {
-        "shares": 2104800,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-19"
-      },
-      "floatRotation": 0.003998384644146712,
-      "daysUp": 0,
-      "priorRunPct": 1421.1267605633805,
-      "extended": true,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "8,416"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.80"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "2.1M"
         }
       ],
       "passed": 2,
@@ -877,6 +809,74 @@
         }
       ],
       "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "QUCY",
+      "name": "Quantum Cyber N.V. Ordinary Shares",
+      "legalName": "Quantum Cyber N.V.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 1.1236,
+      "preMarketChangePct": 6,
+      "prevClose": 1.0599999999999998,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 19, 2026 7:07 AM ET",
+      "preMarketVolume": 4625,
+      "preMarketDollarVolume": 5196.65,
+      "relVolume": 0.00541932066911327,
+      "avgVolume50": 853428,
+      "sharesOutstanding": 84068192,
+      "marketCap": 94459020.53119999,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 124,
+      "float": {
+        "shares": 84068192,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-13"
+      },
+      "floatRotation": 0.0000550148622204222,
+      "daysUp": 1,
+      "priorRunPct": -21.582733812949627,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Executive or board change",
+        "subject": "Executive or board change",
+        "date": "2026-10-16"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "4,625"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.12"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "84.1M"
+        }
+      ],
+      "passed": 1,
       "quality": "low"
     }
   ]
