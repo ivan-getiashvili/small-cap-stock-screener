@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-10-18T21:10:39.819Z",
+ "updatedAt": "2026-10-19T11:00:53.014Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -6456,6 +6456,52 @@
      "intraday": {
       "noon": 4.2681
      }
+    }
+   ]
+  },
+  "2026-10-19": {
+   "date": "2026-10-19",
+   "source": "live",
+   "names": [
+    {
+     "symbol": "MEDS",
+     "legalName": "DataMeds AI, Inc.",
+     "business": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
+     "list": "shortlist",
+     "firstSeenAt": "2026-10-19T11:00:37.267Z",
+     "lastSeenAt": "2026-10-19T11:00:37.267Z",
+     "shortlistedAt": "2026-10-19T11:00:37.267Z",
+     "preMarketPrice": 3.05,
+     "preMarketChangePct": 15.97,
+     "prevClose": 2.6299905147883074,
+     "preMarketVolume": 1487082.752492,
+     "relVolume": 4.583296869822504,
+     "floatShares": 3061919,
+     "catalyst": "Entered a material agreement (deal, partnership or contract) · Delisting notice or listing-rule failure · Sold unregistered shares (dilution)",
+     "extended": false,
+     "missing": [],
+     "performance": null
+    },
+    {
+     "symbol": "OPNW",
+     "legalName": "OpenWorld, Inc.",
+     "business": "Finance Services",
+     "list": "watchlist",
+     "firstSeenAt": "2026-10-19T11:00:37.267Z",
+     "lastSeenAt": "2026-10-19T11:00:37.267Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 2.95,
+     "preMarketChangePct": 10.9,
+     "prevClose": 2.660054102795311,
+     "preMarketVolume": 51804,
+     "relVolume": null,
+     "floatShares": 13165196,
+     "catalyst": "Merger or acquisition",
+     "extended": false,
+     "missing": [
+      "Float <10M"
+     ],
+     "performance": null
     }
    ]
   }
