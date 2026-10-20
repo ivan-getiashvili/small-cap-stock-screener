@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-20T11:00:35.709Z",
+  "generatedAt": "2026-10-20T11:20:35.174Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-19",
   "universeChecked": 6003,
   "smallCapsInBand": 2939,
-  "investigated": 68,
-  "liveQuotes": 45,
+  "investigated": 71,
+  "liveQuotes": 51,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-19T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 138,
+    "edgarFilings": 150,
     "leads": {
-      "8-K": 39,
+      "8-K": 42,
       "PR Newswire": 2,
-      "GlobeNewswire": 2,
+      "GlobeNewswire": 3,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 68,
-    "answered": 68,
+    "requested": 71,
+    "answered": 71,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "SCWorx Corp.",
       "business": "Services-Computer Processing & Data Preparation",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.82,
-      "preMarketChangePct": 42.54,
-      "prevClose": 2.679949487863056,
+      "preMarketPrice": 4.09,
+      "preMarketChangePct": 52.61,
+      "prevClose": 2.680034073782845,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 20, 2026 7:00 AM ET",
-      "preMarketVolume": 7391134,
-      "preMarketDollarVolume": 28234131.88,
-      "relVolume": 0.6028903791256071,
+      "lastTradeAt": "Oct 20, 2026 7:20 AM ET",
+      "preMarketVolume": 12563832,
+      "preMarketDollarVolume": 51386072.879999995,
+      "relVolume": 1.0248242607630214,
       "avgVolume50": 12259499,
       "sharesOutstanding": 89789,
-      "marketCap": 342993.98,
+      "marketCap": 367237.01,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 69,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-14"
       },
-      "floatRotation": 82.31669803650782,
+      "floatRotation": 139.9261824945149,
       "daysUp": 0,
       "priorRunPct": -63.00268096514745,
       "extended": false,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "42.5%"
+          "detail": "52.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "7,391,134"
+          "detail": "12,563,832"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.82"
+          "detail": "$4.09"
         },
         {
           "name": "Float <10M",
@@ -130,22 +130,90 @@
   "watchlist": [],
   "alsoRan": [
     {
+      "symbol": "SLN",
+      "name": "Silence Therapeutics Plc American Depository Share",
+      "legalName": "Silence Therapeutics plc",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 19.58,
+      "preMarketChangePct": 125.57603686635943,
+      "prevClose": 8.68,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 20, 2026 7:17 AM ET",
+      "preMarketVolume": 16180.326875,
+      "preMarketDollarVolume": 316810.8002125,
+      "relVolume": 0.014470415729864797,
+      "avgVolume50": 1118166,
+      "sharesOutstanding": 141740037,
+      "marketCap": 2775269924.4599996,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 29,
+      "float": {
+        "shares": 141740037,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-31"
+      },
+      "floatRotation": 0.00011415495026997912,
+      "daysUp": 0,
+      "priorRunPct": -11.967545638945232,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Biotech Stocks Rally: SLN Soars 125%, WORX Jumps 105%, IRON Gains 41% ",
+        "subject": null,
+        "date": "2026-10-19"
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "125.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "16,180"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$19.58"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "141.7M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "RTSN",
       "name": "Retension Pharmaceuticals Inc.",
       "legalName": "Retension Pharmaceuticals, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 18.55,
-      "preMarketChangePct": 13.59,
-      "prevClose": 16.330662910467474,
+      "preMarketPrice": 18.43,
+      "preMarketChangePct": 12.86,
+      "prevClose": 16.32996632996633,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 20, 2026 6:17 AM ET",
-      "preMarketVolume": 52,
-      "preMarketDollarVolume": 964.6,
+      "lastTradeAt": "Oct 20, 2026 7:20 AM ET",
+      "preMarketVolume": 129,
+      "preMarketDollarVolume": 2377.47,
       "relVolume": null,
       "avgVolume50": null,
       "sharesOutstanding": 7881599.020208207,
-      "marketCap": 146203661.82486224,
+      "marketCap": 145257869.94243726,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": null,
       "float": {
@@ -153,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-20"
       },
-      "floatRotation": 0.000006597645968371825,
+      "floatRotation": 0.00001636723711384549,
       "daysUp": 5,
       "priorRunPct": 33.61823361823363,
       "extended": true,
@@ -171,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "13.6%"
+          "detail": "12.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "52"
+          "detail": "129"
         },
         {
           "name": "News catalyst",
@@ -186,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$18.55"
+          "detail": "$18.43"
         },
         {
           "name": "Float <10M",
@@ -198,107 +266,107 @@
       "quality": "low"
     },
     {
-      "symbol": "AIBZ",
-      "name": "Bitzero Holdings Inc. Common Shares",
-      "legalName": "Bitzero Holdings Inc.",
-      "business": "Finance Services",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.95,
-      "preMarketChangePct": 26.60944206008584,
-      "prevClose": 2.33,
+      "symbol": "ACON",
+      "name": "Aclarion Inc.",
+      "legalName": "Aclarion, Inc.",
+      "business": "Services-Medical Laboratories",
+      "sector": "Health Care",
+      "preMarketPrice": 2.0166,
+      "preMarketChangePct": 9.005405405405398,
+      "prevClose": 1.85,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 20, 2026 7:00 AM ET",
-      "preMarketVolume": 38319.337993,
-      "preMarketDollarVolume": 113042.04707935001,
-      "relVolume": 0.07822076926515707,
-      "avgVolume50": 489887,
-      "sharesOutstanding": 62209991.86440678,
-      "marketCap": 183519476,
+      "lastTradeAt": "Oct 20, 2026 7:19 AM ET",
+      "preMarketVolume": 1820,
+      "preMarketDollarVolume": 3670.212,
+      "relVolume": 0.033807002879167825,
+      "avgVolume50": 53835,
+      "sharesOutstanding": 2882371,
+      "marketCap": 5812589.3586,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 25,
+      "bestPriorSpikePct": 42,
       "float": {
-        "shares": 62209991.86440678,
+        "shares": 2882371,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-20"
+        "asOf": "2026-08-04"
       },
-      "floatRotation": 0.0006159675776283821,
+      "floatRotation": 0.0006314246153600629,
       "daysUp": 0,
-      "priorRunPct": -33.2378223495702,
+      "priorRunPct": -20.940170940170933,
       "extended": false,
       "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
+        "found": true,
+        "kind": "news",
+        "headline": "Aclarion Publishes CEO Shareholder Letter Highlighting Continued Scan Volume Growth and Advancing Clinical Program in Third Quarter 2026",
+        "subject": "FDA / clinical",
+        "date": "2026-10-20"
       },
       "leads": [
-        "prior-session gainer"
+        "GlobeNewswire"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "26.6%"
+          "ok": false,
+          "detail": "9.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "38,319"
+          "detail": "1,820"
         },
         {
           "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
+          "ok": true,
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.95"
+          "detail": "$2.02"
         },
         {
           "name": "Float <10M",
-          "ok": false,
-          "detail": "62.2M"
+          "ok": true,
+          "detail": "2.9M"
         }
       ],
-      "passed": 2,
+      "passed": 3,
       "quality": "low"
     },
     {
-      "symbol": "SVC",
-      "name": "Service Properties Trust Common Shares of Beneficial Interest",
-      "legalName": "Service Properties Trust",
-      "business": "Real Estate Investment Trusts",
-      "sector": "Real Estate",
-      "preMarketPrice": 6.3,
-      "preMarketChangePct": 6.42,
-      "prevClose": 5.919939860928396,
+      "symbol": "HTZ",
+      "name": "Hertz Global Holdings Inc",
+      "legalName": "HERTZ GLOBAL HOLDINGS, INC",
+      "business": "Services-Auto Rental & Leasing (No Drivers)",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.9793,
+      "preMarketChangePct": 7.57,
+      "prevClose": 1.8400111555266336,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 20, 2026 4:06 AM ET",
-      "preMarketVolume": 3,
-      "preMarketDollarVolume": 18.9,
-      "relVolume": 0.0000014852264524772093,
-      "avgVolume50": 2019894,
-      "sharesOutstanding": 129509488,
-      "marketCap": 815909774.4,
+      "lastTradeAt": "Oct 20, 2026 7:20 AM ET",
+      "preMarketVolume": 1445482.863714,
+      "preMarketDollarVolume": 2861044.2321491204,
+      "relVolume": 0.044161584853389745,
+      "avgVolume50": 32731680,
+      "sharesOutstanding": 315764523,
+      "marketCap": 624992720.3739,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 11,
+      "bestPriorSpikePct": 36,
       "float": {
-        "shares": 129509488,
+        "shares": 315764523,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-03"
+        "asOf": "2026-04-30"
       },
-      "floatRotation": 2.316432599903414e-8,
+      "floatRotation": 0.004577724090030215,
       "daysUp": 0,
-      "priorRunPct": -13.986013986013985,
+      "priorRunPct": -9.895833333333332,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "8-K",
-        "headline": "Completed an acquisition or disposal of assets",
-        "subject": "Completed an acquisition or disposal of assets",
-        "date": "2026-10-19"
+        "headline": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
+        "date": "2026-10-20"
       },
       "leads": [
         "8-K"
@@ -307,12 +375,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.4%"
+          "detail": "7.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "3"
+          "ok": true,
+          "detail": "1,445,483"
         },
         {
           "name": "News catalyst",
@@ -321,13 +389,13 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.30"
+          "ok": false,
+          "detail": "$1.98"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "129.5M"
+          "detail": "315.8M"
         }
       ],
       "passed": 2,
@@ -398,32 +466,32 @@
       "quality": "low"
     },
     {
-      "symbol": "PLUT",
-      "name": "Plutus Financial Group Limited Ordinary Shares",
-      "legalName": "Plutus Financial Group Ltd",
-      "business": "Security & Commodity Brokers, Dealers, Exchanges & Services",
-      "sector": "Finance",
-      "preMarketPrice": 1.99,
-      "preMarketChangePct": 17.058823529411768,
-      "prevClose": 1.7,
+      "symbol": "GMEX",
+      "name": "GMEX ROBOTICS CORPORATION Class A Ordinary Shares",
+      "legalName": "GMEX Robotics Corp",
+      "business": "Sporting & Athletic Goods, NEC",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.32,
+      "preMarketChangePct": 15.789473684210542,
+      "prevClose": 1.14,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 20, 2026 4:01 AM ET",
-      "preMarketVolume": 1,
-      "preMarketDollarVolume": 1.99,
-      "relVolume": 0.0004798464491362764,
-      "avgVolume50": 2084,
-      "sharesOutstanding": 15350000,
-      "marketCap": 30546500,
+      "lastTradeAt": "Oct 20, 2026 7:18 AM ET",
+      "preMarketVolume": 13954.269053,
+      "preMarketDollarVolume": 18419.635149960002,
+      "relVolume": 0.006448645460733756,
+      "avgVolume50": 2163907,
+      "sharesOutstanding": 21020597,
+      "marketCap": 27747188.040000003,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 25,
+      "bestPriorSpikePct": 35,
       "float": {
-        "shares": 15350000,
+        "shares": 21020597,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
+        "asOf": "2025-06-30"
       },
-      "floatRotation": 6.514657980456026e-8,
+      "floatRotation": 0.000663837903985315,
       "daysUp": 0,
-      "priorRunPct": -17.878363364088695,
+      "priorRunPct": -34.482758620689665,
       "extended": false,
       "catalyst": {
         "found": false,
@@ -439,12 +507,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "17.1%"
+          "detail": "15.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "1"
+          "detail": "13,954"
         },
         {
           "name": "News catalyst",
@@ -454,12 +522,12 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.99"
+          "detail": "$1.32"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "15.3M"
+          "detail": "21.0M"
         }
       ],
       "passed": 1,
@@ -475,10 +543,10 @@
       "preMarketChangePct": 5.3,
       "prevClose": 1.3200379867046534,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 20, 2026 4:53 AM ET",
-      "preMarketVolume": 2,
-      "preMarketDollarVolume": 2.78,
-      "relVolume": 0.000013756009656718779,
+      "lastTradeAt": "Oct 20, 2026 7:14 AM ET",
+      "preMarketVolume": 202,
+      "preMarketDollarVolume": 280.78,
+      "relVolume": 0.0013893569753285968,
       "avgVolume50": 145391,
       "sharesOutstanding": 31441436,
       "marketCap": 43703596.04,
@@ -489,7 +557,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-06"
       },
-      "floatRotation": 6.361032619502493e-8,
+      "floatRotation": 0.000006424642945697519,
       "daysUp": 2,
       "priorRunPct": 2.7272727272727093,
       "extended": true,
@@ -512,7 +580,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "2"
+          "detail": "202"
         },
         {
           "name": "News catalyst",
