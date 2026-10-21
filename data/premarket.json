@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-21T12:20:35.297Z",
+  "generatedAt": "2026-10-21T12:40:34.886Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-20",
   "universeChecked": 5982,
   "smallCapsInBand": 2918,
-  "investigated": 69,
-  "liveQuotes": 48,
+  "investigated": 74,
+  "liveQuotes": 54,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-20T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 159,
+    "edgarFilings": 168,
     "leads": {
-      "8-K": 46,
-      "PR Newswire": 0,
+      "8-K": 48,
+      "PR Newswire": 2,
       "GlobeNewswire": 9,
       "prior-session gainer": 17
     },
@@ -21,9 +21,9 @@
       {
         "name": "PR Newswire",
         "url": "https://www.prnewswire.com/rss/news-releases-list.rss",
-        "ok": true,
-        "items": 20,
-        "inWindow": 20
+        "ok": false,
+        "items": 0,
+        "inWindow": 0
       },
       {
         "name": "PR Newswire",
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 69,
-    "answered": 69,
+    "requested": 74,
+    "answered": 74,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "ASHFORD HOSPITALITY TRUST INC",
       "business": "Real Estate Investment Trusts",
       "sector": "Real Estate",
-      "preMarketPrice": 2.46,
-      "preMarketChangePct": 37.43,
-      "prevClose": 1.7900021829294912,
+      "preMarketPrice": 2.4702,
+      "preMarketChangePct": 38,
+      "prevClose": 1.7900000000000003,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 21, 2026 8:20 AM ET",
-      "preMarketVolume": 10858691.736389,
-      "preMarketDollarVolume": 26712381.67151694,
-      "relVolume": 398.7767806239074,
+      "lastTradeAt": "Oct 21, 2026 8:40 AM ET",
+      "preMarketVolume": 11228962.736389,
+      "preMarketDollarVolume": 27737783.75142811,
+      "relVolume": 412.37468734443627,
       "avgVolume50": 27230,
       "sharesOutstanding": 6469814,
-      "marketCap": 15915742.44,
+      "marketCap": 15981734.542800002,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 44,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 1.678362273844194,
+      "floatRotation": 1.7355928217393886,
       "daysUp": 1,
       "priorRunPct": -0.540540540540541,
       "extended": false,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "37.4%"
+          "detail": "38.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "10,858,692"
+          "detail": "11,228,963"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.46"
+          "detail": "$2.47"
         },
         {
           "name": "Float <10M",
@@ -134,17 +134,17 @@
       "legalName": "INVE Technologies, Inc.",
       "business": "Computer Peripheral Equipment, NEC",
       "sector": "Technology",
-      "preMarketPrice": 2.65,
-      "preMarketChangePct": 19.37,
-      "prevClose": 2.219988271760074,
+      "preMarketPrice": 2.68,
+      "preMarketChangePct": 20.72,
+      "prevClose": 2.2200132538104707,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 21, 2026 8:20 AM ET",
-      "preMarketVolume": 5815283.113099,
-      "preMarketDollarVolume": 15410500.24971235,
-      "relVolume": 26.39890647615135,
+      "lastTradeAt": "Oct 21, 2026 8:40 AM ET",
+      "preMarketVolume": 6386346.177498,
+      "preMarketDollarVolume": 17115407.75569464,
+      "relVolume": 28.99128936376966,
       "avgVolume50": 220285,
       "sharesOutstanding": 24235753,
-      "marketCap": 64224745.449999996,
+      "marketCap": 64951818.04000001,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 13,
       "float": {
@@ -152,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-04"
       },
-      "floatRotation": 0.23994645898144779,
+      "floatRotation": 0.263509294615191,
       "daysUp": 1,
       "priorRunPct": -5.042016806722694,
       "extended": false,
@@ -170,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "19.4%"
+          "detail": "20.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "5,815,283"
+          "detail": "6,386,346"
         },
         {
           "name": "News catalyst",
@@ -185,7 +185,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.65"
+          "detail": "$2.68"
         },
         {
           "name": "Float <10M",
@@ -206,10 +206,10 @@
       "preMarketChangePct": 7.92,
       "prevClose": 2.020014825796887,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 21, 2026 8:19 AM ET",
-      "preMarketVolume": 247365.503681,
-      "preMarketDollarVolume": 539256.79802458,
-      "relVolume": 0.014202973387472161,
+      "lastTradeAt": "Oct 21, 2026 8:40 AM ET",
+      "preMarketVolume": 259469.503681,
+      "preMarketDollarVolume": 565643.5180245801,
+      "relVolume": 0.014897948181142906,
       "avgVolume50": 17416459,
       "sharesOutstanding": 7847899,
       "marketCap": 17108419.82,
@@ -220,7 +220,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-19"
       },
-      "floatRotation": 0.03151996523923155,
+      "floatRotation": 0.03306228885985918,
       "daysUp": 0,
       "priorRunPct": 5.844155844155835,
       "extended": false,
@@ -244,7 +244,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "247,366"
+          "detail": "259,470"
         },
         {
           "name": "News catalyst",
@@ -268,105 +268,37 @@
   ],
   "alsoRan": [
     {
-      "symbol": "LNZA",
-      "name": "LanzaTech Global Inc.",
-      "legalName": "LanzaTech Global, Inc.",
-      "business": "Industrial Organic Chemicals",
-      "sector": "Industrials",
-      "preMarketPrice": 5.4,
-      "preMarketChangePct": 6.93,
-      "prevClose": 5.050032731693632,
+      "symbol": "AMPG",
+      "name": "Amplitech Group Inc.",
+      "legalName": "AmpliTech Group, Inc.",
+      "business": "Communications Equipment, NEC",
+      "sector": "Telecommunications",
+      "preMarketPrice": 2.79,
+      "preMarketChangePct": 5.28,
+      "prevClose": 2.6500759878419453,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 21, 2026 7:42 AM ET",
-      "preMarketVolume": 6,
-      "preMarketDollarVolume": 32.400000000000006,
-      "relVolume": 0.00008466444657673421,
-      "avgVolume50": 70868,
-      "sharesOutstanding": 13089163,
-      "marketCap": 70681480.2,
+      "lastTradeAt": "Oct 21, 2026 8:38 AM ET",
+      "preMarketVolume": 62303.502771,
+      "preMarketDollarVolume": 173826.77273109,
+      "relVolume": 0.026411215517815122,
+      "avgVolume50": 2358979,
+      "sharesOutstanding": 30043887,
+      "marketCap": 83822444.73,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 53,
+      "bestPriorSpikePct": 27,
       "float": {
-        "shares": 13089163,
+        "shares": 30043887,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-10"
+        "asOf": "2026-08-11"
       },
-      "floatRotation": 4.583944748797154e-7,
-      "daysUp": 3,
-      "priorRunPct": -19.672131147540973,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt) · Sold unregistered shares (dilution) · Other material event (often FDA, clinical or contract news)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt) · Sold unregistered shares (dilution) · Other material event (often FDA, clinical or contract news)",
-        "date": "2026-10-20"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "6"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$5.40"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "13.1M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "VIVO",
-      "name": "VivoPower PLC Class A Ordinary Shares",
-      "legalName": "VivoPower PLC",
-      "business": "Electric & Other Services Combined",
-      "sector": "Utilities",
-      "preMarketPrice": 2.34,
-      "preMarketChangePct": 6.36,
-      "prevClose": 2.200075216246709,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 21, 2026 8:20 AM ET",
-      "preMarketVolume": 21544,
-      "preMarketDollarVolume": 50412.96,
-      "relVolume": 0.03388289766087849,
-      "avgVolume50": 635837,
-      "sharesOutstanding": 12527212,
-      "marketCap": 29313676.08,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 35,
-      "float": {
-        "shares": 12527212,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-06-30"
-      },
-      "floatRotation": 0.0017197761161861075,
-      "daysUp": 1,
-      "priorRunPct": -28.54729729729729,
+      "floatRotation": 0.0020737497372094365,
+      "daysUp": 0,
+      "priorRunPct": -13.553113553113558,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "VivoPower Signs Definitive Heads of Agreement with Open Innovation AI to Develop Secure Sovereign AI Data Centers Across the Nordics, Mainland Europe, the GCC and selective countries in Asia",
+        "headline": "AmpliTech Group Receives $1.03 Million Follow-On Order for Low-Noise Amplifiers from Fortune 1000 Satellite Communications Customer",
         "subject": "Contract or partnership",
         "date": "2026-10-21"
       },
@@ -377,12 +309,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.4%"
+          "detail": "5.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "21,544"
+          "ok": true,
+          "detail": "62,304"
         },
         {
           "name": "News catalyst",
@@ -392,83 +324,15 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.34"
+          "detail": "$2.79"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "12.5M"
+          "detail": "30.0M"
         }
       ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "CNXU",
-      "name": "Conexeu Sciences Inc.",
-      "legalName": "Conexeu Sciences Inc.",
-      "business": "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
-      "sector": "Health Care",
-      "preMarketPrice": 3.1656,
-      "preMarketChangePct": 5.87,
-      "prevClose": 2.9900821762538965,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 21, 2026 8:06 AM ET",
-      "preMarketVolume": 715,
-      "preMarketDollarVolume": 2263.404,
-      "relVolume": 0.0035737491877842753,
-      "avgVolume50": 200070,
-      "sharesOutstanding": 28206698,
-      "marketCap": 89291123.18879999,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 27,
-      "float": {
-        "shares": 28206698,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-10"
-      },
-      "floatRotation": 0.00002534858918970239,
-      "daysUp": 1,
-      "priorRunPct": -12.73209549071618,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Sold unregistered shares (dilution)",
-        "subject": "Sold unregistered shares (dilution)",
-        "date": "2026-10-20"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "715"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.17"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "28.2M"
-        }
-      ],
-      "passed": 2,
+      "passed": 3,
       "quality": "low"
     },
     {
@@ -477,17 +341,17 @@
       "legalName": "DUOS TECHNOLOGIES GROUP, INC.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 6.1328,
-      "preMarketChangePct": 5.74,
-      "prevClose": 5.799886514091167,
+      "preMarketPrice": 6.17,
+      "preMarketChangePct": 6.38,
+      "prevClose": 5.79996239894717,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 21, 2026 8:03 AM ET",
-      "preMarketVolume": 26290.547476,
-      "preMarketDollarVolume": 161234.6695608128,
-      "relVolume": 0.025906407269015046,
+      "lastTradeAt": "Oct 21, 2026 8:35 AM ET",
+      "preMarketVolume": 27404.845734,
+      "preMarketDollarVolume": 169087.89817878,
+      "relVolume": 0.02700442413295652,
       "avgVolume50": 1014828,
       "sharesOutstanding": 31472499,
-      "marketCap": 193014541.8672,
+      "marketCap": 194185318.82999998,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 20,
       "float": {
@@ -495,7 +359,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-18"
       },
-      "floatRotation": 0.0008353498549956265,
+      "floatRotation": 0.0008707553135199082,
       "daysUp": 1,
       "priorRunPct": -18.69436201780415,
       "extended": false,
@@ -513,12 +377,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.7%"
+          "detail": "6.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "26,291"
+          "detail": "27,405"
         },
         {
           "name": "News catalyst",
@@ -528,12 +392,80 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.13"
+          "detail": "$6.17"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "31.5M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "CNXU",
+      "name": "Conexeu Sciences Inc.",
+      "legalName": "Conexeu Sciences Inc.",
+      "business": "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
+      "sector": "Health Care",
+      "preMarketPrice": 3.169,
+      "preMarketChangePct": 5.99,
+      "prevClose": 2.98990470799132,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 21, 2026 8:39 AM ET",
+      "preMarketVolume": 1917,
+      "preMarketDollarVolume": 6074.973,
+      "relVolume": 0.009581646423751687,
+      "avgVolume50": 200070,
+      "sharesOutstanding": 28206698,
+      "marketCap": 89387025.962,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 27,
+      "float": {
+        "shares": 28206698,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-10"
+      },
+      "floatRotation": 0.00006796258108623704,
+      "daysUp": 1,
+      "priorRunPct": -12.73209549071618,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Sold unregistered shares (dilution)",
+        "subject": "Sold unregistered shares (dilution)",
+        "date": "2026-10-20"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "1,917"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.17"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "28.2M"
         }
       ],
       "passed": 2,
@@ -602,6 +534,74 @@
           "name": "Float <10M",
           "ok": false,
           "detail": "27.9M"
+        }
+      ],
+      "passed": 1,
+      "quality": "low"
+    },
+    {
+      "symbol": "WGO",
+      "name": "Winnebago Industries Inc.",
+      "legalName": "WINNEBAGO INDUSTRIES INC",
+      "business": "Motor Homes",
+      "sector": "Industrials",
+      "preMarketPrice": 24.7872,
+      "preMarketChangePct": 6.98,
+      "prevClose": 23.16993830622546,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 21, 2026 8:39 AM ET",
+      "preMarketVolume": 6660,
+      "preMarketDollarVolume": 165082.75199999998,
+      "relVolume": 0.01244069189673852,
+      "avgVolume50": 535340,
+      "sharesOutstanding": 28268893,
+      "marketCap": 700706704.5696,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 29,
+      "float": {
+        "shares": 28268893,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-06-17"
+      },
+      "floatRotation": 0.0002355946516901104,
+      "daysUp": 0,
+      "priorRunPct": -2.326583369237394,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Winnebago Industries Inc. Profit Declines In Q4 ",
+        "subject": null,
+        "date": "2026-10-21"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "6,660"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$24.79"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "28.3M"
         }
       ],
       "passed": 1,
