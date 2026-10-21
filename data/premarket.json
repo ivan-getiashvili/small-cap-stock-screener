@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-21T11:00:35.109Z",
+  "generatedAt": "2026-10-21T11:20:35.713Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-20",
-  "universeChecked": 5981,
+  "universeChecked": 5982,
   "smallCapsInBand": 2918,
-  "investigated": 53,
-  "liveQuotes": 34,
+  "investigated": 65,
+  "liveQuotes": 45,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-20T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 129,
+    "edgarFilings": 139,
     "leads": {
-      "8-K": 36,
-      "PR Newswire": 2,
-      "GlobeNewswire": 2,
+      "8-K": 39,
+      "PR Newswire": 3,
+      "GlobeNewswire": 8,
       "prior-session gainer": 17
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 53,
-    "answered": 53,
+    "requested": 65,
+    "answered": 65,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "ASHFORD HOSPITALITY TRUST INC",
       "business": "Real Estate Investment Trusts",
       "sector": "Real Estate",
-      "preMarketPrice": 2.6085,
-      "preMarketChangePct": 45.73,
-      "prevClose": 1.789954024565978,
+      "preMarketPrice": 2.5315,
+      "preMarketChangePct": 41.42,
+      "prevClose": 1.7900579833121197,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 21, 2026 7:00 AM ET",
-      "preMarketVolume": 6307137.976462,
-      "preMarketDollarVolume": 16452169.411601126,
-      "relVolume": 231.62460435042232,
+      "lastTradeAt": "Oct 21, 2026 7:20 AM ET",
+      "preMarketVolume": 8649728.976462,
+      "preMarketDollarVolume": 21896788.90391355,
+      "relVolume": 317.65438767763493,
       "avgVolume50": 27230,
       "sharesOutstanding": 6469814,
-      "marketCap": 16876509.819,
+      "marketCap": 16378334.140999999,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 44,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.9748561514229003,
+      "floatRotation": 1.3369362668636222,
       "daysUp": 1,
       "priorRunPct": -0.540540540540541,
       "extended": false,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "45.7%"
+          "detail": "41.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "6,307,138"
+          "detail": "8,649,729"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.61"
+          "detail": "$2.53"
         },
         {
           "name": "Float <10M",
@@ -132,17 +132,17 @@
       "legalName": "Netcapital Inc.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 2.23,
-      "preMarketChangePct": 10.4,
-      "prevClose": 2.019927536231884,
+      "preMarketPrice": 2.25,
+      "preMarketChangePct": 11.39,
+      "prevClose": 2.01992997576084,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 21, 2026 7:00 AM ET",
-      "preMarketVolume": 113653.503681,
-      "preMarketDollarVolume": 253447.31320863,
-      "relVolume": 0.006525637828045299,
+      "lastTradeAt": "Oct 21, 2026 7:20 AM ET",
+      "preMarketVolume": 147025.503681,
+      "preMarketDollarVolume": 330807.38328225,
+      "relVolume": 0.008441756368559188,
       "avgVolume50": 17416459,
       "sharesOutstanding": 7847899,
-      "marketCap": 17500814.77,
+      "marketCap": 17657772.75,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 127,
       "float": {
@@ -150,7 +150,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-19"
       },
-      "floatRotation": 0.014482029353461353,
+      "floatRotation": 0.01873437765712836,
       "daysUp": 0,
       "priorRunPct": 5.844155844155835,
       "extended": false,
@@ -169,12 +169,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "10.4%"
+          "detail": "11.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "113,654"
+          "detail": "147,026"
         },
         {
           "name": "News catalyst",
@@ -184,7 +184,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.23"
+          "detail": "$2.25"
         },
         {
           "name": "Float <10M",
@@ -196,25 +196,163 @@
       "quality": "medium"
     }
   ],
-  "watchlist": [],
+  "watchlist": [
+    {
+      "symbol": "INVE",
+      "name": "INVE Technologies Inc.",
+      "legalName": "INVE Technologies, Inc.",
+      "business": "Computer Peripheral Equipment, NEC",
+      "sector": "Technology",
+      "preMarketPrice": 2.6397,
+      "preMarketChangePct": 18.91,
+      "prevClose": 2.21991422083929,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 21, 2026 7:20 AM ET",
+      "preMarketVolume": 1603228.422428,
+      "preMarketDollarVolume": 4232042.066683192,
+      "relVolume": 7.27797363609869,
+      "avgVolume50": 220285,
+      "sharesOutstanding": 24235753,
+      "marketCap": 63975117.1941,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 13,
+      "float": {
+        "shares": 24235753,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-04"
+      },
+      "floatRotation": 0.06615137653977576,
+      "daysUp": 1,
+      "priorRunPct": -5.042016806722694,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "INVE Technologies Announces the Commencement of a $20 Million Modified Dutch Auction Tender Offer for its Common Stock",
+        "subject": null,
+        "date": "2026-10-21"
+      },
+      "leads": [
+        "PR Newswire",
+        "PR Newswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "18.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "1,603,228"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.64"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "24.2M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
   "alsoRan": [
+    {
+      "symbol": "PBM",
+      "name": "Psyence Biomedical Ltd. Common Shares",
+      "legalName": "PSYENCE BIOMEDICAL LTD.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 4.46,
+      "preMarketChangePct": 5.19,
+      "prevClose": 4.239946763000285,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 21, 2026 7:05 AM ET",
+      "preMarketVolume": 100,
+      "preMarketDollarVolume": 446,
+      "relVolume": 0.0011398479442842324,
+      "avgVolume50": 87731,
+      "sharesOutstanding": 2293277,
+      "marketCap": 10228015.42,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 104,
+      "float": {
+        "shares": 2293277,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-03-31"
+      },
+      "floatRotation": 0.0000436057222917249,
+      "daysUp": 0,
+      "priorRunPct": -13.080168776371309,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Psyence BioMed Completes PsyLabs Investment as Ibogaine Milestones Are Met",
+        "subject": null,
+        "date": "2026-10-21"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "100"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.46"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "2.3M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
     {
       "symbol": "ATGL",
       "name": "Alpha Technology Group Limited Class A Ordinary Shares",
       "legalName": "Alpha Technology Group Ltd",
       "business": "Services-Computer Programming Services",
       "sector": "Technology",
-      "preMarketPrice": 7.7,
-      "preMarketChangePct": 11.11,
-      "prevClose": 6.930069300693007,
+      "preMarketPrice": 7.54,
+      "preMarketChangePct": 8.8,
+      "prevClose": 6.930147058823529,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 21, 2026 7:00 AM ET",
-      "preMarketVolume": 412525.249766,
-      "preMarketDollarVolume": 3176444.4231982003,
-      "relVolume": 18.63257677353207,
+      "lastTradeAt": "Oct 21, 2026 7:20 AM ET",
+      "preMarketVolume": 430682.249766,
+      "preMarketDollarVolume": 3247344.16323564,
+      "relVolume": 19.452676141192413,
       "avgVolume50": 22140,
       "sharesOutstanding": 15262500,
-      "marketCap": 117521250,
+      "marketCap": 115079250,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 140,
       "float": {
@@ -222,7 +360,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-09-30"
       },
-      "floatRotation": 0.027028681393349716,
+      "floatRotation": 0.028218329222997544,
       "daysUp": 0,
       "priorRunPct": 1.1135857461024459,
       "extended": false,
@@ -239,13 +377,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "11.1%"
+          "ok": false,
+          "detail": "8.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "412,525"
+          "detail": "430,682"
         },
         {
           "name": "News catalyst",
@@ -255,7 +393,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$7.70"
+          "detail": "$7.54"
         },
         {
           "name": "Float <10M",
@@ -263,7 +401,143 @@
           "detail": "15.3M"
         }
       ],
-      "passed": 3,
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "CNXU",
+      "name": "Conexeu Sciences Inc.",
+      "legalName": "Conexeu Sciences Inc.",
+      "business": "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
+      "sector": "Health Care",
+      "preMarketPrice": 3.2,
+      "preMarketChangePct": 7.02,
+      "prevClose": 2.9900953092879834,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 21, 2026 7:11 AM ET",
+      "preMarketVolume": 404,
+      "preMarketDollarVolume": 1292.8000000000002,
+      "relVolume": 0.002019293247363423,
+      "avgVolume50": 200070,
+      "sharesOutstanding": 28206698,
+      "marketCap": 90261433.60000001,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 27,
+      "float": {
+        "shares": 28206698,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-10"
+      },
+      "floatRotation": 0.000014322839206489181,
+      "daysUp": 1,
+      "priorRunPct": -12.73209549071618,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Sold unregistered shares (dilution)",
+        "subject": "Sold unregistered shares (dilution)",
+        "date": "2026-10-20"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "404"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.20"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "28.2M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "FISN",
+      "name": "Deep Fission Inc.",
+      "legalName": "DEEP FISSION, INC.",
+      "business": "Electric Services",
+      "sector": "Utilities",
+      "preMarketPrice": 2.973,
+      "preMarketChangePct": 5.8,
+      "prevClose": 2.8100189035916823,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 21, 2026 7:19 AM ET",
+      "preMarketVolume": 6208,
+      "preMarketDollarVolume": 18456.384,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 58905938,
+      "marketCap": 175127353.674,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 58905938,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-27"
+      },
+      "floatRotation": 0.00010538835660336994,
+      "daysUp": 1,
+      "priorRunPct": -12.440191387559798,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-10-20"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "6,208"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.97"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "58.9M"
+        }
+      ],
+      "passed": 2,
       "quality": "low"
     },
     {
@@ -272,17 +546,17 @@
       "legalName": "DUOS TECHNOLOGIES GROUP, INC.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 6.1136,
-      "preMarketChangePct": 5.41,
-      "prevClose": 5.799829238212693,
+      "preMarketPrice": 6.1,
+      "preMarketChangePct": 5.17,
+      "prevClose": 5.800133117809261,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 21, 2026 7:00 AM ET",
-      "preMarketVolume": 7270.547476,
-      "preMarketDollarVolume": 44449.2190492736,
-      "relVolume": 0.007164315012987422,
+      "lastTradeAt": "Oct 21, 2026 7:05 AM ET",
+      "preMarketVolume": 10873.547476,
+      "preMarketDollarVolume": 66328.6396036,
+      "relVolume": 0.010714670344137135,
       "avgVolume50": 1014828,
       "sharesOutstanding": 31472499,
-      "marketCap": 192410269.88639998,
+      "marketCap": 191982243.89999998,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 20,
       "float": {
@@ -290,7 +564,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-18"
       },
-      "floatRotation": 0.00023101271608587547,
+      "floatRotation": 0.00034549361574370054,
       "daysUp": 1,
       "priorRunPct": -18.69436201780415,
       "extended": false,
@@ -308,12 +582,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.4%"
+          "detail": "5.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "7,271"
+          "detail": "10,874"
         },
         {
           "name": "News catalyst",
@@ -323,7 +597,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.11"
+          "detail": "$6.10"
         },
         {
           "name": "Float <10M",
@@ -332,6 +606,74 @@
         }
       ],
       "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "INMB",
+      "name": "INmune Bio Inc.",
+      "legalName": "Inmune Bio, Inc.",
+      "business": "Biological Products, (No Diagnostic Substances)",
+      "sector": "Health Care",
+      "preMarketPrice": 1.75,
+      "preMarketChangePct": 9.38,
+      "prevClose": 1.5999268604863777,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 21, 2026 7:19 AM ET",
+      "preMarketVolume": 5113,
+      "preMarketDollarVolume": 8947.75,
+      "relVolume": 0.010427543561965673,
+      "avgVolume50": 490336,
+      "sharesOutstanding": 27753789,
+      "marketCap": 48569130.75,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 15,
+      "float": {
+        "shares": 27753789,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-06"
+      },
+      "floatRotation": 0.0001842270977847385,
+      "daysUp": 0,
+      "priorRunPct": -13.48314606741573,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "INmune Bio Advances Ebstrocel™ Toward Potential UK Approval in Mid-2027",
+        "subject": "FDA / clinical",
+        "date": "2026-10-21"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "9.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "5,113"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.75"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "27.8M"
+        }
+      ],
+      "passed": 1,
       "quality": "low"
     },
     {
