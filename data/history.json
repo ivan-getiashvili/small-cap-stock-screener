@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-10-20T23:49:15.764Z",
+ "updatedAt": "2026-10-21T11:00:45.618Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -6833,7 +6833,22 @@
      "catalyst": "Biotech Stocks Rally: SLN Soars 125%, WORX Jumps 105%, IRON Gains 41% ",
      "extended": false,
      "missing": [],
-     "performance": null,
+     "performance": {
+      "open": 3.98,
+      "high": 4.58,
+      "low": 3.1701,
+      "close": 3.66,
+      "volume": 79130690,
+      "prevClose": 2.68,
+      "gapPct": 48.50746268656715,
+      "openToHighPct": 15.075376884422113,
+      "openToClosePct": -8.040201005025121,
+      "openToLowPct": -20.349246231155774,
+      "alertToHighPct": 19.89528795811519,
+      "alertToClosePct": -4.188481675392662,
+      "filledAt": "2026-10-21T11:00:45.111Z",
+      "noon": 3.482
+     },
      "intraday": {
       "noon": 3.482
      }
@@ -6857,7 +6872,22 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 5.34,
+      "high": 5.95,
+      "low": 5.25,
+      "close": 5.54,
+      "volume": 24004020,
+      "prevClose": 4.21,
+      "gapPct": 26.840855106888355,
+      "openToHighPct": 11.423220973782778,
+      "openToClosePct": 3.745318352059929,
+      "openToLowPct": -1.6853932584269637,
+      "alertToHighPct": 24.497823903582184,
+      "alertToClosePct": 15.918982256444586,
+      "filledAt": "2026-10-21T11:00:45.291Z",
+      "noon": 5.822
+     },
      "intraday": {
       "noon": 5.822
      }
@@ -6881,7 +6911,22 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 2.1,
+      "high": 2.18,
+      "low": 1.88,
+      "close": 1.92,
+      "volume": 48559810,
+      "prevClose": 1.84,
+      "gapPct": 14.130434782608695,
+      "openToHighPct": 3.809523809523813,
+      "openToClosePct": -8.571428571428578,
+      "openToLowPct": -10.476190476190485,
+      "alertToHighPct": 6.170554716797351,
+      "alertToClosePct": -6.49198850630693,
+      "filledAt": "2026-10-21T11:00:45.445Z",
+      "noon": 1.96
+     },
      "intraday": {
       "noon": 1.96
      }
@@ -6905,10 +6950,69 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 19.58,
+      "high": 19.65,
+      "low": 19.57,
+      "close": 19.61,
+      "volume": 13962890,
+      "prevClose": 19.58,
+      "gapPct": 0,
+      "openToHighPct": 0.3575076608784489,
+      "openToClosePct": 0.15321756894791186,
+      "openToLowPct": -0.051072522982625185,
+      "alertToHighPct": 0.3575076608784489,
+      "alertToClosePct": 0.15321756894791186,
+      "filledAt": "2026-10-21T11:00:45.617Z",
+      "noon": 19.585
+     },
      "intraday": {
       "noon": 19.585
      }
+    }
+   ]
+  },
+  "2026-10-21": {
+   "date": "2026-10-21",
+   "source": "live",
+   "names": [
+    {
+     "symbol": "AHT",
+     "legalName": "ASHFORD HOSPITALITY TRUST INC",
+     "business": "Real Estate Investment Trusts",
+     "list": "shortlist",
+     "firstSeenAt": "2026-10-21T11:00:35.109Z",
+     "lastSeenAt": "2026-10-21T11:00:35.109Z",
+     "shortlistedAt": "2026-10-21T11:00:35.109Z",
+     "preMarketPrice": 2.6085,
+     "preMarketChangePct": 45.73,
+     "prevClose": 1.789954024565978,
+     "preMarketVolume": 6307137.976462,
+     "relVolume": 231.62460435042232,
+     "floatShares": 6469814,
+     "catalyst": "Entered a material agreement (deal, partnership or contract) · Terminated a material agreement · Regulation FD disclosure (company announcement)",
+     "extended": false,
+     "missing": [],
+     "performance": null
+    },
+    {
+     "symbol": "NCPL",
+     "legalName": "Netcapital Inc.",
+     "business": "Finance Services",
+     "list": "shortlist",
+     "firstSeenAt": "2026-10-21T11:00:35.109Z",
+     "lastSeenAt": "2026-10-21T11:00:35.109Z",
+     "shortlistedAt": "2026-10-21T11:00:35.109Z",
+     "preMarketPrice": 2.23,
+     "preMarketChangePct": 10.4,
+     "prevClose": 2.019927536231884,
+     "preMarketVolume": 113653.503681,
+     "relVolume": 0.006525637828045299,
+     "floatShares": 7847899,
+     "catalyst": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt) · Sold unregistered shares (dilution)",
+     "extended": false,
+     "missing": [],
+     "performance": null
     }
    ]
   }
