@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-22T11:40:36.326Z",
+  "generatedAt": "2026-10-22T12:00:36.089Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-21",
   "universeChecked": 6012,
   "smallCapsInBand": 2924,
-  "investigated": 88,
-  "liveQuotes": 54,
+  "investigated": 86,
+  "liveQuotes": 56,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-21T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 250,
+    "edgarFilings": 251,
     "leads": {
       "8-K": 56,
       "PR Newswire": 4,
-      "GlobeNewswire": 9,
+      "GlobeNewswire": 7,
       "prior-session gainer": 23
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 88,
-    "answered": 88,
+    "requested": 86,
+    "answered": 86,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "Biohaven Ltd.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 16.57,
-      "preMarketChangePct": 40.30482641828958,
+      "preMarketPrice": 16.6621,
+      "preMarketChangePct": 41.08467400508042,
       "prevClose": 11.81,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 22, 2026 7:40 AM ET",
-      "preMarketVolume": 4126667.001524,
-      "preMarketDollarVolume": 68378872.21525268,
-      "relVolume": 1.5633535072307618,
+      "lastTradeAt": "Oct 22, 2026 8:00 AM ET",
+      "preMarketVolume": 7295666.610925,
+      "preMarketDollarVolume": 121561126.63789344,
+      "relVolume": 2.763902679708292,
       "avgVolume50": 2639625,
       "sharesOutstanding": 151043781,
-      "marketCap": 2502795451.17,
+      "marketCap": 2516706583.4000998,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 22,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-06"
       },
-      "floatRotation": 0.027320999078565174,
+      "floatRotation": 0.04830166831512911,
       "daysUp": 2,
       "priorRunPct": 3.4150612959719844,
       "extended": true,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "40.3%"
+          "detail": "41.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "4,126,667"
+          "detail": "7,295,667"
         },
         {
           "name": "News catalyst",
@@ -116,7 +116,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$16.57"
+          "detail": "$16.66"
         },
         {
           "name": "Float <10M",
@@ -198,74 +198,6 @@
   ],
   "alsoRan": [
     {
-      "symbol": "BXBL",
-      "name": "BOXABL Inc.",
-      "legalName": "BOXABL Inc.",
-      "business": "General Bldg Contractors - Residential Bldgs",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.12,
-      "preMarketChangePct": 11.032028469750891,
-      "prevClose": 2.81,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 22, 2026 6:08 AM ET",
-      "preMarketVolume": 11,
-      "preMarketDollarVolume": 34.32,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 10295800,
-      "marketCap": 32122896,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 10295800,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-05-14"
-      },
-      "floatRotation": 0.0000010683968220050895,
-      "daysUp": 0,
-      "priorRunPct": -13.271604938271608,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Sage Memorial Hospital breaks ground on workforce housing featuring BOXABL Studio Casitas",
-        "subject": null,
-        "date": "2026-10-22"
-      },
-      "leads": [
-        "PR Newswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "11.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "11"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.12"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "10.3M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "CHGA",
       "name": "Change Agents Corporation",
       "legalName": "Change Agents Corporation.",
@@ -339,17 +271,17 @@
       "legalName": "TuHURA Biosciences, Inc./NV",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 2.23,
-      "preMarketChangePct": 6.95,
-      "prevClose": 2.0850864890135576,
+      "preMarketPrice": 2.2046,
+      "preMarketChangePct": 5.74,
+      "prevClose": 2.084925288443352,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 22, 2026 7:40 AM ET",
-      "preMarketVolume": 25268.437201,
-      "preMarketDollarVolume": 56348.61495823,
-      "relVolume": 0.09419207574972509,
+      "lastTradeAt": "Oct 22, 2026 8:00 AM ET",
+      "preMarketVolume": 25661.437201,
+      "preMarketDollarVolume": 56573.2044533246,
+      "relVolume": 0.09565704508974335,
       "avgVolume50": 268265,
       "sharesOutstanding": 63726617,
-      "marketCap": 142110355.91,
+      "marketCap": 140491699.8382,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 60,
       "float": {
@@ -357,7 +289,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-11"
       },
-      "floatRotation": 0.0003965130802565591,
+      "floatRotation": 0.0004026800481343612,
       "daysUp": 0,
       "priorRunPct": -2.7624309392265216,
       "extended": false,
@@ -375,12 +307,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.0%"
+          "detail": "5.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "25,268"
+          "detail": "25,661"
         },
         {
           "name": "News catalyst",
@@ -390,7 +322,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.23"
+          "detail": "$2.20"
         },
         {
           "name": "Float <10M",
