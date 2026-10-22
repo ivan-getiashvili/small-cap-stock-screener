@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-22T11:20:39.517Z",
+  "generatedAt": "2026-10-22T11:40:36.326Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-21",
   "universeChecked": 6012,
   "smallCapsInBand": 2924,
-  "investigated": 86,
-  "liveQuotes": 53,
+  "investigated": 88,
+  "liveQuotes": 54,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-21T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 240,
+    "edgarFilings": 250,
     "leads": {
-      "8-K": 54,
-      "PR Newswire": 1,
-      "GlobeNewswire": 8,
+      "8-K": 56,
+      "PR Newswire": 4,
+      "GlobeNewswire": 9,
       "prior-session gainer": 23
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 86,
-    "answered": 86,
+    "requested": 88,
+    "answered": 88,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "Biohaven Ltd.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 15.501,
-      "preMarketChangePct": 31.253175275190507,
+      "preMarketPrice": 16.57,
+      "preMarketChangePct": 40.30482641828958,
       "prevClose": 11.81,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 22, 2026 7:20 AM ET",
-      "preMarketVolume": 1925229.878132,
-      "preMarketDollarVolume": 29842988.340924133,
-      "relVolume": 0.7293573436120662,
+      "lastTradeAt": "Oct 22, 2026 7:40 AM ET",
+      "preMarketVolume": 4126667.001524,
+      "preMarketDollarVolume": 68378872.21525268,
+      "relVolume": 1.5633535072307618,
       "avgVolume50": 2639625,
       "sharesOutstanding": 151043781,
-      "marketCap": 2341329649.281,
+      "marketCap": 2502795451.17,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 22,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-06"
       },
-      "floatRotation": 0.012746171112678914,
+      "floatRotation": 0.027320999078565174,
       "daysUp": 2,
       "priorRunPct": 3.4150612959719844,
       "extended": true,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "31.3%"
+          "detail": "40.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,925,230"
+          "detail": "4,126,667"
         },
         {
           "name": "News catalyst",
@@ -116,7 +116,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$15.50"
+          "detail": "$16.57"
         },
         {
           "name": "Float <10M",
@@ -334,90 +334,22 @@
       "quality": "low"
     },
     {
-      "symbol": "SGMT",
-      "name": "Sagimet Biosciences Inc. Series A",
-      "legalName": "Sagimet Biosciences Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 10.5,
-      "preMarketChangePct": 5.11,
-      "prevClose": 9.989534773094853,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 22, 2026 7:20 AM ET",
-      "preMarketVolume": 3508,
-      "preMarketDollarVolume": 36834,
-      "relVolume": 0.0031267854452950703,
-      "avgVolume50": 1121919,
-      "sharesOutstanding": 30674855,
-      "marketCap": 322085977.5,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 39,
-      "float": {
-        "shares": 30674855,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2024-11-08"
-      },
-      "floatRotation": 0.00011436076877951013,
-      "daysUp": 2,
-      "priorRunPct": 22.055137844611526,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Tuesday's ETF Movers: XBI, CRAK  ",
-        "subject": null,
-        "date": "2026-10-20"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "3,508"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$10.50"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "30.7M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
       "symbol": "HURA",
       "name": "TuHURA Biosciences Inc.",
       "legalName": "TuHURA Biosciences, Inc./NV",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 2.2338,
-      "preMarketChangePct": 7.14,
-      "prevClose": 2.084935598282621,
+      "preMarketPrice": 2.23,
+      "preMarketChangePct": 6.95,
+      "prevClose": 2.0850864890135576,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 22, 2026 7:17 AM ET",
-      "preMarketVolume": 14568.437201,
-      "preMarketDollarVolume": 32542.975019593803,
-      "relVolume": 0.05430614206474941,
+      "lastTradeAt": "Oct 22, 2026 7:40 AM ET",
+      "preMarketVolume": 25268.437201,
+      "preMarketDollarVolume": 56348.61495823,
+      "relVolume": 0.09419207574972509,
       "avgVolume50": 268265,
       "sharesOutstanding": 63726617,
-      "marketCap": 142352517.0546,
+      "marketCap": 142110355.91,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 60,
       "float": {
@@ -425,7 +357,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-11"
       },
-      "floatRotation": 0.00022860835686601722,
+      "floatRotation": 0.0003965130802565591,
       "daysUp": 0,
       "priorRunPct": -2.7624309392265216,
       "extended": false,
@@ -443,12 +375,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.1%"
+          "detail": "7.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "14,568"
+          "detail": "25,268"
         },
         {
           "name": "News catalyst",
