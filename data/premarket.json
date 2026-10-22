@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-22T12:40:36.535Z",
+  "generatedAt": "2026-10-22T13:00:35.398Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-21",
   "universeChecked": 6012,
   "smallCapsInBand": 2924,
-  "investigated": 93,
-  "liveQuotes": 66,
+  "investigated": 98,
+  "liveQuotes": 70,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-21T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 270,
+    "edgarFilings": 277,
     "leads": {
-      "8-K": 64,
+      "8-K": 65,
       "PR Newswire": 0,
-      "GlobeNewswire": 8,
+      "GlobeNewswire": 11,
       "prior-session gainer": 23
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 93,
-    "answered": 93,
+    "requested": 98,
+    "answered": 98,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "Biohaven Ltd.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 15.68,
-      "preMarketChangePct": 32.76883996613039,
+      "preMarketPrice": 15.97,
+      "preMarketChangePct": 35.22438611346317,
       "prevClose": 11.81,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 22, 2026 8:40 AM ET",
-      "preMarketVolume": 10289251.575205,
-      "preMarketDollarVolume": 161335464.6992144,
-      "relVolume": 3.8979974713093717,
+      "lastTradeAt": "Oct 22, 2026 9:01 AM ET",
+      "preMarketVolume": 11141165.803031,
+      "preMarketDollarVolume": 177924417.87440506,
+      "relVolume": 4.2207380984158736,
       "avgVolume50": 2639625,
       "sharesOutstanding": 151043781,
-      "marketCap": 2368366486.08,
+      "marketCap": 2412169182.57,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 22,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-06"
       },
-      "floatRotation": 0.06812098788234784,
+      "floatRotation": 0.07376116864441443,
       "daysUp": 2,
       "priorRunPct": 3.4150612959719844,
       "extended": true,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "32.8%"
+          "detail": "35.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "10,289,252"
+          "detail": "11,141,166"
         },
         {
           "name": "News catalyst",
@@ -116,12 +116,80 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$15.68"
+          "detail": "$15.97"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "151.0M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "SKYQ",
+      "name": "Sky Quarry Inc.",
+      "legalName": "Sky Quarry Inc.",
+      "business": "Hazardous Waste Management",
+      "sector": "Industrials",
+      "preMarketPrice": 2.28,
+      "preMarketChangePct": 5.56,
+      "prevClose": 2.1599090564607804,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 22, 2026 9:00 AM ET",
+      "preMarketVolume": 147954,
+      "preMarketDollarVolume": 337335.12,
+      "relVolume": 0.023149027516792174,
+      "avgVolume50": 6391370,
+      "sharesOutstanding": 8833390,
+      "marketCap": 20140129.2,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 102,
+      "float": {
+        "shares": 8833390,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-12"
+      },
+      "floatRotation": 0.0167494019849684,
+      "daysUp": 1,
+      "priorRunPct": 3.5087719298245648,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Sky Quarry Confirms Production at Nevada Refinery Amid Strong Diesel Demand",
+        "subject": null,
+        "date": "2026-10-22"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "147,954"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.28"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "8.8M"
         }
       ],
       "passed": 4,
@@ -203,17 +271,17 @@
       "legalName": "CXApp Inc.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 2.05,
-      "preMarketChangePct": 6.77,
-      "prevClose": 1.9200149854828132,
+      "preMarketPrice": 2.09,
+      "preMarketChangePct": 8.85,
+      "prevClose": 1.9200734956361964,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 22, 2026 8:40 AM ET",
-      "preMarketVolume": 27936,
-      "preMarketDollarVolume": 57268.799999999996,
-      "relVolume": 0.00672440113209491,
+      "lastTradeAt": "Oct 22, 2026 9:00 AM ET",
+      "preMarketVolume": 35423,
+      "preMarketDollarVolume": 74034.06999999999,
+      "relVolume": 0.008526577223016824,
       "avgVolume50": 4154422,
       "sharesOutstanding": 116870315,
-      "marketCap": 239584145.74999997,
+      "marketCap": 244258958.35,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 60,
       "float": {
@@ -221,7 +289,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-12"
       },
-      "floatRotation": 0.0002390341807498337,
+      "floatRotation": 0.00030309664177768323,
       "daysUp": 1,
       "priorRunPct": -1.5000000000000013,
       "extended": false,
@@ -239,12 +307,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.8%"
+          "detail": "8.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "27,936"
+          "detail": "35,423"
         },
         {
           "name": "News catalyst",
@@ -254,12 +322,80 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.05"
+          "detail": "$2.09"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "116.9M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "GUTS",
+      "name": "Fractyl Health Inc.",
+      "legalName": "FRACTYL HEALTH, INC.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 1.22,
+      "preMarketChangePct": 6.09,
+      "prevClose": 1.1499670091431804,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 22, 2026 8:57 AM ET",
+      "preMarketVolume": 91989.498542,
+      "preMarketDollarVolume": 112227.18822124,
+      "relVolume": 0.056486216736566106,
+      "avgVolume50": 1628530,
+      "sharesOutstanding": 159179848,
+      "marketCap": 194199414.56,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 33,
+      "float": {
+        "shares": 159179848,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-04"
+      },
+      "floatRotation": 0.0005778966351444186,
+      "daysUp": 0,
+      "priorRunPct": -66.95652173913044,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Committed to a restructuring or exit plan · Executive or board change · Other material event (often FDA, clinical or contract news)",
+        "subject": "Committed to a restructuring or exit plan · Executive or board change · Other material event (often FDA, clinical or contract news)",
+        "date": "2026-10-22"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "91,989"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.22"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "159.2M"
         }
       ],
       "passed": 2,
@@ -331,74 +467,6 @@
         }
       ],
       "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "HURA",
-      "name": "TuHURA Biosciences Inc.",
-      "legalName": "TuHURA Biosciences, Inc./NV",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 2.22,
-      "preMarketChangePct": 6.47,
-      "prevClose": 2.0850943927867007,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 22, 2026 8:40 AM ET",
-      "preMarketVolume": 36689.437201,
-      "preMarketDollarVolume": 81450.55058622001,
-      "relVolume": 0.13676565038674446,
-      "avgVolume50": 268265,
-      "sharesOutstanding": 63726617,
-      "marketCap": 141473089.74,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 60,
-      "float": {
-        "shares": 63726617,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-11"
-      },
-      "floatRotation": 0.0005757317574381831,
-      "daysUp": 0,
-      "priorRunPct": -2.7624309392265216,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.5%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "36,689"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.22"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "63.7M"
-        }
-      ],
-      "passed": 1,
       "quality": "low"
     }
   ]
