@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-27T13:00:36.703Z",
+  "generatedAt": "2026-10-27T13:20:36.431Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-26",
   "universeChecked": 5990,
   "smallCapsInBand": 2922,
-  "investigated": 98,
-  "liveQuotes": 75,
+  "investigated": 99,
+  "liveQuotes": 73,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-26T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 242,
+    "edgarFilings": 258,
     "leads": {
-      "8-K": 72,
+      "8-K": 76,
       "PR Newswire": 0,
-      "GlobeNewswire": 9,
+      "GlobeNewswire": 6,
       "prior-session gainer": 20
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 98,
-    "answered": 98,
+    "requested": 99,
+    "answered": 99,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,91 +60,22 @@
   "shortlist": [],
   "watchlist": [
     {
-      "symbol": "RENT",
-      "name": "Rent the Runway Inc. Class A",
-      "legalName": "Rent the Runway, Inc.",
-      "business": "Retail-Retail Stores, NEC",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.82,
-      "preMarketChangePct": 22.608695652173914,
-      "prevClose": 2.3,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 27, 2026 9:00 AM ET",
-      "preMarketVolume": 213089.795871,
-      "preMarketDollarVolume": 600913.22435622,
-      "relVolume": 2.913092398679408,
-      "avgVolume50": 73149,
-      "sharesOutstanding": 33774121,
-      "marketCap": 95243021.22,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 18,
-      "float": {
-        "shares": 33774121,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-04"
-      },
-      "floatRotation": 0.006309262522953596,
-      "daysUp": 0,
-      "priorRunPct": 30.681818181818173,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Sold unregistered shares (dilution) · Other material event (often FDA, clinical or contract news)",
-        "subject": "Sold unregistered shares (dilution) · Other material event (often FDA, clinical or contract news)",
-        "date": "2026-10-26"
-      },
-      "leads": [
-        "8-K",
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "22.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "213,090"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.82"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "33.8M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
       "symbol": "MFIC",
       "name": "MidCap Financial Investment Corporation",
       "legalName": "MidCap Financial Investment Corp",
       "business": "Finance/Investors Services",
       "sector": "Finance",
-      "preMarketPrice": 10.252,
-      "preMarketChangePct": 22.338902147971357,
+      "preMarketPrice": 10.27,
+      "preMarketChangePct": 22.55369928400953,
       "prevClose": 8.38,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 27, 2026 9:00 AM ET",
-      "preMarketVolume": 687052.763868,
-      "preMarketDollarVolume": 7043664.935174736,
-      "relVolume": 1.29660975584845,
+      "lastTradeAt": "Oct 27, 2026 9:20 AM ET",
+      "preMarketVolume": 703243.015111,
+      "preMarketDollarVolume": 7222305.76518997,
+      "relVolume": 1.3271640870662258,
       "avgVolume50": 529884,
       "sharesOutstanding": 82372628,
-      "marketCap": 844484182.256,
+      "marketCap": 845966889.56,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 5,
       "float": {
@@ -152,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-05"
       },
-      "floatRotation": 0.008340789659739884,
+      "floatRotation": 0.00853733858182842,
       "daysUp": 0,
       "priorRunPct": 0.4796163069544475,
       "extended": false,
@@ -170,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "22.3%"
+          "detail": "22.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "687,053"
+          "detail": "703,243"
         },
         {
           "name": "News catalyst",
@@ -185,7 +116,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$10.25"
+          "detail": "$10.27"
         },
         {
           "name": "Float <10M",
@@ -202,17 +133,17 @@
       "legalName": "CLEARONE INC",
       "business": "Telephone & Telegraph Apparatus",
       "sector": "Utilities",
-      "preMarketPrice": 5.929,
-      "preMarketChangePct": 19.3,
-      "prevClose": 4.969823973176865,
+      "preMarketPrice": 5.9831,
+      "preMarketChangePct": 20.38,
+      "prevClose": 4.970177770393754,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 27, 2026 9:00 AM ET",
-      "preMarketVolume": 13396191.072336,
-      "preMarketDollarVolume": 79426016.86788015,
-      "relVolume": 2.3650828415715464,
+      "lastTradeAt": "Oct 27, 2026 9:20 AM ET",
+      "preMarketVolume": 13934761.072336,
+      "preMarketDollarVolume": 83373068.97189352,
+      "relVolume": 2.460166784395831,
       "avgVolume50": 5664153,
       "sharesOutstanding": 2675412,
-      "marketCap": 15862517.748000002,
+      "marketCap": 16007257.5372,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 166,
       "float": {
@@ -220,7 +151,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-14"
       },
-      "floatRotation": 5.007150701400756,
+      "floatRotation": 5.208454276326786,
       "daysUp": 2,
       "priorRunPct": 8.695652173913036,
       "extended": true,
@@ -238,12 +169,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "19.3%"
+          "detail": "20.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "13,396,191"
+          "detail": "13,934,761"
         },
         {
           "name": "News catalyst",
@@ -253,7 +184,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.93"
+          "detail": "$5.98"
         },
         {
           "name": "Float <10M",
@@ -270,17 +201,17 @@
       "legalName": "JETBLUE AIRWAYS CORP",
       "business": "Air Transportation, Scheduled",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.7089,
-      "preMarketChangePct": 14.3,
-      "prevClose": 2.369991251093613,
+      "preMarketPrice": 2.73,
+      "preMarketChangePct": 15.19,
+      "prevClose": 2.3699973956072578,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 27, 2026 9:00 AM ET",
-      "preMarketVolume": 1368685.871498,
-      "preMarketDollarVolume": 3707633.1573009323,
-      "relVolume": 0.04721213619677706,
+      "lastTradeAt": "Oct 27, 2026 9:20 AM ET",
+      "preMarketVolume": 1868698.778339,
+      "preMarketDollarVolume": 5101547.66486547,
+      "relVolume": 0.06445983192412948,
       "avgVolume50": 28990128,
       "sharesOutstanding": 377351854,
-      "marketCap": 1022208437.3005999,
+      "marketCap": 1030170561.42,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 17,
       "float": {
@@ -288,16 +219,16 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-09-30"
       },
-      "floatRotation": 0.00362708134858667,
+      "floatRotation": 0.004952138855369185,
       "daysUp": 0,
       "priorRunPct": -10.409556313993178,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "JetBlue Airways Corporation Reports Operating Revenue of $2.8 billion for the third quarter of 2026",
+        "headline": "JetBlue Airways Q3 26 Earnings Conference Call At 10:00 AM ET ",
         "subject": "Earnings or guidance",
-        "date": "2026-10-26"
+        "date": "2026-10-27"
       },
       "leads": [
         "8-K"
@@ -306,12 +237,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "14.3%"
+          "detail": "15.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,368,686"
+          "detail": "1,868,699"
         },
         {
           "name": "News catalyst",
@@ -321,7 +252,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.71"
+          "detail": "$2.73"
         },
         {
           "name": "Float <10M",
@@ -331,24 +262,26 @@
       ],
       "passed": 4,
       "quality": "medium"
-    },
+    }
+  ],
+  "alsoRan": [
     {
       "symbol": "IMSR",
       "name": "Terrestrial Energy Inc. Common Stock",
       "legalName": "Terrestrial Energy Inc. /DE/",
       "business": "Fabricated Plate Work (Boiler Shops)",
       "sector": "Industrials",
-      "preMarketPrice": 3.2654,
-      "preMarketChangePct": 11.07,
-      "prevClose": 2.939947780678851,
+      "preMarketPrice": 3.23,
+      "preMarketChangePct": 9.86,
+      "prevClose": 2.940105588931367,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 27, 2026 9:00 AM ET",
-      "preMarketVolume": 217728.523708,
-      "preMarketDollarVolume": 710970.7213161032,
-      "relVolume": 0.1336161121688264,
+      "lastTradeAt": "Oct 27, 2026 9:20 AM ET",
+      "preMarketVolume": 225504.523708,
+      "preMarketDollarVolume": 728379.6115768399,
+      "relVolume": 0.13838810469663235,
       "avgVolume50": 1629508,
       "sharesOutstanding": 105935254,
-      "marketCap": 345920978.4116,
+      "marketCap": 342170870.42,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 30,
       "float": {
@@ -356,7 +289,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-11"
       },
-      "floatRotation": 0.002055298075822804,
+      "floatRotation": 0.002128701401971434,
       "daysUp": 0,
       "priorRunPct": -8.196721311475411,
       "extended": false,
@@ -373,13 +306,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "11.1%"
+          "ok": false,
+          "detail": "9.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "217,729"
+          "detail": "225,505"
         },
         {
           "name": "News catalyst",
@@ -389,7 +322,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.27"
+          "detail": "$3.23"
         },
         {
           "name": "Float <10M",
@@ -397,11 +330,9 @@
           "detail": "105.9M"
         }
       ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
-  "alsoRan": [
+      "passed": 3,
+      "quality": "low"
+    },
     {
       "symbol": "WVE",
       "name": "Wave Life Sciences Inc.",
@@ -471,90 +402,22 @@
       "quality": "low"
     },
     {
-      "symbol": "ZURA",
-      "name": "Zura Bio Limited Class A Ordinary Shares",
-      "legalName": "Zura Bio Ltd",
-      "business": "Biological Products, (No Diagnostic Substances)",
-      "sector": "Health Care",
-      "preMarketPrice": 3.75,
-      "preMarketChangePct": 5.34,
-      "prevClose": 3.559901272071388,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 27, 2026 8:50 AM ET",
-      "preMarketVolume": 63143.274725,
-      "preMarketDollarVolume": 236787.28021875,
-      "relVolume": 0.05512943896001621,
-      "avgVolume50": 1145364,
-      "sharesOutstanding": 96325411,
-      "marketCap": 361220291.25,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 45,
-      "float": {
-        "shares": 96325411,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-27"
-      },
-      "floatRotation": 0.0006555204288201792,
-      "daysUp": 0,
-      "priorRunPct": -13.402061855670103,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released · Regulation FD disclosure (company announcement)",
-        "subject": "Earnings / results released · Regulation FD disclosure (company announcement)",
-        "date": "2026-10-27"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "63,143"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.75"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "96.3M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "AIAI",
       "name": "AIAI Holdings Corporation Class A",
       "legalName": "AIAI Holdings Corp",
       "business": "Services-Computer Processing & Data Preparation",
       "sector": "Technology",
-      "preMarketPrice": 2.0468,
-      "preMarketChangePct": 8.3,
-      "prevClose": 1.8899353647276087,
+      "preMarketPrice": 2.05,
+      "preMarketChangePct": 8.47,
+      "prevClose": 1.8899234811468608,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 27, 2026 9:00 AM ET",
-      "preMarketVolume": 17340,
-      "preMarketDollarVolume": 35491.512,
-      "relVolume": 0.03230764931108689,
+      "lastTradeAt": "Oct 27, 2026 9:19 AM ET",
+      "preMarketVolume": 37109,
+      "preMarketDollarVolume": 76073.45,
+      "relVolume": 0.06914097798645463,
       "avgVolume50": 536715,
       "sharesOutstanding": 70662761,
-      "marketCap": 144632539.2148,
+      "marketCap": 144858660.04999998,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 46,
       "float": {
@@ -562,7 +425,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-11"
       },
-      "floatRotation": 0.00024539092096896695,
+      "floatRotation": 0.0005251563832893537,
       "daysUp": 0,
       "priorRunPct": -31.343283582089555,
       "extended": false,
@@ -580,12 +443,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.3%"
+          "detail": "8.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "17,340"
+          "detail": "37,109"
         },
         {
           "name": "News catalyst",
@@ -748,17 +611,17 @@
       "legalName": "Intercont (Cayman) Ltd",
       "business": "Deep Sea Foreign Transportation of  Freight",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.58,
-      "preMarketChangePct": 6.76,
-      "prevClose": 1.479955039340577,
+      "preMarketPrice": 1.5685,
+      "preMarketChangePct": 5.98,
+      "prevClose": 1.4799962257029626,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 27, 2026 8:55 AM ET",
-      "preMarketVolume": 5227,
-      "preMarketDollarVolume": 8258.66,
-      "relVolume": 0.0020071284354842797,
+      "lastTradeAt": "Oct 27, 2026 9:15 AM ET",
+      "preMarketVolume": 5274,
+      "preMarketDollarVolume": 8272.269,
+      "relVolume": 0.002025176079729116,
       "avgVolume50": 2604218,
       "sharesOutstanding": 26675001,
-      "marketCap": 42146501.58,
+      "marketCap": 41839739.0685,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 58,
       "float": {
@@ -766,7 +629,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-06-30"
       },
-      "floatRotation": 0.00019595125788373917,
+      "floatRotation": 0.00019771320720850206,
       "daysUp": 0,
       "priorRunPct": -6.666666666666672,
       "extended": false,
@@ -784,12 +647,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.8%"
+          "detail": "6.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "5,227"
+          "detail": "5,274"
         },
         {
           "name": "News catalyst",
@@ -799,7 +662,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.58"
+          "detail": "$1.57"
         },
         {
           "name": "Float <10M",
