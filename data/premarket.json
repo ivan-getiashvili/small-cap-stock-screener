@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-27T12:00:36.114Z",
+  "generatedAt": "2026-10-27T12:20:38.002Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-26",
   "universeChecked": 5990,
   "smallCapsInBand": 2922,
-  "investigated": 87,
-  "liveQuotes": 62,
+  "investigated": 88,
+  "liveQuotes": 67,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-26T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 214,
+    "edgarFilings": 231,
     "leads": {
-      "8-K": 63,
-      "PR Newswire": 2,
+      "8-K": 65,
+      "PR Newswire": 0,
       "GlobeNewswire": 6,
       "prior-session gainer": 20
     },
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 87,
-    "answered": 87,
+    "requested": 88,
+    "answered": 88,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,68 +60,69 @@
   "shortlist": [],
   "watchlist": [
     {
-      "symbol": "CLRO",
-      "name": "ClearOne Inc.",
-      "legalName": "CLEARONE INC",
-      "business": "Telephone & Telegraph Apparatus",
-      "sector": "Utilities",
-      "preMarketPrice": 6.32,
-      "preMarketChangePct": 27.16,
-      "prevClose": 4.97011638880151,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 27, 2026 8:00 AM ET",
-      "preMarketVolume": 7570122.91466,
-      "preMarketDollarVolume": 47843176.8206512,
-      "relVolume": 1.3364968980640177,
-      "avgVolume50": 5664153,
-      "sharesOutstanding": 2675412,
-      "marketCap": 16908603.84,
+      "symbol": "XTND",
+      "name": "Xtend AI Robotics Inc.",
+      "legalName": "Xtend AI Robotics, Inc.",
+      "business": "Guided Missiles & Space Vehicles & Parts",
+      "sector": "Industrials",
+      "preMarketPrice": 2.18,
+      "preMarketChangePct": 23.163841807909613,
+      "prevClose": 1.77,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 27, 2026 8:20 AM ET",
+      "preMarketVolume": 218098,
+      "preMarketDollarVolume": 475453.64,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 284842854.1284403,
+      "marketCap": 620957422,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 166,
+      "bestPriorSpikePct": null,
       "float": {
-        "shares": 2675412,
+        "shares": 284842854.1284403,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-14"
+        "asOf": "2026-10-27"
       },
-      "floatRotation": 2.8295166930027973,
-      "daysUp": 2,
-      "priorRunPct": 8.695652173913036,
-      "extended": true,
+      "floatRotation": 0.0007656783269755331,
+      "daysUp": 1,
+      "priorRunPct": -12.807881773399005,
+      "extended": false,
       "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
+        "found": true,
+        "kind": "8-K",
+        "headline": "Executive or board change",
+        "subject": "Executive or board change",
+        "date": "2026-10-26"
       },
       "leads": [
+        "8-K",
         "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "27.2%"
+          "detail": "23.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "7,570,123"
+          "detail": "218,098"
         },
         {
           "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
+          "ok": true,
+          "detail": "8-K"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.32"
+          "detail": "$2.18"
         },
         {
           "name": "Float <10M",
-          "ok": true,
-          "detail": "2.7M"
+          "ok": false,
+          "detail": "284.8M"
         }
       ],
       "passed": 4,
@@ -133,17 +134,17 @@
       "legalName": "MidCap Financial Investment Corp",
       "business": "Finance/Investors Services",
       "sector": "Finance",
-      "preMarketPrice": 10.17,
-      "preMarketChangePct": 21.360381861575167,
+      "preMarketPrice": 10.25,
+      "preMarketChangePct": 22.31503579952266,
       "prevClose": 8.38,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 27, 2026 8:00 AM ET",
-      "preMarketVolume": 601255.79629,
-      "preMarketDollarVolume": 6114771.448269299,
-      "relVolume": 1.1346932466162405,
+      "lastTradeAt": "Oct 27, 2026 8:20 AM ET",
+      "preMarketVolume": 652090.291916,
+      "preMarketDollarVolume": 6683925.4921389995,
+      "relVolume": 1.2306283864317473,
       "avgVolume50": 529884,
       "sharesOutstanding": 82372628,
-      "marketCap": 837729626.76,
+      "marketCap": 844319437,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 5,
       "float": {
@@ -151,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-05"
       },
-      "floatRotation": 0.007299218331239838,
+      "floatRotation": 0.007916346822344917,
       "daysUp": 0,
       "priorRunPct": 0.4796163069544475,
       "extended": false,
@@ -169,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "21.4%"
+          "detail": "22.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "601,256"
+          "detail": "652,090"
         },
         {
           "name": "News catalyst",
@@ -184,7 +185,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$10.17"
+          "detail": "$10.25"
         },
         {
           "name": "Float <10M",
@@ -196,22 +197,90 @@
       "quality": "medium"
     },
     {
+      "symbol": "CLRO",
+      "name": "ClearOne Inc.",
+      "legalName": "CLEARONE INC",
+      "business": "Telephone & Telegraph Apparatus",
+      "sector": "Utilities",
+      "preMarketPrice": 5.9512,
+      "preMarketChangePct": 19.74,
+      "prevClose": 4.970101887422749,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 27, 2026 8:20 AM ET",
+      "preMarketVolume": 11192336.91466,
+      "preMarketDollarVolume": 66607835.44652459,
+      "relVolume": 1.9759948071070819,
+      "avgVolume50": 5664153,
+      "sharesOutstanding": 2675412,
+      "marketCap": 15921911.8944,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 166,
+      "float": {
+        "shares": 2675412,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-14"
+      },
+      "floatRotation": 4.183406860199476,
+      "daysUp": 2,
+      "priorRunPct": 8.695652173913036,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "19.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "11,192,337"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.95"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "2.7M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
       "symbol": "JBLU",
       "name": "JetBlue Airways Corporation",
       "legalName": "JETBLUE AIRWAYS CORP",
       "business": "Air Transportation, Scheduled",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.6595,
-      "preMarketChangePct": 12.22,
-      "prevClose": 2.3698984138299766,
+      "preMarketPrice": 2.6807,
+      "preMarketChangePct": 13.11,
+      "prevClose": 2.3699938113340995,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 27, 2026 8:00 AM ET",
-      "preMarketVolume": 774378.837275,
-      "preMarketDollarVolume": 2059460.5177328626,
-      "relVolume": 0.02671181159583014,
+      "lastTradeAt": "Oct 27, 2026 8:20 AM ET",
+      "preMarketVolume": 1027477.147482,
+      "preMarketDollarVolume": 2754357.989254997,
+      "relVolume": 0.03544231151659627,
       "avgVolume50": 28990128,
       "sharesOutstanding": 377351854,
-      "marketCap": 1003567255.7129999,
+      "marketCap": 1011567115.0178,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 17,
       "float": {
@@ -219,7 +288,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-09-30"
       },
-      "floatRotation": 0.002052140009559884,
+      "floatRotation": 0.002722862327534768,
       "daysUp": 0,
       "priorRunPct": -10.409556313993178,
       "extended": false,
@@ -237,12 +306,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "12.2%"
+          "detail": "13.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "774,379"
+          "detail": "1,027,477"
         },
         {
           "name": "News catalyst",
@@ -252,7 +321,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.66"
+          "detail": "$2.68"
         },
         {
           "name": "Float <10M",
@@ -269,17 +338,17 @@
       "legalName": "Terrestrial Energy Inc. /DE/",
       "business": "Fabricated Plate Work (Boiler Shops)",
       "sector": "Industrials",
-      "preMarketPrice": 3.29,
-      "preMarketChangePct": 11.9,
-      "prevClose": 2.940125111706881,
+      "preMarketPrice": 3.24,
+      "preMarketChangePct": 10.2,
+      "prevClose": 2.94010889292196,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 27, 2026 8:00 AM ET",
-      "preMarketVolume": 63646.01716,
-      "preMarketDollarVolume": 209395.39645640002,
-      "relVolume": 0.039058425708864274,
+      "lastTradeAt": "Oct 27, 2026 8:20 AM ET",
+      "preMarketVolume": 150443.296602,
+      "preMarketDollarVolume": 487436.28099048,
+      "relVolume": 0.0923243682154368,
       "avgVolume50": 1629508,
       "sharesOutstanding": 105935254,
-      "marketCap": 348526985.66,
+      "marketCap": 343230222.96000004,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 30,
       "float": {
@@ -287,7 +356,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-11"
       },
-      "floatRotation": 0.0006008011002645069,
+      "floatRotation": 0.0014201438229619007,
       "daysUp": 0,
       "priorRunPct": -8.196721311475411,
       "extended": false,
@@ -305,12 +374,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "11.9%"
+          "detail": "10.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "63,646"
+          "detail": "150,443"
         },
         {
           "name": "News catalyst",
@@ -320,7 +389,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.29"
+          "detail": "$3.24"
         },
         {
           "name": "Float <10M",
@@ -333,74 +402,6 @@
     }
   ],
   "alsoRan": [
-    {
-      "symbol": "BKHAU",
-      "name": "Black Hawk Acquisition Corporation Units",
-      "legalName": "Black Hawk Acquisition Corp",
-      "business": "Biological Products, (No Diagnostic Substances)",
-      "sector": null,
-      "preMarketPrice": 4.75,
-      "preMarketChangePct": 18.159203980099512,
-      "prevClose": 4.02,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 27, 2026 7:55 AM ET",
-      "preMarketVolume": null,
-      "preMarketDollarVolume": null,
-      "relVolume": null,
-      "avgVolume50": 2584,
-      "sharesOutstanding": 4153577,
-      "marketCap": 19729490.75,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 15,
-      "float": {
-        "shares": 4153577,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-06"
-      },
-      "floatRotation": null,
-      "daysUp": 0,
-      "priorRunPct": -58.51393188854489,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "18.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "unknown"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.75"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "4.2M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
     {
       "symbol": "MCRB",
       "name": "Seres Therapeutics Inc.",
@@ -543,17 +544,17 @@
       "legalName": "Wave Life Sciences, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 3.41,
-      "preMarketChangePct": 7.232704402515722,
+      "preMarketPrice": 3.4112,
+      "preMarketChangePct": 7.270440251572322,
       "prevClose": 3.18,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 27, 2026 7:57 AM ET",
-      "preMarketVolume": 23485.31793,
-      "preMarketDollarVolume": 80084.93414130001,
-      "relVolume": 0.007792945042977585,
+      "lastTradeAt": "Oct 27, 2026 8:19 AM ET",
+      "preMarketVolume": 28418.31793,
+      "preMarketDollarVolume": 96940.566122816,
+      "relVolume": 0.00942982294310182,
       "avgVolume50": 3013664,
       "sharesOutstanding": 197228968,
-      "marketCap": 672550780.88,
+      "marketCap": 672787455.6416,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 147,
       "float": {
@@ -561,31 +562,30 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-21"
       },
-      "floatRotation": 0.00011907641239597219,
+      "floatRotation": 0.00014408795126890286,
       "daysUp": 0,
       "priorRunPct": 1.5974440894568775,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Wave Life Sciences Reports Third Quarter 2026 Financial Results and Provides Business Update",
-        "subject": "Earnings or guidance",
+        "headline": "Wave Life Sciences Ltd. Q3 Sales Increase ",
+        "subject": null,
         "date": "2026-10-27"
       },
       "leads": [
-        "GlobeNewswire",
         "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.2%"
+          "detail": "7.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "23,485"
+          "detail": "28,418"
         },
         {
           "name": "News catalyst",
@@ -675,142 +675,6 @@
       "quality": "low"
     },
     {
-      "symbol": "CNSY",
-      "name": "Cerenome Inc. Common Stock",
-      "legalName": "CERENOME, INC.",
-      "business": "Surgical & Medical Instruments & Apparatus",
-      "sector": "Health Care",
-      "preMarketPrice": 1.6612,
-      "preMarketChangePct": 5.81,
-      "prevClose": 1.569983933465646,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 27, 2026 5:48 AM ET",
-      "preMarketVolume": 241,
-      "preMarketDollarVolume": 400.3492,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 7589625,
-      "marketCap": 12607885.05,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 7589625,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-05"
-      },
-      "floatRotation": 0.000031753874532667955,
-      "daysUp": 0,
-      "priorRunPct": -3.529411764705886,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Cerenome to Present Interim Clinical Update on the ReSPECT-LM Trial of Multiple REYOBIQ™ Doses in Leptomeningeal Metastases",
-        "subject": "FDA / clinical",
-        "date": "2026-10-27"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.8%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "241"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.66"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "7.6M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "ARLO",
-      "name": "Arlo Technologies Inc.",
-      "legalName": "Arlo Technologies, Inc.",
-      "business": "Services-Detective, Guard & Armored Car Services",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 13.0801,
-      "preMarketChangePct": 5.66,
-      "prevClose": 12.379424569373462,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 27, 2026 7:00 AM ET",
-      "preMarketVolume": 15334.36754,
-      "preMarketDollarVolume": 200575.06085995398,
-      "relVolume": 0.012015768488473867,
-      "avgVolume50": 1276187,
-      "sharesOutstanding": 107613304,
-      "marketCap": 1407592777.6504,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 27,
-      "float": {
-        "shares": 107613304,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-31"
-      },
-      "floatRotation": 0.0001424950909415438,
-      "daysUp": 2,
-      "priorRunPct": 7.1546052631578885,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Arlo Technologies, Inc. Announces $100 million Stock Repurchase Program",
-        "subject": null,
-        "date": "2026-10-27"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "15,334"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$13.08"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "107.6M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
       "symbol": "AEYE",
       "name": "AudioEye Inc.",
       "legalName": "AUDIOEYE INC",
@@ -820,10 +684,10 @@
       "preMarketChangePct": 5.26,
       "prevClose": 7.4197225916777505,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 27, 2026 7:28 AM ET",
-      "preMarketVolume": 409,
-      "preMarketDollarVolume": 3194.29,
-      "relVolume": 0.003038294395126843,
+      "lastTradeAt": "Oct 27, 2026 8:16 AM ET",
+      "preMarketVolume": 605,
+      "preMarketDollarVolume": 4725.05,
+      "relVolume": 0.004494298555138729,
       "avgVolume50": 134615,
       "sharesOutstanding": 12684577,
       "marketCap": 99066546.36999999,
@@ -834,7 +698,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-26"
       },
-      "floatRotation": 0.00003224388168403251,
+      "floatRotation": 0.00004769571740547596,
       "daysUp": 0,
       "priorRunPct": 21.32132132132132,
       "extended": false,
@@ -857,7 +721,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "409"
+          "detail": "605"
         },
         {
           "name": "News catalyst",
@@ -876,74 +740,6 @@
         }
       ],
       "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "MGN",
-      "name": "Megan Holdings Limited Class A Ordinary Shares",
-      "legalName": "Megan Holdings Ltd.",
-      "business": "Agricultural Prod-Livestock & Animal Specialties",
-      "sector": "Consumer Staples",
-      "preMarketPrice": 2.59,
-      "preMarketChangePct": 9.05,
-      "prevClose": 2.3750573131591013,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 27, 2026 7:23 AM ET",
-      "preMarketVolume": 597,
-      "preMarketDollarVolume": 1546.23,
-      "relVolume": 0.000016472478131198734,
-      "avgVolume50": 36242270,
-      "sharesOutstanding": 16250000,
-      "marketCap": 42087500,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 175,
-      "float": {
-        "shares": 16250000,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 0.000036738461538461535,
-      "daysUp": 0,
-      "priorRunPct": -20.318725099601586,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "597"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.59"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "16.3M"
-        }
-      ],
-      "passed": 1,
       "quality": "low"
     },
     {
