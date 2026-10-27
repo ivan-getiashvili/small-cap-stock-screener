@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-10-27T00:22:50.079Z",
+ "updatedAt": "2026-10-27T11:00:55.684Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -7313,7 +7313,22 @@
      "missing": [
       "Pre-market volume ≥50k"
      ],
-     "performance": null,
+     "performance": {
+      "open": 2.32,
+      "high": 2.3591,
+      "low": 2.0108,
+      "close": 2.13,
+      "volume": 537043,
+      "prevClose": 2.28,
+      "gapPct": 1.7543859649122824,
+      "openToHighPct": 1.6853448275862226,
+      "openToClosePct": -8.189655172413792,
+      "openToLowPct": -13.32758620689654,
+      "alertToHighPct": -6.011952191235044,
+      "alertToClosePct": -15.139442231075694,
+      "filledAt": "2026-10-27T11:00:55.389Z",
+      "noon": 2.107
+     },
      "intraday": {
       "noon": 2.107
      }
@@ -7337,10 +7352,73 @@
      "missing": [
       "News catalyst"
      ],
-     "performance": null,
+     "performance": {
+      "open": 4.33,
+      "high": 5.85,
+      "low": 4.02,
+      "close": 4.97,
+      "volume": 83110800,
+      "prevClose": 3.25,
+      "gapPct": 33.23076923076923,
+      "openToHighPct": 35.103926096997675,
+      "openToClosePct": 14.780600461893755,
+      "openToLowPct": -7.159353348729804,
+      "alertToHighPct": 51.94805194805193,
+      "alertToClosePct": 29.090909090909083,
+      "filledAt": "2026-10-27T11:00:55.683Z",
+      "noon": 4.98
+     },
      "intraday": {
       "noon": 4.98
      }
+    }
+   ]
+  },
+  "2026-10-27": {
+   "date": "2026-10-27",
+   "source": "live",
+   "names": [
+    {
+     "symbol": "MFIC",
+     "legalName": "MidCap Financial Investment Corp",
+     "business": "Finance/Investors Services",
+     "list": "watchlist",
+     "firstSeenAt": "2026-10-27T11:00:37.287Z",
+     "lastSeenAt": "2026-10-27T11:00:37.287Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 9.9,
+     "preMarketChangePct": 18.13842482100238,
+     "prevClose": 8.38,
+     "preMarketVolume": 455177.386016,
+     "relVolume": 0.8590132670848715,
+     "floatShares": 82372628,
+     "catalyst": "Entered a material agreement (deal, partnership or contract) · Earnings / results released · Regulation FD disclosure (company announcement)",
+     "extended": false,
+     "missing": [
+      "Float <10M"
+     ],
+     "performance": null
+    },
+    {
+     "symbol": "JBLU",
+     "legalName": "JETBLUE AIRWAYS CORP",
+     "business": "Air Transportation, Scheduled",
+     "list": "watchlist",
+     "firstSeenAt": "2026-10-27T11:00:37.287Z",
+     "lastSeenAt": "2026-10-27T11:00:37.287Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 2.63,
+     "preMarketChangePct": 10.97,
+     "prevClose": 2.370009912588988,
+     "preMarketVolume": 56674,
+     "relVolume": 0.001954941351069578,
+     "floatShares": 377351854,
+     "catalyst": "Earnings or guidance",
+     "extended": false,
+     "missing": [
+      "Float <10M"
+     ],
+     "performance": null
     }
    ]
   }
