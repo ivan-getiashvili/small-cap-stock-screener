@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-28T11:20:35.415Z",
+  "generatedAt": "2026-10-28T11:40:35.643Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-27",
   "universeChecked": 6020,
   "smallCapsInBand": 2911,
-  "investigated": 76,
-  "liveQuotes": 52,
+  "investigated": 77,
+  "liveQuotes": 57,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-27T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 254,
+    "edgarFilings": 263,
     "leads": {
-      "8-K": 44,
-      "PR Newswire": 0,
-      "GlobeNewswire": 8,
+      "8-K": 47,
+      "PR Newswire": 2,
+      "GlobeNewswire": 4,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 76,
-    "answered": 76,
+    "requested": 77,
+    "answered": 77,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,90 +60,22 @@
   "shortlist": [],
   "watchlist": [
     {
-      "symbol": "BOOM",
-      "name": "DMC Global Inc.",
-      "legalName": "DMC Global Inc.",
-      "business": "Miscellaneous Primary Metal Products",
-      "sector": "Industrials",
-      "preMarketPrice": 6.4,
-      "preMarketChangePct": 19.1806331471136,
-      "prevClose": 5.37,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 28, 2026 7:20 AM ET",
-      "preMarketVolume": 195835.014511,
-      "preMarketDollarVolume": 1253344.0928704,
-      "relVolume": 1.1768365373720013,
-      "avgVolume50": 166408,
-      "sharesOutstanding": 20540949,
-      "marketCap": 131462073.60000001,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 36,
-      "float": {
-        "shares": 20540949,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-20"
-      },
-      "floatRotation": 0.009533883488586628,
-      "daysUp": 0,
-      "priorRunPct": 1.5122873345935741,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "DMC Global (BOOM) Q3 2026 Earnings Call Transcript",
-        "subject": "Earnings or guidance",
-        "date": "2026-10-28"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "19.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "195,835"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.40"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "20.5M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
       "symbol": "AIOK",
       "name": "AI OKTO CORP.",
       "legalName": "AI OKTO Corp.",
       "business": "Deep Sea Foreign Transportation of  Freight",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 15.16,
-      "preMarketChangePct": 12.97,
-      "prevClose": 13.41949190050456,
+      "preMarketPrice": 16.7567,
+      "preMarketChangePct": 24.86,
+      "prevClose": 13.420390837738266,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 28, 2026 7:20 AM ET",
-      "preMarketVolume": 516817,
-      "preMarketDollarVolume": 7834945.72,
+      "lastTradeAt": "Oct 28, 2026 7:40 AM ET",
+      "preMarketVolume": 2216335,
+      "preMarketDollarVolume": 37138460.6945,
       "relVolume": null,
       "avgVolume50": null,
       "sharesOutstanding": 4319916.020864381,
-      "marketCap": 65489926.87630402,
+      "marketCap": 72387536.78681818,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": null,
       "float": {
@@ -151,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-28"
       },
-      "floatRotation": 0.11963589049043341,
+      "floatRotation": 0.5130504827629794,
       "daysUp": 0,
       "priorRunPct": 130.15075376884423,
       "extended": true,
@@ -169,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "13.0%"
+          "detail": "24.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "516,817"
+          "detail": "2,216,335"
         },
         {
           "name": "News catalyst",
@@ -184,12 +116,80 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$15.16"
+          "detail": "$16.76"
         },
         {
           "name": "Float <10M",
           "ok": true,
           "detail": "4.3M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "BOOM",
+      "name": "DMC Global Inc.",
+      "legalName": "DMC Global Inc.",
+      "business": "Miscellaneous Primary Metal Products",
+      "sector": "Industrials",
+      "preMarketPrice": 6.3201,
+      "preMarketChangePct": 17.692737430167597,
+      "prevClose": 5.37,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 28, 2026 7:40 AM ET",
+      "preMarketVolume": 219845.014511,
+      "preMarketDollarVolume": 1389442.4762109711,
+      "relVolume": 1.3211204660292775,
+      "avgVolume50": 166408,
+      "sharesOutstanding": 20540949,
+      "marketCap": 129820851.7749,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 36,
+      "float": {
+        "shares": 20540949,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-20"
+      },
+      "floatRotation": 0.010702768139436984,
+      "daysUp": 0,
+      "priorRunPct": 1.5122873345935741,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "DMC Global (BOOM) Q3 2026 Earnings Call Transcript",
+        "subject": "Earnings or guidance",
+        "date": "2026-10-28"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "17.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "219,845"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$6.32"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "20.5M"
         }
       ],
       "passed": 4,
@@ -203,17 +203,17 @@
       "legalName": "Braiin Ltd",
       "business": "Services-Computer Processing & Data Preparation",
       "sector": "Technology",
-      "preMarketPrice": 4.3005,
-      "preMarketChangePct": 29.92,
-      "prevClose": 3.3101139162561584,
+      "preMarketPrice": 4.41,
+      "preMarketChangePct": 33.23,
+      "prevClose": 3.310065300607971,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 28, 2026 7:20 AM ET",
-      "preMarketVolume": 3928787.296404,
-      "preMarketDollarVolume": 16895749.768185403,
-      "relVolume": 14.969146786370443,
+      "lastTradeAt": "Oct 28, 2026 7:40 AM ET",
+      "preMarketVolume": 4428652.296404,
+      "preMarketDollarVolume": 19530356.627141643,
+      "relVolume": 16.87369187722273,
       "avgVolume50": 262459,
       "sharesOutstanding": 206088228.09667674,
-      "marketCap": 886282424.9297584,
+      "marketCap": 908849085.9063444,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 79,
       "float": {
@@ -221,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-28"
       },
-      "floatRotation": 0.019063618202205083,
+      "floatRotation": 0.021489108510974745,
       "daysUp": 0,
       "priorRunPct": -52.57270693512304,
       "extended": false,
@@ -239,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "29.9%"
+          "detail": "33.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "3,928,787"
+          "detail": "4,428,652"
         },
         {
           "name": "News catalyst",
@@ -254,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.30"
+          "detail": "$4.41"
         },
         {
           "name": "Float <10M",
@@ -271,17 +271,17 @@
       "legalName": "Pulmonx Corp",
       "business": "Surgical & Medical Instruments & Apparatus",
       "sector": "Health Care",
-      "preMarketPrice": 2.2324,
-      "preMarketChangePct": 14.482051282051293,
+      "preMarketPrice": 2.26,
+      "preMarketChangePct": 15.897435897435889,
       "prevClose": 1.95,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 28, 2026 7:20 AM ET",
-      "preMarketVolume": 16292,
-      "preMarketDollarVolume": 36370.260800000004,
-      "relVolume": 0.030237621079474905,
+      "lastTradeAt": "Oct 28, 2026 7:40 AM ET",
+      "preMarketVolume": 34656,
+      "preMarketDollarVolume": 78322.56,
+      "relVolume": 0.06432083207281379,
       "avgVolume50": 538799,
       "sharesOutstanding": 42948269,
-      "marketCap": 95877715.71560001,
+      "marketCap": 97063087.94,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 30,
       "float": {
@@ -289,7 +289,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-31"
       },
-      "floatRotation": 0.0003793400846958465,
+      "floatRotation": 0.0008069242557831609,
       "daysUp": 1,
       "priorRunPct": 11.428571428571425,
       "extended": false,
@@ -307,12 +307,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "14.5%"
+          "detail": "15.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "16,292"
+          "detail": "34,656"
         },
         {
           "name": "News catalyst",
@@ -322,7 +322,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.23"
+          "detail": "$2.26"
         },
         {
           "name": "Float <10M",
@@ -334,71 +334,139 @@
       "quality": "low"
     },
     {
-      "symbol": "GNPX",
-      "name": "Genprex Inc.",
-      "legalName": "Genprex, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 1.95,
-      "preMarketChangePct": 7.734806629834249,
-      "prevClose": 1.81,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 28, 2026 7:11 AM ET",
-      "preMarketVolume": 3,
-      "preMarketDollarVolume": 5.85,
-      "relVolume": 0.00001154845539409104,
-      "avgVolume50": 259775,
-      "sharesOutstanding": 819709,
-      "marketCap": 1598432.55,
+      "symbol": "POM",
+      "name": "POMDOCTOR LIMITED Class A Ordinary Shares",
+      "legalName": "POMDOCTOR Ltd",
+      "business": "Retail-Miscellaneous Retail",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.47,
+      "preMarketChangePct": 5.76,
+      "prevClose": 1.3899394856278364,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 28, 2026 7:40 AM ET",
+      "preMarketVolume": 237618,
+      "preMarketDollarVolume": 349298.46,
+      "relVolume": 3.201190925257315,
+      "avgVolume50": 74228,
+      "sharesOutstanding": 2780295.6834532376,
+      "marketCap": 4087034.654676259,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 233,
+      "bestPriorSpikePct": 97,
       "float": {
-        "shares": 819709,
+        "shares": 2780295.6834532376,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-10"
+        "asOf": "2026-10-28"
       },
-      "floatRotation": 0.0000036598353806045805,
+      "floatRotation": 0.08546501057933126,
       "daysUp": 0,
-      "priorRunPct": -12.135922330097088,
-      "extended": false,
+      "priorRunPct": 54.70974808324204,
+      "extended": true,
       "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-10-28"
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
       },
       "leads": [
-        "8-K"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.7%"
+          "detail": "5.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "3"
+          "ok": true,
+          "detail": "237,618"
         },
         {
           "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
+          "ok": false,
+          "detail": "none found"
         },
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.95"
+          "detail": "$1.47"
         },
         {
           "name": "Float <10M",
           "ok": true,
-          "detail": "0.8M"
+          "detail": "2.8M"
         }
       ],
       "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "BLDP",
+      "name": "Ballard Power Systems Inc. Common Shares",
+      "legalName": "Ballard Power Systems Inc.",
+      "business": "Electrical Industrial Apparatus",
+      "sector": "Energy",
+      "preMarketPrice": 1.55,
+      "preMarketChangePct": 8.391608391608399,
+      "prevClose": 1.43,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 28, 2026 7:21 AM ET",
+      "preMarketVolume": 7023,
+      "preMarketDollarVolume": 10885.65,
+      "relVolume": 0.001499542002335895,
+      "avgVolume50": 4683430,
+      "sharesOutstanding": 300784816,
+      "marketCap": 466216464.8,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 32,
+      "float": {
+        "shares": 300784816,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-12-31"
+      },
+      "floatRotation": 0.000023348917985274897,
+      "daysUp": 0,
+      "priorRunPct": -5.921052631578952,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Ballard launches HPU Agile-H: 80kW of clean power in a lightweight, towable unit",
+        "subject": null,
+        "date": "2026-10-28"
+      },
+      "leads": [
+        "PR Newswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "7,023"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.55"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "300.8M"
+        }
+      ],
+      "passed": 1,
       "quality": "low"
     }
   ]
