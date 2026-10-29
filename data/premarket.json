@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-29T11:40:35.234Z",
+  "generatedAt": "2026-10-29T12:00:36.070Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-28",
   "universeChecked": 6003,
   "smallCapsInBand": 2904,
-  "investigated": 139,
+  "investigated": 138,
   "liveQuotes": 87,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-28T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 371,
+    "edgarFilings": 385,
     "leads": {
-      "8-K": 103,
-      "PR Newswire": 6,
+      "8-K": 106,
+      "PR Newswire": 3,
       "GlobeNewswire": 7,
       "prior-session gainer": 25
     },
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 139,
-    "answered": 139,
+    "requested": 138,
+    "answered": 138,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "Teladoc Health, Inc.",
       "business": "Services-Offices & Clinics of  Doctors of  Medicine",
       "sector": "Health Care",
-      "preMarketPrice": 7.83,
-      "preMarketChangePct": 13.81,
-      "prevClose": 6.87988753185133,
+      "preMarketPrice": 7.8511,
+      "preMarketChangePct": 14.11,
+      "prevClose": 6.880290947331522,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 29, 2026 7:40 AM ET",
-      "preMarketVolume": 201723.739037,
-      "preMarketDollarVolume": 1579496.87665971,
-      "relVolume": 0.04418709884982491,
+      "lastTradeAt": "Oct 29, 2026 8:00 AM ET",
+      "preMarketVolume": 213008.899037,
+      "preMarketDollarVolume": 1672354.1672293907,
+      "relVolume": 0.046659085948798064,
       "avgVolume50": 4565218,
       "sharesOutstanding": 181684021,
-      "marketCap": 1422585884.43,
+      "marketCap": 1426419417.2731,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 15,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-23"
       },
-      "floatRotation": 0.0011102998377441238,
+      "floatRotation": 0.0011724140508592113,
       "daysUp": 1,
       "priorRunPct": 3.8647342995169116,
       "extended": false,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "13.8%"
+          "detail": "14.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "201,724"
+          "detail": "213,009"
         },
         {
           "name": "News catalyst",
@@ -116,7 +116,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$7.83"
+          "detail": "$7.85"
         },
         {
           "name": "Float <10M",
@@ -130,22 +130,90 @@
   ],
   "alsoRan": [
     {
+      "symbol": "FTFT",
+      "name": "Future FinTech Group Inc.",
+      "legalName": "Future FinTech Group Inc.",
+      "business": "Services-Business Services, NEC",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 2.89,
+      "preMarketChangePct": 55.376344086021504,
+      "prevClose": 1.86,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 29, 2026 8:00 AM ET",
+      "preMarketVolume": 83234,
+      "preMarketDollarVolume": 240546.26,
+      "relVolume": 0.018933436575466922,
+      "avgVolume50": 4396138,
+      "sharesOutstanding": 32246443,
+      "marketCap": 93192220.27000001,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 268,
+      "float": {
+        "shares": 32246443,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-13"
+      },
+      "floatRotation": 0.0025811839153856444,
+      "daysUp": 1,
+      "priorRunPct": -13.488372093023248,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "55.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "83,234"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.89"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "32.2M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "MAX",
       "name": "MediaAlpha Inc. Class A",
       "legalName": "MediaAlpha, Inc.",
       "business": "Services-Business Services, NEC",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 14.2438,
-      "preMarketChangePct": 21.017841971113004,
+      "preMarketPrice": 14.5038,
+      "preMarketChangePct": 23.226847918436707,
       "prevClose": 11.77,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 29, 2026 7:40 AM ET",
-      "preMarketVolume": 15240.581125,
-      "preMarketDollarVolume": 217083.78942827502,
-      "relVolume": 0.018367611958016422,
+      "lastTradeAt": "Oct 29, 2026 8:00 AM ET",
+      "preMarketVolume": 27492.28322,
+      "preMarketDollarVolume": 398742.577366236,
+      "relVolume": 0.03313309288426797,
       "avgVolume50": 829753,
       "sharesOutstanding": 61263977.98634812,
-      "marketCap": 872631849.6419454,
+      "marketCap": 888560483.9183959,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 15,
       "float": {
@@ -153,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-29"
       },
-      "floatRotation": 0.0002487690421995804,
+      "floatRotation": 0.0004487511931746629,
       "daysUp": 0,
       "priorRunPct": -0.16963528413909734,
       "extended": false,
@@ -171,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "21.0%"
+          "detail": "23.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "15,241"
+          "detail": "27,492"
         },
         {
           "name": "News catalyst",
@@ -186,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$14.24"
+          "detail": "$14.50"
         },
         {
           "name": "Float <10M",
@@ -198,22 +266,90 @@
       "quality": "low"
     },
     {
+      "symbol": "FINW",
+      "name": "FinWise Bancorp",
+      "legalName": "Finwise Bancorp",
+      "business": "State Commercial Banks",
+      "sector": "Finance",
+      "preMarketPrice": 12.11,
+      "preMarketChangePct": 11.92,
+      "prevClose": 10.820228734810579,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 29, 2026 7:55 AM ET",
+      "preMarketVolume": 165.666666,
+      "preMarketDollarVolume": 2006.22332526,
+      "relVolume": 0.006001328237638109,
+      "avgVolume50": 27605,
+      "sharesOutstanding": 13882680,
+      "marketCap": 168119254.79999998,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 9,
+      "float": {
+        "shares": 13882680,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-07"
+      },
+      "floatRotation": 0.000011933334629912956,
+      "daysUp": 0,
+      "priorRunPct": -1.135288552507105,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "FinWise (FINW) Q3 2026 Earnings Call Transcript",
+        "subject": "Earnings or guidance",
+        "date": "2026-10-29"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "11.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "166"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$12.11"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "13.9M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "VNDA",
       "name": "Vanda Pharmaceuticals Inc.",
       "legalName": "Vanda Pharmaceuticals Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 4.45,
-      "preMarketChangePct": 11.528822055137843,
+      "preMarketPrice": 4.433,
+      "preMarketChangePct": 11.102756892230566,
       "prevClose": 3.99,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 29, 2026 7:36 AM ET",
-      "preMarketVolume": 5456.314656,
-      "preMarketDollarVolume": 24280.600219199998,
-      "relVolume": 0.0061401215754985465,
+      "lastTradeAt": "Oct 29, 2026 7:57 AM ET",
+      "preMarketVolume": 7539.314656,
+      "preMarketDollarVolume": 33421.781870048,
+      "relVolume": 0.008484171368832802,
       "avgVolume50": 888633,
       "sharesOutstanding": 60462687,
-      "marketCap": 269058957.15000004,
+      "marketCap": 268031091.471,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 41,
       "float": {
@@ -221,7 +357,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-30"
       },
-      "floatRotation": 0.00009024267571833187,
+      "floatRotation": 0.00012469367522485397,
       "daysUp": 1,
       "priorRunPct": -4.316546762589922,
       "extended": false,
@@ -239,12 +375,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "11.5%"
+          "detail": "11.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "5,456"
+          "detail": "7,539"
         },
         {
           "name": "News catalyst",
@@ -254,7 +390,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.45"
+          "detail": "$4.43"
         },
         {
           "name": "Float <10M",
@@ -266,39 +402,39 @@
       "quality": "low"
     },
     {
-      "symbol": "NVCR",
-      "name": "NovoCure Limited Ordinary Shares",
-      "legalName": "NovoCure Ltd",
-      "business": "Surgical & Medical Instruments & Apparatus",
+      "symbol": "ELAB",
+      "name": "PMGC Holdings Inc.",
+      "legalName": "PMGC Holdings Inc.",
+      "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 15.6213,
-      "preMarketChangePct": 10.24,
-      "prevClose": 14.1702648766328,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 29, 2026 7:40 AM ET",
-      "preMarketVolume": 12785.452222,
-      "preMarketDollarVolume": 199725.3847955286,
-      "relVolume": 0.008555094749759783,
-      "avgVolume50": 1494484,
-      "sharesOutstanding": 116915959,
-      "marketCap": 1826379270.3267,
+      "preMarketPrice": 2.72,
+      "preMarketChangePct": 5.426356589147292,
+      "prevClose": 2.58,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 29, 2026 7:53 AM ET",
+      "preMarketVolume": 1058,
+      "preMarketDollarVolume": 2877.76,
+      "relVolume": 0.0005915819785565512,
+      "avgVolume50": 1788425,
+      "sharesOutstanding": 8095793,
+      "marketCap": 22020556.96,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 28,
+      "bestPriorSpikePct": 249,
       "float": {
-        "shares": 116915959,
+        "shares": 8095793,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-23"
+        "asOf": "2026-08-14"
       },
-      "floatRotation": 0.00010935591968244471,
-      "daysUp": 1,
-      "priorRunPct": -6.938255887969456,
+      "floatRotation": 0.00013068515956373884,
+      "daysUp": 0,
+      "priorRunPct": -8.185053380782916,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "8-K",
-        "headline": "Earnings / results released",
-        "subject": "Earnings / results released",
-        "date": "2026-10-29"
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-10-28"
       },
       "leads": [
         "8-K"
@@ -306,13 +442,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.2%"
+          "ok": false,
+          "detail": "5.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "12,785"
+          "detail": "1,058"
         },
         {
           "name": "News catalyst",
@@ -322,15 +458,83 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$15.62"
+          "detail": "$2.72"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "8.1M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "EVMN",
+      "name": "Evommune Inc.",
+      "legalName": "Evommune, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 6.31,
+      "preMarketChangePct": 22.286821705426345,
+      "prevClose": 5.16,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 29, 2026 7:56 AM ET",
+      "preMarketVolume": 1141.903386,
+      "preMarketDollarVolume": 7205.410365659999,
+      "relVolume": 0.0017190660646917311,
+      "avgVolume50": 664258,
+      "sharesOutstanding": 36292113,
+      "marketCap": 229003233.02999997,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 71,
+      "float": {
+        "shares": 36292113,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-04"
+      },
+      "floatRotation": 0.000031464229872754995,
+      "daysUp": 2,
+      "priorRunPct": -4.0892193308550135,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "22.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "1,142"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$6.31"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "116.9M"
+          "detail": "36.3M"
         }
       ],
-      "passed": 3,
+      "passed": 2,
       "quality": "low"
     },
     {
@@ -407,17 +611,17 @@
       "legalName": "Phathom Pharmaceuticals, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 6.7894,
-      "preMarketChangePct": 8.11,
-      "prevClose": 6.280085098510776,
+      "preMarketPrice": 6.68,
+      "preMarketChangePct": 6.37,
+      "prevClose": 6.279966155871016,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 29, 2026 7:39 AM ET",
-      "preMarketVolume": 30421.162094,
-      "preMarketDollarVolume": 206541.43792100358,
-      "relVolume": 0.022367580521684402,
+      "lastTradeAt": "Oct 29, 2026 8:00 AM ET",
+      "preMarketVolume": 37910.303651,
+      "preMarketDollarVolume": 253240.82838868,
+      "relVolume": 0.02787407551674343,
       "avgVolume50": 1360056,
       "sharesOutstanding": 81291520,
-      "marketCap": 551920645.888,
+      "marketCap": 543027353.6,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 10,
       "float": {
@@ -425,7 +629,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-27"
       },
-      "floatRotation": 0.00037422306894987323,
+      "floatRotation": 0.00046635004058233874,
       "daysUp": 2,
       "priorRunPct": -18.05745554035567,
       "extended": true,
@@ -443,12 +647,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.1%"
+          "detail": "6.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "30,421"
+          "detail": "37,910"
         },
         {
           "name": "News catalyst",
@@ -458,7 +662,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.79"
+          "detail": "$6.68"
         },
         {
           "name": "Float <10M",
@@ -470,42 +674,41 @@
       "quality": "low"
     },
     {
-      "symbol": "CYCU",
-      "name": "Cycurion Inc.",
-      "legalName": "Cycurion, Inc.",
-      "business": "Services-Computer Programming Services",
-      "sector": "Technology",
-      "preMarketPrice": 2.64,
-      "preMarketChangePct": 6.02,
-      "prevClose": 2.490096208262592,
+      "symbol": "NVCR",
+      "name": "NovoCure Limited Ordinary Shares",
+      "legalName": "NovoCure Ltd",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 15.0267,
+      "preMarketChangePct": 6.05,
+      "prevClose": 14.16944837340877,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 29, 2026 7:36 AM ET",
-      "preMarketVolume": 4449,
-      "preMarketDollarVolume": 11745.36,
-      "relVolume": 0.0001985997312810379,
-      "avgVolume50": 22401843,
-      "sharesOutstanding": 25840335,
-      "marketCap": 68218484.4,
+      "lastTradeAt": "Oct 29, 2026 7:59 AM ET",
+      "preMarketVolume": 42196.392889,
+      "preMarketDollarVolume": 634072.5370251363,
+      "relVolume": 0.028234757206500708,
+      "avgVolume50": 1494484,
+      "sharesOutstanding": 116915959,
+      "marketCap": 1756861041.1053,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 68,
+      "bestPriorSpikePct": 28,
       "float": {
-        "shares": 25840335,
+        "shares": 116915959,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-10"
+        "asOf": "2026-10-23"
       },
-      "floatRotation": 0.00017217269048563032,
-      "daysUp": 3,
-      "priorRunPct": 6.018518518518514,
-      "extended": true,
+      "floatRotation": 0.000360912173581025,
+      "daysUp": 1,
+      "priorRunPct": -6.938255887969456,
+      "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Executive or board change",
-        "subject": "Executive or board change",
-        "date": "2026-10-26"
+        "kind": "news",
+        "headline": "NovoCure Q3 Loss Decreases ",
+        "subject": null,
+        "date": "2026-10-29"
       },
       "leads": [
-        "8-K",
         "8-K"
       ],
       "checks": [
@@ -517,22 +720,22 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "4,449"
+          "detail": "42,196"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.64"
+          "detail": "$15.03"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "25.8M"
+          "detail": "116.9M"
         }
       ],
       "passed": 2,
@@ -604,74 +807,6 @@
         }
       ],
       "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "RNAZ",
-      "name": "TransCode Therapeutics Inc.",
-      "legalName": "Transcode Therapeutics, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 1.84,
-      "preMarketChangePct": 5.75,
-      "prevClose": 1.7399527186761228,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 29, 2026 7:00 AM ET",
-      "preMarketVolume": 355,
-      "preMarketDollarVolume": 653.2,
-      "relVolume": 0.007014008258747753,
-      "avgVolume50": 50613,
-      "sharesOutstanding": 16930739,
-      "marketCap": 31152559.76,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 25,
-      "float": {
-        "shares": 16930739,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-10"
-      },
-      "floatRotation": 0.000020967779374544727,
-      "daysUp": 0,
-      "priorRunPct": -0.5952380952380958,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "TransCode Therapeutics, Inc. Initiates Strategic Process to Maximize Value of TTX-MC138 and Oncology Portfolio",
-        "subject": null,
-        "date": "2026-10-29"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.8%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "355"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.84"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "16.9M"
-        }
-      ],
-      "passed": 1,
       "quality": "low"
     }
   ]
