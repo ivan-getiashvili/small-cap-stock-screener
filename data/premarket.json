@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-29T12:20:34.534Z",
+  "generatedAt": "2026-10-29T12:40:35.670Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-28",
   "universeChecked": 6003,
   "smallCapsInBand": 2904,
-  "investigated": 146,
-  "liveQuotes": 93,
+  "investigated": 150,
+  "liveQuotes": 101,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-28T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 410,
+    "edgarFilings": 426,
     "leads": {
-      "8-K": 113,
-      "PR Newswire": 1,
-      "GlobeNewswire": 8,
+      "8-K": 115,
+      "PR Newswire": 3,
+      "GlobeNewswire": 11,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 146,
-    "answered": 146,
+    "requested": 150,
+    "answered": 150,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,92 +60,22 @@
   "shortlist": [],
   "watchlist": [
     {
-      "symbol": "TDOC",
-      "name": "Teladoc Health Inc.",
-      "legalName": "Teladoc Health, Inc.",
-      "business": "Services-Offices & Clinics of  Doctors of  Medicine",
-      "sector": "Health Care",
-      "preMarketPrice": 7.78,
-      "preMarketChangePct": 13.08,
-      "prevClose": 6.880084895649098,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 29, 2026 8:19 AM ET",
-      "preMarketVolume": 222185.33962,
-      "preMarketDollarVolume": 1728601.9422436003,
-      "relVolume": 0.04866916314182587,
-      "avgVolume50": 4565218,
-      "sharesOutstanding": 181684021,
-      "marketCap": 1413501683.38,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 15,
-      "float": {
-        "shares": 181684021,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-23"
-      },
-      "floatRotation": 0.0012229217429088055,
-      "daysUp": 1,
-      "priorRunPct": 3.8647342995169116,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Cathie Wood Is Buying Archer Aviation Stock. Here's What History Says About Following Ark Into a Stock Down 62%.",
-        "subject": null,
-        "date": "2026-10-29"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "13.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "222,185"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$7.78"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "181.7M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
-  "alsoRan": [
-    {
       "symbol": "MAX",
       "name": "MediaAlpha Inc. Class A",
       "legalName": "MediaAlpha, Inc.",
       "business": "Services-Business Services, NEC",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 14.71,
-      "preMarketChangePct": 24.978759558198824,
+      "preMarketPrice": 13.9128,
+      "preMarketChangePct": 18.205607476635524,
       "prevClose": 11.77,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 29, 2026 8:20 AM ET",
-      "preMarketVolume": 38902.612513,
-      "preMarketDollarVolume": 572257.43006623,
-      "relVolume": 0.04688456988163948,
+      "lastTradeAt": "Oct 29, 2026 8:38 AM ET",
+      "preMarketVolume": 72088.241468,
+      "preMarketDollarVolume": 1002949.2858959903,
+      "relVolume": 0.0868791573733388,
       "avgVolume50": 829753,
       "sharesOutstanding": 61263977.98634812,
-      "marketCap": 901193116.179181,
+      "marketCap": 852353472.9284642,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 15,
       "float": {
@@ -153,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-29"
       },
-      "floatRotation": 0.0006349997795061388,
+      "floatRotation": 0.0011766823480522913,
       "daysUp": 0,
       "priorRunPct": -0.16963528413909734,
       "extended": false,
@@ -171,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "25.0%"
+          "detail": "18.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "38,903"
+          "ok": true,
+          "detail": "72,088"
         },
         {
           "name": "News catalyst",
@@ -186,7 +116,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$14.71"
+          "detail": "$13.91"
         },
         {
           "name": "Float <10M",
@@ -194,26 +124,96 @@
           "detail": "61.3M"
         }
       ],
-      "passed": 3,
-      "quality": "low"
+      "passed": 4,
+      "quality": "medium"
     },
+    {
+      "symbol": "TDOC",
+      "name": "Teladoc Health Inc.",
+      "legalName": "Teladoc Health, Inc.",
+      "business": "Services-Offices & Clinics of  Doctors of  Medicine",
+      "sector": "Health Care",
+      "preMarketPrice": 7.7499,
+      "preMarketChangePct": 12.64,
+      "prevClose": 6.880237926136363,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 29, 2026 8:40 AM ET",
+      "preMarketVolume": 241561.410962,
+      "preMarketDollarVolume": 1872076.7788144038,
+      "relVolume": 0.05291344486988354,
+      "avgVolume50": 4565218,
+      "sharesOutstanding": 181684021,
+      "marketCap": 1408032994.3479002,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 15,
+      "float": {
+        "shares": 181684021,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-23"
+      },
+      "floatRotation": 0.001329568828521249,
+      "daysUp": 1,
+      "priorRunPct": 3.8647342995169116,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Cathie Wood Is Buying Archer Aviation Stock. Here's What History Says About Following Ark Into a Stock Down 62%.",
+        "subject": null,
+        "date": "2026-10-29"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "12.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "241,561"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$7.75"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "181.7M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
+  "alsoRan": [
     {
       "symbol": "PWP",
       "name": "Perella Weinberg Partners Class A",
       "legalName": "Perella Weinberg Partners",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 14.6717,
-      "preMarketChangePct": 14.89193422083007,
+      "preMarketPrice": 14.5,
+      "preMarketChangePct": 13.547376664056385,
       "prevClose": 12.77,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 29, 2026 7:55 AM ET",
-      "preMarketVolume": 843.211041,
-      "preMarketDollarVolume": 12371.3394302397,
-      "relVolume": 0.000786150654215715,
+      "lastTradeAt": "Oct 29, 2026 8:39 AM ET",
+      "preMarketVolume": 2163.488035,
+      "preMarketDollarVolume": 31370.576507499998,
+      "relVolume": 0.0020170840411269254,
       "avgVolume50": 1072582,
       "sharesOutstanding": 97311325.9659969,
-      "marketCap": 1427722581.1753168,
+      "marketCap": 1411014226.5069551,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 18,
       "float": {
@@ -221,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-29"
       },
-      "floatRotation": 0.000008665086336349376,
+      "floatRotation": 0.00002223264366735665,
       "daysUp": 2,
       "priorRunPct": 0.3930817610062809,
       "extended": true,
@@ -239,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "14.9%"
+          "detail": "13.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "843"
+          "detail": "2,163"
         },
         {
           "name": "News catalyst",
@@ -254,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$14.67"
+          "detail": "$14.50"
         },
         {
           "name": "Float <10M",
@@ -334,90 +334,22 @@
       "quality": "low"
     },
     {
-      "symbol": "VNDA",
-      "name": "Vanda Pharmaceuticals Inc.",
-      "legalName": "Vanda Pharmaceuticals Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 4.45,
-      "preMarketChangePct": 11.528822055137843,
-      "prevClose": 3.99,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 29, 2026 8:16 AM ET",
-      "preMarketVolume": 9560.314656,
-      "preMarketDollarVolume": 42543.400219200004,
-      "relVolume": 0.010758451077103822,
-      "avgVolume50": 888633,
-      "sharesOutstanding": 60469687,
-      "marketCap": 269090107.15000004,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 41,
-      "float": {
-        "shares": 60469687,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-22"
-      },
-      "floatRotation": 0.00015810094495776042,
-      "daysUp": 1,
-      "priorRunPct": -4.316546762589922,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Vanda (VNDA) Q3 2026 Earnings Call Transcript",
-        "subject": "FDA / clinical",
-        "date": "2026-10-29"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "11.5%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "9,560"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.45"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "60.5M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "OPEN",
       "name": "Opendoor Technologies Inc",
       "legalName": "Opendoor Technologies Inc.",
       "business": "Real Estate Agents & Managers (For Others)",
       "sector": "Finance",
-      "preMarketPrice": 2.04,
-      "preMarketChangePct": 6.806282722513095,
+      "preMarketPrice": 2.03,
+      "preMarketChangePct": 6.282722513088999,
       "prevClose": 1.91,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 29, 2026 8:20 AM ET",
-      "preMarketVolume": 2468742.86764,
-      "preMarketDollarVolume": 5036235.4499856,
-      "relVolume": 0.045364046030725,
+      "lastTradeAt": "Oct 29, 2026 8:40 AM ET",
+      "preMarketVolume": 3002709.95149,
+      "preMarketDollarVolume": 6095501.201524699,
+      "relVolume": 0.05517588495821093,
       "avgVolume50": 54420694,
       "sharesOutstanding": 971091050,
-      "marketCap": 1981025742,
+      "marketCap": 1971314831.4999998,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 21,
       "float": {
@@ -425,7 +357,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-28"
       },
-      "floatRotation": 0.002542236248228217,
+      "floatRotation": 0.003092099295416223,
       "daysUp": 0,
       "priorRunPct": -7.281553398058259,
       "extended": false,
@@ -443,12 +375,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.8%"
+          "detail": "6.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "2,468,743"
+          "detail": "3,002,710"
         },
         {
           "name": "News catalyst",
@@ -458,7 +390,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.04"
+          "detail": "$2.03"
         },
         {
           "name": "Float <10M",
@@ -538,68 +470,68 @@
       "quality": "low"
     },
     {
-      "symbol": "BESS",
-      "name": "Bimergen Energy Corporation",
-      "legalName": "Bimergen Energy Corp",
-      "business": "Electric Services",
-      "sector": "Utilities",
-      "preMarketPrice": 2.33,
-      "preMarketChangePct": 9.91,
-      "prevClose": 2.1199162951505777,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 29, 2026 8:16 AM ET",
-      "preMarketVolume": 1304,
-      "preMarketDollarVolume": 3038.32,
-      "relVolume": 0.015465629299302624,
-      "avgVolume50": 84316,
-      "sharesOutstanding": 7097573,
-      "marketCap": 16537345.09,
+      "symbol": "VNDA",
+      "name": "Vanda Pharmaceuticals Inc.",
+      "legalName": "Vanda Pharmaceuticals Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 4.35,
+      "preMarketChangePct": 9.02255639097743,
+      "prevClose": 3.99,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 29, 2026 8:38 AM ET",
+      "preMarketVolume": 10055.314656,
+      "preMarketDollarVolume": 43740.6187536,
+      "relVolume": 0.011315486433657089,
+      "avgVolume50": 888633,
+      "sharesOutstanding": 60469687,
+      "marketCap": 263043138.45,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 40,
+      "bestPriorSpikePct": 41,
       "float": {
-        "shares": 7097573,
+        "shares": 60469687,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-14"
+        "asOf": "2026-10-22"
       },
-      "floatRotation": 0.00018372477465184226,
+      "floatRotation": 0.00016628686462359231,
       "daysUp": 1,
-      "priorRunPct": -7.7319587628865944,
+      "priorRunPct": -4.316546762589922,
       "extended": false,
       "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
+        "found": true,
+        "kind": "news",
+        "headline": "Vanda (VNDA) Q3 2026 Earnings Call Transcript",
+        "subject": "FDA / clinical",
+        "date": "2026-10-29"
       },
       "leads": [
-        "prior-session gainer"
+        "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.9%"
+          "detail": "9.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "1,304"
+          "detail": "10,055"
         },
         {
           "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
+          "ok": true,
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.33"
+          "detail": "$4.35"
         },
         {
           "name": "Float <10M",
-          "ok": true,
-          "detail": "7.1M"
+          "ok": false,
+          "detail": "60.5M"
         }
       ],
       "passed": 2,
@@ -611,17 +543,17 @@
       "legalName": "Phathom Pharmaceuticals, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 6.89,
-      "preMarketChangePct": 9.71,
-      "prevClose": 6.280193236714976,
+      "preMarketPrice": 6.6686,
+      "preMarketChangePct": 6.19,
+      "prevClose": 6.27987569450984,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 29, 2026 8:11 AM ET",
-      "preMarketVolume": 38992.303651,
-      "preMarketDollarVolume": 268656.97215539,
-      "relVolume": 0.02866963099387084,
+      "lastTradeAt": "Oct 29, 2026 8:35 AM ET",
+      "preMarketVolume": 40732.303651,
+      "preMarketDollarVolume": 271627.4401270586,
+      "relVolume": 0.02994899007908498,
       "avgVolume50": 1360056,
       "sharesOutstanding": 81291520,
-      "marketCap": 560098572.8,
+      "marketCap": 542100630.272,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 10,
       "float": {
@@ -629,7 +561,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-27"
       },
-      "floatRotation": 0.00047966016198245525,
+      "floatRotation": 0.000501064608596321,
       "daysUp": 2,
       "priorRunPct": -18.05745554035567,
       "extended": true,
@@ -647,12 +579,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.7%"
+          "detail": "6.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "38,992"
+          "detail": "40,732"
         },
         {
           "name": "News catalyst",
@@ -662,7 +594,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.89"
+          "detail": "$6.67"
         },
         {
           "name": "Float <10M",
@@ -679,17 +611,17 @@
       "legalName": "Cycurion, Inc.",
       "business": "Services-Computer Programming Services",
       "sector": "Technology",
-      "preMarketPrice": 2.65,
-      "preMarketChangePct": 6.43,
-      "prevClose": 2.4898994644367187,
+      "preMarketPrice": 2.62,
+      "preMarketChangePct": 5.22,
+      "prevClose": 2.490020908572515,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 29, 2026 8:18 AM ET",
-      "preMarketVolume": 5689,
-      "preMarketDollarVolume": 15075.85,
-      "relVolume": 0.0002539523199051078,
+      "lastTradeAt": "Oct 29, 2026 8:40 AM ET",
+      "preMarketVolume": 5828,
+      "preMarketDollarVolume": 15269.36,
+      "relVolume": 0.00026015716653312855,
       "avgVolume50": 22401843,
       "sharesOutstanding": 25840335,
-      "marketCap": 68476887.75,
+      "marketCap": 67701677.7,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 68,
       "float": {
@@ -697,7 +629,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.0002201596844622951,
+      "floatRotation": 0.00022553887169032445,
       "daysUp": 3,
       "priorRunPct": 6.018518518518514,
       "extended": true,
@@ -716,12 +648,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.4%"
+          "detail": "5.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "5,689"
+          "detail": "5,828"
         },
         {
           "name": "News catalyst",
@@ -731,7 +663,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.65"
+          "detail": "$2.62"
         },
         {
           "name": "Float <10M",
