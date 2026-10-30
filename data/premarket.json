@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-29T13:20:35.652Z",
-  "marketStatus": "After Hours",
-  "prevSession": "2026-10-28",
-  "universeChecked": 6003,
-  "smallCapsInBand": 2904,
-  "investigated": 150,
-  "liveQuotes": 102,
-  "feedIsLive": true,
+  "generatedAt": "2026-10-30T16:58:44.765Z",
+  "marketStatus": "Market Open",
+  "prevSession": "2026-10-29",
+  "universeChecked": 5990,
+  "smallCapsInBand": 2910,
+  "investigated": 117,
+  "liveQuotes": 115,
+  "feedIsLive": false,
   "discovery": {
-    "since": "2026-10-28T19:30:00.000Z",
+    "since": "2026-10-29T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 448,
+    "edgarFilings": 370,
     "leads": {
-      "8-K": 125,
-      "PR Newswire": 5,
-      "GlobeNewswire": 9,
-      "prior-session gainer": 25
+      "8-K": 96,
+      "PR Newswire": 1,
+      "GlobeNewswire": 0,
+      "prior-session gainer": 22
     },
     "feeds": [
       {
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 150,
-    "answered": 150,
+    "requested": 117,
+    "answered": 117,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,39 +60,39 @@
   "shortlist": [],
   "watchlist": [
     {
-      "symbol": "MAX",
-      "name": "MediaAlpha Inc. Class A",
-      "legalName": "MediaAlpha, Inc.",
-      "business": "Services-Business Services, NEC",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 13.7181,
-      "preMarketChangePct": 16.55140186915888,
-      "prevClose": 11.77,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 29, 2026 9:20 AM ET",
-      "preMarketVolume": 79855.465505,
-      "preMarketDollarVolume": 1095465.2613441404,
-      "relVolume": 0.09624004433247002,
-      "avgVolume50": 829753,
-      "sharesOutstanding": 61263977.98634812,
-      "marketCap": 840425376.4145222,
+      "symbol": "GDYN",
+      "name": "Grid Dynamics Holdings Inc. Class A",
+      "legalName": "GRID DYNAMICS HOLDINGS, INC.",
+      "business": "Services-Prepackaged Software",
+      "sector": "Technology",
+      "preMarketPrice": 12.805,
+      "preMarketChangePct": 34.93,
+      "prevClose": 9.490105980878974,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 30, 2026 12:59 PM ET",
+      "preMarketVolume": 4191980.735594,
+      "preMarketDollarVolume": 53678313.31928117,
+      "relVolume": 2.6767073893260696,
+      "avgVolume50": 1566096,
+      "sharesOutstanding": 80370132,
+      "marketCap": 1029139540.26,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 15,
+      "bestPriorSpikePct": 23,
       "float": {
-        "shares": 61263977.98634812,
+        "shares": 80370132,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-29"
+        "asOf": "2026-10-23"
       },
-      "floatRotation": 0.0013034652356853933,
-      "daysUp": 0,
-      "priorRunPct": -0.16963528413909734,
-      "extended": false,
+      "floatRotation": 0.05215844034689405,
+      "daysUp": 2,
+      "priorRunPct": 4.790419161676651,
+      "extended": true,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "MediaAlpha (MAX) Q3 2026 Earnings Call Transcript",
+        "headline": "Grid Dynamics (GDYN) Q3 2026 Earnings Call Transcript",
         "subject": "Earnings or guidance",
-        "date": "2026-10-29"
+        "date": "2026-10-30"
       },
       "leads": [
         "8-K"
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "16.6%"
+          "detail": "34.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "79,855"
+          "detail": "4,191,981"
         },
         {
           "name": "News catalyst",
@@ -116,189 +116,51 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$13.72"
+          "detail": "$12.80"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "61.3M"
+          "detail": "80.4M"
         }
       ],
       "passed": 4,
       "quality": "medium"
     },
     {
-      "symbol": "TDOC",
-      "name": "Teladoc Health Inc.",
-      "legalName": "Teladoc Health, Inc.",
-      "business": "Services-Offices & Clinics of  Doctors of  Medicine",
-      "sector": "Health Care",
-      "preMarketPrice": 7.85,
-      "preMarketChangePct": 14.1,
-      "prevClose": 6.879929886064855,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 29, 2026 9:20 AM ET",
-      "preMarketVolume": 316577.141456,
-      "preMarketDollarVolume": 2485130.5604295996,
-      "relVolume": 0.06934545983477677,
-      "avgVolume50": 4565218,
-      "sharesOutstanding": 181684021,
-      "marketCap": 1426219564.85,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 15,
-      "float": {
-        "shares": 181684021,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-23"
-      },
-      "floatRotation": 0.0017424600122429037,
-      "daysUp": 1,
-      "priorRunPct": 3.8647342995169116,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Cathie Wood Is Buying Archer Aviation Stock. Here's What History Says About Following Ark Into a Stock Down 62%.",
-        "subject": null,
-        "date": "2026-10-29"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "14.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "316,577"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$7.85"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "181.7M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
-  "alsoRan": [
-    {
-      "symbol": "PWP",
-      "name": "Perella Weinberg Partners Class A",
-      "legalName": "Perella Weinberg Partners",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 14.44,
-      "preMarketChangePct": 13.07752545027408,
-      "prevClose": 12.77,
+      "symbol": "ASUR",
+      "name": "Asure Software Inc",
+      "legalName": "ASURE SOFTWARE INC",
+      "business": "Services-Computer Integrated Systems Design",
+      "sector": "Technology",
+      "preMarketPrice": 9.3901,
+      "preMarketChangePct": 29.87690179806362,
+      "prevClose": 7.23,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 29, 2026 8:48 AM ET",
-      "preMarketVolume": 2374.488035,
-      "preMarketDollarVolume": 34287.607225399996,
-      "relVolume": 0.002213805597147817,
-      "avgVolume50": 1072582,
-      "sharesOutstanding": 97311325.9659969,
-      "marketCap": 1405175546.9489954,
+      "lastTradeAt": "Oct 30, 2026 12:58 PM ET",
+      "preMarketVolume": 1212191.045846,
+      "preMarketDollarVolume": 11382595.139598526,
+      "relVolume": 11.641131718486507,
+      "avgVolume50": 104130,
+      "sharesOutstanding": 30169748,
+      "marketCap": 283296950.6948,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 18,
       "float": {
-        "shares": 97311325.9659969,
+        "shares": 30169748,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-29"
+        "asOf": "2026-10-28"
       },
-      "floatRotation": 0.000024400942145518675,
-      "daysUp": 2,
-      "priorRunPct": 0.3930817610062809,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released",
-        "subject": "Earnings / results released",
-        "date": "2026-10-29"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "13.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "2,374"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$14.44"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "97.3M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "FINW",
-      "name": "FinWise Bancorp",
-      "legalName": "Finwise Bancorp",
-      "business": "State Commercial Banks",
-      "sector": "Finance",
-      "preMarketPrice": 12.11,
-      "preMarketChangePct": 11.92,
-      "prevClose": 10.820228734810579,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 29, 2026 7:55 AM ET",
-      "preMarketVolume": 165.666666,
-      "preMarketDollarVolume": 2006.22332526,
-      "relVolume": 0.006001328237638109,
-      "avgVolume50": 27605,
-      "sharesOutstanding": 13882680,
-      "marketCap": 168119254.79999998,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 9,
-      "float": {
-        "shares": 13882680,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-07"
-      },
-      "floatRotation": 0.000011933334629912956,
+      "floatRotation": 0.04017902455950245,
       "daysUp": 0,
-      "priorRunPct": -1.135288552507105,
+      "priorRunPct": 2.4079320113314564,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "FinWise (FINW) Q3 2026 Earnings Call Transcript",
+        "headline": "Asure (ASUR) Q3 2026 Earnings Call Transcript",
         "subject": "Earnings or guidance",
-        "date": "2026-10-29"
+        "date": "2026-10-30"
       },
       "leads": [
         "8-K"
@@ -307,12 +169,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "11.9%"
+          "detail": "29.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "166"
+          "ok": true,
+          "detail": "1,212,191"
         },
         {
           "name": "News catalyst",
@@ -322,323 +184,254 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$12.11"
+          "detail": "$9.39"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "13.9M"
+          "detail": "30.2M"
         }
       ],
-      "passed": 3,
-      "quality": "low"
+      "passed": 4,
+      "quality": "medium"
     },
     {
-      "symbol": "CYCU",
-      "name": "Cycurion Inc.",
-      "legalName": "Cycurion, Inc.",
-      "business": "Services-Computer Programming Services",
-      "sector": "Technology",
-      "preMarketPrice": 2.75,
-      "preMarketChangePct": 10.44,
-      "prevClose": 2.49003984063745,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 29, 2026 9:20 AM ET",
-      "preMarketVolume": 7959,
-      "preMarketDollarVolume": 21887.25,
-      "relVolume": 0.0003552832684346551,
-      "avgVolume50": 22401843,
-      "sharesOutstanding": 25840335,
-      "marketCap": 71060921.25,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 68,
-      "float": {
-        "shares": 25840335,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-10"
-      },
-      "floatRotation": 0.0003080068427905443,
-      "daysUp": 3,
-      "priorRunPct": 6.018518518518514,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Executive or board change",
-        "subject": "Executive or board change",
-        "date": "2026-10-26"
-      },
-      "leads": [
-        "8-K",
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.4%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "7,959"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.75"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "25.8M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "OPEN",
-      "name": "Opendoor Technologies Inc",
-      "legalName": "Opendoor Technologies Inc.",
-      "business": "Real Estate Agents & Managers (For Others)",
-      "sector": "Finance",
-      "preMarketPrice": 2.0291,
-      "preMarketChangePct": 6.235602094240849,
-      "prevClose": 1.91,
+      "symbol": "RMNI",
+      "name": "Rimini Street Inc. (DE)",
+      "legalName": "Rimini Street, Inc.",
+      "business": "Services-Business Services, NEC",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 5.0802,
+      "preMarketChangePct": 26.21614906832296,
+      "prevClose": 4.025,
       "closeReconciled": false,
-      "lastTradeAt": "Oct 29, 2026 9:20 AM ET",
-      "preMarketVolume": 4096225.717842,
-      "preMarketDollarVolume": 8311651.604073203,
-      "relVolume": 0.075269633971261,
-      "avgVolume50": 54420694,
-      "sharesOutstanding": 971091050,
-      "marketCap": 1970440849.555,
+      "lastTradeAt": "Oct 30, 2026 12:59 PM ET",
+      "preMarketVolume": 917606.333333,
+      "preMarketDollarVolume": 4661623.694598306,
+      "relVolume": 2.189505272894083,
+      "avgVolume50": 419093,
+      "sharesOutstanding": 92696000,
+      "marketCap": 470914219.2,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 21,
       "float": {
-        "shares": 971091050,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-28"
-      },
-      "floatRotation": 0.004218168541293837,
-      "daysUp": 0,
-      "priorRunPct": -7.281553398058259,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Executive or board change · Regulation FD disclosure (company announcement)",
-        "subject": "Executive or board change · Regulation FD disclosure (company announcement)",
-        "date": "2026-10-29"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "4,096,226"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.03"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "971.1M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "MODD",
-      "name": "Modular Medical Inc.",
-      "legalName": "Modular Medical, Inc.",
-      "business": "Surgical & Medical Instruments & Apparatus",
-      "sector": "Health Care",
-      "preMarketPrice": 2.03,
-      "preMarketChangePct": 5.73,
-      "prevClose": 1.9199848671143478,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 29, 2026 9:16 AM ET",
-      "preMarketVolume": 313,
-      "preMarketDollarVolume": 635.39,
-      "relVolume": 0.0009786724448988652,
-      "avgVolume50": 319821,
-      "sharesOutstanding": 8150823,
-      "marketCap": 16546170.689999998,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 33,
-      "float": {
-        "shares": 8150823,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-14"
-      },
-      "floatRotation": 0.000038401030178179556,
-      "daysUp": 0,
-      "priorRunPct": -15.384615384615389,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Modular Medical, Inc. Reports Resignation of Duane DeSisto and Results of Fiscal 2027 Annual Meeting",
-        "subject": "Earnings or guidance",
-        "date": "2026-10-28"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "313"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.03"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "8.2M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "VNDA",
-      "name": "Vanda Pharmaceuticals Inc.",
-      "legalName": "Vanda Pharmaceuticals Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 4.37,
-      "preMarketChangePct": 9.52380952380952,
-      "prevClose": 3.99,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 29, 2026 9:20 AM ET",
-      "preMarketVolume": 11295.314656,
-      "preMarketDollarVolume": 49360.52504672,
-      "relVolume": 0.012710888134921841,
-      "avgVolume50": 888633,
-      "sharesOutstanding": 60469687,
-      "marketCap": 264252532.19,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 41,
-      "float": {
-        "shares": 60469687,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-22"
-      },
-      "floatRotation": 0.0001867930068167874,
-      "daysUp": 1,
-      "priorRunPct": -4.316546762589922,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Vanda (VNDA) Q3 2026 Earnings Call Transcript",
-        "subject": "FDA / clinical",
-        "date": "2026-10-29"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.5%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "11,295"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.37"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "60.5M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "PHAT",
-      "name": "Phathom Pharmaceuticals Inc.",
-      "legalName": "Phathom Pharmaceuticals, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 6.67,
-      "preMarketChangePct": 6.21,
-      "prevClose": 6.280011298371151,
-      "closeReconciled": true,
-      "lastTradeAt": "Oct 29, 2026 8:56 AM ET",
-      "preMarketVolume": 41289.303651,
-      "preMarketDollarVolume": 275399.65535217,
-      "relVolume": 0.03035853203912192,
-      "avgVolume50": 1360056,
-      "sharesOutstanding": 81291520,
-      "marketCap": 542214438.4,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 10,
-      "float": {
-        "shares": 81291520,
+        "shares": 92696000,
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-27"
       },
-      "floatRotation": 0.000507916491793978,
+      "floatRotation": 0.009899093092830326,
+      "daysUp": 1,
+      "priorRunPct": -2.542372881355921,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Rimini Street (RMNI) Q3 2026 Earnings Call Transcript",
+        "subject": "Earnings or guidance",
+        "date": "2026-10-30"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "26.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "917,606"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.08"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "92.7M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "FMC",
+      "name": "FMC Corporation",
+      "legalName": "FMC CORP",
+      "business": "Chemicals & Allied Products",
+      "sector": "Industrials",
+      "preMarketPrice": 5.865,
+      "preMarketChangePct": 23.47,
+      "prevClose": 4.750141734834373,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 30, 2026 12:58 PM ET",
+      "preMarketVolume": 8049961.045784,
+      "preMarketDollarVolume": 47213021.533523165,
+      "relVolume": 2.3105759291312795,
+      "avgVolume50": 3483963,
+      "sharesOutstanding": 125226839,
+      "marketCap": 734455410.735,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 18,
+      "float": {
+        "shares": 125226839,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-06-30"
+      },
+      "floatRotation": 0.0642830331745737,
+      "daysUp": 0,
+      "priorRunPct": -11.133200795228637,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "FMC Q3 Earnings Miss on Channel Pricing Actions, Sales Beat",
+        "subject": "Earnings or guidance",
+        "date": "2026-10-30"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "23.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "8,049,961"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.87"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "125.2M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "ACCO",
+      "name": "Acco Brands Corporation",
+      "legalName": "ACCO BRANDS Corp",
+      "business": "Blankbooks, Looseleaf Binders & Bookbindg & Relatd Work",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 5.31,
+      "preMarketChangePct": 21.23287671232876,
+      "prevClose": 4.38,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 30, 2026 12:58 PM ET",
+      "preMarketVolume": 2503245.70727,
+      "preMarketDollarVolume": 13292234.7056037,
+      "relVolume": 3.684120551886841,
+      "avgVolume50": 679469,
+      "sharesOutstanding": 92341513,
+      "marketCap": 490333434.03,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 23,
+      "float": {
+        "shares": 92341513,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-23"
+      },
+      "floatRotation": 0.027108562833164755,
+      "daysUp": 0,
+      "priorRunPct": -3.3112582781457034,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "ACCO Brands Corporation Reports Third Quarter 2026 Results and Closes Trust Acquisition",
+        "subject": "Merger or acquisition",
+        "date": "2026-10-30"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "21.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "2,503,246"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.31"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "92.3M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "NFE",
+      "name": "New Fortress Energy Inc. Class A",
+      "legalName": "New Fortress Energy Inc.",
+      "business": "Natural Gas Distribution",
+      "sector": "Utilities",
+      "preMarketPrice": 4.4082,
+      "preMarketChangePct": 16.31,
+      "prevClose": 3.7900438483363423,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 30, 2026 12:58 PM ET",
+      "preMarketVolume": 1007680.197205,
+      "preMarketDollarVolume": 4442055.845319081,
+      "relVolume": 0.4132002788367345,
+      "avgVolume50": 2438721,
+      "sharesOutstanding": 285634650,
+      "marketCap": 1259134664.1299999,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 45,
+      "float": {
+        "shares": 285634650,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-31"
+      },
+      "floatRotation": 0.003527863994109258,
       "daysUp": 2,
-      "priorRunPct": -18.05745554035567,
+      "priorRunPct": -2.659574468085097,
       "extended": true,
       "catalyst": {
         "found": true,
         "kind": "8-K",
-        "headline": "Earnings / results released",
-        "subject": "Earnings / results released",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
         "date": "2026-10-29"
       },
       "leads": [
@@ -647,13 +440,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.2%"
+          "ok": true,
+          "detail": "16.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "41,289"
+          "ok": true,
+          "detail": "1,007,680"
         },
         {
           "name": "News catalyst",
@@ -663,51 +456,51 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.67"
+          "detail": "$4.41"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "81.3M"
+          "detail": "285.6M"
         }
       ],
-      "passed": 2,
-      "quality": "low"
+      "passed": 4,
+      "quality": "medium"
     },
     {
-      "symbol": "GNSS",
-      "name": "Genasys Inc.",
-      "legalName": "Genasys Inc.",
-      "business": "Household Audio & Video Equipment",
-      "sector": "Consumer Staples",
-      "preMarketPrice": 1.69,
-      "preMarketChangePct": 5.62,
-      "prevClose": 1.6000757432304487,
+      "symbol": "CPRI",
+      "name": "Capri Holdings Limited Ordinary Shares",
+      "legalName": "Capri Holdings Ltd",
+      "business": "Leather & Leather Products",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 18.525,
+      "preMarketChangePct": 15.35,
+      "prevClose": 16.059817945383614,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 29, 2026 9:20 AM ET",
-      "preMarketVolume": 228480,
-      "preMarketDollarVolume": 386131.2,
-      "relVolume": 2.426250398215992,
-      "avgVolume50": 94170,
-      "sharesOutstanding": 45542009,
-      "marketCap": 76965995.21,
+      "lastTradeAt": "Oct 30, 2026 12:58 PM ET",
+      "preMarketVolume": 5375898.794441,
+      "preMarketDollarVolume": 99588525.16701952,
+      "relVolume": 1.3238038986071725,
+      "avgVolume50": 4060948,
+      "sharesOutstanding": 103349705,
+      "marketCap": 1914553285.1249998,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 13,
+      "bestPriorSpikePct": 9,
       "float": {
-        "shares": 45542009,
+        "shares": 103349705,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-07"
+        "asOf": "2026-10-27"
       },
-      "floatRotation": 0.005016906478587714,
-      "daysUp": 4,
-      "priorRunPct": 23.308270676691713,
-      "extended": true,
+      "floatRotation": 0.052016585770041625,
+      "daysUp": 0,
+      "priorRunPct": -2.6114649681528674,
+      "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Genasys Inc. Repays $4.3 million Unsecured Term Loan from Maran Partners Fund, LP",
-        "subject": null,
-        "date": "2026-10-28"
+        "headline": "Capri Holdings (CPRI) Reports Q2 Earnings: What Key Metrics Have to Say",
+        "subject": "Earnings or guidance",
+        "date": "2026-10-30"
       },
       "leads": [
         "8-K"
@@ -715,81 +508,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.6%"
+          "ok": true,
+          "detail": "15.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "228,480"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.69"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "45.5M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "TROX",
-      "name": "Tronox Holdings plc Ordinary Shares (UK)",
-      "legalName": "Tronox Holdings plc",
-      "business": "Industrial Inorganic Chemicals",
-      "sector": "Basic Materials",
-      "preMarketPrice": 3.8751,
-      "preMarketChangePct": 5.30163043478261,
-      "prevClose": 3.68,
-      "closeReconciled": false,
-      "lastTradeAt": "Oct 29, 2026 9:17 AM ET",
-      "preMarketVolume": 268,
-      "preMarketDollarVolume": 1038.5268,
-      "relVolume": 0.000106079545409566,
-      "avgVolume50": 2526406,
-      "sharesOutstanding": 159700029,
-      "marketCap": 618853582.3779,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 26,
-      "float": {
-        "shares": 159700029,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-20"
-      },
-      "floatRotation": 0.0000016781462199984949,
-      "daysUp": 2,
-      "priorRunPct": 8.554572271386432,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Tronox Holdings plc Appoints Yasser Al-Daajani to Board of Directors",
-        "subject": null,
-        "date": "2026-10-29"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "268"
+          "detail": "5,375,899"
         },
         {
           "name": "News catalyst",
@@ -799,45 +524,45 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.88"
+          "detail": "$18.52"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "159.7M"
+          "detail": "103.3M"
         }
       ],
-      "passed": 2,
-      "quality": "low"
+      "passed": 4,
+      "quality": "medium"
     },
     {
-      "symbol": "CALC",
-      "name": "CalciMedica Inc.",
-      "legalName": "CalciMedica, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 1.7914,
-      "preMarketChangePct": 7.92,
-      "prevClose": 1.6599332839140106,
+      "symbol": "NCPL",
+      "name": "Netcapital Inc.",
+      "legalName": "Netcapital Inc.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 2.0208,
+      "preMarketChangePct": 13.53,
+      "prevClose": 1.7799700519686426,
       "closeReconciled": true,
-      "lastTradeAt": "Oct 29, 2026 9:20 AM ET",
-      "preMarketVolume": 9389,
-      "preMarketDollarVolume": 16819.4546,
-      "relVolume": 0.030058554794674043,
-      "avgVolume50": 312357,
-      "sharesOutstanding": 34141460,
-      "marketCap": 61161011.444000006,
+      "lastTradeAt": "Oct 30, 2026 12:59 PM ET",
+      "preMarketVolume": 15545445.677683,
+      "preMarketDollarVolume": 31414236.625461806,
+      "relVolume": 0.8925721168512497,
+      "avgVolume50": 17416459,
+      "sharesOutstanding": 7847899,
+      "marketCap": 15859034.2992,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 30,
+      "bestPriorSpikePct": 127,
       "float": {
-        "shares": 34141460,
+        "shares": 7847899,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-05"
+        "asOf": "2026-03-19"
       },
-      "floatRotation": 0.0002750028850552964,
-      "daysUp": 3,
-      "priorRunPct": 23.004694835680763,
-      "extended": true,
+      "floatRotation": 1.9808417103333007,
+      "daysUp": 0,
+      "priorRunPct": -29.936305732484076,
+      "extended": false,
       "catalyst": {
         "found": false,
         "kind": null,
@@ -851,13 +576,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.9%"
+          "ok": true,
+          "detail": "13.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "9,389"
+          "ok": true,
+          "detail": "15,545,446"
         },
         {
           "name": "News catalyst",
@@ -866,18 +591,564 @@
         },
         {
           "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.02"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "7.8M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
+  "alsoRan": [
+    {
+      "symbol": "OSPN",
+      "name": "OneSpan Inc.",
+      "legalName": "OneSpan Inc.",
+      "business": "Services-Computer Integrated Systems Design",
+      "sector": "Technology",
+      "preMarketPrice": 25.07,
+      "preMarketChangePct": 24.850597609561763,
+      "prevClose": 20.08,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 30, 2026 12:59 PM ET",
+      "preMarketVolume": 2219218.688747,
+      "preMarketDollarVolume": 55635812.52688729,
+      "relVolume": 5.7990892975588215,
+      "avgVolume50": 382684,
+      "sharesOutstanding": 36894789,
+      "marketCap": 924952360.23,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 8,
+      "float": {
+        "shares": 36894789,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-27"
+      },
+      "floatRotation": 0.060149922221997255,
+      "daysUp": 0,
+      "priorRunPct": 6.412294647588751,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "OneSpan (OSPN) Q3 2026 Earnings Call Transcript",
+        "subject": "Earnings or guidance",
+        "date": "2026-10-30"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "24.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "2,219,219"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.79"
+          "detail": "$25.07"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "34.1M"
+          "detail": "36.9M"
         }
       ],
-      "passed": 0,
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "ULH",
+      "name": "Universal Logistics Holdings Inc.",
+      "legalName": "UNIVERSAL LOGISTICS HOLDINGS, INC.",
+      "business": "Trucking (No Local)",
+      "sector": "Industrials",
+      "preMarketPrice": 21.581,
+      "preMarketChangePct": 23.89,
+      "prevClose": 17.419485027040114,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 30, 2026 12:58 PM ET",
+      "preMarketVolume": 102993.97513,
+      "preMarketDollarVolume": 2222712.97728053,
+      "relVolume": 2.3546862169638776,
+      "avgVolume50": 43740,
+      "sharesOutstanding": 26367805,
+      "marketCap": 569043599.705,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 36,
+      "float": {
+        "shares": 26367805,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-07"
+      },
+      "floatRotation": 0.003906050394790162,
+      "daysUp": 2,
+      "priorRunPct": 2.4654239326518352,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Universal Logistics Holdings, Inc. Reports Third Quarter 2026 Financial Results and Declares $0.105 Dividend",
+        "subject": "Earnings or guidance",
+        "date": "2026-10-30"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "23.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "102,994"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$21.58"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "26.4M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "OLN",
+      "name": "Olin Corporation",
+      "legalName": "OLIN Corp",
+      "business": "Chemicals & Allied Products",
+      "sector": "Industrials",
+      "preMarketPrice": 17.465,
+      "preMarketChangePct": 8.82,
+      "prevClose": 16.049439441279176,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 30, 2026 12:59 PM ET",
+      "preMarketVolume": 3059251.415478,
+      "preMarketDollarVolume": 53429825.97132327,
+      "relVolume": 1.0083244749836437,
+      "avgVolume50": 3033995,
+      "sharesOutstanding": 114005726,
+      "marketCap": 1991110004.59,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 11,
+      "float": {
+        "shares": 114005726,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-30"
+      },
+      "floatRotation": 0.026834190902639398,
+      "daysUp": 0,
+      "priorRunPct": 10.314802411252506,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Olin Corp. Q3 26 Earnings Conference Call At 10:00 AM ET ",
+        "subject": "Earnings or guidance",
+        "date": "2026-10-30"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "3,059,251"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$17.46"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "114.0M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "TUSK",
+      "name": "Mammoth Energy Services Inc.",
+      "legalName": "MAMMOTH ENERGY SERVICES, INC.",
+      "business": "Oil & Gas Field Services, NEC",
+      "sector": "Energy",
+      "preMarketPrice": 3.1,
+      "preMarketChangePct": 6.53,
+      "prevClose": 2.909978409837605,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 30, 2026 12:58 PM ET",
+      "preMarketVolume": 226689.784229,
+      "preMarketDollarVolume": 702738.3311099,
+      "relVolume": 1.2433757732588115,
+      "avgVolume50": 182318,
+      "sharesOutstanding": 48127585,
+      "marketCap": 149195513.5,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 22,
+      "float": {
+        "shares": 48127585,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-04"
+      },
+      "floatRotation": 0.00471018407071537,
+      "daysUp": 0,
+      "priorRunPct": 2.173913043478263,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt) · Regulation FD disclosure (company announcement)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt) · Regulation FD disclosure (company announcement)",
+        "date": "2026-10-30"
+      },
+      "leads": [
+        "8-K",
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "226,690"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.10"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "48.1M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "SAMG",
+      "name": "Silvercrest Asset Management Group Inc. Class A",
+      "legalName": "Silvercrest Asset Management Group Inc.",
+      "business": "Investment Advice",
+      "sector": "Finance",
+      "preMarketPrice": 11.27,
+      "preMarketChangePct": 7.950191570881227,
+      "prevClose": 10.44,
+      "closeReconciled": false,
+      "lastTradeAt": "Oct 30, 2026 12:58 PM ET",
+      "preMarketVolume": 39704.151258,
+      "preMarketDollarVolume": 447465.78467766,
+      "relVolume": 0.6343934946793213,
+      "avgVolume50": 62586,
+      "sharesOutstanding": 11847766.95652174,
+      "marketCap": 133524333.60000001,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 12,
+      "float": {
+        "shares": 11847766.95652174,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-30"
+      },
+      "floatRotation": 0.0033511927947016537,
+      "daysUp": 1,
+      "priorRunPct": 1.162790697674411,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Silvercrest (SAMG) Q3 2026 Earnings Call Transcript",
+        "subject": "Earnings or guidance",
+        "date": "2026-10-30"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "39,704"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$11.27"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "11.8M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "BTOC",
+      "name": "Armlogi Holding Corp.",
+      "legalName": "Armlogi Holding Corp.",
+      "business": "Public Warehousing & Storage",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 2.31,
+      "preMarketChangePct": 6.45,
+      "prevClose": 2.1700328792860497,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 30, 2026 12:58 PM ET",
+      "preMarketVolume": 8297.25,
+      "preMarketDollarVolume": 19166.6475,
+      "relVolume": 0.0678650591766794,
+      "avgVolume50": 122261,
+      "sharesOutstanding": 45443079,
+      "marketCap": 104973512.49000001,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 15,
+      "float": {
+        "shares": 45443079,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-25"
+      },
+      "floatRotation": 0.00018258555939838496,
+      "daysUp": 0,
+      "priorRunPct": -24.555160142348754,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-10-30"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "8,297"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.31"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "45.4M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "GENVR",
+      "name": "Gen Digital Inc. Contingent Value Rights",
+      "legalName": "Gen Digital Inc.",
+      "business": "Services-Prepackaged Software",
+      "sector": "Technology",
+      "preMarketPrice": 1.8275,
+      "preMarketChangePct": 5.64,
+      "prevClose": 1.7299318439984854,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 30, 2026 12:59 PM ET",
+      "preMarketVolume": 39994.74765,
+      "preMarketDollarVolume": 73090.401330375,
+      "relVolume": 0.7626763472540046,
+      "avgVolume50": 52440,
+      "sharesOutstanding": 593276080,
+      "marketCap": 1084212036.2,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 86,
+      "float": {
+        "shares": 593276080,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-26"
+      },
+      "floatRotation": 0.00006741338307453757,
+      "daysUp": 0,
+      "priorRunPct": -19.083969465648853,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released",
+        "subject": "Earnings / results released",
+        "date": "2026-10-28"
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "39,995"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.83"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "593.3M"
+        }
+      ],
+      "passed": 1,
+      "quality": "low"
+    },
+    {
+      "symbol": "PLUR",
+      "name": "Pluri Inc.",
+      "legalName": "Pluri Inc.",
+      "business": "Biological Products, (No Diagnostic Substances)",
+      "sector": "Health Care",
+      "preMarketPrice": 1.26,
+      "preMarketChangePct": 5,
+      "prevClose": 1.2,
+      "closeReconciled": true,
+      "lastTradeAt": "Oct 30, 2026 12:58 PM ET",
+      "preMarketVolume": 23184.721219,
+      "preMarketDollarVolume": 29212.74873594,
+      "relVolume": 0.6619477864097073,
+      "avgVolume50": 35025,
+      "sharesOutstanding": 12344736,
+      "marketCap": 15554367.36,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 19,
+      "float": {
+        "shares": 12344736,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-09"
+      },
+      "floatRotation": 0.0018781058759782306,
+      "daysUp": 3,
+      "priorRunPct": 17.14285714285714,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution) · Other material event (often FDA, clinical or contract news)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution) · Other material event (often FDA, clinical or contract news)",
+        "date": "2026-10-30"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "23,185"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.26"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "12.3M"
+        }
+      ],
+      "passed": 1,
       "quality": "low"
     }
-  ],
-  "frozenAfterPreMarket": true
+  ]
 }
