@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-02T12:20:36.106Z",
+  "generatedAt": "2026-11-02T12:40:36.214Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-30",
   "universeChecked": 5989,
   "smallCapsInBand": 2927,
-  "investigated": 72,
-  "liveQuotes": 49,
+  "investigated": 74,
+  "liveQuotes": 52,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-30T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 158,
+    "edgarFilings": 160,
     "leads": {
-      "8-K": 45,
-      "PR Newswire": 3,
-      "GlobeNewswire": 4,
+      "8-K": 47,
+      "PR Newswire": 2,
+      "GlobeNewswire": 5,
       "prior-session gainer": 20
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 72,
-    "answered": 72,
+    "requested": 74,
+    "answered": 74,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -66,17 +66,17 @@
       "legalName": "T1 Energy Inc.",
       "business": "Semiconductors & Related Devices",
       "sector": "Technology",
-      "preMarketPrice": 2.8387,
-      "preMarketChangePct": 5.14,
-      "prevClose": 2.699923910975842,
+      "preMarketPrice": 2.84,
+      "preMarketChangePct": 5.19,
+      "prevClose": 2.6998764141078047,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 7:20 AM ET",
-      "preMarketVolume": 214502.606018,
-      "preMarketDollarVolume": 608908.5477032965,
-      "relVolume": 0.00653642227035923,
+      "lastTradeAt": "Nov 2, 2026 7:39 AM ET",
+      "preMarketVolume": 253382.752474,
+      "preMarketDollarVolume": 719607.01702616,
+      "relVolume": 0.007721196012215313,
       "avgVolume50": 32816516,
       "sharesOutstanding": 294527066,
-      "marketCap": 836073982.2542,
+      "marketCap": 836456867.4399999,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -84,7 +84,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.0007282950559728864,
+      "floatRotation": 0.0008603037945381903,
       "daysUp": 3,
       "priorRunPct": 23.809523809523803,
       "extended": true,
@@ -102,12 +102,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.1%"
+          "detail": "5.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "214,503"
+          "detail": "253,383"
         },
         {
           "name": "News catalyst",
