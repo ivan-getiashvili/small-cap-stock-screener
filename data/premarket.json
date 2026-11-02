@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-02T11:40:51.784Z",
+  "generatedAt": "2026-11-02T12:00:49.823Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-30",
-  "universeChecked": 5990,
-  "smallCapsInBand": 2908,
+  "universeChecked": 5989,
+  "smallCapsInBand": 2927,
   "investigated": 66,
-  "liveQuotes": 39,
+  "liveQuotes": 45,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-30T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 137,
+    "edgarFilings": 147,
     "leads": {
-      "8-K": 36,
+      "8-K": 41,
       "PR Newswire": 4,
       "GlobeNewswire": 3,
-      "prior-session gainer": 25
+      "prior-session gainer": 20
     },
     "feeds": [
       {
@@ -66,17 +66,17 @@
       "legalName": "T1 Energy Inc.",
       "business": "Semiconductors & Related Devices",
       "sector": "Technology",
-      "preMarketPrice": 2.86,
-      "preMarketChangePct": 5.93,
-      "prevClose": 2.699896157840083,
+      "preMarketPrice": 2.85,
+      "preMarketChangePct": 5.56,
+      "prevClose": 2.6998863205759758,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 6:40 AM ET",
-      "preMarketVolume": 174769.190423,
-      "preMarketDollarVolume": 499839.88460978,
-      "relVolume": 0.005325647318045584,
+      "lastTradeAt": "Nov 2, 2026 7:00 AM ET",
+      "preMarketVolume": 179093.023659,
+      "preMarketDollarVolume": 510415.11742815,
+      "relVolume": 0.005457405157177563,
       "avgVolume50": 32816516,
       "sharesOutstanding": 294527066,
-      "marketCap": 842347408.76,
+      "marketCap": 839402138.1,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -84,7 +84,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.000593389235144182,
+      "floatRotation": 0.0006080698323969995,
       "daysUp": 3,
       "priorRunPct": 23.809523809523803,
       "extended": true,
@@ -102,12 +102,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.9%"
+          "detail": "5.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "174,769"
+          "detail": "179,093"
         },
         {
           "name": "News catalyst",
@@ -117,7 +117,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.86"
+          "detail": "$2.85"
         },
         {
           "name": "Float <10M",
@@ -129,207 +129,71 @@
       "quality": "low"
     },
     {
-      "symbol": "POAS",
-      "name": "Phaos Technology Holdings (Cayman) Limited Class A Ordinary Shares",
-      "legalName": "PHAOS TECHNOLOGY HOLDINGS (CAYMAN) Ltd",
-      "business": "Industrial Instruments For Measurement, Display, and Control",
-      "sector": "Industrials",
-      "preMarketPrice": 1.46,
-      "preMarketChangePct": 15.87,
-      "prevClose": 1.2600327953741262,
+      "symbol": "TH",
+      "name": "Target Hospitality Corp.",
+      "legalName": "Target Hospitality Corp.",
+      "business": "Hotels, Rooming Houses, Camps & Other Lodging Places",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 14.39,
+      "preMarketChangePct": 5.27,
+      "prevClose": 13.66961147525411,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 4:13 AM ET",
-      "preMarketVolume": 8,
-      "preMarketDollarVolume": 11.68,
-      "relVolume": 0.000028422211958645683,
-      "avgVolume50": 281470,
-      "sharesOutstanding": 2104800,
-      "marketCap": 3073008,
+      "lastTradeAt": "Nov 2, 2026 4:12 AM ET",
+      "preMarketVolume": 77,
+      "preMarketDollarVolume": 1108.03,
+      "relVolume": 0.00005567530164083068,
+      "avgVolume50": 1383019,
+      "sharesOutstanding": 99623423,
+      "marketCap": 1433581056.97,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 33,
+      "bestPriorSpikePct": 36,
       "float": {
-        "shares": 2104800,
+        "shares": 99623423,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-02"
+        "asOf": "2026-08-06"
       },
-      "floatRotation": 0.000003800836183960471,
+      "floatRotation": 7.729106035635816e-7,
       "daysUp": 1,
-      "priorRunPct": -35.111111111111114,
+      "priorRunPct": 2.005730659025783,
       "extended": false,
       "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
+        "found": true,
+        "kind": "news",
+        "headline": "Target Hospitality Announces Third Quarter 2026 Earnings Release and Conference Call Schedule",
+        "subject": "Earnings or guidance",
+        "date": "2026-11-02"
       },
       "leads": [
-        "prior-session gainer"
+        "PR Newswire"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "15.9%"
+          "ok": false,
+          "detail": "5.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "8"
+          "detail": "77"
         },
         {
           "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
+          "ok": true,
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.46"
+          "ok": true,
+          "detail": "$14.39"
         },
         {
           "name": "Float <10M",
-          "ok": true,
-          "detail": "2.1M"
+          "ok": false,
+          "detail": "99.6M"
         }
       ],
       "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "NCPL",
-      "name": "Netcapital Inc.",
-      "legalName": "Netcapital Inc.",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 1.73,
-      "preMarketChangePct": 8.81,
-      "prevClose": 1.5899273963790093,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 6:38 AM ET",
-      "preMarketVolume": 241644.943714,
-      "preMarketDollarVolume": 418045.75262522,
-      "relVolume": 0.013874516267284871,
-      "avgVolume50": 17416459,
-      "sharesOutstanding": 7847899,
-      "marketCap": 13576865.27,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 127,
-      "float": {
-        "shares": 7847899,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-03-19"
-      },
-      "floatRotation": 0.030791036392542766,
-      "daysUp": 1,
-      "priorRunPct": -20.179372197309416,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "8.8%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "241,645"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.73"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "7.8M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "AIRS",
-      "name": "AirSculpt Technologies Inc.",
-      "legalName": "Airsculpt Technologies, Inc.",
-      "business": "Services-Offices & Clinics of  Doctors of  Medicine",
-      "sector": "Health Care",
-      "preMarketPrice": 1.879,
-      "preMarketChangePct": 8.61,
-      "prevClose": 1.7300432740999907,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 4:34 AM ET",
-      "preMarketVolume": 12,
-      "preMarketDollarVolume": 22.548000000000002,
-      "relVolume": 0.000015749912391112323,
-      "avgVolume50": 761909,
-      "sharesOutstanding": 72095209,
-      "marketCap": 135466897.711,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 52,
-      "float": {
-        "shares": 72095209,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-07"
-      },
-      "floatRotation": 1.6644656651179138e-7,
-      "daysUp": 3,
-      "priorRunPct": 33.599999999999994,
-      "extended": true,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "8.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "12"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.88"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "72.1M"
-        }
-      ],
-      "passed": 0,
       "quality": "low"
     }
   ]
