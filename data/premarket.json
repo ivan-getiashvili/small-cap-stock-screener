@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-02T11:00:39.171Z",
+  "generatedAt": "2026-11-02T11:21:04.821Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-30",
   "universeChecked": 5990,
   "smallCapsInBand": 2908,
-  "investigated": 59,
-  "liveQuotes": 33,
+  "investigated": 63,
+  "liveQuotes": 34,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-30T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 115,
+    "edgarFilings": 129,
     "leads": {
-      "8-K": 34,
-      "PR Newswire": 0,
-      "GlobeNewswire": 1,
+      "8-K": 36,
+      "PR Newswire": 1,
+      "GlobeNewswire": 2,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 59,
-    "answered": 59,
+    "requested": 63,
+    "answered": 63,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -61,74 +61,6 @@
   "watchlist": [],
   "alsoRan": [
     {
-      "symbol": "NCPL",
-      "name": "Netcapital Inc.",
-      "legalName": "Netcapital Inc.",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 1.77,
-      "preMarketChangePct": 11.32,
-      "prevClose": 1.5900107797340999,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 5:55 AM ET",
-      "preMarketVolume": 210194.943714,
-      "preMarketDollarVolume": 372045.05037378,
-      "relVolume": 0.012068753109572962,
-      "avgVolume50": 17416459,
-      "sharesOutstanding": 7847899,
-      "marketCap": 13890781.23,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 127,
-      "float": {
-        "shares": 7847899,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-03-19"
-      },
-      "floatRotation": 0.026783594400743432,
-      "daysUp": 1,
-      "priorRunPct": -20.179372197309416,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "11.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "210,195"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.77"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "7.8M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "TE",
       "name": "T1 Energy Inc.",
       "legalName": "T1 Energy Inc.",
@@ -138,10 +70,10 @@
       "preMarketChangePct": 5.56,
       "prevClose": 2.6999810534293287,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 5:58 AM ET",
-      "preMarketVolume": 149739.776845,
-      "preMarketDollarVolume": 426773.33798593446,
-      "relVolume": 0.004562939491961913,
+      "lastTradeAt": "Nov 2, 2026 6:21 AM ET",
+      "preMarketVolume": 170473.903262,
+      "preMarketDollarVolume": 485867.6716870262,
+      "relVolume": 0.0051947593480672965,
       "avgVolume50": 32816516,
       "sharesOutstanding": 294527066,
       "marketCap": 839431590.8066,
@@ -152,7 +84,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.000508407525592232,
+      "floatRotation": 0.0005788055596289409,
       "daysUp": 3,
       "priorRunPct": 23.809523809523803,
       "extended": true,
@@ -175,7 +107,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "149,740"
+          "detail": "170,474"
         },
         {
           "name": "News catalyst",
@@ -265,68 +197,68 @@
       "quality": "low"
     },
     {
-      "symbol": "VANI",
-      "name": "Vivani Medical Inc. Common Stock (DE)",
-      "legalName": "Vivani Medical, Inc.",
-      "business": "Electromedical & Electrotherapeutic Apparatus",
-      "sector": "Health Care",
-      "preMarketPrice": 1.1996,
-      "preMarketChangePct": 10.06,
-      "prevClose": 1.089950935853171,
+      "symbol": "NCPL",
+      "name": "Netcapital Inc.",
+      "legalName": "Netcapital Inc.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 1.74,
+      "preMarketChangePct": 9.43,
+      "prevClose": 1.5900575710499862,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 5:49 AM ET",
-      "preMarketVolume": 1158,
-      "preMarketDollarVolume": 1389.1368,
-      "relVolume": 0.0020825053366447205,
-      "avgVolume50": 556061,
-      "sharesOutstanding": 90203356,
-      "marketCap": 108207945.8576,
+      "lastTradeAt": "Nov 2, 2026 6:21 AM ET",
+      "preMarketVolume": 226937.943714,
+      "preMarketDollarVolume": 394872.02206235996,
+      "relVolume": 0.013030085146125282,
+      "avgVolume50": 17416459,
+      "sharesOutstanding": 7847899,
+      "marketCap": 13655344.26,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 20,
+      "bestPriorSpikePct": 127,
       "float": {
-        "shares": 90203356,
+        "shares": 7847899,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-13"
+        "asOf": "2026-03-19"
       },
-      "floatRotation": 0.00001283765983163642,
-      "daysUp": 0,
-      "priorRunPct": 4.587155963302736,
+      "floatRotation": 0.028917031642991326,
+      "daysUp": 1,
+      "priorRunPct": -20.179372197309416,
       "extended": false,
       "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Regulation FD disclosure (company announcement)",
-        "subject": "Regulation FD disclosure (company announcement)",
-        "date": "2026-10-30"
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
       },
       "leads": [
-        "8-K"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.1%"
+          "ok": false,
+          "detail": "9.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "1,158"
+          "ok": true,
+          "detail": "226,938"
         },
         {
           "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
+          "ok": false,
+          "detail": "none found"
         },
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.20"
+          "detail": "$1.74"
         },
         {
           "name": "Float <10M",
-          "ok": false,
-          "detail": "90.2M"
+          "ok": true,
+          "detail": "7.8M"
         }
       ],
       "passed": 2,
