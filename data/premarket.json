@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-01T11:00:35.447Z",
-  "marketStatus": "Market Closed",
+  "generatedAt": "2026-11-02T11:00:39.171Z",
+  "marketStatus": "Pre Market",
   "prevSession": "2026-10-30",
   "universeChecked": 5990,
   "smallCapsInBand": 2908,
-  "investigated": 62,
-  "liveQuotes": 0,
-  "feedIsLive": false,
+  "investigated": 59,
+  "liveQuotes": 33,
+  "feedIsLive": true,
   "discovery": {
     "since": "2026-10-30T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 114,
+    "edgarFilings": 115,
     "leads": {
       "8-K": 34,
-      "PR Newswire": 4,
+      "PR Newswire": 0,
       "GlobeNewswire": 1,
       "prior-session gainer": 25
     },
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 62,
-    "answered": 62,
+    "requested": 59,
+    "answered": 59,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -59,6 +59,346 @@
   },
   "shortlist": [],
   "watchlist": [],
-  "alsoRan": [],
-  "frozenAfterPreMarket": true
+  "alsoRan": [
+    {
+      "symbol": "NCPL",
+      "name": "Netcapital Inc.",
+      "legalName": "Netcapital Inc.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 1.77,
+      "preMarketChangePct": 11.32,
+      "prevClose": 1.5900107797340999,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 2, 2026 5:55 AM ET",
+      "preMarketVolume": 210194.943714,
+      "preMarketDollarVolume": 372045.05037378,
+      "relVolume": 0.012068753109572962,
+      "avgVolume50": 17416459,
+      "sharesOutstanding": 7847899,
+      "marketCap": 13890781.23,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 127,
+      "float": {
+        "shares": 7847899,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-03-19"
+      },
+      "floatRotation": 0.026783594400743432,
+      "daysUp": 1,
+      "priorRunPct": -20.179372197309416,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "11.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "210,195"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.77"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "7.8M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "TE",
+      "name": "T1 Energy Inc.",
+      "legalName": "T1 Energy Inc.",
+      "business": "Semiconductors & Related Devices",
+      "sector": "Technology",
+      "preMarketPrice": 2.8501,
+      "preMarketChangePct": 5.56,
+      "prevClose": 2.6999810534293287,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 2, 2026 5:58 AM ET",
+      "preMarketVolume": 149739.776845,
+      "preMarketDollarVolume": 426773.33798593446,
+      "relVolume": 0.004562939491961913,
+      "avgVolume50": 32816516,
+      "sharesOutstanding": 294527066,
+      "marketCap": 839431590.8066,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 31,
+      "float": {
+        "shares": 294527066,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-10"
+      },
+      "floatRotation": 0.000508407525592232,
+      "daysUp": 3,
+      "priorRunPct": 23.809523809523803,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-10-30"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "149,740"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.85"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "294.5M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "POAS",
+      "name": "Phaos Technology Holdings (Cayman) Limited Class A Ordinary Shares",
+      "legalName": "PHAOS TECHNOLOGY HOLDINGS (CAYMAN) Ltd",
+      "business": "Industrial Instruments For Measurement, Display, and Control",
+      "sector": "Industrials",
+      "preMarketPrice": 1.46,
+      "preMarketChangePct": 15.87,
+      "prevClose": 1.2600327953741262,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 2, 2026 4:13 AM ET",
+      "preMarketVolume": 8,
+      "preMarketDollarVolume": 11.68,
+      "relVolume": 0.000028422211958645683,
+      "avgVolume50": 281470,
+      "sharesOutstanding": 2104800,
+      "marketCap": 3073008,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 33,
+      "float": {
+        "shares": 2104800,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-02"
+      },
+      "floatRotation": 0.000003800836183960471,
+      "daysUp": 1,
+      "priorRunPct": -35.111111111111114,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "15.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "8"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.46"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "2.1M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "VANI",
+      "name": "Vivani Medical Inc. Common Stock (DE)",
+      "legalName": "Vivani Medical, Inc.",
+      "business": "Electromedical & Electrotherapeutic Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 1.1996,
+      "preMarketChangePct": 10.06,
+      "prevClose": 1.089950935853171,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 2, 2026 5:49 AM ET",
+      "preMarketVolume": 1158,
+      "preMarketDollarVolume": 1389.1368,
+      "relVolume": 0.0020825053366447205,
+      "avgVolume50": 556061,
+      "sharesOutstanding": 90203356,
+      "marketCap": 108207945.8576,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 20,
+      "float": {
+        "shares": 90203356,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-13"
+      },
+      "floatRotation": 0.00001283765983163642,
+      "daysUp": 0,
+      "priorRunPct": 4.587155963302736,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-10-30"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "10.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "1,158"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.20"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "90.2M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "AIRS",
+      "name": "AirSculpt Technologies Inc.",
+      "legalName": "Airsculpt Technologies, Inc.",
+      "business": "Services-Offices & Clinics of  Doctors of  Medicine",
+      "sector": "Health Care",
+      "preMarketPrice": 1.879,
+      "preMarketChangePct": 8.61,
+      "prevClose": 1.7300432740999907,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 2, 2026 4:34 AM ET",
+      "preMarketVolume": 12,
+      "preMarketDollarVolume": 22.548000000000002,
+      "relVolume": 0.000015749912391112323,
+      "avgVolume50": 761909,
+      "sharesOutstanding": 72095209,
+      "marketCap": 135466897.711,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 52,
+      "float": {
+        "shares": 72095209,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-07"
+      },
+      "floatRotation": 1.6644656651179138e-7,
+      "daysUp": 3,
+      "priorRunPct": 33.599999999999994,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "12"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.88"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "72.1M"
+        }
+      ],
+      "passed": 0,
+      "quality": "low"
+    }
+  ]
 }
