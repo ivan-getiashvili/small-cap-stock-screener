@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-02T13:00:37.624Z",
+  "generatedAt": "2026-11-02T13:20:37.896Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-30",
   "universeChecked": 5989,
   "smallCapsInBand": 2927,
-  "investigated": 75,
-  "liveQuotes": 53,
+  "investigated": 79,
+  "liveQuotes": 59,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-30T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 165,
+    "edgarFilings": 199,
     "leads": {
-      "8-K": 48,
-      "PR Newswire": 3,
-      "GlobeNewswire": 4,
+      "8-K": 56,
+      "PR Newswire": 0,
+      "GlobeNewswire": 5,
       "prior-session gainer": 20
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 75,
-    "answered": 75,
+    "requested": 79,
+    "answered": 79,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -61,38 +61,106 @@
   "watchlist": [],
   "alsoRan": [
     {
-      "symbol": "QXL",
-      "name": "Quantum X Labs Inc.",
-      "legalName": "QUANTUM X LABS INC.",
-      "business": "Services-Prepackaged Software",
-      "sector": "Technology",
-      "preMarketPrice": 3.98,
-      "preMarketChangePct": 8.45,
-      "prevClose": 3.6698939603503917,
+      "symbol": "XMAX",
+      "name": "XMAX Inc.",
+      "legalName": "XMax Inc.",
+      "business": "Household Furniture",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 6.8647,
+      "preMarketChangePct": 7.01,
+      "prevClose": 6.4150079431828795,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 8:00 AM ET",
-      "preMarketVolume": 39190,
-      "preMarketDollarVolume": 155976.2,
-      "relVolume": 0.6784619912400671,
-      "avgVolume50": 57763,
-      "sharesOutstanding": 21567826,
-      "marketCap": 85839947.48,
+      "lastTradeAt": "Nov 2, 2026 8:15 AM ET",
+      "preMarketVolume": 73824.163806,
+      "preMarketDollarVolume": 506780.7372790482,
+      "relVolume": 0.11047039869454157,
+      "avgVolume50": 668271,
+      "sharesOutstanding": 64523426,
+      "marketCap": 442933962.4622,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 14,
+      "bestPriorSpikePct": 6,
       "float": {
-        "shares": 21567826,
+        "shares": 64523426,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-13"
+        "asOf": "2026-08-12"
       },
-      "floatRotation": 0.001817058427678339,
-      "daysUp": 1,
-      "priorRunPct": 3.9999999999999973,
+      "floatRotation": 0.001144145132746051,
+      "daysUp": 0,
+      "priorRunPct": -7.5428571428571445,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Other material event (often FDA, clinical or contract news)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Other material event (often FDA, clinical or contract news)",
+        "date": "2026-11-02"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "73,824"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$6.86"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "64.5M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "BBCI",
+      "name": "Bradbury Capital Inc. Ordinary Shares",
+      "legalName": "Bradbury Capital Inc.",
+      "business": "Services-Business Services, NEC",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.79,
+      "preMarketChangePct": 5.92,
+      "prevClose": 1.6899546827794563,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 2, 2026 8:19 AM ET",
+      "preMarketVolume": 27833,
+      "preMarketDollarVolume": 49821.07,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 40258295.857988164,
+      "marketCap": 72062349.58579881,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 40258295.857988164,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-02"
+      },
+      "floatRotation": 0.0006913606104486237,
+      "daysUp": 0,
+      "priorRunPct": -11.21951219512194,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Quantum X Labs Announces Cyber Quantum Encryption Breakthrough in Demonstration with IBM Quantum Processor, Heron r2",
-        "subject": "Hot-sector announcement",
+        "headline": "Bradbury Capital Inc. Announces Adjustment to Public Warrant Exercise Price Following Completion of $5 Million PIPE Financing",
+        "subject": "Share offering (dilution)",
         "date": "2026-11-02"
       },
       "leads": [
@@ -102,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.4%"
+          "detail": "5.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "39,190"
+          "detail": "27,833"
         },
         {
           "name": "News catalyst",
@@ -116,16 +184,16 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.98"
+          "ok": false,
+          "detail": "$1.79"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "21.6M"
+          "detail": "40.3M"
         }
       ],
-      "passed": 2,
+      "passed": 1,
       "quality": "low"
     }
   ]
