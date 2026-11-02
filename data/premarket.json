@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-02T12:40:36.214Z",
+  "generatedAt": "2026-11-02T13:00:37.624Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-30",
   "universeChecked": 5989,
   "smallCapsInBand": 2927,
-  "investigated": 74,
-  "liveQuotes": 52,
+  "investigated": 75,
+  "liveQuotes": 53,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-30T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 160,
+    "edgarFilings": 165,
     "leads": {
-      "8-K": 47,
-      "PR Newswire": 2,
-      "GlobeNewswire": 5,
+      "8-K": 48,
+      "PR Newswire": 3,
+      "GlobeNewswire": 4,
       "prior-session gainer": 20
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 74,
-    "answered": 74,
+    "requested": 75,
+    "answered": 75,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -61,71 +61,71 @@
   "watchlist": [],
   "alsoRan": [
     {
-      "symbol": "TE",
-      "name": "T1 Energy Inc.",
-      "legalName": "T1 Energy Inc.",
-      "business": "Semiconductors & Related Devices",
+      "symbol": "QXL",
+      "name": "Quantum X Labs Inc.",
+      "legalName": "QUANTUM X LABS INC.",
+      "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 2.84,
-      "preMarketChangePct": 5.19,
-      "prevClose": 2.6998764141078047,
+      "preMarketPrice": 3.98,
+      "preMarketChangePct": 8.45,
+      "prevClose": 3.6698939603503917,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 7:39 AM ET",
-      "preMarketVolume": 253382.752474,
-      "preMarketDollarVolume": 719607.01702616,
-      "relVolume": 0.007721196012215313,
-      "avgVolume50": 32816516,
-      "sharesOutstanding": 294527066,
-      "marketCap": 836456867.4399999,
+      "lastTradeAt": "Nov 2, 2026 8:00 AM ET",
+      "preMarketVolume": 39190,
+      "preMarketDollarVolume": 155976.2,
+      "relVolume": 0.6784619912400671,
+      "avgVolume50": 57763,
+      "sharesOutstanding": 21567826,
+      "marketCap": 85839947.48,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 31,
+      "bestPriorSpikePct": 14,
       "float": {
-        "shares": 294527066,
+        "shares": 21567826,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-10"
+        "asOf": "2026-08-13"
       },
-      "floatRotation": 0.0008603037945381903,
-      "daysUp": 3,
-      "priorRunPct": 23.809523809523803,
-      "extended": true,
+      "floatRotation": 0.001817058427678339,
+      "daysUp": 1,
+      "priorRunPct": 3.9999999999999973,
+      "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-10-30"
+        "kind": "news",
+        "headline": "Quantum X Labs Announces Cyber Quantum Encryption Breakthrough in Demonstration with IBM Quantum Processor, Heron r2",
+        "subject": "Hot-sector announcement",
+        "date": "2026-11-02"
       },
       "leads": [
-        "8-K"
+        "GlobeNewswire"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.2%"
+          "detail": "8.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "253,383"
+          "ok": false,
+          "detail": "39,190"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.84"
+          "detail": "$3.98"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "294.5M"
+          "detail": "21.6M"
         }
       ],
-      "passed": 3,
+      "passed": 2,
       "quality": "low"
     }
   ]
