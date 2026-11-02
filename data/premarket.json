@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-02T11:21:04.821Z",
+  "generatedAt": "2026-11-02T11:40:51.784Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-30",
   "universeChecked": 5990,
   "smallCapsInBand": 2908,
-  "investigated": 63,
-  "liveQuotes": 34,
+  "investigated": 66,
+  "liveQuotes": 39,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-30T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 129,
+    "edgarFilings": 137,
     "leads": {
       "8-K": 36,
-      "PR Newswire": 1,
-      "GlobeNewswire": 2,
+      "PR Newswire": 4,
+      "GlobeNewswire": 3,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 63,
-    "answered": 63,
+    "requested": 66,
+    "answered": 66,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -66,17 +66,17 @@
       "legalName": "T1 Energy Inc.",
       "business": "Semiconductors & Related Devices",
       "sector": "Technology",
-      "preMarketPrice": 2.8501,
-      "preMarketChangePct": 5.56,
-      "prevClose": 2.6999810534293287,
+      "preMarketPrice": 2.86,
+      "preMarketChangePct": 5.93,
+      "prevClose": 2.699896157840083,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 6:21 AM ET",
-      "preMarketVolume": 170473.903262,
-      "preMarketDollarVolume": 485867.6716870262,
-      "relVolume": 0.0051947593480672965,
+      "lastTradeAt": "Nov 2, 2026 6:40 AM ET",
+      "preMarketVolume": 174769.190423,
+      "preMarketDollarVolume": 499839.88460978,
+      "relVolume": 0.005325647318045584,
       "avgVolume50": 32816516,
       "sharesOutstanding": 294527066,
-      "marketCap": 839431590.8066,
+      "marketCap": 842347408.76,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -84,7 +84,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.0005788055596289409,
+      "floatRotation": 0.000593389235144182,
       "daysUp": 3,
       "priorRunPct": 23.809523809523803,
       "extended": true,
@@ -102,12 +102,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.6%"
+          "detail": "5.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "170,474"
+          "detail": "174,769"
         },
         {
           "name": "News catalyst",
@@ -117,7 +117,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.85"
+          "detail": "$2.86"
         },
         {
           "name": "Float <10M",
@@ -202,17 +202,17 @@
       "legalName": "Netcapital Inc.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 1.74,
-      "preMarketChangePct": 9.43,
-      "prevClose": 1.5900575710499862,
+      "preMarketPrice": 1.73,
+      "preMarketChangePct": 8.81,
+      "prevClose": 1.5899273963790093,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 6:21 AM ET",
-      "preMarketVolume": 226937.943714,
-      "preMarketDollarVolume": 394872.02206235996,
-      "relVolume": 0.013030085146125282,
+      "lastTradeAt": "Nov 2, 2026 6:38 AM ET",
+      "preMarketVolume": 241644.943714,
+      "preMarketDollarVolume": 418045.75262522,
+      "relVolume": 0.013874516267284871,
       "avgVolume50": 17416459,
       "sharesOutstanding": 7847899,
-      "marketCap": 13655344.26,
+      "marketCap": 13576865.27,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 127,
       "float": {
@@ -220,7 +220,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-19"
       },
-      "floatRotation": 0.028917031642991326,
+      "floatRotation": 0.030791036392542766,
       "daysUp": 1,
       "priorRunPct": -20.179372197309416,
       "extended": false,
@@ -238,12 +238,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.4%"
+          "detail": "8.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "226,938"
+          "detail": "241,645"
         },
         {
           "name": "News catalyst",
@@ -253,7 +253,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.74"
+          "detail": "$1.73"
         },
         {
           "name": "Float <10M",
