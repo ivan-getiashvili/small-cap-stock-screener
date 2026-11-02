@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-02T13:40:36.552Z",
+  "generatedAt": "2026-11-02T14:00:37.307Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-30",
   "universeChecked": 5989,
   "smallCapsInBand": 2927,
-  "investigated": 87,
-  "liveQuotes": 66,
+  "investigated": 88,
+  "liveQuotes": 67,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-30T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 204,
+    "edgarFilings": 208,
     "leads": {
-      "8-K": 60,
-      "PR Newswire": 0,
+      "8-K": 61,
+      "PR Newswire": 1,
       "GlobeNewswire": 8,
       "prior-session gainer": 20
     },
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 87,
-    "answered": 87,
+    "requested": 88,
+    "answered": 88,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -61,6 +61,74 @@
   "watchlist": [],
   "alsoRan": [
     {
+      "symbol": "RZAI",
+      "name": "Roze AI Inc. Common Shares",
+      "legalName": "ROZE AI INC.",
+      "business": "Services-Computer Integrated Systems Design",
+      "sector": "Technology",
+      "preMarketPrice": 7.3607,
+      "preMarketChangePct": 11.19,
+      "prevClose": 6.6199298498066375,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 2, 2026 9:00 AM ET",
+      "preMarketVolume": 7847,
+      "preMarketDollarVolume": 57759.412899999996,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 55643388.972809665,
+      "marketCap": 409574293.21216005,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 55643388.972809665,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-02"
+      },
+      "floatRotation": 0.00014102304235700784,
+      "daysUp": 0,
+      "priorRunPct": -21.653189577717878,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Roze AI and BKB Energy Sign MOA to Evaluate AI Fire Forecasting System for AI Data Centers",
+        "subject": "Hot-sector announcement",
+        "date": "2026-11-02"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "11.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "7,847"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$7.36"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "55.6M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "TE",
       "name": "T1 Energy Inc.",
       "legalName": "T1 Energy Inc.",
@@ -70,10 +138,10 @@
       "preMarketChangePct": 5.54,
       "prevClose": 2.699924199355695,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 8:40 AM ET",
-      "preMarketVolume": 360275.200754,
-      "preMarketDollarVolume": 1026604.1845485229,
-      "relVolume": 0.010978471960704176,
+      "lastTradeAt": "Nov 2, 2026 9:00 AM ET",
+      "preMarketVolume": 478371.116295,
+      "preMarketDollarVolume": 1363118.4958826024,
+      "relVolume": 0.014577145127014702,
       "avgVolume50": 32816516,
       "sharesOutstanding": 294527066,
       "marketCap": 839254874.567,
@@ -84,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.0012232329125025133,
+      "floatRotation": 0.0016242008681640145,
       "daysUp": 3,
       "priorRunPct": 23.809523809523803,
       "extended": true,
@@ -107,7 +175,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "360,275"
+          "detail": "478,371"
         },
         {
           "name": "News catalyst",
@@ -129,68 +197,340 @@
       "quality": "low"
     },
     {
-      "symbol": "RZAI",
-      "name": "Roze AI Inc. Common Shares",
-      "legalName": "ROZE AI INC.",
-      "business": "Services-Computer Integrated Systems Design",
-      "sector": "Technology",
-      "preMarketPrice": 7.1601,
-      "preMarketChangePct": 8.16,
-      "prevClose": 6.619914940828403,
+      "symbol": "FLNC",
+      "name": "Fluence Energy Inc. Class A",
+      "legalName": "Fluence Energy, Inc.",
+      "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
+      "sector": "Miscellaneous",
+      "preMarketPrice": 6.02,
+      "preMarketChangePct": 5.24,
+      "prevClose": 5.720258456860509,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 8:33 AM ET",
-      "preMarketVolume": 6899,
-      "preMarketDollarVolume": 49397.5299,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 55643388.972809665,
-      "marketCap": 398412229.38421446,
+      "lastTradeAt": "Nov 2, 2026 9:00 AM ET",
+      "preMarketVolume": 1210587.503898,
+      "preMarketDollarVolume": 7287736.77346596,
+      "relVolume": 0.16310739692782042,
+      "avgVolume50": 7422027,
+      "sharesOutstanding": 184596369.05594406,
+      "marketCap": 1111270141.716783,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
+      "bestPriorSpikePct": 44,
       "float": {
-        "shares": 55643388.972809665,
+        "shares": 184596369.05594406,
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-02"
       },
-      "floatRotation": 0.00012398597798152122,
+      "floatRotation": 0.006558024462177355,
       "daysUp": 0,
-      "priorRunPct": -21.653189577717878,
+      "priorRunPct": 6.8421052631578885,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "news",
-        "headline": "Roze AI and BKB Energy Sign MOA to Evaluate AI Fire Forecasting System for AI Data Centers",
-        "subject": "Hot-sector announcement",
+        "kind": "8-K",
+        "headline": "Executive or board change · Regulation FD disclosure (company announcement)",
+        "subject": "Executive or board change · Regulation FD disclosure (company announcement)",
         "date": "2026-11-02"
       },
       "leads": [
-        "GlobeNewswire"
+        "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.2%"
+          "detail": "5.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "6,899"
+          "ok": true,
+          "detail": "1,210,588"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "news"
+          "detail": "8-K"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$7.16"
+          "detail": "$6.02"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "55.6M"
+          "detail": "184.6M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "CHGA",
+      "name": "Change Agents Corporation",
+      "legalName": "Change Agents Corporation.",
+      "business": "Services-Computer Programming Services",
+      "sector": "Technology",
+      "preMarketPrice": 1.5,
+      "preMarketChangePct": 11.11,
+      "prevClose": 1.3500135001350013,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 2, 2026 9:00 AM ET",
+      "preMarketVolume": 8378,
+      "preMarketDollarVolume": 12567,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 19946803,
+      "marketCap": 29920204.5,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 19946803,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-10"
+      },
+      "floatRotation": 0.00042001718270341366,
+      "daysUp": 0,
+      "priorRunPct": -13.095238095238093,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Executive or board change · Shareholder vote results",
+        "subject": "Executive or board change · Shareholder vote results",
+        "date": "2026-10-30"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "11.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "8,378"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.50"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "19.9M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "EMPD",
+      "name": "Empery Digital Inc.",
+      "legalName": "Empery Digital Inc.",
+      "business": "Finance Services",
+      "sector": "Industrials",
+      "preMarketPrice": 2.88,
+      "preMarketChangePct": 7.06,
+      "prevClose": 2.690080328787596,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 2, 2026 8:43 AM ET",
+      "preMarketVolume": 26,
+      "preMarketDollarVolume": 74.88,
+      "relVolume": 0.00006004161345671115,
+      "avgVolume50": 433033,
+      "sharesOutstanding": 28110111,
+      "marketCap": 80957119.67999999,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 14,
+      "float": {
+        "shares": 28110111,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-06"
+      },
+      "floatRotation": 9.249340922204113e-7,
+      "daysUp": 0,
+      "priorRunPct": 4.744525547445251,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
+        "subject": "Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
+        "date": "2026-11-02"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "26"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.88"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "28.1M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "PLRZ",
+      "name": "Polyrizon Ltd. Ordinary Shares",
+      "legalName": "Polyrizon Ltd.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 11.5,
+      "preMarketChangePct": 6.98,
+      "prevClose": 10.74967283604412,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 2, 2026 8:55 AM ET",
+      "preMarketVolume": 5,
+      "preMarketDollarVolume": 57.5,
+      "relVolume": 0.00006731740154830023,
+      "avgVolume50": 74275,
+      "sharesOutstanding": 1608266,
+      "marketCap": 18495059,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 132,
+      "float": {
+        "shares": 1608266,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-12-31"
+      },
+      "floatRotation": 0.0000031089384467494805,
+      "daysUp": 2,
+      "priorRunPct": 3.2452639787165665,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "5"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$11.50"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "1.6M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "RAPP",
+      "name": "Rapport Therapeutics Inc.",
+      "legalName": "Rapport Therapeutics, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 26.3445,
+      "preMarketChangePct": 5.17,
+      "prevClose": 25.049443757725584,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 2, 2026 8:56 AM ET",
+      "preMarketVolume": 407266.342439,
+      "preMarketDollarVolume": 10729228.158384236,
+      "relVolume": 1.2508602638264805,
+      "avgVolume50": 325589,
+      "sharesOutstanding": 47978286,
+      "marketCap": 1263963955.527,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 13,
+      "float": {
+        "shares": 47978286,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-03"
+      },
+      "floatRotation": 0.00848855547776342,
+      "daysUp": 1,
+      "priorRunPct": -8.744817188088955,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Earnings / results released · Took on a material financial obligation (debt) · Sold unregistered shares (dilution)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Earnings / results released · Took on a material financial obligation (debt) · Sold unregistered shares (dilution)",
+        "date": "2026-10-30"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "407,266"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$26.34"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "48.0M"
         }
       ],
       "passed": 2,
@@ -206,10 +546,10 @@
       "preMarketChangePct": 5.61,
       "prevClose": 4.459804942713758,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 8:26 AM ET",
-      "preMarketVolume": 9415,
-      "preMarketDollarVolume": 44344.65,
-      "relVolume": 0.011136147236070945,
+      "lastTradeAt": "Nov 2, 2026 8:46 AM ET",
+      "preMarketVolume": 9417,
+      "preMarketDollarVolume": 44354.07,
+      "relVolume": 0.011138512854177387,
       "avgVolume50": 845445,
       "sharesOutstanding": 49324000,
       "marketCap": 232316040,
@@ -220,7 +560,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-02"
       },
-      "floatRotation": 0.00019088070716081422,
+      "floatRotation": 0.00019092125537263806,
       "daysUp": 0,
       "priorRunPct": -10.95238095238095,
       "extended": false,
@@ -243,7 +583,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "9,415"
+          "detail": "9,417"
         },
         {
           "name": "News catalyst",
