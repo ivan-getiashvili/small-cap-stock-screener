@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-02T12:00:49.823Z",
+  "generatedAt": "2026-11-02T12:20:36.106Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-10-30",
   "universeChecked": 5989,
   "smallCapsInBand": 2927,
-  "investigated": 66,
-  "liveQuotes": 45,
+  "investigated": 72,
+  "liveQuotes": 49,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-10-30T19:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 147,
+    "edgarFilings": 158,
     "leads": {
-      "8-K": 41,
-      "PR Newswire": 4,
-      "GlobeNewswire": 3,
+      "8-K": 45,
+      "PR Newswire": 3,
+      "GlobeNewswire": 4,
       "prior-session gainer": 20
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 66,
-    "answered": 66,
+    "requested": 72,
+    "answered": 72,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -66,17 +66,17 @@
       "legalName": "T1 Energy Inc.",
       "business": "Semiconductors & Related Devices",
       "sector": "Technology",
-      "preMarketPrice": 2.85,
-      "preMarketChangePct": 5.56,
-      "prevClose": 2.6998863205759758,
+      "preMarketPrice": 2.8387,
+      "preMarketChangePct": 5.14,
+      "prevClose": 2.699923910975842,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 7:00 AM ET",
-      "preMarketVolume": 179093.023659,
-      "preMarketDollarVolume": 510415.11742815,
-      "relVolume": 0.005457405157177563,
+      "lastTradeAt": "Nov 2, 2026 7:20 AM ET",
+      "preMarketVolume": 214502.606018,
+      "preMarketDollarVolume": 608908.5477032965,
+      "relVolume": 0.00653642227035923,
       "avgVolume50": 32816516,
       "sharesOutstanding": 294527066,
-      "marketCap": 839402138.1,
+      "marketCap": 836073982.2542,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -84,7 +84,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.0006080698323969995,
+      "floatRotation": 0.0007282950559728864,
       "daysUp": 3,
       "priorRunPct": 23.809523809523803,
       "extended": true,
@@ -102,12 +102,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.6%"
+          "detail": "5.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "179,093"
+          "detail": "214,503"
         },
         {
           "name": "News catalyst",
@@ -117,7 +117,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.85"
+          "detail": "$2.84"
         },
         {
           "name": "Float <10M",
@@ -126,74 +126,6 @@
         }
       ],
       "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "TH",
-      "name": "Target Hospitality Corp.",
-      "legalName": "Target Hospitality Corp.",
-      "business": "Hotels, Rooming Houses, Camps & Other Lodging Places",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 14.39,
-      "preMarketChangePct": 5.27,
-      "prevClose": 13.66961147525411,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 2, 2026 4:12 AM ET",
-      "preMarketVolume": 77,
-      "preMarketDollarVolume": 1108.03,
-      "relVolume": 0.00005567530164083068,
-      "avgVolume50": 1383019,
-      "sharesOutstanding": 99623423,
-      "marketCap": 1433581056.97,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 36,
-      "float": {
-        "shares": 99623423,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-06"
-      },
-      "floatRotation": 7.729106035635816e-7,
-      "daysUp": 1,
-      "priorRunPct": 2.005730659025783,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Target Hospitality Announces Third Quarter 2026 Earnings Release and Conference Call Schedule",
-        "subject": "Earnings or guidance",
-        "date": "2026-11-02"
-      },
-      "leads": [
-        "PR Newswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "77"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$14.39"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "99.6M"
-        }
-      ],
-      "passed": 2,
       "quality": "low"
     }
   ]
