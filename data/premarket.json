@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-03T11:00:39.792Z",
+  "generatedAt": "2026-11-03T11:20:34.338Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-02",
   "universeChecked": 5989,
   "smallCapsInBand": 2922,
-  "investigated": 92,
+  "investigated": 99,
   "liveQuotes": 56,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-02T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 195,
+    "edgarFilings": 212,
     "leads": {
-      "8-K": 71,
+      "8-K": 74,
       "PR Newswire": 2,
-      "GlobeNewswire": 0,
+      "GlobeNewswire": 4,
       "prior-session gainer": 20
     },
     "feeds": [
@@ -42,10 +42,10 @@
     ]
   },
   "fetch": {
-    "requested": 92,
-    "answered": 92,
-    "failed": 0,
-    "answerRatePct": 100,
+    "requested": 99,
+    "answered": 93,
+    "failed": 6,
+    "answerRatePct": 93.93939393939394,
     "reliable": true
   },
   "gate": {
@@ -57,7 +57,76 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [],
+  "shortlist": [
+    {
+      "symbol": "RDAC",
+      "name": "Rising Dragon Acquisition Corp. Ordinary Shares",
+      "legalName": "Rising Dragon Acquisition Corp.",
+      "business": "Blank Checks",
+      "sector": null,
+      "preMarketPrice": 10.3228,
+      "preMarketChangePct": 102.41,
+      "prevClose": 5.099945654858951,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 3, 2026 6:20 AM ET",
+      "preMarketVolume": 1544417.4,
+      "preMarketDollarVolume": 15942711.93672,
+      "relVolume": 1.7511413925294999,
+      "avgVolume50": 881949,
+      "sharesOutstanding": 3435357,
+      "marketCap": 35462503.2396,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 50,
+      "float": {
+        "shares": 3435357,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-07"
+      },
+      "floatRotation": 0.44956532901820684,
+      "daysUp": 1,
+      "priorRunPct": 1.2367346938775508,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Rising Dragon Acquisition Corp. and HZJL Cayman Limited Announce Mutual Termination of Merger Agreement",
+        "subject": "Merger or acquisition",
+        "date": "2026-11-03"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "102.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "1,544,417"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$10.32"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "3.4M"
+        }
+      ],
+      "passed": 5,
+      "quality": "high"
+    }
+  ],
   "watchlist": [
     {
       "symbol": "BLZE",
@@ -65,17 +134,17 @@
       "legalName": "Backblaze, Inc.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 10.15,
-      "preMarketChangePct": 37.16,
-      "prevClose": 7.400116652085156,
+      "preMarketPrice": 9.8501,
+      "preMarketChangePct": 33.11,
+      "prevClose": 7.39996994966569,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 3, 2026 6:00 AM ET",
-      "preMarketVolume": 127415.17164,
-      "preMarketDollarVolume": 1293263.992146,
-      "relVolume": 0.046812404045080046,
+      "lastTradeAt": "Nov 3, 2026 6:20 AM ET",
+      "preMarketVolume": 169380.673494,
+      "preMarketDollarVolume": 1668416.5719832492,
+      "relVolume": 0.06223055247637155,
       "avgVolume50": 2721825,
       "sharesOutstanding": 63200000,
-      "marketCap": 641480000,
+      "marketCap": 622526320,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 64,
       "float": {
@@ -83,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-26"
       },
-      "floatRotation": 0.002016062842405063,
+      "floatRotation": 0.002680073947689873,
       "daysUp": 0,
       "priorRunPct": -8.992805755395683,
       "extended": false,
@@ -101,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "37.2%"
+          "detail": "33.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "127,415"
+          "detail": "169,381"
         },
         {
           "name": "News catalyst",
@@ -116,7 +185,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$10.15"
+          "detail": "$9.85"
         },
         {
           "name": "Float <10M",
@@ -135,17 +204,17 @@
       "legalName": "HARMONIC INC.",
       "business": "Radio & Tv Broadcasting & Communications Equipment",
       "sector": "Technology",
-      "preMarketPrice": 11.92,
-      "preMarketChangePct": 16.520039100684254,
+      "preMarketPrice": 11.81,
+      "preMarketChangePct": 15.444770283479961,
       "prevClose": 10.23,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 3, 2026 5:40 AM ET",
-      "preMarketVolume": 8989.098576,
-      "preMarketDollarVolume": 107150.05502592001,
-      "relVolume": 0.005907040910524656,
+      "lastTradeAt": "Nov 3, 2026 6:13 AM ET",
+      "preMarketVolume": 10146.098576,
+      "preMarketDollarVolume": 119825.42418256,
+      "relVolume": 0.0066673447692145935,
       "avgVolume50": 1521760,
       "sharesOutstanding": 109066445,
-      "marketCap": 1300072024.4,
+      "marketCap": 1288074715.45,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 20,
       "float": {
@@ -153,7 +222,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 0.00008241855298391728,
+      "floatRotation": 0.00009302676525305286,
       "daysUp": 0,
       "priorRunPct": 1.7910447761194,
       "extended": false,
@@ -171,12 +240,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "16.5%"
+          "detail": "15.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "8,989"
+          "detail": "10,146"
         },
         {
           "name": "News catalyst",
@@ -186,7 +255,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$11.92"
+          "detail": "$11.81"
         },
         {
           "name": "Float <10M",
@@ -203,17 +272,17 @@
       "legalName": "OneConstruction Group Ltd",
       "business": "General Bldg Contractors - Residential Bldgs",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.87,
-      "preMarketChangePct": 14.723926380368113,
+      "preMarketPrice": 1.8009,
+      "preMarketChangePct": 10.484662576687121,
       "prevClose": 1.63,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 3, 2026 6:00 AM ET",
-      "preMarketVolume": 280455,
-      "preMarketDollarVolume": 524450.85,
-      "relVolume": 6.107868545418908,
+      "lastTradeAt": "Nov 3, 2026 6:19 AM ET",
+      "preMarketVolume": 306410,
+      "preMarketDollarVolume": 551813.769,
+      "relVolume": 6.673127599799638,
       "avgVolume50": 45917,
       "sharesOutstanding": 16000000,
-      "marketCap": 29920000,
+      "marketCap": 28814400,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 44,
       "float": {
@@ -221,7 +290,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-31"
       },
-      "floatRotation": 0.0175284375,
+      "floatRotation": 0.019150625,
       "daysUp": 1,
       "priorRunPct": 103.74999999999997,
       "extended": true,
@@ -239,12 +308,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "14.7%"
+          "detail": "10.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "280,455"
+          "detail": "306,410"
         },
         {
           "name": "News catalyst",
@@ -254,7 +323,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.87"
+          "detail": "$1.80"
         },
         {
           "name": "Float <10M",
@@ -470,6 +539,142 @@
       "quality": "low"
     },
     {
+      "symbol": "CWH",
+      "name": "Camping World Holdings Inc. Class A",
+      "legalName": "Camping World Holdings, Inc.",
+      "business": "Retail-Auto Dealers & Gasoline Stations",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 5.35,
+      "preMarketChangePct": 6.999999999999992,
+      "prevClose": 5,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 3, 2026 6:18 AM ET",
+      "preMarketVolume": null,
+      "preMarketDollarVolume": null,
+      "relVolume": null,
+      "avgVolume50": 2002763,
+      "sharesOutstanding": 103294916,
+      "marketCap": 552627800.5999999,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 18,
+      "float": {
+        "shares": 103294916,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-03"
+      },
+      "floatRotation": null,
+      "daysUp": 0,
+      "priorRunPct": 19.047619047619044,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "New Strong Sell Stocks for November 3rd",
+        "subject": null,
+        "date": "2026-11-03"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "unknown"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.35"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "103.3M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "BBTX",
+      "name": "Bambusa Therapeutics Inc.",
+      "legalName": "Bambusa Therapeutics, Inc.",
+      "business": "Biological Products, (No Diagnostic Substances)",
+      "sector": "Health Care",
+      "preMarketPrice": 16,
+      "preMarketChangePct": 6.737825216811206,
+      "prevClose": 14.99,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 3, 2026 6:16 AM ET",
+      "preMarketVolume": null,
+      "preMarketDollarVolume": null,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 51168125.01667778,
+      "marketCap": 818690000.2668445,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 51168125.01667778,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-03"
+      },
+      "floatRotation": null,
+      "daysUp": 0,
+      "priorRunPct": null,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Amended the charter or bylaws · Regulation FD disclosure (company announcement)",
+        "subject": "Amended the charter or bylaws · Regulation FD disclosure (company announcement)",
+        "date": "2026-11-03"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "unknown"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$16.00"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "51.2M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
       "symbol": "TTI",
       "name": "Tetra Technologies Inc.",
       "legalName": "TETRA TECHNOLOGIES INC",
@@ -671,74 +876,6 @@
         }
       ],
       "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "EVER",
-      "name": "EverQuote Inc. Class A",
-      "legalName": "EverQuote, Inc.",
-      "business": "Services-Computer Programming, Data Processing, Etc.",
-      "sector": "Technology",
-      "preMarketPrice": 26.3946,
-      "preMarketChangePct": 8.75,
-      "prevClose": 24.27089655172414,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 3, 2026 4:52 AM ET",
-      "preMarketVolume": 183,
-      "preMarketDollarVolume": 4830.2118,
-      "relVolume": 0.00028489540602265773,
-      "avgVolume50": 642341,
-      "sharesOutstanding": 35239750.99957465,
-      "marketCap": 930139131.7333729,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 63,
-      "float": {
-        "shares": 35239750.99957465,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-03"
-      },
-      "floatRotation": 0.000005192999235499958,
-      "daysUp": 3,
-      "priorRunPct": 3.3861037818821598,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "EverQuote (EVER) Q3 2026 Earnings Call Transcript",
-        "subject": "Earnings or guidance",
-        "date": "2026-11-02"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "8.8%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "183"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$26.39"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "35.2M"
-        }
-      ],
-      "passed": 1,
       "quality": "low"
     }
   ]
