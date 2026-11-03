@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-03T13:00:34.587Z",
+  "generatedAt": "2026-11-03T13:20:35.812Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-02",
   "universeChecked": 6017,
   "smallCapsInBand": 2931,
-  "investigated": 97,
-  "liveQuotes": 63,
+  "investigated": 117,
+  "liveQuotes": 86,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-02T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 212,
+    "edgarFilings": 304,
     "leads": {
-      "8-K": 76,
-      "PR Newswire": 3,
+      "8-K": 98,
+      "PR Newswire": 2,
       "GlobeNewswire": 5,
       "prior-session gainer": 16
     },
@@ -42,10 +42,10 @@
     ]
   },
   "fetch": {
-    "requested": 97,
-    "answered": 92,
-    "failed": 5,
-    "answerRatePct": 94.84536082474226,
+    "requested": 117,
+    "answered": 117,
+    "failed": 0,
+    "answerRatePct": 100,
     "reliable": true
   },
   "gate": {
@@ -57,7 +57,76 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [],
+  "shortlist": [
+    {
+      "symbol": "RDAC",
+      "name": "Rising Dragon Acquisition Corp. Ordinary Shares",
+      "legalName": "Rising Dragon Acquisition Corp.",
+      "business": "Blank Checks",
+      "sector": null,
+      "preMarketPrice": 11.21,
+      "preMarketChangePct": 119.8,
+      "prevClose": 5.100090991810737,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 3, 2026 8:20 AM ET",
+      "preMarketVolume": 6552762.242175,
+      "preMarketDollarVolume": 73456464.73478176,
+      "relVolume": 7.429865266784134,
+      "avgVolume50": 881949,
+      "sharesOutstanding": 3435357,
+      "marketCap": 38510351.970000006,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 50,
+      "float": {
+        "shares": 3435357,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-07"
+      },
+      "floatRotation": 1.9074472441073809,
+      "daysUp": 1,
+      "priorRunPct": 1.2367346938775508,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Terminated a material agreement · Regulation FD disclosure (company announcement)",
+        "subject": "Terminated a material agreement · Regulation FD disclosure (company announcement)",
+        "date": "2026-11-03"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "119.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "6,552,762"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$11.21"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "3.4M"
+        }
+      ],
+      "passed": 5,
+      "quality": "high"
+    }
+  ],
   "watchlist": [
     {
       "symbol": "BLZE",
@@ -65,17 +134,17 @@
       "legalName": "Backblaze, Inc.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 10.18,
-      "preMarketChangePct": 37.57,
-      "prevClose": 7.399869157519809,
+      "preMarketPrice": 9.9954,
+      "preMarketChangePct": 35.07,
+      "prevClose": 7.400162878507441,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 3, 2026 8:00 AM ET",
-      "preMarketVolume": 352219.166495,
-      "preMarketDollarVolume": 3585591.1149191,
-      "relVolume": 0.12940551523150828,
+      "lastTradeAt": "Nov 3, 2026 8:20 AM ET",
+      "preMarketVolume": 422878.544566,
+      "preMarketDollarVolume": 4226840.204354997,
+      "relVolume": 0.15536580954543366,
       "avgVolume50": 2721825,
       "sharesOutstanding": 63200000,
-      "marketCap": 643376000,
+      "marketCap": 631709280,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 64,
       "float": {
@@ -83,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-26"
       },
-      "floatRotation": 0.005573088077452532,
+      "floatRotation": 0.006691116211487342,
       "daysUp": 0,
       "priorRunPct": -8.992805755395683,
       "extended": false,
@@ -101,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "37.6%"
+          "detail": "35.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "352,219"
+          "detail": "422,879"
         },
         {
           "name": "News catalyst",
@@ -116,7 +185,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$10.18"
+          "detail": "$10.00"
         },
         {
           "name": "Float <10M",
@@ -126,26 +195,24 @@
       ],
       "passed": 4,
       "quality": "medium"
-    }
-  ],
-  "alsoRan": [
+    },
     {
       "symbol": "HLIT",
       "name": "Harmonic Inc.",
       "legalName": "HARMONIC INC.",
       "business": "Radio & Tv Broadcasting & Communications Equipment",
       "sector": "Technology",
-      "preMarketPrice": 11.9053,
-      "preMarketChangePct": 16.376344086021504,
+      "preMarketPrice": 11.95,
+      "preMarketChangePct": 16.81329423264906,
       "prevClose": 10.23,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 3, 2026 7:59 AM ET",
-      "preMarketVolume": 30085.098576,
-      "preMarketDollarVolume": 358172.1240768528,
-      "relVolume": 0.01976993650509936,
+      "lastTradeAt": "Nov 3, 2026 8:20 AM ET",
+      "preMarketVolume": 55983.775584,
+      "preMarketDollarVolume": 669006.1182288,
+      "relVolume": 0.036788833708337715,
       "avgVolume50": 1521760,
       "sharesOutstanding": 109066445,
-      "marketCap": 1298468747.6585,
+      "marketCap": 1303344017.75,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 20,
       "float": {
@@ -153,7 +220,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 0.00027584192898191557,
+      "floatRotation": 0.0005132997191207617,
       "daysUp": 0,
       "priorRunPct": 1.7910447761194,
       "extended": false,
@@ -171,12 +238,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "16.4%"
+          "detail": "16.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "30,085"
+          "ok": true,
+          "detail": "55,984"
         },
         {
           "name": "News catalyst",
@@ -186,7 +253,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$11.91"
+          "detail": "$11.95"
         },
         {
           "name": "Float <10M",
@@ -194,9 +261,11 @@
           "detail": "109.1M"
         }
       ],
-      "passed": 3,
-      "quality": "low"
-    },
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
+  "alsoRan": [
     {
       "symbol": "CVGI",
       "name": "Commercial Vehicle Group Inc.",
@@ -266,53 +335,190 @@
       "quality": "low"
     },
     {
-      "symbol": "TMCR",
-      "name": "The Metals Royalty Company Inc.",
-      "legalName": "Metals Royalty Co Inc.",
-      "business": "Gold and Silver Ores",
-      "sector": "Basic Materials",
-      "preMarketPrice": 2.25,
-      "preMarketChangePct": 15.384615384615389,
-      "prevClose": 1.95,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 3, 2026 8:00 AM ET",
-      "preMarketVolume": null,
-      "preMarketDollarVolume": null,
-      "relVolume": null,
-      "avgVolume50": 72526,
-      "sharesOutstanding": 50926632,
-      "marketCap": 114584922,
+      "symbol": "CMCO",
+      "name": "Columbus McKinnon Corporation",
+      "legalName": "COLUMBUS MCKINNON CORP",
+      "business": "Construction Machinery & Equip",
+      "sector": "Industrials",
+      "preMarketPrice": 18.1,
+      "preMarketChangePct": 14.85,
+      "prevClose": 15.759686547670876,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 3, 2026 8:18 AM ET",
+      "preMarketVolume": 14498.823066,
+      "preMarketDollarVolume": 262428.6974946,
+      "relVolume": 0.024675613691482138,
+      "avgVolume50": 587577,
+      "sharesOutstanding": 28864244,
+      "marketCap": 522442816.40000004,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 25,
+      "bestPriorSpikePct": 41,
       "float": {
-        "shares": 50926632,
+        "shares": 28864244,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
+        "asOf": "2026-07-27"
       },
-      "floatRotation": null,
+      "floatRotation": 0.0005023108544259812,
       "daysUp": 0,
-      "priorRunPct": -8.018867924528308,
+      "priorRunPct": 10.724852071005925,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "news",
-        "headline": "Metals Royalty Consensus Price Target Increased by 38.76% to $14.15",
-        "subject": null,
-        "date": "2026-11-02"
+        "kind": "8-K",
+        "headline": "Earnings / results released · Regulation FD disclosure (company announcement)",
+        "subject": "Earnings / results released · Regulation FD disclosure (company announcement)",
+        "date": "2026-11-03"
       },
       "leads": [
-        "prior-session gainer"
+        "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "15.4%"
+          "detail": "14.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "unknown"
+          "detail": "14,499"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$18.10"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "28.9M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "AHCO",
+      "name": "AdaptHealth Corp.",
+      "legalName": "AdaptHealth Corp.",
+      "business": "Services-Home Health Care Services",
+      "sector": "Health Care",
+      "preMarketPrice": 6.4144,
+      "preMarketChangePct": 10.402753872633392,
+      "prevClose": 5.81,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 3, 2026 7:50 AM ET",
+      "preMarketVolume": 19315.823139,
+      "preMarketDollarVolume": 123899.4159428016,
+      "relVolume": 0.0068084302994841465,
+      "avgVolume50": 2837045,
+      "sharesOutstanding": 136344196,
+      "marketCap": 874566210.8224,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 17,
+      "float": {
+        "shares": 136344196,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-31"
+      },
+      "floatRotation": 0.0001416695664771825,
+      "daysUp": 0,
+      "priorRunPct": -3.488372093023256,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released",
+        "subject": "Earnings / results released",
+        "date": "2026-11-03"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "10.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "19,316"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$6.41"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "136.3M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "BHR",
+      "name": "Braemar Hotels & Resorts Inc.",
+      "legalName": "Braemar Hotels & Resorts Inc.",
+      "business": "Real Estate Investment Trusts",
+      "sector": "Real Estate",
+      "preMarketPrice": 1.6113,
+      "preMarketChangePct": 12.68,
+      "prevClose": 1.4299787007454738,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 3, 2026 8:17 AM ET",
+      "preMarketVolume": 400,
+      "preMarketDollarVolume": 644.52,
+      "relVolume": 0.0009213341840318966,
+      "avgVolume50": 434153,
+      "sharesOutstanding": 68679318,
+      "marketCap": 110662985.0934,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 10,
+      "float": {
+        "shares": 68679318,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-04"
+      },
+      "floatRotation": 0.000005824169657596192,
+      "daysUp": 0,
+      "priorRunPct": -7.801418439716304,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "BRAEMAR HOTELS & RESORTS ANNOUNCES REFINANCING OF THE RITZ-CARLTON LAKE TAHOE",
+        "subject": null,
+        "date": "2026-11-03"
+      },
+      "leads": [
+        "PR Newswire",
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "12.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "400"
         },
         {
           "name": "News catalyst",
@@ -321,16 +527,16 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.25"
+          "ok": false,
+          "detail": "$1.61"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "50.9M"
+          "detail": "68.7M"
         }
       ],
-      "passed": 3,
+      "passed": 2,
       "quality": "low"
     },
     {
@@ -339,17 +545,17 @@
       "legalName": "TETRA TECHNOLOGIES INC",
       "business": "Crude Petroleum & Natural Gas",
       "sector": "Energy",
-      "preMarketPrice": 6.0312,
-      "preMarketChangePct": 9.06,
-      "prevClose": 5.530166880616175,
+      "preMarketPrice": 6.05,
+      "preMarketChangePct": 9.4,
+      "prevClose": 5.53016453382084,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 3, 2026 7:43 AM ET",
-      "preMarketVolume": 897.382509,
-      "preMarketDollarVolume": 5412.2933882808,
-      "relVolume": 0.000507395090599551,
+      "lastTradeAt": "Nov 3, 2026 8:15 AM ET",
+      "preMarketVolume": 1047.382509,
+      "preMarketDollarVolume": 6336.66417945,
+      "relVolume": 0.0005922076012364533,
       "avgVolume50": 1768607,
       "sharesOutstanding": 148429978,
-      "marketCap": 895210883.3136001,
+      "marketCap": 898001366.9,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 14,
       "float": {
@@ -357,7 +563,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-30"
       },
-      "floatRotation": 0.000006045830640761801,
+      "floatRotation": 0.000007056408167088727,
       "daysUp": 0,
       "priorRunPct": 9.943714821763606,
       "extended": false,
@@ -375,12 +581,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.1%"
+          "detail": "9.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "897"
+          "detail": "1,047"
         },
         {
           "name": "News catalyst",
@@ -390,7 +596,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.03"
+          "detail": "$6.05"
         },
         {
           "name": "Float <10M",
@@ -543,17 +749,17 @@
       "legalName": "Cardlytics, Inc.",
       "business": "Services-Computer Programming, Data Processing, Etc.",
       "sector": "Technology",
-      "preMarketPrice": 2.23,
-      "preMarketChangePct": 7.47,
-      "prevClose": 2.074997673769424,
+      "preMarketPrice": 2.2282,
+      "preMarketChangePct": 7.38,
+      "prevClose": 2.0750605326876514,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 3, 2026 7:56 AM ET",
-      "preMarketVolume": 123.970796,
-      "preMarketDollarVolume": 276.45487508,
-      "relVolume": 0.002625665487662819,
+      "lastTradeAt": "Nov 3, 2026 8:14 AM ET",
+      "preMarketVolume": 223.970796,
+      "preMarketDollarVolume": 499.05172764720004,
+      "relVolume": 0.004743636471460341,
       "avgVolume50": 47215,
       "sharesOutstanding": 5888716,
-      "marketCap": 13131836.68,
+      "marketCap": 13121236.991200002,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 93,
       "float": {
@@ -561,7 +767,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-31"
       },
-      "floatRotation": 0.00002105226266642847,
+      "floatRotation": 0.00003803389329694283,
       "daysUp": 2,
       "priorRunPct": -1.111111111111112,
       "extended": true,
@@ -579,12 +785,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.5%"
+          "detail": "7.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "124"
+          "detail": "224"
         },
         {
           "name": "News catalyst",
@@ -600,74 +806,6 @@
           "name": "Float <10M",
           "ok": true,
           "detail": "5.9M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "OBAI",
-      "name": "Our Bond Inc.",
-      "legalName": "Our Bond, Inc.",
-      "business": "Communications Services, NEC",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.46,
-      "preMarketChangePct": 6.72,
-      "prevClose": 2.305097451274363,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 3, 2026 8:00 AM ET",
-      "preMarketVolume": 2751,
-      "preMarketDollarVolume": 6767.46,
-      "relVolume": 0.0013658909571166841,
-      "avgVolume50": 2014070,
-      "sharesOutstanding": 29975526,
-      "marketCap": 73739793.96,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 108,
-      "float": {
-        "shares": 29975526,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-14"
-      },
-      "floatRotation": 0.00009177486993889615,
-      "daysUp": 1,
-      "priorRunPct": 8.292682926829286,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-11-02"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "2,751"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.46"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "30.0M"
         }
       ],
       "passed": 2,
@@ -742,39 +880,39 @@
       "quality": "low"
     },
     {
-      "symbol": "ESRT",
-      "name": "Empire State Realty Trust Inc. Class A",
-      "legalName": "Empire State Realty Trust, Inc.",
-      "business": "Real Estate Investment Trusts",
-      "sector": "Real Estate",
-      "preMarketPrice": 5.2686,
-      "preMarketChangePct": 6.008048289738439,
-      "prevClose": 4.97,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 3, 2026 7:28 AM ET",
-      "preMarketVolume": 2063.146395,
-      "preMarketDollarVolume": 10869.893096697002,
-      "relVolume": 0.0009462715487389293,
-      "avgVolume50": 2180290,
-      "sharesOutstanding": 172165643.08617234,
-      "marketCap": 907071907.1638076,
+      "symbol": "UPWK",
+      "name": "Upwork Inc.",
+      "legalName": "UPWORK, INC",
+      "business": "Services-Computer Processing & Data Preparation",
+      "sector": "Technology",
+      "preMarketPrice": 10.25,
+      "preMarketChangePct": 5.45,
+      "prevClose": 9.720246562351825,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 3, 2026 8:14 AM ET",
+      "preMarketVolume": 23204.996993,
+      "preMarketDollarVolume": 237851.21917825,
+      "relVolume": 0.0068511827239160486,
+      "avgVolume50": 3387006,
+      "sharesOutstanding": 125777139,
+      "marketCap": 1289215674.75,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 7,
+      "bestPriorSpikePct": 13,
       "float": {
-        "shares": 172165643.08617234,
+        "shares": 125777139,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-03"
+        "asOf": "2026-10-29"
       },
-      "floatRotation": 0.000011983496579322474,
-      "daysUp": 0,
-      "priorRunPct": -0.7984031936127752,
-      "extended": false,
+      "floatRotation": 0.00018449296253272228,
+      "daysUp": 2,
+      "priorRunPct": -3.4810126582278484,
+      "extended": true,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released · Regulation FD disclosure (company announcement)",
-        "subject": "Earnings / results released · Regulation FD disclosure (company announcement)",
-        "date": "2026-11-02"
+        "kind": "news",
+        "headline": "Upwork: 3 Key Takeaways for Long-Term Investors",
+        "subject": null,
+        "date": "2026-11-03"
       },
       "leads": [
         "8-K"
@@ -783,27 +921,27 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.0%"
+          "detail": "5.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "2,063"
+          "detail": "23,205"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.27"
+          "detail": "$10.25"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "172.2M"
+          "detail": "125.8M"
         }
       ],
       "passed": 2,
