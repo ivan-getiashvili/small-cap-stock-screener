@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-03T12:20:37.642Z",
+  "generatedAt": "2026-11-03T12:40:35.956Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-02",
-  "universeChecked": 6017,
-  "smallCapsInBand": 2931,
-  "investigated": 97,
-  "liveQuotes": 57,
+  "universeChecked": 5989,
+  "smallCapsInBand": 2922,
+  "investigated": 104,
+  "liveQuotes": 63,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-02T20:30:00.000Z",
     "edgarOk": true,
     "edgarFilings": 212,
     "leads": {
-      "8-K": 75,
-      "PR Newswire": 5,
-      "GlobeNewswire": 5,
-      "prior-session gainer": 16
+      "8-K": 74,
+      "PR Newswire": 4,
+      "GlobeNewswire": 7,
+      "prior-session gainer": 20
     },
     "feeds": [
       {
@@ -42,10 +42,10 @@
     ]
   },
   "fetch": {
-    "requested": 97,
-    "answered": 89,
-    "failed": 8,
-    "answerRatePct": 91.75257731958763,
+    "requested": 104,
+    "answered": 94,
+    "failed": 10,
+    "answerRatePct": 90.38461538461539,
     "reliable": true
   },
   "gate": {
@@ -65,17 +65,17 @@
       "legalName": "Backblaze, Inc.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 9.89,
-      "preMarketChangePct": 33.65,
-      "prevClose": 7.399925177702956,
+      "preMarketPrice": 9.94,
+      "preMarketChangePct": 34.32,
+      "prevClose": 7.40023823704586,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 3, 2026 7:20 AM ET",
-      "preMarketVolume": 244124.493882,
-      "preMarketDollarVolume": 2414391.24449298,
-      "relVolume": 0.08969147314099915,
+      "lastTradeAt": "Nov 3, 2026 7:39 AM ET",
+      "preMarketVolume": 267687.493882,
+      "preMarketDollarVolume": 2660813.6891870797,
+      "relVolume": 0.09834853228330255,
       "avgVolume50": 2721825,
       "sharesOutstanding": 63200000,
-      "marketCap": 625048000,
+      "marketCap": 628208000,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 64,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-26"
       },
-      "floatRotation": 0.0038627293335759495,
+      "floatRotation": 0.004235561612056962,
       "daysUp": 0,
       "priorRunPct": -8.992805755395683,
       "extended": false,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "33.6%"
+          "detail": "34.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "244,124"
+          "detail": "267,687"
         },
         {
           "name": "News catalyst",
@@ -116,7 +116,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$9.89"
+          "detail": "$9.94"
         },
         {
           "name": "Float <10M",
@@ -135,17 +135,17 @@
       "legalName": "HARMONIC INC.",
       "business": "Radio & Tv Broadcasting & Communications Equipment",
       "sector": "Technology",
-      "preMarketPrice": 11.89,
-      "preMarketChangePct": 16.226783968719452,
+      "preMarketPrice": 11.74,
+      "preMarketChangePct": 14.760508308895403,
       "prevClose": 10.23,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 3, 2026 7:20 AM ET",
-      "preMarketVolume": 17743.098576,
-      "preMarketDollarVolume": 210965.44206864003,
-      "relVolume": 0.01165959058984334,
+      "lastTradeAt": "Nov 3, 2026 7:40 AM ET",
+      "preMarketVolume": 19646.098576,
+      "preMarketDollarVolume": 230645.19728224,
+      "relVolume": 0.012910116296919356,
       "avgVolume50": 1521760,
       "sharesOutstanding": 109066445,
-      "marketCap": 1296800031.05,
+      "marketCap": 1280440064.3,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 20,
       "float": {
@@ -153,7 +153,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 0.00016268155229594216,
+      "floatRotation": 0.0001801296317671306,
       "daysUp": 0,
       "priorRunPct": 1.7910447761194,
       "extended": false,
@@ -171,12 +171,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "16.2%"
+          "detail": "14.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "17,743"
+          "detail": "19,646"
         },
         {
           "name": "News catalyst",
@@ -186,7 +186,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$11.89"
+          "detail": "$11.74"
         },
         {
           "name": "Float <10M",
@@ -266,6 +266,74 @@
       "quality": "low"
     },
     {
+      "symbol": "TTI",
+      "name": "Tetra Technologies Inc.",
+      "legalName": "TETRA TECHNOLOGIES INC",
+      "business": "Crude Petroleum & Natural Gas",
+      "sector": "Energy",
+      "preMarketPrice": 5.96,
+      "preMarketChangePct": 7.78,
+      "prevClose": 5.529782891074411,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 3, 2026 7:31 AM ET",
+      "preMarketVolume": 767.02871,
+      "preMarketDollarVolume": 4571.4911116,
+      "relVolume": 0.0004336908708378967,
+      "avgVolume50": 1768607,
+      "sharesOutstanding": 148429978,
+      "marketCap": 884642668.88,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 14,
+      "float": {
+        "shares": 148429978,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-30"
+      },
+      "floatRotation": 0.000005167613175823553,
+      "daysUp": 0,
+      "priorRunPct": 9.943714821763606,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Tetra Technologies (TTI) Q3 Earnings and Revenues Beat Estimates",
+        "subject": "Earnings or guidance",
+        "date": "2026-11-02"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "767"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.96"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "148.4M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
       "symbol": "ZSTK",
       "name": "ZeroStack Corp.",
       "legalName": "ZeroStack Corp.",
@@ -334,68 +402,68 @@
       "quality": "low"
     },
     {
-      "symbol": "BBTX",
-      "name": "Bambusa Therapeutics Inc.",
-      "legalName": "Bambusa Therapeutics, Inc.",
-      "business": "Biological Products, (No Diagnostic Substances)",
-      "sector": "Health Care",
-      "preMarketPrice": 16,
-      "preMarketChangePct": 6.737825216811206,
-      "prevClose": 14.99,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 3, 2026 7:08 AM ET",
-      "preMarketVolume": null,
-      "preMarketDollarVolume": null,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 40386875,
-      "marketCap": 646190000,
+      "symbol": "RPGL",
+      "name": "Republic Power Group Limited Class A Ordinary Shares",
+      "legalName": "Republic Power Group Ltd",
+      "business": "Services-Prepackaged Software",
+      "sector": "Technology",
+      "preMarketPrice": 11.6836,
+      "preMarketChangePct": 6.02,
+      "prevClose": 11.020184870779099,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 3, 2026 7:37 AM ET",
+      "preMarketVolume": 225,
+      "preMarketDollarVolume": 2628.81,
+      "relVolume": 0.00024590862691180294,
+      "avgVolume50": 914974,
+      "sharesOutstanding": 1009243.0392156864,
+      "marketCap": 11791591.972980393,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
+      "bestPriorSpikePct": 174,
       "float": {
-        "shares": 40386875,
+        "shares": 1009243.0392156864,
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-03"
       },
-      "floatRotation": null,
-      "daysUp": 0,
-      "priorRunPct": null,
-      "extended": false,
+      "floatRotation": 0.00022293936272758876,
+      "daysUp": 3,
+      "priorRunPct": 53.383458646616525,
+      "extended": true,
       "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Amended the charter or bylaws · Regulation FD disclosure (company announcement)",
-        "subject": "Amended the charter or bylaws · Regulation FD disclosure (company announcement)",
-        "date": "2026-11-03"
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
       },
       "leads": [
-        "8-K"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.7%"
+          "detail": "6.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "unknown"
+          "detail": "225"
         },
         {
           "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
+          "ok": false,
+          "detail": "none found"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$16.00"
+          "detail": "$11.68"
         },
         {
           "name": "Float <10M",
-          "ok": false,
-          "detail": "40.4M"
+          "ok": true,
+          "detail": "1.0M"
         }
       ],
       "passed": 2,
@@ -407,25 +475,25 @@
       "legalName": "Empire State Realty Trust, Inc.",
       "business": "Real Estate Investment Trusts",
       "sector": "Real Estate",
-      "preMarketPrice": 5.29,
-      "preMarketChangePct": 6.438631790744473,
+      "preMarketPrice": 5.2686,
+      "preMarketChangePct": 6.008048289738439,
       "prevClose": 4.97,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 3, 2026 7:19 AM ET",
-      "preMarketVolume": 1997.711555,
-      "preMarketDollarVolume": 10567.89412595,
-      "relVolume": 0.0009162595595081388,
+      "lastTradeAt": "Nov 3, 2026 7:28 AM ET",
+      "preMarketVolume": 2063.146395,
+      "preMarketDollarVolume": 10869.893096697002,
+      "relVolume": 0.0009462715487389293,
       "avgVolume50": 2180290,
-      "sharesOutstanding": 172165643.08617234,
-      "marketCap": 910756251.9258517,
+      "sharesOutstanding": 172165643.05835012,
+      "marketCap": 907071907.0172235,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 7,
       "float": {
-        "shares": 172165643.08617234,
+        "shares": 172165643.05835012,
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-03"
       },
-      "floatRotation": 0.00001160342748523935,
+      "floatRotation": 0.000011983496581259025,
       "daysUp": 0,
       "priorRunPct": -0.7984031936127752,
       "extended": false,
@@ -443,12 +511,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.4%"
+          "detail": "6.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "1,998"
+          "detail": "2,063"
         },
         {
           "name": "News catalyst",
@@ -458,148 +526,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.29"
+          "detail": "$5.27"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "172.2M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "TTI",
-      "name": "Tetra Technologies Inc.",
-      "legalName": "TETRA TECHNOLOGIES INC",
-      "business": "Crude Petroleum & Natural Gas",
-      "sector": "Energy",
-      "preMarketPrice": 5.88,
-      "preMarketChangePct": 6.33,
-      "prevClose": 5.529953917050691,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 3, 2026 4:29 AM ET",
-      "preMarketVolume": 259.02871,
-      "preMarketDollarVolume": 1523.0888148,
-      "relVolume": 0.00014645916814758734,
-      "avgVolume50": 1768607,
-      "sharesOutstanding": 148429978,
-      "marketCap": 872768270.64,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 14,
-      "float": {
-        "shares": 148429978,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-30"
-      },
-      "floatRotation": 0.0000017451239533296972,
-      "daysUp": 0,
-      "priorRunPct": 9.943714821763606,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Tetra Technologies (TTI) Q3 Earnings and Revenues Beat Estimates",
-        "subject": "Earnings or guidance",
-        "date": "2026-11-02"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "259"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$5.88"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "148.4M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "CCCC",
-      "name": "C4 Therapeutics Inc.",
-      "legalName": "C4 Therapeutics, Inc.",
-      "business": "Biological Products, (No Diagnostic Substances)",
-      "sector": "Health Care",
-      "preMarketPrice": 3.41,
-      "preMarketChangePct": 6.23,
-      "prevClose": 3.2100160030123317,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 3, 2026 5:29 AM ET",
-      "preMarketVolume": 344,
-      "preMarketDollarVolume": 1173.04,
-      "relVolume": 0.00013369098262094954,
-      "avgVolume50": 2573098,
-      "sharesOutstanding": 123025136,
-      "marketCap": 419515713.76,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 34,
-      "float": {
-        "shares": 123025136,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-31"
-      },
-      "floatRotation": 0.0000027961765472057678,
-      "daysUp": 1,
-      "priorRunPct": 10.130718954248367,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "C4 Therapeutics to Participate in Upcoming November Investor Conferences",
-        "subject": null,
-        "date": "2026-11-03"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "344"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.41"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "123.0M"
         }
       ],
       "passed": 2,
@@ -615,10 +547,10 @@
       "preMarketChangePct": 5.42,
       "prevClose": 2.305065452475811,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 3, 2026 4:02 AM ET",
-      "preMarketVolume": 234,
-      "preMarketDollarVolume": 568.62,
-      "relVolume": 0.00011618265502192078,
+      "lastTradeAt": "Nov 3, 2026 7:39 AM ET",
+      "preMarketVolume": 585,
+      "preMarketDollarVolume": 1421.5500000000002,
+      "relVolume": 0.00029045663755480195,
       "avgVolume50": 2014070,
       "sharesOutstanding": 29975526,
       "marketCap": 72840528.18,
@@ -629,7 +561,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-14"
       },
-      "floatRotation": 0.000007806368435369574,
+      "floatRotation": 0.000019515921088423936,
       "daysUp": 1,
       "priorRunPct": 8.292682926829286,
       "extended": false,
@@ -652,7 +584,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "234"
+          "detail": "585"
         },
         {
           "name": "News catalyst",
@@ -739,6 +671,74 @@
         }
       ],
       "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "ONEG",
+      "name": "OneConstruction Group Limited Ordinary Shares",
+      "legalName": "OneConstruction Group Ltd",
+      "business": "General Bldg Contractors - Residential Bldgs",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.79,
+      "preMarketChangePct": 9.81595092024541,
+      "prevClose": 1.63,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 3, 2026 7:39 AM ET",
+      "preMarketVolume": 360735,
+      "preMarketDollarVolume": 645715.65,
+      "relVolume": 7.856240608053662,
+      "avgVolume50": 45917,
+      "sharesOutstanding": 16000000,
+      "marketCap": 28640000,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 44,
+      "float": {
+        "shares": 16000000,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-03-31"
+      },
+      "floatRotation": 0.0225459375,
+      "daysUp": 1,
+      "priorRunPct": 103.74999999999997,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "9.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "360,735"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.79"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "16.0M"
+        }
+      ],
+      "passed": 1,
       "quality": "low"
     },
     {
