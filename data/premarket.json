@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-04T11:00:36.730Z",
+  "generatedAt": "2026-11-04T11:20:35.199Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-03",
   "universeChecked": 6017,
   "smallCapsInBand": 2929,
-  "investigated": 111,
-  "liveQuotes": 53,
+  "investigated": 122,
+  "liveQuotes": 65,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-03T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 239,
+    "edgarFilings": 263,
     "leads": {
-      "8-K": 92,
-      "PR Newswire": 1,
-      "GlobeNewswire": 0,
+      "8-K": 99,
+      "PR Newswire": 2,
+      "GlobeNewswire": 5,
       "prior-session gainer": 18
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 111,
-    "answered": 111,
+    "requested": 122,
+    "answered": 122,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -61,90 +61,22 @@
   "watchlist": [],
   "alsoRan": [
     {
-      "symbol": "USGO",
-      "name": "U.S. GoldMining Inc.",
-      "legalName": "U.S. GoldMining Inc.",
-      "business": "Gold and Silver Ores",
-      "sector": "Basic Materials",
-      "preMarketPrice": 5.64,
-      "preMarketChangePct": 13.94,
-      "prevClose": 4.949973670352817,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 4, 2026 5:14 AM ET",
-      "preMarketVolume": 387.437943,
-      "preMarketDollarVolume": 2185.14999852,
-      "relVolume": 0.005166459215105813,
-      "avgVolume50": 74991,
-      "sharesOutstanding": 14035736,
-      "marketCap": 79161551.03999999,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 28,
-      "float": {
-        "shares": 14035736,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-12"
-      },
-      "floatRotation": 0.00002760367842484356,
-      "daysUp": 1,
-      "priorRunPct": 23.326133909287257,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Delisting notice or listing-rule failure · Executive or board change",
-        "subject": "Delisting notice or listing-rule failure · Executive or board change",
-        "date": "2026-11-03"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "13.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "387"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$5.64"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "14.0M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "ALIT",
       "name": "Alight Inc. Class A",
       "legalName": "Alight, Inc. / Delaware",
       "business": "Services-Business Services, NEC",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 11.47,
-      "preMarketChangePct": 13.34,
-      "prevClose": 10.119992941591672,
+      "preMarketPrice": 11.5,
+      "preMarketChangePct": 13.64,
+      "prevClose": 10.119676170362547,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 4, 2026 6:00 AM ET",
-      "preMarketVolume": 5344.734394,
-      "preMarketDollarVolume": 61304.103499180004,
-      "relVolume": 0.008856243993776295,
+      "lastTradeAt": "Nov 4, 2026 6:18 AM ET",
+      "preMarketVolume": 5427.734394,
+      "preMarketDollarVolume": 62418.945531,
+      "relVolume": 0.008993775290431301,
       "avgVolume50": 603499,
       "sharesOutstanding": 446790011,
-      "marketCap": 5124681426.17,
+      "marketCap": 5138085126.5,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 17,
       "float": {
@@ -152,7 +84,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2021-07-02"
       },
-      "floatRotation": 0.00001196251989169919,
+      "floatRotation": 0.000012148289488056617,
       "daysUp": 1,
       "priorRunPct": 14.48435689455388,
       "extended": false,
@@ -170,12 +102,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "13.3%"
+          "detail": "13.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "5,345"
+          "detail": "5,428"
         },
         {
           "name": "News catalyst",
@@ -185,7 +117,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$11.47"
+          "detail": "$11.50"
         },
         {
           "name": "Float <10M",
@@ -206,10 +138,10 @@
       "preMarketChangePct": 12.58278145695364,
       "prevClose": 6.04,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 4, 2026 5:58 AM ET",
-      "preMarketVolume": 2170.896652,
-      "preMarketDollarVolume": 14762.0972336,
-      "relVolume": 0.00299180645908155,
+      "lastTradeAt": "Nov 4, 2026 6:16 AM ET",
+      "preMarketVolume": 2172.896652,
+      "preMarketDollarVolume": 14775.697233599998,
+      "relVolume": 0.0029945627454817576,
       "avgVolume50": 725614,
       "sharesOutstanding": 209444416.05960265,
       "marketCap": 1424222029.205298,
@@ -220,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-04"
       },
-      "floatRotation": 0.000010365025207366793,
+      "floatRotation": 0.000010374574280278963,
       "daysUp": 0,
       "priorRunPct": -4.731861198738168,
       "extended": false,
@@ -243,7 +175,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "2,171"
+          "detail": "2,173"
         },
         {
           "name": "News catalyst",
@@ -338,25 +270,25 @@
       "legalName": "Solid Power, Inc.",
       "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
       "sector": "Miscellaneous",
-      "preMarketPrice": 2.1604,
-      "preMarketChangePct": 6.42,
-      "prevClose": 2.030069535801541,
+      "preMarketPrice": 2.18,
+      "preMarketChangePct": 7.39,
+      "prevClose": 2.0299841698482166,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 4, 2026 6:00 AM ET",
-      "preMarketVolume": 317819,
-      "preMarketDollarVolume": 686616.1676,
-      "relVolume": 0.09341905346701238,
+      "lastTradeAt": "Nov 4, 2026 6:19 AM ET",
+      "preMarketVolume": 332530.751152,
+      "preMarketDollarVolume": 724917.03751136,
+      "relVolume": 0.09774339489235846,
       "avgVolume50": 3402079,
-      "sharesOutstanding": 228181212,
-      "marketCap": 492962690.4048,
+      "sharesOutstanding": 229188332,
+      "marketCap": 499630563.76000005,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 52,
       "float": {
-        "shares": 228181212,
+        "shares": 229188332,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-03"
+        "asOf": "2026-11-02"
       },
-      "floatRotation": 0.001392835971087751,
+      "floatRotation": 0.0014509061096181807,
       "daysUp": 1,
       "priorRunPct": -1.0050251256281415,
       "extended": false,
@@ -374,12 +306,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.4%"
+          "detail": "7.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "317,819"
+          "detail": "332,531"
         },
         {
           "name": "News catalyst",
@@ -389,12 +321,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.16"
+          "detail": "$2.18"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "228.2M"
+          "detail": "229.2M"
         }
       ],
       "passed": 3,
@@ -406,17 +338,17 @@
       "legalName": "FLOTEK INDUSTRIES INC/CN/",
       "business": "Miscellaneous Chemical Products",
       "sector": "Industrials",
-      "preMarketPrice": 29.77,
-      "preMarketChangePct": 19.85,
-      "prevClose": 24.83938256153525,
+      "preMarketPrice": 30.26,
+      "preMarketChangePct": 21.82,
+      "prevClose": 24.839927762272207,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 4, 2026 5:59 AM ET",
-      "preMarketVolume": 4512.034653,
-      "preMarketDollarVolume": 134323.27161981,
-      "relVolume": 0.0083203813718566,
+      "lastTradeAt": "Nov 4, 2026 6:18 AM ET",
+      "preMarketVolume": 4774.034653,
+      "preMarketDollarVolume": 144462.28859978,
+      "relVolume": 0.008803520373897955,
       "avgVolume50": 542287,
       "sharesOutstanding": 36220429,
-      "marketCap": 1078282171.33,
+      "marketCap": 1096030181.54,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 28,
       "float": {
@@ -424,7 +356,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 0.0001245715409113459,
+      "floatRotation": 0.0001318050278476823,
       "daysUp": 0,
       "priorRunPct": -4.670999187652323,
       "extended": false,
@@ -442,12 +374,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "19.9%"
+          "detail": "21.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "4,512"
+          "detail": "4,774"
         },
         {
           "name": "News catalyst",
@@ -457,7 +389,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$29.77"
+          "detail": "$30.26"
         },
         {
           "name": "Float <10M",
@@ -474,17 +406,17 @@
       "legalName": "ARDELYX, INC.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 3.2394,
-      "preMarketChangePct": 6.910891089108913,
+      "preMarketPrice": 3.2383,
+      "preMarketChangePct": 6.8745874587458875,
       "prevClose": 3.03,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 4, 2026 5:30 AM ET",
-      "preMarketVolume": 2580,
-      "preMarketDollarVolume": 8357.652,
-      "relVolume": 0.0006530045295228916,
+      "lastTradeAt": "Nov 4, 2026 6:15 AM ET",
+      "preMarketVolume": 3599,
+      "preMarketDollarVolume": 11654.6417,
+      "relVolume": 0.0009109160084313515,
       "avgVolume50": 3950968,
       "sharesOutstanding": 251372553,
-      "marketCap": 814296248.1882,
+      "marketCap": 814019738.3799001,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 21,
       "float": {
@@ -492,7 +424,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-27"
       },
-      "floatRotation": 0.0000102636503835007,
+      "floatRotation": 0.000014317394469077139,
       "daysUp": 0,
       "priorRunPct": 0.9999999999999934,
       "extended": false,
@@ -515,7 +447,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "2,580"
+          "detail": "3,599"
         },
         {
           "name": "News catalyst",
@@ -599,6 +531,74 @@
           "name": "Float <10M",
           "ok": false,
           "detail": "60.6M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "ZVRA",
+      "name": "Zevra Therapeutics Inc.",
+      "legalName": "ZEVRA THERAPEUTICS, INC.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 10.68,
+      "preMarketChangePct": 5.742574257425743,
+      "prevClose": 10.1,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 4, 2026 6:16 AM ET",
+      "preMarketVolume": 24,
+      "preMarketDollarVolume": 256.32,
+      "relVolume": 0.00001974395382547332,
+      "avgVolume50": 1215562,
+      "sharesOutstanding": 59504621,
+      "marketCap": 635509352.28,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 21,
+      "float": {
+        "shares": 59504621,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-30"
+      },
+      "floatRotation": 4.033300203693424e-7,
+      "daysUp": 0,
+      "priorRunPct": 5.981112277019941,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Zevra Reports Third Quarter 2026 Financial Results and Corporate Update",
+        "subject": "Earnings or guidance",
+        "date": "2026-11-03"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "24"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$10.68"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "59.5M"
         }
       ],
       "passed": 2,
