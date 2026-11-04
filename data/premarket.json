@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-04T12:40:35.864Z",
+  "generatedAt": "2026-11-04T13:00:35.660Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-03",
   "universeChecked": 5963,
   "smallCapsInBand": 2914,
   "investigated": 150,
-  "liveQuotes": 98,
+  "liveQuotes": 105,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-03T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 358,
+    "edgarFilings": 363,
     "leads": {
-      "8-K": 126,
-      "PR Newswire": 3,
-      "GlobeNewswire": 4,
+      "8-K": 128,
+      "PR Newswire": 2,
+      "GlobeNewswire": 5,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -58,41 +58,40 @@
     "floatStretch": 20000000
   },
   "shortlist": [],
-  "watchlist": [],
-  "alsoRan": [
+  "watchlist": [
     {
-      "symbol": "ALIT",
-      "name": "Alight Inc. Class A",
-      "legalName": "Alight, Inc. / Delaware",
-      "business": "Services-Business Services, NEC",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 12.05,
-      "preMarketChangePct": 19.07,
-      "prevClose": 10.120097421684724,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 4, 2026 7:40 AM ET",
-      "preMarketVolume": 21531.817641,
-      "preMarketDollarVolume": 259458.40257405004,
-      "relVolume": 0.03567829878922749,
-      "avgVolume50": 603499,
-      "sharesOutstanding": 446790011,
-      "marketCap": 5383819632.55,
+      "symbol": "RMTI",
+      "name": "Rockwell Medical Inc.",
+      "legalName": "ROCKWELL MEDICAL, INC.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 8.09,
+      "preMarketChangePct": 17.0767004341534,
+      "prevClose": 6.91,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 4, 2026 7:53 AM ET",
+      "preMarketVolume": null,
+      "preMarketDollarVolume": null,
+      "relVolume": null,
+      "avgVolume50": 31827,
+      "sharesOutstanding": 4030465,
+      "marketCap": 32606461.849999998,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 17,
+      "bestPriorSpikePct": 32,
       "float": {
-        "shares": 446790011,
+        "shares": 4030465,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2021-07-02"
+        "asOf": "2026-08-10"
       },
-      "floatRotation": 0.00004819225387964191,
-      "daysUp": 1,
-      "priorRunPct": 14.48435689455388,
+      "floatRotation": null,
+      "daysUp": 0,
+      "priorRunPct": -1.2857142857142836,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released",
-        "subject": "Earnings / results released",
+        "kind": "news",
+        "headline": "Curaleaf Holdings, Inc. (CURLF) Reports Q3 Loss, Beats Revenue Estimates",
+        "subject": "Earnings or guidance",
         "date": "2026-11-03"
       },
       "leads": [
@@ -102,49 +101,120 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "19.1%"
+          "detail": "17.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "21,532"
+          "detail": "unknown"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$12.05"
+          "detail": "$8.09"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "4.0M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "STIM",
+      "name": "Neuronetics Inc.",
+      "legalName": "Neuronetics, Inc.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 2.49,
+      "preMarketChangePct": 10.18,
+      "prevClose": 2.259938282809948,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 4, 2026 8:00 AM ET",
+      "preMarketVolume": 50093,
+      "preMarketDollarVolume": 124731.57,
+      "relVolume": 0.021996266698750867,
+      "avgVolume50": 2277341,
+      "sharesOutstanding": 76197222,
+      "marketCap": 189731082.78000003,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 47,
+      "float": {
+        "shares": 76197222,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-05"
+      },
+      "floatRotation": 0.0006574124185262292,
+      "daysUp": 0,
+      "priorRunPct": -8.035714285714292,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Neuronetics Reports Third Quarter 2026 Financial and Operating Results",
+        "subject": "Earnings or guidance",
+        "date": "2026-11-04"
+      },
+      "leads": [
+        "GlobeNewswire",
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "10.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "50,093"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.49"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "446.8M"
+          "detail": "76.2M"
         }
       ],
-      "passed": 3,
-      "quality": "low"
-    },
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
+  "alsoRan": [
     {
       "symbol": "FTCI",
       "name": "FTC Solar Inc.",
       "legalName": "FTC Solar, Inc.",
       "business": "Semiconductors & Related Devices",
       "sector": "Technology",
-      "preMarketPrice": 1.68,
-      "preMarketChangePct": 15.86,
-      "prevClose": 1.4500258933195234,
+      "preMarketPrice": 1.7987,
+      "preMarketChangePct": 24.05,
+      "prevClose": 1.4499798468359533,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 4, 2026 7:40 AM ET",
-      "preMarketVolume": 4792770.616861,
-      "preMarketDollarVolume": 8051854.636326479,
-      "relVolume": 20.274759262666514,
+      "lastTradeAt": "Nov 4, 2026 8:00 AM ET",
+      "preMarketVolume": 9929126.523108,
+      "preMarketDollarVolume": 17859519.87711436,
+      "relVolume": 42.00298032965722,
       "avgVolume50": 236391,
       "sharesOutstanding": 16461251,
-      "marketCap": 27654901.68,
+      "marketCap": 29608852.1737,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 49,
       "float": {
@@ -152,7 +222,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-31"
       },
-      "floatRotation": 0.2911547012351005,
+      "floatRotation": 0.6031817705171982,
       "daysUp": 5,
       "priorRunPct": 15.38461538461538,
       "extended": true,
@@ -170,12 +240,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "15.9%"
+          "detail": "24.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "4,792,771"
+          "detail": "9,929,127"
         },
         {
           "name": "News catalyst",
@@ -185,7 +255,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.68"
+          "detail": "$1.80"
         },
         {
           "name": "Float <10M",
@@ -197,22 +267,90 @@
       "quality": "low"
     },
     {
+      "symbol": "ALIT",
+      "name": "Alight Inc. Class A",
+      "legalName": "Alight, Inc. / Delaware",
+      "business": "Services-Business Services, NEC",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 12.12,
+      "preMarketChangePct": 19.76,
+      "prevClose": 10.120240480961924,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 4, 2026 8:00 AM ET",
+      "preMarketVolume": 36672.817641,
+      "preMarketDollarVolume": 444474.54980892,
+      "relVolume": 0.06076698990553423,
+      "avgVolume50": 603499,
+      "sharesOutstanding": 446790011,
+      "marketCap": 5415094933.32,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 17,
+      "float": {
+        "shares": 446790011,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2021-07-02"
+      },
+      "floatRotation": 0.0000820806569934707,
+      "daysUp": 1,
+      "priorRunPct": 14.48435689455388,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released",
+        "subject": "Earnings / results released",
+        "date": "2026-11-03"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "19.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "36,673"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$12.12"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "446.8M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "CRCT",
       "name": "Cricut Inc. Class A",
       "legalName": "Cricut, Inc.",
       "business": "Special Industry Machinery, NEC",
       "sector": "Technology",
-      "preMarketPrice": 6.8755,
-      "preMarketChangePct": 13.832781456953638,
+      "preMarketPrice": 6.96,
+      "preMarketChangePct": 15.2317880794702,
       "prevClose": 6.04,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 4, 2026 7:36 AM ET",
-      "preMarketVolume": 7794.896652,
-      "preMarketDollarVolume": 53593.811930826,
-      "relVolume": 0.010742483816464402,
+      "lastTradeAt": "Nov 4, 2026 7:49 AM ET",
+      "preMarketVolume": 9004.896652,
+      "preMarketDollarVolume": 62674.08069792,
+      "relVolume": 0.012410037088589801,
       "avgVolume50": 725614,
       "sharesOutstanding": 209444416.08040202,
-      "marketCap": 1440035082.760804,
+      "marketCap": 1457733135.919598,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 23,
       "float": {
@@ -220,7 +358,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-04"
       },
-      "floatRotation": 0.00003721701823269271,
+      "floatRotation": 0.000042994207343981796,
       "daysUp": 0,
       "priorRunPct": -4.731861198738168,
       "extended": false,
@@ -238,12 +376,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "13.8%"
+          "detail": "15.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "7,795"
+          "detail": "9,005"
         },
         {
           "name": "News catalyst",
@@ -253,7 +391,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.88"
+          "detail": "$6.96"
         },
         {
           "name": "Float <10M",
@@ -265,39 +403,39 @@
       "quality": "low"
     },
     {
-      "symbol": "ARDX",
-      "name": "Ardelyx Inc.",
-      "legalName": "ARDELYX, INC.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 3.3379,
-      "preMarketChangePct": 10.161716171617165,
-      "prevClose": 3.03,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 4, 2026 7:38 AM ET",
-      "preMarketVolume": 7629.955543,
-      "preMarketDollarVolume": 25468.0286069797,
-      "relVolume": 0.0019311610579989512,
-      "avgVolume50": 3950968,
-      "sharesOutstanding": 251372553,
-      "marketCap": 839056444.6587,
+      "symbol": "RYM",
+      "name": "RYTHM Inc.",
+      "legalName": "RYTHM, Inc.",
+      "business": "Agricultural Services",
+      "sector": "Consumer Staples",
+      "preMarketPrice": 18,
+      "preMarketChangePct": 9.09,
+      "prevClose": 16.500137501145844,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 4, 2026 7:58 AM ET",
+      "preMarketVolume": 2,
+      "preMarketDollarVolume": 36,
+      "relVolume": 0.00014369880729989942,
+      "avgVolume50": 13918,
+      "sharesOutstanding": 2180128,
+      "marketCap": 39242304,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 21,
+      "bestPriorSpikePct": 64,
       "float": {
-        "shares": 251372553,
+        "shares": 2180128,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-27"
+        "asOf": "2026-11-04"
       },
-      "floatRotation": 0.00003035317679651366,
-      "daysUp": 0,
-      "priorRunPct": 0.9999999999999934,
+      "floatRotation": 9.173773283036592e-7,
+      "daysUp": 1,
+      "priorRunPct": -0.4302397049784898,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "news",
-        "headline": "Ardelyx, Inc. Reports Third Quarter 2026 Financial Results",
-        "subject": "Earnings or guidance",
-        "date": "2026-11-03"
+        "kind": "8-K",
+        "headline": "Earnings / results released",
+        "subject": "Earnings / results released",
+        "date": "2026-11-04"
       },
       "leads": [
         "8-K"
@@ -305,28 +443,96 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.2%"
+          "ok": false,
+          "detail": "9.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "7,630"
+          "detail": "2"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "news"
+          "detail": "8-K"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.34"
+          "detail": "$18.00"
         },
         {
           "name": "Float <10M",
+          "ok": true,
+          "detail": "2.2M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "EHGO",
+      "name": "Eshallgo Inc. Class A Ordinary Shares",
+      "legalName": "EShallGo Inc.",
+      "business": "Services-Equipment Rental & Leasing, NEC",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 2.71,
+      "preMarketChangePct": 8.4,
+      "prevClose": 2.5,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 4, 2026 8:00 AM ET",
+      "preMarketVolume": 634551,
+      "preMarketDollarVolume": 1719633.21,
+      "relVolume": 0.15702502448601638,
+      "avgVolume50": 4041082,
+      "sharesOutstanding": 1173200,
+      "marketCap": 3179372,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 126,
+      "float": {
+        "shares": 1173200,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-04"
+      },
+      "floatRotation": 0.5408719740879645,
+      "daysUp": 0,
+      "priorRunPct": -22.04081632653062,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "251.4M"
+          "detail": "8.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "634,551"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.71"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "1.2M"
         }
       ],
       "passed": 3,
@@ -338,17 +544,17 @@
       "legalName": "Array Technologies, Inc.",
       "business": "Semiconductors & Related Devices",
       "sector": "Technology",
-      "preMarketPrice": 5.08,
-      "preMarketChangePct": 9.48,
-      "prevClose": 4.64011691633175,
+      "preMarketPrice": 4.92,
+      "preMarketChangePct": 6.03,
+      "prevClose": 4.640196170895029,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 4, 2026 7:40 AM ET",
-      "preMarketVolume": 1073898.328797,
-      "preMarketDollarVolume": 5455403.51028876,
-      "relVolume": 0.16120978362773167,
+      "lastTradeAt": "Nov 4, 2026 8:00 AM ET",
+      "preMarketVolume": 2364142.738611,
+      "preMarketDollarVolume": 11631582.27396612,
+      "relVolume": 0.3548966686478533,
       "avgVolume50": 6661496,
       "sharesOutstanding": 154007692,
-      "marketCap": 782359075.36,
+      "marketCap": 757717844.64,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 13,
       "float": {
@@ -356,7 +562,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-31"
       },
-      "floatRotation": 0.006973017482769627,
+      "floatRotation": 0.015350809481717317,
       "daysUp": 1,
       "priorRunPct": 20.634920634920633,
       "extended": false,
@@ -375,12 +581,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.5%"
+          "detail": "6.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,073,898"
+          "detail": "2,364,143"
         },
         {
           "name": "News catalyst",
@@ -390,7 +596,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.08"
+          "detail": "$4.92"
         },
         {
           "name": "Float <10M",
@@ -407,17 +613,17 @@
       "legalName": "Solid Power, Inc.",
       "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
       "sector": "Miscellaneous",
-      "preMarketPrice": 2.2,
-      "preMarketChangePct": 8.37,
-      "prevClose": 2.030082126049645,
+      "preMarketPrice": 2.139,
+      "preMarketChangePct": 5.37,
+      "prevClose": 2.0299895605959946,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 4, 2026 7:40 AM ET",
-      "preMarketVolume": 475001.751152,
-      "preMarketDollarVolume": 1045003.8525344001,
-      "relVolume": 0.13962102324843131,
+      "lastTradeAt": "Nov 4, 2026 8:00 AM ET",
+      "preMarketVolume": 527672.751152,
+      "preMarketDollarVolume": 1128692.0147141279,
+      "relVolume": 0.15510302704669704,
       "avgVolume50": 3402079,
       "sharesOutstanding": 229188332,
-      "marketCap": 504214330.40000004,
+      "marketCap": 490233842.14799994,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 52,
       "float": {
@@ -425,7 +631,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-02"
       },
-      "floatRotation": 0.0020725389770365798,
+      "floatRotation": 0.002302354341284704,
       "daysUp": 1,
       "priorRunPct": -1.0050251256281415,
       "extended": false,
@@ -443,12 +649,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.4%"
+          "detail": "5.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "475,002"
+          "detail": "527,673"
         },
         {
           "name": "News catalyst",
@@ -458,7 +664,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.20"
+          "detail": "$2.14"
         },
         {
           "name": "Float <10M",
@@ -470,158 +676,22 @@
       "quality": "low"
     },
     {
-      "symbol": "BNC",
-      "name": "BNB Standard Corporation",
-      "legalName": "BNB Standard Corp",
-      "business": "Finance Services",
-      "sector": "Consumer Staples",
-      "preMarketPrice": 4.95,
-      "preMarketChangePct": 5.543710021321957,
-      "prevClose": 4.69,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 4, 2026 7:38 AM ET",
-      "preMarketVolume": 58749.10889,
-      "preMarketDollarVolume": 290808.0890055,
-      "relVolume": 0.031668544647934775,
-      "avgVolume50": 1855125,
-      "sharesOutstanding": 41173850,
-      "marketCap": 203810557.5,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 50,
-      "float": {
-        "shares": 41173850,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-04"
-      },
-      "floatRotation": 0.0014268548821642865,
-      "daysUp": 0,
-      "priorRunPct": -12.007504690431514,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Executive or board change · Regulation FD disclosure (company announcement)",
-        "subject": "Executive or board change · Regulation FD disclosure (company announcement)",
-        "date": "2026-11-03"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.5%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "58,749"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.95"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "41.2M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "CMTG",
-      "name": "Claros Mortgage Trust Inc.",
-      "legalName": "Claros Mortgage Trust, Inc.",
-      "business": "Real Estate",
-      "sector": "Finance",
-      "preMarketPrice": 1.369,
-      "preMarketChangePct": 23.33,
-      "prevClose": 1.1100300008108326,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 4, 2026 7:40 AM ET",
-      "preMarketVolume": 3535,
-      "preMarketDollarVolume": 4839.415,
-      "relVolume": 0.005257287328970851,
-      "avgVolume50": 672400,
-      "sharesOutstanding": 141085961,
-      "marketCap": 193146680.609,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 19,
-      "float": {
-        "shares": 141085961,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-02"
-      },
-      "floatRotation": 0.00002505564674858046,
-      "daysUp": 0,
-      "priorRunPct": -6.557377049180333,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released · Regulation FD disclosure (company announcement)",
-        "subject": "Earnings / results released · Regulation FD disclosure (company announcement)",
-        "date": "2026-11-03"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "23.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "3,535"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.37"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "141.1M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
       "symbol": "FTK",
       "name": "Flotek Industries Inc.",
       "legalName": "FLOTEK INDUSTRIES INC/CN/",
       "business": "Miscellaneous Chemical Products",
       "sector": "Industrials",
-      "preMarketPrice": 29.81,
-      "preMarketChangePct": 20.01,
-      "prevClose": 24.839596700274978,
+      "preMarketPrice": 30.31,
+      "preMarketChangePct": 22.02,
+      "prevClose": 24.84019013276512,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 4, 2026 7:38 AM ET",
-      "preMarketVolume": 7295.069306,
-      "preMarketDollarVolume": 217466.01601186,
-      "relVolume": 0.013452414138638766,
+      "lastTradeAt": "Nov 4, 2026 8:00 AM ET",
+      "preMarketVolume": 8342.069306,
+      "preMarketDollarVolume": 252848.12066485998,
+      "relVolume": 0.015383126104811658,
       "avgVolume50": 542287,
       "sharesOutstanding": 36220429,
-      "marketCap": 1079730988.49,
+      "marketCap": 1097841202.99,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 28,
       "float": {
@@ -629,7 +699,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 0.00020140758978862453,
+      "floatRotation": 0.00023031392880520546,
       "daysUp": 0,
       "priorRunPct": -4.670999187652323,
       "extended": false,
@@ -647,12 +717,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "20.0%"
+          "detail": "22.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "7,295"
+          "detail": "8,342"
         },
         {
           "name": "News catalyst",
@@ -662,12 +732,80 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$29.81"
+          "detail": "$30.31"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "36.2M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "CMTG",
+      "name": "Claros Mortgage Trust Inc.",
+      "legalName": "Claros Mortgage Trust, Inc.",
+      "business": "Real Estate",
+      "sector": "Finance",
+      "preMarketPrice": 1.2824,
+      "preMarketChangePct": 15.53,
+      "prevClose": 1.1100147147926944,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 4, 2026 7:57 AM ET",
+      "preMarketVolume": 10993.328357,
+      "preMarketDollarVolume": 14097.8442850168,
+      "relVolume": 0.01634938780041642,
+      "avgVolume50": 672400,
+      "sharesOutstanding": 141085961,
+      "marketCap": 180928636.38639998,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 19,
+      "float": {
+        "shares": 141085961,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-02"
+      },
+      "floatRotation": 0.00007791936404643408,
+      "daysUp": 0,
+      "priorRunPct": -6.557377049180333,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released · Regulation FD disclosure (company announcement)",
+        "subject": "Earnings / results released · Regulation FD disclosure (company announcement)",
+        "date": "2026-11-03"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "15.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "10,993"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.28"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "141.1M"
         }
       ],
       "passed": 2,
