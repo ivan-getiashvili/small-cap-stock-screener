@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-11-04T21:10:40.232Z",
+ "updatedAt": "2026-11-05T01:26:27.088Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -8141,7 +8141,10 @@
      "missing": [
       "Pre-market volume ≥50k"
      ],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 7.99
+     }
     },
     {
      "symbol": "STIM",
@@ -8162,7 +8165,10 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 2.95
+     }
     },
     {
      "symbol": "ARRY",
@@ -8204,7 +8210,10 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null
+     "performance": null,
+     "intraday": {
+      "noon": 13.72
+     }
     }
    ]
   }
