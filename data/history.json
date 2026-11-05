@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-11-05T01:26:27.088Z",
+ "updatedAt": "2026-11-05T11:00:59.917Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -8141,7 +8141,22 @@
      "missing": [
       "Pre-market volume ≥50k"
      ],
-     "performance": null,
+     "performance": {
+      "open": 7.96,
+      "high": 8.39,
+      "low": 7.83,
+      "close": 8.05,
+      "volume": 17310,
+      "prevClose": 8.09,
+      "gapPct": -1.6069221260815807,
+      "openToHighPct": 5.402010050251263,
+      "openToClosePct": 1.1306532663316677,
+      "openToLowPct": -1.6331658291457274,
+      "alertToHighPct": 3.7082818294190445,
+      "alertToClosePct": -0.4944375772558609,
+      "filledAt": "2026-11-05T11:00:59.454Z",
+      "noon": 7.99
+     },
      "intraday": {
       "noon": 7.99
      }
@@ -8165,7 +8180,22 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 2.77,
+      "high": 3.05,
+      "low": 2.55,
+      "close": 2.705,
+      "volume": 5469586,
+      "prevClose": 2.26,
+      "gapPct": 22.56637168141594,
+      "openToHighPct": 10.108303249097466,
+      "openToClosePct": -2.346570397111911,
+      "openToLowPct": -7.942238267148022,
+      "alertToHighPct": 22.48995983935741,
+      "alertToClosePct": 8.634538152610435,
+      "filledAt": "2026-11-05T11:00:59.610Z",
+      "noon": 2.95
+     },
      "intraday": {
       "noon": 2.95
      }
@@ -8189,7 +8219,21 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null
+     "performance": {
+      "open": 5.13,
+      "high": 5.96,
+      "low": 5.08,
+      "close": 5.33,
+      "volume": 59376360,
+      "prevClose": 4.64,
+      "gapPct": 10.560344827586214,
+      "openToHighPct": 16.179337231968812,
+      "openToClosePct": 3.8986354775828493,
+      "openToLowPct": -0.974658869395708,
+      "alertToHighPct": 15.503875968992245,
+      "alertToClosePct": 3.294573643410851,
+      "filledAt": "2026-11-05T11:00:59.771Z"
+     }
     },
     {
      "symbol": "ALIT",
@@ -8210,10 +8254,73 @@
      "missing": [
       "Float <10M"
      ],
-     "performance": null,
+     "performance": {
+      "open": 13.66,
+      "high": 16.7799,
+      "low": 12.495,
+      "close": 12.75,
+      "volume": 5339289,
+      "prevClose": 10.12,
+      "gapPct": 34.98023715415021,
+      "openToHighPct": 22.839677891654475,
+      "openToClosePct": -6.661786237188874,
+      "openToLowPct": -8.528550512445102,
+      "alertToHighPct": 26.62546409490176,
+      "alertToClosePct": -3.78520329620574,
+      "filledAt": "2026-11-05T11:00:59.917Z",
+      "noon": 13.72
+     },
      "intraday": {
       "noon": 13.72
      }
+    }
+   ]
+  },
+  "2026-11-05": {
+   "date": "2026-11-05",
+   "source": "live",
+   "names": [
+    {
+     "symbol": "TBI",
+     "legalName": "TrueBlue, Inc.",
+     "business": "Services-Help Supply Services",
+     "list": "watchlist",
+     "firstSeenAt": "2026-11-05T11:00:35.654Z",
+     "lastSeenAt": "2026-11-05T11:00:35.654Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 12.7657,
+     "preMarketChangePct": 29.73,
+     "prevClose": 9.840206582902953,
+     "preMarketVolume": 54182.816379,
+     "relVolume": 0.1790214675131583,
+     "floatShares": 30484377,
+     "catalyst": "Earnings or guidance",
+     "extended": false,
+     "missing": [
+      "Float <10M"
+     ],
+     "performance": null
+    },
+    {
+     "symbol": "ARQ",
+     "legalName": "Arq, Inc.",
+     "business": "Miscellaneous Chemical Products",
+     "list": "watchlist",
+     "firstSeenAt": "2026-11-05T11:00:35.654Z",
+     "lastSeenAt": "2026-11-05T11:00:35.654Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 2.3099,
+     "preMarketChangePct": 25.538043478260857,
+     "prevClose": 1.84,
+     "preMarketVolume": 2222620.318023,
+     "relVolume": 9.51692322655688,
+     "floatShares": 44189360,
+     "catalyst": "Earnings or guidance",
+     "extended": true,
+     "missing": [
+      "Float <10M"
+     ],
+     "performance": null
     }
    ]
   }
