@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-09T13:00:35.350Z",
+  "generatedAt": "2026-11-09T13:20:33.890Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-06",
   "universeChecked": 6053,
   "smallCapsInBand": 2905,
-  "investigated": 127,
-  "liveQuotes": 88,
+  "investigated": 136,
+  "liveQuotes": 94,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-06T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 241,
+    "edgarFilings": 273,
     "leads": {
-      "8-K": 95,
-      "PR Newswire": 2,
-      "GlobeNewswire": 8,
+      "8-K": 106,
+      "PR Newswire": 1,
+      "GlobeNewswire": 6,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 127,
-    "answered": 127,
+    "requested": 136,
+    "answered": 136,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "CKX LANDS, INC.",
       "business": "Crude Petroleum & Natural Gas",
       "sector": "Energy",
-      "preMarketPrice": 15.64,
-      "preMarketChangePct": 49.66507177033495,
+      "preMarketPrice": 16.25,
+      "preMarketChangePct": 55.50239234449762,
       "prevClose": 10.45,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 9, 2026 8:00 AM ET",
-      "preMarketVolume": 2063450.689108,
-      "preMarketDollarVolume": 32272368.77764912,
-      "relVolume": 285.91529570569486,
+      "lastTradeAt": "Nov 9, 2026 8:20 AM ET",
+      "preMarketVolume": 2290054.338806,
+      "preMarketDollarVolume": 37213383.0055975,
+      "relVolume": 317.3138892622974,
       "avgVolume50": 7217,
       "sharesOutstanding": 2053129,
-      "marketCap": 32110937.560000002,
+      "marketCap": 33363346.25,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 14,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-06"
       },
-      "floatRotation": 1.00502729692484,
+      "floatRotation": 1.115397200471086,
       "daysUp": 0,
       "priorRunPct": -2.7454630060493246,
       "extended": false,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "49.7%"
+          "detail": "55.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "2,063,451"
+          "detail": "2,290,054"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$15.64"
+          "detail": "$16.25"
         },
         {
           "name": "Float <10M",
@@ -132,17 +132,17 @@
       "legalName": "Edesa Biotech, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 2.57,
-      "preMarketChangePct": 20.09345794392522,
+      "preMarketPrice": 2.66,
+      "preMarketChangePct": 24.299065420560748,
       "prevClose": 2.14,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 9, 2026 8:00 AM ET",
-      "preMarketVolume": 8528396,
-      "preMarketDollarVolume": 21917977.72,
-      "relVolume": 121.31431009957326,
+      "lastTradeAt": "Nov 9, 2026 8:20 AM ET",
+      "preMarketVolume": 10154713,
+      "preMarketDollarVolume": 27011536.580000002,
+      "relVolume": 144.44826458036985,
       "avgVolume50": 70300,
       "sharesOutstanding": 9641031,
-      "marketCap": 24777449.669999998,
+      "marketCap": 25645142.46,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 91,
       "float": {
@@ -150,7 +150,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-13"
       },
-      "floatRotation": 0.8845937742550564,
+      "floatRotation": 1.0532808161284826,
       "daysUp": 0,
       "priorRunPct": -20.74074074074074,
       "extended": false,
@@ -168,12 +168,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "20.1%"
+          "detail": "24.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "8,528,396"
+          "detail": "10,154,713"
         },
         {
           "name": "News catalyst",
@@ -183,7 +183,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.57"
+          "detail": "$2.66"
         },
         {
           "name": "Float <10M",
@@ -198,22 +198,90 @@
   "watchlist": [],
   "alsoRan": [
     {
+      "symbol": "DCTH",
+      "name": "Delcath Systems Inc.",
+      "legalName": "DELCATH SYSTEMS, INC.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 17.87,
+      "preMarketChangePct": 19.69,
+      "prevClose": 14.930236444147381,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 9, 2026 8:20 AM ET",
+      "preMarketVolume": 46252.313008,
+      "preMarketDollarVolume": 826528.83345296,
+      "relVolume": 0.09085042154058895,
+      "avgVolume50": 509104,
+      "sharesOutstanding": 34698795,
+      "marketCap": 620067466.65,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 22,
+      "float": {
+        "shares": 34698795,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-31"
+      },
+      "floatRotation": 0.0013329659721036421,
+      "daysUp": 0,
+      "priorRunPct": -0.8196721311475478,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Delcath Systems Inc. Q3 Income Rises ",
+        "subject": null,
+        "date": "2026-11-09"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "19.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "46,252"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$17.87"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "34.7M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "AIOT",
       "name": "PowerFleet Inc.",
       "legalName": "Powerfleet, Inc.",
       "business": "Communications Equipment, NEC",
       "sector": "Telecommunications",
-      "preMarketPrice": 2.99,
-      "preMarketChangePct": 11.15,
-      "prevClose": 2.6900584795321643,
+      "preMarketPrice": 3.1648,
+      "preMarketChangePct": 17.65,
+      "prevClose": 2.6900127496812583,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 9, 2026 7:53 AM ET",
-      "preMarketVolume": 3775.631339,
-      "preMarketDollarVolume": 11289.13770361,
-      "relVolume": 0.0022008657072691037,
+      "lastTradeAt": "Nov 9, 2026 8:20 AM ET",
+      "preMarketVolume": 28818.265675,
+      "preMarketDollarVolume": 91204.04720824,
+      "relVolume": 0.016798550221769362,
       "avgVolume50": 1715521,
       "sharesOutstanding": 134225918,
-      "marketCap": 401335494.82000005,
+      "marketCap": 424798185.2864,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 14,
       "float": {
@@ -221,7 +289,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-06"
       },
-      "floatRotation": 0.00002812892916105815,
+      "floatRotation": 0.00021469971004407657,
       "daysUp": 0,
       "priorRunPct": -8.566433566433556,
       "extended": false,
@@ -239,12 +307,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "11.2%"
+          "detail": "17.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "3,776"
+          "detail": "28,818"
         },
         {
           "name": "News catalyst",
@@ -254,7 +322,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.99"
+          "detail": "$3.16"
         },
         {
           "name": "Float <10M",
@@ -266,90 +334,22 @@
       "quality": "low"
     },
     {
-      "symbol": "HTCO",
-      "name": "High-Trend International Group Class A Ordinary Shares",
-      "legalName": "High-Trend International Group",
-      "business": "Deep Sea Foreign Transportation of  Freight",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.75,
-      "preMarketChangePct": 34.615384615384606,
-      "prevClose": 1.3,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 9, 2026 7:53 AM ET",
-      "preMarketVolume": 2774,
-      "preMarketDollarVolume": 4854.5,
-      "relVolume": 0.03106348193189326,
-      "avgVolume50": 89301,
-      "sharesOutstanding": 6632441,
-      "marketCap": 11606771.75,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 240,
-      "float": {
-        "shares": 6632441,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-10-31"
-      },
-      "floatRotation": 0.0004182472184826069,
-      "daysUp": 0,
-      "priorRunPct": -8.450704225352105,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "34.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "2,774"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.75"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "6.6M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
       "symbol": "INO",
       "name": "Inovio Pharmaceuticals Inc.",
       "legalName": "INOVIO PHARMACEUTICALS, INC.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 1.3322,
-      "preMarketChangePct": 9.65,
-      "prevClose": 1.2149566803465572,
+      "preMarketPrice": 1.3397,
+      "preMarketChangePct": 10.26,
+      "prevClose": 1.2150371848358423,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 9, 2026 8:00 AM ET",
-      "preMarketVolume": 1810817.104006,
-      "preMarketDollarVolume": 2412370.5459567932,
-      "relVolume": 0.4453706908630759,
+      "lastTradeAt": "Nov 9, 2026 8:20 AM ET",
+      "preMarketVolume": 2003612.419795,
+      "preMarketDollarVolume": 2684239.5587993613,
+      "relVolume": 0.4927887226445049,
       "avgVolume50": 4065865,
       "sharesOutstanding": 103397518,
-      "marketCap": 137746173.4796,
+      "marketCap": 138521654.8646,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 21,
       "float": {
@@ -357,7 +357,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.017513158333317055,
+      "floatRotation": 0.01937776127077828,
       "daysUp": 0,
       "priorRunPct": 88.52034205752786,
       "extended": true,
@@ -374,13 +374,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.7%"
+          "ok": true,
+          "detail": "10.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,810,817"
+          "detail": "2,003,612"
         },
         {
           "name": "News catalyst",
@@ -390,7 +390,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.33"
+          "detail": "$1.34"
         },
         {
           "name": "Float <10M",
@@ -398,75 +398,7 @@
           "detail": "103.4M"
         }
       ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "IMRX",
-      "name": "Immuneering Corporation Class A",
-      "legalName": "Immuneering Corp",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 3.68,
-      "preMarketChangePct": 9.361069836552746,
-      "prevClose": 3.365,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 9, 2026 5:43 AM ET",
-      "preMarketVolume": 10,
-      "preMarketDollarVolume": 36.800000000000004,
-      "relVolume": 0.000013390573571828376,
-      "avgVolume50": 746794,
-      "sharesOutstanding": 25938064,
-      "marketCap": 95452075.52000001,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 24,
-      "float": {
-        "shares": 25938064,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2021-09-03"
-      },
-      "floatRotation": 3.8553378540510966e-7,
-      "daysUp": 0,
-      "priorRunPct": -16.293532338308445,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Immuneering Appoints Accomplished Commercial Leader Grant Bogle to Board of Directors",
-        "subject": null,
-        "date": "2026-11-09"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.4%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "10"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.68"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "25.9M"
-        }
-      ],
-      "passed": 2,
+      "passed": 3,
       "quality": "low"
     },
     {
@@ -674,22 +606,158 @@
       "quality": "low"
     },
     {
+      "symbol": "ROLR",
+      "name": "High Roller Technologies Inc.",
+      "legalName": "High Roller Technologies, Inc.",
+      "business": "Services-Amusement & Recreation Services",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 3.41,
+      "preMarketChangePct": 7.91,
+      "prevClose": 3.160040774719674,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 9, 2026 8:18 AM ET",
+      "preMarketVolume": 1238,
+      "preMarketDollarVolume": 4221.58,
+      "relVolume": 0.018646544063380177,
+      "avgVolume50": 66393,
+      "sharesOutstanding": 11020628,
+      "marketCap": 37580341.480000004,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 46,
+      "float": {
+        "shares": 11020628,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-12"
+      },
+      "floatRotation": 0.00011233479616588093,
+      "daysUp": 0,
+      "priorRunPct": -23.264781491002577,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "High Roller Technologies Launches ROLR™ Apple iOS Mobile App, Expanding Access for Its Prediction Markets Platform to Apple iPhone Users",
+        "subject": null,
+        "date": "2026-11-09"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "1,238"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.41"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "11.0M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "VFF",
+      "name": "Village Farms International Inc. Common Shares",
+      "legalName": "Village Farms International, Inc.",
+      "business": "Agricultural Production-Crops",
+      "sector": "Consumer Staples",
+      "preMarketPrice": 3.09,
+      "preMarketChangePct": 7.29,
+      "prevClose": 2.8800447385590457,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 9, 2026 8:19 AM ET",
+      "preMarketVolume": 31890.747709,
+      "preMarketDollarVolume": 98542.41042080999,
+      "relVolume": 0.035012689149724316,
+      "avgVolume50": 910834,
+      "sharesOutstanding": 122319352,
+      "marketCap": 377966797.68,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 26,
+      "float": {
+        "shares": 122319352,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-06"
+      },
+      "floatRotation": 0.00026071710802555594,
+      "daysUp": 0,
+      "priorRunPct": 7.335907335907334,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Village Farms International Inc. Q3 Sales Increase ",
+        "subject": null,
+        "date": "2026-11-09"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "31,891"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.09"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "122.3M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
       "symbol": "STAK",
       "name": "STAK Inc. Class A Ordinary Shares",
       "legalName": "STAK Inc.",
       "business": "Oil & Gas Field Machinery & Equipment",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.53,
-      "preMarketChangePct": 8.28,
-      "prevClose": 3.260066494274104,
+      "preMarketPrice": 3.48,
+      "preMarketChangePct": 6.75,
+      "prevClose": 3.2599531615925064,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 9, 2026 8:00 AM ET",
-      "preMarketVolume": 2932652.627959,
-      "preMarketDollarVolume": 10352263.77669527,
-      "relVolume": 0.6128962176624466,
+      "lastTradeAt": "Nov 9, 2026 8:20 AM ET",
+      "preMarketVolume": 3052966.627959,
+      "preMarketDollarVolume": 10624323.86529732,
+      "relVolume": 0.6380406874945793,
       "avgVolume50": 4784909,
       "sharesOutstanding": 19210349,
-      "marketCap": 67812531.97,
+      "marketCap": 66852014.52,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 149,
       "float": {
@@ -697,7 +765,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-06-30"
       },
-      "floatRotation": 0.15266003902162317,
+      "floatRotation": 0.15892301737771655,
       "daysUp": 1,
       "priorRunPct": 12.345679012345675,
       "extended": false,
@@ -715,12 +783,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.3%"
+          "detail": "6.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "2,932,653"
+          "detail": "3,052,967"
         },
         {
           "name": "News catalyst",
@@ -730,7 +798,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.53"
+          "detail": "$3.48"
         },
         {
           "name": "Float <10M",
@@ -742,38 +810,38 @@
       "quality": "low"
     },
     {
-      "symbol": "CGEM",
-      "name": "Cullinan Therapeutics Inc.",
-      "legalName": "Cullinan Therapeutics, Inc.",
-      "business": "Biological Products, (No Diagnostic Substances)",
+      "symbol": "CRMD",
+      "name": "CorMedix Inc.",
+      "legalName": "CorMedix Inc.",
+      "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 11.975,
-      "preMarketChangePct": 5.88,
-      "prevClose": 11.309973554967888,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 9, 2026 7:59 AM ET",
-      "preMarketVolume": 318,
-      "preMarketDollarVolume": 3808.0499999999997,
-      "relVolume": 0.0004734199979753107,
-      "avgVolume50": 671708,
-      "sharesOutstanding": 64354694,
-      "marketCap": 770647460.65,
+      "preMarketPrice": 5.56,
+      "preMarketChangePct": 6.411483253588517,
+      "prevClose": 5.225,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 9, 2026 8:17 AM ET",
+      "preMarketVolume": 26351.957821,
+      "preMarketDollarVolume": 146516.88548476,
+      "relVolume": 0.023492644559070918,
+      "avgVolume50": 1121711,
+      "sharesOutstanding": 77944324,
+      "marketCap": 433370441.44,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 37,
+      "bestPriorSpikePct": 19,
       "float": {
-        "shares": 64354694,
+        "shares": 77944324,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-31"
+        "asOf": "2026-08-10"
       },
-      "floatRotation": 0.000004941364494717355,
+      "floatRotation": 0.00033808693781217473,
       "daysUp": 0,
-      "priorRunPct": -29.19093851132686,
+      "priorRunPct": -31.60994764397906,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Cullinan Reports Phase 1b/2a Study Data For Velinotamig In SLE Patients; Stock Up ",
-        "subject": null,
+        "headline": "CorMedix To Acquire Heron's Commercial Drug Portfolio In $223 Mln Deal; Stock Up ",
+        "subject": "Merger or acquisition",
         "date": "2026-11-09"
       },
       "leads": [
@@ -783,12 +851,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.9%"
+          "detail": "6.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "318"
+          "detail": "26,352"
         },
         {
           "name": "News catalyst",
@@ -798,75 +866,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$11.97"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "64.4M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "CRMD",
-      "name": "CorMedix Inc.",
-      "legalName": "CorMedix Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 5.5,
-      "preMarketChangePct": 5.26315789473685,
-      "prevClose": 5.225,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 9, 2026 7:50 AM ET",
-      "preMarketVolume": 22530.957821,
-      "preMarketDollarVolume": 123920.2680155,
-      "relVolume": 0.020086241305469946,
-      "avgVolume50": 1121711,
-      "sharesOutstanding": 77944324,
-      "marketCap": 428693782,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 19,
-      "float": {
-        "shares": 77944324,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-10"
-      },
-      "floatRotation": 0.00028906476655054446,
-      "daysUp": 0,
-      "priorRunPct": -31.60994764397906,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt) · Sold unregistered shares (dilution) · Regulation FD disclosure (company announcement)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt) · Sold unregistered shares (dilution) · Regulation FD disclosure (company announcement)",
-        "date": "2026-11-09"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "22,531"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$5.50"
+          "detail": "$5.56"
         },
         {
           "name": "Float <10M",
