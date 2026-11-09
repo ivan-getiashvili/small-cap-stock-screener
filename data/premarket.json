@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-09T11:40:36.451Z",
+  "generatedAt": "2026-11-09T12:00:35.059Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-06",
-  "universeChecked": 6019,
-  "smallCapsInBand": 2899,
-  "investigated": 85,
-  "liveQuotes": 43,
+  "universeChecked": 6052,
+  "smallCapsInBand": 2904,
+  "investigated": 90,
+  "liveQuotes": 56,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-06T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 169,
+    "edgarFilings": 179,
     "leads": {
-      "8-K": 61,
-      "PR Newswire": 1,
+      "8-K": 63,
+      "PR Newswire": 0,
       "GlobeNewswire": 5,
-      "prior-session gainer": 21
+      "prior-session gainer": 25
     },
     "feeds": [
       {
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 85,
-    "answered": 85,
+    "requested": 90,
+    "answered": 90,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -59,92 +59,22 @@
   },
   "shortlist": [
     {
-      "symbol": "EDSA",
-      "name": "Edesa Biotech Inc. Common Shares",
-      "legalName": "Edesa Biotech, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 2.61,
-      "preMarketChangePct": 21.962616822429894,
-      "prevClose": 2.14,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 9, 2026 6:40 AM ET",
-      "preMarketVolume": 3486376,
-      "preMarketDollarVolume": 9099441.36,
-      "relVolume": 49.592830725462306,
-      "avgVolume50": 70300,
-      "sharesOutstanding": 9641031,
-      "marketCap": 25163090.91,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 91,
-      "float": {
-        "shares": 9641031,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-13"
-      },
-      "floatRotation": 0.3616185862279667,
-      "daysUp": 0,
-      "priorRunPct": -20.74074074074074,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Terminated a material agreement · Regulation FD disclosure (company announcement)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Terminated a material agreement · Regulation FD disclosure (company announcement)",
-        "date": "2026-11-09"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "22.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "3,486,376"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.61"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "9.6M"
-        }
-      ],
-      "passed": 5,
-      "quality": "high"
-    }
-  ],
-  "watchlist": [
-    {
       "symbol": "CKX",
       "name": "CKX Lands Inc.",
       "legalName": "CKX LANDS, INC.",
       "business": "Crude Petroleum & Natural Gas",
       "sector": "Energy",
-      "preMarketPrice": 15,
-      "preMarketChangePct": 43.54066985645934,
+      "preMarketPrice": 14.9019,
+      "preMarketChangePct": 42.60191387559809,
       "prevClose": 10.45,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 9, 2026 6:31 AM ET",
-      "preMarketVolume": 20,
-      "preMarketDollarVolume": 300,
-      "relVolume": 0.002771234585007621,
+      "lastTradeAt": "Nov 9, 2026 7:00 AM ET",
+      "preMarketVolume": 322324.703745,
+      "preMarketDollarVolume": 4803250.502737615,
+      "relVolume": 44.661868331023975,
       "avgVolume50": 7217,
       "sharesOutstanding": 2053129,
-      "marketCap": 30796935,
+      "marketCap": 30595523.0451,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 14,
       "float": {
@@ -152,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-06"
       },
-      "floatRotation": 0.000009741229119066556,
+      "floatRotation": 0.15699193949576476,
       "daysUp": 0,
       "priorRunPct": -2.7454630060493246,
       "extended": false,
@@ -170,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "43.5%"
+          "detail": "42.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "20"
+          "ok": true,
+          "detail": "322,325"
         },
         {
           "name": "News catalyst",
@@ -185,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$15.00"
+          "detail": "$14.90"
         },
         {
           "name": "Float <10M",
@@ -193,10 +123,79 @@
           "detail": "2.1M"
         }
       ],
-      "passed": 4,
-      "quality": "medium"
+      "passed": 5,
+      "quality": "high"
+    },
+    {
+      "symbol": "EDSA",
+      "name": "Edesa Biotech Inc. Common Shares",
+      "legalName": "Edesa Biotech, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 2.6279,
+      "preMarketChangePct": 22.799065420560733,
+      "prevClose": 2.14,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 9, 2026 7:00 AM ET",
+      "preMarketVolume": 5145433,
+      "preMarketDollarVolume": 13521683.3807,
+      "relVolume": 73.19250355618777,
+      "avgVolume50": 70300,
+      "sharesOutstanding": 9641031,
+      "marketCap": 25335665.3649,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 91,
+      "float": {
+        "shares": 9641031,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-13"
+      },
+      "floatRotation": 0.5337015304690961,
+      "daysUp": 0,
+      "priorRunPct": -20.74074074074074,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Edesa Biotech Partners With KYORIN In Japan Deal Worth Up To $140 Million Plus Royalties; Stock Up ",
+        "subject": null,
+        "date": "2026-11-09"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "22.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "5,145,433"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.63"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "9.6M"
+        }
+      ],
+      "passed": 5,
+      "quality": "high"
     }
   ],
+  "watchlist": [],
   "alsoRan": [
     {
       "symbol": "STAK",
@@ -204,17 +203,17 @@
       "legalName": "STAK Inc.",
       "business": "Oil & Gas Field Machinery & Equipment",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.71,
-      "preMarketChangePct": 13.8,
-      "prevClose": 3.2601054481546576,
+      "preMarketPrice": 3.69,
+      "preMarketChangePct": 13.19,
+      "prevClose": 3.2600053008216276,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 9, 2026 6:40 AM ET",
-      "preMarketVolume": 2581289.194213,
-      "preMarketDollarVolume": 9576582.91053023,
-      "relVolume": 0.5394646364670677,
+      "lastTradeAt": "Nov 9, 2026 7:00 AM ET",
+      "preMarketVolume": 2651034.14561,
+      "preMarketDollarVolume": 9782315.9973009,
+      "relVolume": 0.5540406610888525,
       "avgVolume50": 4784909,
       "sharesOutstanding": 19210349,
-      "marketCap": 71270394.79,
+      "marketCap": 70886187.81,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 149,
       "float": {
@@ -222,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-06-30"
       },
-      "floatRotation": 0.13436971885378032,
+      "floatRotation": 0.13800031147846403,
       "daysUp": 1,
       "priorRunPct": 12.345679012345675,
       "extended": false,
@@ -240,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "13.8%"
+          "detail": "13.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "2,581,289"
+          "detail": "2,651,034"
         },
         {
           "name": "News catalyst",
@@ -255,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.71"
+          "detail": "$3.69"
         },
         {
           "name": "Float <10M",
@@ -267,39 +266,39 @@
       "quality": "low"
     },
     {
-      "symbol": "NXXT",
-      "name": "NextNRG Inc.",
-      "legalName": "NEXTNRG, INC.",
-      "business": "Retail-Auto Dealers & Gasoline Stations",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.5386,
-      "preMarketChangePct": 9.891346694948288,
-      "prevClose": 2.3101,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 9, 2026 6:24 AM ET",
-      "preMarketVolume": 5651,
-      "preMarketDollarVolume": 14345.628600000002,
-      "relVolume": 0.0012078706742637193,
-      "avgVolume50": 4678481,
-      "sharesOutstanding": 168221739,
-      "marketCap": 427047706.6254,
+      "symbol": "VISN",
+      "name": "Vistance Networks Inc.",
+      "legalName": "Vistance Networks, Inc.",
+      "business": "Radio & Tv Broadcasting & Communications Equipment",
+      "sector": "Technology",
+      "preMarketPrice": 4.43,
+      "preMarketChangePct": 10.89,
+      "prevClose": 3.994949950401298,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 9, 2026 7:00 AM ET",
+      "preMarketVolume": 19948.691341,
+      "preMarketDollarVolume": 88372.70264063,
+      "relVolume": 0.0024826596120076515,
+      "avgVolume50": 8035210,
+      "sharesOutstanding": 203584542,
+      "marketCap": 901879521.06,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 100,
+      "bestPriorSpikePct": 22,
       "float": {
-        "shares": 168221739,
+        "shares": 203584542,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-13"
+        "asOf": "2026-10-22"
       },
-      "floatRotation": 0.000033592566772835464,
+      "floatRotation": 0.00009798725946982754,
       "daysUp": 0,
-      "priorRunPct": 635.2323360916613,
-      "extended": true,
+      "priorRunPct": -18.75934230194321,
+      "extended": false,
       "catalyst": {
         "found": true,
         "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution) · Changed the rights of shareholders · Amended the charter or bylaws · Other material event (often FDA, clinical or contract news)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution) · Changed the rights of shareholders · Amended the charter or bylaws · Other material event (often FDA, clinical or contract news)",
-        "date": "2026-11-06"
+        "headline": "Executive or board change",
+        "subject": "Executive or board change",
+        "date": "2026-11-09"
       },
       "leads": [
         "8-K"
@@ -307,13 +306,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.9%"
+          "ok": true,
+          "detail": "10.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "5,651"
+          "detail": "19,949"
         },
         {
           "name": "News catalyst",
@@ -323,15 +322,15 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.54"
+          "detail": "$4.43"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "168.2M"
+          "detail": "203.6M"
         }
       ],
-      "passed": 2,
+      "passed": 3,
       "quality": "low"
     },
     {
@@ -340,17 +339,17 @@
       "legalName": "Silo Pharma, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 1.41,
-      "preMarketChangePct": 8.46,
-      "prevClose": 1.300018439977872,
+      "preMarketPrice": 1.43,
+      "preMarketChangePct": 10,
+      "prevClose": 1.2999999999999998,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 9, 2026 6:19 AM ET",
-      "preMarketVolume": 1012,
-      "preMarketDollarVolume": 1426.9199999999998,
-      "relVolume": 0.004496438838212621,
+      "lastTradeAt": "Nov 9, 2026 7:00 AM ET",
+      "preMarketVolume": 1657,
+      "preMarketDollarVolume": 2369.5099999999998,
+      "relVolume": 0.007362252129365922,
       "avgVolume50": 225067,
       "sharesOutstanding": 1588250,
-      "marketCap": 2239432.5,
+      "marketCap": 2271197.5,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 49,
       "float": {
@@ -358,7 +357,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-13"
       },
-      "floatRotation": 0.0006371792853769872,
+      "floatRotation": 0.0010432866362348498,
       "daysUp": 3,
       "priorRunPct": 7.848000000000006,
       "extended": true,
@@ -375,13 +374,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "8.5%"
+          "ok": true,
+          "detail": "10.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "1,012"
+          "detail": "1,657"
         },
         {
           "name": "News catalyst",
@@ -391,7 +390,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.41"
+          "detail": "$1.43"
         },
         {
           "name": "Float <10M",
@@ -399,7 +398,7 @@
           "detail": "1.6M"
         }
       ],
-      "passed": 2,
+      "passed": 3,
       "quality": "low"
     },
     {
@@ -408,17 +407,17 @@
       "legalName": "Cabaletta Bio, Inc.",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 1.4084,
-      "preMarketChangePct": 8.34,
-      "prevClose": 1.2999815395975634,
+      "preMarketPrice": 1.39,
+      "preMarketChangePct": 6.92,
+      "prevClose": 1.3000374111485222,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 9, 2026 6:35 AM ET",
-      "preMarketVolume": 120555,
-      "preMarketDollarVolume": 169789.662,
-      "relVolume": 0.02697558603736238,
+      "lastTradeAt": "Nov 9, 2026 7:00 AM ET",
+      "preMarketVolume": 130080,
+      "preMarketDollarVolume": 180811.19999999998,
+      "relVolume": 0.029106915779022836,
       "avgVolume50": 4469041,
       "sharesOutstanding": 215720392,
-      "marketCap": 303820600.0928,
+      "marketCap": 299851344.88,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 46,
       "float": {
@@ -426,7 +425,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-30"
       },
-      "floatRotation": 0.0005588484189292591,
+      "floatRotation": 0.0006030027981777449,
       "daysUp": 0,
       "priorRunPct": -20.189274447949533,
       "extended": false,
@@ -444,12 +443,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.3%"
+          "detail": "6.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "120,555"
+          "detail": "130,080"
         },
         {
           "name": "News catalyst",
@@ -459,80 +458,12 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.41"
+          "detail": "$1.39"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "215.7M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "DTIL",
-      "name": "Precision BioSciences Inc.",
-      "legalName": "PRECISION BIOSCIENCES INC",
-      "business": "Biological Products, (No Diagnostic Substances)",
-      "sector": "Health Care",
-      "preMarketPrice": 10.6,
-      "preMarketChangePct": 7.7783426537874805,
-      "prevClose": 9.835,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 9, 2026 6:12 AM ET",
-      "preMarketVolume": 582,
-      "preMarketDollarVolume": 6169.2,
-      "relVolume": 0.001688512890142218,
-      "avgVolume50": 344682,
-      "sharesOutstanding": 27935719,
-      "marketCap": 296118621.4,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 15,
-      "float": {
-        "shares": 27935719,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-29"
-      },
-      "floatRotation": 0.000020833542891808154,
-      "daysUp": 3,
-      "priorRunPct": 32.19086021505377,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-11-06"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.8%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "582"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$10.60"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "27.9M"
         }
       ],
       "passed": 2,
@@ -607,100 +538,32 @@
       "quality": "low"
     },
     {
-      "symbol": "DPU",
-      "name": "Nexpu Ltd. Class A Ordinary Shares",
-      "legalName": "Nexpu Ltd.",
-      "business": "Services-Business Services, NEC",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.4586,
-      "preMarketChangePct": 9.67,
-      "prevClose": 1.329989969909729,
+      "symbol": "CHSN",
+      "name": "Chanson International Holding Class A Ordinary Shares",
+      "legalName": "Chanson International Holding",
+      "business": "Food and Kindred Products",
+      "sector": "Consumer Staples",
+      "preMarketPrice": 3.2,
+      "preMarketChangePct": 5.26,
+      "prevClose": 3.0400912027360825,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 9, 2026 6:40 AM ET",
-      "preMarketVolume": 38887,
-      "preMarketDollarVolume": 56720.578199999996,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 43456759.333333336,
-      "marketCap": 63386029.1636,
+      "lastTradeAt": "Nov 9, 2026 7:00 AM ET",
+      "preMarketVolume": 34838,
+      "preMarketDollarVolume": 111481.6,
+      "relVolume": 0.035687761283931696,
+      "avgVolume50": 976189,
+      "sharesOutstanding": 7415401.97368421,
+      "marketCap": 23729286.315789476,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
+      "bestPriorSpikePct": 20,
       "float": {
-        "shares": 43456759.333333336,
+        "shares": 7415401.97368421,
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-09"
       },
-      "floatRotation": 0.0008948435317442522,
+      "floatRotation": 0.004698059541968614,
       "daysUp": 0,
-      "priorRunPct": -20.212765957446805,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Nexpu Subsidiary Plans Music Creation Challenge",
-        "subject": null,
-        "date": "2026-11-09"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "38,887"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.46"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "43.5M"
-        }
-      ],
-      "passed": 1,
-      "quality": "low"
-    },
-    {
-      "symbol": "ZNB",
-      "name": "Zeta Network Group Class A Ordinary Shares",
-      "legalName": "Zeta Network Group",
-      "business": "Finance Services",
-      "sector": "Real Estate",
-      "preMarketPrice": 1.2,
-      "preMarketChangePct": 5.26,
-      "prevClose": 1.1400342010260307,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 9, 2026 6:40 AM ET",
-      "preMarketVolume": 52734,
-      "preMarketDollarVolume": 63280.799999999996,
-      "relVolume": 0.022927088432806945,
-      "avgVolume50": 2300074,
-      "sharesOutstanding": 16191012,
-      "marketCap": 19429214.4,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 105,
-      "float": {
-        "shares": 16191012,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2023-06-30"
-      },
-      "floatRotation": 0.003256992212716537,
-      "daysUp": 4,
-      "priorRunPct": 112.82856021969398,
+      "priorRunPct": 97.43589743589746,
       "extended": true,
       "catalyst": {
         "found": false,
@@ -720,13 +583,149 @@
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "52,734"
+          "ok": false,
+          "detail": "34,838"
         },
         {
           "name": "News catalyst",
           "ok": false,
           "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.20"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "7.4M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "DPU",
+      "name": "Nexpu Ltd. Class A Ordinary Shares",
+      "legalName": "Nexpu Ltd.",
+      "business": "Services-Business Services, NEC",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.4512,
+      "preMarketChangePct": 9.11,
+      "prevClose": 1.3300339107322887,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 9, 2026 6:57 AM ET",
+      "preMarketVolume": 41533,
+      "preMarketDollarVolume": 60272.689600000005,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 43456758.64661654,
+      "marketCap": 63064448.147969924,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 43456758.64661654,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-09"
+      },
+      "floatRotation": 0.0009557316581694405,
+      "daysUp": 0,
+      "priorRunPct": -20.212765957446805,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Nexpu Subsidiary Plans Music Creation Challenge",
+        "subject": null,
+        "date": "2026-11-09"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "9.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "41,533"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.45"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "43.5M"
+        }
+      ],
+      "passed": 1,
+      "quality": "low"
+    },
+    {
+      "symbol": "REI",
+      "name": "Ring Energy Inc.",
+      "legalName": "RING ENERGY, INC.",
+      "business": "Crude Petroleum & Natural Gas",
+      "sector": "Energy",
+      "preMarketPrice": 1.2,
+      "preMarketChangePct": 6.26992561105207,
+      "prevClose": 1.1292,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 9, 2026 7:00 AM ET",
+      "preMarketVolume": 4012,
+      "preMarketDollarVolume": 4814.4,
+      "relVolume": 0.0009911395288282763,
+      "avgVolume50": 4047866,
+      "sharesOutstanding": 260539607,
+      "marketCap": 312647528.4,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 12,
+      "float": {
+        "shares": 260539607,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-05"
+      },
+      "floatRotation": 0.00001539881036206522,
+      "daysUp": 0,
+      "priorRunPct": -20.478873239436616,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released · Regulation FD disclosure (company announcement)",
+        "subject": "Earnings / results released · Regulation FD disclosure (company announcement)",
+        "date": "2026-11-06"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "4,012"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
         },
         {
           "name": "Price $2–$20",
@@ -736,7 +735,75 @@
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "16.2M"
+          "detail": "260.5M"
+        }
+      ],
+      "passed": 1,
+      "quality": "low"
+    },
+    {
+      "symbol": "NKTX",
+      "name": "Nkarta Inc.",
+      "legalName": "Nkarta, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 1.82,
+      "preMarketChangePct": 5.2,
+      "prevClose": 1.7300380228136882,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 9, 2026 7:00 AM ET",
+      "preMarketVolume": 9600.28651,
+      "preMarketDollarVolume": 17472.5214482,
+      "relVolume": 0.014181132728486682,
+      "avgVolume50": 676976,
+      "sharesOutstanding": 71704404,
+      "marketCap": 130502015.28,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 24,
+      "float": {
+        "shares": 71704404,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-02"
+      },
+      "floatRotation": 0.0001338869856585099,
+      "daysUp": 0,
+      "priorRunPct": -3.9156626506024064,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-11-06"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "9,600"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.82"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "71.7M"
         }
       ],
       "passed": 1,
