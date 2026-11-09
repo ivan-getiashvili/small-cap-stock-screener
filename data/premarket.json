@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-08T11:00:37.291Z",
-  "marketStatus": "Market Closed",
+  "generatedAt": "2026-11-09T11:00:35.945Z",
+  "marketStatus": "Pre Market",
   "prevSession": "2026-11-06",
   "universeChecked": 6019,
   "smallCapsInBand": 2899,
-  "investigated": 67,
-  "liveQuotes": 0,
-  "feedIsLive": false,
+  "investigated": 66,
+  "liveQuotes": 30,
+  "feedIsLive": true,
   "discovery": {
     "since": "2026-11-06T20:30:00.000Z",
     "edgarOk": true,
     "edgarFilings": 133,
     "leads": {
-      "8-K": 43,
-      "PR Newswire": 4,
-      "GlobeNewswire": 1,
+      "8-K": 44,
+      "PR Newswire": 3,
+      "GlobeNewswire": 0,
       "prior-session gainer": 21
     },
     "feeds": [
@@ -30,7 +30,7 @@
         "url": "https://www.prnewswire.com/rss/financial-services-latest-news/financial-services-latest-news-list.rss",
         "ok": true,
         "items": 20,
-        "inWindow": 14
+        "inWindow": 20
       },
       {
         "name": "GlobeNewswire",
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 67,
-    "answered": 67,
+    "requested": 66,
+    "answered": 66,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -59,6 +59,346 @@
   },
   "shortlist": [],
   "watchlist": [],
-  "alsoRan": [],
-  "frozenAfterPreMarket": true
+  "alsoRan": [
+    {
+      "symbol": "STAK",
+      "name": "STAK Inc. Class A Ordinary Shares",
+      "legalName": "STAK Inc.",
+      "business": "Oil & Gas Field Machinery & Equipment",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 3.7497,
+      "preMarketChangePct": 15.02,
+      "prevClose": 3.2600417318727177,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 9, 2026 6:00 AM ET",
+      "preMarketVolume": 2419862.432691,
+      "preMarketDollarVolume": 9073758.163861442,
+      "relVolume": 0.5057279945535014,
+      "avgVolume50": 4784909,
+      "sharesOutstanding": 19210349,
+      "marketCap": 72033045.6453,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 149,
+      "float": {
+        "shares": 19210349,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-06-30"
+      },
+      "floatRotation": 0.1259666043907375,
+      "daysUp": 1,
+      "priorRunPct": 12.345679012345675,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "15.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "2,419,862"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.75"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "19.2M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "SILO",
+      "name": "Silo Pharma Inc.",
+      "legalName": "Silo Pharma, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 1.4498,
+      "preMarketChangePct": 11.52,
+      "prevClose": 1.300035868005739,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 9, 2026 5:50 AM ET",
+      "preMarketVolume": 943,
+      "preMarketDollarVolume": 1367.1614,
+      "relVolume": 0.004189863462879942,
+      "avgVolume50": 225067,
+      "sharesOutstanding": 1588250,
+      "marketCap": 2302644.85,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 49,
+      "float": {
+        "shares": 1588250,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-13"
+      },
+      "floatRotation": 0.0005937352431921927,
+      "daysUp": 3,
+      "priorRunPct": 7.848000000000006,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution)",
+        "date": "2026-11-06"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "11.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "943"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.45"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "1.6M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "DTIL",
+      "name": "Precision BioSciences Inc.",
+      "legalName": "PRECISION BIOSCIENCES INC",
+      "business": "Biological Products, (No Diagnostic Substances)",
+      "sector": "Health Care",
+      "preMarketPrice": 10.6,
+      "preMarketChangePct": 7.7783426537874805,
+      "prevClose": 9.835,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 9, 2026 4:15 AM ET",
+      "preMarketVolume": 515,
+      "preMarketDollarVolume": 5459,
+      "relVolume": 0.0014941308220330623,
+      "avgVolume50": 344682,
+      "sharesOutstanding": 27935719,
+      "marketCap": 296118621.4,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 15,
+      "float": {
+        "shares": 27935719,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-29"
+      },
+      "floatRotation": 0.000018435179706668727,
+      "daysUp": 3,
+      "priorRunPct": 32.19086021505377,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-11-06"
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "515"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$10.60"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "27.9M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "CPSH",
+      "name": "CPS Technologies Corp.",
+      "legalName": "CPS TECHNOLOGIES CORP/DE/",
+      "business": "Pottery & Related Products",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 3.83,
+      "preMarketChangePct": 5.80110497237569,
+      "prevClose": 3.62,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 9, 2026 4:00 AM ET",
+      "preMarketVolume": 64,
+      "preMarketDollarVolume": 245.12,
+      "relVolume": 0.00022531165178084217,
+      "avgVolume50": 284051,
+      "sharesOutstanding": 19387942,
+      "marketCap": 74255817.86,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 85,
+      "float": {
+        "shares": 19387942,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-07-26"
+      },
+      "floatRotation": 0.0000033010208097383415,
+      "daysUp": 0,
+      "priorRunPct": -3.978779840848804,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released · Other material event (often FDA, clinical or contract news)",
+        "subject": "Earnings / results released · Other material event (often FDA, clinical or contract news)",
+        "date": "2026-11-06"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "64"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.83"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "19.4M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "NKTX",
+      "name": "Nkarta Inc.",
+      "legalName": "Nkarta, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 1.82,
+      "preMarketChangePct": 5.2,
+      "prevClose": 1.7300380228136882,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 9, 2026 5:55 AM ET",
+      "preMarketVolume": 9235.474356,
+      "preMarketDollarVolume": 16808.56332792,
+      "relVolume": 0.013642247813807285,
+      "avgVolume50": 676976,
+      "sharesOutstanding": 71704404,
+      "marketCap": 130502015.28,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 24,
+      "float": {
+        "shares": 71704404,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-02"
+      },
+      "floatRotation": 0.00012879926253902063,
+      "daysUp": 0,
+      "priorRunPct": -3.9156626506024064,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-11-06"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "9,235"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.82"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "71.7M"
+        }
+      ],
+      "passed": 1,
+      "quality": "low"
+    }
+  ]
 }
