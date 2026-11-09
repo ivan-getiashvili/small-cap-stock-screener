@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-09T11:00:35.945Z",
+  "generatedAt": "2026-11-09T11:20:36.199Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-06",
   "universeChecked": 6019,
   "smallCapsInBand": 2899,
-  "investigated": 66,
-  "liveQuotes": 30,
+  "investigated": 82,
+  "liveQuotes": 42,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-06T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 133,
+    "edgarFilings": 159,
     "leads": {
-      "8-K": 44,
-      "PR Newswire": 3,
-      "GlobeNewswire": 0,
+      "8-K": 57,
+      "PR Newswire": 2,
+      "GlobeNewswire": 5,
       "prior-session gainer": 21
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 66,
-    "answered": 66,
+    "requested": 82,
+    "answered": 82,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -57,7 +57,76 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [],
+  "shortlist": [
+    {
+      "symbol": "EDSA",
+      "name": "Edesa Biotech Inc. Common Shares",
+      "legalName": "Edesa Biotech, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 2.47,
+      "preMarketChangePct": 15.420560747663552,
+      "prevClose": 2.14,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 9, 2026 6:20 AM ET",
+      "preMarketVolume": 813044,
+      "preMarketDollarVolume": 2008218.6800000002,
+      "relVolume": 11.565348506401138,
+      "avgVolume50": 70300,
+      "sharesOutstanding": 9641031,
+      "marketCap": 23813346.57,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 91,
+      "float": {
+        "shares": 9641031,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-13"
+      },
+      "floatRotation": 0.08433164461352732,
+      "daysUp": 0,
+      "priorRunPct": -20.74074074074074,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Terminated a material agreement · Regulation FD disclosure (company announcement)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Terminated a material agreement · Regulation FD disclosure (company announcement)",
+        "date": "2026-11-09"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "15.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "813,044"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.47"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "9.6M"
+        }
+      ],
+      "passed": 5,
+      "quality": "high"
+    }
+  ],
   "watchlist": [],
   "alsoRan": [
     {
@@ -66,17 +135,17 @@
       "legalName": "STAK Inc.",
       "business": "Oil & Gas Field Machinery & Equipment",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.7497,
-      "preMarketChangePct": 15.02,
-      "prevClose": 3.2600417318727177,
+      "preMarketPrice": 3.75,
+      "preMarketChangePct": 15.03,
+      "prevClose": 3.2600191254455355,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 9, 2026 6:00 AM ET",
-      "preMarketVolume": 2419862.432691,
-      "preMarketDollarVolume": 9073758.163861442,
-      "relVolume": 0.5057279945535014,
+      "lastTradeAt": "Nov 9, 2026 6:20 AM ET",
+      "preMarketVolume": 2502380.432691,
+      "preMarketDollarVolume": 9383926.62259125,
+      "relVolume": 0.5229734635895896,
       "avgVolume50": 4784909,
       "sharesOutstanding": 19210349,
-      "marketCap": 72033045.6453,
+      "marketCap": 72038808.75,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 149,
       "float": {
@@ -84,7 +153,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-06-30"
       },
-      "floatRotation": 0.1259666043907375,
+      "floatRotation": 0.1302621015730115,
       "daysUp": 1,
       "priorRunPct": 12.345679012345675,
       "extended": false,
@@ -107,7 +176,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "2,419,862"
+          "detail": "2,502,380"
         },
         {
           "name": "News catalyst",
@@ -134,17 +203,17 @@
       "legalName": "Silo Pharma, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 1.4498,
-      "preMarketChangePct": 11.52,
-      "prevClose": 1.300035868005739,
+      "preMarketPrice": 1.41,
+      "preMarketChangePct": 8.46,
+      "prevClose": 1.300018439977872,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 9, 2026 5:50 AM ET",
-      "preMarketVolume": 943,
-      "preMarketDollarVolume": 1367.1614,
-      "relVolume": 0.004189863462879942,
+      "lastTradeAt": "Nov 9, 2026 6:19 AM ET",
+      "preMarketVolume": 1012,
+      "preMarketDollarVolume": 1426.9199999999998,
+      "relVolume": 0.004496438838212621,
       "avgVolume50": 225067,
       "sharesOutstanding": 1588250,
-      "marketCap": 2302644.85,
+      "marketCap": 2239432.5,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 49,
       "float": {
@@ -152,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-13"
       },
-      "floatRotation": 0.0005937352431921927,
+      "floatRotation": 0.0006371792853769872,
       "daysUp": 3,
       "priorRunPct": 7.848000000000006,
       "extended": true,
@@ -169,13 +238,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "11.5%"
+          "ok": false,
+          "detail": "8.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "943"
+          "detail": "1,012"
         },
         {
           "name": "News catalyst",
@@ -185,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.45"
+          "detail": "$1.41"
         },
         {
           "name": "Float <10M",
@@ -193,7 +262,75 @@
           "detail": "1.6M"
         }
       ],
-      "passed": 3,
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "CABA",
+      "name": "Cabaletta Bio Inc.",
+      "legalName": "Cabaletta Bio, Inc.",
+      "business": "Biological Products, (No Diagnostic Substances)",
+      "sector": "Health Care",
+      "preMarketPrice": 1.4084,
+      "preMarketChangePct": 8.34,
+      "prevClose": 1.2999815395975634,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 9, 2026 6:19 AM ET",
+      "preMarketVolume": 120388,
+      "preMarketDollarVolume": 169554.4592,
+      "relVolume": 0.026938217841366862,
+      "avgVolume50": 4469041,
+      "sharesOutstanding": 215720392,
+      "marketCap": 303820600.0928,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 46,
+      "float": {
+        "shares": 215720392,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-30"
+      },
+      "floatRotation": 0.0005580742686579209,
+      "daysUp": 0,
+      "priorRunPct": -20.189274447949533,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Cabaletta Bio Reports Positive Phase 1/2 Data For Rese-cel In Autoimmune Diseases; Stock Up ",
+        "subject": "FDA / clinical",
+        "date": "2026-11-09"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "120,388"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.41"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "215.7M"
+        }
+      ],
+      "passed": 2,
       "quality": "low"
     },
     {
@@ -206,10 +343,10 @@
       "preMarketChangePct": 7.7783426537874805,
       "prevClose": 9.835,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 9, 2026 4:15 AM ET",
-      "preMarketVolume": 515,
-      "preMarketDollarVolume": 5459,
-      "relVolume": 0.0014941308220330623,
+      "lastTradeAt": "Nov 9, 2026 6:12 AM ET",
+      "preMarketVolume": 582,
+      "preMarketDollarVolume": 6169.2,
+      "relVolume": 0.001688512890142218,
       "avgVolume50": 344682,
       "sharesOutstanding": 27935719,
       "marketCap": 296118621.4,
@@ -220,7 +357,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-29"
       },
-      "floatRotation": 0.000018435179706668727,
+      "floatRotation": 0.000020833542891808154,
       "daysUp": 3,
       "priorRunPct": 32.19086021505377,
       "extended": true,
@@ -243,7 +380,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "515"
+          "detail": "582"
         },
         {
           "name": "News catalyst",
@@ -259,6 +396,142 @@
           "name": "Float <10M",
           "ok": false,
           "detail": "27.9M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "BDSX",
+      "name": "Biodesix Inc.",
+      "legalName": "BIODESIX INC",
+      "business": "Services-Medical Laboratories",
+      "sector": "Health Care",
+      "preMarketPrice": 9.1049,
+      "preMarketChangePct": 6.74,
+      "prevClose": 8.529979389169947,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 9, 2026 6:16 AM ET",
+      "preMarketVolume": 3250.36487,
+      "preMarketDollarVolume": 29594.247104863,
+      "relVolume": 0.034236350393410504,
+      "avgVolume50": 94939,
+      "sharesOutstanding": 11088511,
+      "marketCap": 100959783.8039,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 48,
+      "float": {
+        "shares": 11088511,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-30"
+      },
+      "floatRotation": 0.00029312906575102826,
+      "daysUp": 0,
+      "priorRunPct": -19.09385113268608,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Biodesix to Showcase MRD Strategy at the Association for Molecular Pathology (AMP) 2026 Annual Meeting",
+        "subject": null,
+        "date": "2026-11-09"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "3,250"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$9.10"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "11.1M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "CHRN",
+      "name": "ChronoScale Holdings Corporation",
+      "legalName": "ChronoScale Holdings Corp",
+      "business": "General Industrial Machinery & Equipment, NEC",
+      "sector": "Industrials",
+      "preMarketPrice": 10.75,
+      "preMarketChangePct": 6.573873043254122,
+      "prevClose": 10.0869,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 9, 2026 6:11 AM ET",
+      "preMarketVolume": null,
+      "preMarketDollarVolume": null,
+      "relVolume": null,
+      "avgVolume50": 237488,
+      "sharesOutstanding": 145637452,
+      "marketCap": 1565602609,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 29,
+      "float": {
+        "shares": 145637452,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-13"
+      },
+      "floatRotation": null,
+      "daysUp": 0,
+      "priorRunPct": -35.402497598463015,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Shareholder vote results",
+        "subject": "Shareholder vote results",
+        "date": "2026-11-06"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "unknown"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$10.75"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "145.6M"
         }
       ],
       "passed": 2,
@@ -330,74 +603,6 @@
         }
       ],
       "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "NKTX",
-      "name": "Nkarta Inc.",
-      "legalName": "Nkarta, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 1.82,
-      "preMarketChangePct": 5.2,
-      "prevClose": 1.7300380228136882,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 9, 2026 5:55 AM ET",
-      "preMarketVolume": 9235.474356,
-      "preMarketDollarVolume": 16808.56332792,
-      "relVolume": 0.013642247813807285,
-      "avgVolume50": 676976,
-      "sharesOutstanding": 71704404,
-      "marketCap": 130502015.28,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 24,
-      "float": {
-        "shares": 71704404,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-02"
-      },
-      "floatRotation": 0.00012879926253902063,
-      "daysUp": 0,
-      "priorRunPct": -3.9156626506024064,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Regulation FD disclosure (company announcement)",
-        "subject": "Regulation FD disclosure (company announcement)",
-        "date": "2026-11-06"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "9,235"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.82"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "71.7M"
-        }
-      ],
-      "passed": 1,
       "quality": "low"
     }
   ]
