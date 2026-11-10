@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-10T11:40:35.268Z",
+  "generatedAt": "2026-11-10T12:00:34.813Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-09",
-  "universeChecked": 6053,
-  "smallCapsInBand": 2912,
+  "universeChecked": 6078,
+  "smallCapsInBand": 2915,
   "investigated": 150,
-  "liveQuotes": 83,
+  "liveQuotes": 92,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-09T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 252,
+    "edgarFilings": 257,
     "leads": {
-      "8-K": 126,
+      "8-K": 129,
       "PR Newswire": 0,
       "GlobeNewswire": 7,
       "prior-session gainer": 25
@@ -57,7 +57,76 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [],
+  "shortlist": [
+    {
+      "symbol": "STI",
+      "name": "Solidion Technology Inc.",
+      "legalName": "Solidion Technology Inc.",
+      "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
+      "sector": "Miscellaneous",
+      "preMarketPrice": 4.6647,
+      "preMarketChangePct": 13.5,
+      "prevClose": 4.109867841409692,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 10, 2026 6:52 AM ET",
+      "preMarketVolume": 50271,
+      "preMarketDollarVolume": 234499.1337,
+      "relVolume": 0.4273509359538909,
+      "avgVolume50": 117634,
+      "sharesOutstanding": 9411893,
+      "marketCap": 43903657.2771,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 294,
+      "float": {
+        "shares": 9411893,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-06"
+      },
+      "floatRotation": 0.005341220942482028,
+      "daysUp": 1,
+      "priorRunPct": 5.472636815920414,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released",
+        "subject": "Earnings / results released",
+        "date": "2026-11-09"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "13.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "50,271"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.66"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "9.4M"
+        }
+      ],
+      "passed": 5,
+      "quality": "medium"
+    }
+  ],
   "watchlist": [
     {
       "symbol": "SMX",
@@ -65,17 +134,17 @@
       "legalName": "SMX (Security Matters) Public Ltd Co",
       "business": "Misc Industrial & Commercial Machinery & Equipment",
       "sector": "Technology",
-      "preMarketPrice": 11.0416,
-      "preMarketChangePct": 18.09,
-      "prevClose": 9.350156660174443,
+      "preMarketPrice": 11.93,
+      "preMarketChangePct": 27.59,
+      "prevClose": 9.350262559761736,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 6:40 AM ET",
-      "preMarketVolume": 798268.809268,
-      "preMarketDollarVolume": 8814164.88441355,
-      "relVolume": 25.638129794064746,
+      "lastTradeAt": "Nov 10, 2026 7:00 AM ET",
+      "preMarketVolume": 1033291.809268,
+      "preMarketDollarVolume": 12327171.284567239,
+      "relVolume": 33.186401890673174,
       "avgVolume50": 31136,
       "sharesOutstanding": 1795943,
-      "marketCap": 19830084.228800002,
+      "marketCap": 21425599.99,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 251,
       "float": {
@@ -83,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.4444844904699091,
+      "floatRotation": 0.5753477751064482,
       "daysUp": 2,
       "priorRunPct": 7.317073170731714,
       "extended": true,
@@ -101,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "18.1%"
+          "detail": "27.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "798,269"
+          "detail": "1,033,292"
         },
         {
           "name": "News catalyst",
@@ -116,7 +185,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$11.04"
+          "detail": "$11.93"
         },
         {
           "name": "Float <10M",
@@ -128,39 +197,39 @@
       "quality": "medium"
     },
     {
-      "symbol": "BW",
-      "name": "Babcock & Wilcox Enterprises Inc.",
-      "legalName": "Babcock & Wilcox Enterprises, Inc.",
-      "business": "Heating Equipment, Except Electric & Warm Air Furnaces",
-      "sector": "Industrials",
-      "preMarketPrice": 4.3499,
-      "preMarketChangePct": 14.77,
-      "prevClose": 3.790101943016468,
+      "symbol": "QMCO",
+      "name": "Quantum Corporation",
+      "legalName": "QUANTUM CORP /DE/",
+      "business": "Computer Storage Devices",
+      "sector": "Technology",
+      "preMarketPrice": 19.84,
+      "preMarketChangePct": 16.77,
+      "prevClose": 16.990665410636293,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 6:35 AM ET",
-      "preMarketVolume": 50751.120121,
-      "preMarketDollarVolume": 220762.2974143379,
-      "relVolume": 0.011211594260364808,
-      "avgVolume50": 4526664,
-      "sharesOutstanding": 145446002,
-      "marketCap": 632675564.0998,
+      "lastTradeAt": "Nov 10, 2026 7:00 AM ET",
+      "preMarketVolume": 85091.925846,
+      "preMarketDollarVolume": 1688223.80878464,
+      "relVolume": 0.055981566991820386,
+      "avgVolume50": 1519999,
+      "sharesOutstanding": 39557393,
+      "marketCap": 784818677.12,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 46,
+      "bestPriorSpikePct": 65,
       "float": {
-        "shares": 145446002,
+        "shares": 39557393,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-03"
+        "asOf": "2026-11-05"
       },
-      "floatRotation": 0.0003489344459327249,
+      "floatRotation": 0.0021511004490614434,
       "daysUp": 1,
-      "priorRunPct": -24.004683840749404,
+      "priorRunPct": -20.799124247400105,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Babcock & Wilcox (BW) Q3 2026 Earnings Call Transcript",
+        "headline": "Quantum Corporation Reports Fiscal Second Quarter 2027 Financial Results",
         "subject": "Earnings or guidance",
-        "date": "2026-11-10"
+        "date": "2026-11-09"
       },
       "leads": [
         "8-K"
@@ -169,12 +238,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "14.8%"
+          "detail": "16.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "50,751"
+          "detail": "85,092"
         },
         {
           "name": "News catalyst",
@@ -184,12 +253,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.35"
+          "detail": "$19.84"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "145.4M"
+          "detail": "39.6M"
         }
       ],
       "passed": 4,
@@ -201,17 +270,17 @@
       "legalName": "Securitize Corp.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 7.9616,
-      "preMarketChangePct": 14.473040977713872,
+      "preMarketPrice": 7.96,
+      "preMarketChangePct": 14.450035945363046,
       "prevClose": 6.955,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 10, 2026 6:40 AM ET",
-      "preMarketVolume": 53338.740256,
-      "preMarketDollarVolume": 424661.71442216955,
+      "lastTradeAt": "Nov 10, 2026 6:33 AM ET",
+      "preMarketVolume": 51826.740256,
+      "preMarketDollarVolume": 412540.85243776,
       "relVolume": null,
       "avgVolume50": null,
       "sharesOutstanding": 163265685,
-      "marketCap": 1299856077.6959999,
+      "marketCap": 1299594852.6,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": null,
       "float": {
@@ -219,7 +288,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-13"
       },
-      "floatRotation": 0.00032669902592207293,
+      "floatRotation": 0.0003174380474133312,
       "daysUp": 0,
       "priorRunPct": -8.002645502645498,
       "extended": false,
@@ -243,7 +312,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "53,339"
+          "detail": "51,827"
         },
         {
           "name": "News catalyst",
@@ -265,175 +334,37 @@
       "quality": "medium"
     },
     {
-      "symbol": "CKX",
-      "name": "CKX Lands Inc.",
-      "legalName": "CKX LANDS, INC.",
-      "business": "Crude Petroleum & Natural Gas",
-      "sector": "Energy",
-      "preMarketPrice": 17.7,
-      "preMarketChangePct": 7.93,
-      "prevClose": 16.39951820624479,
+      "symbol": "BW",
+      "name": "Babcock & Wilcox Enterprises Inc.",
+      "legalName": "Babcock & Wilcox Enterprises, Inc.",
+      "business": "Heating Equipment, Except Electric & Warm Air Furnaces",
+      "sector": "Industrials",
+      "preMarketPrice": 4.3,
+      "preMarketChangePct": 13.46,
+      "prevClose": 3.7898818967036836,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 6:40 AM ET",
-      "preMarketVolume": 92983.048783,
-      "preMarketDollarVolume": 1645799.9634591,
-      "relVolume": 12.88389203034502,
-      "avgVolume50": 7217,
-      "sharesOutstanding": 2053129,
-      "marketCap": 36340383.3,
+      "lastTradeAt": "Nov 10, 2026 7:00 AM ET",
+      "preMarketVolume": 61976.469666,
+      "preMarketDollarVolume": 266498.8195638,
+      "relVolume": 0.013691422572119335,
+      "avgVolume50": 4526664,
+      "sharesOutstanding": 145446002,
+      "marketCap": 625417808.6,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 14,
+      "bestPriorSpikePct": 46,
       "float": {
-        "shares": 2053129,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-06"
-      },
-      "floatRotation": 0.04528845911922729,
-      "daysUp": 0,
-      "priorRunPct": -0.1923076923076882,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "CKX Lands, Inc. Announces $1,000,000,000 Equity Investment Led by Brad Jacobs",
-        "subject": null,
-        "date": "2026-11-09"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "92,983"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$17.70"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "2.1M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
-  "alsoRan": [
-    {
-      "symbol": "QMCO",
-      "name": "Quantum Corporation",
-      "legalName": "QUANTUM CORP /DE/",
-      "business": "Computer Storage Devices",
-      "sector": "Technology",
-      "preMarketPrice": 20.4188,
-      "preMarketChangePct": 20.18,
-      "prevClose": 16.990181394574805,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 6:40 AM ET",
-      "preMarketVolume": 80580.925846,
-      "preMarketDollarVolume": 1645365.808664305,
-      "relVolume": 0.05301380188144861,
-      "avgVolume50": 1519999,
-      "sharesOutstanding": 39557393,
-      "marketCap": 807714496.1884,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 65,
-      "float": {
-        "shares": 39557393,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-05"
-      },
-      "floatRotation": 0.00203706361149735,
-      "daysUp": 1,
-      "priorRunPct": -20.799124247400105,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Quantum Corporation Reports Fiscal Second Quarter 2027 Financial Results",
-        "subject": "Earnings or guidance",
-        "date": "2026-11-09"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "20.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "80,581"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$20.42"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "39.6M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "SENS",
-      "name": "Senseonics Holdings Inc.",
-      "legalName": "Senseonics Holdings, Inc.",
-      "business": "Industrial Instruments For Measurement, Display, and Control",
-      "sector": "Health Care",
-      "preMarketPrice": 11.37,
-      "preMarketChangePct": 16.02,
-      "prevClose": 9.800034476814341,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 6:30 AM ET",
-      "preMarketVolume": 19212.765906,
-      "preMarketDollarVolume": 218449.14835121998,
-      "relVolume": 0.029686071196140904,
-      "avgVolume50": 647198,
-      "sharesOutstanding": 54780508,
-      "marketCap": 622854375.9599999,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 36,
-      "float": {
-        "shares": 54780508,
+        "shares": 145446002,
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-03"
       },
-      "floatRotation": 0.0003507226677415989,
+      "floatRotation": 0.00042611325724855605,
       "daysUp": 1,
-      "priorRunPct": -9.674027339642482,
+      "priorRunPct": -24.004683840749404,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Senseonics Shares Rise 12% As Q3 Revenue Jumps 140%; FY26 Outlook Raised ",
+        "headline": "Babcock & Wilcox (BW) Q3 2026 Earnings Call Transcript",
         "subject": "Earnings or guidance",
         "date": "2026-11-10"
       },
@@ -444,12 +375,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "16.0%"
+          "detail": "13.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "19,213"
+          "ok": true,
+          "detail": "61,976"
         },
         {
           "name": "News catalyst",
@@ -459,12 +390,286 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$11.37"
+          "detail": "$4.30"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "54.8M"
+          "detail": "145.4M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
+  "alsoRan": [
+    {
+      "symbol": "RLGT",
+      "name": "Radiant Logistics Inc.",
+      "legalName": "RADIANT LOGISTICS, INC",
+      "business": "Arrangement of  Transportation of  Freight & Cargo",
+      "sector": "Industrials",
+      "preMarketPrice": 10.88,
+      "preMarketChangePct": 19.04,
+      "prevClose": 9.13978494623656,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 10, 2026 7:00 AM ET",
+      "preMarketVolume": 359,
+      "preMarketDollarVolume": 3905.92,
+      "relVolume": 0.0029602876179167493,
+      "avgVolume50": 121272,
+      "sharesOutstanding": 46979624,
+      "marketCap": 511138309.12000006,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 16,
+      "float": {
+        "shares": 46979624,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-02"
+      },
+      "floatRotation": 0.000007641610754483688,
+      "daysUp": 0,
+      "priorRunPct": -2.312775330396485,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Radiant (RLGT) Q1 2027 Earnings Call Transcript",
+        "subject": "Earnings or guidance",
+        "date": "2026-11-10"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "19.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "359"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$10.88"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "47.0M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "TANH",
+      "name": "Tantech Holdings Ltd. Class A Common Shares",
+      "legalName": "TANTECH HOLDINGS LTD",
+      "business": "Industrial Organic Chemicals",
+      "sector": "Industrials",
+      "preMarketPrice": 22.96,
+      "preMarketChangePct": 18.72,
+      "prevClose": 19.339622641509433,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 10, 2026 7:00 AM ET",
+      "preMarketVolume": 323934.089851,
+      "preMarketDollarVolume": 7437526.70297896,
+      "relVolume": 0.10878404721751699,
+      "avgVolume50": 2977772,
+      "sharesOutstanding": 6214872,
+      "marketCap": 142693461.12,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 67,
+      "float": {
+        "shares": 6214872,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-04-30"
+      },
+      "floatRotation": 0.052122407324076823,
+      "daysUp": 0,
+      "priorRunPct": -4.967426710097715,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "18.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "323,934"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$22.96"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "6.2M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "KLTR",
+      "name": "Kaltura Inc.",
+      "legalName": "KALTURA INC",
+      "business": "Services-Prepackaged Software",
+      "sector": "Technology",
+      "preMarketPrice": 1.67,
+      "preMarketChangePct": 16.78,
+      "prevClose": 1.4300393903065594,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 10, 2026 7:00 AM ET",
+      "preMarketVolume": 67091.697466,
+      "preMarketDollarVolume": 112043.13476821998,
+      "relVolume": 0.11111907520595181,
+      "avgVolume50": 603782,
+      "sharesOutstanding": 154082280,
+      "marketCap": 257317407.6,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 35,
+      "float": {
+        "shares": 154082280,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-02"
+      },
+      "floatRotation": 0.0004354277303399197,
+      "daysUp": 1,
+      "priorRunPct": 4.827586206896556,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Kaltura (KLTR) Q3 2026 Earnings Call Transcript",
+        "subject": "Earnings or guidance",
+        "date": "2026-11-10"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "16.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "67,092"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.67"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "154.1M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "IAM",
+      "name": "Iambic Therapeutics Inc.",
+      "legalName": "Iambic Therapeutics, Inc.",
+      "business": "Biological Products, (No Diagnostic Substances)",
+      "sector": "Health Care",
+      "preMarketPrice": 15.4295,
+      "preMarketChangePct": 15.32,
+      "prevClose": 13.379725979882068,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 10, 2026 7:00 AM ET",
+      "preMarketVolume": 4293,
+      "preMarketDollarVolume": 66238.8435,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 47400795.96412556,
+      "marketCap": 731370581.3284754,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 47400795.96412556,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-10"
+      },
+      "floatRotation": 0.00009056809938907102,
+      "daysUp": 0,
+      "priorRunPct": -24.274013402829485,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Iambic Shares Rise Ahead Of AI Drug Discovery Panel At Jefferies Healthcare Conference ",
+        "subject": "Hot-sector announcement",
+        "date": "2026-11-10"
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "15.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "4,293"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$15.43"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "47.4M"
         }
       ],
       "passed": 3,
@@ -506,8 +711,7 @@
         "date": "2026-11-09"
       },
       "leads": [
-        "8-K",
-        "prior-session gainer"
+        "8-K"
       ],
       "checks": [
         {
@@ -540,53 +744,53 @@
       "quality": "low"
     },
     {
-      "symbol": "MXCT",
-      "name": "MaxCyte Inc.",
-      "legalName": "MAXCYTE, INC.",
-      "business": "Services-Commercial Physical & Biological Research",
-      "sector": "Health Care",
-      "preMarketPrice": 1.4468,
-      "preMarketChangePct": 11.29,
-      "prevClose": 1.3000269565998743,
+      "symbol": "OMH",
+      "name": "Ohmyhome Limited Class A Ordinary Shares",
+      "legalName": "Ohmyhome Ltd",
+      "business": "Real Estate Agents & Managers (For Others)",
+      "sector": "Finance",
+      "preMarketPrice": 28.65,
+      "preMarketChangePct": 10.87,
+      "prevClose": 25.841075133038693,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 6:40 AM ET",
-      "preMarketVolume": 149930.509795,
-      "preMarketDollarVolume": 216919.461571406,
-      "relVolume": 0.18141136886893244,
-      "avgVolume50": 826467,
-      "sharesOutstanding": 103206206,
-      "marketCap": 149318738.84080002,
+      "lastTradeAt": "Nov 10, 2026 7:00 AM ET",
+      "preMarketVolume": 3054026.591661,
+      "preMarketDollarVolume": 87497861.85108764,
+      "relVolume": 0.07113371294882939,
+      "avgVolume50": 42933603,
+      "sharesOutstanding": 22259591,
+      "marketCap": 637737282.15,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 24,
+      "bestPriorSpikePct": 223,
       "float": {
-        "shares": 103206206,
+        "shares": 22259591,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-07"
+        "asOf": "2025-12-31"
       },
-      "floatRotation": 0.001452727656658554,
+      "floatRotation": 0.1372004809819282,
       "daysUp": 0,
-      "priorRunPct": -20.75471698113208,
-      "extended": false,
+      "priorRunPct": 157.34265734265736,
+      "extended": true,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "MaxCyte To Acquire Akron ",
-        "subject": "Merger or acquisition",
+        "headline": "Ohmyhome Limited Completes Continuation to British Virgin Islands and Changes Name to Ohmyswift Limited on November 3, 2026",
+        "subject": null,
         "date": "2026-11-10"
       },
       "leads": [
-        "GlobeNewswire"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "11.3%"
+          "detail": "10.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "149,931"
+          "detail": "3,054,027"
         },
         {
           "name": "News catalyst",
@@ -596,80 +800,12 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.45"
+          "detail": "$28.65"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "103.2M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "ZIP",
-      "name": "ZipRecruiter Inc. Class A",
-      "legalName": "ZIPRECRUITER, INC.",
-      "business": "Services-Computer Programming, Data Processing, Etc.",
-      "sector": "Technology",
-      "preMarketPrice": 4.75,
-      "preMarketChangePct": 10.72,
-      "prevClose": 4.2901011560693645,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 6:17 AM ET",
-      "preMarketVolume": 405,
-      "preMarketDollarVolume": 1923.75,
-      "relVolume": 0.0004817270807933629,
-      "avgVolume50": 840725,
-      "sharesOutstanding": 82226163.0319149,
-      "marketCap": 390574274.4015958,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 21,
-      "float": {
-        "shares": 82226163.0319149,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-10"
-      },
-      "floatRotation": 0.000004925439605430757,
-      "daysUp": 0,
-      "priorRunPct": -10.476190476190485,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "ZipRecruiter (ZIP) Q3 2026 Earnings Call Transcript",
-        "subject": "Earnings or guidance",
-        "date": "2026-11-10"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "405"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.75"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "82.2M"
+          "detail": "22.3M"
         }
       ],
       "passed": 3,
@@ -685,10 +821,10 @@
       "preMarketChangePct": 10.68702290076335,
       "prevClose": 5.24,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 10, 2026 5:32 AM ET",
-      "preMarketVolume": 7,
-      "preMarketDollarVolume": 40.6,
-      "relVolume": 0.00009334453467749463,
+      "lastTradeAt": "Nov 10, 2026 6:59 AM ET",
+      "preMarketVolume": 22,
+      "preMarketDollarVolume": 127.6,
+      "relVolume": 0.00029336853755784027,
       "avgVolume50": 74991,
       "sharesOutstanding": 14035736,
       "marketCap": 81407268.8,
@@ -699,7 +835,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-12"
       },
-      "floatRotation": 4.98726963801542e-7,
+      "floatRotation": 0.000001567427600519132,
       "daysUp": 1,
       "priorRunPct": 0.3831417624521162,
       "extended": false,
@@ -722,7 +858,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "7"
+          "detail": "22"
         },
         {
           "name": "News catalyst",
@@ -744,74 +880,6 @@
       "quality": "low"
     },
     {
-      "symbol": "STI",
-      "name": "Solidion Technology Inc.",
-      "legalName": "Solidion Technology Inc.",
-      "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
-      "sector": "Miscellaneous",
-      "preMarketPrice": 4.37,
-      "preMarketChangePct": 6.33,
-      "prevClose": 4.109846703658422,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 6:10 AM ET",
-      "preMarketVolume": 49314,
-      "preMarketDollarVolume": 215502.18,
-      "relVolume": 0.4192155329241546,
-      "avgVolume50": 117634,
-      "sharesOutstanding": 9411893,
-      "marketCap": 41129972.410000004,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 294,
-      "float": {
-        "shares": 9411893,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-06"
-      },
-      "floatRotation": 0.005239541078505674,
-      "daysUp": 1,
-      "priorRunPct": 5.472636815920414,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released",
-        "subject": "Earnings / results released",
-        "date": "2026-11-09"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "49,314"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.37"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "9.4M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "UPLD",
       "name": "Upland Software Inc.",
       "legalName": "Upland Software, Inc.",
@@ -821,10 +889,10 @@
       "preMarketChangePct": 5.9,
       "prevClose": 3.8149197355996227,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 6:19 AM ET",
-      "preMarketVolume": 4357.943348,
-      "preMarketDollarVolume": 17606.09112592,
-      "relVolume": 0.16830584899393658,
+      "lastTradeAt": "Nov 10, 2026 7:00 AM ET",
+      "preMarketVolume": 4407.943348,
+      "preMarketDollarVolume": 17808.09112592,
+      "relVolume": 0.1702368728227706,
       "avgVolume50": 25893,
       "sharesOutstanding": 2838697,
       "marketCap": 11468335.88,
@@ -835,7 +903,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-02"
       },
-      "floatRotation": 0.0015351914445254284,
+      "floatRotation": 0.0015528051595503148,
       "daysUp": 1,
       "priorRunPct": -0.2512562814070298,
       "extended": false,
@@ -858,7 +926,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "4,358"
+          "detail": "4,408"
         },
         {
           "name": "News catalyst",
@@ -880,90 +948,22 @@
       "quality": "low"
     },
     {
-      "symbol": "KLTR",
-      "name": "Kaltura Inc.",
-      "legalName": "KALTURA INC",
-      "business": "Services-Prepackaged Software",
-      "sector": "Technology",
-      "preMarketPrice": 1.69,
-      "preMarketChangePct": 18.18,
-      "prevClose": 1.4300220003384667,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 6:36 AM ET",
-      "preMarketVolume": 22805.897466,
-      "preMarketDollarVolume": 38541.966717539995,
-      "relVolume": 0.037771741234419044,
-      "avgVolume50": 603782,
-      "sharesOutstanding": 154082280,
-      "marketCap": 260399053.2,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 35,
-      "float": {
-        "shares": 154082280,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-02"
-      },
-      "floatRotation": 0.00014801116303574945,
-      "daysUp": 1,
-      "priorRunPct": 4.827586206896556,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Kaltura (KLTR) Q3 2026 Earnings Call Transcript",
-        "subject": "Earnings or guidance",
-        "date": "2026-11-10"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "18.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "22,806"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.69"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "154.1M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
       "symbol": "TTEC",
       "name": "TTEC Holdings Inc.",
       "legalName": "TTEC Holdings, Inc.",
       "business": "Services-Help Supply Services",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.54,
-      "preMarketChangePct": 11.594202898550735,
+      "preMarketPrice": 1.55,
+      "preMarketChangePct": 12.318840579710157,
       "prevClose": 1.38,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 10, 2026 6:40 AM ET",
-      "preMarketVolume": 26196,
-      "preMarketDollarVolume": 40341.840000000004,
-      "relVolume": 0.05796203570741076,
+      "lastTradeAt": "Nov 10, 2026 6:49 AM ET",
+      "preMarketVolume": 26307.251172,
+      "preMarketDollarVolume": 40776.239316600004,
+      "relVolume": 0.05820819330414138,
       "avgVolume50": 451951,
       "sharesOutstanding": 49383048,
-      "marketCap": 76049893.92,
+      "marketCap": 76543724.4,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 18,
       "float": {
@@ -971,7 +971,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-30"
       },
-      "floatRotation": 0.0005304654342113513,
+      "floatRotation": 0.0005327182553008879,
       "daysUp": 0,
       "priorRunPct": -13.207547169811331,
       "extended": false,
@@ -989,12 +989,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "11.6%"
+          "detail": "12.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "26,196"
+          "detail": "26,307"
         },
         {
           "name": "News catalyst",
@@ -1004,12 +1004,80 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.54"
+          "detail": "$1.55"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "49.4M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "SENS",
+      "name": "Senseonics Holdings Inc.",
+      "legalName": "Senseonics Holdings, Inc.",
+      "business": "Industrial Instruments For Measurement, Display, and Control",
+      "sector": "Health Care",
+      "preMarketPrice": 10.75,
+      "preMarketChangePct": 9.69,
+      "prevClose": 9.80034643085058,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 10, 2026 7:00 AM ET",
+      "preMarketVolume": 26205.765906,
+      "preMarketDollarVolume": 281711.9834895,
+      "relVolume": 0.04049111076672054,
+      "avgVolume50": 647198,
+      "sharesOutstanding": 54780508,
+      "marketCap": 588890461,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 36,
+      "float": {
+        "shares": 54780508,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-03"
+      },
+      "floatRotation": 0.00047837756280025734,
+      "daysUp": 1,
+      "priorRunPct": -9.674027339642482,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Senseonics Shares Rise 12% As Q3 Revenue Jumps 140%; FY26 Outlook Raised ",
+        "subject": "Earnings or guidance",
+        "date": "2026-11-10"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "9.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "26,206"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$10.75"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "54.8M"
         }
       ],
       "passed": 2,
