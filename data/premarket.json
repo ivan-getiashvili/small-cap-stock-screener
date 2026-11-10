@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-10T11:00:35.467Z",
+  "generatedAt": "2026-11-10T11:20:34.392Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-09",
   "universeChecked": 6053,
   "smallCapsInBand": 2912,
-  "investigated": 138,
-  "liveQuotes": 71,
+  "investigated": 150,
+  "liveQuotes": 85,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-09T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 219,
+    "edgarFilings": 246,
     "leads": {
-      "8-K": 114,
+      "8-K": 124,
       "PR Newswire": 0,
-      "GlobeNewswire": 0,
+      "GlobeNewswire": 3,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 138,
-    "answered": 138,
+    "requested": 150,
+    "answered": 150,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,90 +60,22 @@
   "shortlist": [],
   "watchlist": [
     {
-      "symbol": "PIII",
-      "name": "P3 Health Partners Inc. Class A",
-      "legalName": "P3 Health Partners Inc.",
-      "business": "Services-Health Services",
-      "sector": "Health Care",
-      "preMarketPrice": 4.77,
-      "preMarketChangePct": 12.24,
-      "prevClose": 4.249821810406272,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 5:57 AM ET",
-      "preMarketVolume": 8,
-      "preMarketDollarVolume": 38.16,
-      "relVolume": 0.00018986590720303784,
-      "avgVolume50": 42135,
-      "sharesOutstanding": 7261277,
-      "marketCap": 34636291.29,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 180,
-      "float": {
-        "shares": 7261277,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-10"
-      },
-      "floatRotation": 0.000001101734584701837,
-      "daysUp": 1,
-      "priorRunPct": -0.7444168734491377,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "P3 Health Partners Inc. Reports Third Quarter 2026 Net Income of $30.8 million and Raises Adjusted EBITDA Guidance Midpoint",
-        "subject": "Earnings or guidance",
-        "date": "2026-11-09"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "12.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "8"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.77"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "7.3M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
       "symbol": "SMX",
       "name": "SMX (Security Matters) Public Limited Company Ordinary Shares",
       "legalName": "SMX (Security Matters) Public Ltd Co",
       "business": "Misc Industrial & Commercial Machinery & Equipment",
       "sector": "Technology",
-      "preMarketPrice": 10.49,
-      "preMarketChangePct": 12.19,
-      "prevClose": 9.350209466084323,
+      "preMarketPrice": 11.58,
+      "preMarketChangePct": 23.85,
+      "prevClose": 9.35002018570852,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 6:00 AM ET",
-      "preMarketVolume": 404615.068152,
-      "preMarketDollarVolume": 4244412.06491448,
-      "relVolume": 12.995088262846867,
+      "lastTradeAt": "Nov 10, 2026 6:20 AM ET",
+      "preMarketVolume": 460850.068152,
+      "preMarketDollarVolume": 5336643.789200161,
+      "relVolume": 14.801196947327853,
       "avgVolume50": 31136,
       "sharesOutstanding": 1795943,
-      "marketCap": 18839442.07,
+      "marketCap": 20797019.94,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 251,
       "float": {
@@ -151,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.22529393647348497,
+      "floatRotation": 0.25660617745217973,
       "daysUp": 2,
       "priorRunPct": 7.317073170731714,
       "extended": true,
@@ -169,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "12.2%"
+          "detail": "23.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "404,615"
+          "detail": "460,850"
         },
         {
           "name": "News catalyst",
@@ -184,12 +116,149 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$10.49"
+          "detail": "$11.58"
         },
         {
           "name": "Float <10M",
           "ok": true,
           "detail": "1.8M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "SECZ",
+      "name": "Securitize Corp.",
+      "legalName": "Securitize Corp.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 7.9172,
+      "preMarketChangePct": 13.834651329978435,
+      "prevClose": 6.955,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 10, 2026 6:20 AM ET",
+      "preMarketVolume": 51462.797686,
+      "preMarketDollarVolume": 407441.2618395992,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 163265685,
+      "marketCap": 1292607081.282,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 163265685,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-13"
+      },
+      "floatRotation": 0.0003152089043450863,
+      "daysUp": 0,
+      "priorRunPct": -8.002645502645498,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released",
+        "subject": "Earnings / results released",
+        "date": "2026-11-09"
+      },
+      "leads": [
+        "8-K",
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "13.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "51,463"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$7.92"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "163.3M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "PIII",
+      "name": "P3 Health Partners Inc. Class A",
+      "legalName": "P3 Health Partners Inc.",
+      "business": "Services-Health Services",
+      "sector": "Health Care",
+      "preMarketPrice": 4.74,
+      "preMarketChangePct": 11.53,
+      "prevClose": 4.249977584506412,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 10, 2026 6:17 AM ET",
+      "preMarketVolume": 317,
+      "preMarketDollarVolume": 1502.5800000000002,
+      "relVolume": 0.007523436572920375,
+      "avgVolume50": 42135,
+      "sharesOutstanding": 7261277,
+      "marketCap": 34418452.980000004,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 180,
+      "float": {
+        "shares": 7261277,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-10"
+      },
+      "floatRotation": 0.00004365623291881029,
+      "daysUp": 1,
+      "priorRunPct": -0.7444168734491377,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "P3 Health Partners Inc. Reports Third Quarter 2026 Net Income of $30.8 million and Raises Adjusted EBITDA Guidance Midpoint",
+        "subject": "Earnings or guidance",
+        "date": "2026-11-09"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "11.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "317"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.74"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "7.3M"
         }
       ],
       "passed": 4,
@@ -203,17 +272,17 @@
       "legalName": "QUANTUM CORP /DE/",
       "business": "Computer Storage Devices",
       "sector": "Technology",
-      "preMarketPrice": 20.62,
-      "preMarketChangePct": 21.37,
-      "prevClose": 16.98937134382467,
+      "preMarketPrice": 20.43,
+      "preMarketChangePct": 20.25,
+      "prevClose": 16.989604989604988,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 6:00 AM ET",
-      "preMarketVolume": 69327.925846,
-      "preMarketDollarVolume": 1429541.83094452,
-      "relVolume": 0.045610507537176014,
+      "lastTradeAt": "Nov 10, 2026 6:20 AM ET",
+      "preMarketVolume": 77424.925846,
+      "preMarketDollarVolume": 1581791.2350337799,
+      "relVolume": 0.05093748472597679,
       "avgVolume50": 1519999,
       "sharesOutstanding": 39557393,
-      "marketCap": 815673443.6600001,
+      "marketCap": 808157538.99,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 65,
       "float": {
@@ -221,7 +290,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-05"
       },
-      "floatRotation": 0.0017525908708392384,
+      "floatRotation": 0.0019572808007342645,
       "daysUp": 1,
       "priorRunPct": -20.799124247400105,
       "extended": false,
@@ -239,12 +308,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "21.4%"
+          "detail": "20.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "69,328"
+          "detail": "77,425"
         },
         {
           "name": "News catalyst",
@@ -254,7 +323,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$20.62"
+          "detail": "$20.43"
         },
         {
           "name": "Float <10M",
@@ -271,17 +340,17 @@
       "legalName": "Senseonics Holdings, Inc.",
       "business": "Industrial Instruments For Measurement, Display, and Control",
       "sector": "Health Care",
-      "preMarketPrice": 11.42,
-      "preMarketChangePct": 16.53,
-      "prevClose": 9.800051488886982,
+      "preMarketPrice": 11.245,
+      "preMarketChangePct": 14.74,
+      "prevClose": 9.800418337109987,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 6:00 AM ET",
-      "preMarketVolume": 18389.765906,
-      "preMarketDollarVolume": 210011.12664652002,
-      "relVolume": 0.028414435622483383,
+      "lastTradeAt": "Nov 10, 2026 6:13 AM ET",
+      "preMarketVolume": 18432.765906,
+      "preMarketDollarVolume": 207276.45261297,
+      "relVolume": 0.02848087587724313,
       "avgVolume50": 647198,
       "sharesOutstanding": 54780508,
-      "marketCap": 625593401.36,
+      "marketCap": 616006812.4599999,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 36,
       "float": {
@@ -289,16 +358,16 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-03"
       },
-      "floatRotation": 0.00033569907577344846,
+      "floatRotation": 0.0003364840265081149,
       "daysUp": 1,
       "priorRunPct": -9.674027339642482,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Senseonics Holdings (SENS) Reports Q3 Loss, Beats Revenue Estimates",
+        "headline": "Senseonics Shares Rise 12% As Q3 Revenue Jumps 140%; FY26 Outlook Raised ",
         "subject": "Earnings or guidance",
-        "date": "2026-11-09"
+        "date": "2026-11-10"
       },
       "leads": [
         "8-K"
@@ -307,12 +376,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "16.5%"
+          "detail": "14.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "18,390"
+          "detail": "18,433"
         },
         {
           "name": "News catalyst",
@@ -322,7 +391,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$11.42"
+          "detail": "$11.24"
         },
         {
           "name": "Float <10M",
@@ -334,90 +403,22 @@
       "quality": "low"
     },
     {
-      "symbol": "SECZ",
-      "name": "Securitize Corp.",
-      "legalName": "Securitize Corp.",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 8.0435,
-      "preMarketChangePct": 15.650611071171816,
-      "prevClose": 6.955,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 10, 2026 5:59 AM ET",
-      "preMarketVolume": 48369.547686,
-      "preMarketDollarVolume": 389060.456812341,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 163265685,
-      "marketCap": 1313227537.2975,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 163265685,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-13"
-      },
-      "floatRotation": 0.0002962627920619082,
-      "daysUp": 0,
-      "priorRunPct": -8.002645502645498,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released",
-        "subject": "Earnings / results released",
-        "date": "2026-11-09"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "15.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "48,370"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$8.04"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "163.3M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "BW",
       "name": "Babcock & Wilcox Enterprises Inc.",
       "legalName": "Babcock & Wilcox Enterprises, Inc.",
       "business": "Heating Equipment, Except Electric & Warm Air Furnaces",
       "sector": "Industrials",
-      "preMarketPrice": 4.33,
-      "preMarketChangePct": 14.25,
-      "prevClose": 3.7899343544857764,
+      "preMarketPrice": 4.3082,
+      "preMarketChangePct": 13.67,
+      "prevClose": 3.7900941321368875,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 6:00 AM ET",
-      "preMarketVolume": 38517.385855,
-      "preMarketDollarVolume": 166780.28075215,
-      "relVolume": 0.008509000415095974,
+      "lastTradeAt": "Nov 10, 2026 6:09 AM ET",
+      "preMarketVolume": 46417.385855,
+      "preMarketDollarVolume": 199975.38174051102,
+      "relVolume": 0.01025421499254197,
       "avgVolume50": 4526664,
       "sharesOutstanding": 145446002,
-      "marketCap": 629781188.66,
+      "marketCap": 626610465.8164,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 46,
       "float": {
@@ -425,7 +426,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-03"
       },
-      "floatRotation": 0.00026482258243853274,
+      "floatRotation": 0.00031913827273849716,
       "daysUp": 1,
       "priorRunPct": -24.004683840749404,
       "extended": false,
@@ -443,12 +444,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "14.3%"
+          "detail": "13.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "38,517"
+          "detail": "46,417"
         },
         {
           "name": "News catalyst",
@@ -458,7 +459,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.33"
+          "detail": "$4.31"
         },
         {
           "name": "Float <10M",
@@ -539,6 +540,74 @@
       "quality": "low"
     },
     {
+      "symbol": "ZIP",
+      "name": "ZipRecruiter Inc. Class A",
+      "legalName": "ZIPRECRUITER, INC.",
+      "business": "Services-Computer Programming, Data Processing, Etc.",
+      "sector": "Technology",
+      "preMarketPrice": 4.75,
+      "preMarketChangePct": 10.72,
+      "prevClose": 4.2901011560693645,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 10, 2026 6:17 AM ET",
+      "preMarketVolume": 405,
+      "preMarketDollarVolume": 1923.75,
+      "relVolume": 0.0004817270807933629,
+      "avgVolume50": 840725,
+      "sharesOutstanding": 82226163.0319149,
+      "marketCap": 390574274.4015958,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 21,
+      "float": {
+        "shares": 82226163.0319149,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-10"
+      },
+      "floatRotation": 0.000004925439605430757,
+      "daysUp": 0,
+      "priorRunPct": -10.476190476190485,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "ZipRecruiter (ZIP) Q3 2026 Earnings Call Transcript",
+        "subject": "Earnings or guidance",
+        "date": "2026-11-10"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "10.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "405"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.75"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "82.2M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "USGO",
       "name": "U.S. GoldMining Inc.",
       "legalName": "U.S. GoldMining Inc.",
@@ -612,17 +681,17 @@
       "legalName": "Solidion Technology Inc.",
       "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
       "sector": "Miscellaneous",
-      "preMarketPrice": 4.4,
-      "preMarketChangePct": 7.06,
-      "prevClose": 4.109844946758828,
+      "preMarketPrice": 4.37,
+      "preMarketChangePct": 6.33,
+      "prevClose": 4.109846703658422,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 5:48 AM ET",
-      "preMarketVolume": 49195,
-      "preMarketDollarVolume": 216458.00000000003,
-      "relVolume": 0.4182039206351905,
+      "lastTradeAt": "Nov 10, 2026 6:10 AM ET",
+      "preMarketVolume": 49314,
+      "preMarketDollarVolume": 215502.18,
+      "relVolume": 0.4192155329241546,
       "avgVolume50": 117634,
       "sharesOutstanding": 9411893,
-      "marketCap": 41412329.2,
+      "marketCap": 41129972.410000004,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 294,
       "float": {
@@ -630,7 +699,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-06"
       },
-      "floatRotation": 0.0052268975008534415,
+      "floatRotation": 0.005239541078505674,
       "daysUp": 1,
       "priorRunPct": 5.472636815920414,
       "extended": false,
@@ -648,12 +717,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.1%"
+          "detail": "6.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "49,195"
+          "detail": "49,314"
         },
         {
           "name": "News catalyst",
@@ -663,7 +732,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.40"
+          "detail": "$4.37"
         },
         {
           "name": "Float <10M",
@@ -680,17 +749,17 @@
       "legalName": "Upland Software, Inc.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 4.03,
-      "preMarketChangePct": 5.64,
-      "prevClose": 3.8148428625520636,
+      "preMarketPrice": 4.04,
+      "preMarketChangePct": 5.9,
+      "prevClose": 3.8149197355996227,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 5:48 AM ET",
-      "preMarketVolume": 4337.732809,
-      "preMarketDollarVolume": 17481.06322027,
-      "relVolume": 0.167525308345885,
+      "lastTradeAt": "Nov 10, 2026 6:19 AM ET",
+      "preMarketVolume": 4357.943348,
+      "preMarketDollarVolume": 17606.09112592,
+      "relVolume": 0.16830584899393658,
       "avgVolume50": 25893,
       "sharesOutstanding": 2838697,
-      "marketCap": 11439948.91,
+      "marketCap": 11468335.88,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 29,
       "float": {
@@ -698,7 +767,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-02"
       },
-      "floatRotation": 0.0015280717910365214,
+      "floatRotation": 0.0015351914445254284,
       "daysUp": 1,
       "priorRunPct": -0.2512562814070298,
       "extended": false,
@@ -716,12 +785,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.6%"
+          "detail": "5.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "4,338"
+          "detail": "4,358"
         },
         {
           "name": "News catalyst",
@@ -731,7 +800,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.03"
+          "detail": "$4.04"
         },
         {
           "name": "Float <10M",
@@ -748,17 +817,17 @@
       "legalName": "KALTURA INC",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 1.67,
-      "preMarketChangePct": 16.78,
-      "prevClose": 1.4300393903065594,
+      "preMarketPrice": 1.65,
+      "preMarketChangePct": 15.38,
+      "prevClose": 1.4300572022880915,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 5:59 AM ET",
-      "preMarketVolume": 19664.30913,
-      "preMarketDollarVolume": 32839.3962471,
-      "relVolume": 0.03256855807228437,
+      "lastTradeAt": "Nov 10, 2026 6:18 AM ET",
+      "preMarketVolume": 21860.897466,
+      "preMarketDollarVolume": 36070.480818899996,
+      "relVolume": 0.03620660679848024,
       "avgVolume50": 603782,
       "sharesOutstanding": 154082280,
-      "marketCap": 257317407.6,
+      "marketCap": 254235762,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 35,
       "float": {
@@ -766,7 +835,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-02"
       },
-      "floatRotation": 0.00012762213234383604,
+      "floatRotation": 0.00014187807622005591,
       "daysUp": 1,
       "priorRunPct": 4.827586206896556,
       "extended": false,
@@ -784,12 +853,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "16.8%"
+          "detail": "15.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "19,664"
+          "detail": "21,861"
         },
         {
           "name": "News catalyst",
@@ -799,7 +868,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.67"
+          "detail": "$1.65"
         },
         {
           "name": "Float <10M",
@@ -811,68 +880,68 @@
       "quality": "low"
     },
     {
-      "symbol": "KDK",
-      "name": "Kodiak AI Inc. Common Stock",
-      "legalName": "Kodiak AI, Inc.",
-      "business": "Services-Computer Integrated Systems Design",
-      "sector": "Technology",
-      "preMarketPrice": 1.45,
-      "preMarketChangePct": 13.281249999999995,
-      "prevClose": 1.28,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 10, 2026 6:00 AM ET",
-      "preMarketVolume": 51066.744562,
-      "preMarketDollarVolume": 74046.77961489999,
-      "relVolume": 0.05147789853761997,
-      "avgVolume50": 992013,
-      "sharesOutstanding": 204083603,
-      "marketCap": 295921224.34999996,
+      "symbol": "LTRX",
+      "name": "Lantronix Inc.",
+      "legalName": "LANTRONIX INC",
+      "business": "Computer Communications Equipment",
+      "sector": "Telecommunications",
+      "preMarketPrice": 5.9216,
+      "preMarketChangePct": 8.65,
+      "prevClose": 5.450161067648412,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 10, 2026 5:09 AM ET",
+      "preMarketVolume": 79.168443,
+      "preMarketDollarVolume": 468.8038520688,
+      "relVolume": 0.0000852306429404235,
+      "avgVolume50": 928873,
+      "sharesOutstanding": 46944209,
+      "marketCap": 277984828.0144,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 23,
+      "bestPriorSpikePct": 17,
       "float": {
-        "shares": 204083603,
+        "shares": 46944209,
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-10-30"
       },
-      "floatRotation": 0.0002502246325100405,
+      "floatRotation": 0.0000016864368297269636,
       "daysUp": 1,
-      "priorRunPct": 4.9180327868852505,
+      "priorRunPct": -14.059900166389347,
       "extended": false,
       "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
+        "found": true,
+        "kind": "news",
+        "headline": "Lantronix: 3 Key Takeaways for Long-Term Investors",
         "subject": null,
-        "date": null
+        "date": "2026-11-10"
       },
       "leads": [
-        "prior-session gainer"
+        "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "13.3%"
+          "ok": false,
+          "detail": "8.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "51,067"
+          "ok": false,
+          "detail": "79"
         },
         {
           "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
+          "ok": true,
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.45"
+          "ok": true,
+          "detail": "$5.92"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "204.1M"
+          "detail": "46.9M"
         }
       ],
       "passed": 2,
