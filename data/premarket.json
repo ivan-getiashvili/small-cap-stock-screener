@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-10T14:20:36.067Z",
-  "marketStatus": "After Hours",
-  "prevSession": "2026-11-09",
+  "generatedAt": "2026-11-11T11:00:37.042Z",
+  "marketStatus": "Pre Market",
+  "prevSession": "2026-11-10",
   "universeChecked": 6079,
-  "smallCapsInBand": 2916,
+  "smallCapsInBand": 2920,
   "investigated": 150,
-  "liveQuotes": 115,
+  "liveQuotes": 85,
   "feedIsLive": true,
   "discovery": {
-    "since": "2026-11-09T20:30:00.000Z",
+    "since": "2026-11-10T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 337,
+    "edgarFilings": 241,
     "leads": {
-      "8-K": 179,
-      "PR Newswire": 2,
-      "GlobeNewswire": 4,
+      "8-K": 125,
+      "PR Newswire": 3,
+      "GlobeNewswire": 0,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -60,38 +60,38 @@
   "shortlist": [],
   "watchlist": [
     {
-      "symbol": "PEPG",
-      "name": "PepGen Inc.",
-      "legalName": "PepGen Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 5.7169,
-      "preMarketChangePct": 139.2,
-      "prevClose": 2.3900083612040133,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 9:20 AM ET",
-      "preMarketVolume": 33674646.16513,
-      "preMarketDollarVolume": 192514584.66143167,
-      "relVolume": 32.483101052328486,
-      "avgVolume50": 1036682,
-      "sharesOutstanding": 69261282,
-      "marketCap": 395959823.0658,
+      "symbol": "SATL",
+      "name": "Satellogic Inc. Class A",
+      "legalName": "Satellogic Inc.",
+      "business": "Radio & Tv Broadcasting & Communications Equipment",
+      "sector": "Technology",
+      "preMarketPrice": 4.69,
+      "preMarketChangePct": 18.284993694829772,
+      "prevClose": 3.965,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 11, 2026 6:00 AM ET",
+      "preMarketVolume": 465913.489362,
+      "preMarketDollarVolume": 2185134.26510778,
+      "relVolume": 0.09304094069515687,
+      "avgVolume50": 5007618,
+      "sharesOutstanding": 27297969,
+      "marketCap": 128027474.61000001,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 121,
+      "bestPriorSpikePct": 38,
       "float": {
-        "shares": 69261282,
+        "shares": 27297969,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-04"
+        "asOf": "2022-04-25"
       },
-      "floatRotation": 0.48619726913414624,
-      "daysUp": 1,
-      "priorRunPct": 4.661016949152557,
-      "extended": false,
+      "floatRotation": 0.017067697943462388,
+      "daysUp": 2,
+      "priorRunPct": 28.73376623376623,
+      "extended": true,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released · Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
-        "subject": "Earnings / results released · Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
+        "kind": "news",
+        "headline": "Satellogic (SATL) Q3 2026 Earnings Call Transcript",
+        "subject": "Earnings or guidance",
         "date": "2026-11-10"
       },
       "leads": [
@@ -101,81 +101,148 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "139.2%"
+          "detail": "18.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "33,674,646"
+          "detail": "465,913"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.72"
+          "detail": "$4.69"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "69.3M"
+          "detail": "27.3M"
         }
       ],
       "passed": 4,
       "quality": "medium"
     },
     {
-      "symbol": "SECZ",
-      "name": "Securitize Corp.",
-      "legalName": "Securitize Corp.",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 8.76,
-      "preMarketChangePct": 25.952552120776417,
-      "prevClose": 6.955,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 10, 2026 9:20 AM ET",
-      "preMarketVolume": 1670397.658448,
-      "preMarketDollarVolume": 14632683.48800448,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 163265685,
-      "marketCap": 1430207400.6,
+      "symbol": "UONEK",
+      "name": "Urban One Inc. Class D",
+      "legalName": "URBAN ONE, INC.",
+      "business": "Radio Broadcasting Stations",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 3.72,
+      "preMarketChangePct": 14.46,
+      "prevClose": 3.250043683382841,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 11, 2026 4:29 AM ET",
+      "preMarketVolume": 2,
+      "preMarketDollarVolume": 7.44,
+      "relVolume": 0.000033022917905026086,
+      "avgVolume50": 60564,
+      "sharesOutstanding": 4614963.943661972,
+      "marketCap": 17167665.87042254,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
+      "bestPriorSpikePct": 38,
       "float": {
-        "shares": 163265685,
+        "shares": 4614963.943661972,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-13"
+        "asOf": "2026-11-11"
       },
-      "floatRotation": 0.01023116191530388,
-      "daysUp": 0,
-      "priorRunPct": -8.002645502645498,
+      "floatRotation": 4.333728333342082e-7,
+      "daysUp": 1,
+      "priorRunPct": -0.2808988764045009,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "URBAN ONE, INC. Q3 Loss Widens ",
+        "subject": null,
+        "date": "2026-11-10"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "14.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "2"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.72"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "4.6M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "TLF",
+      "name": "Tandy Leather Factory Inc.",
+      "legalName": "TANDY LEATHER FACTORY INC",
+      "business": "Leather & Leather Products",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 2.3,
+      "preMarketChangePct": 10.58,
+      "prevClose": 2.0799421233496114,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 11, 2026 4:00 AM ET",
+      "preMarketVolume": 1,
+      "preMarketDollarVolume": 2.3,
+      "relVolume": 0.00003913894324853229,
+      "avgVolume50": 25550,
+      "sharesOutstanding": 8192075,
+      "marketCap": 18841772.5,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 11,
+      "float": {
+        "shares": 8192075,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-10"
+      },
+      "floatRotation": 1.220691949231422e-7,
+      "daysUp": 1,
+      "priorRunPct": -4.932735426008963,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "8-K",
         "headline": "Earnings / results released",
         "subject": "Earnings / results released",
-        "date": "2026-11-09"
+        "date": "2026-11-10"
       },
       "leads": [
-        "8-K",
         "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "26.0%"
+          "detail": "10.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "1,670,398"
+          "ok": false,
+          "detail": "1"
         },
         {
           "name": "News catalyst",
@@ -185,216 +252,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.76"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "163.3M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
-      "symbol": "SENS",
-      "name": "Senseonics Holdings Inc.",
-      "legalName": "Senseonics Holdings, Inc.",
-      "business": "Industrial Instruments For Measurement, Display, and Control",
-      "sector": "Health Care",
-      "preMarketPrice": 11.57,
-      "preMarketChangePct": 18.06,
-      "prevClose": 9.800101643232255,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 9:20 AM ET",
-      "preMarketVolume": 128391.705035,
-      "preMarketDollarVolume": 1485492.02725495,
-      "relVolume": 0.19838087422241726,
-      "avgVolume50": 647198,
-      "sharesOutstanding": 54780508,
-      "marketCap": 633810477.5600001,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 36,
-      "float": {
-        "shares": 54780508,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-03"
-      },
-      "floatRotation": 0.0023437479812162387,
-      "daysUp": 1,
-      "priorRunPct": -9.674027339642482,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Senseonics Shares Rise 12% As Q3 Revenue Jumps 140%; FY26 Outlook Raised ",
-        "subject": "Earnings or guidance",
-        "date": "2026-11-10"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "18.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "128,392"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$11.57"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "54.8M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
-      "symbol": "UPLD",
-      "name": "Upland Software Inc.",
-      "legalName": "Upland Software, Inc.",
-      "business": "Services-Prepackaged Software",
-      "sector": "Technology",
-      "preMarketPrice": 4.298,
-      "preMarketChangePct": 12.66,
-      "prevClose": 3.815018640156222,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 9:19 AM ET",
-      "preMarketVolume": 8426.943348,
-      "preMarketDollarVolume": 36219.002509704005,
-      "relVolume": 0.3254525681844514,
-      "avgVolume50": 25893,
-      "sharesOutstanding": 2838697,
-      "marketCap": 12200719.706,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 29,
-      "float": {
-        "shares": 2838697,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-02"
-      },
-      "floatRotation": 0.0029685955732506853,
-      "daysUp": 1,
-      "priorRunPct": -0.2512562814070298,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Upland Software, Inc. Enters into Dividend Waiver Agreement on 115,000 Series A Preferred Shares",
-        "subject": "Contract or partnership",
-        "date": "2026-11-10"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "12.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "8,427"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.30"
+          "detail": "$2.30"
         },
         {
           "name": "Float <10M",
           "ok": true,
-          "detail": "2.8M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
-      "symbol": "QMCO",
-      "name": "Quantum Corporation",
-      "legalName": "QUANTUM CORP /DE/",
-      "business": "Computer Storage Devices",
-      "sector": "Technology",
-      "preMarketPrice": 18.85,
-      "preMarketChangePct": 10.95,
-      "prevClose": 16.989634970707527,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 9:19 AM ET",
-      "preMarketVolume": 161485.432825,
-      "preMarketDollarVolume": 3044000.4087512502,
-      "relVolume": 0.10624048622729357,
-      "avgVolume50": 1519999,
-      "sharesOutstanding": 39557393,
-      "marketCap": 745656858.0500001,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 65,
-      "float": {
-        "shares": 39557393,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-05"
-      },
-      "floatRotation": 0.004082307264915056,
-      "daysUp": 1,
-      "priorRunPct": -20.799124247400105,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Quantum Corporation Reports Fiscal Second Quarter 2027 Financial Results",
-        "subject": "Earnings or guidance",
-        "date": "2026-11-09"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "161,485"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$18.85"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "39.6M"
+          "detail": "8.2M"
         }
       ],
       "passed": 4,
@@ -403,168 +266,372 @@
   ],
   "alsoRan": [
     {
-      "symbol": "TTEC",
-      "name": "TTEC Holdings Inc.",
-      "legalName": "TTEC Holdings, Inc.",
-      "business": "Services-Help Supply Services",
+      "symbol": "FOSL",
+      "name": "Fossil Group Inc.",
+      "legalName": "Fossil Group, Inc.",
+      "business": "Watches, Clocks, Clockwork Operated Devices/Parts",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.6816,
-      "preMarketChangePct": 21.855072463768124,
-      "prevClose": 1.38,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 10, 2026 9:20 AM ET",
-      "preMarketVolume": 470640.435935,
-      "preMarketDollarVolume": 791428.957068296,
-      "relVolume": 1.041352792526181,
-      "avgVolume50": 451951,
-      "sharesOutstanding": 49383048,
-      "marketCap": 83042533.5168,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 18,
-      "float": {
-        "shares": 49383048,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-30"
-      },
-      "floatRotation": 0.009530404764302924,
-      "daysUp": 0,
-      "priorRunPct": -13.207547169811331,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "TTEC Holdings (TTEC) Matches Q3 Earnings Estimates",
-        "subject": "Earnings or guidance",
-        "date": "2026-11-09"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "21.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "470,640"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.68"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "49.4M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "AMPY",
-      "name": "Amplify Energy Corp.",
-      "legalName": "Amplify Energy Corp.",
-      "business": "Crude Petroleum & Natural Gas",
-      "sector": "Energy",
-      "preMarketPrice": 3.56,
-      "preMarketChangePct": 11.25,
-      "prevClose": 3.1999999999999997,
+      "preMarketPrice": 9.58,
+      "preMarketChangePct": 21.73,
+      "prevClose": 7.869875954982338,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 9:19 AM ET",
-      "preMarketVolume": 665,
-      "preMarketDollarVolume": 2367.4,
-      "relVolume": 0.0008916683315611704,
-      "avgVolume50": 745793,
-      "sharesOutstanding": 40001486,
-      "marketCap": 142405290.16,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 22,
-      "float": {
-        "shares": 40001486,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-06"
-      },
-      "floatRotation": 0.000016624382404193684,
-      "daysUp": 1,
-      "priorRunPct": -21.779859484777514,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Amplify Energy Corp. Announces Third Quarter 2026 Results and Special Case Royalty Relief",
-        "subject": "Earnings or guidance",
-        "date": "2026-11-09"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "11.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "665"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.56"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "40.0M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "CRMT",
-      "name": "America's Car-Mart Inc",
-      "legalName": "AMERICAS CARMART INC",
-      "business": "Retail-Auto Dealers & Gasoline Stations",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.26,
-      "preMarketChangePct": 10.53,
-      "prevClose": 1.1399620012666245,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 8:54 AM ET",
-      "preMarketVolume": 16358,
-      "preMarketDollarVolume": 20611.08,
-      "relVolume": 0.031143917340486903,
-      "avgVolume50": 525239,
-      "sharesOutstanding": 8338478,
-      "marketCap": 10506482.28,
+      "lastTradeAt": "Nov 11, 2026 6:00 AM ET",
+      "preMarketVolume": 16764.692867,
+      "preMarketDollarVolume": 160605.75766586003,
+      "relVolume": 0.019148028872764074,
+      "avgVolume50": 875531,
+      "sharesOutstanding": 59138052,
+      "marketCap": 566542538.16,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 42,
       "float": {
-        "shares": 8338478,
+        "shares": 59138052,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-09"
+        "asOf": "2026-08-05"
       },
-      "floatRotation": 0.0019617488947023666,
+      "floatRotation": 0.0002834840225545475,
+      "daysUp": 4,
+      "priorRunPct": 18.35535976505141,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Fossil (FOSL) Q3 2026 Earnings Call Transcript",
+        "subject": "Earnings or guidance",
+        "date": "2026-11-10"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "21.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "16,765"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$9.58"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "59.1M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "GEVO",
+      "name": "Gevo Inc.",
+      "legalName": "Gevo, Inc.",
+      "business": "Industrial Organic Chemicals",
+      "sector": "Industrials",
+      "preMarketPrice": 1.64,
+      "preMarketChangePct": 17.99,
+      "prevClose": 1.3899483007034494,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 11, 2026 6:00 AM ET",
+      "preMarketVolume": 237071.435431,
+      "preMarketDollarVolume": 388797.15410683997,
+      "relVolume": 0.07965465008747612,
+      "avgVolume50": 2976241,
+      "sharesOutstanding": 247376240,
+      "marketCap": 405697033.59999996,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 13,
+      "float": {
+        "shares": 247376240,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-06"
+      },
+      "floatRotation": 0.0009583435960988007,
+      "daysUp": 2,
+      "priorRunPct": 25.641025641025646,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Gevo (GEVO) Q3 2026 Earnings Call Transcript",
+        "subject": "Earnings or guidance",
+        "date": "2026-11-10"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "18.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "237,071"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.64"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "247.4M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "NN",
+      "name": "NextNav Inc.",
+      "legalName": "NEXTNAV INC.",
+      "business": "Search, Detection, Navigation, Guidance, Aeronautical Sys",
+      "sector": "Industrials",
+      "preMarketPrice": 9.28,
+      "preMarketChangePct": 10.48,
+      "prevClose": 8.399710354815351,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 11, 2026 5:53 AM ET",
+      "preMarketVolume": 1353,
+      "preMarketDollarVolume": 12555.839999999998,
+      "relVolume": 0.0005184013315212915,
+      "avgVolume50": 2609947,
+      "sharesOutstanding": 168809910,
+      "marketCap": 1566555964.8,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 27,
+      "float": {
+        "shares": 168809910,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-07"
+      },
+      "floatRotation": 0.000008014932298702131,
+      "daysUp": 2,
+      "priorRunPct": -7.27650727650727,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "NextNav (NN) Q3 2026 Earnings Call Transcript",
+        "subject": "Earnings or guidance",
+        "date": "2026-11-11"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "10.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "1,353"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$9.28"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "168.8M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "UONE",
+      "name": "Urban One Inc. Class A",
+      "legalName": "URBAN ONE, INC.",
+      "business": "Radio Broadcasting Stations",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 3.75,
+      "preMarketChangePct": 8.38,
+      "prevClose": 3.46004797933198,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 11, 2026 4:05 AM ET",
+      "preMarketVolume": 2,
+      "preMarketDollarVolume": 7.5,
+      "relVolume": 0.00032965221691115873,
+      "avgVolume50": 6067,
+      "sharesOutstanding": 4614964.102564103,
+      "marketCap": 17306115.384615388,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 39,
+      "float": {
+        "shares": 4614964.102564103,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-11"
+      },
+      "floatRotation": 4.333728184123442e-7,
       "daysUp": 0,
-      "priorRunPct": 38.46153846153845,
+      "priorRunPct": -6.024096385542179,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "URBAN ONE, INC. Q3 Loss Widens ",
+        "subject": null,
+        "date": "2026-11-10"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "2"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.75"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "4.6M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "KEEL",
+      "name": "Keel Infrastructure Corp.",
+      "legalName": "Keel Infrastructure Corp.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 2.03,
+      "preMarketChangePct": 6.28,
+      "prevClose": 1.910048927361686,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 11, 2026 6:00 AM ET",
+      "preMarketVolume": 127079.2951,
+      "preMarketDollarVolume": 257970.96905299998,
+      "relVolume": 0.0036600914866658078,
+      "avgVolume50": 34720251,
+      "sharesOutstanding": 617883881,
+      "marketCap": 1254304278.4299998,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 27,
+      "float": {
+        "shares": 617883881,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-04"
+      },
+      "floatRotation": 0.00020566857140589495,
+      "daysUp": 2,
+      "priorRunPct": 3.703703703703707,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Executive or board change",
+        "subject": "Executive or board change",
+        "date": "2026-11-10"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "127,079"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.03"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "617.9M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "OBAI",
+      "name": "Our Bond Inc.",
+      "legalName": "Our Bond, Inc.",
+      "business": "Communications Services, NEC",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.8249,
+      "preMarketChangePct": 14.06,
+      "prevClose": 1.5999473961073118,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 11, 2026 5:59 AM ET",
+      "preMarketVolume": 8037,
+      "preMarketDollarVolume": 14666.7213,
+      "relVolume": 0.00399042734363751,
+      "avgVolume50": 2014070,
+      "sharesOutstanding": 29975526,
+      "marketCap": 54702337.3974,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 108,
+      "float": {
+        "shares": 29975526,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-14"
+      },
+      "floatRotation": 0.00026811873126096267,
+      "daysUp": 1,
+      "priorRunPct": -25.81344902386118,
       "extended": false,
       "catalyst": {
         "found": true,
@@ -580,12 +647,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "10.5%"
+          "detail": "14.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "16,358"
+          "detail": "8,037"
         },
         {
           "name": "News catalyst",
@@ -595,49 +662,117 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.26"
+          "detail": "$1.82"
         },
         {
           "name": "Float <10M",
-          "ok": true,
-          "detail": "8.3M"
+          "ok": false,
+          "detail": "30.0M"
         }
       ],
-      "passed": 3,
+      "passed": 2,
       "quality": "low"
     },
     {
-      "symbol": "PDYN",
-      "name": "Palladyne AI Corp.",
-      "legalName": "Palladyne AI Corp.",
-      "business": "Services-Prepackaged Software",
-      "sector": "Technology",
-      "preMarketPrice": 3.8603,
-      "preMarketChangePct": 9.05,
-      "prevClose": 3.5399358092618063,
+      "symbol": "FISN",
+      "name": "Deep Fission Inc.",
+      "legalName": "DEEP FISSION, INC.",
+      "business": "Electric Services",
+      "sector": "Utilities",
+      "preMarketPrice": 2.3965,
+      "preMarketChangePct": 13.04,
+      "prevClose": 2.120046001415428,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 9:20 AM ET",
-      "preMarketVolume": 1876575.62638,
-      "preMarketDollarVolume": 7244144.890514715,
-      "relVolume": 1.9196604863353097,
-      "avgVolume50": 977556,
-      "sharesOutstanding": 51381117,
-      "marketCap": 198346525.9551,
+      "lastTradeAt": "Nov 11, 2026 5:52 AM ET",
+      "preMarketVolume": 6219,
+      "preMarketDollarVolume": 14903.8335,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 58909588,
+      "marketCap": 141176827.642,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 34,
+      "bestPriorSpikePct": null,
       "float": {
-        "shares": 51381117,
+        "shares": 58909588,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-28"
+        "asOf": "2026-10-30"
       },
-      "floatRotation": 0.036522670894445525,
-      "daysUp": 1,
-      "priorRunPct": -8.898944193061837,
-      "extended": false,
+      "floatRotation": 0.00010556855362831599,
+      "daysUp": 2,
+      "priorRunPct": 10.980392156862756,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "13.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "6,219"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.40"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "58.9M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "BGS",
+      "name": "B&G Foods Inc.",
+      "legalName": "B&G Foods, Inc.",
+      "business": "Food and Kindred Products",
+      "sector": "Consumer Staples",
+      "preMarketPrice": 2.88,
+      "preMarketChangePct": 7.8651685393258415,
+      "prevClose": 2.67,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 11, 2026 5:47 AM ET",
+      "preMarketVolume": 953,
+      "preMarketDollarVolume": 2744.64,
+      "relVolume": 0.00044489675874271147,
+      "avgVolume50": 2142070,
+      "sharesOutstanding": 81140774,
+      "marketCap": 233685429.12,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 25,
+      "float": {
+        "shares": 81140774,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-05"
+      },
+      "floatRotation": 0.000011745019834294407,
+      "daysUp": 2,
+      "priorRunPct": 10.78838174273858,
+      "extended": true,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Palladyne AI Corp. (PDYN) Reports Q3 Loss, Tops Revenue Estimates",
+        "headline": "B&G Foods (BGS) Q3 2026 Earnings Call Transcript",
         "subject": "Earnings or guidance",
         "date": "2026-11-10"
       },
@@ -648,12 +783,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.1%"
+          "detail": "7.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "1,876,576"
+          "ok": false,
+          "detail": "953"
         },
         {
           "name": "News catalyst",
@@ -663,390 +798,50 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.86"
+          "detail": "$2.88"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "51.4M"
+          "detail": "81.1M"
         }
       ],
-      "passed": 3,
+      "passed": 2,
       "quality": "low"
     },
     {
-      "symbol": "CTY",
-      "name": "City Therapeutics Inc.",
-      "legalName": "CITY THERAPEUTICS, INC.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 22.75,
-      "preMarketChangePct": 21.85,
-      "prevClose": 18.670496512105046,
+      "symbol": "FAC",
+      "name": "Factorial Energy Inc. Class A",
+      "legalName": "Factorial Energy Inc.",
+      "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
+      "sector": "Miscellaneous",
+      "preMarketPrice": 4.57,
+      "preMarketChangePct": 7.28,
+      "prevClose": 4.259880686055183,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 9:18 AM ET",
-      "preMarketVolume": 250,
-      "preMarketDollarVolume": 5687.5,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 50332279.003749326,
-      "marketCap": 1145059347.335297,
+      "lastTradeAt": "Nov 11, 2026 5:51 AM ET",
+      "preMarketVolume": 1166,
+      "preMarketDollarVolume": 5328.62,
+      "relVolume": 0.003147948164146868,
+      "avgVolume50": 370400,
+      "sharesOutstanding": 107023244.96644296,
+      "marketCap": 489096229.4966443,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
+      "bestPriorSpikePct": 37,
       "float": {
-        "shares": 50332279.003749326,
+        "shares": 107023244.96644296,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-10"
+        "asOf": "2026-11-11"
       },
-      "floatRotation": 0.0000049669914605173575,
+      "floatRotation": 0.000010894829439768887,
       "daysUp": 2,
-      "priorRunPct": -11.878319652341867,
+      "priorRunPct": 7.710843373493962,
       "extended": true,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Stifel Initiates Coverage of City Therapeutics with Buy",
-        "subject": null,
-        "date": "2026-11-10"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "21.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "250"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$22.75"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "50.3M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "MCFT",
-      "name": "MasterCraft Boat Holdings Inc.",
-      "legalName": "MasterCraft Boat Holdings, Inc.",
-      "business": "Ship & Boat Building & Repairing",
-      "sector": "Industrials",
-      "preMarketPrice": 23.4,
-      "preMarketChangePct": 14.931237721021606,
-      "prevClose": 20.36,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 10, 2026 8:53 AM ET",
-      "preMarketVolume": 623.284485,
-      "preMarketDollarVolume": 14584.856948999999,
-      "relVolume": 0.0034836320828535976,
-      "avgVolume50": 178918,
-      "sharesOutstanding": 24339371,
-      "marketCap": 569541281.4,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 7,
-      "float": {
-        "shares": 24339371,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-04"
-      },
-      "floatRotation": 0.000025608076930172108,
-      "daysUp": 0,
-      "priorRunPct": -5.258259655653788,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released",
-        "subject": "Earnings / results released",
-        "date": "2026-11-10"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "14.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "623"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$23.40"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "24.3M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "REED",
-      "name": "Reed's Inc.",
-      "legalName": "REED'S, INC.",
-      "business": "Bottled & Canned Soft Drinks & Carbonated Waters",
-      "sector": "Consumer Staples",
-      "preMarketPrice": 1.38,
-      "preMarketChangePct": 10.4,
-      "prevClose": 1.2499999999999998,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 9:10 AM ET",
-      "preMarketVolume": 1119,
-      "preMarketDollarVolume": 1544.2199999999998,
-      "relVolume": 0.018177978491828846,
-      "avgVolume50": 61558,
-      "sharesOutstanding": 11857086,
-      "marketCap": 16362778.679999998,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 29,
-      "float": {
-        "shares": 11857086,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-07"
-      },
-      "floatRotation": 0.00009437394651603269,
-      "daysUp": 1,
-      "priorRunPct": 35.97199784598815,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Reed's, Inc. Completes $10.0 million Private Placement",
-        "subject": null,
-        "date": "2026-11-10"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.4%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "1,119"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.38"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "11.9M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "SBH",
-      "name": "Sally Beauty Holdings Inc. (Name to be changed from Sally Holdings Inc.)",
-      "legalName": "Sally Beauty Holdings, Inc.",
-      "business": "Retail-Retail Stores, NEC",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 21.5,
-      "preMarketChangePct": 10.31,
-      "prevClose": 19.490526697488896,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 9:06 AM ET",
-      "preMarketVolume": 208.164664,
-      "preMarketDollarVolume": 4475.540276,
-      "relVolume": 0.00015997972938700916,
-      "avgVolume50": 1301194,
-      "sharesOutstanding": 93622292,
-      "marketCap": 2012879278,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 8,
-      "float": {
-        "shares": 93622292,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-30"
-      },
-      "floatRotation": 0.0000022234519103633994,
-      "daysUp": 0,
-      "priorRunPct": 0.8264462809917473,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Sally Beauty Holdings Sees Slight Growth In FY27 - Update ",
-        "subject": null,
-        "date": "2026-11-10"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "208"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$21.50"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "93.6M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "KULR",
-      "name": "KULR Technology Group Inc.",
-      "legalName": "KULR Technology Group, Inc.",
-      "business": "Electronic Components & Accessories",
-      "sector": "Technology",
-      "preMarketPrice": 1.79,
-      "preMarketChangePct": 9.82,
-      "prevClose": 1.6299399016572573,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 10, 2026 9:20 AM ET",
-      "preMarketVolume": 473652,
-      "preMarketDollarVolume": 847837.0800000001,
-      "relVolume": 0.44877122570449157,
-      "avgVolume50": 1055442,
-      "sharesOutstanding": 46280543,
-      "marketCap": 82842171.97,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 27,
-      "float": {
-        "shares": 46280543,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-06"
-      },
-      "floatRotation": 0.010234365659884328,
-      "daysUp": 1,
-      "priorRunPct": -10.060975609756087,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released",
-        "subject": "Earnings / results released",
-        "date": "2026-11-10"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.8%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "473,652"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.79"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "46.3M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "PANL",
-      "name": "Pangaea Logistics Solutions Ltd. Common Shares",
-      "legalName": "Pangaea Logistics Solutions Ltd.",
-      "business": "Deep Sea Foreign Transportation of  Freight",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 8.12,
-      "preMarketChangePct": 7.265521796565376,
-      "prevClose": 7.57,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 10, 2026 9:05 AM ET",
-      "preMarketVolume": 1360,
-      "preMarketDollarVolume": 11043.199999999999,
-      "relVolume": 0.0035118071604715115,
-      "avgVolume50": 387265,
-      "sharesOutstanding": 65473772,
-      "marketCap": 531647028.6399999,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 18,
-      "float": {
-        "shares": 65473772,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-04"
-      },
-      "floatRotation": 0.00002077167632865264,
-      "daysUp": 1,
-      "priorRunPct": -4.899497487437182,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Pangaea Logistics Solutions, Ltd. Board Chair Richard T. du Moulin to Retire Effective December 31, 2026",
-        "subject": null,
+        "headline": "Factorial Energy (FAC) Q3 2026 Earnings Call Transcript",
+        "subject": "Earnings or guidance",
         "date": "2026-11-10"
       },
       "leads": [
@@ -1061,7 +856,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "1,360"
+          "detail": "1,166"
         },
         {
           "name": "News catalyst",
@@ -1071,17 +866,84 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.12"
+          "detail": "$4.57"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "65.5M"
+          "detail": "107.0M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "SNWV",
+      "name": "SANUWAVE Health Inc.",
+      "legalName": "SANUWAVE Health, Inc.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 1.975,
+      "preMarketChangePct": 6.756756756756756,
+      "prevClose": 1.85,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 11, 2026 5:26 AM ET",
+      "preMarketVolume": 7217.576923,
+      "preMarketDollarVolume": 14254.714422925,
+      "relVolume": 0.04405044262365119,
+      "avgVolume50": 163848,
+      "sharesOutstanding": 8602309,
+      "marketCap": 16989560.275000002,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 20,
+      "float": {
+        "shares": 8602309,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-05"
+      },
+      "floatRotation": 0.0008390278613567589,
+      "daysUp": 0,
+      "priorRunPct": -68.37606837606837,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released",
+        "subject": "Earnings / results released",
+        "date": "2026-11-10"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "7,218"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.98"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "8.6M"
         }
       ],
       "passed": 2,
       "quality": "low"
     }
-  ],
-  "frozenAfterPreMarket": true
+  ]
 }
