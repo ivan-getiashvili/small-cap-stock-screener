@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-12T12:40:37.966Z",
+  "generatedAt": "2026-11-12T13:00:43.163Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-11",
   "universeChecked": 6109,
   "smallCapsInBand": 2922,
-  "investigated": 86,
-  "liveQuotes": 66,
+  "investigated": 92,
+  "liveQuotes": 70,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-11T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 117,
+    "edgarFilings": 132,
     "leads": {
-      "8-K": 53,
+      "8-K": 60,
       "PR Newswire": 3,
       "GlobeNewswire": 8,
       "prior-session gainer": 25
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 86,
-    "answered": 86,
+    "requested": 92,
+    "answered": 92,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,90 +60,22 @@
   "shortlist": [],
   "watchlist": [
     {
-      "symbol": "CAPS",
-      "name": "Capstone Holding Corp.",
-      "legalName": "Capstone Holding Corp.",
-      "business": "Wholesale-Lumber & Other Construction Materials",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.19,
-      "preMarketChangePct": 10.05,
-      "prevClose": 1.9900045433893683,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 12, 2026 7:40 AM ET",
-      "preMarketVolume": 7292,
-      "preMarketDollarVolume": 15969.48,
-      "relVolume": 0.013811443117764713,
-      "avgVolume50": 527968,
-      "sharesOutstanding": 935385,
-      "marketCap": 2048493.15,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 26,
-      "float": {
-        "shares": 935385,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-10"
-      },
-      "floatRotation": 0.007795720478733356,
-      "daysUp": 0,
-      "priorRunPct": -2.3364485981308536,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released · Regulation FD disclosure (company announcement)",
-        "subject": "Earnings / results released · Regulation FD disclosure (company announcement)",
-        "date": "2026-11-12"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "7,292"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.19"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "0.9M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
       "symbol": "ANNA",
       "name": "AleAnna Inc. Class A",
       "legalName": "AleAnna, Inc.",
       "business": "Crude Petroleum & Natural Gas",
       "sector": "Energy",
-      "preMarketPrice": 2.2302,
-      "preMarketChangePct": 6.2,
-      "prevClose": 2.0999999999999996,
+      "preMarketPrice": 2.21,
+      "preMarketChangePct": 5.24,
+      "prevClose": 2.0999619916381604,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 12, 2026 7:40 AM ET",
-      "preMarketVolume": 77124,
-      "preMarketDollarVolume": 172001.9448,
-      "relVolume": 0.2698039544939339,
+      "lastTradeAt": "Nov 12, 2026 7:57 AM ET",
+      "preMarketVolume": 79264,
+      "preMarketDollarVolume": 175173.44,
+      "relVolume": 0.27729034605320235,
       "avgVolume50": 285852,
       "sharesOutstanding": 4589913,
-      "marketCap": 10236423.9726,
+      "marketCap": 10143707.73,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 87,
       "float": {
@@ -151,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2024-11-08"
       },
-      "floatRotation": 0.01680293286604779,
+      "floatRotation": 0.017269172640091434,
       "daysUp": 1,
       "priorRunPct": -8.11965811965812,
       "extended": false,
@@ -169,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.2%"
+          "detail": "5.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "77,124"
+          "detail": "79,264"
         },
         {
           "name": "News catalyst",
@@ -184,7 +116,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.23"
+          "detail": "$2.21"
         },
         {
           "name": "Float <10M",
@@ -198,53 +130,189 @@
   ],
   "alsoRan": [
     {
-      "symbol": "ENGN",
-      "name": "enGene Therapeutics Inc.",
-      "legalName": "enGene Therapeutics Inc.",
-      "business": "Biological Products, (No Diagnostic Substances)",
-      "sector": "Health Care",
-      "preMarketPrice": 1.97,
-      "preMarketChangePct": 9.44,
-      "prevClose": 1.8000730994152045,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 12, 2026 7:39 AM ET",
-      "preMarketVolume": 547159.026509,
-      "preMarketDollarVolume": 1077903.2822227299,
-      "relVolume": 0.668439319818169,
-      "avgVolume50": 818562,
-      "sharesOutstanding": 67016316,
-      "marketCap": 132022142.52,
+      "symbol": "BGS",
+      "name": "B&G Foods Inc.",
+      "legalName": "B&G Foods, Inc.",
+      "business": "Food and Kindred Products",
+      "sector": "Consumer Staples",
+      "preMarketPrice": 3.67,
+      "preMarketChangePct": 37.969924812030065,
+      "prevClose": 2.66,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 12, 2026 8:00 AM ET",
+      "preMarketVolume": 14133.389864,
+      "preMarketDollarVolume": 51869.54080088,
+      "relVolume": 0.006598005603925175,
+      "avgVolume50": 2142070,
+      "sharesOutstanding": 81140774,
+      "marketCap": 297786640.58,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 47,
+      "bestPriorSpikePct": 25,
       "float": {
-        "shares": 67016316,
+        "shares": 81140774,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-09-02"
+        "asOf": "2026-11-05"
       },
-      "floatRotation": 0.008164564380247341,
+      "floatRotation": 0.0001741835721705095,
       "daysUp": 0,
-      "priorRunPct": 3.0864197530864086,
+      "priorRunPct": 11.297071129707113,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "B&G Foods Reaches Analyst Target Price",
+        "subject": null,
+        "date": "2026-11-12"
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "38.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "14,133"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.67"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "81.1M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "ZDGE",
+      "name": "Zedge Inc. Class B Common Stock",
+      "legalName": "Zedge, Inc.",
+      "business": "Services-Prepackaged Software",
+      "sector": "Technology",
+      "preMarketPrice": 2.88,
+      "preMarketChangePct": 23.87096774193547,
+      "prevClose": 2.325,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 12, 2026 7:59 AM ET",
+      "preMarketVolume": 5308,
+      "preMarketDollarVolume": 15287.039999999999,
+      "relVolume": 0.06225005570605965,
+      "avgVolume50": 85269,
+      "sharesOutstanding": 524775,
+      "marketCap": 1511352,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 26,
+      "float": {
+        "shares": 524775,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2021-11-05"
+      },
+      "floatRotation": 0.01011481110952313,
+      "daysUp": 2,
+      "priorRunPct": -1.4830508474576143,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "23.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "5,308"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.88"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "0.5M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "MTRI",
+      "name": "Mentari Therapeutics Inc.",
+      "legalName": "InMed Pharmaceuticals Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 16.99,
+      "preMarketChangePct": 6.19,
+      "prevClose": 15.999623316696486,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 12, 2026 7:57 AM ET",
+      "preMarketVolume": 326,
+      "preMarketDollarVolume": 5538.74,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 5493735,
+      "marketCap": 93338557.64999999,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 5493735,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-30"
+      },
+      "floatRotation": 0.00005934032129325495,
+      "daysUp": 0,
+      "priorRunPct": -20.375,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "8-K",
-        "headline": "Earnings / results released · Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
-        "subject": "Earnings / results released · Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
-        "date": "2026-11-12"
+        "headline": "Entered a material agreement (deal, partnership or contract) · Completed an acquisition or disposal of assets · Earnings / results released · Sold unregistered shares (dilution) · Changed the rights of shareholders · Change of control of the company · Executive or board change · Amended the charter or bylaws",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Completed an acquisition or disposal of assets · Earnings / results released · Sold unregistered shares (dilution) · Changed the rights of shareholders · Change of control of the company · Executive or board change · Amended the charter or bylaws",
+        "date": "2026-11-10"
       },
       "leads": [
-        "8-K"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.4%"
+          "detail": "6.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "547,159"
+          "ok": false,
+          "detail": "326"
         },
         {
           "name": "News catalyst",
@@ -253,16 +321,16 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.97"
+          "ok": true,
+          "detail": "$16.99"
         },
         {
           "name": "Float <10M",
-          "ok": false,
-          "detail": "67.0M"
+          "ok": true,
+          "detail": "5.5M"
         }
       ],
-      "passed": 2,
+      "passed": 3,
       "quality": "low"
     },
     {
@@ -271,17 +339,17 @@
       "legalName": "Fermi Inc.",
       "business": "Real Estate Investment Trusts",
       "sector": "Real Estate",
-      "preMarketPrice": 1.9404,
-      "preMarketChangePct": 7.2,
-      "prevClose": 1.8100746268656713,
+      "preMarketPrice": 1.9596,
+      "preMarketChangePct": 8.27,
+      "prevClose": 1.8099196453311166,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 12, 2026 7:40 AM ET",
-      "preMarketVolume": 5391959.083062,
-      "preMarketDollarVolume": 10462557.404773504,
-      "relVolume": 0.2898820443732565,
+      "lastTradeAt": "Nov 12, 2026 8:00 AM ET",
+      "preMarketVolume": 7147245.10368,
+      "preMarketDollarVolume": 14005741.505171327,
+      "relVolume": 0.3842495817150997,
       "avgVolume50": 18600528,
       "sharesOutstanding": 640467348,
-      "marketCap": 1242762842.0592,
+      "marketCap": 1255059815.1408,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 25,
       "float": {
@@ -289,7 +357,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-10"
       },
-      "floatRotation": 0.008418788404903977,
+      "floatRotation": 0.011159421516176965,
       "daysUp": 0,
       "priorRunPct": -24.32432432432433,
       "extended": false,
@@ -307,12 +375,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.2%"
+          "detail": "8.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "5,391,959"
+          "detail": "7,147,245"
         },
         {
           "name": "News catalyst",
@@ -322,7 +390,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.94"
+          "detail": "$1.96"
         },
         {
           "name": "Float <10M",
@@ -331,6 +399,211 @@
         }
       ],
       "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "ADEA",
+      "name": "Adeia Inc.",
+      "legalName": "Adeia Inc.",
+      "business": "Cable & Other Pay Television Services",
+      "sector": "Telecommunications",
+      "preMarketPrice": 18.5,
+      "preMarketChangePct": 8.03,
+      "prevClose": 17.12487272054059,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 12, 2026 7:01 AM ET",
+      "preMarketVolume": 324,
+      "preMarketDollarVolume": 5994,
+      "relVolume": 0.00030167232612640627,
+      "avgVolume50": 1074013,
+      "sharesOutstanding": 110367561,
+      "marketCap": 2041799878.5,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 31,
+      "float": {
+        "shares": 110367561,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-22"
+      },
+      "floatRotation": 0.00000293564519379023,
+      "daysUp": 0,
+      "priorRunPct": -9.014557670772673,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Adeia Announces New E-Commerce Technologies for AI-Powered Clickable Objects and Digital Wallet Solutions",
+        "subject": null,
+        "date": "2026-11-12"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "324"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$18.50"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "110.4M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "ENGN",
+      "name": "enGene Therapeutics Inc.",
+      "legalName": "enGene Therapeutics Inc.",
+      "business": "Biological Products, (No Diagnostic Substances)",
+      "sector": "Health Care",
+      "preMarketPrice": 1.93,
+      "preMarketChangePct": 7.22,
+      "prevClose": 1.800037306472673,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 12, 2026 8:00 AM ET",
+      "preMarketVolume": 612333.026509,
+      "preMarketDollarVolume": 1181802.74116237,
+      "relVolume": 0.7480594341161696,
+      "avgVolume50": 818562,
+      "sharesOutstanding": 67016316,
+      "marketCap": 129341489.88,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 47,
+      "float": {
+        "shares": 67016316,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-02"
+      },
+      "floatRotation": 0.009137073821082616,
+      "daysUp": 0,
+      "priorRunPct": 3.0864197530864086,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released · Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
+        "subject": "Earnings / results released · Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
+        "date": "2026-11-12"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "612,333"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.93"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "67.0M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "JELD",
+      "name": "JELD-WEN Holding Inc.",
+      "legalName": "JELD-WEN Holding, Inc.",
+      "business": "Millwood, Veneer, Plywood, & Structural Wood Members",
+      "sector": "Basic Materials",
+      "preMarketPrice": 1.11,
+      "preMarketChangePct": 5.71,
+      "prevClose": 1.05004256929335,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 12, 2026 7:51 AM ET",
+      "preMarketVolume": 10,
+      "preMarketDollarVolume": 11.100000000000001,
+      "relVolume": 0.0000062860267910461835,
+      "avgVolume50": 1590830,
+      "sharesOutstanding": 86774941,
+      "marketCap": 96320184.51,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 26,
+      "float": {
+        "shares": 86774941,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-30"
+      },
+      "floatRotation": 1.152406430331079e-7,
+      "daysUp": 0,
+      "priorRunPct": -15.83333333333333,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "JELD-WEN Announces Change in Late Exchange Consideration in Exchange Offer and Consent Solicitation for Outstanding 4.875% Senior Notes due 2027",
+        "subject": null,
+        "date": "2026-11-12"
+      },
+      "leads": [
+        "PR Newswire",
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "10"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.11"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "86.8M"
+        }
+      ],
+      "passed": 1,
       "quality": "low"
     }
   ]
