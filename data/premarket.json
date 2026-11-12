@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-12T12:20:36.308Z",
+  "generatedAt": "2026-11-12T12:40:37.966Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-11",
   "universeChecked": 6109,
   "smallCapsInBand": 2922,
-  "investigated": 82,
-  "liveQuotes": 60,
+  "investigated": 86,
+  "liveQuotes": 66,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-11T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 105,
+    "edgarFilings": 117,
     "leads": {
-      "8-K": 47,
-      "PR Newswire": 4,
-      "GlobeNewswire": 11,
+      "8-K": 53,
+      "PR Newswire": 3,
+      "GlobeNewswire": 8,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 82,
-    "answered": 82,
+    "requested": 86,
+    "answered": 86,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -60,32 +60,32 @@
   "shortlist": [],
   "watchlist": [
     {
-      "symbol": "FRMI",
-      "name": "Fermi Inc.",
-      "legalName": "Fermi Inc.",
-      "business": "Real Estate Investment Trusts",
-      "sector": "Real Estate",
-      "preMarketPrice": 2.01,
-      "preMarketChangePct": 11.05,
-      "prevClose": 1.8099954975236376,
+      "symbol": "CAPS",
+      "name": "Capstone Holding Corp.",
+      "legalName": "Capstone Holding Corp.",
+      "business": "Wholesale-Lumber & Other Construction Materials",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 2.19,
+      "preMarketChangePct": 10.05,
+      "prevClose": 1.9900045433893683,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 12, 2026 7:20 AM ET",
-      "preMarketVolume": 2795234.08259,
-      "preMarketDollarVolume": 5618420.506005899,
-      "relVolume": 0.1502771363581722,
-      "avgVolume50": 18600528,
-      "sharesOutstanding": 640467348,
-      "marketCap": 1287339369.4799998,
+      "lastTradeAt": "Nov 12, 2026 7:40 AM ET",
+      "preMarketVolume": 7292,
+      "preMarketDollarVolume": 15969.48,
+      "relVolume": 0.013811443117764713,
+      "avgVolume50": 527968,
+      "sharesOutstanding": 935385,
+      "marketCap": 2048493.15,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 25,
+      "bestPriorSpikePct": 26,
       "float": {
-        "shares": 640467348,
+        "shares": 935385,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-10"
+        "asOf": "2026-11-10"
       },
-      "floatRotation": 0.004364366257419262,
+      "floatRotation": 0.007795720478733356,
       "daysUp": 0,
-      "priorRunPct": -24.32432432432433,
+      "priorRunPct": -2.3364485981308536,
       "extended": false,
       "catalyst": {
         "found": true,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "11.1%"
+          "detail": "10.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "2,795,234"
+          "ok": false,
+          "detail": "7,292"
         },
         {
           "name": "News catalyst",
@@ -116,12 +116,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.01"
+          "detail": "$2.19"
         },
         {
           "name": "Float <10M",
-          "ok": false,
-          "detail": "640.5M"
+          "ok": true,
+          "detail": "0.9M"
         }
       ],
       "passed": 4,
@@ -133,17 +133,17 @@
       "legalName": "AleAnna, Inc.",
       "business": "Crude Petroleum & Natural Gas",
       "sector": "Energy",
-      "preMarketPrice": 2.2136,
-      "preMarketChangePct": 5.41,
-      "prevClose": 2.0999905132340384,
+      "preMarketPrice": 2.2302,
+      "preMarketChangePct": 6.2,
+      "prevClose": 2.0999999999999996,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 12, 2026 7:20 AM ET",
-      "preMarketVolume": 70094,
-      "preMarketDollarVolume": 155160.0784,
-      "relVolume": 0.24521080839035586,
+      "lastTradeAt": "Nov 12, 2026 7:40 AM ET",
+      "preMarketVolume": 77124,
+      "preMarketDollarVolume": 172001.9448,
+      "relVolume": 0.2698039544939339,
       "avgVolume50": 285852,
       "sharesOutstanding": 4589913,
-      "marketCap": 10160231.4168,
+      "marketCap": 10236423.9726,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 87,
       "float": {
@@ -151,7 +151,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2024-11-08"
       },
-      "floatRotation": 0.015271313421409078,
+      "floatRotation": 0.01680293286604779,
       "daysUp": 1,
       "priorRunPct": -8.11965811965812,
       "extended": false,
@@ -169,12 +169,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.4%"
+          "detail": "6.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "70,094"
+          "detail": "77,124"
         },
         {
           "name": "News catalyst",
@@ -184,7 +184,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.21"
+          "detail": "$2.23"
         },
         {
           "name": "Float <10M",
@@ -198,90 +198,22 @@
   ],
   "alsoRan": [
     {
-      "symbol": "LMRI",
-      "name": "Lumexa Imaging Holdings Inc.",
-      "legalName": "Lumexa Imaging Holdings, Inc.",
-      "business": "Services-Medical Laboratories",
-      "sector": "Health Care",
-      "preMarketPrice": 15.95,
-      "preMarketChangePct": 14.583333333333329,
-      "prevClose": 13.92,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 12, 2026 7:00 AM ET",
-      "preMarketVolume": 1252,
-      "preMarketDollarVolume": 19969.399999999998,
-      "relVolume": 0.002828752050393359,
-      "avgVolume50": 442598,
-      "sharesOutstanding": 96074976,
-      "marketCap": 1532395867.2,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 21,
-      "float": {
-        "shares": 96074976,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-12"
-      },
-      "floatRotation": 0.000013031489073700107,
-      "daysUp": 0,
-      "priorRunPct": 24.064171122994647,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Lumexa Turns Profit In Q3 At $7 Mln With Increased Outpatient Volume; To Open Three New Centers ",
-        "subject": null,
-        "date": "2026-11-11"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "14.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "1,252"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$15.95"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "96.1M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
       "symbol": "ENGN",
       "name": "enGene Therapeutics Inc.",
       "legalName": "enGene Therapeutics Inc.",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 1.94,
-      "preMarketChangePct": 7.78,
-      "prevClose": 1.799962887363147,
+      "preMarketPrice": 1.97,
+      "preMarketChangePct": 9.44,
+      "prevClose": 1.8000730994152045,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 12, 2026 7:20 AM ET",
-      "preMarketVolume": 435063.73262,
-      "preMarketDollarVolume": 844023.6412828,
-      "relVolume": 0.531497592876288,
+      "lastTradeAt": "Nov 12, 2026 7:39 AM ET",
+      "preMarketVolume": 547159.026509,
+      "preMarketDollarVolume": 1077903.2822227299,
+      "relVolume": 0.668439319818169,
       "avgVolume50": 818562,
       "sharesOutstanding": 67016316,
-      "marketCap": 130011653.03999999,
+      "marketCap": 132022142.52,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 47,
       "float": {
@@ -289,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-09-02"
       },
-      "floatRotation": 0.00649190762172006,
+      "floatRotation": 0.008164564380247341,
       "daysUp": 0,
       "priorRunPct": 3.0864197530864086,
       "extended": false,
@@ -307,12 +239,80 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.8%"
+          "detail": "9.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "435,064"
+          "detail": "547,159"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.97"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "67.0M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "FRMI",
+      "name": "Fermi Inc.",
+      "legalName": "Fermi Inc.",
+      "business": "Real Estate Investment Trusts",
+      "sector": "Real Estate",
+      "preMarketPrice": 1.9404,
+      "preMarketChangePct": 7.2,
+      "prevClose": 1.8100746268656713,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 12, 2026 7:40 AM ET",
+      "preMarketVolume": 5391959.083062,
+      "preMarketDollarVolume": 10462557.404773504,
+      "relVolume": 0.2898820443732565,
+      "avgVolume50": 18600528,
+      "sharesOutstanding": 640467348,
+      "marketCap": 1242762842.0592,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 25,
+      "float": {
+        "shares": 640467348,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-10"
+      },
+      "floatRotation": 0.008418788404903977,
+      "daysUp": 0,
+      "priorRunPct": -24.32432432432433,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released · Regulation FD disclosure (company announcement)",
+        "subject": "Earnings / results released · Regulation FD disclosure (company announcement)",
+        "date": "2026-11-12"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "5,391,959"
         },
         {
           "name": "News catalyst",
@@ -327,7 +327,7 @@
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "67.0M"
+          "detail": "640.5M"
         }
       ],
       "passed": 2,
