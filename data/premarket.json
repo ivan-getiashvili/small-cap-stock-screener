@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-12T12:00:35.728Z",
+  "generatedAt": "2026-11-12T12:20:36.308Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-11",
   "universeChecked": 6109,
   "smallCapsInBand": 2922,
-  "investigated": 56,
-  "liveQuotes": 40,
+  "investigated": 82,
+  "liveQuotes": 60,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-11T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 64,
+    "edgarFilings": 105,
     "leads": {
-      "8-K": 27,
+      "8-K": 47,
       "PR Newswire": 4,
-      "GlobeNewswire": 5,
+      "GlobeNewswire": 11,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 56,
-    "answered": 56,
+    "requested": 82,
+    "answered": 82,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -58,25 +58,230 @@
     "floatStretch": 20000000
   },
   "shortlist": [],
-  "watchlist": [],
+  "watchlist": [
+    {
+      "symbol": "FRMI",
+      "name": "Fermi Inc.",
+      "legalName": "Fermi Inc.",
+      "business": "Real Estate Investment Trusts",
+      "sector": "Real Estate",
+      "preMarketPrice": 2.01,
+      "preMarketChangePct": 11.05,
+      "prevClose": 1.8099954975236376,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 12, 2026 7:20 AM ET",
+      "preMarketVolume": 2795234.08259,
+      "preMarketDollarVolume": 5618420.506005899,
+      "relVolume": 0.1502771363581722,
+      "avgVolume50": 18600528,
+      "sharesOutstanding": 640467348,
+      "marketCap": 1287339369.4799998,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 25,
+      "float": {
+        "shares": 640467348,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-10"
+      },
+      "floatRotation": 0.004364366257419262,
+      "daysUp": 0,
+      "priorRunPct": -24.32432432432433,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released · Regulation FD disclosure (company announcement)",
+        "subject": "Earnings / results released · Regulation FD disclosure (company announcement)",
+        "date": "2026-11-12"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "11.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "2,795,234"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.01"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "640.5M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "ANNA",
+      "name": "AleAnna Inc. Class A",
+      "legalName": "AleAnna, Inc.",
+      "business": "Crude Petroleum & Natural Gas",
+      "sector": "Energy",
+      "preMarketPrice": 2.2136,
+      "preMarketChangePct": 5.41,
+      "prevClose": 2.0999905132340384,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 12, 2026 7:20 AM ET",
+      "preMarketVolume": 70094,
+      "preMarketDollarVolume": 155160.0784,
+      "relVolume": 0.24521080839035586,
+      "avgVolume50": 285852,
+      "sharesOutstanding": 4589913,
+      "marketCap": 10160231.4168,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 87,
+      "float": {
+        "shares": 4589913,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2024-11-08"
+      },
+      "floatRotation": 0.015271313421409078,
+      "daysUp": 1,
+      "priorRunPct": -8.11965811965812,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "AleAnna, Inc Reveals Climb In Q3 Bottom Line ",
+        "subject": null,
+        "date": "2026-11-12"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "70,094"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.21"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "4.6M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
   "alsoRan": [
+    {
+      "symbol": "LMRI",
+      "name": "Lumexa Imaging Holdings Inc.",
+      "legalName": "Lumexa Imaging Holdings, Inc.",
+      "business": "Services-Medical Laboratories",
+      "sector": "Health Care",
+      "preMarketPrice": 15.95,
+      "preMarketChangePct": 14.583333333333329,
+      "prevClose": 13.92,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 12, 2026 7:00 AM ET",
+      "preMarketVolume": 1252,
+      "preMarketDollarVolume": 19969.399999999998,
+      "relVolume": 0.002828752050393359,
+      "avgVolume50": 442598,
+      "sharesOutstanding": 96074976,
+      "marketCap": 1532395867.2,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 21,
+      "float": {
+        "shares": 96074976,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-12"
+      },
+      "floatRotation": 0.000013031489073700107,
+      "daysUp": 0,
+      "priorRunPct": 24.064171122994647,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Lumexa Turns Profit In Q3 At $7 Mln With Increased Outpatient Volume; To Open Three New Centers ",
+        "subject": null,
+        "date": "2026-11-11"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "14.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "1,252"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$15.95"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "96.1M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
     {
       "symbol": "ENGN",
       "name": "enGene Therapeutics Inc.",
       "legalName": "enGene Therapeutics Inc.",
       "business": "Biological Products, (No Diagnostic Substances)",
       "sector": "Health Care",
-      "preMarketPrice": 1.89,
-      "preMarketChangePct": 5,
-      "prevClose": 1.7999999999999998,
+      "preMarketPrice": 1.94,
+      "preMarketChangePct": 7.78,
+      "prevClose": 1.799962887363147,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 12, 2026 7:00 AM ET",
-      "preMarketVolume": 104354.73262,
-      "preMarketDollarVolume": 197230.44465179997,
-      "relVolume": 0.12748543497010612,
+      "lastTradeAt": "Nov 12, 2026 7:20 AM ET",
+      "preMarketVolume": 435063.73262,
+      "preMarketDollarVolume": 844023.6412828,
+      "relVolume": 0.531497592876288,
       "avgVolume50": 818562,
       "sharesOutstanding": 67016316,
-      "marketCap": 126660837.24,
+      "marketCap": 130011653.03999999,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 47,
       "float": {
@@ -84,7 +289,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-09-02"
       },
-      "floatRotation": 0.0015571541207964937,
+      "floatRotation": 0.00649190762172006,
       "daysUp": 0,
       "priorRunPct": 3.0864197530864086,
       "extended": false,
@@ -102,12 +307,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.0%"
+          "detail": "7.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "104,355"
+          "detail": "435,064"
         },
         {
           "name": "News catalyst",
@@ -117,7 +322,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.89"
+          "detail": "$1.94"
         },
         {
           "name": "Float <10M",
@@ -126,74 +331,6 @@
         }
       ],
       "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "REED",
-      "name": "Reed's Inc.",
-      "legalName": "REED'S, INC.",
-      "business": "Bottled & Canned Soft Drinks & Carbonated Waters",
-      "sector": "Consumer Staples",
-      "preMarketPrice": 1.9,
-      "preMarketChangePct": 6.74,
-      "prevClose": 1.7800262319655238,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 12, 2026 5:54 AM ET",
-      "preMarketVolume": 991,
-      "preMarketDollarVolume": 1882.8999999999999,
-      "relVolume": 0.016098638682218395,
-      "avgVolume50": 61558,
-      "sharesOutstanding": 11857086,
-      "marketCap": 22528463.4,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 29,
-      "float": {
-        "shares": 11857086,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-07"
-      },
-      "floatRotation": 0.0000835787140280504,
-      "daysUp": 0,
-      "priorRunPct": 21.56862745098039,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Reed’s: A Beloved Brand Standing on a Trapdoor",
-        "subject": null,
-        "date": "2026-11-11"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "991"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.90"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "11.9M"
-        }
-      ],
-      "passed": 1,
       "quality": "low"
     }
   ]
