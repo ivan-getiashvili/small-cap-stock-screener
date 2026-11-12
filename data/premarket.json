@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-12T11:00:35.426Z",
+  "generatedAt": "2026-11-12T11:20:36.361Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-11",
   "universeChecked": 6094,
   "smallCapsInBand": 2915,
-  "investigated": 26,
-  "liveQuotes": 19,
+  "investigated": 48,
+  "liveQuotes": 31,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-11T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 0,
+    "edgarFilings": 45,
     "leads": {
-      "8-K": 0,
-      "PR Newswire": 0,
-      "GlobeNewswire": 1,
+      "8-K": 16,
+      "PR Newswire": 1,
+      "GlobeNewswire": 8,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 26,
-    "answered": 26,
+    "requested": 48,
+    "answered": 48,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -58,6 +58,348 @@
     "floatStretch": 20000000
   },
   "shortlist": [],
-  "watchlist": [],
-  "alsoRan": []
+  "watchlist": [
+    {
+      "symbol": "VWAV",
+      "name": "VisionWave Holdings Inc.",
+      "legalName": "VisionWave Holdings, Inc.",
+      "business": "Services-Prepackaged Software",
+      "sector": "Technology",
+      "preMarketPrice": 2.0497,
+      "preMarketChangePct": 97.09,
+      "prevClose": 1.0399817342330915,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 12, 2026 6:20 AM ET",
+      "preMarketVolume": 7367377.745818,
+      "preMarketDollarVolume": 15100914.165603155,
+      "relVolume": 4.257061897186277,
+      "avgVolume50": 1730625,
+      "sharesOutstanding": 28842069,
+      "marketCap": 59117588.8293,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 45,
+      "float": {
+        "shares": 28842069,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-17"
+      },
+      "floatRotation": 0.2554386006710545,
+      "daysUp": 0,
+      "priorRunPct": -43.049327354260086,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "VisionWave Holdings Signs Non-Binding Letter of Intent to Acquire Controlling Interest in Ukrainian Unmanned Systems Technology Company EPSERVICE",
+        "subject": "Merger or acquisition",
+        "date": "2026-11-12"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "97.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "7,367,378"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.05"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "28.8M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "DPU",
+      "name": "Nexpu Ltd. Class A Ordinary Shares",
+      "legalName": "Nexpu Ltd.",
+      "business": "Services-Business Services, NEC",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 2.6167,
+      "preMarketChangePct": 67.74,
+      "prevClose": 1.5599737689281028,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 12, 2026 6:20 AM ET",
+      "preMarketVolume": 2506309,
+      "preMarketDollarVolume": 6558258.760299999,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 43456758.82352941,
+      "marketCap": 113713300.81352939,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 43456758.82352941,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-12"
+      },
+      "floatRotation": 0.05767362932375375,
+      "daysUp": 0,
+      "priorRunPct": -14.94152229657889,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Nexpu Completes Deliveries Under US$4.8 Million Robot Resale Contract",
+        "subject": "Contract or partnership",
+        "date": "2026-11-12"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "67.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "2,506,309"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.62"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "43.5M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "ATXG",
+      "name": "Addentax Group Corp.",
+      "legalName": "ADDENTAX GROUP CORP.",
+      "business": "Services-Mailing, Reproduction, Commercial Art & Photography",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 3.11,
+      "preMarketChangePct": 21.01,
+      "prevClose": 2.5700355342533676,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 12, 2026 6:19 AM ET",
+      "preMarketVolume": 222,
+      "preMarketDollarVolume": 690.42,
+      "relVolume": 0.01234499249290997,
+      "avgVolume50": 17983,
+      "sharesOutstanding": 1177974,
+      "marketCap": 3663499.1399999997,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 31,
+      "float": {
+        "shares": 1177974,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-14"
+      },
+      "floatRotation": 0.0001884591680291755,
+      "daysUp": 1,
+      "priorRunPct": 1.5037593984962419,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Sold unregistered shares (dilution)",
+        "date": "2026-11-12"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "21.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "222"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.11"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "1.2M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
+  "alsoRan": [
+    {
+      "symbol": "TII",
+      "name": "Titan Mining Corporation Common Shares",
+      "legalName": "Titan Mining Corp",
+      "business": "Gold and Silver Ores",
+      "sector": null,
+      "preMarketPrice": 2,
+      "preMarketChangePct": 5.26,
+      "prevClose": 1.9000570017100513,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 12, 2026 6:01 AM ET",
+      "preMarketVolume": 163,
+      "preMarketDollarVolume": 326,
+      "relVolume": 0.00039383776783384394,
+      "avgVolume50": 413876,
+      "sharesOutstanding": 91616438,
+      "marketCap": 183232876,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 32,
+      "float": {
+        "shares": 91616438,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-12-31"
+      },
+      "floatRotation": 0.0000017791567054811715,
+      "daysUp": 0,
+      "priorRunPct": -1.020408163265307,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Titan Mining Reports 146% Growth in Nine-Month Adjusted EBITDA to $19.8 Million and Advances U.S. Critical Minerals Strategy",
+        "subject": null,
+        "date": "2026-11-12"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "163"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.00"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "91.6M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "ENGN",
+      "name": "enGene Therapeutics Inc.",
+      "legalName": "enGene Therapeutics Inc.",
+      "business": "Biological Products, (No Diagnostic Substances)",
+      "sector": "Health Care",
+      "preMarketPrice": 1.8913,
+      "preMarketChangePct": 5.07,
+      "prevClose": 1.80003806985819,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 12, 2026 6:09 AM ET",
+      "preMarketVolume": 94859.86631,
+      "preMarketDollarVolume": 179408.465152103,
+      "relVolume": 0.11588598824523982,
+      "avgVolume50": 818562,
+      "sharesOutstanding": 67016316,
+      "marketCap": 126747958.4508,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 47,
+      "float": {
+        "shares": 67016316,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-02"
+      },
+      "floatRotation": 0.001415474200491713,
+      "daysUp": 0,
+      "priorRunPct": 3.0864197530864086,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released · Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
+        "subject": "Earnings / results released · Regulation FD disclosure (company announcement) · Other material event (often FDA, clinical or contract news)",
+        "date": "2026-11-12"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "94,860"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.89"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "67.0M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    }
+  ]
 }
