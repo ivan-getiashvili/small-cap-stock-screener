@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-16T11:00:35.105Z",
+  "generatedAt": "2026-11-16T11:20:33.972Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-13",
   "universeChecked": 6122,
   "smallCapsInBand": 2924,
-  "investigated": 98,
-  "liveQuotes": 42,
+  "investigated": 118,
+  "liveQuotes": 62,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-13T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 197,
+    "edgarFilings": 231,
     "leads": {
-      "8-K": 74,
-      "PR Newswire": 0,
-      "GlobeNewswire": 0,
+      "8-K": 88,
+      "PR Newswire": 1,
+      "GlobeNewswire": 5,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 98,
-    "answered": 98,
+    "requested": 118,
+    "answered": 118,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -66,17 +66,17 @@
       "legalName": "GREENPOWER MOTOR Co INC.",
       "business": "Truck & Bus Bodies",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.9796,
-      "preMarketChangePct": 70.66,
-      "prevClose": 1.1599671862182117,
+      "preMarketPrice": 1.4701,
+      "preMarketChangePct": 26.73,
+      "prevClose": 1.1600252505326283,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 16, 2026 6:00 AM ET",
-      "preMarketVolume": 13205597.390279,
-      "preMarketDollarVolume": 26141800.59379631,
-      "relVolume": 48.01773499728742,
+      "lastTradeAt": "Nov 16, 2026 6:20 AM ET",
+      "preMarketVolume": 14889736.390279,
+      "preMarketDollarVolume": 21889401.467349157,
+      "relVolume": 54.141542789589664,
       "avgVolume50": 275015,
       "sharesOutstanding": 5029291,
-      "marketCap": 9955984.4636,
+      "marketCap": 7393560.6991,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 51,
       "float": {
@@ -84,7 +84,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-31"
       },
-      "floatRotation": 2.6257373833168534,
+      "floatRotation": 2.9606034708031412,
       "daysUp": 1,
       "priorRunPct": 80.08784773060029,
       "extended": true,
@@ -102,12 +102,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "70.7%"
+          "detail": "26.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "13,205,597"
+          "detail": "14,889,736"
         },
         {
           "name": "News catalyst",
@@ -117,7 +117,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.98"
+          "detail": "$1.47"
         },
         {
           "name": "Float <10M",
@@ -134,17 +134,17 @@
       "legalName": "Ainos, Inc.",
       "business": "Computer Peripheral Equipment, NEC",
       "sector": "Technology",
-      "preMarketPrice": 1.48,
-      "preMarketChangePct": 20.33,
-      "prevClose": 1.2299509681708634,
+      "preMarketPrice": 1.3998,
+      "preMarketChangePct": 13.8,
+      "prevClose": 1.2300527240773287,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 16, 2026 6:00 AM ET",
-      "preMarketVolume": 15596090.468422,
-      "preMarketDollarVolume": 23082213.89326456,
-      "relVolume": 142.94962941487782,
+      "lastTradeAt": "Nov 16, 2026 6:20 AM ET",
+      "preMarketVolume": 16048849.468422,
+      "preMarketDollarVolume": 22465179.485897113,
+      "relVolume": 147.09949834486994,
       "avgVolume50": 109102,
       "sharesOutstanding": 7384073,
-      "marketCap": 10928428.04,
+      "marketCap": 10336225.3854,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 107,
       "float": {
@@ -152,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-03"
       },
-      "floatRotation": 2.1121257154990207,
+      "floatRotation": 2.1734413335867617,
       "daysUp": 2,
       "priorRunPct": 68.76293583824233,
       "extended": true,
@@ -170,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "20.3%"
+          "detail": "13.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "15,596,090"
+          "detail": "16,048,849"
         },
         {
           "name": "News catalyst",
@@ -185,7 +185,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.48"
+          "detail": "$1.40"
         },
         {
           "name": "Float <10M",
@@ -194,6 +194,142 @@
         }
       ],
       "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "NTHI",
+      "name": "NeOnc Technologies Holdings Inc.",
+      "legalName": "NEONC TECHNOLOGIES HOLDINGS, INC.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 5.34,
+      "preMarketChangePct": 10.10309278350516,
+      "prevClose": 4.85,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 16, 2026 6:05 AM ET",
+      "preMarketVolume": 221,
+      "preMarketDollarVolume": 1180.1399999999999,
+      "relVolume": 0.0012520040562665352,
+      "avgVolume50": 176517,
+      "sharesOutstanding": 28850588,
+      "marketCap": 154062139.92,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 31,
+      "float": {
+        "shares": 28850588,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-05"
+      },
+      "floatRotation": 0.00000766015583460552,
+      "daysUp": 5,
+      "priorRunPct": 52.037617554858926,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-11-13"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "10.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "221"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.34"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "28.9M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "BTOC",
+      "name": "Armlogi Holding Corp.",
+      "legalName": "Armlogi Holding Corp.",
+      "business": "Public Warehousing & Storage",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.9,
+      "preMarketChangePct": 9.83,
+      "prevClose": 1.7299462806154966,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 16, 2026 6:02 AM ET",
+      "preMarketVolume": 165,
+      "preMarketDollarVolume": 313.5,
+      "relVolume": 0.0013495718176687577,
+      "avgVolume50": 122261,
+      "sharesOutstanding": 2840226,
+      "marketCap": 5396429.399999999,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 15,
+      "float": {
+        "shares": 2840226,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-13"
+      },
+      "floatRotation": 0.00005809396857855678,
+      "daysUp": 0,
+      "priorRunPct": -3.260869565217394,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Armlogi Holding Corp. Reports First Quarter Fiscal 2027 Financial Results; Warehousing Services Revenue Grows 20.2% to $20.9 Million",
+        "subject": "Earnings or guidance",
+        "date": "2026-11-16"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "9.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "165"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.90"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "2.8M"
+        }
+      ],
+      "passed": 2,
       "quality": "low"
     },
     {
@@ -265,22 +401,90 @@
       "quality": "low"
     },
     {
+      "symbol": "RZLT",
+      "name": "Rezolute Inc. Common Stock (NV)",
+      "legalName": "Rezolute, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 3.85,
+      "preMarketChangePct": 5.34,
+      "prevClose": 3.6548319726599585,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 16, 2026 5:30 AM ET",
+      "preMarketVolume": 1321,
+      "preMarketDollarVolume": 5085.85,
+      "relVolume": 0.0009484389527683146,
+      "avgVolume50": 1392815,
+      "sharesOutstanding": 96728913,
+      "marketCap": 372406315.05,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 29,
+      "float": {
+        "shares": 96728913,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-02"
+      },
+      "floatRotation": 0.000013656723300508918,
+      "daysUp": 0,
+      "priorRunPct": 5.593451568894954,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Regulation FD disclosure (company announcement)",
+        "date": "2026-11-16"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "1,321"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.85"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "96.7M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
       "symbol": "SKYE",
       "name": "Skye Bioscience Inc.",
       "legalName": "Skye Bioscience, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 1.15,
-      "preMarketChangePct": 6.481481481481466,
+      "preMarketPrice": 1.18,
+      "preMarketChangePct": 9.259259259259247,
       "prevClose": 1.08,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 16, 2026 4:01 AM ET",
-      "preMarketVolume": 1,
-      "preMarketDollarVolume": 1.15,
-      "relVolume": 0.000001840519026365435,
+      "lastTradeAt": "Nov 16, 2026 6:20 AM ET",
+      "preMarketVolume": 1169,
+      "preMarketDollarVolume": 1379.4199999999998,
+      "relVolume": 0.0021515667418211936,
       "avgVolume50": 543325,
       "sharesOutstanding": 4423469,
-      "marketCap": 5086989.35,
+      "marketCap": 5219693.42,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 19,
       "float": {
@@ -288,7 +492,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-10"
       },
-      "floatRotation": 2.26066917163882e-7,
+      "floatRotation": 0.0002642722261645781,
       "daysUp": 3,
       "priorRunPct": 2.8571428571428594,
       "extended": true,
@@ -306,12 +510,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.5%"
+          "detail": "9.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "1"
+          "detail": "1,169"
         },
         {
           "name": "News catalyst",
@@ -321,7 +525,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.15"
+          "detail": "$1.18"
         },
         {
           "name": "Float <10M",
