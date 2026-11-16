@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-15T11:00:36.021Z",
-  "marketStatus": "Market Closed",
+  "generatedAt": "2026-11-16T11:00:35.105Z",
+  "marketStatus": "Pre Market",
   "prevSession": "2026-11-13",
   "universeChecked": 6122,
   "smallCapsInBand": 2924,
-  "investigated": 102,
-  "liveQuotes": 0,
-  "feedIsLive": false,
+  "investigated": 98,
+  "liveQuotes": 42,
+  "feedIsLive": true,
   "discovery": {
     "since": "2026-11-13T20:30:00.000Z",
     "edgarOk": true,
     "edgarFilings": 197,
     "leads": {
       "8-K": 74,
-      "PR Newswire": 3,
-      "GlobeNewswire": 3,
+      "PR Newswire": 0,
+      "GlobeNewswire": 0,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 102,
-    "answered": 102,
+    "requested": 98,
+    "answered": 98,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -59,6 +59,346 @@
   },
   "shortlist": [],
   "watchlist": [],
-  "alsoRan": [],
-  "frozenAfterPreMarket": true
+  "alsoRan": [
+    {
+      "symbol": "GP",
+      "name": "GreenPower Motor Company Inc. Common Shares",
+      "legalName": "GREENPOWER MOTOR Co INC.",
+      "business": "Truck & Bus Bodies",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.9796,
+      "preMarketChangePct": 70.66,
+      "prevClose": 1.1599671862182117,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 16, 2026 6:00 AM ET",
+      "preMarketVolume": 13205597.390279,
+      "preMarketDollarVolume": 26141800.59379631,
+      "relVolume": 48.01773499728742,
+      "avgVolume50": 275015,
+      "sharesOutstanding": 5029291,
+      "marketCap": 9955984.4636,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 51,
+      "float": {
+        "shares": 5029291,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-03-31"
+      },
+      "floatRotation": 2.6257373833168534,
+      "daysUp": 1,
+      "priorRunPct": 80.08784773060029,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "70.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "13,205,597"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.98"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "5.0M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "AIMD",
+      "name": "Ainos Inc.",
+      "legalName": "Ainos, Inc.",
+      "business": "Computer Peripheral Equipment, NEC",
+      "sector": "Technology",
+      "preMarketPrice": 1.48,
+      "preMarketChangePct": 20.33,
+      "prevClose": 1.2299509681708634,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 16, 2026 6:00 AM ET",
+      "preMarketVolume": 15596090.468422,
+      "preMarketDollarVolume": 23082213.89326456,
+      "relVolume": 142.94962941487782,
+      "avgVolume50": 109102,
+      "sharesOutstanding": 7384073,
+      "marketCap": 10928428.04,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 107,
+      "float": {
+        "shares": 7384073,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-08-03"
+      },
+      "floatRotation": 2.1121257154990207,
+      "daysUp": 2,
+      "priorRunPct": 68.76293583824233,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "20.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "15,596,090"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.48"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "7.4M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "LINK",
+      "name": "Interlink Electronics Inc.",
+      "legalName": "INTERLINK ELECTRONICS INC",
+      "business": "Computer Peripheral Equipment, NEC",
+      "sector": "Technology",
+      "preMarketPrice": 3.1,
+      "preMarketChangePct": 8.77,
+      "prevClose": 2.8500505654132575,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 16, 2026 5:11 AM ET",
+      "preMarketVolume": 7068,
+      "preMarketDollarVolume": 21910.8,
+      "relVolume": 0.37256865742449,
+      "avgVolume50": 18971,
+      "sharesOutstanding": 15753409,
+      "marketCap": 48835567.9,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 23,
+      "float": {
+        "shares": 15753409,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-12"
+      },
+      "floatRotation": 0.00044866479375987764,
+      "daysUp": 0,
+      "priorRunPct": 3.7414965986394515,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract)",
+        "subject": "Entered a material agreement (deal, partnership or contract)",
+        "date": "2026-11-13"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "7,068"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.10"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "15.8M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "SKYE",
+      "name": "Skye Bioscience Inc.",
+      "legalName": "Skye Bioscience, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 1.15,
+      "preMarketChangePct": 6.481481481481466,
+      "prevClose": 1.08,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 16, 2026 4:01 AM ET",
+      "preMarketVolume": 1,
+      "preMarketDollarVolume": 1.15,
+      "relVolume": 0.000001840519026365435,
+      "avgVolume50": 543325,
+      "sharesOutstanding": 4423469,
+      "marketCap": 5086989.35,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 19,
+      "float": {
+        "shares": 4423469,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-10"
+      },
+      "floatRotation": 2.26066917163882e-7,
+      "daysUp": 3,
+      "priorRunPct": 2.8571428571428594,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "1"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.15"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "4.4M"
+        }
+      ],
+      "passed": 1,
+      "quality": "low"
+    },
+    {
+      "symbol": "DDD",
+      "name": "3D Systems Corporation",
+      "legalName": "3D SYSTEMS CORP",
+      "business": "Services-Prepackaged Software",
+      "sector": "Technology",
+      "preMarketPrice": 1.62,
+      "preMarketChangePct": 5.88,
+      "prevClose": 1.5300340007555726,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 16, 2026 4:27 AM ET",
+      "preMarketVolume": 89.426456,
+      "preMarketDollarVolume": 144.87085872,
+      "relVolume": 0.000031919597832108325,
+      "avgVolume50": 2801616,
+      "sharesOutstanding": 166351517,
+      "marketCap": 269489457.54,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 28,
+      "float": {
+        "shares": 166351517,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-28"
+      },
+      "floatRotation": 5.375752359384856e-7,
+      "daysUp": 0,
+      "priorRunPct": -1.2084592145015116,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Terminated a material agreement · Took on a material financial obligation (debt) · Sold unregistered shares (dilution)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Terminated a material agreement · Took on a material financial obligation (debt) · Sold unregistered shares (dilution)",
+        "date": "2026-11-13"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "89"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.62"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "166.4M"
+        }
+      ],
+      "passed": 1,
+      "quality": "low"
+    }
+  ]
 }
