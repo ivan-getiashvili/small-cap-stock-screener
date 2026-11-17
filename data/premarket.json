@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-17T11:00:36.070Z",
+  "generatedAt": "2026-11-17T11:20:34.950Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-16",
   "universeChecked": 6130,
   "smallCapsInBand": 2941,
-  "investigated": 82,
-  "liveQuotes": 50,
+  "investigated": 98,
+  "liveQuotes": 58,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-16T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 184,
+    "edgarFilings": 216,
     "leads": {
-      "8-K": 58,
+      "8-K": 72,
       "PR Newswire": 0,
-      "GlobeNewswire": 0,
+      "GlobeNewswire": 2,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 82,
-    "answered": 82,
+    "requested": 98,
+    "answered": 98,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "AYTU BIOPHARMA, INC",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 2.61,
-      "preMarketChangePct": 43.41,
-      "prevClose": 1.8199567673105084,
+      "preMarketPrice": 2.6195,
+      "preMarketChangePct": 43.93,
+      "prevClose": 1.8199819356631695,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 17, 2026 6:00 AM ET",
-      "preMarketVolume": 275821,
-      "preMarketDollarVolume": 719892.8099999999,
-      "relVolume": 10.34432193219322,
+      "lastTradeAt": "Nov 17, 2026 6:19 AM ET",
+      "preMarketVolume": 308704,
+      "preMarketDollarVolume": 808650.128,
+      "relVolume": 11.577557755775578,
       "avgVolume50": 26664,
       "sharesOutstanding": 10868208,
-      "marketCap": 28366022.88,
+      "marketCap": 28469270.856,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 15,
       "float": {
@@ -83,14 +83,14 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-09"
       },
-      "floatRotation": 0.02537870088610744,
+      "floatRotation": 0.02840431467634775,
       "daysUp": 0,
       "priorRunPct": -2.732240437158472,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Aytu BioPharma To Be Acquired By Rosemont For $2.70/Shr In Cash; Stock Up ",
+        "headline": "Aytu BioPharma Swings To Q1 Loss On Higher Costs; Agrees To $56 Mln Buyout By Rosemont; Stock Up ",
         "subject": "Merger or acquisition",
         "date": "2026-11-17"
       },
@@ -102,12 +102,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "43.4%"
+          "detail": "43.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "275,821"
+          "detail": "308,704"
         },
         {
           "name": "News catalyst",
@@ -117,7 +117,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.61"
+          "detail": "$2.62"
         },
         {
           "name": "Float <10M",
@@ -134,17 +134,17 @@
       "legalName": "Safe Pro Group Inc.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 2.96,
-      "preMarketChangePct": 19.84,
-      "prevClose": 2.469959946595461,
+      "preMarketPrice": 2.9299,
+      "preMarketChangePct": 18.62,
+      "prevClose": 2.4699881976058,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 17, 2026 6:00 AM ET",
-      "preMarketVolume": 1478627.942446,
-      "preMarketDollarVolume": 4376738.70964016,
-      "relVolume": 5.497350801558532,
+      "lastTradeAt": "Nov 17, 2026 6:20 AM ET",
+      "preMarketVolume": 1529007.485401,
+      "preMarketDollarVolume": 4479839.03147639,
+      "relVolume": 5.684655540563853,
       "avgVolume50": 268971,
       "sharesOutstanding": 20342862,
-      "marketCap": 60214871.519999996,
+      "marketCap": 59602551.3738,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 38,
       "float": {
@@ -152,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-13"
       },
-      "floatRotation": 0.07268534498469291,
+      "floatRotation": 0.07516186687010903,
       "daysUp": 0,
       "priorRunPct": -10.355987055016175,
       "extended": false,
@@ -170,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "19.8%"
+          "detail": "18.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,478,628"
+          "detail": "1,529,007"
         },
         {
           "name": "News catalyst",
@@ -185,80 +185,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.96"
+          "detail": "$2.93"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "20.3M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
-      "symbol": "AKAN",
-      "name": "Akanda Corp. Common Shares",
-      "legalName": "AKANDA CORP.",
-      "business": "Communications Services, NEC",
-      "sector": "Health Care",
-      "preMarketPrice": 2.58,
-      "preMarketChangePct": 16.74,
-      "prevClose": 2.2100394038033238,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 17, 2026 6:00 AM ET",
-      "preMarketVolume": 2561803.912803,
-      "preMarketDollarVolume": 6609454.09503174,
-      "relVolume": 2.0488350360037137,
-      "avgVolume50": 1250371,
-      "sharesOutstanding": 1983546,
-      "marketCap": 5117548.68,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 214,
-      "float": {
-        "shares": 1983546,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 1.2915273519257935,
-      "daysUp": 1,
-      "priorRunPct": 61.88548982264018,
-      "extended": true,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "16.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "2,561,804"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.58"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "2.0M"
         }
       ],
       "passed": 4,
@@ -338,17 +270,17 @@
       "legalName": "DNA X, Inc.",
       "business": "Telephone & Telegraph Apparatus",
       "sector": "Utilities",
-      "preMarketPrice": 2.4,
-      "preMarketChangePct": 13.20754716981131,
+      "preMarketPrice": 2.3511,
+      "preMarketChangePct": 10.900943396226419,
       "prevClose": 2.12,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 17, 2026 5:02 AM ET",
-      "preMarketVolume": 633,
-      "preMarketDollarVolume": 1519.2,
-      "relVolume": 0.02823875802997859,
+      "lastTradeAt": "Nov 17, 2026 6:03 AM ET",
+      "preMarketVolume": 677,
+      "preMarketDollarVolume": 1591.6947000000002,
+      "relVolume": 0.030201641684511064,
       "avgVolume50": 22416,
       "sharesOutstanding": 1488268,
-      "marketCap": 3571843.1999999997,
+      "marketCap": 3499066.8948000004,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 23,
       "float": {
@@ -356,7 +288,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-08-18"
       },
-      "floatRotation": 0.0004253266212805758,
+      "floatRotation": 0.00045489118895252736,
       "daysUp": 0,
       "priorRunPct": 1.4354066985646052,
       "extended": false,
@@ -374,12 +306,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "13.2%"
+          "detail": "10.9%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "633"
+          "detail": "677"
         },
         {
           "name": "News catalyst",
@@ -389,7 +321,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.40"
+          "detail": "$2.35"
         },
         {
           "name": "Float <10M",
@@ -399,9 +331,213 @@
       ],
       "passed": 4,
       "quality": "medium"
+    },
+    {
+      "symbol": "AKAN",
+      "name": "Akanda Corp. Common Shares",
+      "legalName": "AKANDA CORP.",
+      "business": "Communications Services, NEC",
+      "sector": "Health Care",
+      "preMarketPrice": 2.45,
+      "preMarketChangePct": 10.86,
+      "prevClose": 2.2099945877683567,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 17, 2026 6:20 AM ET",
+      "preMarketVolume": 2926540.24219,
+      "preMarketDollarVolume": 7170023.593365501,
+      "relVolume": 2.340537522215407,
+      "avgVolume50": 1250371,
+      "sharesOutstanding": 1983546,
+      "marketCap": 4859687.7,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 214,
+      "float": {
+        "shares": 1983546,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-12-31"
+      },
+      "floatRotation": 1.475408305222062,
+      "daysUp": 1,
+      "priorRunPct": 61.88548982264018,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "10.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "2,926,540"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.45"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "2.0M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
     }
   ],
   "alsoRan": [
+    {
+      "symbol": "CVU",
+      "name": "CPI Aerostructures Inc.",
+      "legalName": "CPI AEROSTRUCTURES INC",
+      "business": "Aircraft Parts & Auxiliary Equipment, NEC",
+      "sector": "Industrials",
+      "preMarketPrice": 4.8,
+      "preMarketChangePct": 13.21,
+      "prevClose": 4.239908135323735,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 17, 2026 6:19 AM ET",
+      "preMarketVolume": 1529,
+      "preMarketDollarVolume": 7339.2,
+      "relVolume": 0.022896076669661574,
+      "avgVolume50": 66780,
+      "sharesOutstanding": 13251016,
+      "marketCap": 63604876.8,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 17,
+      "float": {
+        "shares": 13251016,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-11"
+      },
+      "floatRotation": 0.00011538737859798826,
+      "daysUp": 0,
+      "priorRunPct": -1.0869565217391266,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Earnings / results released · Regulation FD disclosure (company announcement)",
+        "subject": "Earnings / results released · Regulation FD disclosure (company announcement)",
+        "date": "2026-11-16"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "13.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "1,529"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.80"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "13.3M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "USDE",
+      "name": "StablecoinX Inc. Class A",
+      "legalName": "StableCoinX Inc.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 4.28,
+      "preMarketChangePct": 6.2,
+      "prevClose": 4.0301318267419965,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 17, 2026 6:19 AM ET",
+      "preMarketVolume": 68940,
+      "preMarketDollarVolume": 295063.2,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 27187129.056603774,
+      "marketCap": 116360912.36226416,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 27187129.056603774,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-17"
+      },
+      "floatRotation": 0.0025357587355570527,
+      "daysUp": 0,
+      "priorRunPct": -17.573872472783826,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-11-17"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.2%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "68,940"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.28"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "27.2M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
     {
       "symbol": "MNOV",
       "name": "Medicinova Inc",
@@ -471,68 +607,68 @@
       "quality": "low"
     },
     {
-      "symbol": "CVU",
-      "name": "CPI Aerostructures Inc.",
-      "legalName": "CPI AEROSTRUCTURES INC",
-      "business": "Aircraft Parts & Auxiliary Equipment, NEC",
-      "sector": "Industrials",
-      "preMarketPrice": 4.61,
-      "preMarketChangePct": 8.73,
-      "prevClose": 4.239860204175481,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 17, 2026 5:40 AM ET",
-      "preMarketVolume": 1328,
-      "preMarketDollarVolume": 6122.080000000001,
-      "relVolume": 0.019886193471099132,
-      "avgVolume50": 66780,
-      "sharesOutstanding": 13251016,
-      "marketCap": 61087183.760000005,
+      "symbol": "OBIO",
+      "name": "Orchestra BioMed Holdings Inc. Ordinary Shares",
+      "legalName": "Orchestra BioMed Holdings, Inc.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 7.86,
+      "preMarketChangePct": 8.413793103448281,
+      "prevClose": 7.25,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 17, 2026 6:10 AM ET",
+      "preMarketVolume": 118,
+      "preMarketDollarVolume": 927.48,
+      "relVolume": 0.00042204354917165014,
+      "avgVolume50": 279592,
+      "sharesOutstanding": 78704957,
+      "marketCap": 618620962.02,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 17,
+      "bestPriorSpikePct": 20,
       "float": {
-        "shares": 13251016,
+        "shares": 78704957,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-11"
+        "asOf": "2026-11-09"
       },
-      "floatRotation": 0.0001002187303977295,
-      "daysUp": 0,
-      "priorRunPct": -1.0869565217391266,
-      "extended": false,
+      "floatRotation": 0.000001499270242914941,
+      "daysUp": 5,
+      "priorRunPct": 27.640845070422543,
+      "extended": true,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released · Regulation FD disclosure (company announcement)",
-        "subject": "Earnings / results released · Regulation FD disclosure (company announcement)",
+        "kind": "news",
+        "headline": "Wall Street Analysts Think Orchestra BioMed Holdings, Inc. (OBIO) Could Surge 72.41%: Read This Before Placing a Bet",
+        "subject": null,
         "date": "2026-11-16"
       },
       "leads": [
-        "8-K"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.7%"
+          "detail": "8.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "1,328"
+          "detail": "118"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.61"
+          "detail": "$7.86"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "13.3M"
+          "detail": "78.7M"
         }
       ],
       "passed": 2,
