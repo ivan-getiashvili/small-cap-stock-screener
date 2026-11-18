@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-18T13:00:36.073Z",
+  "generatedAt": "2026-11-18T13:20:36.991Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-17",
   "universeChecked": 6144,
   "smallCapsInBand": 2953,
-  "investigated": 79,
-  "liveQuotes": 48,
+  "investigated": 87,
+  "liveQuotes": 54,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-17T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 145,
+    "edgarFilings": 158,
     "leads": {
-      "8-K": 50,
+      "8-K": 58,
       "PR Newswire": 0,
-      "GlobeNewswire": 6,
+      "GlobeNewswire": 9,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,10 +42,10 @@
     ]
   },
   "fetch": {
-    "requested": 79,
-    "answered": 79,
-    "failed": 0,
-    "answerRatePct": 100,
+    "requested": 87,
+    "answered": 86,
+    "failed": 1,
+    "answerRatePct": 98.85057471264368,
     "reliable": true
   },
   "gate": {
@@ -64,17 +64,17 @@
       "legalName": "GREENPOWER MOTOR Co INC.",
       "business": "Truck & Bus Bodies",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.1394,
-      "preMarketChangePct": 19.82,
-      "prevClose": 2.6200968118844936,
+      "preMarketPrice": 2.94,
+      "preMarketChangePct": 12.21,
+      "prevClose": 2.6200873362445414,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 8:00 AM ET",
-      "preMarketVolume": 7473183.626255,
-      "preMarketDollarVolume": 23461312.67626495,
-      "relVolume": 27.17373098287366,
+      "lastTradeAt": "Nov 18, 2026 8:20 AM ET",
+      "preMarketVolume": 7876324.217961,
+      "preMarketDollarVolume": 23156393.20080534,
+      "relVolume": 28.639616813486537,
       "avgVolume50": 275015,
       "sharesOutstanding": 5029291,
-      "marketCap": 15788956.1654,
+      "marketCap": 14786115.54,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 51,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-31"
       },
-      "floatRotation": 1.4859318393497214,
+      "floatRotation": 1.5660903729692714,
       "daysUp": 1,
       "priorRunPct": 170.58146229130685,
       "extended": true,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "19.8%"
+          "detail": "12.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "7,473,184"
+          "detail": "7,876,324"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.14"
+          "detail": "$2.94"
         },
         {
           "name": "Float <10M",
@@ -132,17 +132,17 @@
       "legalName": "Netcapital Inc.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 2.7224,
-      "preMarketChangePct": 14.87,
-      "prevClose": 2.369983459562984,
+      "preMarketPrice": 2.65,
+      "preMarketChangePct": 11.81,
+      "prevClose": 2.370092120561667,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 8:00 AM ET",
-      "preMarketVolume": 703105.510971,
-      "preMarketDollarVolume": 1914134.4430674503,
-      "relVolume": 0.040370175761387544,
+      "lastTradeAt": "Nov 18, 2026 8:20 AM ET",
+      "preMarketVolume": 1765741.510971,
+      "preMarketDollarVolume": 4679215.0040731495,
+      "relVolume": 0.10138349655179621,
       "avgVolume50": 17416459,
       "sharesOutstanding": 7847899,
-      "marketCap": 21365120.2376,
+      "marketCap": 20796932.349999998,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 127,
       "float": {
@@ -150,7 +150,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-19"
       },
-      "floatRotation": 0.08959155959716096,
+      "floatRotation": 0.22499544285304895,
       "daysUp": 1,
       "priorRunPct": 9.340659340659336,
       "extended": false,
@@ -169,12 +169,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "14.9%"
+          "detail": "11.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "703,106"
+          "detail": "1,765,742"
         },
         {
           "name": "News catalyst",
@@ -184,7 +184,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.72"
+          "detail": "$2.65"
         },
         {
           "name": "Float <10M",
@@ -203,17 +203,17 @@
       "legalName": "BELLRING BRANDS, INC.",
       "business": "Food and Kindred Products",
       "sector": "Consumer Staples",
-      "preMarketPrice": 12.79,
-      "preMarketChangePct": 16.17,
-      "prevClose": 11.009727124042351,
+      "preMarketPrice": 12.7,
+      "preMarketChangePct": 15.35,
+      "prevClose": 11.009969657563936,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 8:00 AM ET",
-      "preMarketVolume": 69935.633504,
-      "preMarketDollarVolume": 894476.7525161599,
-      "relVolume": 0.0184574171578659,
+      "lastTradeAt": "Nov 18, 2026 8:20 AM ET",
+      "preMarketVolume": 81743.552309,
+      "preMarketDollarVolume": 1038143.1143243,
+      "relVolume": 0.021573763893148266,
       "avgVolume50": 3789026,
       "sharesOutstanding": 116278194,
-      "marketCap": 1487198101.26,
+      "marketCap": 1476733063.8,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 12,
       "float": {
@@ -221,15 +221,15 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-28"
       },
-      "floatRotation": 0.0006014509780225861,
+      "floatRotation": 0.0007029998445710294,
       "daysUp": 3,
       "priorRunPct": 9.766233766233762,
       "extended": true,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released · Executive or board change · Regulation FD disclosure (company announcement)",
-        "subject": "Earnings / results released · Executive or board change · Regulation FD disclosure (company announcement)",
+        "kind": "news",
+        "headline": "BellRing Brands Q4 Earnings Slip, But Sales Improve; Stock Up Over 16% In Pre-Market ",
+        "subject": "Earnings or guidance",
         "date": "2026-11-18"
       },
       "leads": [
@@ -239,22 +239,22 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "16.2%"
+          "detail": "15.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "69,936"
+          "detail": "81,744"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$12.79"
+          "detail": "$12.70"
         },
         {
           "name": "Float <10M",
@@ -268,53 +268,53 @@
   ],
   "alsoRan": [
     {
-      "symbol": "GLSI",
-      "name": "Greenwich LifeSciences Inc.",
-      "legalName": "Greenwich LifeSciences, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 18.7,
-      "preMarketChangePct": 35.90116279069767,
-      "prevClose": 13.76,
+      "symbol": "CCLD",
+      "name": "CareCloud Inc.",
+      "legalName": "CareCloud, Inc.",
+      "business": "Services-Prepackaged Software",
+      "sector": "Technology",
+      "preMarketPrice": 2.49,
+      "preMarketChangePct": 11.659192825112118,
+      "prevClose": 2.23,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 18, 2026 8:00 AM ET",
-      "preMarketVolume": 3080,
-      "preMarketDollarVolume": 57596,
-      "relVolume": 0.021366335534713357,
-      "avgVolume50": 144152,
-      "sharesOutstanding": 14678208,
-      "marketCap": 274482489.59999996,
+      "lastTradeAt": "Nov 18, 2026 8:20 AM ET",
+      "preMarketVolume": 101,
+      "preMarketDollarVolume": 251.49,
+      "relVolume": 0.0002951490356516657,
+      "avgVolume50": 342200,
+      "sharesOutstanding": 42548859,
+      "marketCap": 105946658.91000001,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 22,
+      "bestPriorSpikePct": 18,
       "float": {
-        "shares": 14678208,
+        "shares": 42548859,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-06"
+        "asOf": "2026-10-31"
       },
-      "floatRotation": 0.00020983487902610456,
+      "floatRotation": 0.0000023737416789484296,
       "daysUp": 0,
-      "priorRunPct": -16.707021791767556,
+      "priorRunPct": -11.15537848605577,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Biotech Stocks To Watch: SLS +160%, AYTU +48%, GLSI +32%, GLAS +24% ",
+        "headline": "CareCloud Accelerates AI-Powered Growth with Over 40% Reduction in Claim Denials and Multiple New RCM Wins",
         "subject": null,
-        "date": "2026-11-17"
+        "date": "2026-11-18"
       },
       "leads": [
-        "prior-session gainer"
+        "GlobeNewswire"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "35.9%"
+          "detail": "11.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "3,080"
+          "detail": "101"
         },
         {
           "name": "News catalyst",
@@ -324,12 +324,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$18.70"
+          "detail": "$2.49"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "14.7M"
+          "detail": "42.5M"
         }
       ],
       "passed": 3,
@@ -404,142 +404,6 @@
       "quality": "low"
     },
     {
-      "symbol": "EVMN",
-      "name": "Evommune Inc.",
-      "legalName": "Evommune, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 7.75,
-      "preMarketChangePct": 9.154929577464795,
-      "prevClose": 7.1,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 18, 2026 6:47 AM ET",
-      "preMarketVolume": 51,
-      "preMarketDollarVolume": 395.25,
-      "relVolume": 0.0000767773967344014,
-      "avgVolume50": 664258,
-      "sharesOutstanding": 41349860,
-      "marketCap": 320461415,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 71,
-      "float": {
-        "shares": 41349860,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-10"
-      },
-      "floatRotation": 0.0000012333778155476223,
-      "daysUp": 0,
-      "priorRunPct": -7.431551499348113,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Executive or board change",
-        "subject": "Executive or board change",
-        "date": "2026-11-17"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "51"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$7.75"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "41.3M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "MASK",
-      "name": "3 E Network Technology Group Ltd Class A Ordinary Shares",
-      "legalName": "3 E Network Technology Group Ltd",
-      "business": "Services-Computer Programming Services",
-      "sector": "Technology",
-      "preMarketPrice": 1.97,
-      "preMarketChangePct": 7.65027322404371,
-      "prevClose": 1.83,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 18, 2026 8:00 AM ET",
-      "preMarketVolume": 29078,
-      "preMarketDollarVolume": 57283.659999999996,
-      "relVolume": 0.07413204978508385,
-      "avgVolume50": 392246,
-      "sharesOutstanding": 1230874.0331491712,
-      "marketCap": 2424821.845303867,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 199,
-      "float": {
-        "shares": 1230874.0331491712,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-18"
-      },
-      "floatRotation": 0.023623863382351493,
-      "daysUp": 1,
-      "priorRunPct": -10.731707317073159,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "3 E Network Technology Group Limited Regains Compliance with Nasdaq Listing Requirements",
-        "subject": null,
-        "date": "2026-11-18"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "29,078"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.97"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "1.2M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
       "symbol": "ALZN",
       "name": "Alzamend Neuro Inc.",
       "legalName": "Alzamend Neuro, Inc.",
@@ -605,6 +469,143 @@
         }
       ],
       "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "CHRN",
+      "name": "ChronoScale Holdings Corporation",
+      "legalName": "ChronoScale Holdings Corp",
+      "business": "General Industrial Machinery & Equipment, NEC",
+      "sector": "Industrials",
+      "preMarketPrice": 10.35,
+      "preMarketChangePct": 6.26,
+      "prevClose": 9.74025974025974,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 18, 2026 8:17 AM ET",
+      "preMarketVolume": 7469.234741,
+      "preMarketDollarVolume": 77306.57956935,
+      "relVolume": 0.031450998538873544,
+      "avgVolume50": 237488,
+      "sharesOutstanding": 145637452,
+      "marketCap": 1507347628.2,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 29,
+      "float": {
+        "shares": 145637452,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-13"
+      },
+      "floatRotation": 0.000051286496971946475,
+      "daysUp": 0,
+      "priorRunPct": -19.19104991394147,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "ChronoScale Announces New Development Partnership to Accelerate AI Compute Capacity Deployment, Supported by a Significant Capital Raise",
+        "subject": "Contract or partnership",
+        "date": "2026-11-18"
+      },
+      "leads": [
+        "GlobeNewswire",
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "7,469"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$10.35"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "145.6M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "QSI",
+      "name": "Quantum-Si Incorporated Class A",
+      "legalName": "Quantum-Si Inc",
+      "business": "Measuring & Controlling Devices, NEC",
+      "sector": "Industrials",
+      "preMarketPrice": 1.0698,
+      "preMarketChangePct": 5.92,
+      "prevClose": 1.0100075528700907,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 18, 2026 8:19 AM ET",
+      "preMarketVolume": 45638.262072,
+      "preMarketDollarVolume": 48823.8127646256,
+      "relVolume": 0.016950483713322383,
+      "avgVolume50": 2692446,
+      "sharesOutstanding": 219742413.86138615,
+      "marketCap": 235080434.34891093,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 25,
+      "float": {
+        "shares": 219742413.86138615,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-18"
+      },
+      "floatRotation": 0.0002076898185927305,
+      "daysUp": 0,
+      "priorRunPct": -22.627737226277375,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-11-18"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "45,638"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.07"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "219.7M"
+        }
+      ],
+      "passed": 1,
       "quality": "low"
     }
   ]
