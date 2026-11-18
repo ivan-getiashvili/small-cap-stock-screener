@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-18T11:20:39.424Z",
+  "generatedAt": "2026-11-18T11:40:34.610Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-17",
   "universeChecked": 6137,
   "smallCapsInBand": 2944,
-  "investigated": 68,
-  "liveQuotes": 34,
+  "investigated": 71,
+  "liveQuotes": 38,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-17T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 129,
+    "edgarFilings": 130,
     "leads": {
       "8-K": 47,
       "PR Newswire": 1,
-      "GlobeNewswire": 0,
+      "GlobeNewswire": 3,
       "prior-session gainer": 22
     },
     "feeds": [
@@ -35,15 +35,15 @@
       {
         "name": "GlobeNewswire",
         "url": "https://www.globenewswire.com/RssFeed/orgclass/1/feedTitle/GlobeNewswire%20-%20News%20about%20Public%20Companies",
-        "ok": false,
-        "items": 0,
-        "inWindow": 0
+        "ok": true,
+        "items": 20,
+        "inWindow": 20
       }
     ]
   },
   "fetch": {
-    "requested": 68,
-    "answered": 68,
+    "requested": 71,
+    "answered": 71,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -57,76 +57,7 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [
-    {
-      "symbol": "GP",
-      "name": "GreenPower Motor Company Inc. Common Shares",
-      "legalName": "GREENPOWER MOTOR Co INC.",
-      "business": "Truck & Bus Bodies",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.17,
-      "preMarketChangePct": 20.99,
-      "prevClose": 2.620051243904455,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 6:20 AM ET",
-      "preMarketVolume": 3005487.742118,
-      "preMarketDollarVolume": 9527396.14251406,
-      "relVolume": 10.928450237688853,
-      "avgVolume50": 275015,
-      "sharesOutstanding": 5029291,
-      "marketCap": 15942852.469999999,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 51,
-      "float": {
-        "shares": 5029291,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-03-31"
-      },
-      "floatRotation": 0.5975967073923542,
-      "daysUp": 1,
-      "priorRunPct": 170.58146229130685,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "GreenPower Motor Company Inc. Reports Revenue of $2,554,937 for the Three Months Ended September 30, 2026",
-        "subject": "Earnings or guidance",
-        "date": "2026-11-16"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "21.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "3,005,488"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.17"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "5.0M"
-        }
-      ],
-      "passed": 5,
-      "quality": "high"
-    }
-  ],
+  "shortlist": [],
   "watchlist": [
     {
       "symbol": "AKAN",
@@ -134,17 +65,17 @@
       "legalName": "AKANDA CORP.",
       "business": "Communications Services, NEC",
       "sector": "Health Care",
-      "preMarketPrice": 2.4393,
-      "preMarketChangePct": 18.99,
-      "prevClose": 2.0500042020337843,
+      "preMarketPrice": 2.44,
+      "preMarketChangePct": 19.02,
+      "prevClose": 2.05007561754327,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 6:20 AM ET",
-      "preMarketVolume": 1010882.848604,
-      "preMarketDollarVolume": 2465846.532599737,
-      "relVolume": 0.8084663260776203,
+      "lastTradeAt": "Nov 18, 2026 6:40 AM ET",
+      "preMarketVolume": 1040788.848604,
+      "preMarketDollarVolume": 2539524.79059376,
+      "relVolume": 0.8323840273038963,
       "avgVolume50": 1250371,
       "sharesOutstanding": 1983546,
-      "marketCap": 4838463.7578,
+      "marketCap": 4839852.24,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 214,
       "float": {
@@ -152,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.5096341847398548,
+      "floatRotation": 0.5247112235380476,
       "daysUp": 2,
       "priorRunPct": 172.9068905902692,
       "extended": true,
@@ -175,7 +106,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,010,883"
+          "detail": "1,040,789"
         },
         {
           "name": "News catalyst",
@@ -195,43 +126,41 @@
       ],
       "passed": 4,
       "quality": "medium"
-    }
-  ],
-  "alsoRan": [
+    },
     {
-      "symbol": "HIHO",
-      "name": "Highway Holdings Limited",
-      "legalName": "HIGHWAY HOLDINGS LTD",
-      "business": "Miscellaneous Fabricated Metal Products",
-      "sector": "Industrials",
-      "preMarketPrice": 1.3897,
-      "preMarketChangePct": 12.98,
-      "prevClose": 1.2300407151708268,
+      "symbol": "GP",
+      "name": "GreenPower Motor Company Inc. Common Shares",
+      "legalName": "GREENPOWER MOTOR Co INC.",
+      "business": "Truck & Bus Bodies",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 2.7968,
+      "preMarketChangePct": 6.75,
+      "prevClose": 2.6199531615925062,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 6:20 AM ET",
-      "preMarketVolume": 3921266.565622,
-      "preMarketDollarVolume": 5449384.146244893,
-      "relVolume": 2.0455021914868867,
-      "avgVolume50": 1917019,
-      "sharesOutstanding": 4626676,
-      "marketCap": 6429691.6372,
+      "lastTradeAt": "Nov 18, 2026 6:40 AM ET",
+      "preMarketVolume": 3463017.742118,
+      "preMarketDollarVolume": 9685368.021155624,
+      "relVolume": 12.592104947431958,
+      "avgVolume50": 275015,
+      "sharesOutstanding": 5029291,
+      "marketCap": 14065921.0688,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 51,
       "float": {
-        "shares": 4626676,
+        "shares": 5029291,
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-31"
       },
-      "floatRotation": 0.8475342914917751,
+      "floatRotation": 0.6885697690028276,
       "daysUp": 1,
-      "priorRunPct": 44.38695704488028,
-      "extended": false,
+      "priorRunPct": 170.58146229130685,
+      "extended": true,
       "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
+        "found": true,
+        "kind": "news",
+        "headline": "GreenPower Motor Company Inc. Reports Revenue of $2,554,937 for the Three Months Ended September 30, 2026",
+        "subject": "Earnings or guidance",
+        "date": "2026-11-16"
       },
       "leads": [
         "prior-session gainer"
@@ -239,50 +168,52 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "13.0%"
+          "ok": false,
+          "detail": "6.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "3,921,267"
+          "detail": "3,463,018"
         },
         {
           "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
+          "ok": true,
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.39"
+          "ok": true,
+          "detail": "$2.80"
         },
         {
           "name": "Float <10M",
           "ok": true,
-          "detail": "4.6M"
+          "detail": "5.0M"
         }
       ],
-      "passed": 3,
-      "quality": "low"
-    },
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
+  "alsoRan": [
     {
       "symbol": "GMM",
       "name": "Global Mofy AI Limited Class A Ordinary Shares",
       "legalName": "Global Mofy AI Ltd",
       "business": "Services-Computer Programming, Data Processing, Etc.",
       "sector": "Technology",
-      "preMarketPrice": 1.6187,
-      "preMarketChangePct": 16.45,
-      "prevClose": 1.3900386431945042,
+      "preMarketPrice": 1.6287,
+      "preMarketChangePct": 17.17,
+      "prevClose": 1.3900315780489887,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 6:20 AM ET",
-      "preMarketVolume": 4103760.427508,
-      "preMarketDollarVolume": 6642757.0040072,
-      "relVolume": 1.0007382649657999,
+      "lastTradeAt": "Nov 18, 2026 6:40 AM ET",
+      "preMarketVolume": 4299232.427508,
+      "preMarketDollarVolume": 7002159.854682281,
+      "relVolume": 1.0484058404943701,
       "avgVolume50": 4100733,
       "sharesOutstanding": 25926155,
-      "marketCap": 41966667.0985,
+      "marketCap": 42225928.6485,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 147,
       "float": {
@@ -290,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2023-09-30"
       },
-      "floatRotation": 0.15828650362955865,
+      "floatRotation": 0.1658260712978072,
       "daysUp": 1,
       "priorRunPct": 100.99999999999997,
       "extended": true,
@@ -308,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "16.4%"
+          "detail": "17.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "4,103,760"
+          "detail": "4,299,232"
         },
         {
           "name": "News catalyst",
@@ -323,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.62"
+          "detail": "$1.63"
         },
         {
           "name": "Float <10M",
@@ -403,6 +334,74 @@
       "quality": "low"
     },
     {
+      "symbol": "NMAD",
+      "name": "Nomad Power Solutions Inc.",
+      "legalName": "NOMAD POWER SOLUTIONS, INC.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 3,
+      "preMarketChangePct": 7.1428571428571495,
+      "prevClose": 2.8,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 18, 2026 6:00 AM ET",
+      "preMarketVolume": null,
+      "preMarketDollarVolume": null,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 18419632,
+      "marketCap": 55258896,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 18419632,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-30"
+      },
+      "floatRotation": null,
+      "daysUp": 1,
+      "priorRunPct": -21.568627450980394,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-11-16"
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "unknown"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.00"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "18.4M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
       "symbol": "ALZN",
       "name": "Alzamend Neuro Inc.",
       "legalName": "Alzamend Neuro, Inc.",
@@ -465,6 +464,74 @@
           "name": "Float <10M",
           "ok": true,
           "detail": "4.8M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "STDN",
+      "name": "Standard Nuclear Inc. Class A",
+      "legalName": "Standard Nuclear, Inc.",
+      "business": "Industrial Inorganic Chemicals",
+      "sector": "Basic Materials",
+      "preMarketPrice": 9.8033,
+      "preMarketChangePct": 5.07288317256163,
+      "prevClose": 9.33,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 18, 2026 6:20 AM ET",
+      "preMarketVolume": 1286,
+      "preMarketDollarVolume": 12607.0438,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 157830205.0375134,
+      "marketCap": 1547256849.0442553,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 157830205.0375134,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-18"
+      },
+      "floatRotation": 0.000008147996764588508,
+      "daysUp": 0,
+      "priorRunPct": -26.419558359621448,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Changed auditors",
+        "subject": "Changed auditors",
+        "date": "2026-11-17"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "1,286"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$9.80"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "157.8M"
         }
       ],
       "passed": 2,
