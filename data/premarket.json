@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-18T11:00:37.026Z",
+  "generatedAt": "2026-11-18T11:20:39.424Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-17",
   "universeChecked": 6137,
   "smallCapsInBand": 2944,
-  "investigated": 67,
-  "liveQuotes": 37,
+  "investigated": 68,
+  "liveQuotes": 34,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-17T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 112,
+    "edgarFilings": 129,
     "leads": {
-      "8-K": 44,
-      "PR Newswire": 0,
-      "GlobeNewswire": 2,
+      "8-K": 47,
+      "PR Newswire": 1,
+      "GlobeNewswire": 0,
       "prior-session gainer": 22
     },
     "feeds": [
@@ -35,15 +35,15 @@
       {
         "name": "GlobeNewswire",
         "url": "https://www.globenewswire.com/RssFeed/orgclass/1/feedTitle/GlobeNewswire%20-%20News%20about%20Public%20Companies",
-        "ok": true,
-        "items": 20,
-        "inWindow": 20
+        "ok": false,
+        "items": 0,
+        "inWindow": 0
       }
     ]
   },
   "fetch": {
-    "requested": 67,
-    "answered": 67,
+    "requested": 68,
+    "answered": 68,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "GREENPOWER MOTOR Co INC.",
       "business": "Truck & Bus Bodies",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.04,
-      "preMarketChangePct": 16.03,
-      "prevClose": 2.6200120658450405,
+      "preMarketPrice": 3.17,
+      "preMarketChangePct": 20.99,
+      "prevClose": 2.620051243904455,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 6:00 AM ET",
-      "preMarketVolume": 2905286.098326,
-      "preMarketDollarVolume": 8832069.73891104,
-      "relVolume": 10.564100497521952,
+      "lastTradeAt": "Nov 18, 2026 6:20 AM ET",
+      "preMarketVolume": 3005487.742118,
+      "preMarketDollarVolume": 9527396.14251406,
+      "relVolume": 10.928450237688853,
       "avgVolume50": 275015,
       "sharesOutstanding": 5029291,
-      "marketCap": 15289044.64,
+      "marketCap": 15942852.469999999,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 51,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-31"
       },
-      "floatRotation": 0.5776730951392552,
+      "floatRotation": 0.5975967073923542,
       "daysUp": 1,
       "priorRunPct": 170.58146229130685,
       "extended": true,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "16.0%"
+          "detail": "21.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "2,905,286"
+          "detail": "3,005,488"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.04"
+          "detail": "$3.17"
         },
         {
           "name": "Float <10M",
@@ -134,17 +134,17 @@
       "legalName": "AKANDA CORP.",
       "business": "Communications Services, NEC",
       "sector": "Health Care",
-      "preMarketPrice": 2.4405,
-      "preMarketChangePct": 19.05,
-      "prevClose": 2.0499790004199916,
+      "preMarketPrice": 2.4393,
+      "preMarketChangePct": 18.99,
+      "prevClose": 2.0500042020337843,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 6:00 AM ET",
-      "preMarketVolume": 915731.848604,
-      "preMarketDollarVolume": 2234843.576518062,
-      "relVolume": 0.7323681120275503,
+      "lastTradeAt": "Nov 18, 2026 6:20 AM ET",
+      "preMarketVolume": 1010882.848604,
+      "preMarketDollarVolume": 2465846.532599737,
+      "relVolume": 0.8084663260776203,
       "avgVolume50": 1250371,
       "sharesOutstanding": 1983546,
-      "marketCap": 4840844.013,
+      "marketCap": 4838463.7578,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 214,
       "float": {
@@ -152,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.4616640343122872,
+      "floatRotation": 0.5096341847398548,
       "daysUp": 2,
       "priorRunPct": 172.9068905902692,
       "extended": true,
@@ -170,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "19.1%"
+          "detail": "19.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "915,732"
+          "detail": "1,010,883"
         },
         {
           "name": "News catalyst",
@@ -199,22 +199,90 @@
   ],
   "alsoRan": [
     {
+      "symbol": "HIHO",
+      "name": "Highway Holdings Limited",
+      "legalName": "HIGHWAY HOLDINGS LTD",
+      "business": "Miscellaneous Fabricated Metal Products",
+      "sector": "Industrials",
+      "preMarketPrice": 1.3897,
+      "preMarketChangePct": 12.98,
+      "prevClose": 1.2300407151708268,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 18, 2026 6:20 AM ET",
+      "preMarketVolume": 3921266.565622,
+      "preMarketDollarVolume": 5449384.146244893,
+      "relVolume": 2.0455021914868867,
+      "avgVolume50": 1917019,
+      "sharesOutstanding": 4626676,
+      "marketCap": 6429691.6372,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 51,
+      "float": {
+        "shares": 4626676,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-03-31"
+      },
+      "floatRotation": 0.8475342914917751,
+      "daysUp": 1,
+      "priorRunPct": 44.38695704488028,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "13.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "3,921,267"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.39"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "4.6M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "GMM",
       "name": "Global Mofy AI Limited Class A Ordinary Shares",
       "legalName": "Global Mofy AI Ltd",
       "business": "Services-Computer Programming, Data Processing, Etc.",
       "sector": "Technology",
-      "preMarketPrice": 1.6587,
-      "preMarketChangePct": 19.33,
-      "prevClose": 1.3900108941590548,
+      "preMarketPrice": 1.6187,
+      "preMarketChangePct": 16.45,
+      "prevClose": 1.3900386431945042,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 6:00 AM ET",
-      "preMarketVolume": 3802396.427508,
-      "preMarketDollarVolume": 6307034.95430752,
-      "relVolume": 0.927247988959047,
+      "lastTradeAt": "Nov 18, 2026 6:20 AM ET",
+      "preMarketVolume": 4103760.427508,
+      "preMarketDollarVolume": 6642757.0040072,
+      "relVolume": 1.0007382649657999,
       "avgVolume50": 4100733,
       "sharesOutstanding": 25926155,
-      "marketCap": 43003713.2985,
+      "marketCap": 41966667.0985,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 147,
       "float": {
@@ -222,7 +290,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2023-09-30"
       },
-      "floatRotation": 0.14666256633534744,
+      "floatRotation": 0.15828650362955865,
       "daysUp": 1,
       "priorRunPct": 100.99999999999997,
       "extended": true,
@@ -240,12 +308,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "19.3%"
+          "detail": "16.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "3,802,396"
+          "detail": "4,103,760"
         },
         {
           "name": "News catalyst",
@@ -255,7 +323,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.66"
+          "detail": "$1.62"
         },
         {
           "name": "Float <10M",
@@ -335,210 +403,6 @@
       "quality": "low"
     },
     {
-      "symbol": "EVMN",
-      "name": "Evommune Inc.",
-      "legalName": "Evommune, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 7.75,
-      "preMarketChangePct": 9.154929577464795,
-      "prevClose": 7.1,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 18, 2026 5:23 AM ET",
-      "preMarketVolume": 30,
-      "preMarketDollarVolume": 232.5,
-      "relVolume": 0.000045163174549647876,
-      "avgVolume50": 664258,
-      "sharesOutstanding": 41349860,
-      "marketCap": 320461415,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 71,
-      "float": {
-        "shares": 41349860,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-10"
-      },
-      "floatRotation": 7.255163620868366e-7,
-      "daysUp": 0,
-      "priorRunPct": -7.431551499348113,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Executive or board change",
-        "subject": "Executive or board change",
-        "date": "2026-11-17"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "30"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$7.75"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "41.3M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "HIHO",
-      "name": "Highway Holdings Limited",
-      "legalName": "HIGHWAY HOLDINGS LTD",
-      "business": "Miscellaneous Fabricated Metal Products",
-      "sector": "Industrials",
-      "preMarketPrice": 1.3199,
-      "preMarketChangePct": 7.31,
-      "prevClose": 1.2299878855651851,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 6:00 AM ET",
-      "preMarketVolume": 73348,
-      "preMarketDollarVolume": 96812.0252,
-      "relVolume": 0.03826148827945889,
-      "avgVolume50": 1917019,
-      "sharesOutstanding": 4626676,
-      "marketCap": 6106749.6524,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 51,
-      "float": {
-        "shares": 4626676,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-03-31"
-      },
-      "floatRotation": 0.01585328214035303,
-      "daysUp": 1,
-      "priorRunPct": 44.38695704488028,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "73,348"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.32"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "4.6M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "NMAD",
-      "name": "Nomad Power Solutions Inc.",
-      "legalName": "NOMAD POWER SOLUTIONS, INC.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 3,
-      "preMarketChangePct": 7.1428571428571495,
-      "prevClose": 2.8,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 18, 2026 5:27 AM ET",
-      "preMarketVolume": null,
-      "preMarketDollarVolume": null,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 18419632,
-      "marketCap": 55258896,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 18419632,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-30"
-      },
-      "floatRotation": null,
-      "daysUp": 1,
-      "priorRunPct": -21.568627450980394,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Regulation FD disclosure (company announcement)",
-        "subject": "Regulation FD disclosure (company announcement)",
-        "date": "2026-11-16"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "unknown"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.00"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "18.4M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
       "symbol": "ALZN",
       "name": "Alzamend Neuro Inc.",
       "legalName": "Alzamend Neuro, Inc.",
@@ -601,74 +465,6 @@
           "name": "Float <10M",
           "ok": true,
           "detail": "4.8M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "LAES",
-      "name": "SEALSQ Corp Ordinary Shares",
-      "legalName": "SEALSQ Corp",
-      "business": "Semiconductors & Related Devices",
-      "sector": "Technology",
-      "preMarketPrice": 1.1398,
-      "preMarketChangePct": 5.05,
-      "prevClose": 1.0850071394574012,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 6:00 AM ET",
-      "preMarketVolume": 94533.145854,
-      "preMarketDollarVolume": 107748.87964438919,
-      "relVolume": 0.008657078096095956,
-      "avgVolume50": 10919752,
-      "sharesOutstanding": 191525129,
-      "marketCap": 218300342.03419998,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 40,
-      "float": {
-        "shares": 191525129,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 0.0004935809016163096,
-      "daysUp": 0,
-      "priorRunPct": -21.034482758620687,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "SEALSQ Signs a LOI to Acquire QuintessenceLabs, with the Objective of Creating a World Leader in the Vertical Quantum Security Stack",
-        "subject": "Merger or acquisition",
-        "date": "2026-11-18"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "94,533"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.14"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "191.5M"
         }
       ],
       "passed": 2,
