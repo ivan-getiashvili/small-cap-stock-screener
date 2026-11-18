@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-18T12:20:36.576Z",
+  "generatedAt": "2026-11-18T12:40:36.479Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-17",
   "universeChecked": 6144,
   "smallCapsInBand": 2953,
-  "investigated": 82,
-  "liveQuotes": 50,
+  "investigated": 77,
+  "liveQuotes": 46,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-17T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 138,
+    "edgarFilings": 143,
     "leads": {
-      "8-K": 49,
-      "PR Newswire": 1,
-      "GlobeNewswire": 10,
+      "8-K": 50,
+      "PR Newswire": 0,
+      "GlobeNewswire": 4,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 82,
-    "answered": 82,
+    "requested": 77,
+    "answered": 77,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "GREENPOWER MOTOR Co INC.",
       "business": "Truck & Bus Bodies",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.23,
-      "preMarketChangePct": 23.28,
-      "prevClose": 2.6200519143413366,
+      "preMarketPrice": 3.1894,
+      "preMarketChangePct": 21.73,
+      "prevClose": 2.620060790273556,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 7:20 AM ET",
-      "preMarketVolume": 6225477.641072,
-      "preMarketDollarVolume": 20108292.780662563,
-      "relVolume": 22.636865774855917,
+      "lastTradeAt": "Nov 18, 2026 7:40 AM ET",
+      "preMarketVolume": 7017264.641072,
+      "preMarketDollarVolume": 22380863.846235037,
+      "relVolume": 25.51593418930604,
       "avgVolume50": 275015,
       "sharesOutstanding": 5029291,
-      "marketCap": 16244609.93,
+      "marketCap": 16040420.7154,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 51,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-31"
       },
-      "floatRotation": 1.2378439905489662,
+      "floatRotation": 1.3952791041663726,
       "daysUp": 1,
       "priorRunPct": 170.58146229130685,
       "extended": true,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "23.3%"
+          "detail": "21.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "6,225,478"
+          "detail": "7,017,265"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.23"
+          "detail": "$3.19"
         },
         {
           "name": "Float <10M",
@@ -127,7 +127,77 @@
       "quality": "high"
     }
   ],
-  "watchlist": [],
+  "watchlist": [
+    {
+      "symbol": "NCPL",
+      "name": "Netcapital Inc.",
+      "legalName": "Netcapital Inc.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 2.5801,
+      "preMarketChangePct": 8.86,
+      "prevClose": 2.370108396105089,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 18, 2026 7:40 AM ET",
+      "preMarketVolume": 84491.510971,
+      "preMarketDollarVolume": 217996.54745627707,
+      "relVolume": 0.004851245076338422,
+      "avgVolume50": 17416459,
+      "sharesOutstanding": 7847899,
+      "marketCap": 20248364.2099,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 127,
+      "float": {
+        "shares": 7847899,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-03-19"
+      },
+      "floatRotation": 0.010766131288259444,
+      "daysUp": 1,
+      "priorRunPct": 9.340659340659336,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Netcapital Inc. Corrects Auditor Engagement Status After Adeptus Partners Declines to Serve",
+        "subject": null,
+        "date": "2026-11-17"
+      },
+      "leads": [
+        "8-K",
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "84,492"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.58"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "7.8M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
   "alsoRan": [
     {
       "symbol": "GLAS",
@@ -139,9 +209,9 @@
       "preMarketChangePct": 22.05882352941175,
       "prevClose": 1.36,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 18, 2026 7:20 AM ET",
-      "preMarketVolume": 21738,
-      "preMarketDollarVolume": 36085.08,
+      "lastTradeAt": "Nov 18, 2026 7:39 AM ET",
+      "preMarketVolume": 22013,
+      "preMarketDollarVolume": 36541.58,
       "relVolume": null,
       "avgVolume50": null,
       "sharesOutstanding": 93850589.05775076,
@@ -153,7 +223,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-18"
       },
-      "floatRotation": 0.00023162347959929764,
+      "floatRotation": 0.00023455366898607688,
       "daysUp": 2,
       "priorRunPct": -28.795811518324598,
       "extended": true,
@@ -176,7 +246,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "21,738"
+          "detail": "22,013"
         },
         {
           "name": "News catalyst",
@@ -203,17 +273,17 @@
       "legalName": "i3 Verticals, Inc.",
       "business": "Services-Prepackaged Software",
       "sector": "Technology",
-      "preMarketPrice": 21.4,
-      "preMarketChangePct": 14.38,
-      "prevClose": 18.70956460919741,
+      "preMarketPrice": 21.35,
+      "preMarketChangePct": 14.11,
+      "prevClose": 18.7100166506003,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 7:18 AM ET",
-      "preMarketVolume": 1617.082456,
-      "preMarketDollarVolume": 34605.5645584,
-      "relVolume": 0.003952007566352216,
+      "lastTradeAt": "Nov 18, 2026 7:40 AM ET",
+      "preMarketVolume": 1904.082456,
+      "preMarketDollarVolume": 40652.1604356,
+      "relVolume": 0.004653410371963439,
       "avgVolume50": 409180,
       "sharesOutstanding": 26322008.97915553,
-      "marketCap": 563290992.1539283,
+      "marketCap": 561974891.7049706,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 7,
       "float": {
@@ -221,7 +291,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-18"
       },
-      "floatRotation": 0.0000614346137971677,
+      "floatRotation": 0.00007233803686898855,
       "daysUp": 2,
       "priorRunPct": -0.6732263076126308,
       "extended": true,
@@ -239,12 +309,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "14.4%"
+          "detail": "14.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "1,617"
+          "detail": "1,904"
         },
         {
           "name": "News catalyst",
@@ -254,7 +324,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$21.40"
+          "detail": "$21.35"
         },
         {
           "name": "Float <10M",
@@ -334,74 +404,6 @@
       "quality": "low"
     },
     {
-      "symbol": "STDN",
-      "name": "Standard Nuclear Inc. Class A",
-      "legalName": "Standard Nuclear, Inc.",
-      "business": "Industrial Inorganic Chemicals",
-      "sector": "Basic Materials",
-      "preMarketPrice": 10,
-      "preMarketChangePct": 7.181136120042872,
-      "prevClose": 9.33,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 18, 2026 7:17 AM ET",
-      "preMarketVolume": 4681,
-      "preMarketDollarVolume": 46810,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 157830204.9702863,
-      "marketCap": 1578302049.7028632,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 157830204.9702863,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-18"
-      },
-      "floatRotation": 0.000029658454798821697,
-      "daysUp": 0,
-      "priorRunPct": -26.419558359621448,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Changed auditors",
-        "subject": "Changed auditors",
-        "date": "2026-11-17"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "4,681"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$10.00"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "157.8M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
       "symbol": "ALZN",
       "name": "Alzamend Neuro Inc.",
       "legalName": "Alzamend Neuro, Inc.",
@@ -464,212 +466,6 @@
           "name": "Float <10M",
           "ok": true,
           "detail": "4.8M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "KNDI",
-      "name": "Kandi Technologies Group Inc. Ordinary Shares",
-      "legalName": "Kandi Technologies Group, Inc.",
-      "business": "Motor Vehicle Parts & Accessories",
-      "sector": "Industrials",
-      "preMarketPrice": 3.8079,
-      "preMarketChangePct": 6.96,
-      "prevClose": 3.56011593118923,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 7:19 AM ET",
-      "preMarketVolume": 9839,
-      "preMarketDollarVolume": 37465.9281,
-      "relVolume": 0.027715492957746477,
-      "avgVolume50": 355000,
-      "sharesOutstanding": 82705365,
-      "marketCap": 314933759.3835,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 18,
-      "float": {
-        "shares": 82705365,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 0.00011896447104731356,
-      "daysUp": 2,
-      "priorRunPct": 1.026392961876824,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Kandi Technologies Reports Unaudited Financial Results for the Nine Months Ended September 30, 2026",
-        "subject": "Earnings or guidance",
-        "date": "2026-11-18"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "9,839"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.81"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "82.7M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "MPU",
-      "name": "Mega Matrix Inc. Class A Ordinary Shares",
-      "legalName": "Mega Matrix Inc",
-      "business": "Services-Motion Picture & Video Tape Production",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.2499,
-      "preMarketChangePct": 6.13,
-      "prevClose": 2.119947234523697,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 7:19 AM ET",
-      "preMarketVolume": 76683,
-      "preMarketDollarVolume": 172529.08169999998,
-      "relVolume": 0.3281988290077381,
-      "avgVolume50": 233648,
-      "sharesOutstanding": 34536384,
-      "marketCap": 77703410.3616,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 52,
-      "float": {
-        "shares": 34536384,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2024-12-31"
-      },
-      "floatRotation": 0.0022203540474880056,
-      "daysUp": 0,
-      "priorRunPct": -0.7692307692307698,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "6.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "76,683"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.25"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "34.5M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "BRBR",
-      "name": "BellRing Brands Inc. Common Stock",
-      "legalName": "BELLRING BRANDS, INC.",
-      "business": "Food and Kindred Products",
-      "sector": "Consumer Staples",
-      "preMarketPrice": 11.57,
-      "preMarketChangePct": 5.09,
-      "prevClose": 11.009610809782092,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 18, 2026 7:20 AM ET",
-      "preMarketVolume": 18993.467068,
-      "preMarketDollarVolume": 219754.41397676003,
-      "relVolume": 0.005012757122278918,
-      "avgVolume50": 3789026,
-      "sharesOutstanding": 116278194,
-      "marketCap": 1345338704.58,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 12,
-      "float": {
-        "shares": 116278194,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-28"
-      },
-      "floatRotation": 0.00016334504703435627,
-      "daysUp": 3,
-      "priorRunPct": 9.766233766233762,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "BellRing Brands Announces CFO Transition",
-        "subject": null,
-        "date": "2026-11-18"
-      },
-      "leads": [
-        "GlobeNewswire",
-        "GlobeNewswire",
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.1%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "18,993"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$11.57"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "116.3M"
         }
       ],
       "passed": 2,
