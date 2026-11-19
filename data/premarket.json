@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-19T11:20:48.603Z",
+  "generatedAt": "2026-11-19T11:40:37.445Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-18",
   "universeChecked": 6144,
   "smallCapsInBand": 2959,
-  "investigated": 26,
-  "liveQuotes": 18,
+  "investigated": 30,
+  "liveQuotes": 20,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-18T20:30:00.000Z",
@@ -13,8 +13,8 @@
     "edgarFilings": 0,
     "leads": {
       "8-K": 0,
-      "PR Newswire": 0,
-      "GlobeNewswire": 1,
+      "PR Newswire": 1,
+      "GlobeNewswire": 4,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 26,
-    "answered": 26,
+    "requested": 30,
+    "answered": 30,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -66,17 +66,17 @@
       "legalName": "Mega Matrix Inc",
       "business": "Services-Motion Picture & Video Tape Production",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.1706,
-      "preMarketChangePct": 11.64,
-      "prevClose": 2.8400214976710854,
+      "preMarketPrice": 3.2144,
+      "preMarketChangePct": 13.18,
+      "prevClose": 2.8400777522530483,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 6:21 AM ET",
-      "preMarketVolume": 97498,
-      "preMarketDollarVolume": 309127.1588,
-      "relVolume": 0.41728583167842226,
+      "lastTradeAt": "Nov 19, 2026 6:41 AM ET",
+      "preMarketVolume": 101760,
+      "preMarketDollarVolume": 327097.344,
+      "relVolume": 0.4355269465178388,
       "avgVolume50": 233648,
       "sharesOutstanding": 34536384,
-      "marketCap": 109501059.11039999,
+      "marketCap": 111013752.7296,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 52,
       "float": {
@@ -84,7 +84,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2024-12-31"
       },
-      "floatRotation": 0.0028230517705617355,
+      "floatRotation": 0.0029464578573136085,
       "daysUp": 1,
       "priorRunPct": 55.73770491803278,
       "extended": true,
@@ -102,12 +102,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "11.6%"
+          "detail": "13.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "97,498"
+          "detail": "101,760"
         },
         {
           "name": "News catalyst",
@@ -117,7 +117,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.17"
+          "detail": "$3.21"
         },
         {
           "name": "Float <10M",
