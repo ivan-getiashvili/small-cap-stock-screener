@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-19T12:00:36.497Z",
+  "generatedAt": "2026-11-19T12:20:34.853Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-18",
   "universeChecked": 6146,
   "smallCapsInBand": 2963,
-  "investigated": 30,
-  "liveQuotes": 27,
+  "investigated": 29,
+  "liveQuotes": 26,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-18T20:30:00.000Z",
-    "edgarOk": false,
+    "edgarOk": true,
     "edgarFilings": 0,
     "leads": {
       "8-K": 0,
-      "PR Newswire": 2,
+      "PR Newswire": 1,
       "GlobeNewswire": 3,
       "prior-session gainer": 25
     },
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 30,
-    "answered": 30,
+    "requested": 29,
+    "answered": 29,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Netcapital Inc.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 3.26,
-      "preMarketChangePct": 12.8,
-      "prevClose": 2.890070921985815,
+      "preMarketPrice": 3.29,
+      "preMarketChangePct": 13.84,
+      "prevClose": 2.8900210822206605,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 7:02 AM ET",
-      "preMarketVolume": 396535.491644,
-      "preMarketDollarVolume": 1292705.7027594398,
-      "relVolume": 0.022767859508296146,
+      "lastTradeAt": "Nov 19, 2026 7:20 AM ET",
+      "preMarketVolume": 453656.491644,
+      "preMarketDollarVolume": 1492529.85750876,
+      "relVolume": 0.026047573254930866,
       "avgVolume50": 17416459,
       "sharesOutstanding": 7847899,
-      "marketCap": 25584150.74,
+      "marketCap": 25819587.71,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 127,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-19"
       },
-      "floatRotation": 0.05052759874254243,
+      "floatRotation": 0.05780610729623304,
       "daysUp": 2,
       "priorRunPct": 20.30456852791879,
       "extended": true,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "12.8%"
+          "detail": "13.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "396,535"
+          "detail": "453,656"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.26"
+          "detail": "$3.29"
         },
         {
           "name": "Float <10M",
@@ -203,17 +203,17 @@
       "legalName": "Mega Matrix Inc",
       "business": "Services-Motion Picture & Video Tape Production",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.1997,
-      "preMarketChangePct": 12.67,
-      "prevClose": 2.839886393893672,
+      "preMarketPrice": 3.2,
+      "preMarketChangePct": 12.68,
+      "prevClose": 2.8399006034788785,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 7:01 AM ET",
-      "preMarketVolume": 104225.245911,
-      "preMarketDollarVolume": 333489.5193414267,
-      "relVolume": 0.4460780572099911,
+      "lastTradeAt": "Nov 19, 2026 7:20 AM ET",
+      "preMarketVolume": 105632.955684,
+      "preMarketDollarVolume": 338025.4581888,
+      "relVolume": 0.4521029740635486,
       "avgVolume50": 233648,
       "sharesOutstanding": 34536384,
-      "marketCap": 110506067.8848,
+      "marketCap": 110516428.80000001,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 52,
       "float": {
@@ -221,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2024-12-31"
       },
-      "floatRotation": 0.0030178389813768575,
+      "floatRotation": 0.00305859917714605,
       "daysUp": 1,
       "priorRunPct": 55.73770491803278,
       "extended": true,
@@ -244,7 +244,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "104,225"
+          "detail": "105,633"
         },
         {
           "name": "News catalyst",
@@ -263,74 +263,6 @@
         }
       ],
       "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "FOXX",
-      "name": "Foxx Development Holdings Inc.",
-      "legalName": "Foxx Development Holdings Inc.",
-      "business": "Computer Communications Equipment",
-      "sector": "Telecommunications",
-      "preMarketPrice": 1.48,
-      "preMarketChangePct": 22.314049586776864,
-      "prevClose": 1.21,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 19, 2026 6:35 AM ET",
-      "preMarketVolume": 279,
-      "preMarketDollarVolume": 412.92,
-      "relVolume": 0.019360210949968773,
-      "avgVolume50": 14411,
-      "sharesOutstanding": 7099953,
-      "marketCap": 10507930.44,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 84,
-      "float": {
-        "shares": 7099953,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-09"
-      },
-      "floatRotation": 0.00003929603477656824,
-      "daysUp": 0,
-      "priorRunPct": -19.333333333333336,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "22.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "279"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.48"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "7.1M"
-        }
-      ],
-      "passed": 2,
       "quality": "low"
     },
     {
