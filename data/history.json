@@ -1,6 +1,6 @@
 {
  "version": 1,
- "updatedAt": "2026-11-19T02:30:36.772Z",
+ "updatedAt": "2026-11-19T11:00:52.113Z",
  "days": {
   "2026-09-14": {
    "date": "2026-09-14",
@@ -10701,6 +10701,52 @@
       "alertToClosePct": -8.695652173913041,
       "filledAt": "2026-11-19T02:30:36.772Z"
      }
+    }
+   ]
+  },
+  "2026-11-19": {
+   "date": "2026-11-19",
+   "source": "live",
+   "names": [
+    {
+     "symbol": "INHD",
+     "legalName": "INNO HOLDINGS INC.",
+     "business": "Retail-Retail Stores, NEC",
+     "list": "shortlist",
+     "firstSeenAt": "2026-11-19T11:00:35.348Z",
+     "lastSeenAt": "2026-11-19T11:00:35.348Z",
+     "shortlistedAt": "2026-11-19T11:00:35.348Z",
+     "preMarketPrice": 3.25,
+     "preMarketChangePct": 41.3,
+     "prevClose": 2.300070771408351,
+     "preMarketVolume": 5667472.689249,
+     "relVolume": 0.9404267972317218,
+     "floatShares": 2520581,
+     "catalyst": "Merger or acquisition",
+     "extended": false,
+     "missing": [],
+     "performance": null
+    },
+    {
+     "symbol": "DCM",
+     "legalName": "DeFi Capital Markets, Inc.",
+     "business": "Wholesale-Electronic Parts & Equipment, NEC",
+     "list": "watchlist",
+     "firstSeenAt": "2026-11-19T11:00:35.348Z",
+     "lastSeenAt": "2026-11-19T11:00:35.348Z",
+     "shortlistedAt": null,
+     "preMarketPrice": 3.31,
+     "preMarketChangePct": 12.203389830508469,
+     "prevClose": 2.95,
+     "preMarketVolume": 30,
+     "relVolume": null,
+     "floatShares": 3028463,
+     "catalyst": "Shareholder vote results",
+     "extended": false,
+     "missing": [
+      "Pre-market volume ≥50k"
+     ],
+     "performance": null
     }
    ]
   }
