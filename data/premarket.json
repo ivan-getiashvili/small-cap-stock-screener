@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-19T11:00:35.348Z",
+  "generatedAt": "2026-11-19T11:20:48.603Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-18",
   "universeChecked": 6144,
   "smallCapsInBand": 2959,
-  "investigated": 71,
-  "liveQuotes": 36,
+  "investigated": 26,
+  "liveQuotes": 18,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-18T20:30:00.000Z",
-    "edgarOk": true,
-    "edgarFilings": 121,
+    "edgarOk": false,
+    "edgarFilings": 0,
     "leads": {
-      "8-K": 45,
-      "PR Newswire": 1,
-      "GlobeNewswire": 0,
+      "8-K": 0,
+      "PR Newswire": 0,
+      "GlobeNewswire": 1,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 71,
-    "answered": 71,
+    "requested": 26,
+    "answered": 26,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -57,232 +57,26 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [
-    {
-      "symbol": "INHD",
-      "name": "Inno Holdings Inc.",
-      "legalName": "INNO HOLDINGS INC.",
-      "business": "Retail-Retail Stores, NEC",
-      "sector": "Industrials",
-      "preMarketPrice": 3.25,
-      "preMarketChangePct": 41.3,
-      "prevClose": 2.300070771408351,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 6:00 AM ET",
-      "preMarketVolume": 5667472.689249,
-      "preMarketDollarVolume": 18419286.24005925,
-      "relVolume": 0.9404267972317218,
-      "avgVolume50": 6026490,
-      "sharesOutstanding": 2520581,
-      "marketCap": 8191888.25,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 263,
-      "float": {
-        "shares": 2520581,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-18"
-      },
-      "floatRotation": 2.24847869965258,
-      "daysUp": 0,
-      "priorRunPct": -6.3745019920318615,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Inno Holdings Inc. Enters Merger Agreement on November 13, 2026 to Redomicile to the British Virgin Islands",
-        "subject": "Merger or acquisition",
-        "date": "2026-11-19"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "41.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "5,667,473"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.25"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "2.5M"
-        }
-      ],
-      "passed": 5,
-      "quality": "high"
-    }
-  ],
-  "watchlist": [
-    {
-      "symbol": "DCM",
-      "name": "DeFi Capital Markets Inc.",
-      "legalName": "DeFi Capital Markets, Inc.",
-      "business": "Wholesale-Electronic Parts & Equipment, NEC",
-      "sector": "Technology",
-      "preMarketPrice": 3.31,
-      "preMarketChangePct": 12.203389830508469,
-      "prevClose": 2.95,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 19, 2026 4:00 AM ET",
-      "preMarketVolume": 30,
-      "preMarketDollarVolume": 99.3,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 3028463,
-      "marketCap": 10024212.53,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 3028463,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-14"
-      },
-      "floatRotation": 0.000009906015031387208,
-      "daysUp": 0,
-      "priorRunPct": -4.684975767366721,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Shareholder vote results",
-        "subject": "Shareholder vote results",
-        "date": "2026-11-18"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "12.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "30"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.31"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "3.0M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
+  "shortlist": [],
+  "watchlist": [],
   "alsoRan": [
-    {
-      "symbol": "PHAT",
-      "name": "Phathom Pharmaceuticals Inc.",
-      "legalName": "Phathom Pharmaceuticals, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 6,
-      "preMarketChangePct": 13.21,
-      "prevClose": 5.299885169154669,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 5:08 AM ET",
-      "preMarketVolume": 75,
-      "preMarketDollarVolume": 450,
-      "relVolume": 0.00005514478815578182,
-      "avgVolume50": 1360056,
-      "sharesOutstanding": 81291520,
-      "marketCap": 487749120,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 10,
-      "float": {
-        "shares": 81291520,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-27"
-      },
-      "floatRotation": 9.226054574942134e-7,
-      "daysUp": 0,
-      "priorRunPct": 1.0101010101010048,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Phathom Pharmaceuticals, Inc. Reports Resignation of Vice President, Finance Robert Breedlove, Effective December 4, 2026",
-        "subject": null,
-        "date": "2026-11-18"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "13.2%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "75"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.00"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "81.3M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
     {
       "symbol": "MPU",
       "name": "Mega Matrix Inc. Class A Ordinary Shares",
       "legalName": "Mega Matrix Inc",
       "business": "Services-Motion Picture & Video Tape Production",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.13,
-      "preMarketChangePct": 10.21,
-      "prevClose": 2.8400326649124397,
+      "preMarketPrice": 3.1706,
+      "preMarketChangePct": 11.64,
+      "prevClose": 2.8400214976710854,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 5:58 AM ET",
-      "preMarketVolume": 91115,
-      "preMarketDollarVolume": 285189.95,
-      "relVolume": 0.3899669588440731,
+      "lastTradeAt": "Nov 19, 2026 6:21 AM ET",
+      "preMarketVolume": 97498,
+      "preMarketDollarVolume": 309127.1588,
+      "relVolume": 0.41728583167842226,
       "avgVolume50": 233648,
       "sharesOutstanding": 34536384,
-      "marketCap": 108098881.92,
+      "marketCap": 109501059.11039999,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 52,
       "float": {
@@ -290,7 +84,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2024-12-31"
       },
-      "floatRotation": 0.002638232190144747,
+      "floatRotation": 0.0028230517705617355,
       "daysUp": 1,
       "priorRunPct": 55.73770491803278,
       "extended": true,
@@ -308,12 +102,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "10.2%"
+          "detail": "11.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "91,115"
+          "detail": "97,498"
         },
         {
           "name": "News catalyst",
@@ -323,7 +117,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.13"
+          "detail": "$3.17"
         },
         {
           "name": "Float <10M",
@@ -332,74 +126,6 @@
         }
       ],
       "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "LIMN",
-      "name": "Liminatus Pharma Inc. Class A",
-      "legalName": "Liminatus Pharma, Inc.",
-      "business": "Biological Products, (No Diagnostic Substances)",
-      "sector": "Health Care",
-      "preMarketPrice": 2.84,
-      "preMarketChangePct": 8.81,
-      "prevClose": 2.6100542229574484,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 5:30 AM ET",
-      "preMarketVolume": 310,
-      "preMarketDollarVolume": 880.4,
-      "relVolume": 0.000007750884569701518,
-      "avgVolume50": 39995435,
-      "sharesOutstanding": 67160362,
-      "marketCap": 190735428.07999998,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 87,
-      "float": {
-        "shares": 67160362,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-14"
-      },
-      "floatRotation": 0.0000046158178837690006,
-      "daysUp": 0,
-      "priorRunPct": 1.4440433212996402,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-11-18"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "8.8%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "310"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.84"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "67.2M"
-        }
-      ],
-      "passed": 2,
       "quality": "low"
     }
   ]
