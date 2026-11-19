@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-19T11:40:37.445Z",
+  "generatedAt": "2026-11-19T12:00:36.497Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-18",
-  "universeChecked": 6144,
-  "smallCapsInBand": 2959,
+  "universeChecked": 6146,
+  "smallCapsInBand": 2963,
   "investigated": 30,
-  "liveQuotes": 20,
+  "liveQuotes": 27,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-18T20:30:00.000Z",
@@ -13,8 +13,8 @@
     "edgarFilings": 0,
     "leads": {
       "8-K": 0,
-      "PR Newswire": 1,
-      "GlobeNewswire": 4,
+      "PR Newswire": 2,
+      "GlobeNewswire": 3,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -57,26 +57,163 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [],
+  "shortlist": [
+    {
+      "symbol": "NCPL",
+      "name": "Netcapital Inc.",
+      "legalName": "Netcapital Inc.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 3.26,
+      "preMarketChangePct": 12.8,
+      "prevClose": 2.890070921985815,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 19, 2026 7:02 AM ET",
+      "preMarketVolume": 396535.491644,
+      "preMarketDollarVolume": 1292705.7027594398,
+      "relVolume": 0.022767859508296146,
+      "avgVolume50": 17416459,
+      "sharesOutstanding": 7847899,
+      "marketCap": 25584150.74,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 127,
+      "float": {
+        "shares": 7847899,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-03-19"
+      },
+      "floatRotation": 0.05052759874254243,
+      "daysUp": 2,
+      "priorRunPct": 20.30456852791879,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Netcapital Inc. Corrects Auditor Engagement Status After Adeptus Partners Declines to Serve",
+        "subject": null,
+        "date": "2026-11-17"
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "12.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "396,535"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.26"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "7.8M"
+        }
+      ],
+      "passed": 5,
+      "quality": "high"
+    }
+  ],
   "watchlist": [],
   "alsoRan": [
+    {
+      "symbol": "LNZA",
+      "name": "LanzaTech Global Inc.",
+      "legalName": "LanzaTech Global, Inc.",
+      "business": "Industrial Organic Chemicals",
+      "sector": "Industrials",
+      "preMarketPrice": 2.95,
+      "preMarketChangePct": 18.473895582329313,
+      "prevClose": 2.49,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 19, 2026 7:00 AM ET",
+      "preMarketVolume": 217,
+      "preMarketDollarVolume": 640.1500000000001,
+      "relVolume": 0.0030620308178585538,
+      "avgVolume50": 70868,
+      "sharesOutstanding": 13089197,
+      "marketCap": 38613131.150000006,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 53,
+      "float": {
+        "shares": 13089197,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-10"
+      },
+      "floatRotation": 0.00001657855711087548,
+      "daysUp": 0,
+      "priorRunPct": -41.54929577464788,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "LanzaTech: 3 Key Takeaways for Long-Term Investors",
+        "subject": null,
+        "date": "2026-11-17"
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "18.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "217"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.95"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "13.1M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
     {
       "symbol": "MPU",
       "name": "Mega Matrix Inc. Class A Ordinary Shares",
       "legalName": "Mega Matrix Inc",
       "business": "Services-Motion Picture & Video Tape Production",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.2144,
-      "preMarketChangePct": 13.18,
-      "prevClose": 2.8400777522530483,
+      "preMarketPrice": 3.1997,
+      "preMarketChangePct": 12.67,
+      "prevClose": 2.839886393893672,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 6:41 AM ET",
-      "preMarketVolume": 101760,
-      "preMarketDollarVolume": 327097.344,
-      "relVolume": 0.4355269465178388,
+      "lastTradeAt": "Nov 19, 2026 7:01 AM ET",
+      "preMarketVolume": 104225.245911,
+      "preMarketDollarVolume": 333489.5193414267,
+      "relVolume": 0.4460780572099911,
       "avgVolume50": 233648,
       "sharesOutstanding": 34536384,
-      "marketCap": 111013752.7296,
+      "marketCap": 110506067.8848,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 52,
       "float": {
@@ -84,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2024-12-31"
       },
-      "floatRotation": 0.0029464578573136085,
+      "floatRotation": 0.0030178389813768575,
       "daysUp": 1,
       "priorRunPct": 55.73770491803278,
       "extended": true,
@@ -102,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "13.2%"
+          "detail": "12.7%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "101,760"
+          "detail": "104,225"
         },
         {
           "name": "News catalyst",
@@ -117,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.21"
+          "detail": "$3.20"
         },
         {
           "name": "Float <10M",
@@ -126,6 +263,210 @@
         }
       ],
       "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "FOXX",
+      "name": "Foxx Development Holdings Inc.",
+      "legalName": "Foxx Development Holdings Inc.",
+      "business": "Computer Communications Equipment",
+      "sector": "Telecommunications",
+      "preMarketPrice": 1.48,
+      "preMarketChangePct": 22.314049586776864,
+      "prevClose": 1.21,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 19, 2026 6:35 AM ET",
+      "preMarketVolume": 279,
+      "preMarketDollarVolume": 412.92,
+      "relVolume": 0.019360210949968773,
+      "avgVolume50": 14411,
+      "sharesOutstanding": 7099953,
+      "marketCap": 10507930.44,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 84,
+      "float": {
+        "shares": 7099953,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-09"
+      },
+      "floatRotation": 0.00003929603477656824,
+      "daysUp": 0,
+      "priorRunPct": -19.333333333333336,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "22.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "279"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.48"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "7.1M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "PMA",
+      "name": "PMA Graphene Technology Group Inc. Class A Ordinary Shares",
+      "legalName": "PMA Graphene Technology Group Inc.",
+      "business": "Construction - Special Trade Contractors",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.5,
+      "preMarketChangePct": 19.047619047619047,
+      "prevClose": 1.26,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 19, 2026 6:58 AM ET",
+      "preMarketVolume": 427,
+      "preMarketDollarVolume": 640.5,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 12975000,
+      "marketCap": 19462500,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 12975000,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-03-31"
+      },
+      "floatRotation": 0.000032909441233140654,
+      "daysUp": 0,
+      "priorRunPct": 1.6129032258064528,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "19.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "427"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.50"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "13.0M"
+        }
+      ],
+      "passed": 1,
+      "quality": "low"
+    },
+    {
+      "symbol": "DRIO",
+      "name": "DarioHealth Corp.",
+      "legalName": "DarioHealth Corp.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 1.6,
+      "preMarketChangePct": 9.59,
+      "prevClose": 1.4599872251117803,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 19, 2026 6:06 AM ET",
+      "preMarketVolume": 382,
+      "preMarketDollarVolume": 611.2,
+      "relVolume": 0.014647239263803681,
+      "avgVolume50": 26080,
+      "sharesOutstanding": 11287022,
+      "marketCap": 18059235.2,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 43,
+      "float": {
+        "shares": 11287022,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-12"
+      },
+      "floatRotation": 0.00003384417962505965,
+      "daysUp": 0,
+      "priorRunPct": -51.88284518828452,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "9.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "382"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.60"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "11.3M"
+        }
+      ],
+      "passed": 0,
       "quality": "low"
     }
   ]
