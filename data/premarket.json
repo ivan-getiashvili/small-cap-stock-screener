@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-19T12:40:34.120Z",
+  "generatedAt": "2026-11-19T13:00:35.786Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-18",
   "universeChecked": 6146,
   "smallCapsInBand": 2963,
-  "investigated": 31,
-  "liveQuotes": 28,
+  "investigated": 33,
+  "liveQuotes": 30,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-18T20:30:00.000Z",
-    "edgarOk": false,
+    "edgarOk": true,
     "edgarFilings": 0,
     "leads": {
       "8-K": 0,
       "PR Newswire": 1,
-      "GlobeNewswire": 5,
+      "GlobeNewswire": 7,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 31,
-    "answered": 31,
+    "requested": 33,
+    "answered": 33,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Netcapital Inc.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 3.21,
-      "preMarketChangePct": 11.07,
-      "prevClose": 2.8900693256504906,
+      "preMarketPrice": 3.24,
+      "preMarketChangePct": 12.11,
+      "prevClose": 2.8900187316028902,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 7:41 AM ET",
-      "preMarketVolume": 479038.601817,
-      "preMarketDollarVolume": 1537713.91183257,
-      "relVolume": 0.02750493667036451,
+      "lastTradeAt": "Nov 19, 2026 8:00 AM ET",
+      "preMarketVolume": 500948.02387,
+      "preMarketDollarVolume": 1623071.5973388,
+      "relVolume": 0.02876290891678957,
       "avgVolume50": 17416459,
       "sharesOutstanding": 7847899,
-      "marketCap": 25191755.79,
+      "marketCap": 25427192.76,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 127,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-19"
       },
-      "floatRotation": 0.061040362754031366,
+      "floatRotation": 0.0638321191276799,
       "daysUp": 2,
       "priorRunPct": 20.30456852791879,
       "extended": true,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "11.1%"
+          "detail": "12.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "479,039"
+          "detail": "500,948"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.21"
+          "detail": "$3.24"
         },
         {
           "name": "Float <10M",
@@ -130,39 +130,39 @@
   "watchlist": [],
   "alsoRan": [
     {
-      "symbol": "BRBR",
-      "name": "BellRing Brands Inc. Common Stock",
-      "legalName": "BELLRING BRANDS, INC.",
-      "business": "Food and Kindred Products",
-      "sector": "Consumer Staples",
-      "preMarketPrice": 13.66,
-      "preMarketChangePct": 24.012709940989556,
-      "prevClose": 11.015,
+      "symbol": "SKYA",
+      "name": "SkyAI Inc.",
+      "legalName": "SkyAI, Inc.",
+      "business": "Finance Services",
+      "sector": "Health Care",
+      "preMarketPrice": 4.13,
+      "preMarketChangePct": 90.32258064516128,
+      "prevClose": 2.17,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 19, 2026 7:33 AM ET",
-      "preMarketVolume": 2212.115075,
-      "preMarketDollarVolume": 30217.491924500002,
-      "relVolume": 0.0005838215612666686,
-      "avgVolume50": 3789026,
-      "sharesOutstanding": 116387850,
-      "marketCap": 1589858031,
+      "lastTradeAt": "Nov 19, 2026 8:00 AM ET",
+      "preMarketVolume": 179209.951429,
+      "preMarketDollarVolume": 740137.09940177,
+      "relVolume": 0.7039352644481368,
+      "avgVolume50": 254583,
+      "sharesOutstanding": 50854199,
+      "marketCap": 210027841.87,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 12,
+      "bestPriorSpikePct": 29,
       "float": {
-        "shares": 116387850,
+        "shares": 50854199,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-12"
+        "asOf": "2026-11-02"
       },
-      "floatRotation": 0.000019006408959354436,
-      "daysUp": 4,
-      "priorRunPct": 8.255528255528253,
-      "extended": true,
+      "floatRotation": 0.0035239951656499398,
+      "daysUp": 1,
+      "priorRunPct": -26.68918918918919,
+      "extended": false,
       "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "BellRing Brands Reaches Analyst Target Price",
+        "found": false,
+        "kind": null,
+        "headline": null,
         "subject": null,
-        "date": "2026-11-19"
+        "date": null
       },
       "leads": [
         "prior-session gainer"
@@ -171,27 +171,27 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "24.0%"
+          "detail": "90.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "2,212"
+          "ok": true,
+          "detail": "179,210"
         },
         {
           "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
+          "ok": false,
+          "detail": "none found"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$13.66"
+          "detail": "$4.13"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "116.4M"
+          "detail": "50.9M"
         }
       ],
       "passed": 3,
@@ -203,17 +203,17 @@
       "legalName": "Mega Matrix Inc",
       "business": "Services-Motion Picture & Video Tape Production",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.196,
-      "preMarketChangePct": 12.54,
-      "prevClose": 2.83987915407855,
+      "preMarketPrice": 3.1933,
+      "preMarketChangePct": 12.44,
+      "prevClose": 2.8400035574528633,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 7:38 AM ET",
-      "preMarketVolume": 110055.955684,
-      "preMarketDollarVolume": 351738.834366064,
-      "relVolume": 0.47103315964185444,
+      "lastTradeAt": "Nov 19, 2026 7:59 AM ET",
+      "preMarketVolume": 111662.955684,
+      "preMarketDollarVolume": 356573.3163857172,
+      "relVolume": 0.4779110272033144,
       "avgVolume50": 233648,
       "sharesOutstanding": 34536384,
-      "marketCap": 110378283.264,
+      "marketCap": 110285035.0272,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 52,
       "float": {
@@ -221,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2024-12-31"
       },
-      "floatRotation": 0.0031866670142421394,
+      "floatRotation": 0.0032331976527710604,
       "daysUp": 1,
       "priorRunPct": 55.73770491803278,
       "extended": true,
@@ -239,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "12.5%"
+          "detail": "12.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "110,056"
+          "detail": "111,663"
         },
         {
           "name": "News catalyst",
@@ -254,7 +254,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.20"
+          "detail": "$3.19"
         },
         {
           "name": "Float <10M",
@@ -271,17 +271,17 @@
       "legalName": "DarioHealth Corp.",
       "business": "Surgical & Medical Instruments & Apparatus",
       "sector": "Health Care",
-      "preMarketPrice": 1.6,
-      "preMarketChangePct": 9.59,
-      "prevClose": 1.4599872251117803,
+      "preMarketPrice": 1.65,
+      "preMarketChangePct": 13.01,
+      "prevClose": 1.4600477833820014,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 7:38 AM ET",
-      "preMarketVolume": 1411,
-      "preMarketDollarVolume": 2257.6,
-      "relVolume": 0.05410276073619632,
+      "lastTradeAt": "Nov 19, 2026 7:59 AM ET",
+      "preMarketVolume": 2323,
+      "preMarketDollarVolume": 3832.95,
+      "relVolume": 0.08907208588957055,
       "avgVolume50": 26080,
       "sharesOutstanding": 11287022,
-      "marketCap": 18059235.2,
+      "marketCap": 18623586.3,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 43,
       "float": {
@@ -289,7 +289,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-12"
       },
-      "floatRotation": 0.0001250108310234533,
+      "floatRotation": 0.0002058115949450617,
       "daysUp": 0,
       "priorRunPct": -51.88284518828452,
       "extended": false,
@@ -306,13 +306,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.6%"
+          "ok": true,
+          "detail": "13.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "1,411"
+          "detail": "2,323"
         },
         {
           "name": "News catalyst",
@@ -322,7 +322,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.60"
+          "detail": "$1.65"
         },
         {
           "name": "Float <10M",
@@ -330,7 +330,7 @@
           "detail": "11.3M"
         }
       ],
-      "passed": 0,
+      "passed": 1,
       "quality": "low"
     }
   ]
