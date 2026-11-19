@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-19T12:20:34.853Z",
+  "generatedAt": "2026-11-19T12:40:34.120Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-18",
   "universeChecked": 6146,
   "smallCapsInBand": 2963,
-  "investigated": 29,
-  "liveQuotes": 26,
+  "investigated": 31,
+  "liveQuotes": 28,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-18T20:30:00.000Z",
-    "edgarOk": true,
+    "edgarOk": false,
     "edgarFilings": 0,
     "leads": {
       "8-K": 0,
       "PR Newswire": 1,
-      "GlobeNewswire": 3,
+      "GlobeNewswire": 5,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 29,
-    "answered": 29,
+    "requested": 31,
+    "answered": 31,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Netcapital Inc.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 3.29,
-      "preMarketChangePct": 13.84,
-      "prevClose": 2.8900210822206605,
+      "preMarketPrice": 3.21,
+      "preMarketChangePct": 11.07,
+      "prevClose": 2.8900693256504906,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 7:20 AM ET",
-      "preMarketVolume": 453656.491644,
-      "preMarketDollarVolume": 1492529.85750876,
-      "relVolume": 0.026047573254930866,
+      "lastTradeAt": "Nov 19, 2026 7:41 AM ET",
+      "preMarketVolume": 479038.601817,
+      "preMarketDollarVolume": 1537713.91183257,
+      "relVolume": 0.02750493667036451,
       "avgVolume50": 17416459,
       "sharesOutstanding": 7847899,
-      "marketCap": 25819587.71,
+      "marketCap": 25191755.79,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 127,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-03-19"
       },
-      "floatRotation": 0.05780610729623304,
+      "floatRotation": 0.061040362754031366,
       "daysUp": 2,
       "priorRunPct": 20.30456852791879,
       "extended": true,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "13.8%"
+          "detail": "11.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "453,656"
+          "detail": "479,039"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.29"
+          "detail": "$3.21"
         },
         {
           "name": "Float <10M",
@@ -130,39 +130,39 @@
   "watchlist": [],
   "alsoRan": [
     {
-      "symbol": "LNZA",
-      "name": "LanzaTech Global Inc.",
-      "legalName": "LanzaTech Global, Inc.",
-      "business": "Industrial Organic Chemicals",
-      "sector": "Industrials",
-      "preMarketPrice": 2.95,
-      "preMarketChangePct": 18.473895582329313,
-      "prevClose": 2.49,
+      "symbol": "BRBR",
+      "name": "BellRing Brands Inc. Common Stock",
+      "legalName": "BELLRING BRANDS, INC.",
+      "business": "Food and Kindred Products",
+      "sector": "Consumer Staples",
+      "preMarketPrice": 13.66,
+      "preMarketChangePct": 24.012709940989556,
+      "prevClose": 11.015,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 19, 2026 7:00 AM ET",
-      "preMarketVolume": 217,
-      "preMarketDollarVolume": 640.1500000000001,
-      "relVolume": 0.0030620308178585538,
-      "avgVolume50": 70868,
-      "sharesOutstanding": 13089197,
-      "marketCap": 38613131.150000006,
+      "lastTradeAt": "Nov 19, 2026 7:33 AM ET",
+      "preMarketVolume": 2212.115075,
+      "preMarketDollarVolume": 30217.491924500002,
+      "relVolume": 0.0005838215612666686,
+      "avgVolume50": 3789026,
+      "sharesOutstanding": 116387850,
+      "marketCap": 1589858031,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 53,
+      "bestPriorSpikePct": 12,
       "float": {
-        "shares": 13089197,
+        "shares": 116387850,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-10"
+        "asOf": "2026-11-12"
       },
-      "floatRotation": 0.00001657855711087548,
-      "daysUp": 0,
-      "priorRunPct": -41.54929577464788,
-      "extended": false,
+      "floatRotation": 0.000019006408959354436,
+      "daysUp": 4,
+      "priorRunPct": 8.255528255528253,
+      "extended": true,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "LanzaTech: 3 Key Takeaways for Long-Term Investors",
+        "headline": "BellRing Brands Reaches Analyst Target Price",
         "subject": null,
-        "date": "2026-11-17"
+        "date": "2026-11-19"
       },
       "leads": [
         "prior-session gainer"
@@ -171,12 +171,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "18.5%"
+          "detail": "24.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "217"
+          "detail": "2,212"
         },
         {
           "name": "News catalyst",
@@ -186,12 +186,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.95"
+          "detail": "$13.66"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "13.1M"
+          "detail": "116.4M"
         }
       ],
       "passed": 3,
@@ -203,17 +203,17 @@
       "legalName": "Mega Matrix Inc",
       "business": "Services-Motion Picture & Video Tape Production",
       "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.2,
-      "preMarketChangePct": 12.68,
-      "prevClose": 2.8399006034788785,
+      "preMarketPrice": 3.196,
+      "preMarketChangePct": 12.54,
+      "prevClose": 2.83987915407855,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 7:20 AM ET",
-      "preMarketVolume": 105632.955684,
-      "preMarketDollarVolume": 338025.4581888,
-      "relVolume": 0.4521029740635486,
+      "lastTradeAt": "Nov 19, 2026 7:38 AM ET",
+      "preMarketVolume": 110055.955684,
+      "preMarketDollarVolume": 351738.834366064,
+      "relVolume": 0.47103315964185444,
       "avgVolume50": 233648,
       "sharesOutstanding": 34536384,
-      "marketCap": 110516428.80000001,
+      "marketCap": 110378283.264,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 52,
       "float": {
@@ -221,7 +221,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2024-12-31"
       },
-      "floatRotation": 0.00305859917714605,
+      "floatRotation": 0.0031866670142421394,
       "daysUp": 1,
       "priorRunPct": 55.73770491803278,
       "extended": true,
@@ -239,12 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "12.7%"
+          "detail": "12.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "105,633"
+          "detail": "110,056"
         },
         {
           "name": "News catalyst",
@@ -266,74 +266,6 @@
       "quality": "low"
     },
     {
-      "symbol": "PMA",
-      "name": "PMA Graphene Technology Group Inc. Class A Ordinary Shares",
-      "legalName": "PMA Graphene Technology Group Inc.",
-      "business": "Construction - Special Trade Contractors",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.5,
-      "preMarketChangePct": 19.047619047619047,
-      "prevClose": 1.26,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 19, 2026 6:58 AM ET",
-      "preMarketVolume": 427,
-      "preMarketDollarVolume": 640.5,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 12975000,
-      "marketCap": 19462500,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 12975000,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-03-31"
-      },
-      "floatRotation": 0.000032909441233140654,
-      "daysUp": 0,
-      "priorRunPct": 1.6129032258064528,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "19.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "427"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.50"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "13.0M"
-        }
-      ],
-      "passed": 1,
-      "quality": "low"
-    },
-    {
       "symbol": "DRIO",
       "name": "DarioHealth Corp.",
       "legalName": "DarioHealth Corp.",
@@ -343,10 +275,10 @@
       "preMarketChangePct": 9.59,
       "prevClose": 1.4599872251117803,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 6:06 AM ET",
-      "preMarketVolume": 382,
-      "preMarketDollarVolume": 611.2,
-      "relVolume": 0.014647239263803681,
+      "lastTradeAt": "Nov 19, 2026 7:38 AM ET",
+      "preMarketVolume": 1411,
+      "preMarketDollarVolume": 2257.6,
+      "relVolume": 0.05410276073619632,
       "avgVolume50": 26080,
       "sharesOutstanding": 11287022,
       "marketCap": 18059235.2,
@@ -357,7 +289,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-12"
       },
-      "floatRotation": 0.00003384417962505965,
+      "floatRotation": 0.0001250108310234533,
       "daysUp": 0,
       "priorRunPct": -51.88284518828452,
       "extended": false,
@@ -380,7 +312,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "382"
+          "detail": "1,411"
         },
         {
           "name": "News catalyst",
