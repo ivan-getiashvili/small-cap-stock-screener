@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-19T14:20:36.604Z",
-  "marketStatus": "After Hours",
-  "prevSession": "2026-11-18",
-  "universeChecked": 6146,
+  "generatedAt": "2026-11-20T19:01:50.624Z",
+  "marketStatus": "Market Open",
+  "prevSession": "2026-11-19",
+  "universeChecked": 6152,
   "smallCapsInBand": 2963,
-  "investigated": 99,
-  "liveQuotes": 74,
-  "feedIsLive": true,
+  "investigated": 101,
+  "liveQuotes": 100,
+  "feedIsLive": false,
   "discovery": {
-    "since": "2026-11-18T20:30:00.000Z",
+    "since": "2026-11-19T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 185,
+    "edgarFilings": 230,
     "leads": {
-      "8-K": 68,
-      "PR Newswire": 1,
-      "GlobeNewswire": 7,
-      "prior-session gainer": 25
+      "8-K": 78,
+      "PR Newswire": 0,
+      "GlobeNewswire": 4,
+      "prior-session gainer": 21
     },
     "feeds": [
       {
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 99,
-    "answered": 99,
+    "requested": 101,
+    "answered": 101,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -57,604 +57,57 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [
-    {
-      "symbol": "INHD",
-      "name": "Inno Holdings Inc.",
-      "legalName": "INNO HOLDINGS INC.",
-      "business": "Retail-Retail Stores, NEC",
-      "sector": "Industrials",
-      "preMarketPrice": 3.21,
-      "preMarketChangePct": 39.57,
-      "prevClose": 2.2999211865013973,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 9:20 AM ET",
-      "preMarketVolume": 10482032.846771,
-      "preMarketDollarVolume": 33647325.43813491,
-      "relVolume": 1.7393263486326203,
-      "avgVolume50": 6026490,
-      "sharesOutstanding": 2520581,
-      "marketCap": 8091065.01,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 263,
-      "float": {
-        "shares": 2520581,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-18"
-      },
-      "floatRotation": 4.158578060681644,
-      "daysUp": 0,
-      "priorRunPct": -6.3745019920318615,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Inno Holdings Inc. Enters Merger Agreement on November 13, 2026 to Redomicile to the British Virgin Islands",
-        "subject": "Merger or acquisition",
-        "date": "2026-11-19"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "39.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "10,482,033"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.21"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "2.5M"
-        }
-      ],
-      "passed": 5,
-      "quality": "high"
-    },
-    {
-      "symbol": "NCPL",
-      "name": "Netcapital Inc.",
-      "legalName": "Netcapital Inc.",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 3.39,
-      "preMarketChangePct": 17.3,
-      "prevClose": 2.8900255754475705,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 9:20 AM ET",
-      "preMarketVolume": 620295.02387,
-      "preMarketDollarVolume": 2102800.1309193,
-      "relVolume": 0.03561544995282911,
-      "avgVolume50": 17416459,
-      "sharesOutstanding": 7847899,
-      "marketCap": 26604377.61,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 127,
-      "float": {
-        "shares": 7847899,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-03-19"
-      },
-      "floatRotation": 0.079039628806385,
-      "daysUp": 2,
-      "priorRunPct": 20.30456852791879,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Netcapital Inc. Corrects Auditor Engagement Status After Adeptus Partners Declines to Serve",
-        "subject": null,
-        "date": "2026-11-17"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "17.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "620,295"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.39"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "7.8M"
-        }
-      ],
-      "passed": 5,
-      "quality": "high"
-    }
-  ],
-  "watchlist": [
-    {
-      "symbol": "SEAT",
-      "name": "Vivid Seats Inc. Class A",
-      "legalName": "Vivid Seats Inc.",
-      "business": "Services-Miscellaneous Amusement & Recreation",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.62,
-      "preMarketChangePct": 104.69,
-      "prevClose": 1.279984366603156,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 9:20 AM ET",
-      "preMarketVolume": 62930374.470326,
-      "preMarketDollarVolume": 164877581.1122541,
-      "relVolume": 896.8017794893404,
-      "avgVolume50": 70172,
-      "sharesOutstanding": 11458476,
-      "marketCap": 30021207.12,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 20,
-      "float": {
-        "shares": 11458476,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-31"
-      },
-      "floatRotation": 5.492037027465607,
-      "daysUp": 0,
-      "priorRunPct": -16.10738255033557,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Vivid Seats Inc. Enters into Transaction Support Agreement for Comprehensive Recapitalization",
-        "subject": "Contract or partnership",
-        "date": "2026-11-19"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "104.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "62,930,374"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.62"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "11.5M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
-      "symbol": "RTSN",
-      "name": "Retension Pharmaceuticals Inc.",
-      "legalName": "Retension Pharmaceuticals, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 13.89,
-      "preMarketChangePct": 21.7353198948291,
-      "prevClose": 11.41,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 19, 2026 8:43 AM ET",
-      "preMarketVolume": null,
-      "preMarketDollarVolume": null,
-      "relVolume": null,
-      "avgVolume50": null,
-      "sharesOutstanding": 8894547,
-      "marketCap": 123545257.83,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": null,
-      "float": {
-        "shares": 8894547,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-16"
-      },
-      "floatRotation": null,
-      "daysUp": 0,
-      "priorRunPct": -5.074875207986684,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released",
-        "subject": "Earnings / results released",
-        "date": "2026-11-18"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "21.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "unknown"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$13.89"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "8.9M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
-      "symbol": "AIFA",
-      "name": "All In FutureTech Alliance Inc.",
-      "legalName": "All In FutureTech Alliance, Inc.",
-      "business": "Services-Amusement & Recreation Services",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.32,
-      "preMarketChangePct": 13.7,
-      "prevClose": 2.9199648197009673,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 8:21 AM ET",
-      "preMarketVolume": 2786,
-      "preMarketDollarVolume": 9249.52,
-      "relVolume": 0.011830600744826766,
-      "avgVolume50": 235491,
-      "sharesOutstanding": 6420316,
-      "marketCap": 21315449.119999997,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 51,
-      "float": {
-        "shares": 6420316,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-12"
-      },
-      "floatRotation": 0.00043393502749708895,
-      "daysUp": 0,
-      "priorRunPct": -11.548913043478267,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "AIFA Signs Definitive Agreement to Acquire Little Vault, Shanglong Li to Serve as Chairman and CEO, Accelerating AI Applications and Content IP Commercialization",
-        "subject": "Merger or acquisition",
-        "date": "2026-11-19"
-      },
-      "leads": [
-        "GlobeNewswire",
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "13.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "2,786"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.32"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "6.4M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    },
-    {
-      "symbol": "BIAF",
-      "name": "bioAffinity Technologies Inc.",
-      "legalName": "bioAffinity Technologies, Inc.",
-      "business": "Services-Commercial Physical & Biological Research",
-      "sector": "Health Care",
-      "preMarketPrice": 2.15,
-      "preMarketChangePct": 11.398963730569948,
-      "prevClose": 1.93,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 19, 2026 9:13 AM ET",
-      "preMarketVolume": 1050,
-      "preMarketDollarVolume": 2257.5,
-      "relVolume": 0.00015545390021991546,
-      "avgVolume50": 6754414,
-      "sharesOutstanding": 1820006,
-      "marketCap": 3913012.9,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 98,
-      "float": {
-        "shares": 1820006,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-05"
-      },
-      "floatRotation": 0.0005769211749851374,
-      "daysUp": 0,
-      "priorRunPct": -19.246861924686197,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "bioAffinity Technologies, Inc. Reports Record Monthly Testing Volume in October 2026 for CyPath Lung",
-        "subject": null,
-        "date": "2026-11-17"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "11.4%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "1,050"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.15"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "1.8M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
+  "shortlist": [],
+  "watchlist": [],
   "alsoRan": [
     {
-      "symbol": "LIMN",
-      "name": "Liminatus Pharma Inc. Class A",
-      "legalName": "Liminatus Pharma, Inc.",
-      "business": "Biological Products, (No Diagnostic Substances)",
+      "symbol": "PYXS",
+      "name": "Pyxis Oncology Inc.",
+      "legalName": "Pyxis Oncology, Inc.",
+      "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 3,
-      "preMarketChangePct": 14.94,
-      "prevClose": 2.6100574212632677,
+      "preMarketPrice": 1.825,
+      "preMarketChangePct": 8.63,
+      "prevClose": 1.6800147288962533,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 9:06 AM ET",
-      "preMarketVolume": 7191,
-      "preMarketDollarVolume": 21573,
-      "relVolume": 0.00017979551916362456,
-      "avgVolume50": 39995435,
-      "sharesOutstanding": 67160362,
-      "marketCap": 201481086,
+      "lastTradeAt": "Nov 20, 2026 2:02 PM ET",
+      "preMarketVolume": 2279754.154649,
+      "preMarketDollarVolume": 4160551.332234425,
+      "relVolume": 1.8220148339581868,
+      "avgVolume50": 1251227,
+      "sharesOutstanding": 119607855,
+      "marketCap": 218284335.375,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 87,
+      "bestPriorSpikePct": 32,
       "float": {
-        "shares": 67160362,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-08-14"
-      },
-      "floatRotation": 0.00010707208516833188,
-      "daysUp": 0,
-      "priorRunPct": 1.4440433212996402,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-11-18"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "14.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "7,191"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.00"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "67.2M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "MPU",
-      "name": "Mega Matrix Inc. Class A Ordinary Shares",
-      "legalName": "Mega Matrix Inc",
-      "business": "Services-Motion Picture & Video Tape Production",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 3.2,
-      "preMarketChangePct": 12.68,
-      "prevClose": 2.8399006034788785,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 9:14 AM ET",
-      "preMarketVolume": 130021.955684,
-      "preMarketDollarVolume": 416070.2581888,
-      "relVolume": 0.556486491149079,
-      "avgVolume50": 233648,
-      "sharesOutstanding": 34536384,
-      "marketCap": 110516428.80000001,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 52,
-      "float": {
-        "shares": 34536384,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2024-12-31"
-      },
-      "floatRotation": 0.003764781966867174,
-      "daysUp": 1,
-      "priorRunPct": 55.73770491803278,
-      "extended": true,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "12.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "130,022"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.20"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "34.5M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "BGDE",
-      "name": "Big Digital Energy Inc.",
-      "legalName": "Big Digital Energy, Inc.",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 2.78,
-      "preMarketChangePct": 9.019607843137255,
-      "prevClose": 2.55,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 19, 2026 8:48 AM ET",
-      "preMarketVolume": 41,
-      "preMarketDollarVolume": 113.97999999999999,
-      "relVolume": 0.0005595130871475749,
-      "avgVolume50": 73278,
-      "sharesOutstanding": 6419242,
-      "marketCap": 17845492.759999998,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 33,
-      "float": {
-        "shares": 6419242,
+        "shares": 119607855,
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-04"
       },
-      "floatRotation": 0.000006387046944171913,
+      "floatRotation": 0.019060237763222156,
       "daysUp": 0,
-      "priorRunPct": -20.31250000000001,
+      "priorRunPct": -14.024390243902438,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Mawson Infrastructure Group Inc. Announces CFO William Regan to Step Down Effective January 4, 2027",
-        "subject": null,
+        "headline": "Pyxis Oncology Announces Updated MICVO Phase 1 Monotherapy Data in 2L+ R/M HNSCC",
+        "subject": "FDA / clinical",
         "date": "2026-11-19"
       },
       "leads": [
-        "8-K"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.0%"
+          "detail": "8.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "41"
+          "ok": true,
+          "detail": "2,279,754"
         },
         {
           "name": "News catalyst",
@@ -663,188 +116,52 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.78"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "6.4M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "PAL",
-      "name": "Proficient Auto Logistics Inc.",
-      "legalName": "Proficient Auto Logistics, Inc",
-      "business": "Transportation Services",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.96,
-      "preMarketChangePct": 18.875502008032115,
-      "prevClose": 2.49,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 19, 2026 8:32 AM ET",
-      "preMarketVolume": 3178,
-      "preMarketDollarVolume": 9406.88,
-      "relVolume": 0.0063391378932040774,
-      "avgVolume50": 501330,
-      "sharesOutstanding": 28063881,
-      "marketCap": 83069087.76,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 30,
-      "float": {
-        "shares": 28063881,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-09"
-      },
-      "floatRotation": 0.00011324164323530306,
-      "daysUp": 0,
-      "priorRunPct": -22.910216718266245,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "18.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "3,178"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.96"
+          "detail": "$1.82"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "28.1M"
+          "detail": "119.6M"
         }
       ],
       "passed": 2,
       "quality": "low"
     },
     {
-      "symbol": "POAS",
-      "name": "Phaos Technology Holdings (Cayman) Limited Class A Ordinary Shares",
-      "legalName": "PHAOS TECHNOLOGY HOLDINGS (CAYMAN) Ltd",
-      "business": "Industrial Instruments For Measurement, Display, and Control",
-      "sector": "Industrials",
-      "preMarketPrice": 2.5079,
-      "preMarketChangePct": 9.995614035087721,
-      "prevClose": 2.28,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 19, 2026 9:19 AM ET",
-      "preMarketVolume": 10154.466506,
-      "preMarketDollarVolume": 25466.3865503974,
-      "relVolume": 0.03607654992006253,
-      "avgVolume50": 281470,
-      "sharesOutstanding": 2104800,
-      "marketCap": 5278627.92,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 33,
-      "float": {
-        "shares": 2104800,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-19"
-      },
-      "floatRotation": 0.004824432965602433,
-      "daysUp": 0,
-      "priorRunPct": 212.32876712328763,
-      "extended": true,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "10.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "10,154"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.51"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "2.1M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "SLXN",
-      "name": "Silexion Therapeutics Corp Ordinary Shares",
-      "legalName": "Silexion Therapeutics Corp",
-      "business": "Biological Products, (No Diagnostic Substances)",
-      "sector": "Health Care",
-      "preMarketPrice": 1.58,
-      "preMarketChangePct": 9.72,
-      "prevClose": 1.4400291651476487,
+      "symbol": "MRDN",
+      "name": "Meridian Holdings Inc.",
+      "legalName": "Meridian Holdings Inc./NV",
+      "business": "Services-Prepackaged Software",
+      "sector": "Technology",
+      "preMarketPrice": 4,
+      "preMarketChangePct": 6.38,
+      "prevClose": 3.7601052829479222,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 9:10 AM ET",
-      "preMarketVolume": 4074,
-      "preMarketDollarVolume": 6436.92,
-      "relVolume": 0.0014930761069341548,
-      "avgVolume50": 2728595,
-      "sharesOutstanding": 649528,
-      "marketCap": 1026254.24,
+      "lastTradeAt": "Nov 20, 2026 2:01 PM ET",
+      "preMarketVolume": 45230.926948,
+      "preMarketDollarVolume": 180923.707792,
+      "relVolume": 0.6089902917384749,
+      "avgVolume50": 74272,
+      "sharesOutstanding": 12684547,
+      "marketCap": 50738188,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 97,
+      "bestPriorSpikePct": 24,
       "float": {
-        "shares": 649528,
+        "shares": 12684547,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-12"
+        "asOf": "2026-11-10"
       },
-      "floatRotation": 0.006272246923920139,
-      "daysUp": 0,
-      "priorRunPct": 1399.9999999999998,
-      "extended": true,
+      "floatRotation": 0.0035658291106493594,
+      "daysUp": 1,
+      "priorRunPct": -33.43848580441641,
+      "extended": false,
       "catalyst": {
         "found": true,
         "kind": "8-K",
-        "headline": "Other material event (often FDA, clinical or contract news)",
-        "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-11-19"
+        "headline": "Shareholder vote results",
+        "subject": "Shareholder vote results",
+        "date": "2026-11-20"
       },
       "leads": [
         "8-K"
@@ -853,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.7%"
+          "detail": "6.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "4,074"
+          "detail": "45,231"
         },
         {
           "name": "News catalyst",
@@ -867,188 +184,48 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.58"
+          "ok": true,
+          "detail": "$4.00"
         },
         {
           "name": "Float <10M",
-          "ok": true,
-          "detail": "0.6M"
+          "ok": false,
+          "detail": "12.7M"
         }
       ],
       "passed": 2,
       "quality": "low"
     },
     {
-      "symbol": "ENVX",
-      "name": "Enovix Corporation",
-      "legalName": "Enovix Corp",
-      "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
-      "sector": "Miscellaneous",
-      "preMarketPrice": 1.48,
-      "preMarketChangePct": 8.029197080291961,
-      "prevClose": 1.37,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 19, 2026 9:20 AM ET",
-      "preMarketVolume": 334804.746571,
-      "preMarketDollarVolume": 495511.02492508,
-      "relVolume": 0.04693696440621937,
-      "avgVolume50": 7133072,
-      "sharesOutstanding": 212206365,
-      "marketCap": 314065420.2,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 15,
-      "float": {
-        "shares": 212206365,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-06"
-      },
-      "floatRotation": 0.0015777318770386554,
-      "daysUp": 0,
-      "priorRunPct": -48.1060606060606,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Enovix Corporation Announces Warrant Distribution with $3.00 Exercise Price",
-        "subject": "Share offering (dilution)",
-        "date": "2026-11-19"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "8.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "334,805"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.48"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "212.2M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "ANGO",
-      "name": "AngioDynamics Inc.",
-      "legalName": "ANGIODYNAMICS INC",
-      "business": "Surgical & Medical Instruments & Apparatus",
-      "sector": "Health Care",
-      "preMarketPrice": 12.3,
-      "preMarketChangePct": 7.049608355091388,
-      "prevClose": 11.49,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 19, 2026 8:48 AM ET",
-      "preMarketVolume": 14,
-      "preMarketDollarVolume": 172.20000000000002,
-      "relVolume": 0.00003073430848903553,
-      "avgVolume50": 455517,
-      "sharesOutstanding": 42054450,
-      "marketCap": 517269735.00000006,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 11,
-      "float": {
-        "shares": 42054450,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-07"
-      },
-      "floatRotation": 3.329017499931636e-7,
-      "daysUp": 0,
-      "priorRunPct": -4.8053024026512015,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "AngioDynamics, Inc. Shareholders Approve Amended 2020 Equity Incentive Plan at November 17, 2026 Annual Meeting",
-        "subject": null,
-        "date": "2026-11-19"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "14"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$12.30"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "42.1M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "IE",
-      "name": "Ivanhoe Electric Inc.",
-      "legalName": "Ivanhoe Electric Inc.",
-      "business": "Metal Mining",
-      "sector": "Basic Materials",
-      "preMarketPrice": 6.28,
-      "preMarketChangePct": 5.02,
-      "prevClose": 5.979813368882118,
+      "symbol": "TDACU",
+      "name": "Translational Development Acquisition Corp. Units",
+      "legalName": "Translational Development Acquisition Corp.",
+      "business": "Blank Checks",
+      "sector": null,
+      "preMarketPrice": 12.4,
+      "preMarketChangePct": 5.98,
+      "prevClose": 11.70032081524816,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 9:10 AM ET",
-      "preMarketVolume": 2136.236951,
-      "preMarketDollarVolume": 13415.56805228,
-      "relVolume": 0.0010503187240829658,
-      "avgVolume50": 2033894,
-      "sharesOutstanding": 159626671,
-      "marketCap": 1002455493.88,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 16,
-      "float": {
-        "shares": 159626671,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-05"
-      },
-      "floatRotation": 0.00001338270689739561,
+      "lastTradeAt": "Nov 20, 2026 2:01 PM ET",
+      "preMarketVolume": 4360,
+      "preMarketDollarVolume": 54064,
+      "relVolume": 1.808378266279552,
+      "avgVolume50": 2411,
+      "sharesOutstanding": null,
+      "marketCap": null,
+      "floatPctOfShares": null,
+      "bestPriorSpikePct": 66,
+      "float": null,
+      "floatRotation": null,
       "daysUp": 0,
-      "priorRunPct": -17.658600392413337,
+      "priorRunPct": 0,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "news",
-        "headline": "Ivanhoe Electric Inc. Reports Initial Drill Results from Gleeson Copper-Gold Project",
-        "subject": "Earnings or guidance",
-        "date": "2026-11-19"
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract)",
+        "subject": "Entered a material agreement (deal, partnership or contract)",
+        "date": "2026-11-20"
       },
       "leads": [
         "8-K"
@@ -1057,100 +234,31 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.0%"
+          "detail": "6.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "2,136"
+          "detail": "4,360"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "news"
+          "detail": "8-K"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.28"
+          "detail": "$12.40"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "159.6M"
+          "detail": "unknown"
         }
       ],
       "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "DRIO",
-      "name": "DarioHealth Corp.",
-      "legalName": "DarioHealth Corp.",
-      "business": "Surgical & Medical Instruments & Apparatus",
-      "sector": "Health Care",
-      "preMarketPrice": 1.8,
-      "preMarketChangePct": 23.29,
-      "prevClose": 1.459972422743126,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 19, 2026 9:16 AM ET",
-      "preMarketVolume": 4153,
-      "preMarketDollarVolume": 7475.400000000001,
-      "relVolume": 0.15924079754601228,
-      "avgVolume50": 26080,
-      "sharesOutstanding": 11287022,
-      "marketCap": 20316639.6,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 43,
-      "float": {
-        "shares": 11287022,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-12"
-      },
-      "floatRotation": 0.00036794470676144693,
-      "daysUp": 0,
-      "priorRunPct": -51.88284518828452,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "23.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "4,153"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.80"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "11.3M"
-        }
-      ],
-      "passed": 1,
       "quality": "low"
     }
-  ],
-  "frozenAfterPreMarket": true
+  ]
 }
