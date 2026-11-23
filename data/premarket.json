@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-23T11:40:42.480Z",
+  "generatedAt": "2026-11-23T12:00:34.844Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-20",
-  "universeChecked": 6152,
-  "smallCapsInBand": 2955,
-  "investigated": 92,
-  "liveQuotes": 47,
+  "universeChecked": 6155,
+  "smallCapsInBand": 2967,
+  "investigated": 78,
+  "liveQuotes": 43,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-20T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 171,
+    "edgarFilings": 175,
     "leads": {
-      "8-K": 65,
-      "PR Newswire": 2,
+      "8-K": 66,
+      "PR Newswire": 3,
       "GlobeNewswire": 4,
-      "prior-session gainer": 25
+      "prior-session gainer": 9
     },
     "feeds": [
       {
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 92,
-    "answered": 92,
+    "requested": 78,
+    "answered": 78,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -61,32 +61,100 @@
   "watchlist": [],
   "alsoRan": [
     {
-      "symbol": "NCPL",
-      "name": "Netcapital Inc.",
-      "legalName": "Netcapital Inc.",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 3.0836,
-      "preMarketChangePct": 12.54,
-      "prevClose": 2.7400035542918078,
+      "symbol": "NKLR",
+      "name": "Terra Innovatum Global N.V. Ordinary shares",
+      "legalName": "Terra Innovatum Global N.V.",
+      "business": "Fabricated Plate Work (Boiler Shops)",
+      "sector": "Industrials",
+      "preMarketPrice": 2.23,
+      "preMarketChangePct": 10.95,
+      "prevClose": 2.0099143758449753,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 23, 2026 6:39 AM ET",
-      "preMarketVolume": 40132.937868,
-      "preMarketDollarVolume": 123753.9272097648,
-      "relVolume": 0.0023043109892774416,
-      "avgVolume50": 17416459,
-      "sharesOutstanding": 7847899,
-      "marketCap": 24199781.3564,
+      "lastTradeAt": "Nov 23, 2026 7:00 AM ET",
+      "preMarketVolume": 66,
+      "preMarketDollarVolume": 147.18,
+      "relVolume": 0.00019024613814752148,
+      "avgVolume50": 346919,
+      "sharesOutstanding": 110559045,
+      "marketCap": 246546670.35,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 127,
+      "bestPriorSpikePct": 21,
       "float": {
-        "shares": 7847899,
+        "shares": 110559045,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-03-19"
+        "asOf": "2026-11-13"
       },
-      "floatRotation": 0.00511384484790133,
-      "daysUp": 4,
-      "priorRunPct": 90.28571428571429,
+      "floatRotation": 5.969660826936412e-7,
+      "daysUp": 2,
+      "priorRunPct": -2.192982456140343,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Shareholder vote results",
+        "subject": "Shareholder vote results",
+        "date": "2026-11-20"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "10.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "66"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.23"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "110.6M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "STAK",
+      "name": "STAK Inc. Class A Ordinary Shares",
+      "legalName": "STAK Inc.",
+      "business": "Oil & Gas Field Machinery & Equipment",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 2.1,
+      "preMarketChangePct": 10.53,
+      "prevClose": 1.8999366687777075,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 23, 2026 7:00 AM ET",
+      "preMarketVolume": 121124,
+      "preMarketDollarVolume": 254360.40000000002,
+      "relVolume": 0.025313752048367066,
+      "avgVolume50": 4784909,
+      "sharesOutstanding": 19210349,
+      "marketCap": 40341732.9,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 149,
+      "float": {
+        "shares": 19210349,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-06-30"
+      },
+      "floatRotation": 0.006305143128841647,
+      "daysUp": 5,
+      "priorRunPct": 33.99339933993399,
       "extended": true,
       "catalyst": {
         "found": false,
@@ -102,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "12.5%"
+          "detail": "10.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "40,133"
+          "ok": true,
+          "detail": "121,124"
         },
         {
           "name": "News catalyst",
@@ -117,12 +185,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.08"
+          "detail": "$2.10"
         },
         {
           "name": "Float <10M",
-          "ok": true,
-          "detail": "7.8M"
+          "ok": false,
+          "detail": "19.2M"
         }
       ],
       "passed": 3,
@@ -134,17 +202,17 @@
       "legalName": "American Bitcoin Corp.",
       "business": "Finance Services",
       "sector": "Finance",
-      "preMarketPrice": 3.8,
-      "preMarketChangePct": 8.57,
-      "prevClose": 3.500046053237542,
+      "preMarketPrice": 3.8185,
+      "preMarketChangePct": 9.1,
+      "prevClose": 3.5,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 23, 2026 6:38 AM ET",
-      "preMarketVolume": 9994.573299,
-      "preMarketDollarVolume": 37979.3785362,
-      "relVolume": 0.002994169373567261,
+      "lastTradeAt": "Nov 23, 2026 7:00 AM ET",
+      "preMarketVolume": 12335.622907,
+      "preMarketDollarVolume": 47103.5760703795,
+      "relVolume": 0.003695499868484595,
       "avgVolume50": 3338012,
       "sharesOutstanding": 82802406,
-      "marketCap": 314649142.8,
+      "marketCap": 316180987.311,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 19,
       "float": {
@@ -152,7 +220,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-08-14"
       },
-      "floatRotation": 0.00012070389958233821,
+      "floatRotation": 0.00014897662402466906,
       "daysUp": 0,
       "priorRunPct": -23.96039603960396,
       "extended": false,
@@ -172,12 +240,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.6%"
+          "detail": "9.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "9,995"
+          "detail": "12,336"
         },
         {
           "name": "News catalyst",
@@ -187,80 +255,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.80"
+          "detail": "$3.82"
         },
         {
           "name": "Float <10M",
           "ok": false,
           "detail": "82.8M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "AIIO",
-      "name": "Robo.ai Inc. Class B Ordinary Shares",
-      "legalName": "ROBO.AI INC.",
-      "business": "Motor Vehicles & Passenger Car Bodies",
-      "sector": "Industrials",
-      "preMarketPrice": 5.035,
-      "preMarketChangePct": 8.28,
-      "prevClose": 4.649981529368304,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 23, 2026 6:40 AM ET",
-      "preMarketVolume": 965,
-      "preMarketDollarVolume": 4858.775000000001,
-      "relVolume": 0.0011126792393655537,
-      "avgVolume50": 867276,
-      "sharesOutstanding": 9447379.95991984,
-      "marketCap": 47567558.098196395,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 116,
-      "float": {
-        "shares": 9447379.95991984,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-23"
-      },
-      "floatRotation": 0.00010214472203870034,
-      "daysUp": 1,
-      "priorRunPct": -15.280135823429534,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "8.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "965"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$5.04"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "9.4M"
         }
       ],
       "passed": 2,
@@ -344,10 +344,10 @@
       "preMarketChangePct": 7.109004739336489,
       "prevClose": 2.11,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 23, 2026 6:12 AM ET",
-      "preMarketVolume": 388,
-      "preMarketDollarVolume": 876.8799999999999,
-      "relVolume": 0.000046085921499284305,
+      "lastTradeAt": "Nov 23, 2026 6:52 AM ET",
+      "preMarketVolume": 408,
+      "preMarketDollarVolume": 922.0799999999999,
+      "relVolume": 0.000048461484463164934,
       "avgVolume50": 8419057,
       "sharesOutstanding": 26370521,
       "marketCap": 59597377.45999999,
@@ -358,7 +358,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-07-13"
       },
-      "floatRotation": 0.000014713399101974511,
+      "floatRotation": 0.00001547182173609691,
       "daysUp": 0,
       "priorRunPct": -17.578125000000007,
       "extended": false,
@@ -381,7 +381,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "388"
+          "detail": "408"
         },
         {
           "name": "News catalyst",
@@ -675,68 +675,68 @@
       "quality": "low"
     },
     {
-      "symbol": "SHMD",
-      "name": "SCHMID Group N.V. Class A Ordinary Shares",
-      "legalName": "SCHMID Group N.V.",
-      "business": "Misc Industrial & Commercial Machinery & Equipment",
-      "sector": "Technology",
-      "preMarketPrice": 1.69,
-      "preMarketChangePct": 7.64,
-      "prevClose": 1.5700483091787438,
+      "symbol": "ACRV",
+      "name": "Acrivon Therapeutics Inc.",
+      "legalName": "Acrivon Therapeutics, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 1.246,
+      "preMarketChangePct": 8.35,
+      "prevClose": 1.1499769266266728,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 23, 2026 5:53 AM ET",
-      "preMarketVolume": 221,
-      "preMarketDollarVolume": 373.49,
-      "relVolume": 0.0003391292205091849,
-      "avgVolume50": 651669,
-      "sharesOutstanding": 43062427,
-      "marketCap": 72775501.63,
+      "lastTradeAt": "Nov 23, 2026 7:00 AM ET",
+      "preMarketVolume": 2097,
+      "preMarketDollarVolume": 2612.862,
+      "relVolume": 0.005359922502217326,
+      "avgVolume50": 391237,
+      "sharesOutstanding": 42911680,
+      "marketCap": 53467953.28,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
-        "shares": 43062427,
+        "shares": 42911680,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
+        "asOf": "2026-11-10"
       },
-      "floatRotation": 0.000005132084171660831,
+      "floatRotation": 0.00004886781407765904,
       "daysUp": 0,
-      "priorRunPct": -23.529411764705877,
+      "priorRunPct": -4.109589041095894,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "news",
-        "headline": "SCHMID Launches QuantumLine P+ for Void-Free Bottom-Up Copper Filling of Through-Glass Vias",
-        "subject": "Hot-sector announcement",
-        "date": "2026-11-23"
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-11-20"
       },
       "leads": [
-        "GlobeNewswire"
+        "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.6%"
+          "detail": "8.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "221"
+          "detail": "2,097"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "news"
+          "detail": "8-K"
         },
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.69"
+          "detail": "$1.25"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "43.1M"
+          "detail": "42.9M"
         }
       ],
       "passed": 1,
