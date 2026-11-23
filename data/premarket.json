@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-23T12:00:34.844Z",
+  "generatedAt": "2026-11-23T12:20:38.217Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-20",
-  "universeChecked": 6155,
+  "universeChecked": 6154,
   "smallCapsInBand": 2967,
-  "investigated": 78,
-  "liveQuotes": 43,
+  "investigated": 89,
+  "liveQuotes": 50,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-20T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 175,
+    "edgarFilings": 186,
     "leads": {
-      "8-K": 66,
-      "PR Newswire": 3,
-      "GlobeNewswire": 4,
+      "8-K": 73,
+      "PR Newswire": 1,
+      "GlobeNewswire": 9,
       "prior-session gainer": 9
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 78,
-    "answered": 78,
+    "requested": 89,
+    "answered": 89,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -58,8 +58,350 @@
     "floatStretch": 20000000
   },
   "shortlist": [],
-  "watchlist": [],
+  "watchlist": [
+    {
+      "symbol": "FRMI",
+      "name": "Fermi Inc.",
+      "legalName": "Fermi Inc.",
+      "business": "Real Estate Investment Trusts",
+      "sector": "Real Estate",
+      "preMarketPrice": 2.1538,
+      "preMarketChangePct": 10.45,
+      "prevClose": 1.950022634676324,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 23, 2026 7:20 AM ET",
+      "preMarketVolume": 441459.105502,
+      "preMarketDollarVolume": 950814.6214302076,
+      "relVolume": 0.023733686780396772,
+      "avgVolume50": 18600528,
+      "sharesOutstanding": 646953440,
+      "marketCap": 1393408319.072,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 25,
+      "float": {
+        "shares": 646953440,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-05"
+      },
+      "floatRotation": 0.0006823661150978655,
+      "daysUp": 0,
+      "priorRunPct": 0,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-11-23"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "10.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "441,459"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.15"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "647.0M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
   "alsoRan": [
+    {
+      "symbol": "STAK",
+      "name": "STAK Inc. Class A Ordinary Shares",
+      "legalName": "STAK Inc.",
+      "business": "Oil & Gas Field Machinery & Equipment",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 2.2,
+      "preMarketChangePct": 15.79,
+      "prevClose": 1.8999913636756198,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 23, 2026 7:20 AM ET",
+      "preMarketVolume": 180853,
+      "preMarketDollarVolume": 397876.60000000003,
+      "relVolume": 0.03779653907733668,
+      "avgVolume50": 4784909,
+      "sharesOutstanding": 19210349,
+      "marketCap": 42262767.800000004,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 149,
+      "float": {
+        "shares": 19210349,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-06-30"
+      },
+      "floatRotation": 0.009414352649189247,
+      "daysUp": 5,
+      "priorRunPct": 33.99339933993399,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "15.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "180,853"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.20"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "19.2M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "RLMD",
+      "name": "Relmada Therapeutics Inc.",
+      "legalName": "RELMADA THERAPEUTICS, INC.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 2.99,
+      "preMarketChangePct": 14.12,
+      "prevClose": 2.620049071153172,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 23, 2026 4:07 AM ET",
+      "preMarketVolume": 6,
+      "preMarketDollarVolume": 17.94,
+      "relVolume": 0.000004291655162646578,
+      "avgVolume50": 1398062,
+      "sharesOutstanding": 106694846,
+      "marketCap": 319017589.54,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 61,
+      "float": {
+        "shares": 106694846,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-10"
+      },
+      "floatRotation": 5.623514372943563e-8,
+      "daysUp": 1,
+      "priorRunPct": -25.24038461538462,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Relmada Therapeutics to Participate at the Piper Sandler 38th Annual Healthcare Conference",
+        "subject": null,
+        "date": "2026-11-23"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "14.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "6"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.99"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "106.7M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "HUCK",
+      "name": "Huckleberry.ai Inc. Class B",
+      "legalName": "Huckleberry.ai, Inc.",
+      "business": "Services-Prepackaged Software",
+      "sector": "Technology",
+      "preMarketPrice": 3.443,
+      "preMarketChangePct": 12.89,
+      "prevClose": 3.049871556382319,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 23, 2026 4:00 AM ET",
+      "preMarketVolume": 7,
+      "preMarketDollarVolume": 24.101,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 47036160.98360656,
+      "marketCap": 161945502.2665574,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 47036160.98360656,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-23"
+      },
+      "floatRotation": 1.4882166940536874e-7,
+      "daysUp": 0,
+      "priorRunPct": -5.621301775147928,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Regulation FD disclosure (company announcement)",
+        "subject": "Regulation FD disclosure (company announcement)",
+        "date": "2026-11-23"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "12.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "7"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.44"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "47.0M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "ABTC",
+      "name": "American Bitcoin Corp. Class A",
+      "legalName": "American Bitcoin Corp.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 3.8836,
+      "preMarketChangePct": 10.96,
+      "prevClose": 3.5,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 23, 2026 7:20 AM ET",
+      "preMarketVolume": 15117.622907,
+      "preMarketDollarVolume": 58710.800321625204,
+      "relVolume": 0.00452893006585956,
+      "avgVolume50": 3338012,
+      "sharesOutstanding": 82802406,
+      "marketCap": 321571423.9416,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 19,
+      "float": {
+        "shares": 82802406,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-08-14"
+      },
+      "floatRotation": 0.00018257468154971246,
+      "daysUp": 0,
+      "priorRunPct": -23.96039603960396,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "American Bitcoin Secures $150 Million Credit Facility with FalconX to Support Strategic Growth",
+        "subject": "Hot-sector announcement",
+        "date": "2026-11-23"
+      },
+      "leads": [
+        "PR Newswire",
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "11.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "15,118"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.88"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "82.8M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
     {
       "symbol": "NKLR",
       "name": "Terra Innovatum Global N.V. Ordinary shares",
@@ -129,123 +471,53 @@
       "quality": "low"
     },
     {
-      "symbol": "STAK",
-      "name": "STAK Inc. Class A Ordinary Shares",
-      "legalName": "STAK Inc.",
-      "business": "Oil & Gas Field Machinery & Equipment",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.1,
-      "preMarketChangePct": 10.53,
-      "prevClose": 1.8999366687777075,
+      "symbol": "UNCY",
+      "name": "Unicycive Therapeutics Inc.",
+      "legalName": "Unicycive Therapeutics, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 3.59,
+      "preMarketChangePct": 7.16,
+      "prevClose": 3.350130645763344,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 23, 2026 7:00 AM ET",
-      "preMarketVolume": 121124,
-      "preMarketDollarVolume": 254360.40000000002,
-      "relVolume": 0.025313752048367066,
-      "avgVolume50": 4784909,
-      "sharesOutstanding": 19210349,
-      "marketCap": 40341732.9,
+      "lastTradeAt": "Nov 23, 2026 5:08 AM ET",
+      "preMarketVolume": 12,
+      "preMarketDollarVolume": 43.08,
+      "relVolume": 0.000013031282680013596,
+      "avgVolume50": 920861,
+      "sharesOutstanding": 29184509,
+      "marketCap": 104772387.31,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 149,
+      "bestPriorSpikePct": 15,
       "float": {
-        "shares": 19210349,
+        "shares": 29184509,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-06-30"
+        "asOf": "2026-11-16"
       },
-      "floatRotation": 0.006305143128841647,
-      "daysUp": 5,
-      "priorRunPct": 33.99339933993399,
-      "extended": true,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.5%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "121,124"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.10"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "19.2M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "ABTC",
-      "name": "American Bitcoin Corp. Class A",
-      "legalName": "American Bitcoin Corp.",
-      "business": "Finance Services",
-      "sector": "Finance",
-      "preMarketPrice": 3.8185,
-      "preMarketChangePct": 9.1,
-      "prevClose": 3.5,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 23, 2026 7:00 AM ET",
-      "preMarketVolume": 12335.622907,
-      "preMarketDollarVolume": 47103.5760703795,
-      "relVolume": 0.003695499868484595,
-      "avgVolume50": 3338012,
-      "sharesOutstanding": 82802406,
-      "marketCap": 316180987.311,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 19,
-      "float": {
-        "shares": 82802406,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-08-14"
-      },
-      "floatRotation": 0.00014897662402466906,
+      "floatRotation": 4.1117703916142633e-7,
       "daysUp": 0,
-      "priorRunPct": -23.96039603960396,
+      "priorRunPct": -3.021978021978031,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "American Bitcoin Secures $150 Million Credit Facility with FalconX to Support Strategic Growth",
-        "subject": "Hot-sector announcement",
+        "headline": "Unicycive Therapeutics to Present at the Piper Sandler 38th Annual Healthcare Conference",
+        "subject": null,
         "date": "2026-11-23"
       },
       "leads": [
-        "PR Newswire",
-        "PR Newswire",
-        "8-K"
+        "GlobeNewswire"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "9.1%"
+          "detail": "7.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "12,336"
+          "detail": "12"
         },
         {
           "name": "News catalyst",
@@ -255,80 +527,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.82"
+          "detail": "$3.59"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "82.8M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "AIMD",
-      "name": "Ainos Inc.",
-      "legalName": "Ainos, Inc.",
-      "business": "Computer Peripheral Equipment, NEC",
-      "sector": "Technology",
-      "preMarketPrice": 1.2689,
-      "preMarketChangePct": 7.53,
-      "prevClose": 1.1800427787594159,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 23, 2026 6:30 AM ET",
-      "preMarketVolume": 5862,
-      "preMarketDollarVolume": 7438.2918,
-      "relVolume": 0.05372953749702113,
-      "avgVolume50": 109102,
-      "sharesOutstanding": 7565590,
-      "marketCap": 9599977.150999999,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 107,
-      "float": {
-        "shares": 7565590,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-16"
-      },
-      "floatRotation": 0.0007748239066616086,
-      "daysUp": 0,
-      "priorRunPct": 4.7169811320754755,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Delisting notice or listing-rule failure",
-        "subject": "Delisting notice or listing-rule failure",
-        "date": "2026-11-20"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.5%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "5,862"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.27"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "7.6M"
+          "detail": "29.2M"
         }
       ],
       "passed": 2,
@@ -397,74 +601,6 @@
           "name": "Float <10M",
           "ok": false,
           "detail": "26.4M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "SUNE",
-      "name": "SUNation Energy Inc.",
-      "legalName": "SUNation Energy, Inc.",
-      "business": "Semiconductors & Related Devices",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 1.83,
-      "preMarketChangePct": 7.02,
-      "prevClose": 1.7099607549990656,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 23, 2026 5:52 AM ET",
-      "preMarketVolume": 851,
-      "preMarketDollarVolume": 1557.3300000000002,
-      "relVolume": 0.00015065191918330018,
-      "avgVolume50": 5648783,
-      "sharesOutstanding": 6513108,
-      "marketCap": 11918987.64,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 90,
-      "float": {
-        "shares": 6513108,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-10"
-      },
-      "floatRotation": 0.0001306595867902083,
-      "daysUp": 0,
-      "priorRunPct": -2.5641025641025665,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Earnings / results released",
-        "subject": "Earnings / results released",
-        "date": "2026-11-20"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "7.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "851"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.83"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "6.5M"
         }
       ],
       "passed": 2,
@@ -607,139 +743,72 @@
       "quality": "low"
     },
     {
-      "symbol": "SNTI",
-      "name": "Senti Biosciences Holdings Inc.",
-      "legalName": "Senti Biosciences Holdings, Inc.",
-      "business": "Biological Products, (No Diagnostic Substances)",
-      "sector": "Health Care",
-      "preMarketPrice": 1.93,
-      "preMarketChangePct": 9.04,
-      "prevClose": 1.7699926632428467,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 23, 2026 6:14 AM ET",
-      "preMarketVolume": 4,
-      "preMarketDollarVolume": 7.72,
-      "relVolume": 0.000014673460478868383,
-      "avgVolume50": 272601,
-      "sharesOutstanding": 85706263,
-      "marketCap": 165413087.59,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 24,
-      "float": {
-        "shares": 85706263,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-10-30"
-      },
-      "floatRotation": 4.66710349977574e-8,
-      "daysUp": 1,
-      "priorRunPct": 1797.9591836734694,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Changed auditors",
-        "subject": "Changed auditors",
-        "date": "2026-11-20"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "4"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.93"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "85.7M"
-        }
-      ],
-      "passed": 1,
-      "quality": "low"
-    },
-    {
-      "symbol": "ACRV",
-      "name": "Acrivon Therapeutics Inc.",
-      "legalName": "Acrivon Therapeutics, Inc.",
+      "symbol": "TNXP",
+      "name": "Tonix Pharmaceuticals Holding Corp.",
+      "legalName": "Tonix Pharmaceuticals Holding Corp.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 1.246,
-      "preMarketChangePct": 8.35,
-      "prevClose": 1.1499769266266728,
+      "preMarketPrice": 2.5,
+      "preMarketChangePct": 5.04,
+      "prevClose": 2.38004569687738,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 23, 2026 7:00 AM ET",
-      "preMarketVolume": 2097,
-      "preMarketDollarVolume": 2612.862,
-      "relVolume": 0.005359922502217326,
-      "avgVolume50": 391237,
-      "sharesOutstanding": 42911680,
-      "marketCap": 53467953.28,
+      "lastTradeAt": "Nov 23, 2026 7:20 AM ET",
+      "preMarketVolume": 8795,
+      "preMarketDollarVolume": 21987.5,
+      "relVolume": 0.018371678162456186,
+      "avgVolume50": 478726,
+      "sharesOutstanding": 19431516,
+      "marketCap": 48578790,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 31,
+      "bestPriorSpikePct": 15,
       "float": {
-        "shares": 42911680,
+        "shares": 19431516,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-10"
+        "asOf": "2026-11-06"
       },
-      "floatRotation": 0.00004886781407765904,
+      "floatRotation": 0.00045261522569829346,
       "daysUp": 0,
-      "priorRunPct": -4.109589041095894,
+      "priorRunPct": -21.29629629629631,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Regulation FD disclosure (company announcement)",
-        "subject": "Regulation FD disclosure (company announcement)",
-        "date": "2026-11-20"
+        "kind": "news",
+        "headline": "Tonix Pharmaceuticals Secures Third Major Commercial Payer Agreement for TONMYA®, Expanding Total Coverage to Approximately 190 Million Covered Lives (61% of Total U.S. Lives)",
+        "subject": "Contract or partnership",
+        "date": "2026-11-23"
       },
       "leads": [
+        "GlobeNewswire",
         "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "8.3%"
+          "detail": "5.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "2,097"
+          "detail": "8,795"
         },
         {
           "name": "News catalyst",
           "ok": true,
-          "detail": "8-K"
+          "detail": "news"
         },
         {
           "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.25"
+          "ok": true,
+          "detail": "$2.50"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "42.9M"
+          "detail": "19.4M"
         }
       ],
-      "passed": 1,
+      "passed": 2,
       "quality": "low"
     }
   ]
