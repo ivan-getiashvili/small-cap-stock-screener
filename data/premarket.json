@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-24T11:00:37.645Z",
+  "generatedAt": "2026-11-24T11:20:35.044Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-23",
   "universeChecked": 6154,
   "smallCapsInBand": 2960,
-  "investigated": 55,
-  "liveQuotes": 25,
+  "investigated": 63,
+  "liveQuotes": 31,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-23T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 128,
+    "edgarFilings": 143,
     "leads": {
-      "8-K": 41,
+      "8-K": 47,
       "PR Newswire": 0,
-      "GlobeNewswire": 1,
+      "GlobeNewswire": 3,
       "prior-session gainer": 13
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 55,
-    "answered": 55,
+    "requested": 63,
+    "answered": 63,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -57,7 +57,76 @@
     "floatIdeal": 10000000,
     "floatStretch": 20000000
   },
-  "shortlist": [],
+  "shortlist": [
+    {
+      "symbol": "APUS",
+      "name": "Apimeds Pharmaceuticals US Inc.",
+      "legalName": "Apimeds Pharmaceuticals US, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 2.0591,
+      "preMarketChangePct": 37.27,
+      "prevClose": 1.5000364245647264,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 24, 2026 6:20 AM ET",
+      "preMarketVolume": 3365358.771258,
+      "preMarketDollarVolume": 6929610.245897347,
+      "relVolume": 26.723194461051026,
+      "avgVolume50": 125934,
+      "sharesOutstanding": 1847626,
+      "marketCap": 3804446.6966,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 60,
+      "float": {
+        "shares": 1847626,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-16"
+      },
+      "floatRotation": 1.8214502130073942,
+      "daysUp": 0,
+      "priorRunPct": -27.631578947368418,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-11-24"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "37.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "3,365,359"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.06"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "1.8M"
+        }
+      ],
+      "passed": 5,
+      "quality": "high"
+    }
+  ],
   "watchlist": [
     {
       "symbol": "AKAN",
@@ -65,17 +134,17 @@
       "legalName": "AKANDA CORP.",
       "business": "Communications Services, NEC",
       "sector": "Health Care",
-      "preMarketPrice": 3.45,
-      "preMarketChangePct": 33.72,
-      "prevClose": 2.5800179479509424,
+      "preMarketPrice": 3.4569,
+      "preMarketChangePct": 33.99,
+      "prevClose": 2.579968654377192,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 24, 2026 6:00 AM ET",
-      "preMarketVolume": 2551846.428393,
-      "preMarketDollarVolume": 8803870.17795585,
-      "relVolume": 2.040871412079295,
+      "lastTradeAt": "Nov 24, 2026 6:20 AM ET",
+      "preMarketVolume": 2622624.428393,
+      "preMarketDollarVolume": 9066150.386511762,
+      "relVolume": 2.0974770115373755,
       "avgVolume50": 1250371,
       "sharesOutstanding": 1983546,
-      "marketCap": 6843233.7,
+      "marketCap": 6856920.167400001,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 214,
       "float": {
@@ -83,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 1.2865073098345083,
+      "floatRotation": 1.3221898702591217,
       "daysUp": 1,
       "priorRunPct": 211.02941176470588,
       "extended": true,
@@ -101,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "33.7%"
+          "detail": "34.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "2,551,846"
+          "detail": "2,622,624"
         },
         {
           "name": "News catalyst",
@@ -116,7 +185,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.45"
+          "detail": "$3.46"
         },
         {
           "name": "Float <10M",
@@ -128,22 +197,90 @@
       "quality": "medium"
     },
     {
+      "symbol": "MEDS",
+      "name": "DataMeds AI Inc.",
+      "legalName": "DataMeds AI, Inc.",
+      "business": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
+      "sector": "Health Care",
+      "preMarketPrice": 1.66,
+      "preMarketChangePct": 23.88059701492536,
+      "prevClose": 1.34,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 24, 2026 6:20 AM ET",
+      "preMarketVolume": 495983.647416,
+      "preMarketDollarVolume": 823332.85471056,
+      "relVolume": 1.5286575645339753,
+      "avgVolume50": 324457,
+      "sharesOutstanding": 5724857,
+      "marketCap": 9503262.62,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 30,
+      "float": {
+        "shares": 5724857,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-13"
+      },
+      "floatRotation": 0.0866368622685248,
+      "daysUp": 1,
+      "priorRunPct": 80.13173813684637,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Healthcare Stocks In Focus: PTHS +34%, KYMR +31%, MEDS +31%, CRVO +26%; CUE Rebounds ",
+        "subject": null,
+        "date": "2026-11-23"
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "23.9%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "495,984"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.66"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "5.7M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
       "symbol": "FLNC",
       "name": "Fluence Energy Inc. Class A",
       "legalName": "Fluence Energy, Inc.",
       "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
       "sector": "Miscellaneous",
-      "preMarketPrice": 4.43,
-      "preMarketChangePct": 16.58,
-      "prevClose": 3.7999656887973923,
+      "preMarketPrice": 4.37,
+      "preMarketChangePct": 15,
+      "prevClose": 3.8000000000000003,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 24, 2026 6:00 AM ET",
-      "preMarketVolume": 920786.935113,
-      "preMarketDollarVolume": 4079086.1225505895,
-      "relVolume": 0.12406138311178334,
+      "lastTradeAt": "Nov 24, 2026 6:20 AM ET",
+      "preMarketVolume": 1038689.138041,
+      "preMarketDollarVolume": 4539071.53323917,
+      "relVolume": 0.139946828277639,
       "avgVolume50": 7422027,
       "sharesOutstanding": 184596369.0751445,
-      "marketCap": 817761915.0028901,
+      "marketCap": 806686132.8583815,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 44,
       "float": {
@@ -151,7 +288,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-24"
       },
-      "floatRotation": 0.0049881096780304,
+      "floatRotation": 0.005626812397475575,
       "daysUp": 0,
       "priorRunPct": -26.068376068376065,
       "extended": false,
@@ -169,12 +306,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "16.6%"
+          "detail": "15.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "920,787"
+          "detail": "1,038,689"
         },
         {
           "name": "News catalyst",
@@ -184,7 +321,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.43"
+          "detail": "$4.37"
         },
         {
           "name": "Float <10M",
@@ -203,17 +340,17 @@
       "legalName": "Maison Solutions Inc.",
       "business": "Retail-Grocery Stores",
       "sector": "Consumer Staples",
-      "preMarketPrice": 1.38,
-      "preMarketChangePct": 15,
+      "preMarketPrice": 1.4016,
+      "preMarketChangePct": 16.8,
       "prevClose": 1.2,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 24, 2026 5:58 AM ET",
-      "preMarketVolume": 1432982.843354,
-      "preMarketDollarVolume": 1977516.3238285198,
-      "relVolume": 0.33109332654210355,
+      "lastTradeAt": "Nov 24, 2026 6:18 AM ET",
+      "preMarketVolume": 1456781.843354,
+      "preMarketDollarVolume": 2041825.4316449664,
+      "relVolume": 0.3365921293469805,
       "avgVolume50": 4328033,
       "sharesOutstanding": 17450476,
-      "marketCap": 24081656.88,
+      "marketCap": 24458587.161599997,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 20,
       "float": {
@@ -221,7 +358,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2024-08-06"
       },
-      "floatRotation": 0.08211712066501796,
+      "floatRotation": 0.08348092300485098,
       "daysUp": 1,
       "priorRunPct": 20.547945205479465,
       "extended": false,
@@ -239,12 +376,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "15.0%"
+          "detail": "16.8%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,432,983"
+          "detail": "1,456,782"
         },
         {
           "name": "News catalyst",
@@ -254,7 +391,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.38"
+          "detail": "$1.40"
         },
         {
           "name": "Float <10M",
@@ -263,6 +400,142 @@
         }
       ],
       "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "XMAX",
+      "name": "XMAX Inc.",
+      "legalName": "XMax Inc.",
+      "business": "Services-Computer Programming, Data Processing, Etc.",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 6.67,
+      "preMarketChangePct": 10.981697171381034,
+      "prevClose": 6.01,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 24, 2026 6:12 AM ET",
+      "preMarketVolume": 306.497207,
+      "preMarketDollarVolume": 2044.33637069,
+      "relVolume": 0.00045864208831447123,
+      "avgVolume50": 668271,
+      "sharesOutstanding": 64875626,
+      "marketCap": 432720425.42,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 6,
+      "float": {
+        "shares": 64875626,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-11"
+      },
+      "floatRotation": 0.0000047243814957562026,
+      "daysUp": 1,
+      "priorRunPct": 1.8644067796610073,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt)",
+        "date": "2026-11-23"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "11.0%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "306"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$6.67"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "64.9M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "OBAI",
+      "name": "Our Bond Inc.",
+      "legalName": "Our Bond, Inc.",
+      "business": "Communications Services, NEC",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.1389,
+      "preMarketChangePct": 7.44,
+      "prevClose": 1.0600335070737155,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 24, 2026 6:16 AM ET",
+      "preMarketVolume": 4606,
+      "preMarketDollarVolume": 5245.7734,
+      "relVolume": 0.002286911577055415,
+      "avgVolume50": 2014070,
+      "sharesOutstanding": 1910192,
+      "marketCap": 2175517.6688,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 108,
+      "float": {
+        "shares": 1910192,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-13"
+      },
+      "floatRotation": 0.00241127593456574,
+      "daysUp": 0,
+      "priorRunPct": -27.878787878787882,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Amended the charter or bylaws",
+        "subject": "Amended the charter or bylaws",
+        "date": "2026-11-23"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "4,606"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.14"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "1.9M"
+        }
+      ],
+      "passed": 2,
       "quality": "low"
     },
     {
