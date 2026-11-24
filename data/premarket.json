@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-24T13:20:47.447Z",
+  "generatedAt": "2026-11-24T13:40:35.463Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-23",
   "universeChecked": 6190,
   "smallCapsInBand": 2967,
-  "investigated": 85,
-  "liveQuotes": 59,
+  "investigated": 88,
+  "liveQuotes": 69,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-23T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 174,
+    "edgarFilings": 166,
     "leads": {
-      "8-K": 56,
-      "PR Newswire": 0,
-      "GlobeNewswire": 5,
+      "8-K": 54,
+      "PR Newswire": 1,
+      "GlobeNewswire": 9,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 85,
-    "answered": 85,
+    "requested": 88,
+    "answered": 88,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -65,17 +65,17 @@
       "legalName": "Apimeds Pharmaceuticals US, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 1.984,
-      "preMarketChangePct": 32.27,
-      "prevClose": 1.4999621985333031,
+      "preMarketPrice": 1.98,
+      "preMarketChangePct": 32,
+      "prevClose": 1.5,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 24, 2026 8:20 AM ET",
-      "preMarketVolume": 5059750.771258,
-      "preMarketDollarVolume": 10038545.530175872,
-      "relVolume": 40.177797665904365,
+      "lastTradeAt": "Nov 24, 2026 8:40 AM ET",
+      "preMarketVolume": 5215709.771258,
+      "preMarketDollarVolume": 10327105.34709084,
+      "relVolume": 41.416216202598186,
       "avgVolume50": 125934,
       "sharesOutstanding": 1847626,
-      "marketCap": 3665689.984,
+      "marketCap": 3658299.48,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 60,
       "float": {
@@ -83,7 +83,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-16"
       },
-      "floatRotation": 2.73851459724966,
+      "floatRotation": 2.822925078591663,
       "daysUp": 0,
       "priorRunPct": -27.631578947368418,
       "extended": false,
@@ -101,12 +101,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "32.3%"
+          "detail": "32.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "5,059,751"
+          "detail": "5,215,710"
         },
         {
           "name": "News catalyst",
@@ -133,17 +133,17 @@
       "legalName": "Fluence Energy, Inc.",
       "business": "Miscellaneous Electrical Machinery, Equipment & Supplies",
       "sector": "Miscellaneous",
-      "preMarketPrice": 4.5115,
-      "preMarketChangePct": 18.72,
-      "prevClose": 3.8001179245283017,
+      "preMarketPrice": 4.6805,
+      "preMarketChangePct": 23.17,
+      "prevClose": 3.800032475440448,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 24, 2026 8:20 AM ET",
-      "preMarketVolume": 1959067.536536,
-      "preMarketDollarVolume": 8838333.191082163,
-      "relVolume": 0.2639531675829258,
+      "lastTradeAt": "Nov 24, 2026 8:40 AM ET",
+      "preMarketVolume": 3132759.841442,
+      "preMarketDollarVolume": 14662882.437869282,
+      "relVolume": 0.4220895237166343,
       "avgVolume50": 7422027,
       "sharesOutstanding": 184596368.94736844,
-      "marketCap": 832806518.5060527,
+      "marketCap": 864003304.8581581,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 44,
       "float": {
@@ -151,7 +151,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-24"
       },
-      "floatRotation": 0.010612708948216438,
+      "floatRotation": 0.016970863832837378,
       "daysUp": 0,
       "priorRunPct": -26.068376068376065,
       "extended": false,
@@ -169,12 +169,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "18.7%"
+          "detail": "23.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,959,068"
+          "detail": "3,132,760"
         },
         {
           "name": "News catalyst",
@@ -184,7 +184,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.51"
+          "detail": "$4.68"
         },
         {
           "name": "Float <10M",
@@ -194,111 +194,43 @@
       ],
       "passed": 4,
       "quality": "medium"
-    },
-    {
-      "symbol": "CUE",
-      "name": "Cue Biopharma Inc.",
-      "legalName": "Cue Biopharma, Inc.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 6.0516,
-      "preMarketChangePct": 5.25,
-      "prevClose": 5.7497387173396675,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 24, 2026 8:20 AM ET",
-      "preMarketVolume": 79095.465358,
-      "preMarketDollarVolume": 478654.1181604728,
-      "relVolume": 0.4507506217865793,
-      "avgVolume50": 175475,
-      "sharesOutstanding": 8359523,
-      "marketCap": 50588489.3868,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 106,
-      "float": {
-        "shares": 8359523,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-13"
-      },
-      "floatRotation": 0.009461719928038957,
-      "daysUp": 0,
-      "priorRunPct": -74.25558312655087,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Healthcare Stocks In Focus: PTHS +34%, KYMR +31%, MEDS +31%, CRVO +26%; CUE Rebounds ",
-        "subject": null,
-        "date": "2026-11-23"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "79,095"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.05"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "8.4M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
     }
   ],
   "alsoRan": [
     {
-      "symbol": "XMAX",
-      "name": "XMAX Inc.",
-      "legalName": "XMax Inc.",
-      "business": "Services-Computer Programming, Data Processing, Etc.",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 6.67,
-      "preMarketChangePct": 10.981697171381034,
-      "prevClose": 6.01,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 24, 2026 6:12 AM ET",
-      "preMarketVolume": 306.497207,
-      "preMarketDollarVolume": 2044.33637069,
-      "relVolume": 0.00045864208831447123,
-      "avgVolume50": 668271,
-      "sharesOutstanding": 64875626,
-      "marketCap": 432720425.42,
+      "symbol": "EMBC",
+      "name": "Embecta Corp.",
+      "legalName": "Embecta Corp.",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 6.5,
+      "preMarketChangePct": 13.14,
+      "prevClose": 5.7450945730952805,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 24, 2026 8:37 AM ET",
+      "preMarketVolume": 33474,
+      "preMarketDollarVolume": 217581,
+      "relVolume": 0.02207919329220995,
+      "avgVolume50": 1516088,
+      "sharesOutstanding": 56659599,
+      "marketCap": 368287393.5,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 6,
+      "bestPriorSpikePct": 26,
       "float": {
-        "shares": 64875626,
+        "shares": 56659599,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-11"
+        "asOf": "2026-07-31"
       },
-      "floatRotation": 0.0000047243814957562026,
-      "daysUp": 1,
-      "priorRunPct": 1.8644067796610073,
+      "floatRotation": 0.0005907913326389762,
+      "daysUp": 0,
+      "priorRunPct": -6.81114551083592,
       "extended": false,
       "catalyst": {
         "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Took on a material financial obligation (debt)",
-        "date": "2026-11-23"
+        "kind": "news",
+        "headline": "Embecta Corp. Announces Increase In Q4 Bottom Line ",
+        "subject": null,
+        "date": "2026-11-24"
       },
       "leads": [
         "8-K"
@@ -307,80 +239,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "11.0%"
+          "detail": "13.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "306"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.67"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "64.9M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "NTHI",
-      "name": "NeOnc Technologies Holdings Inc.",
-      "legalName": "NEONC TECHNOLOGIES HOLDINGS, INC.",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 3.66,
-      "preMarketChangePct": 10.91,
-      "prevClose": 3.299972951041385,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 24, 2026 8:15 AM ET",
-      "preMarketVolume": 2081.385081,
-      "preMarketDollarVolume": 7617.86939646,
-      "relVolume": 0.011791414317034619,
-      "avgVolume50": 176517,
-      "sharesOutstanding": 28850588,
-      "marketCap": 105593152.08,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 31,
-      "float": {
-        "shares": 28850588,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-05"
-      },
-      "floatRotation": 0.00007214359308725353,
-      "daysUp": 0,
-      "priorRunPct": -35.84521384928717,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "NeOnc Announces FDA Agreement on Single Study Design and Accelerated Approval Pathway for NEO212",
-        "subject": "FDA / clinical",
-        "date": "2026-11-24"
-      },
-      "leads": [
-        "GlobeNewswire"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.9%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "2,081"
+          "detail": "33,474"
         },
         {
           "name": "News catalyst",
@@ -390,12 +254,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.66"
+          "detail": "$6.50"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "28.9M"
+          "detail": "56.7M"
         }
       ],
       "passed": 3,
@@ -470,74 +334,6 @@
       "quality": "low"
     },
     {
-      "symbol": "EMBC",
-      "name": "Embecta Corp.",
-      "legalName": "Embecta Corp.",
-      "business": "Surgical & Medical Instruments & Apparatus",
-      "sector": "Health Care",
-      "preMarketPrice": 6.28,
-      "preMarketChangePct": 9.31,
-      "prevClose": 5.745128533528497,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 24, 2026 8:20 AM ET",
-      "preMarketVolume": 28822,
-      "preMarketDollarVolume": 181002.16,
-      "relVolume": 0.01901076982338756,
-      "avgVolume50": 1516088,
-      "sharesOutstanding": 56659599,
-      "marketCap": 355822281.72,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 26,
-      "float": {
-        "shares": 56659599,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-31"
-      },
-      "floatRotation": 0.0005086869746466084,
-      "daysUp": 0,
-      "priorRunPct": -6.81114551083592,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Embecta Corp. Announces Increase In Q4 Bottom Line ",
-        "subject": null,
-        "date": "2026-11-24"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.3%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "28,822"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$6.28"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "56.7M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
       "symbol": "GMRS",
       "name": "GMR Solutions Inc. Class A",
       "legalName": "GMR Solutions Inc.",
@@ -606,53 +402,121 @@
       "quality": "low"
     },
     {
-      "symbol": "ALTG",
-      "name": "Alta Equipment Group Inc. Class A",
-      "legalName": "ALTA EQUIPMENT GROUP INC.",
-      "business": "Wholesale-Industrial Machinery & Equipment",
+      "symbol": "AIIO",
+      "name": "Robo.ai Inc. Class B Ordinary Shares",
+      "legalName": "ROBO.AI INC.",
+      "business": "Motor Vehicles & Passenger Car Bodies",
       "sector": "Industrials",
-      "preMarketPrice": 4.85,
-      "preMarketChangePct": 5.21,
-      "prevClose": 4.609827963121376,
+      "preMarketPrice": 6.21,
+      "preMarketChangePct": 7.44,
+      "prevClose": 5.779970215934475,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 24, 2026 8:00 AM ET",
-      "preMarketVolume": 3493.02004,
-      "preMarketDollarVolume": 16941.147193999997,
-      "relVolume": 0.02065189395641429,
-      "avgVolume50": 169138,
-      "sharesOutstanding": 32833236,
-      "marketCap": 159241194.6,
+      "lastTradeAt": "Nov 24, 2026 8:40 AM ET",
+      "preMarketVolume": 2690,
+      "preMarketDollarVolume": 16704.9,
+      "relVolume": 0.0031016654444490565,
+      "avgVolume50": 867276,
+      "sharesOutstanding": 9447379.930795847,
+      "marketCap": 58668229.37024221,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 11,
+      "bestPriorSpikePct": 116,
       "float": {
-        "shares": 32833236,
+        "shares": 9447379.930795847,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-05"
+        "asOf": "2026-11-24"
       },
-      "floatRotation": 0.0001063867125372595,
+      "floatRotation": 0.00028473502915145224,
       "daysUp": 0,
-      "priorRunPct": -18.878504672897193,
+      "priorRunPct": -13.002806361085115,
       "extended": false,
       "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Alta Equipment Group Inc. to Acquire Jackson Group Peterbilt for $272.5 Million and Secures $338.4 Million PIPE Financing",
-        "subject": "Merger or acquisition",
-        "date": "2026-11-23"
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
       },
       "leads": [
-        "8-K"
+        "prior-session gainer"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.2%"
+          "detail": "7.4%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "3,493"
+          "detail": "2,690"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$6.21"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "9.4M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "IMXI",
+      "name": "International Money Express Inc.",
+      "legalName": "International Money Express, Inc.",
+      "business": "Services-Business Services, NEC",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 5.43,
+      "preMarketChangePct": 6.68,
+      "prevClose": 5.089988751406074,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 24, 2026 8:39 AM ET",
+      "preMarketVolume": 34148,
+      "preMarketDollarVolume": 185423.63999999998,
+      "relVolume": 0.06525660821574353,
+      "avgVolume50": 523288,
+      "sharesOutstanding": 30219586,
+      "marketCap": 164092351.98,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 25,
+      "float": {
+        "shares": 30219586,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-04"
+      },
+      "floatRotation": 0.0011299956260155252,
+      "daysUp": 1,
+      "priorRunPct": -12.082670906200315,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Intermex Commences Litigation in Delaware Court of Chancery to Enforce Merger Agreement with Western Union",
+        "subject": "Merger or acquisition",
+        "date": "2026-11-24"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "34,148"
         },
         {
           "name": "News catalyst",
@@ -662,12 +526,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$4.85"
+          "detail": "$5.43"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "32.8M"
+          "detail": "30.2M"
         }
       ],
       "passed": 2,
@@ -683,10 +547,10 @@
       "preMarketChangePct": 5.69,
       "prevClose": 1.2300123001230012,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 24, 2026 8:20 AM ET",
-      "preMarketVolume": 19885,
-      "preMarketDollarVolume": 25850.5,
-      "relVolume": 0.035760465128825795,
+      "lastTradeAt": "Nov 24, 2026 8:32 AM ET",
+      "preMarketVolume": 19962,
+      "preMarketDollarVolume": 25950.600000000002,
+      "relVolume": 0.03589893914516573,
       "avgVolume50": 556061,
       "sharesOutstanding": 90203356,
       "marketCap": 117264362.8,
@@ -697,7 +561,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-12"
       },
-      "floatRotation": 0.00022044634348194317,
+      "floatRotation": 0.0002212999702583128,
       "daysUp": 2,
       "priorRunPct": 12.871287128712861,
       "extended": true,
@@ -720,7 +584,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "19,885"
+          "detail": "19,962"
         },
         {
           "name": "News catalyst",
