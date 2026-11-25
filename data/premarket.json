@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-25T11:00:36.470Z",
+  "generatedAt": "2026-11-25T11:20:36.762Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-24",
   "universeChecked": 6190,
   "smallCapsInBand": 2977,
-  "investigated": 69,
-  "liveQuotes": 33,
+  "investigated": 72,
+  "liveQuotes": 37,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-24T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 155,
+    "edgarFilings": 172,
     "leads": {
-      "8-K": 43,
+      "8-K": 45,
       "PR Newswire": 2,
-      "GlobeNewswire": 1,
+      "GlobeNewswire": 2,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 69,
-    "answered": 69,
+    "requested": 72,
+    "answered": 72,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Brand Engagement Network Inc.",
       "business": "Services-Computer Integrated Systems Design",
       "sector": "Technology",
-      "preMarketPrice": 8.1605,
-      "preMarketChangePct": 22.71,
-      "prevClose": 6.650232254909951,
+      "preMarketPrice": 8.22,
+      "preMarketChangePct": 23.61,
+      "prevClose": 6.649947415257666,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 25, 2026 6:00 AM ET",
-      "preMarketVolume": 1124849.354805,
-      "preMarketDollarVolume": 9179333.159886202,
-      "relVolume": 7.604289764303049,
+      "lastTradeAt": "Nov 25, 2026 6:20 AM ET",
+      "preMarketVolume": 1275216.354805,
+      "preMarketDollarVolume": 10482278.4364971,
+      "relVolume": 8.620811873778925,
       "avgVolume50": 147923,
       "sharesOutstanding": 7654882,
-      "marketCap": 62467664.561000004,
+      "marketCap": 62923130.04000001,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 277,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-16"
       },
-      "floatRotation": 0.14694535523931002,
+      "floatRotation": 0.16658863648126776,
       "daysUp": 2,
       "priorRunPct": 92.1259842519685,
       "extended": true,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "22.7%"
+          "detail": "23.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,124,849"
+          "detail": "1,275,216"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.16"
+          "detail": "$8.22"
         },
         {
           "name": "Float <10M",
@@ -129,74 +129,6 @@
   ],
   "watchlist": [],
   "alsoRan": [
-    {
-      "symbol": "ITP",
-      "name": "IT Tech Packaging Inc.",
-      "legalName": "IT TECH PACKAGING, INC.",
-      "business": "Converted Paper & Paperboard Prods (No Contaners/Boxes)",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.8265,
-      "preMarketChangePct": 18.76,
-      "prevClose": 2.3800101044122597,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 25, 2026 5:56 AM ET",
-      "preMarketVolume": 10771,
-      "preMarketDollarVolume": 30444.231499999998,
-      "relVolume": 0.020903928486866875,
-      "avgVolume50": 515262,
-      "sharesOutstanding": 19965420,
-      "marketCap": 56432259.629999995,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 39,
-      "float": {
-        "shares": 19965420,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-19"
-      },
-      "floatRotation": 0.0005394827657018986,
-      "daysUp": 1,
-      "priorRunPct": 5136.156351791531,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "IT Tech Packaging, Inc. Effectuates 1-for-40 Reverse Stock Split",
-        "subject": "Stock split",
-        "date": "2026-11-23"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "18.8%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "10,771"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.83"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "20.0M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
     {
       "symbol": "NTHI",
       "name": "NeOnc Technologies Holdings Inc.",
@@ -263,6 +195,74 @@
         }
       ],
       "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "ITP",
+      "name": "IT Tech Packaging Inc.",
+      "legalName": "IT TECH PACKAGING, INC.",
+      "business": "Converted Paper & Paperboard Prods (No Contaners/Boxes)",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 2.61,
+      "preMarketChangePct": 9.66,
+      "prevClose": 2.3800838956775485,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 25, 2026 6:20 AM ET",
+      "preMarketVolume": 15738,
+      "preMarketDollarVolume": 41076.18,
+      "relVolume": 0.030543684572120592,
+      "avgVolume50": 515262,
+      "sharesOutstanding": 19965420,
+      "marketCap": 52109746.199999996,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 39,
+      "float": {
+        "shares": 19965420,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-19"
+      },
+      "floatRotation": 0.0007882629065654517,
+      "daysUp": 1,
+      "priorRunPct": 5136.156351791531,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "IT Tech Packaging, Inc. Effectuates 1-for-40 Reverse Stock Split",
+        "subject": "Stock split",
+        "date": "2026-11-23"
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "9.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "15,738"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.61"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "20.0M"
+        }
+      ],
+      "passed": 2,
       "quality": "low"
     }
   ]
