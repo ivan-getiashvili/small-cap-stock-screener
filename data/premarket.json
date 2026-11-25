@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-25T11:20:36.762Z",
+  "generatedAt": "2026-11-25T11:40:35.604Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-24",
   "universeChecked": 6190,
   "smallCapsInBand": 2977,
-  "investigated": 72,
-  "liveQuotes": 37,
+  "investigated": 71,
+  "liveQuotes": 38,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-24T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 172,
+    "edgarFilings": 175,
     "leads": {
-      "8-K": 45,
-      "PR Newswire": 2,
-      "GlobeNewswire": 2,
+      "8-K": 46,
+      "PR Newswire": 1,
+      "GlobeNewswire": 1,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 72,
-    "answered": 72,
+    "requested": 71,
+    "answered": 71,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Brand Engagement Network Inc.",
       "business": "Services-Computer Integrated Systems Design",
       "sector": "Technology",
-      "preMarketPrice": 8.22,
-      "preMarketChangePct": 23.61,
-      "prevClose": 6.649947415257666,
+      "preMarketPrice": 8.2509,
+      "preMarketChangePct": 24.07,
+      "prevClose": 6.65019746917063,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 25, 2026 6:20 AM ET",
-      "preMarketVolume": 1275216.354805,
-      "preMarketDollarVolume": 10482278.4364971,
-      "relVolume": 8.620811873778925,
+      "lastTradeAt": "Nov 25, 2026 6:40 AM ET",
+      "preMarketVolume": 1365633.304488,
+      "preMarketDollarVolume": 11267703.83200004,
+      "relVolume": 9.232055221216443,
       "avgVolume50": 147923,
       "sharesOutstanding": 7654882,
-      "marketCap": 62923130.04000001,
+      "marketCap": 63159665.8938,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 277,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-16"
       },
-      "floatRotation": 0.16658863648126776,
+      "floatRotation": 0.17840030773668358,
       "daysUp": 2,
       "priorRunPct": 92.1259842519685,
       "extended": true,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "23.6%"
+          "detail": "24.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,275,216"
+          "detail": "1,365,633"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.22"
+          "detail": "$8.25"
         },
         {
           "name": "Float <10M",
