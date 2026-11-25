@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-25T12:00:35.331Z",
+  "generatedAt": "2026-11-25T12:20:35.244Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-24",
   "universeChecked": 6190,
   "smallCapsInBand": 2980,
-  "investigated": 74,
-  "liveQuotes": 47,
+  "investigated": 78,
+  "liveQuotes": 48,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-24T20:30:00.000Z",
@@ -14,7 +14,7 @@
     "leads": {
       "8-K": 47,
       "PR Newswire": 1,
-      "GlobeNewswire": 1,
+      "GlobeNewswire": 5,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 74,
-    "answered": 74,
+    "requested": 78,
+    "answered": 78,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Apimeds Pharmaceuticals US, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 2.8,
-      "preMarketChangePct": 21.21,
-      "prevClose": 2.3100404257074496,
+      "preMarketPrice": 2.7606,
+      "preMarketChangePct": 19.51,
+      "prevClose": 2.3099322232449166,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 25, 2026 7:00 AM ET",
-      "preMarketVolume": 818622.652382,
-      "preMarketDollarVolume": 2292143.4266696,
-      "relVolume": 6.500410154382454,
+      "lastTradeAt": "Nov 25, 2026 7:20 AM ET",
+      "preMarketVolume": 1181747.652382,
+      "preMarketDollarVolume": 3262332.569165749,
+      "relVolume": 9.383864979925992,
       "avgVolume50": 125934,
       "sharesOutstanding": 1847626,
-      "marketCap": 5173352.8,
+      "marketCap": 5100556.3356,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 60,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-16"
       },
-      "floatRotation": 0.44306729412879015,
+      "floatRotation": 0.6396032813902813,
       "daysUp": 0,
       "priorRunPct": -27.142857142857146,
       "extended": false,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "21.2%"
+          "detail": "19.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "818,623"
+          "detail": "1,181,748"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.80"
+          "detail": "$2.76"
         },
         {
           "name": "Float <10M",
@@ -134,17 +134,17 @@
       "legalName": "AKANDA CORP.",
       "business": "Communications Services, NEC",
       "sector": "Health Care",
-      "preMarketPrice": 5.53,
-      "preMarketChangePct": 6.35,
-      "prevClose": 5.199811941701928,
+      "preMarketPrice": 5.682,
+      "preMarketChangePct": 9.27,
+      "prevClose": 5.199963393429121,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 25, 2026 7:00 AM ET",
-      "preMarketVolume": 1836790.934633,
-      "preMarketDollarVolume": 10157453.86852049,
-      "relVolume": 1.468996749471157,
+      "lastTradeAt": "Nov 25, 2026 7:20 AM ET",
+      "preMarketVolume": 2501389.032405,
+      "preMarketDollarVolume": 14212892.482125212,
+      "relVolume": 2.00051747233821,
       "avgVolume50": 1250371,
       "sharesOutstanding": 1983546,
-      "marketCap": 10969009.38,
+      "marketCap": 11270508.372000001,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 214,
       "float": {
@@ -152,7 +152,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2025-12-31"
       },
-      "floatRotation": 0.9260137827068291,
+      "floatRotation": 1.2610693336101104,
       "daysUp": 0,
       "priorRunPct": 16.742081447963805,
       "extended": false,
@@ -170,12 +170,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "6.3%"
+          "detail": "9.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,836,791"
+          "detail": "2,501,389"
         },
         {
           "name": "News catalyst",
@@ -185,7 +185,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$5.53"
+          "detail": "$5.68"
         },
         {
           "name": "Float <10M",
@@ -267,22 +267,90 @@
       "quality": "low"
     },
     {
+      "symbol": "IMDX",
+      "name": "Insight Molecular Diagnostics Inc.",
+      "legalName": "Insight Molecular Diagnostics Inc.",
+      "business": "In Vitro & In Vivo Diagnostic Substances",
+      "sector": "Health Care",
+      "preMarketPrice": 2.25,
+      "preMarketChangePct": 13.06532663316583,
+      "prevClose": 1.99,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 25, 2026 7:00 AM ET",
+      "preMarketVolume": 20,
+      "preMarketDollarVolume": 45,
+      "relVolume": 0.00010296487353339408,
+      "avgVolume50": 194241,
+      "sharesOutstanding": 32757434,
+      "marketCap": 73704226.5,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 29,
+      "float": {
+        "shares": 32757434,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-02"
+      },
+      "floatRotation": 6.105484330671322e-7,
+      "daysUp": 3,
+      "priorRunPct": 6.989247311827951,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Insight Molecular Diagnostics CFO Andrea James To Take Additional COO Role ",
+        "subject": null,
+        "date": "2026-11-25"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "13.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "20"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$2.25"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "32.8M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "NTHI",
       "name": "NeOnc Technologies Holdings Inc.",
       "legalName": "NEONC TECHNOLOGIES HOLDINGS, INC.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 3.5924,
-      "preMarketChangePct": 12.61,
-      "prevClose": 3.1901252109048928,
+      "preMarketPrice": 3.54,
+      "preMarketChangePct": 10.97,
+      "prevClose": 3.190051365233847,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 25, 2026 4:00 AM ET",
-      "preMarketVolume": 10,
-      "preMarketDollarVolume": 35.924,
-      "relVolume": 0.000056651767251879424,
+      "lastTradeAt": "Nov 25, 2026 7:06 AM ET",
+      "preMarketVolume": 68,
+      "preMarketDollarVolume": 240.72,
+      "relVolume": 0.00038523201731278006,
       "avgVolume50": 176517,
       "sharesOutstanding": 28850588,
-      "marketCap": 103642852.3312,
+      "marketCap": 102131081.52,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 31,
       "float": {
@@ -290,7 +358,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-05"
       },
-      "floatRotation": 3.4661338618124526e-7,
+      "floatRotation": 0.000002356971026032468,
       "daysUp": 1,
       "priorRunPct": -27.312775330396484,
       "extended": false,
@@ -308,12 +376,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "12.6%"
+          "detail": "11.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "10"
+          "detail": "68"
         },
         {
           "name": "News catalyst",
@@ -323,7 +391,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$3.59"
+          "detail": "$3.54"
         },
         {
           "name": "Float <10M",
@@ -332,74 +400,6 @@
         }
       ],
       "passed": 3,
-      "quality": "low"
-    },
-    {
-      "symbol": "ALXO",
-      "name": "ALX Oncology Holdings Inc.",
-      "legalName": "ALX ONCOLOGY HOLDINGS INC",
-      "business": "Pharmaceutical Preparations",
-      "sector": "Health Care",
-      "preMarketPrice": 1.52,
-      "preMarketChangePct": 31.0344827586207,
-      "prevClose": 1.16,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 25, 2026 7:00 AM ET",
-      "preMarketVolume": 11050.324682,
-      "preMarketDollarVolume": 16796.49351664,
-      "relVolume": 0.012001217117902791,
-      "avgVolume50": 920767,
-      "sharesOutstanding": 129274568,
-      "marketCap": 196497343.36,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 23,
-      "float": {
-        "shares": 129274568,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-09"
-      },
-      "floatRotation": 0.0000854794941724346,
-      "daysUp": 3,
-      "priorRunPct": 15.999999999999993,
-      "extended": true,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "ALX Oncology Holdings Inc. Appoints Siddhartha Mitra, M.D., Ph.D., as Chief Medical Officer and Announces Transition of Barbara Klencke, M.D., to Senior Clinical Advisor",
-        "subject": "FDA / clinical",
-        "date": "2026-11-23"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "31.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "11,050"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.52"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "129.3M"
-        }
-      ],
-      "passed": 2,
       "quality": "low"
     },
     {
@@ -467,39 +467,39 @@
       "quality": "low"
     },
     {
-      "symbol": "DBI",
-      "name": "Designer Brands Inc. Class A",
-      "legalName": "Designer Brands Inc.",
-      "business": "Retail-Shoe Stores",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 6.3,
-      "preMarketChangePct": 7.692307692307695,
-      "prevClose": 5.85,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 25, 2026 5:32 AM ET",
-      "preMarketVolume": 8,
-      "preMarketDollarVolume": 50.4,
-      "relVolume": 0.00001521265388550196,
-      "avgVolume50": 525878,
-      "sharesOutstanding": 51123404.06779661,
-      "marketCap": 322077445.62711865,
+      "symbol": "ELMT",
+      "name": "The Elmet Group Co.",
+      "legalName": "Elmet Group Co.",
+      "business": "Miscellaneous Fabricated Metal Products",
+      "sector": "Industrials",
+      "preMarketPrice": 18.5,
+      "preMarketChangePct": 8.25,
+      "prevClose": 17.090069284064665,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 25, 2026 7:05 AM ET",
+      "preMarketVolume": 4538,
+      "preMarketDollarVolume": 83953,
+      "relVolume": 0.012676969148425017,
+      "avgVolume50": 357972,
+      "sharesOutstanding": 30660942,
+      "marketCap": 567227427,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 48,
+      "bestPriorSpikePct": 24,
       "float": {
-        "shares": 51123404.06779661,
+        "shares": 30660942,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-25"
+        "asOf": "2026-11-04"
       },
-      "floatRotation": 1.5648410245512815e-7,
-      "daysUp": 0,
-      "priorRunPct": -7.290015847860539,
+      "floatRotation": 0.0001480058897081505,
+      "daysUp": 1,
+      "priorRunPct": -4.201680672268911,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "8-K",
         "headline": "Other material event (often FDA, clinical or contract news)",
         "subject": "Other material event (often FDA, clinical or contract news)",
-        "date": "2026-11-25"
+        "date": "2026-11-24"
       },
       "leads": [
         "8-K"
@@ -508,12 +508,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "7.7%"
+          "detail": "8.3%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "8"
+          "detail": "4,538"
         },
         {
           "name": "News catalyst",
@@ -523,12 +523,12 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$6.30"
+          "detail": "$18.50"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "51.1M"
+          "detail": "30.7M"
         }
       ],
       "passed": 2,
@@ -600,6 +600,74 @@
         }
       ],
       "passed": 1,
+      "quality": "low"
+    },
+    {
+      "symbol": "PHOE",
+      "name": "Phoenix Asia Holdings Limited Ordinary Shares",
+      "legalName": "Phoenix Asia Holdings Ltd",
+      "business": "Construction - Special Trade Contractors",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 20.96,
+      "preMarketChangePct": 7.6,
+      "prevClose": 19.479553903345725,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 25, 2026 7:19 AM ET",
+      "preMarketVolume": 1400,
+      "preMarketDollarVolume": 29344,
+      "relVolume": 0.033079722130334104,
+      "avgVolume50": 42322,
+      "sharesOutstanding": 21600000,
+      "marketCap": 452736000,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 169,
+      "float": {
+        "shares": 21600000,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-03-31"
+      },
+      "floatRotation": 0.00006481481481481482,
+      "daysUp": 1,
+      "priorRunPct": 0.3841229193341901,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "1,400"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$20.96"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "21.6M"
+        }
+      ],
+      "passed": 0,
       "quality": "low"
     }
   ]
