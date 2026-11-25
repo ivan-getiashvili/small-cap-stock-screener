@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-25T13:40:36.199Z",
+  "generatedAt": "2026-11-25T14:00:42.443Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-24",
   "universeChecked": 6190,
   "smallCapsInBand": 2980,
-  "investigated": 83,
-  "liveQuotes": 65,
+  "investigated": 87,
+  "liveQuotes": 68,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-24T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 190,
+    "edgarFilings": 196,
     "leads": {
-      "8-K": 48,
+      "8-K": 51,
       "PR Newswire": 2,
-      "GlobeNewswire": 8,
+      "GlobeNewswire": 9,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 83,
-    "answered": 83,
+    "requested": 87,
+    "answered": 87,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Apimeds Pharmaceuticals US, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 2.5898,
-      "preMarketChangePct": 12.11,
-      "prevClose": 2.31005262688431,
+      "preMarketPrice": 2.639,
+      "preMarketChangePct": 14.24,
+      "prevClose": 2.3100490196078427,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 25, 2026 8:40 AM ET",
-      "preMarketVolume": 1550391.598588,
-      "preMarketDollarVolume": 4015204.1620232025,
-      "relVolume": 12.311143921323868,
+      "lastTradeAt": "Nov 25, 2026 9:00 AM ET",
+      "preMarketVolume": 1630871.598588,
+      "preMarketDollarVolume": 4303870.148673732,
+      "relVolume": 12.950208828338654,
       "avgVolume50": 125934,
       "sharesOutstanding": 1847626,
-      "marketCap": 4784981.8148,
+      "marketCap": 4875885.0139999995,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 60,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-16"
       },
-      "floatRotation": 0.8391263159254092,
+      "floatRotation": 0.8826849149059388,
       "daysUp": 0,
       "priorRunPct": -27.142857142857146,
       "extended": false,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "12.1%"
+          "detail": "14.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,550,392"
+          "detail": "1,630,872"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.59"
+          "detail": "$2.64"
         },
         {
           "name": "Float <10M",
@@ -129,74 +129,6 @@
   ],
   "watchlist": [],
   "alsoRan": [
-    {
-      "symbol": "SMXT",
-      "name": "Solarmax Technology Inc.",
-      "legalName": "SolarMax Technology, Inc.",
-      "business": "Construction - Special Trade Contractors",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 4.9697,
-      "preMarketChangePct": 20.04,
-      "prevClose": 4.140036654448517,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 25, 2026 8:26 AM ET",
-      "preMarketVolume": 522,
-      "preMarketDollarVolume": 2594.1834,
-      "relVolume": 0.0043471743366811574,
-      "avgVolume50": 120078,
-      "sharesOutstanding": 4742167,
-      "marketCap": 23567147.3399,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 26,
-      "float": {
-        "shares": 4742167,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-10"
-      },
-      "floatRotation": 0.00011007625838567052,
-      "daysUp": 0,
-      "priorRunPct": -25.47528517110266,
-      "extended": false,
-      "catalyst": {
-        "found": false,
-        "kind": null,
-        "headline": null,
-        "subject": null,
-        "date": null
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "20.0%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "522"
-        },
-        {
-          "name": "News catalyst",
-          "ok": false,
-          "detail": "none found"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$4.97"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "4.7M"
-        }
-      ],
-      "passed": 3,
-      "quality": "low"
-    },
     {
       "symbol": "IMDX",
       "name": "Insight Molecular Diagnostics Inc.",
@@ -407,17 +339,17 @@
       "legalName": "Braemar Hotels & Resorts Inc.",
       "business": "Real Estate Investment Trusts",
       "sector": "Real Estate",
-      "preMarketPrice": 1.64,
-      "preMarketChangePct": 15.901060070671369,
+      "preMarketPrice": 1.6499,
+      "preMarketChangePct": 16.60070671378091,
       "prevClose": 1.415,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 25, 2026 8:32 AM ET",
-      "preMarketVolume": 528,
-      "preMarketDollarVolume": 865.92,
-      "relVolume": 0.0012161611229221036,
+      "lastTradeAt": "Nov 25, 2026 8:51 AM ET",
+      "preMarketVolume": 529,
+      "preMarketDollarVolume": 872.7971,
+      "relVolume": 0.0012184644583821832,
       "avgVolume50": 434153,
       "sharesOutstanding": 68679318,
-      "marketCap": 112634081.52,
+      "marketCap": 113314006.7682,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 10,
       "float": {
@@ -425,7 +357,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-03"
       },
-      "floatRotation": 0.000007687903948026974,
+      "floatRotation": 0.000007702464372170964,
       "daysUp": 0,
       "priorRunPct": -13.719512195121943,
       "extended": false,
@@ -443,12 +375,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "15.9%"
+          "detail": "16.6%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "528"
+          "detail": "529"
         },
         {
           "name": "News catalyst",
@@ -458,7 +390,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.64"
+          "detail": "$1.65"
         },
         {
           "name": "Float <10M",
@@ -528,6 +460,74 @@
           "name": "Float <10M",
           "ok": false,
           "detail": "unknown"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "MAIA",
+      "name": "MAIA Biotechnology Inc.",
+      "legalName": "MAIA Biotechnology, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 1.23,
+      "preMarketChangePct": 10.313901345291479,
+      "prevClose": 1.115,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 25, 2026 8:50 AM ET",
+      "preMarketVolume": 4005,
+      "preMarketDollarVolume": 4926.15,
+      "relVolume": 0.008528371474993026,
+      "avgVolume50": 469609,
+      "sharesOutstanding": 61750308,
+      "marketCap": 75952878.84,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 26,
+      "float": {
+        "shares": 61750308,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-09"
+      },
+      "floatRotation": 0.00006485797609300993,
+      "daysUp": 1,
+      "priorRunPct": 11.5,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "MAIA Doses First Patients In Spain For Phase 3 THIO-104 Trial Assessing Ateganosine In NSCLC ",
+        "subject": "FDA / clinical",
+        "date": "2026-11-25"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "10.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "4,005"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.23"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "61.8M"
         }
       ],
       "passed": 2,
