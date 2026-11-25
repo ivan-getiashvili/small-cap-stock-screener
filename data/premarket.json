@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-25T14:00:42.443Z",
+  "generatedAt": "2026-11-25T14:20:36.218Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-24",
   "universeChecked": 6190,
   "smallCapsInBand": 2980,
-  "investigated": 87,
-  "liveQuotes": 68,
+  "investigated": 82,
+  "liveQuotes": 63,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-24T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 196,
+    "edgarFilings": 199,
     "leads": {
-      "8-K": 51,
-      "PR Newswire": 2,
-      "GlobeNewswire": 9,
+      "8-K": 52,
+      "PR Newswire": 1,
+      "GlobeNewswire": 4,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 87,
-    "answered": 87,
+    "requested": 82,
+    "answered": 82,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Apimeds Pharmaceuticals US, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 2.639,
-      "preMarketChangePct": 14.24,
-      "prevClose": 2.3100490196078427,
+      "preMarketPrice": 2.76,
+      "preMarketChangePct": 19.48,
+      "prevClose": 2.310010043521928,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 25, 2026 9:00 AM ET",
-      "preMarketVolume": 1630871.598588,
-      "preMarketDollarVolume": 4303870.148673732,
-      "relVolume": 12.950208828338654,
+      "lastTradeAt": "Nov 25, 2026 9:20 AM ET",
+      "preMarketVolume": 1732414.598588,
+      "preMarketDollarVolume": 4781464.29210288,
+      "relVolume": 13.756528011402798,
       "avgVolume50": 125934,
       "sharesOutstanding": 1847626,
-      "marketCap": 4875885.0139999995,
+      "marketCap": 5099447.76,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 60,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-16"
       },
-      "floatRotation": 0.8826849149059388,
+      "floatRotation": 0.9376435483090193,
       "daysUp": 0,
       "priorRunPct": -27.142857142857146,
       "extended": false,
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "14.2%"
+          "detail": "19.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,630,872"
+          "detail": "1,732,415"
         },
         {
           "name": "News catalyst",
@@ -115,7 +115,7 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$2.64"
+          "detail": "$2.76"
         },
         {
           "name": "Float <10M",
@@ -129,6 +129,74 @@
   ],
   "watchlist": [],
   "alsoRan": [
+    {
+      "symbol": "SMXT",
+      "name": "Solarmax Technology Inc.",
+      "legalName": "SolarMax Technology, Inc.",
+      "business": "Construction - Special Trade Contractors",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 4.97,
+      "preMarketChangePct": 20.05,
+      "prevClose": 4.139941690962099,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 25, 2026 9:14 AM ET",
+      "preMarketVolume": 1565,
+      "preMarketDollarVolume": 7778.049999999999,
+      "relVolume": 0.013033195089858259,
+      "avgVolume50": 120078,
+      "sharesOutstanding": 4742167,
+      "marketCap": 23568569.99,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 26,
+      "float": {
+        "shares": 4742167,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-10"
+      },
+      "floatRotation": 0.0003300179010988015,
+      "daysUp": 0,
+      "priorRunPct": -25.47528517110266,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "20.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "1,565"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.97"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "4.7M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
     {
       "symbol": "IMDX",
       "name": "Insight Molecular Diagnostics Inc.",
@@ -266,6 +334,74 @@
       "quality": "low"
     },
     {
+      "symbol": "NXTT",
+      "name": "Next Technology Holding Inc. Ordinary Shares",
+      "legalName": "Next Technology Holding Inc.",
+      "business": "Services-Computer Processing & Data Preparation",
+      "sector": "Technology",
+      "preMarketPrice": 3.6,
+      "preMarketChangePct": 5.571847507331377,
+      "prevClose": 3.41,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 25, 2026 9:16 AM ET",
+      "preMarketVolume": 217,
+      "preMarketDollarVolume": 781.2,
+      "relVolume": 0.00005261770665846768,
+      "avgVolume50": 4124087,
+      "sharesOutstanding": 2820947,
+      "marketCap": 10155409.200000001,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 77,
+      "float": {
+        "shares": 2820947,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-06"
+      },
+      "floatRotation": 0.00007692452215514861,
+      "daysUp": 1,
+      "priorRunPct": -23.456790123456788,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-11-24"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "217"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.60"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "2.8M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "IOTR",
       "name": "iOThree Limited Ordinary Shares",
       "legalName": "iOThree Ltd",
@@ -328,74 +464,6 @@
           "name": "Float <10M",
           "ok": false,
           "detail": "24.0M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
-      "symbol": "BHR",
-      "name": "Braemar Hotels & Resorts Inc.",
-      "legalName": "Braemar Hotels & Resorts Inc.",
-      "business": "Real Estate Investment Trusts",
-      "sector": "Real Estate",
-      "preMarketPrice": 1.6499,
-      "preMarketChangePct": 16.60070671378091,
-      "prevClose": 1.415,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 25, 2026 8:51 AM ET",
-      "preMarketVolume": 529,
-      "preMarketDollarVolume": 872.7971,
-      "relVolume": 0.0012184644583821832,
-      "avgVolume50": 434153,
-      "sharesOutstanding": 68679318,
-      "marketCap": 113314006.7682,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 10,
-      "float": {
-        "shares": 68679318,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-03"
-      },
-      "floatRotation": 0.000007702464372170964,
-      "daysUp": 0,
-      "priorRunPct": -13.719512195121943,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Executive or board change · Regulation FD disclosure (company announcement)",
-        "subject": "Executive or board change · Regulation FD disclosure (company announcement)",
-        "date": "2026-11-24"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "16.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "529"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": false,
-          "detail": "$1.65"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "68.7M"
         }
       ],
       "passed": 2,
@@ -466,53 +534,53 @@
       "quality": "low"
     },
     {
-      "symbol": "MAIA",
-      "name": "MAIA Biotechnology Inc.",
-      "legalName": "MAIA Biotechnology, Inc.",
+      "symbol": "CALC",
+      "name": "CalciMedica Inc.",
+      "legalName": "CalciMedica, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 1.23,
-      "preMarketChangePct": 10.313901345291479,
-      "prevClose": 1.115,
+      "preMarketPrice": 1.2988,
+      "preMarketChangePct": 6.459016393442621,
+      "prevClose": 1.22,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 25, 2026 8:50 AM ET",
-      "preMarketVolume": 4005,
-      "preMarketDollarVolume": 4926.15,
-      "relVolume": 0.008528371474993026,
-      "avgVolume50": 469609,
-      "sharesOutstanding": 61750308,
-      "marketCap": 75952878.84,
+      "lastTradeAt": "Nov 25, 2026 9:12 AM ET",
+      "preMarketVolume": 178,
+      "preMarketDollarVolume": 231.1864,
+      "relVolume": 0.0005698607682875684,
+      "avgVolume50": 312357,
+      "sharesOutstanding": 6895149,
+      "marketCap": 8955419.5212,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 26,
+      "bestPriorSpikePct": 30,
       "float": {
-        "shares": 61750308,
+        "shares": 6895149,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-09"
+        "asOf": "2026-11-05"
       },
-      "floatRotation": 0.00006485797609300993,
-      "daysUp": 1,
-      "priorRunPct": 11.5,
+      "floatRotation": 0.000025815250692914686,
+      "daysUp": 0,
+      "priorRunPct": 2.521008403361347,
       "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "MAIA Doses First Patients In Spain For Phase 3 THIO-104 Trial Assessing Ateganosine In NSCLC ",
-        "subject": "FDA / clinical",
-        "date": "2026-11-25"
+        "headline": "CalciMedica, Inc. Appoints A. Rachel Leheny, Ph.D., as Principal Financial Officer and Sean Lawler as Chief Accounting Officer",
+        "subject": null,
+        "date": "2026-11-24"
       },
       "leads": [
-        "GlobeNewswire"
+        "8-K"
       ],
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": true,
-          "detail": "10.3%"
+          "ok": false,
+          "detail": "6.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "4,005"
+          "detail": "178"
         },
         {
           "name": "News catalyst",
@@ -522,15 +590,219 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.23"
+          "detail": "$1.30"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "6.9M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "VRXA",
+      "name": "Veraxa Biotech AG Ordinary Shares",
+      "legalName": "Veraxa Biotech AG - Post de-SPAC",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 1.38,
+      "preMarketChangePct": 27.777777777777757,
+      "prevClose": 1.08,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 25, 2026 9:04 AM ET",
+      "preMarketVolume": 186,
+      "preMarketDollarVolume": 256.68,
+      "relVolume": 0.00031472347481789186,
+      "avgVolume50": 590995,
+      "sharesOutstanding": 141407813.2352941,
+      "marketCap": 195142782.26470584,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 38,
+      "float": {
+        "shares": 141407813.2352941,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-25"
+      },
+      "floatRotation": 0.00000131534457498828,
+      "daysUp": 2,
+      "priorRunPct": 3.3492822966507316,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "27.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "186"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.38"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "61.8M"
+          "detail": "141.4M"
         }
       ],
-      "passed": 2,
+      "passed": 1,
+      "quality": "low"
+    },
+    {
+      "symbol": "BHR",
+      "name": "Braemar Hotels & Resorts Inc.",
+      "legalName": "Braemar Hotels & Resorts Inc.",
+      "business": "Real Estate Investment Trusts",
+      "sector": "Real Estate",
+      "preMarketPrice": 1.5211,
+      "preMarketChangePct": 7.498233215547693,
+      "prevClose": 1.415,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 25, 2026 9:11 AM ET",
+      "preMarketVolume": 1254,
+      "preMarketDollarVolume": 1907.4594,
+      "relVolume": 0.002888382666939996,
+      "avgVolume50": 434153,
+      "sharesOutstanding": 68679318,
+      "marketCap": 104468110.6098,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 10,
+      "float": {
+        "shares": 68679318,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-03"
+      },
+      "floatRotation": 0.000018258771876564063,
+      "daysUp": 0,
+      "priorRunPct": -13.719512195121943,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Executive or board change · Regulation FD disclosure (company announcement)",
+        "subject": "Executive or board change · Regulation FD disclosure (company announcement)",
+        "date": "2026-11-24"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "1,254"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.52"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "68.7M"
+        }
+      ],
+      "passed": 1,
+      "quality": "low"
+    },
+    {
+      "symbol": "SPWH",
+      "name": "Sportsman's Warehouse Holdings Inc.",
+      "legalName": "SPORTSMAN'S WAREHOUSE HOLDINGS, INC.",
+      "business": "Retail-Miscellaneous Shopping Goods Stores",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.28,
+      "preMarketChangePct": 5.7851239669421535,
+      "prevClose": 1.21,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 25, 2026 8:45 AM ET",
+      "preMarketVolume": 631,
+      "preMarketDollarVolume": 807.6800000000001,
+      "relVolume": 0.001318365394057536,
+      "avgVolume50": 478623,
+      "sharesOutstanding": 39141465,
+      "marketCap": 50101075.2,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 29,
+      "float": {
+        "shares": 39141465,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-09-01"
+      },
+      "floatRotation": 0.000016121011311150466,
+      "daysUp": 0,
+      "priorRunPct": 6.140350877192988,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Sportsman's Warehouse Holdings, Inc. Schedules Third Quarter 2026 Earnings Conference Call",
+        "subject": "Earnings or guidance",
+        "date": "2026-11-25"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "631"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.28"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "39.1M"
+        }
+      ],
+      "passed": 1,
       "quality": "low"
     }
   ]
