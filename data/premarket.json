@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-25T13:00:37.185Z",
+  "generatedAt": "2026-11-25T13:20:37.448Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-24",
   "universeChecked": 6190,
   "smallCapsInBand": 2980,
-  "investigated": 77,
-  "liveQuotes": 53,
+  "investigated": 79,
+  "liveQuotes": 60,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-24T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 182,
+    "edgarFilings": 185,
     "leads": {
       "8-K": 48,
       "PR Newswire": 1,
-      "GlobeNewswire": 3,
+      "GlobeNewswire": 5,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 77,
-    "answered": 77,
+    "requested": 79,
+    "answered": 79,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -64,17 +64,17 @@
       "legalName": "Apimeds Pharmaceuticals US, Inc.",
       "business": "Pharmaceutical Preparations",
       "sector": "Health Care",
-      "preMarketPrice": 2.56,
-      "preMarketChangePct": 10.82,
-      "prevClose": 2.310052337123263,
+      "preMarketPrice": 2.5597,
+      "preMarketChangePct": 10.81,
+      "prevClose": 2.3099900730980956,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 25, 2026 8:00 AM ET",
-      "preMarketVolume": 1408167.598588,
-      "preMarketDollarVolume": 3604909.0523852804,
-      "relVolume": 11.181790450458177,
+      "lastTradeAt": "Nov 25, 2026 8:20 AM ET",
+      "preMarketVolume": 1514849.598588,
+      "preMarketDollarVolume": 3877560.5175057035,
+      "relVolume": 12.028916722950116,
       "avgVolume50": 125934,
       "sharesOutstanding": 1847626,
-      "marketCap": 4729922.5600000005,
+      "marketCap": 4729368.2722,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 60,
       "float": {
@@ -82,7 +82,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-16"
       },
-      "floatRotation": 0.7621496983631969,
+      "floatRotation": 0.8198897388259313,
       "daysUp": 0,
       "priorRunPct": -27.142857142857146,
       "extended": false,
@@ -105,7 +105,7 @@
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,408,168"
+          "detail": "1,514,850"
         },
         {
           "name": "News catalyst",
@@ -127,111 +127,42 @@
       "quality": "high"
     }
   ],
-  "watchlist": [
-    {
-      "symbol": "AKAN",
-      "name": "Akanda Corp. Common Shares",
-      "legalName": "AKANDA CORP.",
-      "business": "Communications Services, NEC",
-      "sector": "Health Care",
-      "preMarketPrice": 5.49,
-      "preMarketChangePct": 5.58,
-      "prevClose": 5.199848456146998,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 25, 2026 8:00 AM ET",
-      "preMarketVolume": 2776113.619867,
-      "preMarketDollarVolume": 15240863.773069829,
-      "relVolume": 2.220231931056462,
-      "avgVolume50": 1250371,
-      "sharesOutstanding": 1983546,
-      "marketCap": 10889667.540000001,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 214,
-      "float": {
-        "shares": 1983546,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2025-12-31"
-      },
-      "floatRotation": 1.3995710812186861,
-      "daysUp": 0,
-      "priorRunPct": 16.742081447963805,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Healthcare Stocks Rally: AKAN +86%, JAGX +71%, APUS +51%, EMBC +40%, PRLD +30% ",
-        "subject": null,
-        "date": "2026-11-24"
-      },
-      "leads": [
-        "prior-session gainer"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "5.6%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": true,
-          "detail": "2,776,114"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$5.49"
-        },
-        {
-          "name": "Float <10M",
-          "ok": true,
-          "detail": "2.0M"
-        }
-      ],
-      "passed": 4,
-      "quality": "medium"
-    }
-  ],
+  "watchlist": [],
   "alsoRan": [
     {
-      "symbol": "EMBC",
-      "name": "Embecta Corp.",
-      "legalName": "Embecta Corp.",
-      "business": "Surgical & Medical Instruments & Apparatus",
-      "sector": "Health Care",
-      "preMarketPrice": 8.08,
-      "preMarketChangePct": 40.644038294168844,
-      "prevClose": 5.745,
-      "closeReconciled": false,
-      "lastTradeAt": "Nov 25, 2026 7:56 AM ET",
-      "preMarketVolume": 11850.124299,
-      "preMarketDollarVolume": 95749.00433591999,
-      "relVolume": 0.007816250968941117,
-      "avgVolume50": 1516088,
-      "sharesOutstanding": 56659599,
-      "marketCap": 457809559.92,
+      "symbol": "SMXT",
+      "name": "Solarmax Technology Inc.",
+      "legalName": "SolarMax Technology, Inc.",
+      "business": "Construction - Special Trade Contractors",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 4.99,
+      "preMarketChangePct": 20.53,
+      "prevClose": 4.140048120799801,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 25, 2026 8:14 AM ET",
+      "preMarketVolume": 517,
+      "preMarketDollarVolume": 2579.83,
+      "relVolume": 0.004305534735755093,
+      "avgVolume50": 120078,
+      "sharesOutstanding": 4742167,
+      "marketCap": 23663413.330000002,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 26,
       "float": {
-        "shares": 56659599,
+        "shares": 4742167,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-07-31"
+        "asOf": "2026-11-10"
       },
-      "floatRotation": 0.00020914592598863963,
+      "floatRotation": 0.00010902188809462003,
       "daysUp": 0,
-      "priorRunPct": -8.079999999999998,
+      "priorRunPct": -25.47528517110266,
       "extended": false,
       "catalyst": {
-        "found": true,
-        "kind": "news",
-        "headline": "Healthcare Stocks Rally: AKAN +86%, JAGX +71%, APUS +51%, EMBC +40%, PRLD +30% ",
+        "found": false,
+        "kind": null,
+        "headline": null,
         "subject": null,
-        "date": "2026-11-24"
+        "date": null
       },
       "leads": [
         "prior-session gainer"
@@ -240,27 +171,27 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "40.6%"
+          "detail": "20.5%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "11,850"
+          "detail": "517"
         },
         {
           "name": "News catalyst",
-          "ok": true,
-          "detail": "news"
+          "ok": false,
+          "detail": "none found"
         },
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.08"
+          "detail": "$4.99"
         },
         {
           "name": "Float <10M",
-          "ok": false,
-          "detail": "56.7M"
+          "ok": true,
+          "detail": "4.7M"
         }
       ],
       "passed": 3,
@@ -335,6 +266,74 @@
       "quality": "low"
     },
     {
+      "symbol": "GRDX",
+      "name": "GridAI Technologies Corp.",
+      "legalName": "GridAI Power Corp.",
+      "business": "Electric & Other Services Combined",
+      "sector": "Health Care",
+      "preMarketPrice": 3.92,
+      "preMarketChangePct": 10.42,
+      "prevClose": 3.550081506973374,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 25, 2026 8:09 AM ET",
+      "preMarketVolume": 2344,
+      "preMarketDollarVolume": 9188.48,
+      "relVolume": 0.02299098604258825,
+      "avgVolume50": 101953,
+      "sharesOutstanding": 10265090,
+      "marketCap": 40239152.8,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 23,
+      "float": {
+        "shares": 10265090,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-16"
+      },
+      "floatRotation": 0.0002283467558491937,
+      "daysUp": 1,
+      "priorRunPct": 21.363636363636367,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Entered a material agreement (deal, partnership or contract) · Completed an acquisition or disposal of assets · Sold unregistered shares (dilution) · Change of control of the company · Executive or board change · Amended the charter or bylaws · Regulation FD disclosure (company announcement)",
+        "subject": "Entered a material agreement (deal, partnership or contract) · Completed an acquisition or disposal of assets · Sold unregistered shares (dilution) · Change of control of the company · Executive or board change · Amended the charter or bylaws · Regulation FD disclosure (company announcement)",
+        "date": "2026-11-24"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "10.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "2,344"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.92"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "10.3M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
       "symbol": "RNGTU",
       "name": "Range Capital Acquisition Corp II Units",
       "legalName": "Range Capital Acquisition Corp II",
@@ -399,90 +398,22 @@
       "quality": "low"
     },
     {
-      "symbol": "GRDX",
-      "name": "GridAI Technologies Corp.",
-      "legalName": "GridAI Power Corp.",
-      "business": "Electric & Other Services Combined",
-      "sector": "Health Care",
-      "preMarketPrice": 3.8948,
-      "preMarketChangePct": 9.71,
-      "prevClose": 3.5500865919241638,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 25, 2026 7:27 AM ET",
-      "preMarketVolume": 1143,
-      "preMarketDollarVolume": 4451.7564,
-      "relVolume": 0.011211048228105107,
-      "avgVolume50": 101953,
-      "sharesOutstanding": 10265090,
-      "marketCap": 39980472.532,
-      "floatPctOfShares": 100,
-      "bestPriorSpikePct": 23,
-      "float": {
-        "shares": 10265090,
-        "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-16"
-      },
-      "floatRotation": 0.00011134826874386878,
-      "daysUp": 1,
-      "priorRunPct": 21.363636363636367,
-      "extended": false,
-      "catalyst": {
-        "found": true,
-        "kind": "8-K",
-        "headline": "Entered a material agreement (deal, partnership or contract) · Completed an acquisition or disposal of assets · Sold unregistered shares (dilution) · Change of control of the company · Executive or board change · Amended the charter or bylaws · Regulation FD disclosure (company announcement)",
-        "subject": "Entered a material agreement (deal, partnership or contract) · Completed an acquisition or disposal of assets · Sold unregistered shares (dilution) · Change of control of the company · Executive or board change · Amended the charter or bylaws · Regulation FD disclosure (company announcement)",
-        "date": "2026-11-24"
-      },
-      "leads": [
-        "8-K"
-      ],
-      "checks": [
-        {
-          "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.7%"
-        },
-        {
-          "name": "Pre-market volume ≥50k",
-          "ok": false,
-          "detail": "1,143"
-        },
-        {
-          "name": "News catalyst",
-          "ok": true,
-          "detail": "8-K"
-        },
-        {
-          "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$3.89"
-        },
-        {
-          "name": "Float <10M",
-          "ok": false,
-          "detail": "10.3M"
-        }
-      ],
-      "passed": 2,
-      "quality": "low"
-    },
-    {
       "symbol": "BHR",
       "name": "Braemar Hotels & Resorts Inc.",
       "legalName": "Braemar Hotels & Resorts Inc.",
       "business": "Real Estate Investment Trusts",
       "sector": "Real Estate",
-      "preMarketPrice": 1.49,
-      "preMarketChangePct": 5.300353356890456,
+      "preMarketPrice": 1.53,
+      "preMarketChangePct": 8.12720848056537,
       "prevClose": 1.415,
       "closeReconciled": false,
-      "lastTradeAt": "Nov 25, 2026 7:59 AM ET",
-      "preMarketVolume": 215,
-      "preMarketDollarVolume": 320.35,
-      "relVolume": 0.0004952171239171444,
+      "lastTradeAt": "Nov 25, 2026 8:07 AM ET",
+      "preMarketVolume": 527,
+      "preMarketDollarVolume": 806.3100000000001,
+      "relVolume": 0.0012138577874620238,
       "avgVolume50": 434153,
       "sharesOutstanding": 68679318,
-      "marketCap": 102332183.82,
+      "marketCap": 105079356.54,
       "floatPctOfShares": 100,
       "bestPriorSpikePct": 10,
       "float": {
@@ -490,7 +421,7 @@
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-03"
       },
-      "floatRotation": 0.000003130491190957953,
+      "floatRotation": 0.000007673343523882984,
       "daysUp": 0,
       "priorRunPct": -13.719512195121943,
       "extended": false,
@@ -508,12 +439,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": false,
-          "detail": "5.3%"
+          "detail": "8.1%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "215"
+          "detail": "527"
         },
         {
           "name": "News catalyst",
@@ -523,7 +454,7 @@
         {
           "name": "Price $2–$20",
           "ok": false,
-          "detail": "$1.49"
+          "detail": "$1.53"
         },
         {
           "name": "Float <10M",
