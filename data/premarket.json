@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-25T11:40:35.604Z",
+  "generatedAt": "2026-11-25T12:00:35.331Z",
   "marketStatus": "Pre Market",
   "prevSession": "2026-11-24",
   "universeChecked": 6190,
-  "smallCapsInBand": 2977,
-  "investigated": 71,
-  "liveQuotes": 38,
+  "smallCapsInBand": 2980,
+  "investigated": 74,
+  "liveQuotes": 47,
   "feedIsLive": true,
   "discovery": {
     "since": "2026-11-24T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 175,
+    "edgarFilings": 177,
     "leads": {
-      "8-K": 46,
+      "8-K": 47,
       "PR Newswire": 1,
       "GlobeNewswire": 1,
       "prior-session gainer": 25
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 71,
-    "answered": 71,
+    "requested": 74,
+    "answered": 74,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -59,39 +59,39 @@
   },
   "shortlist": [
     {
-      "symbol": "BNAI",
-      "name": "Brand Engagement Network Inc.",
-      "legalName": "Brand Engagement Network Inc.",
-      "business": "Services-Computer Integrated Systems Design",
-      "sector": "Technology",
-      "preMarketPrice": 8.2509,
-      "preMarketChangePct": 24.07,
-      "prevClose": 6.65019746917063,
+      "symbol": "APUS",
+      "name": "Apimeds Pharmaceuticals US Inc.",
+      "legalName": "Apimeds Pharmaceuticals US, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 2.8,
+      "preMarketChangePct": 21.21,
+      "prevClose": 2.3100404257074496,
       "closeReconciled": true,
-      "lastTradeAt": "Nov 25, 2026 6:40 AM ET",
-      "preMarketVolume": 1365633.304488,
-      "preMarketDollarVolume": 11267703.83200004,
-      "relVolume": 9.232055221216443,
-      "avgVolume50": 147923,
-      "sharesOutstanding": 7654882,
-      "marketCap": 63159665.8938,
+      "lastTradeAt": "Nov 25, 2026 7:00 AM ET",
+      "preMarketVolume": 818622.652382,
+      "preMarketDollarVolume": 2292143.4266696,
+      "relVolume": 6.500410154382454,
+      "avgVolume50": 125934,
+      "sharesOutstanding": 1847626,
+      "marketCap": 5173352.8,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 277,
+      "bestPriorSpikePct": 60,
       "float": {
-        "shares": 7654882,
+        "shares": 1847626,
         "basis": "shares-outstanding-proxy",
         "asOf": "2026-11-16"
       },
-      "floatRotation": 0.17840030773668358,
-      "daysUp": 2,
-      "priorRunPct": 92.1259842519685,
-      "extended": true,
+      "floatRotation": 0.44306729412879015,
+      "daysUp": 0,
+      "priorRunPct": -27.142857142857146,
+      "extended": false,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "Brand Engagement Network Reports Narrower Loss In Q3 ",
+        "headline": "Healthcare Stocks Rally: AKAN +86%, JAGX +71%, APUS +51%, EMBC +40%, PRLD +30% ",
         "subject": null,
-        "date": "2026-11-23"
+        "date": "2026-11-24"
       },
       "leads": [
         "prior-session gainer"
@@ -100,12 +100,12 @@
         {
           "name": "Up ≥10% pre-market",
           "ok": true,
-          "detail": "24.1%"
+          "detail": "21.2%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": true,
-          "detail": "1,365,633"
+          "detail": "818,623"
         },
         {
           "name": "News catalyst",
@@ -115,20 +115,157 @@
         {
           "name": "Price $2–$20",
           "ok": true,
-          "detail": "$8.25"
+          "detail": "$2.80"
         },
         {
           "name": "Float <10M",
           "ok": true,
-          "detail": "7.7M"
+          "detail": "1.8M"
         }
       ],
       "passed": 5,
       "quality": "high"
     }
   ],
-  "watchlist": [],
+  "watchlist": [
+    {
+      "symbol": "AKAN",
+      "name": "Akanda Corp. Common Shares",
+      "legalName": "AKANDA CORP.",
+      "business": "Communications Services, NEC",
+      "sector": "Health Care",
+      "preMarketPrice": 5.53,
+      "preMarketChangePct": 6.35,
+      "prevClose": 5.199811941701928,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 25, 2026 7:00 AM ET",
+      "preMarketVolume": 1836790.934633,
+      "preMarketDollarVolume": 10157453.86852049,
+      "relVolume": 1.468996749471157,
+      "avgVolume50": 1250371,
+      "sharesOutstanding": 1983546,
+      "marketCap": 10969009.38,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 214,
+      "float": {
+        "shares": 1983546,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2025-12-31"
+      },
+      "floatRotation": 0.9260137827068291,
+      "daysUp": 0,
+      "priorRunPct": 16.742081447963805,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Healthcare Stocks Rally: AKAN +86%, JAGX +71%, APUS +51%, EMBC +40%, PRLD +30% ",
+        "subject": null,
+        "date": "2026-11-24"
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "1,836,791"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$5.53"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "2.0M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
   "alsoRan": [
+    {
+      "symbol": "PRLD",
+      "name": "Prelude Therapeutics Incorporated",
+      "legalName": "Prelude Therapeutics Inc",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 4.5,
+      "preMarketChangePct": 28.57142857142857,
+      "prevClose": 3.5,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 25, 2026 7:00 AM ET",
+      "preMarketVolume": 3102.211453,
+      "preMarketDollarVolume": 13959.9515385,
+      "relVolume": 0.006938207758543567,
+      "avgVolume50": 447120,
+      "sharesOutstanding": 80070666,
+      "marketCap": 360317997,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 150,
+      "float": {
+        "shares": 80070666,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-11"
+      },
+      "floatRotation": 0.00003874342013091286,
+      "daysUp": 1,
+      "priorRunPct": 2.63929618768328,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Healthcare Stocks Rally: AKAN +86%, JAGX +71%, APUS +51%, EMBC +40%, PRLD +30% ",
+        "subject": null,
+        "date": "2026-11-24"
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "28.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "3,102"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.50"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "80.1M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
     {
       "symbol": "NTHI",
       "name": "NeOnc Technologies Holdings Inc.",
@@ -198,38 +335,38 @@
       "quality": "low"
     },
     {
-      "symbol": "ITP",
-      "name": "IT Tech Packaging Inc.",
-      "legalName": "IT TECH PACKAGING, INC.",
-      "business": "Converted Paper & Paperboard Prods (No Contaners/Boxes)",
-      "sector": "Consumer Discretionary",
-      "preMarketPrice": 2.61,
-      "preMarketChangePct": 9.66,
-      "prevClose": 2.3800838956775485,
-      "closeReconciled": true,
-      "lastTradeAt": "Nov 25, 2026 6:20 AM ET",
-      "preMarketVolume": 15738,
-      "preMarketDollarVolume": 41076.18,
-      "relVolume": 0.030543684572120592,
-      "avgVolume50": 515262,
-      "sharesOutstanding": 19965420,
-      "marketCap": 52109746.199999996,
+      "symbol": "ALXO",
+      "name": "ALX Oncology Holdings Inc.",
+      "legalName": "ALX ONCOLOGY HOLDINGS INC",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 1.52,
+      "preMarketChangePct": 31.0344827586207,
+      "prevClose": 1.16,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 25, 2026 7:00 AM ET",
+      "preMarketVolume": 11050.324682,
+      "preMarketDollarVolume": 16796.49351664,
+      "relVolume": 0.012001217117902791,
+      "avgVolume50": 920767,
+      "sharesOutstanding": 129274568,
+      "marketCap": 196497343.36,
       "floatPctOfShares": 100,
-      "bestPriorSpikePct": 39,
+      "bestPriorSpikePct": 23,
       "float": {
-        "shares": 19965420,
+        "shares": 129274568,
         "basis": "shares-outstanding-proxy",
-        "asOf": "2026-11-19"
+        "asOf": "2026-11-09"
       },
-      "floatRotation": 0.0007882629065654517,
-      "daysUp": 1,
-      "priorRunPct": 5136.156351791531,
+      "floatRotation": 0.0000854794941724346,
+      "daysUp": 3,
+      "priorRunPct": 15.999999999999993,
       "extended": true,
       "catalyst": {
         "found": true,
         "kind": "news",
-        "headline": "IT Tech Packaging, Inc. Effectuates 1-for-40 Reverse Stock Split",
-        "subject": "Stock split",
+        "headline": "ALX Oncology Holdings Inc. Appoints Siddhartha Mitra, M.D., Ph.D., as Chief Medical Officer and Announces Transition of Barbara Klencke, M.D., to Senior Clinical Advisor",
+        "subject": "FDA / clinical",
         "date": "2026-11-23"
       },
       "leads": [
@@ -238,13 +375,13 @@
       "checks": [
         {
           "name": "Up ≥10% pre-market",
-          "ok": false,
-          "detail": "9.7%"
+          "ok": true,
+          "detail": "31.0%"
         },
         {
           "name": "Pre-market volume ≥50k",
           "ok": false,
-          "detail": "15,738"
+          "detail": "11,050"
         },
         {
           "name": "News catalyst",
@@ -253,16 +390,216 @@
         },
         {
           "name": "Price $2–$20",
-          "ok": true,
-          "detail": "$2.61"
+          "ok": false,
+          "detail": "$1.52"
         },
         {
           "name": "Float <10M",
           "ok": false,
-          "detail": "20.0M"
+          "detail": "129.3M"
         }
       ],
       "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "RNGTU",
+      "name": "Range Capital Acquisition Corp II Units",
+      "legalName": "Range Capital Acquisition Corp II",
+      "business": "Blank Checks",
+      "sector": "Finance",
+      "preMarketPrice": 12,
+      "preMarketChangePct": 14.613180515759305,
+      "prevClose": 10.47,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 25, 2026 6:39 AM ET",
+      "preMarketVolume": 322,
+      "preMarketDollarVolume": 3864,
+      "relVolume": 0.049868359919467246,
+      "avgVolume50": 6457,
+      "sharesOutstanding": null,
+      "marketCap": null,
+      "floatPctOfShares": null,
+      "bestPriorSpikePct": 4,
+      "float": null,
+      "floatRotation": null,
+      "daysUp": 0,
+      "priorRunPct": 0.09560229445506488,
+      "extended": false,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "14.6%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "322"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$12.00"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "unknown"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "DBI",
+      "name": "Designer Brands Inc. Class A",
+      "legalName": "Designer Brands Inc.",
+      "business": "Retail-Shoe Stores",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 6.3,
+      "preMarketChangePct": 7.692307692307695,
+      "prevClose": 5.85,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 25, 2026 5:32 AM ET",
+      "preMarketVolume": 8,
+      "preMarketDollarVolume": 50.4,
+      "relVolume": 0.00001521265388550196,
+      "avgVolume50": 525878,
+      "sharesOutstanding": 51123404.06779661,
+      "marketCap": 322077445.62711865,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 48,
+      "float": {
+        "shares": 51123404.06779661,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-25"
+      },
+      "floatRotation": 1.5648410245512815e-7,
+      "daysUp": 0,
+      "priorRunPct": -7.290015847860539,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-11-25"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "8"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$6.30"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "51.1M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "BHR",
+      "name": "Braemar Hotels & Resorts Inc.",
+      "legalName": "Braemar Hotels & Resorts Inc.",
+      "business": "Real Estate Investment Trusts",
+      "sector": "Real Estate",
+      "preMarketPrice": 1.55,
+      "preMarketChangePct": 9.540636042402827,
+      "prevClose": 1.415,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 25, 2026 7:00 AM ET",
+      "preMarketVolume": 16,
+      "preMarketDollarVolume": 24.8,
+      "relVolume": 0.00003685336736127586,
+      "avgVolume50": 434153,
+      "sharesOutstanding": 68679318,
+      "marketCap": 106452942.9,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 10,
+      "float": {
+        "shares": 68679318,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-03"
+      },
+      "floatRotation": 2.329667863038477e-7,
+      "daysUp": 0,
+      "priorRunPct": -13.719512195121943,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Executive or board change · Regulation FD disclosure (company announcement)",
+        "subject": "Executive or board change · Regulation FD disclosure (company announcement)",
+        "date": "2026-11-24"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "9.5%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "16"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.55"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "68.7M"
+        }
+      ],
+      "passed": 1,
       "quality": "low"
     }
   ]
