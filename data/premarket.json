@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-11-26T11:00:34.141Z",
-  "marketStatus": "Market Closed",
+  "generatedAt": "2026-11-27T19:52:15.699Z",
+  "marketStatus": "After Hours",
   "prevSession": "2026-11-25",
   "universeChecked": 6190,
-  "smallCapsInBand": 2969,
-  "investigated": 66,
-  "liveQuotes": 0,
+  "smallCapsInBand": 2961,
+  "investigated": 81,
+  "liveQuotes": 81,
   "feedIsLive": false,
   "discovery": {
     "since": "2026-11-25T20:30:00.000Z",
     "edgarOk": true,
-    "edgarFilings": 101,
+    "edgarFilings": 140,
     "leads": {
-      "8-K": 40,
-      "PR Newswire": 0,
-      "GlobeNewswire": 1,
+      "8-K": 53,
+      "PR Newswire": 1,
+      "GlobeNewswire": 4,
       "prior-session gainer": 25
     },
     "feeds": [
@@ -42,8 +42,8 @@
     ]
   },
   "fetch": {
-    "requested": 66,
-    "answered": 66,
+    "requested": 81,
+    "answered": 81,
     "failed": 0,
     "answerRatePct": 100,
     "reliable": true
@@ -58,7 +58,688 @@
     "floatStretch": 20000000
   },
   "shortlist": [],
-  "watchlist": [],
-  "alsoRan": [],
-  "frozenAfterPreMarket": true
+  "watchlist": [
+    {
+      "symbol": "NEPH",
+      "name": "Nephros Inc.",
+      "legalName": "NEPHROS INC",
+      "business": "Surgical & Medical Instruments & Apparatus",
+      "sector": "Health Care",
+      "preMarketPrice": 3.25,
+      "preMarketChangePct": 14.840989399293283,
+      "prevClose": 2.83,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 27, 2026 2:52 PM ET",
+      "preMarketVolume": 162870.567125,
+      "preMarketDollarVolume": 529329.34315625,
+      "relVolume": 7.087800475434092,
+      "avgVolume50": 22979,
+      "sharesOutstanding": 10870004,
+      "marketCap": 35327513,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 23,
+      "float": {
+        "shares": 10870004,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-02"
+      },
+      "floatRotation": 0.014983487322083782,
+      "daysUp": 1,
+      "priorRunPct": -2.07612456747405,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Nephros (NEPH) Moves to Strong Buy: Rationale Behind the Upgrade",
+        "subject": null,
+        "date": "2026-11-27"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "14.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "162,871"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.25"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "10.9M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "INDP",
+      "name": "Indaptus Therapeutics Inc.",
+      "legalName": "Indaptus Therapeutics, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 3.05,
+      "preMarketChangePct": 13.382899628252783,
+      "prevClose": 2.69,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 27, 2026 2:52 PM ET",
+      "preMarketVolume": 194892.598117,
+      "preMarketDollarVolume": 594422.4242568499,
+      "relVolume": 0.24890911102866328,
+      "avgVolume50": 782987,
+      "sharesOutstanding": 153602583,
+      "marketCap": 468487878.15,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 115,
+      "float": {
+        "shares": 153602583,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-13"
+      },
+      "floatRotation": 0.0012688106821549998,
+      "daysUp": 0,
+      "priorRunPct": -18.237082066869302,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Indaptus Therapeutics, Inc. Enters Into Convertible Promissory Note Agreements for $5,000,000 Aggregate Initial Purchase Price",
+        "subject": "FDA / clinical",
+        "date": "2026-11-25"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "13.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "194,893"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$3.05"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "153.6M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    },
+    {
+      "symbol": "WW",
+      "name": "WW International Inc.",
+      "legalName": "WW INTERNATIONAL, INC.",
+      "business": "Services-Personal Services",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 8.24,
+      "preMarketChangePct": 5.102040816326536,
+      "prevClose": 7.84,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 27, 2026 2:52 PM ET",
+      "preMarketVolume": 161540.514361,
+      "preMarketDollarVolume": 1331093.83833464,
+      "relVolume": 0.8720371095630112,
+      "avgVolume50": 185245,
+      "sharesOutstanding": 9998760,
+      "marketCap": 82389782.4,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 27,
+      "float": {
+        "shares": 9998760,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-10-29"
+      },
+      "floatRotation": 0.016156054786893574,
+      "daysUp": 1,
+      "priorRunPct": -9.154113557358064,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "WW International, Inc. Retires $16.3 Million in Debt for $10 Million",
+        "subject": null,
+        "date": "2026-11-27"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.1%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "161,541"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$8.24"
+        },
+        {
+          "name": "Float <10M",
+          "ok": true,
+          "detail": "10.0M"
+        }
+      ],
+      "passed": 4,
+      "quality": "medium"
+    }
+  ],
+  "alsoRan": [
+    {
+      "symbol": "TMS",
+      "name": "Teamshares Inc.",
+      "legalName": "Teamshares Inc",
+      "business": "Retail-Miscellaneous Retail",
+      "sector": null,
+      "preMarketPrice": 4.32,
+      "preMarketChangePct": 8.679245283018872,
+      "prevClose": 3.975,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 27, 2026 2:52 PM ET",
+      "preMarketVolume": 180737.147912,
+      "preMarketDollarVolume": 780784.47897984,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 72498463,
+      "marketCap": 313193360.16,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 72498463,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-11"
+      },
+      "floatRotation": 0.0024929790292519717,
+      "daysUp": 0,
+      "priorRunPct": 0.8883248730964504,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Executive or board change · Regulation FD disclosure (company announcement)",
+        "subject": "Executive or board change · Regulation FD disclosure (company announcement)",
+        "date": "2026-11-25"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.7%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "180,737"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$4.32"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "72.5M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "CD",
+      "name": "Chaince Digital Holdings Inc. Ordinary Shares",
+      "legalName": "Chaince Digital Holdings Inc.",
+      "business": "Finance Services",
+      "sector": "Finance",
+      "preMarketPrice": 6.14,
+      "preMarketChangePct": 8.289241622574952,
+      "prevClose": 5.67,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 27, 2026 2:52 PM ET",
+      "preMarketVolume": 252482.508165,
+      "preMarketDollarVolume": 1550242.6001331,
+      "relVolume": 1.1474756430399078,
+      "avgVolume50": 220033,
+      "sharesOutstanding": 110003800,
+      "marketCap": 675423332,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 41,
+      "float": {
+        "shares": 110003800,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-12"
+      },
+      "floatRotation": 0.002295216239484454,
+      "daysUp": 3,
+      "priorRunPct": 41.044776119403,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "8-K",
+        "headline": "Other material event (often FDA, clinical or contract news)",
+        "subject": "Other material event (often FDA, clinical or contract news)",
+        "date": "2026-11-27"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "8.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "252,483"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "8-K"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$6.14"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "110.0M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "JAGX",
+      "name": "Jaguar Health Inc.",
+      "legalName": "Jaguar Health, Inc.",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 13.2,
+      "preMarketChangePct": 7.76,
+      "prevClose": 12.24944320712695,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 27, 2026 2:52 PM ET",
+      "preMarketVolume": 396311.969531,
+      "preMarketDollarVolume": 5231317.9978092,
+      "relVolume": 1.7096708865646273,
+      "avgVolume50": 231806,
+      "sharesOutstanding": 171350166,
+      "marketCap": 2261822191.2,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 87,
+      "float": {
+        "shares": 171350166,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2018-05-15"
+      },
+      "floatRotation": 0.0023128776515512683,
+      "daysUp": 3,
+      "priorRunPct": 3611.778029445073,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Jaguar Health, Inc. Receives Nasdaq Delisting Determination Notice and Requests Hearing",
+        "subject": "Distress or delisting",
+        "date": "2026-11-27"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "7.8%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "396,312"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": true,
+          "detail": "$13.20"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "171.4M"
+        }
+      ],
+      "passed": 3,
+      "quality": "low"
+    },
+    {
+      "symbol": "GLXG",
+      "name": "Galaxy Payroll Group Limited Class A Ordinary Shares",
+      "legalName": "Galaxy Payroll Group Ltd",
+      "business": "Services-Engineering, Accounting, Research, Management",
+      "sector": "Industrials",
+      "preMarketPrice": 1.6697,
+      "preMarketChangePct": 19.26428571428572,
+      "prevClose": 1.4,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 27, 2026 2:52 PM ET",
+      "preMarketVolume": 1164349.577831,
+      "preMarketDollarVolume": 1944114.4901044208,
+      "relVolume": 2.5839236281043823,
+      "avgVolume50": 450613,
+      "sharesOutstanding": 16000000,
+      "marketCap": 26715200,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 113,
+      "float": {
+        "shares": 16000000,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2024-06-30"
+      },
+      "floatRotation": 0.0727718486144375,
+      "daysUp": 3,
+      "priorRunPct": 97.96380090497735,
+      "extended": true,
+      "catalyst": {
+        "found": false,
+        "kind": null,
+        "headline": null,
+        "subject": null,
+        "date": null
+      },
+      "leads": [
+        "prior-session gainer"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": true,
+          "detail": "19.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "1,164,350"
+        },
+        {
+          "name": "News catalyst",
+          "ok": false,
+          "detail": "none found"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.67"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "16.0M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "ALXO",
+      "name": "ALX Oncology Holdings Inc.",
+      "legalName": "ALX ONCOLOGY HOLDINGS INC",
+      "business": "Pharmaceutical Preparations",
+      "sector": "Health Care",
+      "preMarketPrice": 1.5528,
+      "preMarketChangePct": 9.35,
+      "prevClose": 1.4200274348422497,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 27, 2026 2:52 PM ET",
+      "preMarketVolume": 506669.195872,
+      "preMarketDollarVolume": 786755.9273500416,
+      "relVolume": 0.5502686302528218,
+      "avgVolume50": 920767,
+      "sharesOutstanding": 129274568,
+      "marketCap": 200737549.1904,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 23,
+      "float": {
+        "shares": 129274568,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-09"
+      },
+      "floatRotation": 0.003919326157578032,
+      "daysUp": 5,
+      "priorRunPct": 57.71569941243172,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "ALX Oncology Reports Inducement Grant as permitted by the Nasdaq Listing Rules",
+        "subject": null,
+        "date": "2026-11-27"
+      },
+      "leads": [
+        "GlobeNewswire"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "9.3%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "506,669"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.55"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "129.3M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "SWRD",
+      "name": "Stewards Inc",
+      "legalName": "Stewards, Inc.",
+      "business": "Short-Term Business Credit Institutions",
+      "sector": "Finance",
+      "preMarketPrice": 1.17,
+      "preMarketChangePct": 6.36,
+      "prevClose": 1.1000376081233545,
+      "closeReconciled": true,
+      "lastTradeAt": "Nov 27, 2026 2:52 PM ET",
+      "preMarketVolume": 108977.656306,
+      "preMarketDollarVolume": 127503.85787802,
+      "relVolume": null,
+      "avgVolume50": null,
+      "sharesOutstanding": 219818326,
+      "marketCap": 257187441.42,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": null,
+      "float": {
+        "shares": 219818326,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-10"
+      },
+      "floatRotation": 0.0004957623792749655,
+      "daysUp": 0,
+      "priorRunPct": -53.7117903930131,
+      "extended": false,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Stewards, Inc. Enters Into First Amendment to Unsecured Convertible Promissory Note and Securities Purchase Agreement",
+        "subject": "Contract or partnership",
+        "date": "2026-11-25"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "6.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": true,
+          "detail": "108,978"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.17"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "219.8M"
+        }
+      ],
+      "passed": 2,
+      "quality": "low"
+    },
+    {
+      "symbol": "DTI",
+      "name": "Drilling Tools International Corporation",
+      "legalName": "Drilling Tools International Corp",
+      "business": "Oil & Gas Field Machinery & Equipment",
+      "sector": "Consumer Discretionary",
+      "preMarketPrice": 1.75,
+      "preMarketChangePct": 5.421686746987957,
+      "prevClose": 1.66,
+      "closeReconciled": false,
+      "lastTradeAt": "Nov 27, 2026 2:52 PM ET",
+      "preMarketVolume": 46486.143665,
+      "preMarketDollarVolume": 81350.75141375001,
+      "relVolume": 0.22254419257007446,
+      "avgVolume50": 208885,
+      "sharesOutstanding": 35282224,
+      "marketCap": 61743892,
+      "floatPctOfShares": 100,
+      "bestPriorSpikePct": 15,
+      "float": {
+        "shares": 35282224,
+        "basis": "shares-outstanding-proxy",
+        "asOf": "2026-11-04"
+      },
+      "floatRotation": 0.0013175514010964843,
+      "daysUp": 3,
+      "priorRunPct": 0,
+      "extended": true,
+      "catalyst": {
+        "found": true,
+        "kind": "news",
+        "headline": "Drilling Tools International Corporation Enters Into First Amendment to Share Purchase Agreement",
+        "subject": "Contract or partnership",
+        "date": "2026-11-26"
+      },
+      "leads": [
+        "8-K"
+      ],
+      "checks": [
+        {
+          "name": "Up ≥10% pre-market",
+          "ok": false,
+          "detail": "5.4%"
+        },
+        {
+          "name": "Pre-market volume ≥50k",
+          "ok": false,
+          "detail": "46,486"
+        },
+        {
+          "name": "News catalyst",
+          "ok": true,
+          "detail": "news"
+        },
+        {
+          "name": "Price $2–$20",
+          "ok": false,
+          "detail": "$1.75"
+        },
+        {
+          "name": "Float <10M",
+          "ok": false,
+          "detail": "35.3M"
+        }
+      ],
+      "passed": 1,
+      "quality": "low"
+    }
+  ]
 }
